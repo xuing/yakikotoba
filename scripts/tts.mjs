@@ -75,25 +75,15 @@ const add = (key, x) => {
   const text = clean(typeof x === 'string' ? x : speakable(x));
   if (text) jobs.set(key, text);
 };
-for (const f of walk(path.join(CONTENT, 'cuts'))) {
-  const d = readYaml(f), id = idOf(path.join(CONTENT, 'cuts'), f);
-  if (!d) continue;
-  add(`cut:${id}`, d);
-  if (d.example) add(`example:${id}`, d.example);
-}
-for (const f of walk(path.join(CONTENT, 'terms'))) { const d = readYaml(f); if (d) add(`term:${idOf(path.join(CONTENT, 'terms'), f)}`, d); }
-for (const f of walk(path.join(CONTENT, 'dishes'))) { const d = readYaml(f); if (d) add(`dish:${idOf(path.join(CONTENT, 'dishes'), f)}`, d); }
-for (const f of walk(path.join(CONTENT, 'phrases'))) {
-  const d = readYaml(f), scene = idOf(path.join(CONTENT, 'phrases'), f);
-  for (const p of d?.phrases ?? []) if (p?.id) add(`phrase:${scene}/${p.id}`, p);
+for (const f of walk(path.join(CONTENT, 'groups'))) {
+  const d = readYaml(f), group = path.basename(f).replace(/\.ya?ml$/, '');
+  for (const it of d?.items ?? []) if (it?.id) add(`row:${group}/${it.id}`, it);
 }
 for (const f of walk(path.join(CONTENT, 'chains'))) {
   const d = readYaml(f), chain = idOf(path.join(CONTENT, 'chains'), f);
   if (!d) continue;
   add(`chain:${chain}`, d);
-  (d.items ?? []).forEach((it) => it?.id && add(`chain-item:${chain}/${it.id}`, it));
-  (d.courses ?? []).forEach((c, i) => add(`course:${chain}/${i}`, c));
-  (d.vocab ?? []).forEach((v, i) => add(`vocab:${chain}/${i}`, v));
+  for (const it of d.items ?? []) if (it?.id) add(`chain-item:${chain}/${it.id}`, it);
 }
 
 // ---------- plan ----------

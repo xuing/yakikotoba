@@ -2,10 +2,9 @@
 // A credited photo. Raster images are optimised to AVIF/WebP; SVGs (logos) pass through.
 import { Picture } from 'astro:assets';
 import type { MediaItem } from '../lib/media';
-import { t, type Locale } from '../i18n/ui';
-interface Props { item: MediaItem; locale: Locale; alt?: string; sizes?: string; widths?: number[]; credit?: boolean; loading?: 'lazy' | 'eager'; class?: string }
-const { item, locale, alt = '', sizes = '(max-width: 760px) 100vw, 560px', widths = [400, 720, 1080], credit = true, loading = 'lazy', class: cls } = Astro.props;
-const caption = item.caption?.[locale] ?? item.caption?.en;
+interface Props { item: MediaItem; alt?: string; sizes?: string; widths?: number[]; credit?: boolean; loading?: 'lazy' | 'eager'; class?: string }
+const { item, alt = '', sizes = '(max-width: 760px) 100vw, 560px', widths = [400, 720, 1080], credit = true, loading = 'lazy', class: cls } = Astro.props;
+const caption = item.caption?.ja ?? item.caption?.zh ?? item.caption?.en;
 const src = item.source;
 ---
 <figure class:list={['photo', cls]}>
@@ -17,7 +16,7 @@ const src = item.source;
       {caption && <span class="cap">{caption}</span>}
       {src && (
         <span class="credit" title={[src.title, src.author, src.license].filter(Boolean).join(" · ")}>
-          {t(locale, 'source')}：{src.url ? <a href={src.url} rel="noopener">{src.title ?? src.url}</a> : src.title}
+          出典：{src.url ? <a href={src.url} rel="noopener">{src.title ?? src.url}</a> : src.title}
           {src.author && <> · {src.author}</>}
           {src.license && <> · {src.license}</>}
         </span>

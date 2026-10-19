@@ -69,7 +69,9 @@ export function mediaFor(folder: string): MediaItem[] {
       source: row ? normalizeCredit(row.source, row) : undefined,
     });
   }
-  items.sort((a, b) => (KIND_ORDER[a.kind] ?? 3) - (KIND_ORDER[b.kind] ?? 3) || a.file.localeCompare(b.file));
+  // official / government photos first (maff*), then the rest
+  const rank = (m: MediaItem) => (KIND_ORDER[m.kind] ?? 3) * 10 + (/^maff/i.test(m.file) ? 0 : 1);
+  items.sort((a, b) => rank(a) - rank(b) || a.file.localeCompare(b.file));
   cache.set(folder, items);
   return items;
 }

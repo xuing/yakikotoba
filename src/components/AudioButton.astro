@@ -1,13 +1,12 @@
 ---
 // Plays the generated mp3 when there is one, otherwise the browser's Japanese voice.
 import { audioFor } from '../lib/audio';
-import { t, type Locale } from '../i18n/ui';
-interface Props { audioKey?: string; text: string; locale: Locale; size?: 'sm' | 'md' | 'lg' }
-const { audioKey, text, locale, size = 'md' } = Astro.props;
+interface Props { audioKey?: string; text: string; size?: 'sm' | 'md' | 'lg' }
+const { audioKey, text, size = 'md' } = Astro.props;
 const src = audioKey ? audioFor(audioKey) : undefined;
 ---
 <say-ja data-src={src} data-text={text} class={`say ${size}`}>
-  <button type="button" aria-label={`${t(locale, 'audio.play')}: ${text}`} title={t(locale, 'audio.play')}>
+  <button type="button" aria-label={`発音を聞く: ${text}`} title="発音 · 发音 · Listen">
     <svg viewBox="0 0 24 24" aria-hidden="true">
       <path class="spk" d="M4 9.5h3.2L12 5.5v13l-4.8-4H4z"></path>
       <path class="w1" d="M15.2 9.2a4 4 0 0 1 0 5.6"></path>
