@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="lite" viewBox="0 0 360 205" role="img" aria-label="鶏 chicken">
+  <path d="M190 160 L186 196 M186 196 L174 199 M186 196 L196 200 M222 158 L226 196 M226 196 L214 199 M226 196 L238 199" stroke="#e2a93b" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M102 22 q4 -12 10 -2 q5 -13 11 -1 q7 -10 8 5 Q118 30 102 22Z" fill="#d23a2a"/>
+  <path fill="#f6f1e6" stroke="#9d927f" stroke-width="2" stroke-linejoin="round" d="M112 30 C124 28 132 38 130 50 C130 62 136 74 146 82 C170 72 220 70 250 78 L300 40 C306 70 302 96 288 112 C276 140 250 162 214 164 C180 166 150 158 134 140 C118 122 104 100 98 76 C96 66 94 58 92 54 L76 56 L90 46 C92 36 100 30 112 30 Z"/>
+  <path d="M96 58 q-4 12 4 16 q6 -6 2 -16Z" fill="#d23a2a"/>
+  <path d="M78 55 L92 50 L91 57Z" fill="#e2a93b"/>
+  <circle cx="106" cy="42" r="2.8" fill="#2a2420"/>
+  <path d="M170 98 C200 86 240 90 266 106 C244 124 204 128 176 118 Z" fill="#ece5d6" stroke="#9d927f" stroke-width="2"/>
+  <path d="M196 116 C212 108 230 106 248 110 M204 122 C220 116 236 114 254 114" stroke="#c7bca8" stroke-width="1.5" fill="none"/>
+  <path d="M262 66 L294 50 M268 80 L298 72" stroke="#ddd4c2" stroke-width="2" fill="none"/>
+  <ellipse class="rg" id="r-seseri" cx="114" cy="72" rx="8" ry="14"/>
+  <circle class="rg" id="r-mune" cx="140" cy="126" r="20"/>
+  <ellipse class="rg" id="r-momo" cx="214" cy="146" rx="22" ry="13"/>
+  <ellipse class="rg" id="r-tebasaki" cx="258" cy="108" rx="10" ry="7"/>
+  <circle class="rg" id="r-nankotsu" cx="150" cy="154" r="6"/>
+  <ellipse class="rg" id="r-sunagimo" cx="182" cy="134" rx="9" ry="7"/>
+</svg>

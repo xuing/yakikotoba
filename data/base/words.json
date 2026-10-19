@@ -1,0 +1,20 @@
+{
+  "id": "words",
+  "animal": null,
+  "label": { "ja": "メニューの言葉", "en": "Menu words", "zh": "菜单用语" },
+  "tip": { "ja": "注文の言い方：「タン塩を一人前ください」", "en": "How to order: “One portion of salted tongue, please.”", "zh": "点单说法：「タン塩を一人前ください」＝ 请来一份盐烤牛舌。" },
+  "items": [
+    { "id": "words.jo", "ja": "上", "kana": "じょう", "romaji": "jō", "en": "Premium grade", "zh": "上等", "note": { "ja": "例：上カルビ", "en": "e.g. premium karubi", "zh": "例：上等五花" } },
+    { "id": "words.tokujo", "ja": "特上", "kana": "とくじょう", "romaji": "tokujō", "en": "Top premium grade", "zh": "特上（最高等级）", "note": { "ja": "例：特上ロース", "en": "e.g. top-grade loin", "zh": "例：特上里脊" } },
+    { "id": "words.tokusen", "ja": "特選", "kana": "とくせん", "romaji": "tokusen", "en": "Specially selected", "zh": "特选", "note": { "ja": "例：特選カルビ", "en": "e.g. selected karubi", "zh": "例：特选五花" } },
+    { "id": "words.wagyu", "ja": "和牛", "kana": "わぎゅう", "romaji": "wagyū", "en": "Japanese-breed beef", "zh": "和牛", "note": { "ja": "高いことが多い", "en": "usually expensive", "zh": "通常较贵" } },
+    { "id": "words.kokusan", "ja": "国産", "kana": "こくさん", "romaji": "kokusan", "en": "Domestic (made in Japan)", "zh": "日本国产", "note": { "ja": "例：国産牛", "en": "e.g. domestic beef", "zh": "例：国产牛（不一定是和牛）" } },
+    { "id": "words.shio", "ja": "塩", "kana": "しお", "romaji": "shio", "en": "Salt seasoning", "zh": "盐味", "note": { "ja": "例：タン塩", "en": "e.g. salted tongue", "zh": "例：盐烤牛舌" } },
+    { "id": "words.tare", "ja": "タレ", "kana": "たれ", "romaji": "tare", "en": "Sweet soy sauce", "zh": "酱汁（甜酱油）", "note": { "ja": "「塩とタレ、どちらにしますか」", "en": "“Salt or sauce?”", "zh": "店员问：要盐味还是酱汁？" } },
+    { "id": "words.atsugiri", "ja": "厚切り", "kana": "あつぎり", "romaji": "atsugiri", "en": "Thick-cut", "zh": "厚切", "note": { "ja": "例：厚切りタン", "en": "e.g. thick-cut tongue", "zh": "例：厚切牛舌" } },
+    { "id": "words.tsubozuke", "ja": "壺漬け", "kana": "つぼづけ", "romaji": "tsubozuke", "en": "Marinated in a pot", "zh": "坛腌（装在坛子里腌）", "note": { "ja": "長い肉をハサミで切る", "en": "Long strips — cut with scissors", "zh": "长条肉，用剪刀剪开烤" } },
+    { "id": "words.moriawase", "ja": "盛り合わせ", "kana": "もりあわせ", "romaji": "moriawase", "en": "Assorted platter", "zh": "拼盘", "note": { "ja": "迷ったらこれ", "en": "good when you’re not sure", "zh": "不知道点什么就点它" } },
+    { "id": "words.ichininmae", "ja": "一人前", "kana": "いちにんまえ", "romaji": "ichininmae", "en": "One portion", "zh": "一人份", "note": { "ja": "例：カルビ一人前ください", "en": "One karubi, please", "zh": "例：请来一份五花" } },
+    { "id": "words.tabehodai", "ja": "食べ放題", "kana": "たべほうだい", "romaji": "tabehōdai", "en": "All-you-can-eat", "zh": "吃到饱", "note": { "ja": "時間制限あり", "en": "time limit", "zh": "有时间限制" } }
+  ]
+}

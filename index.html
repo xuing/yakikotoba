@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>焼肉メニュー図鑑</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="top">
+  <div class="wrap">
+    <div class="titlebar">
+      <h1>焼肉メニュー図鑑</h1>
+      <div class="seg" id="lang" role="group" aria-label="Language">
+        <button data-lang="zh">中文</button><button data-lang="en">EN</button>
+      </div>
+    </div>
+    <div class="seg mode" id="mode" role="group" aria-label="Mode">
+      <button data-mode="base"></button><button data-mode="chain"></button>
+    </div>
+    <div class="tabs" id="tabs" role="group"></div>
+    <div class="stage" id="stage" hidden>
+      <div id="svgbox"></div>
+      <div class="cap" id="cap"></div>
+    </div>
+  </div>
+</div>
+<main class="wrap">
+  <section id="chainInfo" class="chaininfo" hidden></section>
+  <ul class="list" id="list"></ul>
+  <p class="tip" id="tip"></p>
+  <p class="note" id="footnote"></p>
+</main>
+<script type="module" src="js/app.js"></script>
+</body>
+</html>

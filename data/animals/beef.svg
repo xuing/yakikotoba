@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="dark" viewBox="0 0 360 205" role="img" aria-label="牛 cow">
+  <path d="M320 88 C336 104 338 132 333 160" stroke="#2b221e" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M329 156 q6 10 -1 16 q-7 -6 1 -16Z" fill="#2b221e"/>
+  <path fill="#3b302b" stroke="#1d1714" stroke-width="2" stroke-linejoin="round" d="M70 70 C60 66 45 70 38 80 C30 90 26 100 28 108 C30 116 42 118 52 114 C60 112 70 118 80 124 C88 132 92 140 96 146 L100 188 L113 188 L115 158 L122 160 L126 188 L139 188 L141 160 C180 166 230 166 262 160 L266 188 L279 188 L283 162 C290 164 294 168 296 188 L309 188 L313 150 C322 130 326 110 322 92 C318 74 300 62 280 60 C230 56 160 56 110 62 C96 64 84 62 76 60 Z"/>
+  <rect x="100" y="182" width="13" height="7" fill="#151110"/><rect x="126" y="182" width="13" height="7" fill="#151110"/>
+  <rect x="266" y="182" width="13" height="7" fill="#151110"/><rect x="296" y="182" width="13" height="7" fill="#151110"/>
+  <ellipse cx="36" cy="104" rx="10" ry="9" fill="#5a4a43"/>
+  <path d="M74 66 C80 56 94 54 98 60 C92 66 84 70 74 70Z" fill="#3b302b" stroke="#1d1714" stroke-width="2"/>
+  <path d="M64 66 C64 56 70 50 78 48" stroke="#d8cdb8" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <circle cx="54" cy="83" r="3" fill="#f3e9e2"/>
+  <ellipse class="rg" id="r-tan" cx="30" cy="113" rx="10" ry="5"/>
+  <ellipse class="rg" id="r-zabuton" cx="118" cy="84" rx="20" ry="17"/>
+  <ellipse class="rg" id="r-misuji" cx="118" cy="128" rx="17" ry="15"/>
+  <rect class="rg" id="r-rosu" x="150" y="66" width="122" height="18" rx="9"/>
+  <ellipse class="rg" id="r-hire" cx="250" cy="95" rx="22" ry="8"/>
+  <ellipse class="rg" id="r-ichibo" cx="298" cy="84" rx="18" ry="16"/>
+  <rect class="rg" id="r-karubi" x="160" y="138" width="104" height="20" rx="9"/>
+  <ellipse class="rg" id="r-harami" cx="170" cy="112" rx="6" ry="20"/>
+  <circle class="rg" id="r-hatsu" cx="144" cy="114" r="8"/>
+  <ellipse class="rg" id="r-reba" cx="196" cy="104" rx="13" ry="8"/>
+  <ellipse class="rg" id="r-mino" cx="220" cy="122" rx="14" ry="10"/>
+  <ellipse class="rg" id="r-senmai" cx="245" cy="121" rx="8" ry="7"/>
+  <ellipse class="rg" id="r-horumon" cx="282" cy="126" rx="18" ry="10"/>
+</svg>
