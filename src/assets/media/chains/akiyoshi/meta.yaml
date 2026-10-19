@@ -1,0 +1,90 @@
+- file: logo.png
+  kind: logo
+  source:
+    title: 秋吉公式サイト（スマートフォン版）ヘッダーのロゴ（/m/picture/logo.gif）の提灯部分。左側の文字「やきとりの名門 秋吉」は透明背景に白抜きのため切り落とした
+    url: "https://www.akiyoshi.co.jp/m/index.html"
+    license: © 株式会社秋吉グループ本部
+- file: junkei.webp
+  kind: dish
+  source:
+    title: 秋吉公式サイト（スマートフォン版）メニュー紹介「純けい」
+    url: "https://www.akiyoshi.co.jp/m/menu/menu_introduction/kushi/zyunkei.html"
+    license: © 株式会社秋吉グループ本部
+- file: negima.webp
+  kind: dish
+  source:
+    title: 秋吉公式サイト（スマートフォン版）メニュー紹介「ねぎま」
+    url: "https://www.akiyoshi.co.jp/m/menu/menu_introduction/kushi/negima.html"
+    license: © 株式会社秋吉グループ本部
+- file: sasami.webp
+  kind: dish
+  source:
+    title: 秋吉公式サイト（スマートフォン版）メニュー紹介「ささみ」
+    url: "https://www.akiyoshi.co.jp/m/menu/menu_introduction/kushi/sasami.html"
+    license: © 株式会社秋吉グループ本部
+- file: sunagimo.webp
+  kind: dish
+  source:
+    title: 秋吉公式サイト（スマートフォン版）メニュー紹介「すなぎも」
+    url: "https://www.akiyoshi.co.jp/m/menu/menu_introduction/kushi/sunagimo.html"
+    license: © 株式会社秋吉グループ本部
+- file: wakakawa.webp
+  kind: dish
+  source:
+    title: 秋吉公式サイト（スマートフォン版）メニュー紹介「若皮」
+    url: "https://www.akiyoshi.co.jp/m/menu/menu_introduction/kushi/wakakawa.html"
+    license: © 株式会社秋吉グループ本部
+- file: tsukune.webp
+  kind: dish
+  source:
+    title: 秋吉公式サイト（スマートフォン版）メニュー紹介「つくね」
+    url: "https://www.akiyoshi.co.jp/m/menu/menu_introduction/kushi/tsukune.html"
+    license: © 株式会社秋吉グループ本部
+- file: shiro.webp
+  kind: dish
+  source:
+    title: 秋吉公式サイト（スマートフォン版）メニュー紹介「しろ」
+    url: "https://www.akiyoshi.co.jp/m/menu/menu_introduction/kushi/shiro.html"
+    license: © 株式会社秋吉グループ本部
+- file: aka.webp
+  kind: dish
+  source:
+    title: 秋吉公式サイト（スマートフォン版）メニュー紹介「あか」
+    url: "https://www.akiyoshi.co.jp/m/menu/menu_introduction/kushi/aka.html"
+    license: © 株式会社秋吉グループ本部
+- file: shinzo.webp
+  kind: dish
+  source:
+    title: 秋吉公式サイト（スマートフォン版）メニュー紹介「しんぞう」
+    url: "https://www.akiyoshi.co.jp/m/menu/menu_introduction/kushi/shinzou.html"
+    license: © 株式会社秋吉グループ本部
+- file: harami.webp
+  kind: dish
+  source:
+    title: 秋吉公式サイト（スマートフォン版）メニュー紹介「はらみ」
+    url: "https://www.akiyoshi.co.jp/m/menu/menu_introduction/kushi/harami.html"
+    license: © 株式会社秋吉グループ本部
+- file: pitoro.webp
+  kind: dish
+  source:
+    title: 秋吉公式サイト（スマートフォン版）メニュー紹介「ピートロ」
+    url: "https://www.akiyoshi.co.jp/m/menu/menu_introduction/kushi/pitoro.html"
+    license: © 株式会社秋吉グループ本部
+- file: mino.webp
+  kind: dish
+  source:
+    title: 秋吉公式サイト（スマートフォン版）メニュー紹介「みの」
+    url: "https://www.akiyoshi.co.jp/m/menu/menu_introduction/kushi/mino.html"
+    license: © 株式会社秋吉グループ本部
+- file: kushikatsu.webp
+  kind: dish
+  source:
+    title: 秋吉公式サイト（スマートフォン版）メニュー紹介「串カツ」
+    url: "https://www.akiyoshi.co.jp/m/menu/menu_introduction/fry/kushikatsu.html"
+    license: © 株式会社秋吉グループ本部
+- file: wakadori-teba-age.webp
+  kind: dish
+  source:
+    title: 秋吉公式サイト（スマートフォン版）メニュー紹介「若どり手羽揚げ」
+    url: "https://www.akiyoshi.co.jp/m/menu/menu_introduction/fry/tebaage.html"
+    license: © 株式会社秋吉グループ本部

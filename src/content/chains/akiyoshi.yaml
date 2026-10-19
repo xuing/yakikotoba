@@ -1,0 +1,173 @@
+ja: 秋吉
+ruby: "{秋吉|あきよし}"
+kana: あきよし
+romaji: Akiyoshi
+cuisine: yakitori
+url: "https://www.akiyoshi.co.jp/"
+note:
+  ja: 1959年に福井市で創業したやきとりチェーン（屋号は「やきとりの名門 秋吉」、全国102店・2026年10月）。やきとりは1種類5本単位で頼むのが基本で、店員は客を「社長」と呼んで迎える。
+  zh: 1959年创立于福井市的烤鸡串连锁店（全称「やきとりの名門 秋吉」，全日本102家，2026年10月）；烤串一般每种以5串为单位点，店员称顾客为「社长」（老板）。
+  en: "Yakitori chain founded in Fukui City in 1959 (full name Yakitori no Meimon Akiyoshi; 102 shops as of Oct 2026); skewers are usually ordered five of a kind, and staff greet customers as shachō (“boss”)."
+items:
+  # 串焼き（鶏）
+  - id: junkei
+    ja: 純けい
+    ruby: "{純|じゅん}けい"
+    kana: じゅんけい
+    romaji: junkei
+    rows: [chicken/momo, yakitori-words/shio]
+    mean:
+      ja: 親鶏（卵を産んだメス鶏）のもも肉と皮の塩焼き。好みでからしを付ける
+      zh: 下过蛋的母鸡（老母鸡）的腿肉和皮，盐烤；可按喜好蘸日式黄芥末
+      en: Salt-grilled thigh and skin from hens that have laid eggs (oyadori); karashi mustard to taste
+    signature: true
+    image: junkei.webp
+  - id: negima
+    ja: ねぎま
+    kana: ねぎま
+    romaji: negima
+    rows: [chicken/negima, chicken/momo, yakitori-words/tare]
+    mean:
+      ja: 若どりのもも肉とねぎを交互に刺したタレ焼き
+      zh: 嫩鸡腿肉与大葱交替串成，刷酱汁烤
+      en: Young-chicken thigh alternated with leek, grilled with tare
+    image: negima.webp
+  - id: sasami
+    ja: ささみ
+    kana: ささみ
+    romaji: sasami
+    rows: [chicken/sasami, yakitori-words/shio]
+    mean:
+      ja: メス鶏のささみの塩焼き
+      zh: 母鸡的鸡里脊，盐烤
+      en: Salt-grilled tenderloin from hens
+    image: sasami.webp
+  - id: sunagimo
+    ja: すなぎも
+    kana: すなぎも
+    romaji: sunagimo
+    rows: [chicken/sunagimo, yakitori-words/shio]
+    mean:
+      ja: メス鶏の砂肝とねぎを交互に刺した塩焼き
+      zh: 母鸡的鸡胗与大葱交替串成，盐烤
+      en: Hen gizzard alternated with leek, salt-grilled
+    image: sunagimo.webp
+  - id: wakakawa
+    ja: 若皮
+    ruby: "{若皮|わかかわ}"
+    kana: わかかわ
+    romaji: wakakawa
+    rows: [chicken/kawa, yakitori-words/shio]
+    mean:
+      ja: 若どりの皮に脂と肉も合わせた塩焼き
+      zh: 嫩鸡皮连同鸡油和鸡肉一起串的盐烤串
+      en: Young-chicken skin with some fat and meat, salt-grilled
+    image: wakakawa.webp
+  - id: tsukune
+    ja: つくね
+    kana: つくね
+    romaji: tsukune
+    rows: [chicken/tsukune, yakitori-words/tare]
+    mean:
+      ja: 若どりをベースに数種類の肉を合わせたつくねのタレ焼き
+      zh: 以嫩鸡肉为主、掺入几种肉做的鸡肉丸，刷酱汁烤
+      en: Meatballs of young chicken blended with several other meats, grilled with tare
+    image: tsukune.webp
+  # 串焼き（豚・牛）
+  - id: shiro
+    ja: しろ
+    kana: しろ
+    romaji: shiro
+    rows: [yakitori-words/yakiton, yakitori-words/tare]
+    mean:
+      ja: 「しろ」は豚の腸（ホルモン）。タレ焼き
+      zh: 「しろ」（白）即猪肠，刷酱汁烤
+      en: Shiro (“white”) is pork intestine; grilled with tare
+    image: shiro.webp
+  - id: aka
+    ja: あか
+    kana: あか
+    romaji: aka
+    rows: [yakitori-words/yakiton, yakitori-words/tare]
+    mean:
+      ja: 「あか」は豚のレバー（肝臓）。タレ焼き
+      zh: 「あか」（红）即猪肝，刷酱汁烤
+      en: Aka (“red”) is pork liver; grilled with tare
+    image: aka.webp
+  - id: shinzo
+    ja: しんぞう
+    kana: しんぞう
+    romaji: shinzō
+    rows: [yakitori-words/yakiton, yakitori-words/shio]
+    mean:
+      ja: 「しんぞう」は豚の心臓（ハツ）。塩焼き
+      zh: 「しんぞう」即猪心，盐烤
+      en: Shinzō (“heart”) is pork heart; salt-grilled
+    image: shinzo.webp
+  - id: harami
+    ja: はらみ
+    kana: はらみ
+    romaji: harami
+    rows: [yakitori-words/yakiton, yakitori-words/shio]
+    mean:
+      ja: 豚の横隔膜（ハラミ）の塩焼き
+      zh: 猪横膈膜（ハラミ），盐烤
+      en: Salt-grilled pork diaphragm (harami)
+    image: harami.webp
+  - id: pitoro
+    ja: ピートロ
+    kana: ぴーとろ
+    romaji: pītoro
+    rows: [pork/tontoro, yakitori-words/yakiton]
+    mean:
+      ja: 「ピートロ」は豚トロのこと。甘みそで焼き、酸味のあるタレを付ける
+      zh: 「ピートロ」即猪颈肉（豚トロ），甜味噌烤，蘸带酸味的酱汁
+      en: Pītoro is pork jowl (tontoro), grilled with sweet miso and dipped in a tangy sauce
+    image: pitoro.webp
+  - id: mino
+    ja: みの
+    kana: みの
+    romaji: mino
+    rows: [horumon/mino]
+    mean:
+      ja: 牛の第一胃（ミノ）のみそ焼き。酸味のあるタレを付ける
+      zh: 牛的第一胃（瘤胃），味噌烤，蘸带酸味的酱汁
+      en: Beef rumen (first stomach) grilled with miso, dipped in a tangy sauce
+    image: mino.webp
+  # 揚げ物
+  - id: kushikatsu
+    ja: 串カツ
+    ruby: "{串|くし}カツ"
+    kana: くしかつ
+    romaji: kushikatsu
+    rows: [yakitori-words/kushi]
+    mean:
+      ja: 牛肉と玉ねぎを串に刺し、パン粉を付けて揚げたもの。専用のカツタレを付ける
+      zh: 牛肉和洋葱穿串、裹面包糠油炸，蘸专用的炸串酱汁
+      en: Breaded, deep-fried skewers of beef and onion, dipped in their own katsu sauce
+    signature: true
+    image: kushikatsu.webp
+  - id: wakadori-teba-age
+    ja: 若どり手羽揚げ
+    ruby: "{若|わか}どり{手羽|てば}{揚|あ}げ"
+    kana: わかどりてばあげ
+    romaji: wakadori teba-age
+    rows: [chicken/tebasaki]
+    mean:
+      ja: 若どりの手羽先を自家製の唐揚粉で揚げたもの
+      zh: 用自制炸鸡粉炸的嫩鸡翅（翅中连翅尖）
+      en: Young-chicken wings (flat and tip) fried in a house-made karaage coating
+    image: wakadori-teba-age.webp
+sources:
+  - { title: 秋吉公式サイト メニュー「串焼き」, url: "https://www.akiyoshi.co.jp/menu/kushiyaki.html" }
+  - { title: 秋吉公式サイト メニュー「揚げ物」, url: "https://www.akiyoshi.co.jp/menu/fly.html" }
+  - { title: 秋吉公式サイト メニュー「特別メニュー」, url: "https://www.akiyoshi.co.jp/menu/special.html" }
+  - { title: 秋吉公式サイト メニュー「秘伝のタレ」, url: "https://www.akiyoshi.co.jp/menu/source.html" }
+  - { title: 秋吉公式サイト（スマートフォン版）メニュー紹介, url: "https://www.akiyoshi.co.jp/m/menu/index.html" }
+  - { title: 秋吉公式サイト 秋吉の歴史, url: "https://www.akiyoshi.co.jp/knowledge/history.html" }
+  - { title: 秋吉公式サイト 12のこだわり, url: "https://www.akiyoshi.co.jp/knowledge/12commit.html" }
+  - { title: 秋吉公式サイト 店舗紹介, url: "https://www.akiyoshi.co.jp/shop/index.html" }
+  - { title: 秋吉公式サイト 企業情報, url: "https://www.akiyoshi.co.jp/company/index.html" }
+  - { title: 秋吉グループ四国本部 メニュー（2026年10月時点の価格）, url: "http://www.akiyoshishikoku.com/?page_id=14" }
+  - { title: 福井市観光公式サイト 福いろ「福井県民が愛する「じゅんけい」とは？」, url: "https://fuku-iro.jp/spot-category/yakitori/" }
+  - { title: 食文化を旅する「歯ごたえに勝る強いうまみ 「福井のじゅんけい」」（2024年4月）, url: "https://www.gastronomy.town/7673/" }

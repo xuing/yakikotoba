@@ -148,6 +148,7 @@ const COLS = [
                               <span class="h-label">{h.signature ? '名物' : '店内表記'}</span>
                               <span class="h-ja mincho" lang="ja"><Ruby text={h.ja} ruby={h.ruby} /></span>
                               {h.romaji && <span class="romaji">{h.romaji}</span>}
+                              {h.mean?.ja && <span lang="ja" class="h-mean">{h.mean.ja}</span>}
                               {h.mean?.zh && <span lang="zh-Hans" class="zh">{h.mean.zh}</span>}
                               {h.mean?.en && <span lang="en" class="en">{h.mean.en}</span>}
                             </div>
@@ -332,14 +333,17 @@ const COLS = [
   .pic :global(img) { width: 100%; height: 100%; object-fit: cover; }
   .pic-row { width: 64px; height: 64px; }
   .chain-on .pic-row { display: none; }
-  .hit { display: flex; gap: 12px; align-items: center; margin-top: 10px; padding: 10px; border-radius: 12px; background: var(--surface); border: 1px solid var(--line); }
+  .hit { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 8px 10px; align-items: start; margin-top: 10px; padding: 10px; border-radius: 12px; background: var(--surface); border: 1px solid var(--line); }
   .hit[hidden] { display: none; }
-  .pic-hit { width: 96px; height: 96px; background: var(--surface-2); }
+  .pic-hit { grid-column: 1 / -1; width: 100%; aspect-ratio: 3 / 2; max-height: 200px; background: var(--surface-2); }
   .pic-hit :global(img) { object-fit: contain; }
+  .hit :global(.say) { grid-column: 2; }
   .h-text { display: grid; gap: 1px; flex: 1; min-width: 0; font-size: 12.5px; }
   .h-label { font-size: 11px; color: var(--accent); font-weight: 700; letter-spacing: .06em; }
   .h-ja { font-size: 16px; font-weight: 800; line-height: 1.5; }
   .h-text .romaji { font-size: 13px; }
+  .h-mean { font-size: 13px; line-height: 1.6; color: var(--ink); margin-top: 2px; }
+  .h-text .zh, .h-text .en { font-size: 12.5px; line-height: 1.55; }
 
   /* language toggles */
   :global(html.hide-zh) .zh, :global(html.hide-zh) [lang='zh-Hans']:not(html) { display: none !important; }

@@ -1,0 +1,204 @@
+- file: logo.png
+  kind: logo
+  source:
+    title: "はま寿司公式サイト"
+    url: "https://www.hama-sushi.co.jp/"
+    license: "© 株式会社はま寿司"
+- file: maguro.webp
+  kind: dish
+  source:
+    title: "はま寿司公式サイト メニュー紹介"
+    url: "https://www.hama-sushi.co.jp/menu/"
+    license: "© 株式会社はま寿司"
+- file: tokusei-zuke-maguro.webp
+  kind: dish
+  source:
+    title: "はま寿司公式サイト メニュー紹介"
+    url: "https://www.hama-sushi.co.jp/menu/"
+    license: "© 株式会社はま寿司"
+- file: gensen-maguro-chutoro-tabekurabe.webp
+  kind: dish
+  source:
+    title: "はま寿司公式サイト メニュー紹介"
+    url: "https://www.hama-sushi.co.jp/menu/"
+    license: "© 株式会社はま寿司"
+- file: maguro-tataki-gunkan.webp
+  kind: dish
+  source:
+    title: "はま寿司公式サイト メニュー紹介"
+    url: "https://www.hama-sushi.co.jp/menu/"
+    license: "© 株式会社はま寿司"
+- file: tekkamaki.webp
+  kind: dish
+  source:
+    title: "はま寿司公式サイト メニュー紹介"
+    url: "https://www.hama-sushi.co.jp/menu/"
+    license: "© 株式会社はま寿司"
+- file: samon.webp
+  kind: dish
+  source:
+    title: "はま寿司公式サイト メニュー紹介"
+    url: "https://www.hama-sushi.co.jp/menu/"
+    license: "© 株式会社はま寿司"
+- file: otoro-samon.webp
+  kind: dish
+  source:
+    title: "はま寿司公式サイト メニュー紹介"
+    url: "https://www.hama-sushi.co.jp/menu/"
+    license: "© 株式会社はま寿司"
+- file: ikejime-hamachi.webp
+  kind: dish
+  source:
+    title: "はま寿司公式サイト メニュー紹介"
+    url: "https://www.hama-sushi.co.jp/menu/"
+    license: "© 株式会社はま寿司"
+- file: ikejime-madai.webp
+  kind: dish
+  source:
+    title: "はま寿司公式サイト メニュー紹介"
+    url: "https://www.hama-sushi.co.jp/menu/"
+    license: "© 株式会社はま寿司"
+- file: miyagi-toro-iwashi.webp
+  kind: dish
+  source:
+    title: "はま寿司公式サイト メニュー紹介"
+    url: "https://www.hama-sushi.co.jp/menu/"
+    license: "© 株式会社はま寿司"
+- file: saba-oshizushi.webp
+  kind: dish
+  source:
+    title: "はま寿司公式サイト メニュー紹介"
+    url: "https://www.hama-sushi.co.jp/menu/"
+    license: "© 株式会社はま寿司"
+- file: hikarimono-sanshumori.webp
+  kind: dish
+  source:
+    title: "はま寿司公式サイト メニュー紹介"
+    url: "https://www.hama-sushi.co.jp/menu/"
+    license: "© 株式会社はま寿司"
+- file: shiojime-kurosoi.webp
+  kind: dish
+  source:
+    title: "はま寿司公式サイト メニュー紹介"
+    url: "https://www.hama-sushi.co.jp/menu/"
+    license: "© 株式会社はま寿司"
+- file: aburi-unagi.webp
+  kind: dish
+  source:
+    title: "はま寿司公式サイト メニュー紹介"
+    url: "https://www.hama-sushi.co.jp/menu/"
+    license: "© 株式会社はま寿司"
+- file: ni-anago.webp
+  kind: dish
+  source:
+    title: "はま寿司公式サイト メニュー紹介"
+    url: "https://www.hama-sushi.co.jp/menu/"
+    license: "© 株式会社はま寿司"
+- file: akaika.webp
+  kind: dish
+  source:
+    title: "はま寿司公式サイト メニュー紹介"
+    url: "https://www.hama-sushi.co.jp/menu/"
+    license: "© 株式会社はま寿司"
+- file: madako.webp
+  kind: dish
+  source:
+    title: "はま寿司公式サイト メニュー紹介"
+    url: "https://www.hama-sushi.co.jp/menu/"
+    license: "© 株式会社はま寿司"
+- file: ebi.webp
+  kind: dish
+  source:
+    title: "はま寿司公式サイト メニュー紹介"
+    url: "https://www.hama-sushi.co.jp/menu/"
+    license: "© 株式会社はま寿司"
+- file: aburi-ebi-mayo.webp
+  kind: dish
+  source:
+    title: "はま寿司公式サイト メニュー紹介"
+    url: "https://www.hama-sushi.co.jp/menu/"
+    license: "© 株式会社はま寿司"
+- file: ama-ebi.webp
+  kind: dish
+  source:
+    title: "はま寿司公式サイト メニュー紹介"
+    url: "https://www.hama-sushi.co.jp/menu/"
+    license: "© 株式会社はま寿司"
+- file: hotate.webp
+  kind: dish
+  source:
+    title: "はま寿司公式サイト メニュー紹介"
+    url: "https://www.hama-sushi.co.jp/menu/"
+    license: "© 株式会社はま寿司"
+- file: uni-gunkan.webp
+  kind: dish
+  source:
+    title: "はま寿司公式サイト メニュー紹介"
+    url: "https://www.hama-sushi.co.jp/menu/"
+    license: "© 株式会社はま寿司"
+- file: ikura.webp
+  kind: dish
+  source:
+    title: "はま寿司公式サイト メニュー紹介"
+    url: "https://www.hama-sushi.co.jp/menu/"
+    license: "© 株式会社はま寿司"
+- file: kani-gunkan.webp
+  kind: dish
+  source:
+    title: "はま寿司公式サイト メニュー紹介"
+    url: "https://www.hama-sushi.co.jp/menu/"
+    license: "© 株式会社はま寿司"
+- file: umadashi-tamago.webp
+  kind: dish
+  source:
+    title: "はま寿司公式サイト メニュー紹介"
+    url: "https://www.hama-sushi.co.jp/menu/"
+    license: "© 株式会社はま寿司"
+- file: engawa.webp
+  kind: dish
+  source:
+    title: "はま寿司公式サイト メニュー紹介"
+    url: "https://www.hama-sushi.co.jp/menu/"
+    license: "© 株式会社はま寿司"
+- file: ankimo-gunkan.webp
+  kind: dish
+  source:
+    title: "はま寿司公式サイト メニュー紹介"
+    url: "https://www.hama-sushi.co.jp/menu/"
+    license: "© 株式会社はま寿司"
+- file: kappamaki.webp
+  kind: dish
+  source:
+    title: "はま寿司公式サイト メニュー紹介"
+    url: "https://www.hama-sushi.co.jp/menu/"
+    license: "© 株式会社はま寿司"
+- file: inari.webp
+  kind: dish
+  source:
+    title: "はま寿司公式サイト メニュー紹介"
+    url: "https://www.hama-sushi.co.jp/menu/"
+    license: "© 株式会社はま寿司"
+- file: temaki-set.webp
+  kind: dish
+  source:
+    title: "はま寿司公式サイト メニュー紹介"
+    url: "https://www.hama-sushi.co.jp/menu/"
+    license: "© 株式会社はま寿司"
+- file: ebiten-nigiri.webp
+  kind: dish
+  source:
+    title: "はま寿司公式サイト メニュー紹介"
+    url: "https://www.hama-sushi.co.jp/menu/"
+    license: "© 株式会社はま寿司"
+- file: nankotsu-karaage.webp
+  kind: dish
+  source:
+    title: "はま寿司公式サイト メニュー紹介"
+    url: "https://www.hama-sushi.co.jp/menu/"
+    license: "© 株式会社はま寿司"
+- file: tsuika-shari.webp
+  kind: dish
+  source:
+    title: "はま寿司公式サイト メニュー紹介"
+    url: "https://www.hama-sushi.co.jp/menu/"
+    license: "© 株式会社はま寿司"

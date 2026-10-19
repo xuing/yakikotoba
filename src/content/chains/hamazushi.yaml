@@ -1,0 +1,389 @@
+ja: はま寿司
+ruby: "はま{寿司|ずし}"
+kana: はまずし
+romaji: Hamazushi
+cuisine: sushi
+url: "https://www.hama-sushi.co.jp/"
+note:
+  ja: ゼンショーホールディングス傘下の株式会社はま寿司が運営する回転寿司チェーン。2002年11月に栃木県の足利店を1号店として開業し、国内685店（2026年9月末）。
+  zh: 由Zensho控股（ゼンショーホールディングス）旗下的株式会社はま寿司经营的回转寿司连锁，官网中文名「滨寿司」；2002年11月以栃木县的足利店为首家店开业，日本国内685家（2026年9月底）。
+  en: "Conveyor-belt sushi chain run by Hama-Sushi Co., a Zensho Holdings subsidiary; its first shop opened in Ashikaga, Tochigi in November 2002; 685 shops in Japan (end of Sept 2026)."
+items:
+  # まぐろ
+  - id: maguro
+    ja: まぐろ
+    kana: まぐろ
+    romaji: maguro
+    rows: [maguro/maguro, maguro/akami]
+    mean:
+      ja: まぐろの赤身のにぎり（太平洋・大西洋・インド洋産）。主に40kg以上の天然まぐろを使い、同社は「自慢のネタ」とする
+      zh: 金枪鱼赤身握寿司（太平洋、大西洋、印度洋产）；主要用40公斤以上的野生金枪鱼，公司称之为「引以为傲的寿司料」；官网中文名「金枪鱼」
+      en: "Lean tuna (akami) nigiri; mostly wild tuna over 40 kg from the Pacific, Atlantic and Indian Oceans, billed as the chain’s pride; English-site name “Lean Tuna”"
+    signature: true
+    image: maguro.webp
+  - id: tokusei-zuke-maguro
+    ja: 特製漬けまぐろ
+    ruby: "{特製|とくせい}{漬|づ}けまぐろ"
+    kana: とくせいづけまぐろ
+    romaji: tokusei zuke-maguro
+    rows: [fish-cooking/zuke, maguro/akami]
+    mean:
+      ja: まぐろを特製の漬けダレに漬けた「漬け」のにぎり。白ごまをのせる
+      zh: 用特制酱汁腌渍金枪鱼做成的「漬け」握寿司，撒白芝麻；官网中文名「特制腌渍金枪鱼」
+      en: "Tuna marinated in the house sauce (zuke), with white sesame; English-site name “Special Soy-Marinated Tuna”"
+    image: tokusei-zuke-maguro.webp
+  - id: gensen-maguro-chutoro-tabekurabe
+    ja: 厳選まぐろ中とろ食べ比べ（中とろ・炙りゆず塩）
+    ruby: "{厳選|げんせん}まぐろ{中|ちゅう}とろ{食|た}べ{比|くら}べ（{中|ちゅう}とろ・{炙|あぶ}りゆず{塩|しお}）"
+    kana: げんせんまぐろちゅうとろたべくらべ ちゅうとろ あぶりゆずしお
+    romaji: gensen maguro chūtoro tabekurabe (chūtoro, aburi yuzu-shio)
+    rows: [maguro/chutoro, fish-cooking/aburi]
+    mean:
+      ja: 厳選まぐろの中とろを、そのままと炙りゆず塩の2種で食べ比べる1皿
+      zh: 一盘同时品尝精选金枪鱼中腹的原味与炙烤柚子盐两种吃法
+      en: "Select tuna chūtoro two ways on one plate: plain, and torch-seared with yuzu salt"
+    image: gensen-maguro-chutoro-tabekurabe.webp
+  - id: maguro-tataki-gunkan
+    ja: まぐろたたき軍艦
+    ruby: "まぐろたたき{軍艦|ぐんかん}"
+    kana: まぐろたたきぐんかん
+    romaji: maguro tataki gunkan
+    rows: [maguro/negitoro, sushi-types/gunkan, fish-cooking/tataki]
+    mean:
+      ja: たたいて細かくしたまぐろにねぎをのせた軍艦。ネギトロと同じ形。この「たたき」は炙りではなく刻むこと
+      zh: 剁碎的金枪鱼加葱花的军舰卷，形式同葱花金枪鱼腩（ネギトロ）；这里的「たたき」指剁碎，不是炙烤；官网中文名「金枪鱼泥军舰」
+      en: "Gunkan of minced tuna topped with green onion, made like negitoro; here tataki means chopped, not seared; English-site name “Minced Tuna Gunkan”"
+    image: maguro-tataki-gunkan.webp
+  - id: tekkamaki
+    ja: 鉄火巻
+    ruby: "{鉄火巻|てっかまき}"
+    kana: てっかまき
+    romaji: tekkamaki
+    rows: [sushi-types/tekkamaki, sushi-types/hosomaki]
+    mean:
+      ja: まぐろの細巻き
+      zh: 金枪鱼细卷（铁火卷）
+      en: "Thin tuna roll"
+    image: tekkamaki.webp
+  # サーモン
+  - id: samon
+    ja: サーモン
+    kana: さーもん
+    romaji: sāmon
+    rows: [neta/samon]
+    mean:
+      ja: サーモンのにぎり（ノルウェー・チリ・アルゼンチン産）。同社は「看板ネタの一つ」とする
+      zh: 三文鱼握寿司（挪威、智利、阿根廷产）；公司称其为「招牌寿司料之一」
+      en: "Salmon nigiri (Norway, Chile, Argentina), which the chain calls one of its signature toppings"
+    signature: true
+    image: samon.webp
+  - id: otoro-samon
+    ja: 大とろサーモン
+    ruby: "{大|おお}とろサーモン"
+    kana: おおとろさーもん
+    romaji: ōtoro sāmon
+    rows: [neta/samon]
+    mean:
+      ja: マグロの大トロではなく、「大とろ」と名づけたサーモンのにぎり（ノルウェー・チリ・イギリス産など）
+      zh: 不是金枪鱼大腹，而是名为「大とろ」的三文鱼握寿司（挪威、智利、英国产等）
+      en: "Not tuna ōtoro: a salmon nigiri named “ōtoro” (Norway, Chile, UK etc.)"
+    image: otoro-samon.webp
+  # 白身・青魚
+  - id: ikejime-hamachi
+    ja: 活〆はまち
+    ruby: "{活〆|いけじめ}はまち"
+    kana: いけじめはまち
+    romaji: ikejime hamachi
+    rows: [neta/hamachi]
+    mean:
+      ja: 活け締め（生きた魚を締めて血抜きする処理）をした国産はまちのにぎり
+      zh: 经「活缔」（活鱼宰杀后放血）处理的日本产鰤鱼幼鱼（hamachi）握寿司
+      en: "Japanese hamachi (young yellowtail) nigiri; the fish is killed by ikejime (spiked alive, then bled)"
+    image: ikejime-hamachi.webp
+  - id: ikejime-madai
+    ja: 活〆まだい（四国・九州産）
+    ruby: "{活〆|いけじめ}まだい（{四国|しこく}・{九州産|きゅうしゅうさん}）"
+    kana: いけじめまだい しこく きゅうしゅうさん
+    romaji: ikejime madai (Shikoku, Kyūshū-san)
+    rows: [neta/madai, fish-cooking/shime]
+    mean:
+      ja: 活け締め（生きた魚を締めて血抜きする処理）の後に神経を抜いた真鯛のにぎり（四国・九州産）
+      zh: 经「活缔」（活鱼宰杀后放血）并抽除神经的真鲷握寿司（四国、九州产）
+      en: "Red sea bream (madai) nigiri from Shikoku and Kyūshū; the fish is killed by ikejime (spiked alive, then bled) and de-nerved"
+    image: ikejime-madai.webp
+  - id: miyagi-toro-iwashi
+    ja: 宮城県産とろいわし
+    ruby: "{宮城県産|みやぎけんさん}とろいわし"
+    kana: みやぎけんさんとろいわし
+    romaji: Miyagi-kensan toro-iwashi
+    rows: [neta/iwashi]
+    mean:
+      ja: 宮城県産のいわしのにぎり
+      zh: 宫城县产沙丁鱼握寿司
+      en: "Sardine nigiri, from Miyagi Prefecture"
+    image: miyagi-toro-iwashi.webp
+  - id: saba-oshizushi
+    ja: さばの押し寿司
+    ruby: "さばの{押|お}し{寿司|ずし}"
+    kana: さばのおしずし
+    romaji: saba no oshizushi
+    rows: [neta/saba, fish-cooking/shime]
+    mean:
+      ja: 酢でしめたさばの押し寿司（さばは中国産）。ガリと大葉を使う
+      zh: 用醋腌鲭鱼做的押寿司（鲭鱼产自中国），配甜醋姜片（ガリ）和紫苏叶；官网中文名「青花鱼押寿司」
+      en: "Pressed sushi of vinegar-cured mackerel (mackerel from China), with pickled ginger (gari) and shiso; English-site name “Soused Mackerel Pressed Sushi”"
+    image: saba-oshizushi.webp
+  - id: hikarimono-sanshumori
+    ja: 光り物三種盛り
+    ruby: "{光|ひか}り{物|もの}{三種盛|さんしゅも}り"
+    kana: ひかりものさんしゅもり
+    romaji: hikarimono sanshu-mori
+    rows: [neta/aji, neta/iwashi, neta/saba]
+    mean:
+      ja: あじ・とろいわし・しめさばの光り物3種を1皿に盛ったもの。北海道の店舗限定
+      zh: 竹荚鱼、沙丁鱼（とろいわし）、醋腌鲭鱼三种「光り物」（亮皮鱼）拼成一盘；仅北海道门店供应
+      en: "Three silver-skinned fish (hikarimono) on one plate: aji, toro-iwashi (sardine) and shimesaba; Hokkaidō shops only"
+    image: hikarimono-sanshumori.webp
+  - id: shiojime-kurosoi
+    ja: 北海道産塩〆黒そい（もみじおろしのせ）
+    ruby: "{北海道産|ほっかいどうさん}{塩〆|しおじめ}{黒|くろ}そい（もみじおろしのせ）"
+    kana: ほっかいどうさんしおじめくろそい もみじおろしのせ
+    romaji: Hokkaidō-san shiojime kurosoi (momiji-oroshi nose)
+    rows: [fish-cooking/shime]
+    mean:
+      ja: 北海道産のクロソイを塩で締めたにぎりに、もみじおろしをのせたもの（期間限定）
+      zh: 用盐腌紧（塩〆）的北海道产许氏平鲉（黒そい）握寿司，上放红叶萝卜泥（期间限定）
+      en: "Hokkaidō black rockfish (kurosoi) cured with salt (shiojime), topped with momiji-oroshi (red-tinted grated daikon); limited time"
+    image: shiojime-kurosoi.webp
+  # うなぎ・あなご
+  - id: aburi-unagi
+    ja: 炙りうなぎ
+    ruby: "{炙|あぶ}りうなぎ"
+    kana: あぶりうなぎ
+    romaji: aburi unagi
+    rows: [neta/unagi, fish-cooking/aburi]
+    mean:
+      ja: 炙ったうなぎのにぎり（中国産）
+      zh: 炙烤鳗鱼握寿司（中国产）
+      en: "Seared eel (unagi) nigiri; eel from China"
+    image: aburi-unagi.webp
+  - id: ni-anago
+    ja: 煮あなご
+    ruby: "{煮|に}あなご"
+    kana: にあなご
+    romaji: ni-anago
+    rows: [neta/anago]
+    mean:
+      ja: 煮た穴子のにぎり（中国産）
+      zh: 煮星鳗握寿司（中国产）
+      en: "Simmered conger eel (anago) nigiri; conger from China"
+    image: ni-anago.webp
+  # いか・たこ・えび・貝
+  - id: akaika
+    ja: アカイカ
+    kana: あかいか
+    romaji: akaika
+    rows: [neta/ika]
+    mean:
+      ja: アカイカのにぎり（日本・中国産）
+      zh: 「アカイカ」（一种鱿鱼）握寿司（日本、中国产）
+      en: "Nigiri of akaika, a kind of squid (Japan, China)"
+    image: akaika.webp
+  - id: madako
+    ja: 真だこ
+    ruby: "{真|ま}だこ"
+    kana: まだこ
+    romaji: madako
+    rows: [neta/tako]
+    mean:
+      ja: マダコのにぎり（中国産）
+      zh: 真蛸（マダコ）握寿司（中国产）
+      en: "Common octopus (madako) nigiri; octopus from China"
+    image: madako.webp
+  - id: ebi
+    ja: えび
+    kana: えび
+    romaji: ebi
+    rows: [neta/ebi]
+    mean:
+      ja: 火を通したえびのにぎり（タイ・ベトナム・インドネシア・インド産）
+      zh: 熟虾握寿司（泰国、越南、印度尼西亚、印度产）；官网中文名「蒸虾」
+      en: "Cooked shrimp nigiri (Thailand, Vietnam, Indonesia, India); English-site name “Boiled Shrimp”"
+    image: ebi.webp
+  - id: aburi-ebi-mayo
+    ja: 炙りえびマヨ
+    ruby: "{炙|あぶ}りえびマヨ"
+    kana: あぶりえびまよ
+    romaji: aburi ebi mayo
+    rows: [fish-cooking/aburi, neta/ebi]
+    mean:
+      ja: えびにマヨネーズをのせて炙ったにぎり
+      zh: 虾上放蛋黄酱后炙烤的握寿司
+      en: "Shrimp nigiri topped with mayonnaise and torch-seared; English-site name “Boiled & Seared Shrimp w/ Mayo”"
+    image: aburi-ebi-mayo.webp
+  - id: ama-ebi
+    ja: 甘えび
+    ruby: "{甘|あま}えび"
+    kana: あまえび
+    romaji: amaebi
+    rows: [neta/amaebi]
+    mean:
+      ja: 甘えびのにぎり（デンマーク・カナダ・グリーンランド産など）
+      zh: 甜虾握寿司（丹麦、加拿大、格陵兰产等）
+      en: "Sweet shrimp (amaebi) nigiri (Denmark, Canada, Greenland etc.)"
+    image: ama-ebi.webp
+  - id: hotate
+    ja: ほたて(北海道・青森県産)
+    ruby: "ほたて({北海道|ほっかいどう}・{青森県産|あおもりけんさん})"
+    kana: ほたて ほっかいどう あおもりけんさん
+    romaji: hotate (Hokkaidō, Aomori-kensan)
+    rows: [neta/hotate]
+    mean:
+      ja: 北海道・青森県産のほたてのにぎり
+      zh: 北海道、青森县产扇贝握寿司
+      en: "Scallop (hotate) nigiri, from Hokkaidō and Aomori"
+    image: hotate.webp
+  # 軍艦・魚卵・かに・たまご
+  - id: uni-gunkan
+    ja: うに軍艦
+    ruby: "うに{軍艦|ぐんかん}"
+    kana: うにぐんかん
+    romaji: uni gunkan
+    rows: [neta/uni, sushi-types/gunkan]
+    mean:
+      ja: チリ産うにの軍艦。北海道の店舗限定
+      zh: 智利产海胆军舰卷；仅北海道门店供应
+      en: "Sea urchin (uni) gunkan, uni from Chile; Hokkaidō shops only"
+    image: uni-gunkan.webp
+  - id: ikura
+    ja: いくら
+    kana: いくら
+    romaji: ikura
+    rows: [neta/ikura, sushi-types/gunkan]
+    mean:
+      ja: いくらの軍艦（アメリカ・日本・ロシア産）
+      zh: イクラ（鲑鳟鱼卵）军舰卷（美国、日本、俄罗斯产）
+      en: "Ikura (salmonid roe) gunkan (US, Japan, Russia)"
+    image: ikura.webp
+  - id: kani-gunkan
+    ja: かに軍艦
+    ruby: "かに{軍艦|ぐんかん}"
+    kana: かにぐんかん
+    romaji: kani gunkan
+    rows: [neta/kani, sushi-types/gunkan]
+    mean:
+      ja: 本ズワイガニの身の軍艦（原料はロシア・カナダ産、ベトナム・中国で加工）
+      zh: 雪蟹（本楚蟹）蟹肉军舰卷（原料产自俄罗斯、加拿大，在越南、中国加工）
+      en: "Gunkan of snow crab (hon-zuwaigani) meat; crab from Russia and Canada, processed in Vietnam and China"
+    image: kani-gunkan.webp
+  - id: umadashi-tamago
+    ja: 旨だしたまご
+    ruby: "{旨|うま}だしたまご"
+    kana: うまだしたまご
+    romaji: umadashi tamago
+    rows: [neta/tamago]
+    mean:
+      ja: だし入りの玉子焼きのにぎり（鶏卵は日本・タイ産）
+      zh: 加高汤的日式煎蛋握寿司（鸡蛋产自日本、泰国）；官网中文名「玉子烧 手握寿司」
+      en: "Nigiri of rolled omelet made with dashi (eggs from Japan, Thailand); English-site name “Japanese Style Broth Omelet”"
+    image: umadashi-tamago.webp
+  - id: engawa
+    ja: えんがわ
+    kana: えんがわ
+    romaji: engawa
+    rows: [fish-parts/engawa]
+    mean:
+      ja: カレイのえんがわ（ひれの付け根の身）のにぎり（アメリカ・カナダ・アイスランド産など）
+      zh: 鲽鱼鳍边肉（えんがわ）握寿司（美国、加拿大、冰岛产等）
+      en: "Engawa, the fin-edge meat of flounder (karei), as nigiri (US, Canada, Iceland etc.)"
+    image: engawa.webp
+  - id: ankimo-gunkan
+    ja: あんきも軍艦
+    ruby: "あんきも{軍艦|ぐんかん}"
+    kana: あんきもぐんかん
+    romaji: ankimo gunkan
+    rows: [fish-parts/ankimo, sushi-types/gunkan]
+    mean:
+      ja: あん肝（アンコウの肝）にねぎをのせた軍艦（期間限定）
+      zh: 鮟鱇鱼肝（あん肝）加葱花的军舰卷（期间限定）
+      en: "Gunkan of ankimo (monkfish liver) topped with green onion; limited time"
+    image: ankimo-gunkan.webp
+  # 巻物・いなり・手巻き
+  - id: kappamaki
+    ja: かっぱ巻
+    ruby: "かっぱ{巻|まき}"
+    kana: かっぱまき
+    romaji: kappamaki
+    rows: [sushi-types/kappamaki, sushi-types/hosomaki]
+    mean:
+      ja: 国産きゅうりの細巻き
+      zh: 日本产黄瓜细卷；官网中文名「黄瓜卷」
+      en: "Thin roll of Japanese cucumber; English-site name “Cucumber Rolls”"
+    image: kappamaki.webp
+  - id: inari
+    ja: いなり(ごま入り)
+    ruby: "いなり(ごま{入|い}り)"
+    kana: いなり ごまいり
+    romaji: inari (goma-iri)
+    rows: [sushi-types/inari]
+    mean:
+      ja: 油揚げに酢飯を詰めたいなり寿司。白ごま・黒ごま入り
+      zh: 油豆腐皮包醋饭的稻荷寿司，加白芝麻和黑芝麻；官网中文名「稻荷寿司（配芝麻）」
+      en: "Inari-zushi, sushi rice in a fried-tofu pouch, with white and black sesame; English-site name “Fried Soybean Curd Wrap”"
+    image: inari.webp
+  - id: temaki-set
+    ja: おうちではま寿司 手巻きセット
+    ruby: "おうちではま{寿司|ずし} {手巻|てま}きセット"
+    kana: おうちではまずし てまきせっと
+    romaji: ouchi de Hamazushi temaki setto
+    rows: [sushi-types/temaki]
+    mean:
+      ja: ネタ・シャリ・海苔を詰め合わせた持ち帰り用の手巻き寿司セット（2〜3人前）
+      zh: 外带用的手卷寿司套装，含寿司料、醋饭（シャリ）和海苔（2～3人份）
+      en: "Takeout hand-roll (temaki) kit of toppings, sushi rice and nori, for two or three"
+    image: temaki-set.webp
+  # 天ぷら・揚げ物
+  - id: ebiten-nigiri
+    ja: えび天握り
+    ruby: "えび{天|てん}{握|にぎ}り"
+    kana: えびてんにぎり
+    romaji: ebiten nigiri
+    rows: [fish-cooking/tenpura, sushi-types/nigiri, neta/ebi]
+    mean:
+      ja: えびの天ぷらをのせたにぎり（えびはタイ・ベトナム産など）
+      zh: 铺炸虾天妇罗的握寿司（虾产自泰国、越南等）；官网中文名「炸虾天妇罗」
+      en: "Nigiri topped with shrimp tempura (shrimp from Thailand, Vietnam etc.); English-site name “Shrimp Tempura”"
+    image: ebiten-nigiri.webp
+  - id: nankotsu-karaage
+    ja: なんこつのから揚げ
+    ruby: "なんこつのから{揚|あ}げ"
+    kana: なんこつのからあげ
+    romaji: nankotsu no karaage
+    rows: [fish-cooking/karaage, chicken/nankotsu]
+    mean:
+      ja: 鶏の軟骨（なんこつ）のから揚げ（ブラジル・タイ・日本産）。レモン付き
+      zh: 炸鸡软骨（巴西、泰国、日本产），配柠檬；官网中文名「炸鸡软骨」
+      en: "Deep-fried chicken cartilage (Brazil, Thailand, Japan), with lemon; English-site name “Fried Chicken Cartilage”"
+    image: nankotsu-karaage.webp
+  # シャリ
+  - id: tsuika-shari
+    ja: 追加シャリ
+    ruby: "{追加|ついか}シャリ"
+    kana: ついかしゃり
+    romaji: tsuika shari
+    rows: [sushi-words/shari]
+    mean:
+      ja: 持ち帰りで追加するシャリ（すし飯）12貫分。米はすべて国産（同社）
+      zh: 外带时加购的醋饭（シャリ），12贯份；米全部为日本国产（公司说明）
+      en: "Extra shari (sushi rice) for takeout, enough for 12 pieces; the chain uses only Japanese rice"
+    image: tsuika-shari.webp
+sources:
+  - { title: "はま寿司公式サイト メニュー紹介", url: "https://www.hama-sushi.co.jp/menu/" }
+  - { title: "はま寿司 原産地情報（2026年10月1日更新、PDF）", url: "https://www.hama-sushi.co.jp/assets/menu/pdf/origin.pdf" }
+  - { title: "はま寿司のこだわり", url: "https://www.hama-sushi.co.jp/concept/" }
+  - { title: "はま寿司「はま寿司の牡蠣と旨ねた秋祭り 第3弾」開催（2026年10月13日）", url: "https://www.hama-sushi.co.jp/topics/2026/1013000868.html" }
+  - { title: "HAMA-SUSHI English site (Menu)", url: "https://en.hama-sushi.co.jp/" }
+  - { title: "滨寿司 中文网站（菜单）", url: "https://cn.hama-sushi.co.jp/" }
+  - { title: "株式会社はま寿司 会社案内", url: "https://www.hama-sushi.co.jp/company/" }
+  - { title: "株式会社はま寿司 会社概要・沿革（マイナビ2027）", url: "https://job.mynavi.jp/27/pc/search/corp83536/outline.html" }
+  - { title: "ゼンショーホールディングス はま寿司 月次推移（店舗数）", url: "https://www.zensho.co.jp/jp/ir/finance/monthly/hamasushi/" }

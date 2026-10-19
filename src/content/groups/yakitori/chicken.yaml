@@ -239,16 +239,15 @@ items:
     zh: "心脏。规格上与肝脏合称“きも”，单独出售心脏时标作“心脏”“ハート”或“ハツ”"
     en: "The heart. The standards group heart and liver together as kimo; heart sold on its own is labelled shinzō, hāto or hatsu"
   note:
-    ja: "「ハツ」は英語 heart から来た語で、品書きでは鳥貴族が「ハート（ハツ）」、秋吉が「しんぞう」と書くなど表記が分かれる。周りの脂肪や血管を取り除き血抜きするとクセのない味になり、規格にも血抜きして上部を除いた「ハツ（血ぬき）」がある。100gあたり186kcal・脂質15.5g（生）で、肝臓（3.1g）や砂肝（1.8g）より脂質が多い。大動脈がつながる上部「ハツモト」は1羽から取れる量が少なく、柔らかく歯切れがよい。"
-    zh: "“ハツ”来自英语heart，菜单写法不一：鸟贵族写“ハート（ハツ）”，秋吉写“しんぞう”（心脏）。去掉周围的脂肪和血管并放血后没有腥膻味，规格中也有放过血、切除上部的“ハツ（血ぬき）”。每100克（生）186千卡、脂肪15.5克，脂肪比鸡肝（3.1克）和鸡胗（1.8克）多。连着主动脉的上端叫“ハツモト”（心根），一只鸡只能取下一点，肉质柔软、脆爽。"
-    en: "Hatsu comes from English “heart”, and menus differ – Torikizoku writes hāto (hatsu), Akiyoshi shinzō (“heart”). Trimmed of the surrounding fat and vessels and bled, it has no off-flavour, and the standard lists a bled, top-trimmed “hatsu (chinuki)”. It has 186 kcal and 15.5 g fat per 100 g (raw) – far more fat than liver (3.1 g) or gizzard (1.8 g). The top where the aorta joins, hatsumoto, yields only a little per bird and is tender with a clean bite."
+    ja: "「ハツ」は英語 heart から来た語で、品書きでは鳥貴族のように「ハート（ハツ）」と書く店もある。周りの脂肪や血管を取り除き血抜きするとクセのない味になり、規格にも血抜きして上部を除いた「ハツ（血ぬき）」がある。100gあたり186kcal・脂質15.5g（生）で、肝臓（3.1g）や砂肝（1.8g）より脂質が多い。大動脈がつながる上部「ハツモト」は1羽から取れる量が少なく、柔らかく歯切れがよい。"
+    zh: "“ハツ”来自英语heart，菜单写法不一，例如鸟贵族写作“ハート（ハツ）”。去掉周围的脂肪和血管并放血后没有腥膻味，规格中也有放过血、切除上部的“ハツ（血ぬき）”。每100克（生）186千卡、脂肪15.5克，脂肪比鸡肝（3.1克）和鸡胗（1.8克）多。连着主动脉的上端叫“ハツモト”（心根），一只鸡只能取下一点，肉质柔软、脆爽。"
+    en: "Hatsu comes from English “heart”, and menus differ – Torikizoku, for one, writes hāto (hatsu). Trimmed of the surrounding fat and vessels and bled, it has no off-flavour, and the standard lists a bled, top-trimmed “hatsu (chinuki)”. It has 186 kcal and 15.5 g fat per 100 g (raw) – far more fat than liver (3.1 g) or gizzard (1.8 g). The top where the aorta joins, hatsumoto, yields only a little per bird and is tender with a clean bite."
   sources:
   - { title: "コトバンク「ハツ」（デジタル大辞泉・精選版 日本国語大辞典）", url: "https://kotobank.jp/word/%E3%81%AF%E3%81%A4-3216146" }
   - { title: "日本食鳥協会『食鶏取引規格・食鶏小売規格』（農林水産省畜産局長通達、令和8年4月改正）", url: "https://www.j-chicken.jp/wp-chicken/wp-content/uploads/2026/07/%E9%A3%9F%E9%B6%8F%E5%8F%96%E5%BC%95-%E5%B0%8F%E5%A3%B2%E8%A6%8F%E6%A0%BC-R7%EF%BC%88%E8%A7%A3%E4%BD%93%E5%93%81%E5%9B%B3%E8%A6%8B%E9%96%8B%E3%81%8D%EF%BC%89.pdf" }
   - { title: "農林水産省 aff 2020年9月号「鶏の部位図鑑」ポスター（監修：日本食肉消費総合センター）", url: "https://www.maff.go.jp/j/pr/aff/2009/pdf/aff2009_02_poster05.pdf" }
   - { title: "文部科学省「日本食品標準成分表（八訂）増補2023年」", url: "https://www.mext.go.jp/a_menu/syokuhinseibun/mext_00001.html" }
   - { title: "鳥貴族 メニュー「焼鳥」", url: "https://torikizoku.co.jp/menu/yakitori/" }
-  - { title: "やきとりの名門 秋吉 メニュー", url: "https://www.akiyoshi.co.jp/menu/" }
 - id: reba
   ja: レバー
   kana: ればー
