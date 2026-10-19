@@ -1,0 +1,10 @@
+- file: maff.jpg
+  kind: raw
+  caption:
+    ja: いくらの醤油漬け
+    zh: 酱油腌鲑鱼籽
+    en: Ikura marinated in soy sauce
+  source:
+    title: 農林水産省「うちの郷土料理」いくらの醤油漬け（北海道）
+    url: https://www.maff.go.jp/j/keikaku/syokubunka/k_ryouri/search_menu/menu/ikuranoshoyuzuke_hokkaido.html
+    license: 公共データ利用規約（第1.0版）

@@ -1,0 +1,11 @@
+- file: commons.jpg
+  kind: dish
+  caption:
+    ja: "ねぎま"
+    zh: "鸡肉大葱串"
+    en: "Negima yakitori"
+  source:
+    title: "Wikimedia Commons「Yakitori 001.jpg」"
+    url: "https://commons.wikimedia.org/wiki/File:Yakitori_001.jpg"
+    license: "CC0 1.0"
+    author: "Ocdp"

@@ -1,0 +1,155 @@
+order: 3
+ja: 部位
+zh: 鱼的部位
+en: Fish parts
+items:
+  - id: kama
+    ja: カマ
+    kana: かま
+    romaji: kama
+    mean:
+      ja: "魚のえら下・胸びれまわりの身"
+      zh: "鱼下巴（鳃下胸鳍根部的肉）"
+      en: "Fish collar"
+    part:
+      ja: "えらの下の、胸びれが付いている部分"
+      zh: "鱼鳃下方、长着胸鳍的部位"
+      en: "The section below the gills where the pectoral fin is attached"
+    note:
+      ja: "名は、形が草刈りの「鎌」に似ていることによる。マダイのカマは脂がのって濃厚で塩焼きや照り焼きに向き、マグロのカマは塩焼きか煮付けにする。マグロの大トロ（腹カミ）はカマに接する腹側の部分で、頭部からはカマのほか「カマトロ」「脳天」「ホホ肉」なども切り出され、かつての端材が今は希少部位として流通している。"
+      zh: "名字来自它的形状像割草用的“鎌”（镰刀）。真鲷的カマ脂肪丰富、味道浓郁，适合盐烤或照烧；金枪鱼的カマ则做盐烤或炖煮。金枪鱼的大腹（腹カミ）就是紧挨カマ的腹侧部分；头部除了カマ还能切出“カマトロ”“脳天”（头顶肉）“颊肉”等，这些过去的边角料如今都作为稀少部位流通。"
+      en: "The name comes from its likeness to a kama, a sickle. Sea-bream collar is rich and fatty and suits salt-grilling or teriyaki, while tuna collar is salt-grilled or simmered. Tuna ōtoro (hara-kami) is the belly section adjoining the collar, and the head also yields kama-toro, nōten and cheek meat — former trimmings now sold as rare cuts."
+    sources:
+      - title: "コトバンク「鎌」（精選版 日本国語大辞典）"
+        url: "https://kotobank.jp/word/%E9%8E%8C-46504"
+      - title: "サライ.jp「まぐろの目利きになる！日本で食べられている「まぐろ」の種類と部位の違い」（2016年12月1日）"
+        url: "https://serai.jp/gourmet/113599"
+      - title: "Umios umito.「なぜ「おかしら付き」といえばタイなのか──海と祝いの文化をひもとく」"
+        url: "https://umito.umios.com/article181/"
+      - title: "nippon.com「マグロはトロだけじゃない！ホホ肉、中落ちなど「端材」に脚光」（2019年12月22日）"
+        url: "https://www.nippon.com/ja/guide-to-japan/gu900131/"
+      - title: "現代ビジネス（川本大吾・時事通信社水産部長）「築地の「カラスの餌」が豊洲で「希少部位」に！驚きのマグロ消費史」（2019年11月20日）"
+        url: "https://gendai.media/articles/-/68247"
+      - title: "農林水産省 aff 2015年8月号 特集「クロマグロ」（水産庁サイト掲載PDF）（大トロ：腹カミ）"
+        url: "https://www.jfa.maff.go.jp/j/koho/aff/pdf/201508.pdf"
+
+  - id: nakaochi
+    ja: 中落ち
+    ruby: "{中落|なかお}ち"
+    kana: なかおち
+    romaji: nakaochi
+    mean:
+      ja: "中骨とそれに付いた身"
+      zh: "鱼脊骨及其附着的肉"
+      en: "Backbone and the meat left on it"
+    part:
+      ja: "魚を三枚におろしたときの中骨の部分と、そこに付いている身"
+      zh: "把鱼剖成三片（三枚おろし）后剩下的中骨部分，以及附在上面的肉"
+      en: "The backbone left after filleting a fish into three pieces (sanmai-oroshi), and the meat still on it"
+    note:
+      ja: "マグロの中落ちは太い中骨に付いた身で、丼の具材にもなる比較的なじみのある部位であり、骨ごと出してスプーンで身を削りながら食べさせる店もある。かつて築地市場では中落ちなど骨まわりの身はほとんど廃棄物扱いで、関係者が骨からかき取って食べる程度だったが、今は「本マグロ中落ち」などとして品書きに並ぶ。タイの中骨は上品で深いうま味の出汁が出るため、鯛めしや味噌汁、茶碗蒸しの出汁に使われる。"
+      zh: "金枪鱼的中落ち是附在粗大脊骨上的肉，常用作盖饭的料，算是比较常见的部位；也有店把整根骨头端上桌，让客人用勺子自己刮着吃。从前在筑地市场，中落ち这类骨边肉几乎被当作废料，只有市场里的人从骨头上刮下来吃；如今却以“本マグロ中落ち”等名目出现在菜单上。真鲷的中骨能熬出清雅浓厚的高汤，用来做鲷鱼饭、味噌汤和茶碗蒸。"
+      en: "Tuna nakaochi is the meat on the thick backbone, a fairly familiar cut often piled on rice bowls, and some restaurants bring the bone to the table for diners to scrape with a spoon. At the old Tsukiji market such bone-side meat was treated almost as waste, eaten only by market hands who scraped it off; now it appears on menus as “bluefin nakaochi”. Sea-bream backbone gives a refined, deep stock used for tai-meshi rice, miso soup and chawanmushi."
+    sources:
+      - title: "コトバンク「中落ち」（デジタル大辞泉）"
+        url: "https://kotobank.jp/word/%E4%B8%AD%E8%90%BD%E3%81%A1-587615"
+      - title: "nippon.com「マグロはトロだけじゃない！ホホ肉、中落ちなど「端材」に脚光」（2019年12月22日）"
+        url: "https://www.nippon.com/ja/guide-to-japan/gu900131/"
+      - title: "現代ビジネス（川本大吾・時事通信社水産部長）「築地の「カラスの餌」が豊洲で「希少部位」に！驚きのマグロ消費史」（2019年11月20日）"
+        url: "https://gendai.media/articles/-/68247"
+      - title: "Umios umito.「なぜ「おかしら付き」といえばタイなのか──海と祝いの文化をひもとく」"
+        url: "https://umito.umios.com/article181/"
+
+  - id: harasu
+    ja: ハラス
+    kana: はらす
+    romaji: harasu
+    mean:
+      ja: "サケ・マスの腹身"
+      zh: "鲑鱼腹肉（三文鱼腩）"
+      en: "Salmon belly"
+    part:
+      ja: "サケなどの腹側で、内臓のまわりの脂ののった身。「腹身（はらみ）」ともいう"
+      zh: "鲑鱼等的腹侧、包着内脏的那层多脂的肉，也叫“腹身”（はらみ）"
+      en: "The fatty belly flap around the guts of a salmon or similar fish, also called harami"
+    note:
+      ja: "デジタル大辞泉は「魚、特にサケの腹の肉。内臓のまわりの部分で、脂ののりがよい」と定義し、語源は未詳で、多く片仮名で「ハラス」と書くとする。同辞典は「腹身（はらみ）」の語義にもサケなどの腹の肉を挙げてハラスと同じものとしており、牛・豚の横隔膜を指す焼肉の「ハラミ」とは別の部位である。サケ・マスの身の橙色は餌に由来するアスタキサンチンによるもので、色素たんぱく質の量による区分ではサケは白身魚に入る。"
+      zh: "《数码大辞泉》（デジタル大辞泉）的释义是“鱼、尤其是鲑鱼腹部的肉；包着内脏的部分，脂肪丰富”，并说明词源不详、多用片假名写作“ハラス”。该辞典在“腹身”（はらみ）条下也列有“鲑鱼等腹部的肉”，视为与ハラス同义；这与烤肉里指牛、猪横膈膜的“ハラミ”是不同的部位。鲑鳟鱼肉的橙色来自饵料中的虾青素，按色素蛋白含量划分，鲑鱼属于白肉鱼。"
+      en: "The Digital Daijisen dictionary defines harasu as “the belly meat of fish, especially salmon — the part around the guts, rich in fat”, notes that its origin is unknown and that it is usually written in katakana. It also lists harami (腹身) as salmon belly, the same thing as harasu — a different cut from the harami of yakiniku, which is beef or pork diaphragm. Salmon’s orange colour comes from astaxanthin in its food, and by pigment-protein content salmon is classed as a white-fleshed fish."
+    sources:
+      - title: "Weblio辞書「ハラス」（デジタル大辞泉）"
+        url: "https://www.weblio.jp/content/%E3%83%8F%E3%83%A9%E3%82%B9"
+      - title: "コトバンク「腹身」（デジタル大辞泉）"
+        url: "https://kotobank.jp/word/%E8%85%B9%E8%BA%AB-605112"
+      - title: "Umios umito.「赤身魚と白身魚の違いは生態にあり！？」"
+        url: "https://umito.umios.com/article161/"
+
+  - id: engawa
+    ja: エンガワ
+    kana: えんがわ
+    romaji: engawa
+    mean:
+      ja: "ヒラメ・カレイのひれの付け根の身"
+      zh: "比目鱼鳍边肉（裙边）"
+      en: "Flatfish fin-base muscle"
+    part:
+      ja: "ヒラメ・カレイの背びれ・しりびれの付け根にある担鰭骨（たんきこつ）に付いた筋肉"
+      zh: "牙鲆、鲽鱼背鳍和臀鳍根部的担鳍骨上附着的肌肉"
+      en: "The muscle on the pterygiophores (tankikotsu), the bones at the base of a flounder’s or flatfish’s dorsal and anal fins"
+    note:
+      ja: "ヒラメ・カレイは体を波打たせて泳ぎ砂に潜るため、ひれをよく動かしてこの筋肉が発達し、コリコリした歯ごたえになる。名は筋の模様や魚の縁に沿って付く様子が家屋の「縁側」に似ることからといわれ、泉鏡花『湯島詣』（1899年）に「比良目は縁側に限る」と見える。1尾から4本しか取れず（しりびれ側の方が大きい）、ヒラメのものは身が締まって脂が少なく、運動量の少ないカレイのものは柔らかく脂が多い。回転寿司で「よく食べるネタ」8位（2024年）に入るほど普及したのは、米国・カナダ・アイスランド・デンマークなどから輸入されるカラスガレイ・アブラガレイ・オヒョウなど大型カレイ類を使うためである。"
+      zh: "牙鲆和鲽鱼靠身体波浪般起伏游动，还会钻进沙里，鳍动得多，这块肌肉因此发达，吃起来脆而有嚼劲。名字据说是因为肌肉的纹路以及沿鱼身边缘排列的样子，像日式房屋的“縁側”（檐廊）；泉镜花《汤岛诣》（1899年）中已有“比良目は縁側に限る”（牙鲆就数裙边最好）一句。一条鱼只能取4条（臀鳍一侧比背鳍一侧大）；牙鲆的裙边紧实、脂肪少，运动量小的鲽鱼的则柔软、脂肪多。它之所以普及到在回转寿司“常吃的寿司料”中排第8位（2024年），是因为用的是从美国、加拿大、冰岛、丹麦等地进口的格陵兰庸鲽（カラスガレイ）、箭齿鲽类（アブラガレイ）、太平洋大比目鱼（オヒョウ）等大型鲽类。"
+      en: "Flounders and flatfish swim by rippling their bodies and burrow into sand, working their fins hard, so this muscle is well developed and pleasantly crunchy. The name is said to come from its striped grain and the way it runs along the fish’s edge like the engawa veranda of a Japanese house; Izumi Kyōka’s Yushima Mōde (1899) already says “for hirame, nothing beats the engawa”. A fish yields only four strips (the anal-fin side larger), flounder engawa being firm and lean while that of less active flatfish is softer and fattier. It became the eighth most-eaten topping at conveyor-belt sushi (2024) because chains use large imported flatfish — Greenland halibut, Kamchatka flounder and Pacific halibut — mainly from the US, Canada, Iceland and Denmark."
+    sources:
+      - title: "Umios umito.「寿司ネタで人気の“えんがわ”とは？」（2025年1月31日）"
+        url: "https://umito.umios.com/article173/"
+      - title: "コトバンク「縁側」（デジタル大辞泉・精選版 日本国語大辞典）"
+        url: "https://kotobank.jp/word/%E7%B8%81%E5%81%B4-447425"
+
+  - id: shirako
+    ja: 白子
+    ruby: "{白子|しらこ}"
+    kana: しらこ
+    romaji: shirako
+    mean:
+      ja: "魚の精巣"
+      zh: "鱼白（鱼的精巢）"
+      en: "Milt (fish testes)"
+    part:
+      ja: "雄の魚の腹にある乳白色の精巣。食用にするのは主にマダラ・フグ・アンコウ・タイなど"
+      zh: "雄鱼腹中乳白色的精巢；主要食用真鳕、河豚、鮟鱇、鲷鱼等的"
+      en: "The milky-white testes in the belly of a male fish; mainly those of Pacific cod, pufferfish, monkfish and sea bream are eaten"
+    note:
+      ja: "卵巣を「真子（まこ）」と呼ぶのに対する語で、白くやわらかく加熱してもかたくならず、旬は冬。マダラの白子は大きく複雑なひだを持ち「菊子（きくこ）」とも呼ばれ、古くは「雲腸（くもわた）」「菊腸」と呼ばれて賞味された。白子を食べる文化は海外にはほとんどなく、産卵期の魚は卵を持つ雌の方が高値になるのがふつうだが、マダラは日本では白子のために雄の方が価値が高く、アラスカなどから空輸もされる。フグ料理ではフグの白子が、ふわふわした食感と甘みから最上とされる。"
+      zh: "与把卵巢叫“真子”（まこ）相对；白而柔软，加热也不会变硬，旬期在冬季。真鳕的白子个大、褶皱复杂，又叫“菊子”（きくこ），古时称“雲腸”（くもわた）、“菊腸”，备受赏味。海外几乎没有吃白子的饮食文化；产卵期的鱼通常是带卵的雌鱼更值钱，唯独真鳕在日本因为白子而雄鱼更贵，也有从阿拉斯加等地空运来的。河豚料理中，河豚白子以绵软的口感和甜味被视为极品。"
+      en: "Shirako is the counterpart of mako, the roe sac; it is white and soft, stays tender when cooked, and is best in winter. Pacific cod milt is large and intricately folded, also called kikuko (“chrysanthemum child”), and was once relished as kumowata (“cloud guts”) or kikuwata. Eating milt is almost unknown abroad; normally the roe-bearing female fetches more in spawning season, but in Japan the male Pacific cod is worth more for its milt, some of it flown in from Alaska. In pufferfish cuisine, fugu milt is rated the finest for its fluffy texture and sweetness."
+    sources:
+      - title: "コトバンク「白子」（デジタル大辞泉・改訂新版 世界大百科事典・日本大百科全書）"
+        url: "https://kotobank.jp/word/%E7%99%BD%E5%AD%90-80823"
+      - title: "Umios umito.「マダラ(真鱈)、オスのほうが価値ある魚」"
+        url: "https://umito.umios.com/article29/"
+
+  - id: ankimo
+    ja: あん肝
+    ruby: "あん{肝|きも}"
+    kana: あんきも
+    romaji: ankimo
+    mean:
+      ja: "アンコウの肝臓"
+      zh: "鮟鱇鱼肝"
+      en: "Monkfish liver"
+    part:
+      ja: "アンコウ類の肝臓。塩をして簀で巻いて蒸し、冷やしてから切って、ポン酢やわさび醤油で食べる"
+      zh: "鮟鱇鱼的肝脏；抹盐后用竹帘卷起蒸熟，冷却后切片，蘸橙醋酱油或山葵酱油吃"
+      en: "The liver of the monkfish, salted, rolled in a bamboo mat, steamed and chilled, then sliced and eaten with ponzu or wasabi soy sauce"
+    note:
+      ja: "肝の脂質は100gあたり41.9gと身（0.2g）の約200倍で、「海のフォアグラ」とも呼ばれる。アンコウは身が柔らかくまな板ではさばきにくいため、口に鉤をかけて吊るして切り分ける「吊るし切り」が行われ、肝・皮・水袋（胃）・ヌノ（卵巣）・エラ・トモ（ひれ）・柳肉（身）などを「七つ道具」と呼ぶ（数え方には諸説ある）。旬は冬で「アンコウは梅が咲くまで」といわれ、江戸時代の『本朝食鑑』も肝が特にうまいと記している。2017年の水揚げ量日本一は下関港の720トンで、茨城県など常磐沖も冬の産地として知られる。"
+      zh: "鮟鱇肝每100克含脂质41.9克，约是鱼肉（0.2克）的200倍，因此又被称为“海里的鹅肝”。鮟鱇鱼肉软、很难在砧板上处理，所以用钩子挂住鱼嘴吊起来分切，称为“吊るし切り”；肝、皮、水袋（胃）、ヌノ（卵巢）、鳃、トモ（鳍）、柳肉（鱼身）等合称“七つ道具”（七件宝，具体算法说法不一）。旬期在冬季，俗话说“鮟鱇吃到梅花开”；江户时代的《本朝食鉴》也写道肝特别美味。2017年鮟鱇卸货量全国第一的是下关港（720吨），茨城县等常磐近海也是著名的冬季产地。"
+      en: "The liver holds 41.9 g of fat per 100 g, about 200 times the flesh (0.2 g), which earns it the name “foie gras of the sea”. Because the soft fish is hard to handle on a board, it is hung from a hook through the mouth and cut down piece by piece (tsurushi-giri), and liver, skin, stomach, ovary (nuno), gills, fins (tomo) and flesh (yanagi-niku) are called its “seven tools” — the list varies by source. It is best in winter (“monkfish until the plum blossoms”), and the Edo-period Honchō Shokkan already singled out the liver as especially good. Shimonoseki port landed the most monkfish in 2017, 720 t, and Ibaraki and the rest of the Jōban coast are known winter sources."
+    sources:
+      - title: "コトバンク「鮟肝」（デジタル大辞泉・精選版 日本国語大辞典・和・洋・中・エスニック 世界の料理がわかる辞典）"
+        url: "https://kotobank.jp/word/%E9%AE%9F%E8%82%9D-429104"
+      - title: "コトバンク「アンコウ」（日本大百科全書・改訂新版 世界大百科事典・食の医学館・地域ブランド・名産品）"
+        url: "https://kotobank.jp/word/%E3%81%82%E3%82%93%E3%81%93%E3%81%86-3142370"
+      - title: "Umios umito.「あんこうは江戸時代からの冬の珍味、しかも捨てるところがない魚？」"
+        url: "https://umito.umios.com/article34/"

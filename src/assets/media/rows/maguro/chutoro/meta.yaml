@@ -1,0 +1,11 @@
+- file: chutoro-nigiri.jpg
+  kind: dish
+  caption:
+    ja: "クロマグロ中トロのにぎり"
+    zh: "蓝鳍金枪鱼中腹（中トロ）握寿司"
+    en: "Bluefin chūtoro nigiri"
+  source:
+    title: "Tachigui-Sakurazushi Ikebukuro Tokyo 13.jpg（Wikimedia Commons）"
+    url: "https://commons.wikimedia.org/wiki/File:Tachigui-Sakurazushi_Ikebukuro_Tokyo_13.jpg"
+    license: "CC BY 4.0"
+    author: "RuinDig/Yuki Uchida"

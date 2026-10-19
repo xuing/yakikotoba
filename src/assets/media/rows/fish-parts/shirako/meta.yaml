@@ -1,0 +1,11 @@
+- file: shirako-gunkan.jpg
+  kind: dish
+  caption:
+    ja: "タラの白子の軍艦巻き"
+    zh: "鳕鱼白子军舰卷"
+    en: "Gunkan-maki of cod shirako (milt)"
+  source:
+    title: "Shirako gunkanmaki.jpg（Wikimedia Commons）"
+    url: "https://commons.wikimedia.org/wiki/File:Shirako_gunkanmaki.jpg"
+    license: "CC BY 3.0"
+    author: "Schellack"

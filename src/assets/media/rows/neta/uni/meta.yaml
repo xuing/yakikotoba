@@ -1,0 +1,11 @@
+- file: uni-gunkan.jpg
+  kind: dish
+  caption:
+    ja: "ウニの軍艦巻き"
+    zh: "海胆军舰卷"
+    en: "Uni (sea urchin) gunkan-maki"
+  source:
+    title: "Uni (Sea urchin) Gunkanmaki.jpg（Wikimedia Commons）"
+    url: "https://commons.wikimedia.org/wiki/File:Uni_(Sea_urchin)_Gunkanmaki.jpg"
+    license: "CC BY-SA 4.0"
+    author: "Zheng Zhou"

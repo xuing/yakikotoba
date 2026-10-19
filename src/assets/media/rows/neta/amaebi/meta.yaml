@@ -1,0 +1,11 @@
+- file: amaebi-nigiri.jpg
+  kind: dish
+  caption:
+    ja: "甘エビのにぎり"
+    zh: "甜虾握寿司"
+    en: "Amaebi (sweet shrimp) nigiri"
+  source:
+    title: "Ama ebi.JPG（Wikimedia Commons）"
+    url: "https://commons.wikimedia.org/wiki/File:Ama_ebi.JPG"
+    license: "CC BY-SA 3.0"
+    author: "Arashiyama"

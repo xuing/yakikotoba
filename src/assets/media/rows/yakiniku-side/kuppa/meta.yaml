@@ -1,0 +1,11 @@
+- file: commons.jpg
+  kind: dish
+  caption:
+    ja: "カルビクッパ"
+    zh: "牛五花汤饭（カルビクッパ）"
+    en: "Karubi kuppa"
+  source:
+    title: "Wikimedia Commons「Karubikuppa111.jpg」"
+    url: "https://commons.wikimedia.org/wiki/File:Karubikuppa111.jpg"
+    license: "CC BY-SA 3.0"
+    author: "Hykw-a4"

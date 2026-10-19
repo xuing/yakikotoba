@@ -1,0 +1,11 @@
+- file: sashimi-moriawase.jpg
+  kind: dish
+  caption:
+    ja: "刺身の盛り合わせ（千葉県銚子市）"
+    zh: "刺身拼盘（千叶县铫子市）"
+    en: "Assorted sashimi, Chōshi (Chiba)"
+  source:
+    title: "Sashimi 002.jpg（Wikimedia Commons）"
+    url: "https://commons.wikimedia.org/wiki/File:Sashimi_002.jpg"
+    license: "CC0"
+    author: "Ocdp"

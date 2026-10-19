@@ -1,0 +1,11 @@
+- file: commons.jpg
+  kind: dish
+  caption:
+    ja: "白菜キムチ"
+    zh: "辣白菜"
+    en: "Napa cabbage kimchi"
+  source:
+    title: "Wikimedia Commons「Gimchi.jpg」"
+    url: "https://commons.wikimedia.org/wiki/File:Gimchi.jpg"
+    license: "CC BY-SA 2.0"
+    author: "Nagyman (Flickr)"

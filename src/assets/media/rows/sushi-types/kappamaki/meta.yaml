@@ -1,0 +1,11 @@
+- file: kappamaki.jpg
+  kind: dish
+  caption:
+    ja: "かっぱ巻きの断面（芯はキュウリ）"
+    zh: "黄瓜卷的切面"
+    en: "Cross-section of a kappa-maki (cucumber roll)"
+  source:
+    title: "Kappamaki 1.jpg（Wikimedia Commons）"
+    url: "https://commons.wikimedia.org/wiki/File:Kappamaki_1.jpg"
+    license: "CC BY-SA 3.0"
+    author: "Arashiyama"

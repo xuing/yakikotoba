@@ -1,0 +1,11 @@
+- file: burikama-nitsuke.jpg
+  kind: dish
+  caption:
+    ja: "ブリカマの煮付け"
+    zh: "酱汁煮鰤鱼下巴"
+    en: "Simmered buri kama (yellowtail collar)"
+  source:
+    title: "ブリカマの煮付け---2023-10-01.jpg（Wikimedia Commons）"
+    url: "https://commons.wikimedia.org/wiki/File:%E3%83%96%E3%83%AA%E3%82%AB%E3%83%9E%E3%81%AE%E7%85%AE%E4%BB%98%E3%81%91---2023-10-01.jpg"
+    license: "CC BY 4.0"
+    author: "RuinDig/Yuki Uchida"

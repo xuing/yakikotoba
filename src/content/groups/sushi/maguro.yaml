@@ -1,0 +1,166 @@
+order: 1
+ja: マグロ
+zh: 金枪鱼
+en: Tuna
+items:
+  - id: maguro
+    ja: マグロ
+    kana: まぐろ
+    romaji: maguro
+    mean:
+      ja: "サバ科マグロ属の大型魚の総称"
+      zh: "金枪鱼"
+      en: "Tuna"
+    part:
+      ja: "サバ科マグロ属の総称。日本で主に流通するのはクロマグロ（本マグロ）・ミナミマグロ（インドマグロ）・メバチ・キハダ・ビンナガの5種"
+      zh: "鲭科金枪鱼属鱼类的总称；日本市场上主要有太平洋蓝鳍金枪鱼（本マグロ）、南方蓝鳍金枪鱼（インドマグロ）、大眼金枪鱼（メバチ）、黄鳍金枪鱼（キハダ）和长鳍金枪鱼（ビンナガ）五种"
+      en: "Collective name for the genus Thunnus; the five sold in Japan are Pacific bluefin (hon-maguro), southern bluefin (Indo-maguro), bigeye (mebachi), yellowfin (kihada) and albacore (binnaga)"
+    note:
+      ja: "マグロ属は世界に8種あり、太平洋のクロマグロは全長3m・体重400kgに達する。クロマグロは幼魚をヨコワ、若魚をメジ、大型魚をシビと呼び分け、シビはマグロの古名でもある。マグロの名は一説に、室町末期から小型のシビを呼んだ「目黒（めぐろ）」から、一説に体色の「真っ黒」からという。江戸前期の『古今料理集』（1670年代）は「下魚」としたが、天保年間（1830〜44年）の大漁を機に握りずしの種となり、2017年の国内クロマグロ生産2万6100トンのうち61%は養殖が占めた。"
+      zh: "金枪鱼属全世界共8种，太平洋蓝鳍金枪鱼全长可达3米、体重400公斤。蓝鳍金枪鱼按大小分别叫ヨコワ（幼鱼）、メジ（青年鱼）、シビ（大鱼），シビ也是金枪鱼的古名。“マグロ”一名，一说来自室町末期对小シビ的称呼“目黒”（めぐろ），一说来自体色“真っ黒”（漆黑）。江户前期的《古今料理集》（1670年代）称其为“下等鱼”，天保年间（1830—1844年）大丰收后才成为握寿司的鱼料；2017年日本国产蓝鳍金枪鱼2.61万吨中，养殖占61%。"
+      en: "There are eight Thunnus species; Pacific bluefin reaches 3 m and 400 kg. Bluefin change names as they grow — yokowa (juvenile), meji (young) and shibi (large) — and shibi is also tuna’s old name. One theory traces maguro to meguro (“black eye”), a late-Muromachi name for small shibi; another to makkuro, “jet black”. The 1670s cookbook Kokon Ryōri-shū dismissed tuna as a low-class fish, but after big catches in the Tenpō era (1830–44) it became a nigiri topping; in 2017, 61% of Japan’s 26,100 t of bluefin was farmed."
+    sources:
+      - title: "コトバンク「マグロ」（日本大百科全書・改訂新版 世界大百科事典）"
+        url: "https://kotobank.jp/word/%E3%81%BE%E3%81%90%E3%82%8D-3171125"
+      - title: "コトバンク「クロマグロ」（日本大百科全書・改訂新版 世界大百科事典）"
+        url: "https://kotobank.jp/word/%E3%81%8F%E3%82%8D%E3%81%BE%E3%81%90%E3%82%8D-3150387"
+      - title: "農林水産省 aff 2015年8月号 特集「クロマグロ」（水産庁サイト掲載PDF）（マグロの種類）"
+        url: "https://www.jfa.maff.go.jp/j/koho/aff/pdf/201508.pdf"
+      - title: "浅虫水族館「マグロ」（2019年3月 第3号、2017年農林水産省調べの養殖比率を引用）"
+        url: "https://asamushi-aqua.com/wp-content/uploads/2022/06/3%E3%83%9E%E3%82%B0%E3%83%AD.pdf"
+
+  - id: akami
+    ja: 赤身
+    ruby: "{赤身|あかみ}"
+    kana: あかみ
+    romaji: akami
+    mean:
+      ja: "マグロの赤い身（脂の少ない部分）"
+      zh: "金枪鱼红肉（瘦肉）"
+      en: "Lean red tuna"
+    part:
+      ja: "背側の身と、骨に近い内側の身。腹側の脂の多いトロに対する部分"
+      zh: "背部的肉和靠近脊骨的内侧肉，与腹部多脂的“トロ”相对"
+      en: "The back meat and the inner meat near the bone, as opposed to the fatty belly (toro)"
+    note:
+      ja: "赤い色は筋肉中の色素たんぱく質ミオグロビンによるもので、泳ぎ続けるための酸素を蓄えており、鮮度が落ちると酸化して褐色を帯びる。江戸の握りずしではマグロといえば赤身で、醤油に漬けた「づけ」として出され、この名は江戸のすし屋の醤油漬けに由来するとも、明治初めに三陸から醤油漬けで送られたためともいう。キハダは身が淡紅色でトロになる部分がほとんどなく主に赤身の刺身に使われ、メバチも赤身が多い。"
+      zh: "红色来自肌肉中的色素蛋白肌红蛋白，它为不停游动的金枪鱼储存氧气；不新鲜时会氧化而带褐色。江户的握寿司说到金枪鱼就是红肉，做成酱油腌的“づけ”（ヅケ）；这个名字一说源自江户寿司店的酱油腌法，一说因为明治初年金枪鱼是用酱油腌着从三陆运来的。黄鳍金枪鱼（キハダ）肉呈淡粉色，几乎没有能做トロ的部分，主要用作红肉刺身；大眼金枪鱼（メバチ）也以红肉为主。"
+      en: "The red colour comes from myoglobin, the muscle pigment that stores oxygen for a fish that never stops swimming; as the meat ages it oxidises and turns brownish. In Edo-period nigiri, tuna meant akami, served as zuke, marinated in soy sauce — the name is traced either to the soy marinade of Edo sushi shops or to tuna shipped soy-cured from Sanriku in early Meiji. Yellowfin (kihada) is pale pink with almost no toro and goes mainly to lean sashimi; bigeye (mebachi) is also mostly akami."
+    sources:
+      - title: "農林水産省 aff 2015年8月号 特集「クロマグロ」（水産庁サイト掲載PDF）（赤身：背側と骨に近い部分の身）"
+        url: "https://www.jfa.maff.go.jp/j/koho/aff/pdf/201508.pdf"
+      - title: "宮城県気仙沼地方振興事務所水産漁港部「マグロ」（令和4年10月、ミオグロビン）"
+        url: "https://www.pref.miyagi.jp/documents/16731/r4_10th_tuna.pdf"
+      - title: "コトバンク「マグロ」（改訂新版 世界大百科事典・食の医学館）"
+        url: "https://kotobank.jp/word/%E3%81%BE%E3%81%90%E3%82%8D-3171125"
+      - title: "コトバンク「すし」（日本大百科全書）"
+        url: "https://kotobank.jp/word/%E3%81%99%E3%81%97-541612"
+      - title: "コトバンク「とろ」（百科事典マイペディア）"
+        url: "https://kotobank.jp/word/%E3%81%A8%E3%82%8D-586391"
+      - title: "Umios umito.「Umiosグループが届けるクロマグロの―短期蓄養の挑戦―」"
+        url: "https://umito.umios.com/article195/"
+
+  - id: chutoro
+    ja: 中トロ
+    ruby: "{中|ちゅう}トロ"
+    kana: ちゅうとろ
+    romaji: chūtoro
+    mean:
+      ja: "中程度に脂ののったマグロの腹身"
+      zh: "金枪鱼中腹（中脂）"
+      en: "Medium-fatty tuna belly"
+    part:
+      ja: "腹側の中央から尾にかけての身（「腹ナカ」「腹シモ」）"
+      zh: "腹部中段到尾侧的肉（称“腹ナカ”“腹シモ”）"
+      en: "Belly meat from the middle towards the tail (hara-naka and hara-shimo)"
+    note:
+      ja: "精選版日本国語大辞典は、マグロの脂肪が非常に多い部分を「大とろ」、それより少ない部分を「中とろ」と定義し、「トロ」の文献上の初出を1930年の『日本料理通』とする。脂ののりは赤身と大トロの中間で、店によっては大トロと中トロの間の、赤身に脂が細かく入り込んだ部分を「霜降り」と呼び分ける。Umios（旧マルハニチロ）の2026年の調査では、回転寿司でよく食べるネタの上位10に赤身・中トロ・大トロ・ネギトロ・ヅケとマグロのネタが並んだ。"
+      zh: "《精选版日本国语大辞典》把金枪鱼脂肪特别多的部分定义为“大トロ”，比它少的为“中トロ”，并指出“トロ”一词最早见于1930年的《日本料理通》。中腹的脂肪含量介于红肉和大腹之间；有的店还把大腹与中腹之间、脂肪细细渗入红肉的部分另称“霜降り”。Umios（原Maruha Nichiro）2026年的调查显示，回转寿司“常吃的寿司料”前十名里有红肉、中腹、大腹、ネギトロ、ヅケ等多种金枪鱼料。"
+      en: "The Nihon Kokugo Daijiten defines ōtoro as the fattiest part of tuna and chūtoro as the part with less fat, and dates the first written use of toro to 1930 (Nihon Ryōri Tsū). Its fat sits between akami and ōtoro; some shops also single out shimofuri, the band between the two where fat is finely threaded through red meat. In Umios’s (formerly Maruha Nichiro) 2026 survey, the ten toppings most eaten at conveyor-belt sushi included akami, chūtoro, ōtoro, negitoro and zuke."
+    sources:
+      - title: "農林水産省 aff 2015年8月号 特集「クロマグロ」（水産庁サイト掲載PDF）（中トロ：腹ナカ・腹シモ／霜降り）"
+        url: "https://www.jfa.maff.go.jp/j/koho/aff/pdf/201508.pdf"
+      - title: "コトバンク「とろ」（精選版 日本国語大辞典・百科事典マイペディア）"
+        url: "https://kotobank.jp/word/%E3%81%A8%E3%82%8D-586391"
+      - title: "Umios umito.「Umiosグループが届けるクロマグロの―短期蓄養の挑戦―」"
+        url: "https://umito.umios.com/article195/"
+
+  - id: otoro
+    ja: 大トロ
+    ruby: "{大|おお}トロ"
+    kana: おおとろ
+    romaji: ōtoro
+    mean:
+      ja: "最も脂ののったマグロの腹身"
+      zh: "金枪鱼大腹（大脂）"
+      en: "Fattiest tuna belly"
+    part:
+      ja: "腹側の頭寄り、カマに近い部分（「腹カミ」）"
+      zh: "腹部靠头、紧挨“カマ”（鳃下胸鳍根部）的部分（称“腹カミ”）"
+      en: "The front of the belly next to the collar (hara-kami)"
+    note:
+      ja: "一説に、1919年（大正8年）ごろ日本橋の吉野鮨本店で、不漁で赤身が手に入らず腹身を握ったところ、客との会話から「口の中でトロける」ので「トロ」と名付けられ、それまでは「アブ」などと呼ばれていた。脂身は傷みやすく「猫またぎ」とまで言われて缶詰などの加工用だったが、冷凍技術の進歩などで1960年代から生食用に珍重されるようになった。トロの脂質は冬に40%を超えるとされ、産卵後の5〜6月は腹の脂が落ちるため、この時期の100kg以上の成魚を約半年生け簀で育ててトロを増やす「蓄養」も行われる。"
+      zh: "一说1919年（大正8年）前后，日本桥的吉野鮨本店因渔获不佳买不到红肉，只好用腹肉来握，客人说“入口即化（トロける）”，于是叫它“トロ”，此前这部分被称作“アブ”（脂身）等。过去肥肉容易变质，被叫作“猫またぎ”（连猫都跨过去不吃），只用来做罐头等加工品；随着冷冻技术进步，1960年代起才作为生食部位受到珍视。据说冬季トロ的脂质超过40%；5—6月产卵后腹部脂肪减少，因此也有把这时捕到的100公斤以上成鱼放进网箱养约半年、增加トロ后再出货的“蓄养”。"
+      en: "One account says the name was coined around 1919 at Yoshino Sushi Honten in Nihonbashi: with lean tuna scarce after a poor catch, the shop served the belly, and in talk with customers it was named toro because it “melts (torokeru) in the mouth”; before that it was called abu, “fat”. Fatty tuna spoiled quickly, was mocked as neko-matagi (“even a cat steps over it”) and went to canneries, becoming prized raw only from the 1960s with better freezing. Toro is said to exceed 40% fat in winter; because bluefin lose belly fat after spawning, fish of over 100 kg caught in May–June are kept in pens for about six months to build up toro (chikuyō)."
+    sources:
+      - title: "農林水産省 aff 2015年8月号 特集「クロマグロ」（水産庁サイト掲載PDF）（大トロ：腹カミ）"
+        url: "https://www.jfa.maff.go.jp/j/koho/aff/pdf/201508.pdf"
+      - title: "トレたび（JRグループ協力）「トロ握り発祥の店「吉野鮨本店」の「にぎりずし」」"
+        url: "https://www.toretabi.jp/zipangclub/page/plan_shun24051_higashi.html"
+      - title: "浅虫水族館「マグロ」（2019年3月 第3号）"
+        url: "https://asamushi-aqua.com/wp-content/uploads/2022/06/3%E3%83%9E%E3%82%B0%E3%83%AD.pdf"
+      - title: "コトバンク「マグロ」（食の医学館：トロの脂質）"
+        url: "https://kotobank.jp/word/%E3%81%BE%E3%81%90%E3%82%8D-3171125"
+      - title: "Umios umito.「Umiosグループが届けるクロマグロの―短期蓄養の挑戦―」"
+        url: "https://umito.umios.com/article195/"
+
+  - id: noten
+    ja: 脳天
+    ruby: "{脳天|のうてん}"
+    kana: のうてん
+    romaji: nōten
+    mean:
+      ja: "マグロの頭頂部の身"
+      zh: "金枪鱼头顶肉"
+      en: "Tuna head-top meat"
+    part:
+      ja: "頭のてっぺんの肉。マグロの頭部からはほかにカマ・ホホ肉・ゼラチン質の「目の裏」などが取れる"
+      zh: "头顶部位的肉；金枪鱼头部还能取下カマ（鳃下）、颊肉、富含胶质的“眼后肉”等部位"
+      en: "Meat from the crown of the head; a tuna head also yields the collar (kama), cheeks and the gelatinous meat behind the eyes"
+    note:
+      ja: "「脳天」は頭のてっぺんを指す一般語で、マグロでは頭頂部から取れる小さな部位をいう。頭部からは脳天の下の「鉢ノ子」、ホホ、アゴ、カマトロ、ノド裏なども切り出される。築地市場の時代、マグロの頭は通路に置かれてカラスがついばむほどだったが、資源の減少で端材まで使うようになり、豊洲では「希少部位」として売られ、中落ちやカマとともに安く仕入れて刺身の盛り合わせなどに仕立てる店も増えた。"
+      zh: "“脳天”本是指头顶的普通词，用在金枪鱼上指从头顶取下的一小块肉。头部还能切出脑天下方的“鉢ノ子”、颊肉、下颚肉、カマトロ、喉下肉等。筑地市场时代，金枪鱼头被扔在通道上任乌鸦啄食；随着资源减少、边角料也被充分利用，丰洲市场如今把它当作“稀少部位”出售，也有越来越多的店把它和中落ち、カマ一起低价进货，做成刺身拼盘等菜品。"
+      en: "Nōten is the everyday word for the crown of the head; on a tuna it means a small piece cut from the top of the skull. The head also yields hachi-no-ko below it, the cheeks, jaw, kama-toro and the meat under the throat. In the Tsukiji market days tuna heads lay in the aisles for crows to peck at; with stocks shrinking and every scrap now used, Toyosu sells them as rare cuts, and more restaurants buy nōten cheaply along with nakaochi and kama to serve on sashimi platters."
+    sources:
+      - title: "コトバンク「脳天」（デジタル大辞泉・精選版 日本国語大辞典）"
+        url: "https://kotobank.jp/word/%E8%84%B3%E5%A4%A9-596397"
+      - title: "現代ビジネス（川本大吾・時事通信社水産部長）「築地の「カラスの餌」が豊洲で「希少部位」に！驚きのマグロ消費史」（2019年11月20日）"
+        url: "https://gendai.media/articles/-/68247"
+      - title: "nippon.com「マグロはトロだけじゃない！ホホ肉、中落ちなど「端材」に脚光」（2019年12月22日）"
+        url: "https://www.nippon.com/ja/guide-to-japan/gu900131/"
+      - title: "サライ.jp「まぐろの目利きになる！日本で食べられている「まぐろ」の種類と部位の違い」（2016年12月1日）"
+        url: "https://serai.jp/gourmet/113599"
+
+  - id: negitoro
+    ja: ネギトロ
+    kana: ねぎとろ
+    romaji: negitoro
+    mean:
+      ja: "叩いたマグロの身とネギ"
+      zh: "金枪鱼泥配葱花"
+      en: "Minced tuna with scallion"
+    part:
+      ja: "マグロの身を細かく叩いてペースト状にし、刻みネギを合わせたもの。考案した店では頭や尾に近い筋の多い部分を使った"
+      zh: "把金枪鱼肉剁成泥，再配上葱花；发明它的店当初用的是靠近头尾、筋多的部分"
+      en: "Tuna chopped to a paste with chopped scallion; the shop that devised it used sinewy meat from near the head and tail"
+    note:
+      ja: "一説に1964年（昭和39年）、浅草の金太楼鮨で当時の会長・間根山貞雄が、刺身や寿司に使いにくい筋の部分を叩き、薬味のネギを合わせて飯にのせたのが始まりとされる。名は同店によれば浅草の「麦とろ」との語呂合わせで、辞書類は「ネギ＋トロ」と解するが、骨まわりの身を「ねぎ取る（こそげ取る）」ことに由来するという説も広まっている。市販品にはキハダ・メバチの身に食用油脂を加えて脂ののりを補ったものもある。"
+      zh: "一说1964年（昭和39年），浅草金太楼鮨的时任会长间根山贞雄把做不了刺身和寿司的筋多部分剁碎，配上作佐料的葱放在米饭上，这就是ネギトロ的起源。按该店的说法，名字是模仿浅草“麦とろ”（山药泥麦饭）的谐音；词典一般解释为“ネギ（葱）＋トロ”，另有一说认为来自把骨边的肉“ねぎ取る”（刮下来），流传也很广。市售品中也有用黄鳍、大眼金枪鱼肉加食用油脂来补足油脂感的。"
+      en: "One account credits Asakusa’s Kintarō-zushi in 1964, when its chairman Manezan Sadao minced sinewy meat unsuited to sashimi or sushi, added scallion meant as a garnish and served it on rice. The shop says the name is a pun on mugi-toro (grated yam on barley rice); dictionaries read it as negi (scallion) + toro, and another widely repeated theory derives it from negitoru, “to scrape off” the meat round the bones. Some commercial negitoro is yellowfin and bigeye with added edible fat to make it richer."
+    sources:
+      - title: "現代ビジネス（週刊現代）「偶然にできた寿司ネタ「ネギトロ」その由来の秘密」"
+        url: "https://gendai.media/articles/-/59353"
+      - title: "ニッポン旅マガジン「ネギトロは、「ネギ＋トロ」、あるいは「ねぎ取る」が語源!?」"
+        url: "https://tabi-mag.jp/negitoro/"
+      - title: "ふるなび 静岡県吉田町返礼品「ネギトロ」（製造：マルハニチロオーシャン、原材料表示）"
+        url: "https://furunavi.jp/product_detail.aspx?pid=986893"

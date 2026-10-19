@@ -1,0 +1,101 @@
+order: 3
+ja: 豚
+zh: 猪肉
+en: Pork
+note:
+  ja: "小売表示の部位は「食肉小売品質基準」でかた・かたロース・ロース・ヒレ・ばら・もも・そとももの7つ、卸売の「豚部分肉取引規格」ではかた・ヒレ・ロース・ばら・ももの5つ（かたを分けるときはかたロースとうで）で、豚トロ（ネック）はどちらでも独立した部位ではない。豚は牛より若い月齢で出荷されるため、脂肪の多いばらを除けば部位による肉質の差が比較的小さい。"
+  zh: "零售标示按《食肉零售品质基准》分为かた、かたロース、ロース、ヒレ、ばら、もも、そともも7个部位；批发用的《猪分割肉交易规格》分为かた、ヒレ、ロース、ばら、もも5块（细分时把かた再分成かたロース和うで）；豚トロ（颈肉）在两套标准里都不是独立部位。猪的出栏月龄比牛小，除了脂肪多的五花，各部位的肉质差别相对较小。"
+  en: "Japan’s retail labelling standard recognises seven pork cuts (kata, kata-rōsu, rōsu, hire, bara, momo, sotomomo) and the wholesale standard five (kata, hire, rōsu, bara, momo, with kata optionally split into kata-rōsu and ude); tontoro (neck) is not a separate cut in either. Pigs go to market younger than cattle, so apart from the fatty belly the cuts differ relatively little in texture."
+items:
+  - id: tontoro
+    ja: 豚トロ
+    ruby: "{豚|とん}トロ"
+    kana: とんとろ
+    romaji: tontoro
+    mean:
+      ja: "豚の頬〜首の脂ののった肉"
+      zh: "猪颈肉"
+      en: "Pork jowl / neck (P-toro)"
+    part:
+      ja: "頬から首にかけての、あご周りの肉"
+      zh: "从脸颊到脖子、下颌周围的肉"
+      en: "Meat from the cheek to the neck, around the jaw (jowl)"
+    note:
+      ja: "マグロのトロのように脂がのっていることからの名で、「とんとろ」と読み、「ピーとろ」とも呼ぶ。一頭から左右1枚ずつ、少量しか取れない。ほどよい脂肪と霜降りが豊富で、焼肉にするとサクサクとした食感になる。食肉小売品質基準の豚の7部位には含まれず、豚部分肉取引規格では頬部（ジョール）は「かた」の一部として整形される。"
+      zh: "因像金枪鱼的“toro”（腹部肥肉）一样油脂丰腴而得名，读作“とんとろ”，也叫“ピーとろ”。一头猪左右各只有一片，产量很少。脂肪适中、雪花丰富，烤后口感脆爽。它不在《食肉零售品质基准》规定的猪肉7个部位之内；按猪分割肉交易规格，脸颊（jowl）部分随“かた”（肩）一起修整。"
+      en: "Named for its tuna-toro-like richness; it is read tontoro and also called pī-toro. Each pig yields only one piece per side. Moderately fatty and well marbled, it grills to a crisp, crunchy bite. It is not one of the seven retail pork cuts, and under the wholesale standard the jowl is trimmed as part of the shoulder (kata)."
+    sources:
+      - title: "農林水産省 aff 2020年9月号「豚の部位図鑑」（監修：日本食肉消費総合センター）"
+        url: "https://www.maff.go.jp/j/pr/aff/2009/pdf/aff2009_02_poster03.pdf"
+      - title: "コトバンク「豚とろ」（デジタル大辞泉）"
+        url: "https://kotobank.jp/word/%E8%B1%9A%E3%81%A8%E3%82%8D-586780"
+      - title: "米国食肉輸出連合会（USMEF）「YAKINIKU GUIDE BOOK」（ジョールミート）"
+        url: "https://americanmeat.jp/trd/publications/book/pdf/yakiniku2014.pdf"
+      - title: "日本食肉消費総合センター「部位別料理 -豚-」"
+        url: "https://www.jmi.or.jp/recipe/apart/cooking_apart2.html"
+      - title: "日本食肉格付協会「豚部分肉取引規格」"
+        url: "https://www.jmga.or.jp/standard/pork-partial/"
+
+  - id: bara
+    ja: 豚バラ
+    ruby: "{豚|ぶた}バラ"
+    kana: ぶたばら
+    romaji: buta bara
+    mean:
+      ja: "豚のばら肉（三枚肉）"
+      zh: "猪五花肉"
+      en: "Pork belly"
+    part:
+      ja: "腹側の、あばら骨まわりの肉"
+      zh: "腹部、肋骨周围的肉"
+      en: "The belly, around the ribs"
+    note:
+      ja: "赤身と脂肪が交互に3層ほど重なって見えることから「三枚肉」とも呼ばれ、骨付きのものはスペアリブ、ベーコンもこの部位から作る。辞書はカルビを「牛や豚のばら肉」としており、豚バラは「豚カルビ」とも呼ばれ、韓国料理のサムギョプサル（삼겹살、「3・層・肉」の意）も豚バラを焼くもの。豚部分肉取引規格では第5肋骨の長さの3分の1の位置で背線と平行に切ってロースとばらを分け、半丸1本分のばらは4.0kg未満が「S」、4.5kg以上が「L」。日本食品標準成分表では、ばら（大型種・脂身つき・生）の脂質は100gあたり35.4g。"
+      zh: "瘦肉和肥肉交替叠成约三层，所以又叫“三枚肉”；带骨的就是肋排（spare rib），培根也用这个部位做。词典把“カルビ”解释为“牛或猪的五花肉”，所以猪五花也叫“豚カルビ”；韩国的“삼겹살”（サムギョプサル，意为“三层肉”）烤的也是猪五花。按猪分割肉交易规格，在第5肋骨长度三分之一处与背线平行切开，分出里脊（ロース）和五花；半边胴体的一整块五花不足4.0公斤为“S”，4.5公斤以上为“L”。日本食品标准成分表中，猪五花（大型种、带脂、生）每100克含脂质35.4克。"
+      en: "Lean and fat alternate in about three layers, hence its other name sanmai-niku (“three-layer meat”); bone-in it becomes spare ribs, and bacon is made from it. Dictionaries define karubi as the belly meat of cattle or pigs, so pork belly is also sold as buta-karubi, and Korean samgyeopsal (삼겹살, “three-layer flesh”) is grilled pork belly too. The wholesale pork standard separates loin from belly with a cut parallel to the back one third of the way down the 5th rib; a belly from one side under 4.0 kg is graded S, and 4.5 kg or more L. Raw belly of large-breed pork with its fat contains 35.4 g of fat per 100 g."
+    sources:
+      - title: "日本食肉消費総合センター「部位別料理 -豚-」"
+        url: "https://www.jmi.or.jp/recipe/apart/cooking_apart2.html"
+      - title: "農林水産省 aff 2020年9月号「豚の部位図鑑」（監修：日本食肉消費総合センター）"
+        url: "https://www.maff.go.jp/j/pr/aff/2009/pdf/aff2009_02_poster03.pdf"
+      - title: "農林水産省 aff 2020年9月号「牛、豚、鶏の部位を徹底解説！お肉丸わかり図鑑」"
+        url: "https://www.maff.go.jp/j/pr/aff/2009/spe1_02.html"
+      - title: "コトバンク「三枚肉」（デジタル大辞泉・精選版 日本国語大辞典）"
+        url: "https://kotobank.jp/word/%E4%B8%89%E6%9E%9A%E8%82%89-514885"
+      - title: "コトバンク「ばら肉」（百科事典マイペディア）"
+        url: "https://kotobank.jp/word/%E3%81%B0%E3%82%89%E8%82%89-771028"
+      - title: "コトバンク「カルビ」（デジタル大辞泉・精選版 日本国語大辞典）"
+        url: "https://kotobank.jp/word/%E3%81%8B%E3%82%8B%E3%81%B3-3209506"
+      - title: "コトバンク「サムギョプサル」（デジタル大辞泉・世界の料理がわかる辞典）"
+        url: "https://kotobank.jp/word/%E3%81%95%E3%82%80%E3%81%8E%E3%82%88%E3%81%B7%E3%81%95%E3%82%8B-3221546"
+      - title: "日本食肉格付協会「豚部分肉取引規格」（別表1 分割・整形方法、別表3 重量区分）"
+        url: "https://www.jmga.or.jp/standard/pork-partial/"
+      - title: "文部科学省「日本食品標準成分表（八訂）増補2023年」（ぶた［大型種肉］ばら）"
+        url: "https://www.mext.go.jp/a_menu/syokuhinseibun/mext_00001.html"
+
+  - id: tan
+    ja: 豚タン
+    ruby: "{豚|ぶた}タン"
+    kana: ぶたたん
+    romaji: buta tan
+    mean:
+      ja: "豚の舌"
+      zh: "猪舌"
+      en: "Pork tongue"
+    part:
+      ja: "舌（根元のタン元から先端のタン先まで）"
+      zh: "舌头（从舌根“タン元”到舌尖“タン先”）"
+      en: "The tongue, from the root (tan-moto) to the tip (tan-saki)"
+    note:
+      ja: "皮は食用に向かないため取り除いて使う。根元のほうは脂肪が多く柔らかく、全体にコリコリとした歯ごたえがあり、薄切りにして網焼きやから揚げにする。ビタミンA・B2、鉄、タウリンを正肉より多く含む。日本食品標準成分表では生100gあたりの脂質が16.3gで、牛タン（31.8g）のほぼ半分。"
+      zh: "舌皮不适合食用，要剥掉再用。舌根部分脂肪多、较软，整体口感脆韧，常切薄片网烤或做成炸物。维生素A、B2、铁和牛磺酸的含量比正肉高。日本食品标准成分表中，生猪舌每100克含脂质16.3克，约为牛舌（31.8克）的一半。"
+      en: "The skin is inedible and is removed before use. The root end is fattier and softer, the whole tongue has a crunchy, springy bite, and it is sliced thin for grilling or deep-frying. It contains more vitamins A and B2, iron and taurine than muscle meat. Raw, it has 16.3 g of fat per 100 g—about half the 31.8 g in beef tongue."
+    sources:
+      - title: "日本食肉消費総合センター「部位別料理 -豚-」（タン）"
+        url: "https://www.jmi.or.jp/recipe/apart/cooking_apart2.html"
+      - title: "農林水産省 aff 2020年9月号「豚の部位図鑑」（監修：日本食肉消費総合センター）"
+        url: "https://www.maff.go.jp/j/pr/aff/2009/pdf/aff2009_02_poster03.pdf"
+      - title: "米国食肉輸出連合会（USMEF）「YAKINIKU GUIDE BOOK」（ポークタン）"
+        url: "https://americanmeat.jp/trd/publications/book/pdf/yakiniku2014.pdf"
+      - title: "文部科学省「日本食品標準成分表（八訂）増補2023年」（ぶた［副生物］舌、うし［副生物］舌）"
+        url: "https://www.mext.go.jp/a_menu/syokuhinseibun/mext_00001.html"

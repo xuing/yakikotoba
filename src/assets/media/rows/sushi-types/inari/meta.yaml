@@ -1,0 +1,10 @@
+- file: maff.jpg
+  kind: dish
+  caption:
+    ja: あぶらげずし（愛知県のいなりずし）
+    zh: 油豆腐寿司（爱知县的稻荷寿司）
+    en: Aburage-zushi, the inari-zushi of Aichi
+  source:
+    title: 農林水産省「うちの郷土料理」あぶらげずし/いなりずし（愛知県）
+    url: https://www.maff.go.jp/j/keikaku/syokubunka/k_ryouri/search_menu/menu/aburagezushi_aichi.html
+    license: 公共データ利用規約（第1.0版）

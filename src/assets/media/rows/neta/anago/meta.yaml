@@ -1,0 +1,10 @@
+- file: maff.jpg
+  kind: dish
+  caption:
+    ja: 穴子のにぎり（煮穴子にツメを塗ったもの）
+    zh: 星鳗握寿司（煮星鳗刷浓缩酱汁）
+    en: Anago nigiri — simmered conger eel brushed with tsume
+  source:
+    title: 農林水産省「うちの郷土料理」穴子寿司（東京都）
+    url: https://www.maff.go.jp/j/keikaku/syokubunka/k_ryouri/search_menu/menu/34_18_tokyo.html
+    license: 公共データ利用規約（第1.0版）

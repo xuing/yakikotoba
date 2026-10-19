@@ -1,0 +1,534 @@
+order: 2
+ja: 寿司ネタ
+zh: 常见寿司料
+en: Common toppings
+note:
+  ja: "赤身魚と白身魚は身の見た目ではなく、筋肉100gあたりの色素たんぱく質（ミオグロビンとヘモグロビン）が10mg以上かどうかで分ける。このためブリ・アジ・サバ・イワシは身が白っぽくても赤身魚で、オレンジ色のサーモンは餌に含まれるアスタキサンチンで色づいた白身魚になる。すし種の「光り物」は、コハダ・アジ・サバ・イワシなど皮が青白く光る魚をいう。"
+  zh: "红肉鱼与白肉鱼不是看肉色，而是看每100克肌肉中的色素蛋白（肌红蛋白和血红蛋白）是否达到10毫克。因此鰤鱼、竹荚鱼、鲭鱼、沙丁鱼虽然肉色偏白，仍属红肉鱼；橙色的三文鱼则是白肉鱼，颜色来自饵料中的虾青素。寿司料里的“光り物”指鱼皮青白发亮的鱼，如小鳍（コハダ）、竹荚鱼、鲭鱼、沙丁鱼。"
+  en: "Red-fleshed and white-fleshed fish are defined not by colour but by whether the muscle holds at least 10 mg of pigment protein (myoglobin and haemoglobin) per 100 g. So yellowtail, horse mackerel, mackerel and sardine count as red fish despite their pale flesh, while orange salmon is a white fish tinted by astaxanthin from its food. Hikarimono, “shiny things”, are sushi fish with bright silvery-blue skin, such as kohada, aji, saba and iwashi."
+items:
+  - id: samon
+    ja: サーモン
+    kana: さーもん
+    romaji: sāmon
+    mean:
+      ja: "生食用のサケ・マス類（主に養殖）"
+      zh: "三文鱼（生食用的养殖鲑鳟）"
+      en: "Salmon (farmed, for eating raw)"
+    part:
+      ja: "ノルウェーやチリなどから輸入される養殖のアトランティックサーモン（タイセイヨウサケ）や、海面養殖したニジマス（トラウトサーモン）、ギンザケなどの身"
+      zh: "从挪威、智利等国进口的养殖大西洋鲑，以及海水养殖的虹鳟（“trout salmon”）、银鲑等的鱼肉"
+      en: "Flesh of farmed Atlantic salmon imported from Norway, Chile and elsewhere, or of sea-farmed rainbow trout (“trout salmon”), coho and the like"
+    note:
+      ja: "日本でサケは塩焼きなど加熱して食べる魚で、生食は凍らせてから食べるルイベや、酢で締めたます寿司などに限られていた。1980年代半ば、ノルウェーが養殖サーモンを生食用に売り込む「プロジェクト・ジャパン」を始め、生食用のサーモンは1990年ごろから市場に広まった。現在はその9割以上がチリやノルウェーなどからの輸入品で、Umios（旧マルハニチロ）の調査では2026年まで15年連続で回転寿司の「よく食べるネタ」1位となっている。"
+      zh: "在日本，鲑鱼原本是盐烤等加热后吃的鱼，生吃只限于冷冻后切片的“ルイベ”或醋腌的鳟鱼寿司等少数做法。1980年代中期，挪威发起“Project Japan”，向日本推销可生食的养殖三文鱼，生食用三文鱼从1990年前后开始在市场上普及。如今九成以上是从智利、挪威等国进口的；据Umios（原Maruha Nichiro）调查，到2026年它已连续15年位居回转寿司“常吃的寿司料”第一。"
+      en: "In Japan salmon was a fish for grilling; it was eaten raw only in a few forms such as frozen ruibe slices or vinegar-cured masu-zushi. In the mid-1980s Norway launched “Project Japan” to sell farmed salmon for eating raw, and raw salmon spread through the market from around 1990. Over 90% of it is now imported, mainly from Chile and Norway, and in Umios’s (formerly Maruha Nichiro) survey it has been the most-eaten topping at conveyor-belt sushi for 15 straight years, as of 2026."
+    sources:
+      - title: "Umios umito.「サーモンとサケは違うのでしょうか？」（2019年4月18日）"
+        url: "https://umito.umios.com/article38/"
+      - title: "Umios umito.「巨大なノルウェーサーモンの養殖施設を調べてみた」（2019年7月25日）"
+        url: "https://umito.umios.com/article53/"
+      - title: "コトバンク「サーモン」（共同通信ニュース用語解説・デジタル大辞泉）"
+        url: "https://kotobank.jp/word/%E3%81%95%E3%83%BC%E3%82%82%E3%82%93-3202072"
+      - title: "＋αオンライン（川本大吾）「40年前までは生食の文化がなかった“サーモン”…今では大人気のサーモン寿司が広まった原因は「ノルウェーの輸出戦略」だった」（2026年1月28日）"
+        url: "https://gendai.media/articles/-/162695"
+      - title: "くら寿司 プレスリリース「11月11日は「鮭の日」！ サーモン寿司が誕生して今年で40周年！ノルウェー大使館の水産参事官に聞く」（2025年10月24日）"
+        url: "https://digitalpr.jp/r/121042"
+      - title: "nippon.com「回転すし、人気のネタ「サーモン」が15年連続トップ―Umios調査」（2026年3月27日）"
+        url: "https://www.nippon.com/ja/japan-data/h02749/"
+
+  - id: hamachi
+    ja: ハマチ
+    kana: はまち
+    romaji: hamachi
+    mean:
+      ja: "ブリの若魚。また養殖ブリ"
+      zh: "鰤鱼的幼鱼；也指养殖鰤鱼"
+      en: "Young yellowtail; also farmed yellowtail"
+    part:
+      ja: "関西で全長40cm前後のブリを呼ぶ名（ツバス→ハマチ→メジロ→ブリ）。現在は大きさに関係なく養殖ブリの呼び名としても全国に通じる"
+      zh: "关西对全长40厘米左右鰤鱼的叫法（ツバス→ハマチ→メジロ→ブリ）；现在不论大小，全国也用它指养殖鰤鱼"
+      en: "The Kansai name for yellowtail of about 40 cm (tsubasu → hamachi → mejiro → buri); now also understood nationwide as farmed yellowtail of any size"
+    note:
+      ja: "ブリは成長につれて名が変わる出世魚で、関東ではワカシ→イナダ→ワラサ→ブリと呼ぶ。平安時代の『和名抄』に見える「波里万知（はりまち）」が詰まって室町期にハマチとなったとされる。ハマチ養殖は1928年（昭和3年）に香川県引田（現・東かがわ市）で野網和三郎が事業化したのが始まりで、1971年には養殖物の生産量が天然物の漁獲量を上回った。養殖の盛んな西日本の呼び名が全国に広まったため、今は養殖ブリをハマチと呼ぶことが多い。"
+      zh: "鰤鱼是随着长大而改名的“出世鱼”，关东依次叫ワカシ→イナダ→ワラサ→ブリ。平安时代《和名抄》里的“波里万知”（はりまち）在室町时期缩略成了“ハマチ”。鰤鱼养殖始于1928年（昭和3年），由野网和三郎在香川县引田（今东香川市）实现商业化；1971年养殖产量超过了野生渔获量。由于养殖兴盛的西日本的叫法推广到全国，如今“ハマチ”常指养殖鰤鱼。"
+      en: "Yellowtail is a “promotion fish” whose name changes as it grows; in Kantō the sequence is wakashi → inada → warasa → buri. The name is said to be a contraction of harimachi, recorded in the Heian dictionary Wamyōshō, which became hamachi in the Muromachi period. Yellowtail farming was first made a business in 1928 by Noami Wasaburō at Hiketa in Kagawa, and by 1971 farmed output exceeded the wild catch. Because the term spread from western Japan, where farming flourished, hamachi now often simply means farmed yellowtail."
+    sources:
+      - title: "コトバンク「ハマチ」（日本大百科全書・百科事典マイペディア）"
+        url: "https://kotobank.jp/word/%E3%81%AF%E3%81%BE%E3%81%A1-3163617"
+      - title: "コトバンク「ブリ」（日本大百科全書・改訂新版 世界大百科事典）"
+        url: "https://kotobank.jp/word/%E3%81%B6%E3%82%8A-2861008"
+      - title: "香川県「ハマチ養殖80周年記念事業」"
+        url: "https://www.pref.kagawa.lg.jp/suisan/sogo/event/hamachi.html"
+      - title: "Umios umito.「魚の名前いろいろ。出世魚と名前が変わる魚たち」"
+        url: "https://umito.umios.com/article56/"
+
+  - id: buri
+    ja: ブリ
+    kana: ぶり
+    romaji: buri
+    mean:
+      ja: "成長したブリ（出世魚の最後の名）"
+      zh: "鰤鱼（五条鰤）成鱼"
+      en: "Japanese amberjack (yellowtail), adult"
+    part:
+      ja: "アジ科ブリ属の回遊魚の成魚。おおむね全長80cmを超えると地域を問わず「ブリ」と呼ぶ"
+      zh: "鲹科鰤属洄游鱼的成鱼；全长超过约80厘米后，各地都叫“ブリ”"
+      en: "The adult of a migratory jack (Seriola quinqueradiata); above about 80 cm it is called buri everywhere"
+    note:
+      ja: "旬は冬で、産卵に備えて餌を飽食し南下する脂ののった成魚を「寒ブリ」と呼び、富山湾の定置網で獲れて氷見漁港で競りにかけられた7kg以上のものは「ひみ寒ぶり」のブランドになる。名の由来には「アブラ」から来たとする説と、年を経た魚を意味する「フリ」から来たとする説があり、「鰤」は日本で作られた字。西日本では正月の年取り魚に塩ブリを使い、東日本のサケと対をなす。身は白っぽく見えるが、色素たんぱく質の量による定義では赤身魚に入る。"
+      zh: "旬期在冬季：为产卵大量进食后南下、脂肪丰厚的成鱼叫“寒ブリ”；在富山湾定置网捕获、并在冰见渔港拍卖的7公斤以上个体，可冠以“ひみ寒ぶり”品牌。名字来源有两说：一说出自“アブラ”（油脂），一说出自表示“上了年纪的鱼”的“フリ”；“鰤”是日本自造的汉字。西日本过年的“年取り魚”用盐腌鰤鱼，与东日本用鲑鱼相对。鰤鱼肉色偏白，但按色素蛋白含量的定义属于红肉鱼。"
+      en: "It is best in winter: adults that have gorged before spawning and are heading south are called kan-buri, and those of 7 kg or more caught by set nets in Toyama Bay and auctioned at Himi port carry the “Himi kan-buri” brand. The name is traced either to abura, “oil”, or to furi, an old word for a fish that has lived many years; the character 鰤 was coined in Japan. Western Japan eats salted buri as its New Year fish, the counterpart of salmon in the east. Though pale-looking, it counts as a red-fleshed fish by its pigment content."
+    sources:
+      - title: "コトバンク「ブリ」（日本大百科全書・改訂新版 世界大百科事典）"
+        url: "https://kotobank.jp/word/%E3%81%B6%E3%82%8A-2861008"
+      - title: "コトバンク「寒鰤」（デジタル大辞泉・精選版 日本国語大辞典）"
+        url: "https://kotobank.jp/word/%E5%AF%92%E9%B0%A4-471382"
+      - title: "nippon.com「雪が降るごとに美味しくなる冬の味覚の王者ブリ」（2018年2月7日）"
+        url: "https://www.nippon.com/ja/views/b01728/"
+      - title: "Umios umito.「魚の名前いろいろ。出世魚と名前が変わる魚たち」"
+        url: "https://umito.umios.com/article56/"
+      - title: "Umios umito.「赤身魚と白身魚の違いは生態にあり！？」"
+        url: "https://umito.umios.com/article161/"
+
+  - id: madai
+    ja: 真鯛
+    ruby: "{真鯛|まだい}"
+    kana: まだい
+    romaji: madai
+    mean:
+      ja: "タイ科の代表種"
+      zh: "真鲷"
+      en: "Red sea bream"
+    part:
+      ja: "タイ科マダイ属の海水魚。身は白く、よく締まる"
+      zh: "鲷科真鲷属的海水鱼；白肉，肉质紧实"
+      en: "A sea bream (Pagrus major) with firm white flesh"
+    note:
+      ja: "春の産卵期に浅場へ寄り体が桜色を帯びたものを「桜鯛」、秋に栄養を蓄えて深い紅色になったものを「紅葉鯛」と呼ぶ。赤い色は餌の甲殻類に含まれるアスタキサンチンによるもので、寿命は20〜40年、全長1mに育つまで20年以上かかる。「タイ」の名は一説に「平たい」に由来し、タイと名の付く魚は300種以上あるが、分類上のタイ科は13種前後にすぎない。2024年の天然の漁獲1万5454トンに対し養殖は6万8439トンで、その57%を愛媛県が占める。"
+      zh: "春季产卵期游到浅海、体色泛樱花粉的叫“桜鯛”，秋季积蓄营养、颜色变得深红的叫“紅葉鯛”。红色来自饵料甲壳类所含的虾青素；寿命20—40年，长到全长1米要20年以上。“タイ”一名一说源于“平たい”（扁平）；名字带“タイ”的鱼有300多种，但分类上的鲷科只有13种左右。2024年野生渔获15,454吨，养殖则有68,439吨，其中57%产自爱媛县。"
+      en: "Fish that move into the shallows to spawn in spring, flushed cherry-pink, are sakura-dai; in autumn, fattened and deep red, they are momiji-dai. The red comes from astaxanthin in the crustaceans they eat; they live 20–40 years and take more than 20 years to reach 1 m. One theory derives tai from hiratai, “flat”; over 300 fish carry “tai” in their names, but the true sea-bream family has only about 13 species. In 2024 the wild catch was 15,454 t against 68,439 t farmed, 57% of it in Ehime."
+    sources:
+      - title: "コトバンク「マダイ」（日本大百科全書）"
+        url: "https://kotobank.jp/word/%E3%81%BE%E3%81%A0%E3%81%84-3171257"
+      - title: "Umios umito.「なぜ「おかしら付き」といえばタイなのか──海と祝いの文化をひもとく」"
+        url: "https://umito.umios.com/article181/"
+      - title: "Umios umito.「「タイ」と名のつく魚は多けれど、本物のタイは一部だけ？」"
+        url: "https://umito.umios.com/article36/"
+      - title: "農林水産省「消費者の部屋」タイの天然と養殖の漁獲量はどのくらいですか。"
+        url: "https://www.maff.go.jp/j/heya/sodan/1110/02.html"
+
+  - id: hirame
+    ja: ヒラメ
+    kana: ひらめ
+    romaji: hirame
+    mean:
+      ja: "カレイ目ヒラメ科の白身魚"
+      zh: "牙鲆（比目鱼）"
+      en: "Olive flounder"
+    part:
+      ja: "ヒラメ科の海水魚。腹を手前に置くと頭が左を向き、両目が体の左側にある"
+      zh: "牙鲆科海水鱼；腹部朝向自己放置时头朝左，两眼都在身体左侧"
+      en: "A lefteye flounder (Paralichthys olivaceus): laid belly towards you, its head points left, with both eyes on the left side"
+    note:
+      ja: "「左ヒラメに右カレイ」の通り目が左側にあるが、孵化後しばらくは普通の魚と同じく両側にあり、体長2cm足らずまでに右目が左へ移る。4〜6月の産卵後の夏は味が落ち、秋から冬が「寒ビラメ」の旬だが、天然物の脂質は100gあたり2.0g程度で、脂よりも身の厚みとうま味が持ち味。すし種の白身として東京ではタイ以上に珍重され、背びれ・しりびれの付け根の「縁側（えんがわ）」が特に好まれる。身は背側・腹側から2枚ずつ取る「五枚おろし」にする。"
+      zh: "正如“左ヒラメに右カレイ”（左牙鲆、右鲽）所说，牙鲆的眼睛在左侧；但孵化后一段时间两眼还像普通鱼一样长在两侧，体长不到2厘米时右眼才移到左边。4—6月产卵后的夏季味道变差，秋冬是“寒ビラメ”的旬期；不过野生牙鲆每100克脂质只有约2.0克，靠的是肉厚和鲜味而非油脂。在东京，它作为白肉寿司料比鲷鱼更受珍视，背鳍、臀鳍根部的“縁側”（裙边）尤其受欢迎。处理时从背侧和腹侧各取两片，称“五枚おろし”。"
+      en: "As the saying “hirame on the left, karei on the right” goes, its eyes are on the left, yet for a while after hatching they sit on both sides like any fish’s, the right eye migrating left before it is 2 cm long. It spawns in April–June and is poor in summer; autumn to winter is kan-birame season, though wild fish hold only about 2.0 g of fat per 100 g, so its appeal is thick, savoury flesh rather than fat. Tokyo sushi has long ranked it above sea bream as a white-fish topping, the fin-base engawa being especially prized. It is filleted into five pieces (gomai-oroshi), two each from the back and belly sides."
+    sources:
+      - title: "コトバンク「ヒラメ」（日本大百科全書・改訂新版 世界大百科事典）"
+        url: "https://kotobank.jp/word/%E3%81%B2%E3%82%89%E3%82%81-1582929"
+      - title: "Umios umito.「一見そっくり！ヒラメとカレイの違いを探る」"
+        url: "https://umito.umios.com/article43/"
+      - title: "Umios umito.「「寒」がつくとうまい魚、ヒラメ」"
+        url: "https://umito.umios.com/article71/"
+
+  - id: aji
+    ja: アジ
+    kana: あじ
+    romaji: aji
+    mean:
+      ja: "マアジ"
+      zh: "竹荚鱼（日本竹荚鱼）"
+      en: "Japanese horse mackerel"
+    part:
+      ja: "アジ科マアジ属のマアジ（ふつう「アジ」といえばこれを指す）。すし種では光り物"
+      zh: "鲹科竹荚鱼属的日本竹荚鱼（一般说“アジ”就是指它）；在寿司里属于“光り物”"
+      en: "The Japanese jack mackerel (Trachurus japonicus), the fish meant by plain “aji”; a hikarimono at sushi"
+    note:
+      ja: "側線に沿って「ぜいご（ぜんご）」と呼ばれる硬いとげ状の鱗（稜鱗）が並ぶのが特徴で、日本のマアジ属は本種のみ。沿岸の瀬に居着いて体高が高く脂の多い黄色っぽい「キアジ」と、沖を回遊して体高が低く脂の少ない黒っぽい「クロアジ」の型がある。名は新井白石『東雅』が「アジとは味なり」とするように味の良さからとされ、旬は夏で、すし種には小ぶりのものの皮をむいて使う。大分県佐賀関の漁師が一本釣りしたマアジだけが「関あじ」を名乗れる。"
+      zh: "侧线上排列着一列称为“ぜいご（ぜんご）”的硬刺状鳞片（棱鳞），这是它的特征；日本的竹荚鱼属只有这一种。它有两种类型：定居在沿岸礁区、体高较高、脂肪多、偏黄的“キアジ”，以及在外海洄游、体高较低、脂肪少、偏黑的“クロアジ”。新井白石《东雅》说“アジとは味なり”，名字被认为来自味道之美；旬期在夏季，做寿司料时用较小的鱼去皮。只有大分县佐贺关渔民一本钓捕获的竹荚鱼才能叫“関あじ”（关竹荚鱼）。"
+      en: "Its mark is a row of hard, spiny scutes along the lateral line, called zeigo or zengo; it is the only Trachurus species in Japan. There are two types: kiaji, yellowish, deep-bodied and fatty, which stay on coastal reefs, and kuroaji, darker, slimmer and leaner, which roam offshore. Arai Hakuseki’s Tōga explains the name as aji, “taste”, for its fine flavour; it is best in summer, and small fish are skinned for sushi. Only aji caught on single hook-and-line by fishers of Saganoseki in Ōita may be sold as Seki-aji."
+    sources:
+      - title: "コトバンク「マアジ」（日本大百科全書）"
+        url: "https://kotobank.jp/word/%E3%81%BE%E3%81%82%E3%81%98-3170880"
+      - title: "コトバンク「アジ」（日本大百科全書・改訂新版 世界大百科事典）"
+        url: "https://kotobank.jp/word/%E3%81%82%E3%81%98-1261863"
+      - title: "農林水産省 aff 2019年7月号「大好きな釣りを仕事にするために（大分）」"
+        url: "https://www.maff.go.jp/j/pr/aff/1907/spe1_08.html"
+      - title: "コトバンク「光り物」（デジタル大辞泉）"
+        url: "https://kotobank.jp/word/%E5%85%89%E3%82%8A%E7%89%A9-608881"
+
+  - id: saba
+    ja: サバ
+    kana: さば
+    romaji: saba
+    mean:
+      ja: "マサバ・ゴマサバ"
+      zh: "鲭鱼（鲐鱼）"
+      en: "Mackerel"
+    part:
+      ja: "サバ科サバ属のマサバとゴマサバ。すし種では光り物で、塩と酢で締めた「しめさば」にして使う"
+      zh: "鲭科鲭属的日本鲭（マサバ）和澳洲鲭（ゴマサバ）；在寿司里属于“光り物”，多做成用盐和醋腌过的“しめさば”"
+      en: "Chub mackerel (masaba) and spotted mackerel (gomasaba); a hikarimono at sushi, used as shime-saba, cured in salt and vinegar"
+    note:
+      ja: "マサバは背に黒い波状紋があり断面が平たく（別名ヒラサバ）、ゴマサバは腹に細かな黒点があり断面が丸い（別名マルサバ）。マサバは産卵前の秋〜冬に脂肪分が20〜30%前後までのって「秋サバ」「寒サバ」と呼ばれ、ゴマサバは一年を通じて味の変化が小さい。しめさばは三枚におろして塩をし、酢に漬けて作り、京都の棒ずしや、明治中期に大阪の鮓常が考案したとされるバッテラ（ポルトガル語bateira＝小舟）の材料にもなる。名は『出雲国風土記』（733年）に「佐波」として見え、大分県佐賀関で一本釣りされたマサバは「関さば」と呼ばれる。"
+      zh: "日本鲭背上有黑色波纹，横截面扁平（别名ヒラサバ）；澳洲鲭腹部有细小黑点，截面呈圆形（别名マルサバ）。日本鲭在产卵前的秋冬季脂肪可达20%—30%左右，称“秋サバ”“寒サバ”；澳洲鲭一年中味道变化不大。しめさば的做法是剖成三片后撒盐，再用醋浸泡；它也是京都“棒ずし”和大阪“バッテラ”的材料，后者据说由大阪的“鮓常”在明治中期发明，名字来自葡萄牙语bateira（小船）。“サバ”一名早在《出云国风土记》（733年）中就写作“佐波”；大分县佐贺关一本钓的日本鲭称为“関さば”。"
+      en: "Masaba has black wavy bars on its back and a flattish cross-section (hence hirasaba); gomasaba has fine dark spots on the belly and a round section (marusaba). Masaba fattens to around 20–30% fat in autumn and winter before spawning — aki-saba, kan-saba — while gomasaba changes little through the year. Shime-saba is made by filleting, salting and then soaking in vinegar; it also goes into Kyoto’s bō-zushi and Osaka’s battera, said to have been created in the mid-Meiji era by the shop Sushitsune and named from Portuguese bateira, “small boat”. The name appears as 佐波 in the Izumo Fudoki of 733, and masaba line-caught at Saganoseki in Ōita is sold as Seki-saba."
+    sources:
+      - title: "コトバンク「サバ」（日本大百科全書・改訂新版 世界大百科事典）"
+        url: "https://kotobank.jp/word/%E3%81%95%E3%81%B0-275730"
+      - title: "コトバンク「鯖」（精選版 日本国語大辞典）"
+        url: "https://kotobank.jp/word/%E9%AF%96-188412"
+      - title: "コトバンク「しめさば」（日本大百科全書）"
+        url: "https://kotobank.jp/word/%E3%81%97%E3%82%81%E3%81%95%E3%81%B0-1543368"
+      - title: "コトバンク「バッテラ」（デジタル大辞泉・日本大百科全書）"
+        url: "https://kotobank.jp/word/%E3%81%B0%E3%81%A4%E3%81%A6%E3%82%89-3164212"
+      - title: "Umios umito.「日本で漁獲されるサバはどんなサバ？美味しさと資源量の話」"
+        url: "https://umito.umios.com/article72/"
+      - title: "農林水産省 aff 2019年7月号「大好きな釣りを仕事にするために（大分）」"
+        url: "https://www.maff.go.jp/j/pr/aff/1907/spe1_08.html"
+
+  - id: iwashi
+    ja: イワシ
+    kana: いわし
+    romaji: iwashi
+    mean:
+      ja: "マイワシ（イワシ類）"
+      zh: "沙丁鱼（远东拟沙丁鱼）"
+      en: "Sardine (Japanese sardine)"
+    part:
+      ja: "マイワシ・ウルメイワシ・カタクチイワシの総称で、代表はマイワシ。脂ののった鮮度の良いマイワシが刺身やすし種になる"
+      zh: "远东拟沙丁鱼（マイワシ）、脂眼鲱（ウルメイワシ）、日本鳀（カタクチイワシ）的总称，以远东拟沙丁鱼为代表；脂肪丰厚、新鲜的才做刺身或寿司料"
+      en: "Collective name for the Japanese sardine (maiwashi), round herring (urume-iwashi) and Japanese anchovy (katakuchi-iwashi); fatty, very fresh maiwashi is used for sashimi and sushi"
+    note:
+      ja: "マイワシは体側に7個前後の黒点が並ぶことから「ななつぼし」とも呼ばれ、寿命は7年ほど、最大で25cmになる。脂肪分は季節で大きく変わり、11月末に三陸沖で揚がるものは20%前後、大型では30%近くになる。「鰯」は日本で作られた字で、水から揚げるとすぐ死ぬ弱い魚だからといわれ、貝原益軒『日本釈名』（1700年）は名を「卑し（いやし）」に結びつけている。漁獲量は1988年の448万トンをピークに1990年代に激減し、2010年以降は再び増える傾向にある。"
+      zh: "远东拟沙丁鱼体侧排列着7个左右的黑点，因此又叫“ななつぼし”（七星），寿命约7年，最大长到25厘米。脂肪含量随季节变化很大，11月底在三陆外海捕获的约20%，大个体接近30%。“鰯”是日本自造的汉字，据说因为这种鱼离水就死、是“弱”鱼；贝原益轩《日本释名》（1700年）则把名字与“卑し”（低贱）联系起来。渔获量在1988年达到448万吨的峰值，1990年代锐减，2010年以后又呈增加趋势。"
+      en: "Maiwashi is also called nanatsuboshi, “seven stars”, for the row of about seven dark spots on its side; it lives about seven years and grows to 25 cm. Its fat varies greatly with season: fish landed off Sanriku in late November run about 20%, large ones nearly 30%. The character 鰯 (fish + weak) was coined in Japan, said to be because the fish dies as soon as it leaves the water, while Kaibara Ekiken’s Nihon Shakumyō (1700) linked the name to iyashi, “lowly”. The catch peaked at 4.48 million t in 1988, collapsed in the 1990s and has been rising again since 2010."
+    sources:
+      - title: "コトバンク「イワシ」（日本大百科全書・改訂新版 世界大百科事典・食の医学館・百科事典マイペディア）"
+        url: "https://kotobank.jp/word/%E3%81%84%E3%82%8F%E3%81%97-2009290"
+      - title: "Umios umito.「マイワシをもっと食卓へ」"
+        url: "https://umito.umios.com/article23/"
+      - title: "Umios umito.「なぜイワシは群れで泳ぐのか？弱い魚が海を生き抜く知恵」"
+        url: "https://umito.umios.com/article188/"
+
+  - id: katsuo
+    ja: カツオ
+    kana: かつお
+    romaji: katsuo
+    mean:
+      ja: "カツオ（ホンガツオ）"
+      zh: "鲣鱼"
+      en: "Skipjack tuna (bonito)"
+    part:
+      ja: "サバ科の回遊魚。すし種や刺身のほか、表面をあぶった「たたき」にする"
+      zh: "鲭科洄游鱼；除做寿司料和刺身外，常做成表面炙烤的“たたき”"
+      en: "A migratory member of the mackerel family, eaten as sushi and sashimi or seared as tataki"
+    note:
+      ja: "黒潮に乗って北上し春から初夏に獲れる脂の少ない「初鰹」と、三陸沖で餌をとり秋に南下する脂ののった「戻り鰹」と旬が2回あり、江戸では「目には青葉山ほととぎす初鰹」（山口素堂）と詠まれるほど初鰹が珍重された。名は、干して堅くなった「堅魚（かたうお）」がなまったものとする説がある。「たたき」は室町〜江戸前期にはカツオの身をたたいた塩辛を指したが、今は皮付きの身をあぶって冷やす焼霜造りをいい、高知では藁の炎であぶる。死後まもなく体側に4〜10本の青黒い縦縞が現れ、興奮した時には腹側に横縞が出る。"
+      zh: "鲣鱼有两个旬期：乘黑潮北上、春季到初夏捕获、脂肪少的“初鰹”，以及在三陆外海觅食后秋季南下、脂肪丰厚的“戻り鰹”；江户人极其珍视初鰹，山口素堂有句“目には青葉山ほととぎす初鰹”（满目青叶，山中杜鹃，初鲣）。名字一说是由晒干后变硬的“堅魚”（かたうお）音变而来。“たたき”在室町至江户前期指把鲣鱼肉拍碎做成的盐辛（腌鱼酱），如今指带皮炙烤后冷却的“焼霜造り”，高知用稻草火来烤。鲣鱼死后不久体侧会出现4—10条青黑色纵纹，兴奋时腹侧则出现横纹。"
+      en: "It has two seasons: lean hatsu-gatsuo, caught in spring and early summer as it rides the Kuroshio north, and fatty modori-gatsuo, which has fed off Sanriku and heads south in autumn; Edo prized the first catch so much that Yamaguchi Sodō wrote “green leaves for the eye, the mountain cuckoo, first bonito”. One theory derives the name from katauo, “hard fish”, because dried bonito turns rock-hard. From the Muromachi to the early Edo period tataki meant a salted paste of pounded bonito; today it means skin-on fillets seared and then chilled, which Kōchi sears over burning straw. Soon after death four to ten dark stripes appear along the body, while an excited living fish shows bars across its belly."
+    sources:
+      - title: "コトバンク「カツオ」（日本大百科全書・改訂新版 世界大百科事典）"
+        url: "https://kotobank.jp/word/%E3%81%8B%E3%81%A4%E3%81%8A-3147454"
+      - title: "コトバンク「初鰹」（デジタル大辞泉）"
+        url: "https://kotobank.jp/word/%E5%88%9D%E9%B0%B9-602292"
+      - title: "コトバンク「戻り鰹」（デジタル大辞泉）"
+        url: "https://kotobank.jp/word/%E6%88%BB%E3%82%8A%E9%B0%B9-646109"
+      - title: "コトバンク「たたき」（改訂新版 世界大百科事典・日本大百科全書）"
+        url: "https://kotobank.jp/word/%E3%81%9F%E3%81%9F%E3%81%8D-849999"
+      - title: "Umios umito.「旬が２回ある魚、カツオ」"
+        url: "https://umito.umios.com/article44/"
+
+  - id: unagi
+    ja: うなぎ
+    kana: うなぎ
+    romaji: unagi
+    mean:
+      ja: "ニホンウナギ"
+      zh: "日本鳗鲡（河鳗）"
+      en: "Japanese eel"
+    part:
+      ja: "ウナギ科の魚で、海で生まれ川で育つ。主に開いて串を打ち、たれを付けて焼く蒲焼きにして食べる"
+      zh: "鳗鲡科鱼类，生于海里、长于河中；主要剖开穿签、刷酱汁烤成“蒲焼”来吃"
+      en: "An eel that is born at sea and grows up in rivers; eaten mainly as kabayaki, split, skewered and grilled with a sweet soy glaze"
+    note:
+      ja: "マリアナ諸島西方の海で生まれ、稚魚のシラスウナギとして冬から春に河口へ来て川を上り、5〜15年かけて育ったのち産卵のため海へ下る。国内で食べるウナギの99%以上は養殖で、河口で採ったシラスウナギ（約0.2g）を半年〜1年で200〜300gに育てるが、資源の減少から2013年に環境省、2014年にIUCNが絶滅危惧種に指定した。古名は「むなぎ」で『万葉集』の大伴家持の歌に見え、蒲焼きの名は、裂かずに丸ごと串に刺して焼いた形が蒲（がま）の穂に似ていたことによるとされる。今の蒲焼きは、関東では背開きにして白焼きの後に蒸してからたれ焼きにし、関西では腹開きにして蒸さずに焼く。"
+      zh: "日本鳗鲡生于马里亚纳群岛以西的海域，幼鱼“シラスウナギ”（玻璃鳗）在冬春之交来到河口溯河而上，经过5—15年长大后再入海产卵。日本国内吃的鳗鱼99%以上是养殖的，把河口捕到的约0.2克的玻璃鳗养半年到一年，长到200—300克；因资源减少，2013年被日本环境省、2014年被IUCN列为濒危物种。古名“むなぎ”，见于《万叶集》大伴家持的和歌；“蒲焼”之名据说是因为早先不剖开、整条穿签烤，样子像香蒲的穗。现在的蒲烧，关东背开，先白烤再蒸，然后刷酱烤；关西腹开，不蒸直接烤。"
+      en: "It is born in the sea west of the Mariana Islands, reaches river mouths in winter and spring as a glass eel (shirasu-unagi), grows for 5–15 years in rivers and estuaries and returns to the sea to spawn. Over 99% of the eel eaten in Japan is farmed, glass eels of about 0.2 g caught at river mouths being raised to 200–300 g in six months to a year; declining stocks led Japan’s Environment Ministry (2013) and the IUCN (2014) to list it as endangered. Its old name munagi appears in a Man’yōshū poem by Ōtomo no Yakamochi, and kabayaki is said to be named after the cattail spike (gama no ho), which whole eels skewered unsplit once resembled. Today Kantō splits eel down the back and steams it between plain grilling and glazing; Kansai splits it along the belly and grills without steaming."
+    sources:
+      - title: "Umios umito.「ウナギとアナゴの違い」"
+        url: "https://umito.umios.com/article96/"
+      - title: "Umios umito.「土用の丑の日、ウナギの日！アナゴやハモとの違いは？」"
+        url: "https://umito.umios.com/article102/"
+      - title: "コトバンク「ニホンウナギ」（共同通信ニュース用語解説・ブリタニカ国際大百科事典）"
+        url: "https://kotobank.jp/word/%E3%81%AB%E3%81%BB%E3%82%93%E3%81%86%E3%81%AA%E3%81%8E-3178262"
+      - title: "コトバンク「ウナギ」（日本大百科全書・改訂新版 世界大百科事典）"
+        url: "https://kotobank.jp/word/%E3%81%86%E3%81%AA%E3%81%8E-696333"
+      - title: "コトバンク「蒲焼」（デジタル大辞泉・改訂新版 世界大百科事典）"
+        url: "https://kotobank.jp/word/%E8%92%B2%E7%84%BC-465614"
+
+  - id: anago
+    ja: 穴子
+    ruby: "{穴子|あなご}"
+    kana: あなご
+    romaji: anago
+    mean:
+      ja: "マアナゴ"
+      zh: "星康吉鳗（星鳗）"
+      en: "Whitespotted conger"
+    part:
+      ja: "アナゴ科のマアナゴ。すし種には煮た身を使い、「煮詰め（ツメ）」を塗って出す"
+      zh: "康吉鳗科的星康吉鳗；做寿司料时用煮过的鱼肉，再刷上“煮詰め”（ツメ，浓缩酱汁）"
+      en: "The whitespotted conger; for sushi it is simmered and brushed with nitsume (tsume), a thick reduced sauce"
+    note:
+      ja: "昼は海底の穴や砂泥に潜んで夜に餌をとる習性が「穴子」の名の由来で、体側に白い点が等間隔に並ぶさまが竿秤の目盛りに似るため「ハカリメ」とも呼ばれる。ウナギと違って鱗がなく一生を海で過ごし、旬は夏で、透明な幼生は高知などで「ノレソレ」として食べられる。江戸前の握りは初め煮たアナゴ・イカ・エビなどを種にしたもので、戦後に煮物種が減るなかでもアナゴは残った。煮詰めは、穴子の煮汁に醤油・みりん・砂糖などを加えて煮詰めたたれで、シャコやハマグリにも塗る。"
+      zh: "白天潜伏在海底洞穴或泥沙中、夜里出来觅食，这一习性就是“穴子”（洞中之子）名字的由来；体侧白点等距排列，像杆秤的刻度，所以又叫“ハカリメ”。它不像鳗鲡那样有鳞，一生都在海里度过，旬期在夏季；透明的幼体在高知等地叫“ノレソレ”，也被食用。江户前握寿司起初多用煮过的星鳗、乌贼、虾等做料，战后煮制的寿司料越来越少，星鳗却一直保留下来。“煮詰め”是在星鳗煮汁里加酱油、味醂、砂糖等熬浓的酱汁，也刷在虾蛄和文蛤上。"
+      en: "The name, “hole child”, comes from its habit of hiding in burrows and sand by day and feeding at night; the evenly spaced white dots along its side, like the marks on a steelyard, give it the nickname hakarime. Unlike the freshwater eel it has no scales and spends its whole life at sea; it is best in summer, and its transparent larvae are eaten in Kōchi and elsewhere as noresore. Early Edo-style nigiri relied on simmered toppings such as anago, squid and shrimp, and while simmered toppings faded after the war, anago remained. Nitsume is the anago simmering liquid reduced with soy sauce, mirin and sugar, and is also brushed on mantis shrimp and clams."
+    sources:
+      - title: "コトバンク「アナゴ」（日本大百科全書・改訂新版 世界大百科事典・食の医学館）"
+        url: "https://kotobank.jp/word/%E3%81%82%E3%81%AA%E3%81%94-1500370"
+      - title: "コトバンク「マアナゴ」（日本大百科全書）"
+        url: "https://kotobank.jp/word/%E3%81%BE%E3%81%82%E3%81%AA%E3%81%94-3170882"
+      - title: "コトバンク「煮詰め」（デジタル大辞泉）"
+        url: "https://kotobank.jp/word/%E7%85%AE%E8%A9%B0%E3%82%81-1495793"
+      - title: "コトバンク「すし」（日本大百科全書）"
+        url: "https://kotobank.jp/word/%E3%81%99%E3%81%97-541612"
+      - title: "Umios umito.「ウナギとアナゴの違い」"
+        url: "https://umito.umios.com/article96/"
+
+  - id: ika
+    ja: イカ
+    kana: いか
+    romaji: ika
+    mean:
+      ja: "イカ（アオリイカ・コウイカ・スルメイカなど）"
+      zh: "鱿鱼、乌贼"
+      en: "Squid and cuttlefish"
+    part:
+      ja: "胴（外套膜）の身。江戸前の握りでは煮たイカが主で、生のイカがすし種として広まったのは戦後"
+      zh: "身体（外套膜）的肉；江户前握寿司原本多用煮过的乌贼，生乌贼成为寿司料是在战后"
+      en: "The body (mantle); early Edo-style nigiri used simmered squid, and raw squid became a sushi topping only after the war"
+    note:
+      ja: "イカは世界に約450種、食用は約30種で、日本の水揚げの7割はスルメイカが占める。石灰質の甲を持つコウイカは、死ぬと墨を出すことから市場や釣り人の間で「スミイカ」と呼ばれ、その稚イカは初夏のすし種「新イカ」として珍重される。アオリイカは歯ごたえ・甘み・うま味からイカの刺身で最も美味と評されるが、漁獲が少ない。昭和30年代までは鮮度を保つ技術が普及しておらず、獲れたイカの多くはスルメに加工された。"
+      zh: "全世界的乌贼类约450种，可食用的约30种，日本渔获量的七成是太平洋褶柔鱼（スルメイカ）。长有石灰质内壳（甲）的金乌贼（コウイカ）死后会流出墨汁，因此在市场和钓客中叫“スミイカ”（墨乌贼），其幼体作为初夏的寿司料“新イカ”备受珍视。莱氏拟乌贼（アオリイカ）以口感、甜味和鲜味被评为乌贼刺身中最美味的一种，但捕获量少。到昭和30年代（1955—1964年）为止，保鲜技术尚未普及，捕获的乌贼大多被制成鱿鱼干（スルメ）。"
+      en: "About 450 squid species are known worldwide, some 30 of them eaten, and the Japanese flying squid (surume-ika) makes up 70% of Japan’s landings. The golden cuttlefish (kō-ika), with its chalky internal shell, leaks ink when it dies and so is called sumi-ika (“ink squid”) at markets and by anglers; its juveniles are prized in early summer as the sushi topping shin-ika. The bigfin reef squid (aori-ika) is rated the finest sashimi squid for its bite, sweetness and savour, but the catch is small. Until the mid-1960s freshness could rarely be kept, and most squid landed was dried into surume."
+    sources:
+      - title: "Umios umito.「イカは世界に450種類！日本でよく食べられているイカの種類は？」"
+        url: "https://umito.umios.com/article49/"
+      - title: "コトバンク「コウイカ」（日本大百科全書・改訂新版 世界大百科事典）"
+        url: "https://kotobank.jp/word/%E3%81%93%E3%81%86%E3%81%84%E3%81%8B-3151408"
+      - title: "コトバンク「アオリイカ」（改訂新版 世界大百科事典・日本大百科全書）"
+        url: "https://kotobank.jp/word/%E3%81%82%E3%81%8A%E3%82%8A%E3%81%84%E3%81%8B-3140487"
+      - title: "コトバンク「すし」（日本大百科全書）"
+        url: "https://kotobank.jp/word/%E3%81%99%E3%81%97-541612"
+
+  - id: tako
+    ja: タコ
+    kana: たこ
+    romaji: tako
+    mean:
+      ja: "マダコ"
+      zh: "章鱼（真蛸）"
+      en: "Octopus (common octopus)"
+    part:
+      ja: "主にマダコの腕（足）を塩もみして茹でた身"
+      zh: "主要是用盐搓洗后煮熟的真蛸腕足"
+      en: "Mainly the arms of the common octopus, rubbed with salt and boiled"
+    note:
+      ja: "市場で最も普通に見られるマダコは各腕に70〜80個の吸盤が2列に並び、旬は夏。関西には雑節の半夏生に、稲がタコの吸盤のようにしっかり根付くよう願ってタコを食べる風習がある。国内消費の半分以上を輸入に頼り、2020年の輸入3万7748トンの約7割はモーリタニアとモロッコ産。タコの名は『出雲国風土記』に見え、『延喜式』には干しダコの貢納が記されている。"
+      zh: "市场上最常见的真蛸每条腕上有70—80个吸盘，排成两列，旬期在夏季。关西有在杂节“半夏生”吃章鱼的习俗，寓意稻苗像章鱼吸盘一样牢牢扎根。日本消费的章鱼一半以上靠进口，2020年进口的37,748吨中约七成来自毛里塔尼亚和摩洛哥。章鱼之名已见于《出云国风土记》，《延喜式》里还记载了进贡章鱼干。"
+      en: "The common octopus, the one seen most at market, has 70–80 suckers in two rows on each arm and is best in summer. In Kansai people eat octopus on Hangeshō, a seasonal day in early summer, praying that rice seedlings will take root as firmly as an octopus’s suckers grip. More than half of Japan’s octopus is imported; of 37,748 t imported in 2020, about 70% came from Mauritania and Morocco. Octopus is named in the Izumo Fudoki, and the Engishiki records dried octopus paid as tribute."
+    sources:
+      - title: "コトバンク「マダコ」（日本大百科全書）"
+        url: "https://kotobank.jp/word/%E3%81%BE%E3%81%A0%E3%81%93-3171262"
+      - title: "コトバンク「タコ」（日本大百科全書・改訂新版 世界大百科事典・食の医学館）"
+        url: "https://kotobank.jp/word/%E3%81%9F%E3%81%93-93147"
+      - title: "Umios umito.「半夏生にタコを食べる理由は？タコのパワーにあやかろう！」"
+        url: "https://umito.umios.com/article101/"
+      - title: "Umios umito.「かつては悪魔の魚と呼ばれていたタコ 今では世界の人気食材に」"
+        url: "https://umito.umios.com/article41/"
+
+  - id: ebi
+    ja: エビ
+    kana: えび
+    romaji: ebi
+    mean:
+      ja: "エビ（クルマエビなど）"
+      zh: "虾"
+      en: "Shrimp / prawn"
+    part:
+      ja: "江戸前ずしではクルマエビを茹でて（煮て）使い、生のエビがすし種として広まったのは戦後"
+      zh: "江户前寿司用煮熟的日本对虾（クルマエビ），生虾成为寿司料是在战后"
+      en: "Edo-style sushi uses boiled kuruma prawns; raw shrimp became a sushi topping only after the war"
+    note:
+      ja: "クルマエビは腹を曲げると縞模様が車輪のように見えることが名の由来で、国内ではエビ類の最高級品とされ、1960年に幼生の大量飼育技術が確立して陸上での完全養殖が可能になった。日本で食べるエビの9割以上は輸入で（2018年は輸入15万8488トン、国内漁獲1万4645トン）、すし種にも養殖のバナメイエビが広く使われる。「海老」の表記は日本独自で、平安時代の『和名類聚抄』に見え、曲がった体と長いひげを老人に見立てたものと考えられている。"
+      zh: "日本对虾（クルマエビ）腹部弯曲时条纹像车轮，因此得名，在日本被视为最高档的虾，1960年确立了幼体大规模培育技术，从此可在陆上全人工养殖。日本人吃的虾九成以上靠进口（2018年进口158,488吨，国内捕获14,645吨），寿司料也大量使用养殖的南美白对虾（バナメイ）。“海老”的写法是日本独有的，见于平安时代的《和名类聚抄》，一般认为是把弯曲的身体和长须比作老人。"
+      en: "The kuruma prawn is named for the stripes that look like a wheel (kuruma) when it curls; Japan ranks it the finest shrimp, and mass rearing of its larvae, established in 1960, made full land-based farming possible. Over 90% of the shrimp eaten in Japan is imported (158,488 t imported against a domestic catch of 14,645 t in 2018), and farmed whiteleg shrimp is widely used for sushi. Writing ebi as 海老, “old man of the sea”, is a Japanese usage first seen in the Heian dictionary Wamyō Ruijushō, thought to liken the bent body and long feelers to an old man."
+    sources:
+      - title: "コトバンク「クルマエビ」（日本大百科全書・改訂新版 世界大百科事典）"
+        url: "https://kotobank.jp/word/%E3%81%8F%E3%82%8B%E3%81%BE%E3%81%88%E3%81%B3-3150150"
+      - title: "コトバンク「すし」（日本大百科全書）"
+        url: "https://kotobank.jp/word/%E3%81%99%E3%81%97-541612"
+      - title: "Umios umito.「江戸前寿司の世界」"
+        url: "https://umito.umios.com/article143/"
+      - title: "Umios umito.「みんな大好きエビフライのエビってどんなエビ？」"
+        url: "https://umito.umios.com/article94/"
+      - title: "Umios umito.「日本人の大好きなエビ。減っているの？それとも増えているの？」"
+        url: "https://umito.umios.com/article31/"
+
+  - id: amaebi
+    ja: 甘エビ
+    ruby: "{甘|あま}エビ"
+    kana: あまえび
+    romaji: amaebi
+    mean:
+      ja: "ホッコクアカエビ"
+      zh: "甜虾（北国赤虾）"
+      en: "Sweet shrimp (northern shrimp)"
+    part:
+      ja: "タラバエビ科のホッコクアカエビ（標準和名）の生の身。刺身やすし種にする"
+      zh: "长额虾科北国赤虾（标准和名ホッコクアカエビ）的生虾肉，做刺身或寿司料"
+      en: "Raw meat of the pink shrimp Pandalus eous (standard name hokkoku-aka-ebi), eaten as sashimi and sushi"
+    note:
+      ja: "刺身にすると甘みがあることから「アマエビ」の名で流通し、一様に赤い体色から「アカエビ」「ナンバンエビ」「トンガラシ」などの地方名もある。日本海から北太平洋北部の水深150〜500mの泥底にすみ、北大西洋のものを別種ホンホッコクアカエビとする見方もあるが、水産上は区別されていない。まず雄として成熟し、成長すると雌に性転換する（雄性先熟）ため、大型の個体はすべて雌で、寿命は4年ほど。"
+      zh: "生吃有甜味，所以以“アマエビ”（甜虾）之名流通；体色通红，各地又叫“アカエビ”“ナンバンエビ”“トンガラシ”（辣椒）等。它栖息于日本海至北太平洋北部水深150—500米的泥底；也有观点把北大西洋的群体视为另一物种（北极甜虾），但水产贸易上并不区分。它先以雄性成熟，长大后转变为雌性（雄性先熟），所以大个体全是雌虾，寿命约4年。"
+      en: "It is sold as amaebi, “sweet shrimp”, for its sweetness when eaten raw, and its uniformly red body earns local names such as aka-ebi, nanban-ebi and tongarashi (“chilli”). It lives on muddy bottoms 150–500 m deep from the Sea of Japan to the northern North Pacific; some treat the North Atlantic form as a separate species, Pandalus borealis, though the trade does not distinguish them. It matures first as a male and later turns female (protandry), so all large individuals are female; it lives about four years."
+    sources:
+      - title: "コトバンク「ホッコクアカエビ」（改訂新版 世界大百科事典・ブリタニカ国際大百科事典・日本大百科全書）"
+        url: "https://kotobank.jp/word/%E3%81%BB%E3%81%A4%E3%81%93%E3%81%8F%E3%81%82%E3%81%8B%E3%81%88%E3%81%B3-3169963"
+
+  - id: hotate
+    ja: ホタテ
+    kana: ほたて
+    romaji: hotate
+    mean:
+      ja: "ホタテガイの貝柱"
+      zh: "扇贝（虾夷扇贝）的贝柱"
+      en: "Scallop (adductor muscle)"
+    part:
+      ja: "ホタテガイの貝柱（殻を閉じる後閉殻筋）。周りの外套膜「ひも」もすし種にする"
+      zh: "虾夷扇贝的贝柱（闭合贝壳的后闭壳肌）；周围的外套膜“ひも”（裙边）也可做寿司料"
+      en: "The adductor muscle that closes the shell of the Japanese scallop; the surrounding mantle frill (himo) is also used for sushi"
+    note:
+      ja: "「帆立貝」の名は、片方の殻を帆のように立てて海上を走ると考えられたことによるが、実際は殻を激しく開閉して水を噴き出し、その反動で泳ぐ。この遊泳のために貝柱が発達し、体重の約10〜15%を占める。国内生産の99%以上が北海道・青森・岩手・宮城で、オホーツク海沿岸で稚貝を海底にまいて3〜4年育てる「地まき」は貝柱が太く弾力があり、陸奥湾や噴火湾でかごに入れたり耳に穴を開けて吊るしたりして育てる「垂下式」は砂をかまず身が柔らかい。外套膜の縁に並ぶ約80個の黒い点はすべて目で、明暗を感じているとされる。"
+      zh: "“帆立貝”之名源于从前以为它会把一片壳像帆一样竖起、在海面上航行；实际上它是靠猛烈开合贝壳喷水，借反冲力游动。为了游泳，贝柱特别发达，约占体重的10%—15%。日本国内产量99%以上来自北海道、青森、岩手、宫城：鄂霍次克海沿岸把幼贝撒到海底养3—4年的“地まき”，贝柱粗壮有弹性；陆奥湾、喷火湾把贝装笼或在贝耳上打孔吊养的“垂下式”，不含沙、肉质柔软。外套膜边缘约80个黑点全是眼睛，一般认为能感知明暗。"
+      en: "Hotate-gai, “sail-raising shell”, comes from the old belief that it raised one valve like a sail to cruise the sea; in fact it swims by clapping its valves and jetting water out. That swimming is why the adductor is so big, about 10–15% of body weight. Over 99% of Japan’s output comes from Hokkaidō, Aomori, Iwate and Miyagi: on the Okhotsk coast young scallops are sown on the seabed and grown 3–4 years (jimaki), giving thick, springy adductors, while in Mutsu Bay and Funka Bay they are hung in baskets or by a hole drilled in the hinge “ear” (suika), giving sand-free, softer meat. The roughly 80 black dots along the mantle edge are all eyes, thought to sense light and dark."
+    sources:
+      - title: "コトバンク「ホタテガイ」（日本大百科全書・改訂新版 世界大百科事典・食の医学館）"
+        url: "https://kotobank.jp/word/%E3%81%BB%E3%81%9F%E3%81%A6%E3%81%8C%E3%81%84-3169941"
+      - title: "Umios umito.「ホタテは養殖方法で用途が分かれるってホント？」"
+        url: "https://umito.umios.com/article57/"
+      - title: "Umios umito.「ホタテの貝柱はなぜ大きい？生物学的な役割とサイズの秘密」"
+        url: "https://umito.umios.com/article185/"
+
+  - id: uni
+    ja: ウニ
+    kana: うに
+    romaji: uni
+    mean:
+      ja: "ウニの生殖巣"
+      zh: "海胆（生殖腺）"
+      en: "Sea urchin (gonads)"
+    part:
+      ja: "殻の内側に5つ並ぶ生殖巣（卵巣または精巣）。すしでは軍艦巻きにすることが多い"
+      zh: "壳内排列的5块生殖腺（卵巢或精巢）；做寿司时多做成军舰卷"
+      en: "The five gonads (ovaries or testes) lining the inside of the shell; at sushi usually served as gunkan-maki"
+    note:
+      ja: "食用にする種は地域で決まっていて、北海道と東北北東部ではエゾバフンウニとキタムラサキウニ、本州以南の多くの地域ではバフンウニ・ムラサキウニ・アカウニ、奄美・沖縄ではシラヒゲウニを採る。古くはウニといえば生殖巣を塩漬けにした塩ウニのことで、『日本山海名産図会』は「塩辛中の第一」とし、塩とアルコールを加えた加工品は「雲丹」と書かれる。日本の消費量は桁外れに多く、生殖巣の重量で年2000トン以上を十数か国から輸入している。"
+      zh: "各地食用的种类基本固定：北海道和东北地区东北部采中间球海胆（エゾバフンウニ）和光棘球海胆（キタムラサキウニ），本州以南多数地区采马粪海胆、紫海胆、红海胆，奄美和冲绳采白棘三列海胆（シラヒゲウニ）。过去说“ウニ”指的是用盐腌的海胆生殖腺（塩ウニ），《日本山海名产图会》称之为“盐辛中第一”；加盐和酒精制成的加工品则写作“雲丹”。日本的消费量大得出奇，每年以生殖腺重量计从十几个国家进口2000吨以上。"
+      en: "Which species is eaten depends on the region: Ezo bafun-uni and kita-murasaki-uni in Hokkaidō and north-eastern Tōhoku, bafun-uni, murasaki-uni and aka-uni across most of Honshū and further south, and shirahige-uni in Amami and Okinawa. Uni once meant salted gonads — the Nihon Sankai Meisan Zue called salted uni “the finest of all shiokara” — and the product processed with salt and alcohol is written 雲丹. Japan’s consumption is enormous: it imports over 2,000 t of gonads a year from more than ten countries."
+    sources:
+      - title: "コトバンク「ウニ」（日本大百科全書・改訂新版 世界大百科事典）"
+        url: "https://kotobank.jp/word/%E3%81%86%E3%81%AB-211299"
+      - title: "コトバンク「軍艦巻き」（和・洋・中・エスニック 世界の料理がわかる辞典）"
+        url: "https://kotobank.jp/word/%E8%BB%8D%E8%89%A6%E5%B7%BB%E3%81%8D-1494798"
+
+  - id: ikura
+    ja: イクラ
+    kana: いくら
+    romaji: ikura
+    mean:
+      ja: "サケ・マスの卵（ばらした粒）"
+      zh: "鲑鱼籽"
+      en: "Salmon roe"
+    part:
+      ja: "サケ・マスの成熟卵を卵巣膜からばらして塩水などに漬けたもの。膜に包まれたまま塩漬けにしたものは筋子"
+      zh: "把鲑、鳟的成熟卵从卵巢膜中一粒粒分开，用盐水等腌制；连膜整块腌制的叫“筋子”（すじこ）"
+      en: "Ripe salmon or trout eggs separated from the ovary membrane and cured in brine; cured still in the membrane they are sujiko"
+    note:
+      ja: "ロシア語で「魚卵」を意味する ikra に由来し、日露戦争（1904〜05年）のころ、ロシア人がキャビアの代わりに食べたのが日本での始まりといわれ、昭和初期の市場ではイクラが「カビア」の名で売られていた。膜付きの筋子は古くから珍重され、『延喜式』には「鮭子」として信濃・越後などからの貢納が見える。主な原料はシロサケの卵で、輸入は米国・ロシアから。海藻由来の多糖類で植物油を包んだ模造品も作られている。"
+      zh: "名称来自俄语ikra（鱼卵）；据说日俄战争（1904—1905年）时俄国人把它当鱼子酱的替代品来吃，这是日本吃イクラ的开端，昭和初期市场上的イクラ还以“カビア”（鱼子酱）之名出售。带膜的筋子自古珍贵，《延喜式》中就有信浓、越后等地以“鮭子”进贡的记载。主要原料是白鲑的卵，进口则来自美国和俄罗斯。另有用海藻多糖包裹植物油制成的仿制品。"
+      en: "The word is Russian ikra, “fish roe”; it is said to have started in Japan around the Russo-Japanese War (1904–05), when Russians ate it as a stand-in for caviar, and in early Shōwa markets ikura was sold under the name kabia (“caviar”). Roe in its membrane (sujiko) has long been prized: the Engishiki records “salmon roe” sent as tribute from Shinano, Echigo and elsewhere. Most ikura comes from chum salmon, with imports from the United States and Russia, and imitations are made by wrapping vegetable oil in a seaweed polysaccharide."
+    sources:
+      - title: "コトバンク「イクラ」（デジタル大辞泉・精選版 日本国語大辞典・改訂新版 世界大百科事典・ブリタニカ国際大百科事典・日本大百科全書）"
+        url: "https://kotobank.jp/word/%E3%81%84%E3%81%8F%E3%82%89-3142893"
+      - title: "コトバンク「筋子」（デジタル大辞泉・改訂新版 世界大百科事典）"
+        url: "https://kotobank.jp/word/%E7%AD%8B%E5%AD%90-83794"
+      - title: "Umios umito.「魚の卵はどうやって取り出されるのか調べてみた」"
+        url: "https://umito.umios.com/article69/"
+
+  - id: kani
+    ja: カニ
+    kana: かに
+    romaji: kani
+    mean:
+      ja: "カニ（ズワイガニ・タラバガニなど）"
+      zh: "蟹（雪蟹、帝王蟹等）"
+      en: "Crab (snow crab, king crab, etc.)"
+    part:
+      ja: "ズワイガニやタラバガニなどの身。生は傷みやすく、多くは塩ゆでや冷凍で流通する"
+      zh: "雪蟹（ズワイガニ）、帝王蟹（タラバガニ）等的蟹肉；生蟹容易变质，多以盐水煮熟或冷冻的形式流通"
+      en: "Meat of snow crab, king crab and the like; raw crab spoils quickly, so most is sold salt-boiled or frozen"
+    note:
+      ja: "ズワイガニは山陰では「松葉ガニ」、福井では「越前ガニ」と呼ばれ、11〜3月に水深150〜200mの底引網で漁獲される。雌は成熟すると抱卵を繰り返して甲幅7〜8cmで成長が止まり、「セイコ」「コウバコ」などと呼ばれる。タラバガニは鱈の漁場（鱈場）でとれることからの名だが、分類上はヤドカリの仲間（異尾類）で、最後の脚が小さく甲の中に隠れている。ゆでると赤くなるのは、生きている間はたんぱく質と結合して青黒く見える色素アスタキサンチンが、加熱で離れて赤色を現すため。"
+      zh: "雪蟹在山阴地区叫“松葉ガニ”，在福井叫“越前ガニ”，每年11月至次年3月用底拖网在水深150—200米处捕捞。雌蟹成熟后不断抱卵，甲宽长到7—8厘米就不再长大，被称为“セイコ”“コウバコ”等。帝王蟹（タラバガニ）因在鳕鱼渔场（鱈場）捕获而得名，但分类上属于寄居蟹类（异尾类），最后一对足很小，藏在甲壳里。蟹煮熟后变红，是因为色素虾青素在活蟹体内与蛋白质结合而呈青黑色，加热后分离，显出本来的红色。"
+      en: "Snow crab is called matsuba-gani in San’in and Echizen-gani in Fukui, and is trawled from 150–200 m between November and March. Females stop growing at a 7–8 cm shell once mature, carrying eggs continuously, and are known as seiko or kōbako. King crab (taraba-gani) is named for the cod grounds (tara-ba) where it is caught, yet it is classed with the hermit crabs (Anomura), its last pair of legs small and hidden under the shell. Crab turns red when boiled because the pigment astaxanthin, bound to protein and looking blue-black in the living animal, is released by heat and shows its true red."
+    sources:
+      - title: "コトバンク「ズワイガニ」（日本大百科全書・ブリタニカ国際大百科事典・改訂新版 世界大百科事典）"
+        url: "https://kotobank.jp/word/%E3%81%9A%E3%82%8F%E3%81%84%E3%81%8C%E3%81%AB-3156979"
+      - title: "コトバンク「タラバガニ」（日本大百科全書・改訂新版 世界大百科事典）"
+        url: "https://kotobank.jp/word/%E3%81%9F%E3%82%89%E3%81%B0%E3%81%8C%E3%81%AB-3158243"
+      - title: "コトバンク「カニ」（日本大百科全書）"
+        url: "https://kotobank.jp/word/%E3%81%8B%E3%81%AB-465226"
+      - title: "Umios umito.「タラバガニやズワイガニが増えている場所の秘密」"
+        url: "https://umito.umios.com/article17/"
+
+  - id: tamago
+    ja: 玉子
+    ruby: "{玉子|たまご}"
+    kana: たまご
+    romaji: tamago
+    mean:
+      ja: "すし種の厚焼き玉子"
+      zh: "玉子烧（厚蛋烧）"
+      en: "Sweet rolled omelette (tamagoyaki)"
+    part:
+      ja: "溶き卵に調味料を加えて厚く焼いた卵焼き。すし屋では「ギョク」と呼ぶ"
+      zh: "在蛋液里加调味料煎成的厚蛋烧；寿司店里叫“ギョク”"
+      en: "Beaten egg seasoned and cooked into a thick omelette; sushi shops call it gyoku"
+    note:
+      ja: "握りずしは文化・文政期（1804〜30年）ごろに江戸で始まり、初めは鮮魚介類を使わず卵焼きと「おぼろ（でんぶ）」が主な種だったとされる。当時のすしは1貫4〜8文ほどで、江戸末期に最も高かったのは16文の「卵巻き」だったという。「ギョク」は「玉子」の「玉」を音読みした符丁で、「玉子」の字は形の丸さから、あるいは魂（たま）の入ったものと考えたためと解され、「厚焼の玉子」の語は1769年の洒落本に見える。"
+      zh: "握寿司约在文化、文政年间（1804—1830年）诞生于江户，据说起初不用鲜鱼贝，主要的料是玉子烧和“おぼろ”（鱼松）。当时的寿司每贯约4—8文，据说江户末期最贵的是16文的“卵巻き”（蛋卷寿司）。“ギョク”是把“玉子”的“玉”字按音读念的行话；“玉子”的写法一说因其形圆，一说因为被看作装有“魂（たま）”之物；“厚焼の玉子”一词见于1769年的洒落本。"
+      en: "Nigiri began in Edo around the Bunka–Bunsei era (1804–30), and at first, it is said, its main toppings were not fresh seafood but omelette and oboro, sweet fish floss. Sushi then cost about 4–8 mon a piece, and the dearest at the end of the Edo period, at 16 mon, is said to have been the egg roll (tamago-maki). Gyoku is trade slang reading the 玉 of 玉子 in its Chinese reading; the spelling 玉子 is explained by the egg’s round shape or as a vessel holding a soul (tama), and “thick-cooked egg” (atsuyaki no tamago) appears in a sharebon of 1769."
+    sources:
+      - title: "コトバンク「握り鮨」（精選版 日本国語大辞典・ブリタニカ国際大百科事典）"
+        url: "https://kotobank.jp/word/%E6%8F%A1%E3%82%8A%E9%AE%A8-109183"
+      - title: "Umios umito.「江戸前寿司の世界」"
+        url: "https://umito.umios.com/article143/"
+      - title: "コトバンク「玉」（デジタル大辞泉・精選版 日本国語大辞典）"
+        url: "https://kotobank.jp/word/%E7%8E%89-53197"
+      - title: "コトバンク「玉子」（世界大百科事典 旧版）"
+        url: "https://kotobank.jp/word/%E7%8E%89%E5%AD%90-1362859"
+      - title: "コトバンク「厚焼」（デジタル大辞泉・精選版 日本国語大辞典）"
+        url: "https://kotobank.jp/word/%E5%8E%9A%E7%84%BC-425667"

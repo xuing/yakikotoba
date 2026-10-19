@@ -1,0 +1,11 @@
+- file: hamachi-nigiri.jpg
+  kind: dish
+  caption:
+    ja: "ハマチのにぎり"
+    zh: "油甘鱼（鰤鱼幼鱼）握寿司"
+    en: "Hamachi (young yellowtail) nigiri"
+  source:
+    title: "Nigiri zushi (hamachi).jpg（Wikimedia Commons）"
+    url: "https://commons.wikimedia.org/wiki/File:Nigiri_zushi_(hamachi).jpg"
+    license: "Public domain"
+    author: "Lombroso"

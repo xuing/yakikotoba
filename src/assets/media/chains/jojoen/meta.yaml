@@ -1,0 +1,60 @@
+- file: logo.png
+  kind: logo
+  source:
+    title: 叙々苑公式サイト（ロゴ画像 /wp-content/themes/jojoen/img/logo.png）
+    url: "https://www.jojoen.co.jp/"
+    license: © Jojoen Co., LTD
+- file: tanshio-yaki.jpg
+  kind: dish
+  source:
+    title: 叙々苑のこだわり 第七回『お客さまへの想いが生んだこだわりのメニュー』
+    url: "https://www.jojoen.co.jp/guides/kodawari07/"
+    license: © Jojoen Co., LTD
+- file: jo-negi-tanshio-yaki.jpg
+  kind: dish
+  source:
+    title: 叙々苑 六本木本店 店舗情報（メニュー）
+    url: "https://www.jojoen.co.jp/shop/jojoen/roppongi/"
+    license: © Jojoen Co., LTD
+- file: tsubozuke-karubi-yaki.jpg
+  kind: dish
+  source:
+    title: 叙々苑 六本木本店 店舗情報（メニュー）
+    url: "https://www.jojoen.co.jp/shop/jojoen/roppongi/"
+    license: © Jojoen Co., LTD
+- file: jo-karubi-yaki.jpg
+  kind: dish
+  source:
+    title: 叙々苑のこだわり 第七回『お客さまへの想いが生んだこだわりのメニュー』
+    url: "https://www.jojoen.co.jp/guides/kodawari07/"
+    license: © Jojoen Co., LTD
+- file: tokusen-sudare-kata-rosu-yaki.jpg
+  kind: dish
+  source:
+    title: 叙々苑 六本木本店 店舗情報（メニュー）
+    url: "https://www.jojoen.co.jp/shop/jojoen/roppongi/"
+    license: © Jojoen Co., LTD
+- file: akami-rosu-yaki.jpg
+  kind: dish
+  source:
+    title: 叙々苑 六本木本店 店舗情報（メニュー）
+    url: "https://www.jojoen.co.jp/shop/jojoen/roppongi/"
+    license: © Jojoen Co., LTD
+- file: kimuchi-moriawase.jpg
+  kind: dish
+  source:
+    title: 叙々苑 六本木本店 店舗情報（メニュー）
+    url: "https://www.jojoen.co.jp/shop/jojoen/roppongi/"
+    license: © Jojoen Co., LTD
+- file: ginban-reimen.jpg
+  kind: dish
+  source:
+    title: 叙々苑 六本木本店 店舗情報（メニュー）
+    url: "https://www.jojoen.co.jp/shop/jojoen/roppongi/"
+    license: © Jojoen Co., LTD
+- file: ishiyaki-bibinba.jpg
+  kind: dish
+  source:
+    title: 叙々苑 六本木本店 店舗情報（メニュー）
+    url: "https://www.jojoen.co.jp/shop/jojoen/roppongi/"
+    license: © Jojoen Co., LTD

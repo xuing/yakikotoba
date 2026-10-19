@@ -1,0 +1,11 @@
+- file: samon-nigiri.jpg
+  kind: dish
+  caption:
+    ja: "ノルウェー産生サーモンのにぎり"
+    zh: "挪威产生三文鱼握寿司"
+    en: "Nigiri of raw Norwegian salmon"
+  source:
+    title: "Tachiguizushi-Aburi-Hyakkan-Kaihinmakuhari 051.jpg（Wikimedia Commons）"
+    url: "https://commons.wikimedia.org/wiki/File:Tachiguizushi-Aburi-Hyakkan-Kaihinmakuhari_051.jpg"
+    license: "CC BY 4.0"
+    author: "RuinDig/Yuki Uchida"

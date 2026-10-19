@@ -170,7 +170,10 @@ const COLS = [
                         {it.note?.zh && <p lang="zh-Hans" class="zh">{it.note.zh}</p>}
                         {it.note?.en && <p lang="en" class="en">{it.note.en}</p>}
                         {it.sources.length > 0 && (
-                          <p class="src">出典：{it.sources.map((s, k) => <>{k > 0 && '、'}{s.url ? <a href={s.url} rel="noopener">{s.title ?? s.url}</a> : s.title}</>)}</p>
+                          <details class="src">
+                            <summary>出典 · {it.sources.length}</summary>
+                            <ol>{it.sources.map((s) => <li>{s.url ? <a href={s.url} rel="noopener">{s.title ?? s.url}</a> : s.title}</li>)}</ol>
+                          </details>
                         )}
                       </td>
                     </tr>
@@ -296,7 +299,8 @@ const COLS = [
   .g-title { display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap; margin-bottom: 8px; font-weight: 400; }
   .g-title .mincho { font-size: 26px; font-weight: 800; letter-spacing: .03em; }
   .g-title .zh, .g-title .en { font-size: 14px; color: var(--ink-2); }
-  .g-note { display: grid; gap: 2px; font-size: 14px; color: var(--ink-2); max-width: 60em; margin-bottom: 10px; }
+  .g-note { display: grid; gap: 4px; font-size: 13.5px; line-height: 1.7; color: var(--ink-2); max-width: 64em; margin: 4px 0 14px; padding: 2px 0 2px 14px; border-left: 3px solid var(--line-2); }
+  .g-note [lang='ja'] { color: var(--ink); }
   .tbl { width: 100%; border-collapse: collapse; table-layout: fixed; }
   thead th { text-align: left; vertical-align: bottom; padding: 8px 12px; border-bottom: 1.5px solid var(--ink); font-weight: 600; font-size: 13px; }
   thead th span { display: block; line-height: 1.4; }
@@ -312,7 +316,11 @@ const COLS = [
   td .en { font-size: 13px; line-height: 1.55; color: var(--ink-2); margin-top: 3px; }
   .c-note .ja { font-size: 14px; }
   .c-mean .ja { font-weight: 600; }
-  .src { font-size: 11.5px; color: var(--ink-3); margin-top: 6px !important; line-height: 1.6; }
+  .src { font-size: 11.5px; color: var(--ink-3); margin-top: 8px; line-height: 1.6; }
+  .src summary { cursor: pointer; width: fit-content; list-style: none; padding: 1px 8px; border: 1px solid var(--line); border-radius: 999px; }
+  .src summary::-webkit-details-marker { display: none; }
+  .src[open] summary { color: var(--ink-2); border-color: var(--line-2); }
+  .src ol { margin: 6px 0 0; padding-left: 1.4em; display: grid; gap: 2px; }
   .src a { color: inherit; text-underline-offset: 2px; text-decoration-color: var(--line-2); }
 
   .word { display: flex; align-items: center; gap: 12px; }

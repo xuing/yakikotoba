@@ -65,12 +65,15 @@ export async function getModel(): Promise<TabModel[]> {
     const refs = new Set(gs.flatMap((g) => g.rows.map((r) => r.ref)));
     const tabChains: ChainModel[] = chains
       .map((ch) => ({ ch, count: [...(chainRows.get(ch.id) ?? [])].filter((r) => refs.has(r)).length }))
-      .filter(({ ch, count }) => count > 0 && (ch.data.cuisine === tab.id || count >= 3))
-      .sort((a, b) => Number(b.ch.data.cuisine === tab.id) - Number(a.ch.data.cuisine === tab.id) || order(a.ch, b.ch))
+      .filter(({ ch, count }) => count > 0 && ch.data.cuisine === tab.id)
+      .sort((a, b) => b.count - a.count || order(a.ch, b.ch))
       .map(({ ch, count }) => ({
         id: ch.id, ja: ch.data.ja, ruby: ch.data.ruby, kana: ch.data.kana, romaji: ch.data.romaji, url: ch.data.url,
         note: ch.data.note, cuisine: ch.data.cuisine, logo: logoFor(`chains/${ch.id}`), count,
       }));
+    // only show menu names for chains that are offered as filters in this tab
+    const shown = new Set(tabChains.map((c) => c.id));
+    for (const g of gs) for (const r of g.rows) r.chains = r.chains.filter((h) => shown.has(h.chain));
     return { id: tab.id, ja: tab.data.ja, ruby: tab.data.ruby, romaji: tab.data.romaji, zh: tab.data.zh, en: tab.data.en, groups: gs, chains: tabChains };
   });
 }

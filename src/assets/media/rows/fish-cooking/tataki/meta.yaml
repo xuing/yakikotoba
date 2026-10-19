@@ -1,0 +1,11 @@
+- file: katsuo-tataki.jpg
+  kind: dish
+  caption:
+    ja: "カツオのたたき（高知市）"
+    zh: "炙烤鲣鱼（高知市）"
+    en: "Katsuo no tataki, Kōchi City"
+  source:
+    title: "カツオのたたき.jpg（Wikimedia Commons）"
+    url: "https://commons.wikimedia.org/wiki/File:%E3%82%AB%E3%83%84%E3%82%AA%E3%81%AE%E3%81%9F%E3%81%9F%E3%81%8D.jpg"
+    license: "CC BY 4.0"
+    author: "ノボホショコロトソ"

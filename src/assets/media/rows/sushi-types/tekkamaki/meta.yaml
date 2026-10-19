@@ -1,0 +1,11 @@
+- file: tekkamaki.jpg
+  kind: dish
+  caption:
+    ja: "鉄火巻き（回転寿司）"
+    zh: "金枪鱼细卷（回转寿司）"
+    en: "Tekka-maki at a conveyor-belt sushi bar"
+  source:
+    title: "Kaiten-zushi 005.jpg（Wikimedia Commons）"
+    url: "https://commons.wikimedia.org/wiki/File:Kaiten-zushi_005.jpg"
+    license: "CC0"
+    author: "Ocdp"

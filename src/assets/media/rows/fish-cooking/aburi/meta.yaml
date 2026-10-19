@@ -1,0 +1,11 @@
+- file: aburi-torch.jpg
+  kind: cooked
+  caption:
+    ja: "バーナーで魚の表面を炙る"
+    zh: "用喷枪炙烤鱼的表面"
+    en: "Searing the surface of fish with a kitchen torch"
+  source:
+    title: "炙り (3847802775).jpg（Wikimedia Commons）"
+    url: "https://commons.wikimedia.org/wiki/File:%E7%82%99%E3%82%8A_(3847802775).jpg"
+    license: "CC BY 2.0"
+    author: "ZoAmichi Kai"

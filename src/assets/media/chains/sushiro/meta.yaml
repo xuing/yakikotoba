@@ -1,0 +1,198 @@
+- file: logo.svg
+  kind: logo
+  source:
+    title: "スシロー公式サイト"
+    url: "https://www.akindo-sushiro.co.jp/"
+    license: "© 株式会社あきんどスシロー"
+- file: gensen-maguro-akami.webp
+  kind: dish
+  source:
+    title: "スシロー公式サイト 店舗別メニュー（岸部店）"
+    url: "https://www.akindo-sushiro.co.jp/menu/menu_detail/?s_id=46"
+    license: "© 株式会社あきんどスシロー"
+- file: gensen-maguro-akami-nikiri-zuke.webp
+  kind: dish
+  source:
+    title: "スシロー公式サイト 店舗別メニュー（岸部店）"
+    url: "https://www.akindo-sushiro.co.jp/menu/menu_detail/?s_id=46"
+    license: "© 株式会社あきんどスシロー"
+- file: negimaguro-gunkan.webp
+  kind: dish
+  source:
+    title: "スシロー公式サイト 店舗別メニュー（岸部店）"
+    url: "https://www.akindo-sushiro.co.jp/menu/menu_detail/?s_id=46"
+    license: "© 株式会社あきんどスシロー"
+- file: honmaguro-chutoro.webp
+  kind: dish
+  source:
+    title: "スシロー公式サイト 店舗別メニュー（岸部店）"
+    url: "https://www.akindo-sushiro.co.jp/menu/menu_detail/?s_id=46"
+    license: "© 株式会社あきんどスシロー"
+- file: samon.webp
+  kind: dish
+  source:
+    title: "スシロー公式サイト 店舗別メニュー（岸部店）"
+    url: "https://www.akindo-sushiro.co.jp/menu/menu_detail/?s_id=46"
+    license: "© 株式会社あきんどスシロー"
+- file: yakitoro-samon.webp
+  kind: dish
+  source:
+    title: "スシロー公式サイト 店舗別メニュー（岸部店）"
+    url: "https://www.akindo-sushiro.co.jp/menu/menu_detail/?s_id=46"
+    license: "© 株式会社あきんどスシロー"
+- file: aburi-samon-bata-joyu.webp
+  kind: dish
+  source:
+    title: "スシロー公式サイト 店舗別メニュー（岸部店）"
+    url: "https://www.akindo-sushiro.co.jp/menu/menu_detail/?s_id=46"
+    license: "© 株式会社あきんどスシロー"
+- file: samon-tataki-gunkan.webp
+  kind: dish
+  source:
+    title: "スシロー公式サイト 店舗別メニュー（岸部店）"
+    url: "https://www.akindo-sushiro.co.jp/menu/menu_detail/?s_id=46"
+    license: "© 株式会社あきんどスシロー"
+- file: ikejime-hamachi.webp
+  kind: dish
+  source:
+    title: "スシロー公式サイト 店舗別メニュー（岸部店）"
+    url: "https://www.akindo-sushiro.co.jp/menu/menu_detail/?s_id=46"
+    license: "© 株式会社あきんどスシロー"
+- file: ikejime-madai.webp
+  kind: dish
+  source:
+    title: "スシロー公式サイト 店舗別メニュー（岸部店）"
+    url: "https://www.akindo-sushiro.co.jp/menu/menu_detail/?s_id=46"
+    license: "© 株式会社あきんどスシロー"
+- file: meaji.webp
+  kind: dish
+  source:
+    title: "スシロー公式サイト 店舗別メニュー（岸部店）"
+    url: "https://www.akindo-sushiro.co.jp/menu/menu_detail/?s_id=46"
+    license: "© 株式会社あきんどスシロー"
+- file: tennen-iwashi.webp
+  kind: dish
+  source:
+    title: "スシロー公式サイト 店舗別メニュー（岸部店）"
+    url: "https://www.akindo-sushiro.co.jp/menu/menu_detail/?s_id=46"
+    license: "© 株式会社あきんどスシロー"
+- file: tennen-saba-tabekurabe.webp
+  kind: dish
+  source:
+    title: "スシロー公式サイト 店舗別メニュー（岸部店）"
+    url: "https://www.akindo-sushiro.co.jp/menu/menu_detail/?s_id=46"
+    license: "© 株式会社あきんどスシロー"
+- file: unagi-kabayaki.webp
+  kind: dish
+  source:
+    title: "スシロー公式サイト 店舗別メニュー（岸部店）"
+    url: "https://www.akindo-sushiro.co.jp/menu/menu_detail/?s_id=46"
+    license: "© 株式会社あきんどスシロー"
+- file: ni-anago.webp
+  kind: dish
+  source:
+    title: "スシロー公式サイト 店舗別メニュー（岸部店）"
+    url: "https://www.akindo-sushiro.co.jp/menu/menu_detail/?s_id=46"
+    license: "© 株式会社あきんどスシロー"
+- file: jo-anago.webp
+  kind: dish
+  source:
+    title: "スシロー公式サイト 店舗別メニュー（岸部店）"
+    url: "https://www.akindo-sushiro.co.jp/menu/menu_detail/?s_id=46"
+    license: "© 株式会社あきんどスシロー"
+- file: ika.webp
+  kind: dish
+  source:
+    title: "スシロー公式サイト 店舗別メニュー（岸部店）"
+    url: "https://www.akindo-sushiro.co.jp/menu/menu_detail/?s_id=46"
+    license: "© 株式会社あきんどスシロー"
+- file: tako.webp
+  kind: dish
+  source:
+    title: "スシロー公式サイト 店舗別メニュー（岸部店）"
+    url: "https://www.akindo-sushiro.co.jp/menu/menu_detail/?s_id=46"
+    license: "© 株式会社あきんどスシロー"
+- file: ebi.webp
+  kind: dish
+  source:
+    title: "スシロー公式サイト 店舗別メニュー（岸部店）"
+    url: "https://www.akindo-sushiro.co.jp/menu/menu_detail/?s_id=46"
+    license: "© 株式会社あきんどスシロー"
+- file: ama-ebi.webp
+  kind: dish
+  source:
+    title: "スシロー公式サイト 店舗別メニュー（岸部店）"
+    url: "https://www.akindo-sushiro.co.jp/menu/menu_detail/?s_id=46"
+    license: "© 株式会社あきんどスシロー"
+- file: kokusan-hotate-kaibashira.webp
+  kind: dish
+  source:
+    title: "スシロー公式サイト 店舗別メニュー（岸部店）"
+    url: "https://www.akindo-sushiro.co.jp/menu/menu_detail/?s_id=46"
+    license: "© 株式会社あきんどスシロー"
+- file: uniika-gunkan.webp
+  kind: dish
+  source:
+    title: "スシロー公式サイト 店舗別メニュー（岸部店）"
+    url: "https://www.akindo-sushiro.co.jp/menu/menu_detail/?s_id=46"
+    license: "© 株式会社あきんどスシロー"
+- file: ikura-gunkan.webp
+  kind: dish
+  source:
+    title: "スシロー公式サイト 店舗別メニュー（岸部店）"
+    url: "https://www.akindo-sushiro.co.jp/menu/menu_detail/?s_id=46"
+    license: "© 株式会社あきんどスシロー"
+- file: ogata-nama-honzuwaigani.webp
+  kind: dish
+  source:
+    title: "スシロー公式サイト 店舗別メニュー（岸部店）"
+    url: "https://www.akindo-sushiro.co.jp/menu/menu_detail/?s_id=46"
+    license: "© 株式会社あきんどスシロー"
+- file: tamago.webp
+  kind: dish
+  source:
+    title: "スシロー公式サイト 店舗別メニュー（岸部店）"
+    url: "https://www.akindo-sushiro.co.jp/menu/menu_detail/?s_id=46"
+    license: "© 株式会社あきんどスシロー"
+- file: engawa.webp
+  kind: dish
+  source:
+    title: "スシロー公式サイト 店舗別メニュー（岸部店）"
+    url: "https://www.akindo-sushiro.co.jp/menu/menu_detail/?s_id=46"
+    license: "© 株式会社あきんどスシロー"
+- file: tekkamaki.webp
+  kind: dish
+  source:
+    title: "スシロー公式サイト 店舗別メニュー（岸部店）"
+    url: "https://www.akindo-sushiro.co.jp/menu/menu_detail/?s_id=46"
+    license: "© 株式会社あきんどスシロー"
+- file: kyurimaki.webp
+  kind: dish
+  source:
+    title: "スシロー公式サイト 店舗別メニュー（岸部店）"
+    url: "https://www.akindo-sushiro.co.jp/menu/menu_detail/?s_id=46"
+    license: "© 株式会社あきんどスシロー"
+- file: inari.webp
+  kind: dish
+  source:
+    title: "スシロー公式サイト 店舗別メニュー（岸部店）"
+    url: "https://www.akindo-sushiro.co.jp/menu/menu_detail/?s_id=46"
+    license: "© 株式会社あきんどスシロー"
+- file: ebiten-nigiri.webp
+  kind: dish
+  source:
+    title: "スシロー公式サイト 店舗別メニュー（岸部店）"
+    url: "https://www.akindo-sushiro.co.jp/menu/menu_detail/?s_id=46"
+    license: "© 株式会社あきんどスシロー"
+- file: gyu-shio-karubi.webp
+  kind: dish
+  source:
+    title: "スシロー公式サイト 店舗別メニュー（岸部店）"
+    url: "https://www.akindo-sushiro.co.jp/menu/menu_detail/?s_id=46"
+    license: "© 株式会社あきんどスシロー"
+- file: tokujo-set-12.webp
+  kind: dish
+  source:
+    title: "スシロー公式サイト 店舗別メニュー（岸部店）"
+    url: "https://www.akindo-sushiro.co.jp/menu/menu_detail/?s_id=46"
+    license: "© 株式会社あきんどスシロー"

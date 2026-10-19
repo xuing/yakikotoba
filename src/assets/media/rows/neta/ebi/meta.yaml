@@ -1,0 +1,11 @@
+- file: ebi-nigiri.jpg
+  kind: dish
+  caption:
+    ja: "エビのにぎり"
+    zh: "虾握寿司"
+    en: "Ebi (shrimp) nigiri"
+  source:
+    title: "Ebinigiri.jpg（Wikimedia Commons）"
+    url: "https://commons.wikimedia.org/wiki/File:Ebinigiri.jpg"
+    license: "CC BY-SA 3.0"
+    author: "Arashiyama"

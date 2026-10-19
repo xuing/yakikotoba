@@ -1,0 +1,11 @@
+- file: hirame-whole.jpg
+  kind: raw
+  caption:
+    ja: "ヒラメ（丸のまま・有眼側）"
+    zh: "牙鲆（整条，有眼的一面）"
+    en: "Whole hirame (olive flounder), eyed side"
+  source:
+    title: "Hirame flatfish front.JPG（Wikimedia Commons）"
+    url: "https://commons.wikimedia.org/wiki/File:Hirame_flatfish_front.JPG"
+    license: "CC BY-SA 4.0"
+    author: "サフィル"

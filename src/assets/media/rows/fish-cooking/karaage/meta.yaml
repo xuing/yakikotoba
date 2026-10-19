@@ -1,0 +1,11 @@
+- file: maff.jpg
+  kind: dish
+  caption:
+    ja: いしもちじゃこ（テンジクダイ）の唐揚げ
+    zh: 炸天竺鲷小鱼
+    en: Karaage of ishimochi-jako (cardinalfish)
+  source:
+    title: 農林水産省「うちの郷土料理」いしもちじゃこの唐揚げ（岡山県）
+    url: https://www.maff.go.jp/j/keikaku/syokubunka/k_ryouri/search_menu/menu/41_16_okayama.html
+    license: 公共データ利用規約（第1.0版）
+    author: 画像提供元：岡山県農林水産部水産課

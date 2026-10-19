@@ -1,0 +1,11 @@
+- file: zuke-maguro-nigiri.jpg
+  kind: dish
+  caption:
+    ja: "漬けマグロのにぎり"
+    zh: "酱油腌金枪鱼握寿司"
+    en: "Zuke (soy-marinated) tuna nigiri"
+  source:
+    title: "Tachiguizushi-Aburi-Hyakkan-Kaihinmakuhari 049.jpg（Wikimedia Commons）"
+    url: "https://commons.wikimedia.org/wiki/File:Tachiguizushi-Aburi-Hyakkan-Kaihinmakuhari_049.jpg"
+    license: "CC BY 4.0"
+    author: "RuinDig/Yuki Uchida"

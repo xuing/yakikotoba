@@ -1,0 +1,242 @@
+order: 5
+ja: 用語
+zh: 菜单用语
+en: Menu words
+note:
+  ja: 品書きでは「上タン塩」＝「上（等級）＋タン（部位）＋塩（味付け）」のように語を組み合わせ、注文では「2人前」のように量を添える。
+  zh: 菜单上的菜名由几个词拼成，例如「上タン塩」＝「上」（档次）＋「タン」（部位）＋「塩」（调味）；点菜时再加上份量，如「2人前」。
+  en: "Menu items are built from parts: jō-tan-shio = jō (grade) + tan (cut) + shio (seasoning); when ordering you add the quantity, e.g. ni-ninmae (two servings)."
+items:
+  - id: shio
+    ja: 塩
+    ruby: "{塩|しお}"
+    kana: しお
+    romaji: shio
+    mean:
+      ja: 塩味
+      zh: 盐味
+      en: Salt (seasoning)
+    part:
+      ja: タレではなく塩で味付けして焼く肉。「タン塩」のように部位名の後に付ける
+      zh: 不用酱汁、用盐调味再烤的肉，接在部位名后，如「タン塩」
+      en: Meat seasoned with salt instead of sauce; follows the cut name, as in tan-shio
+    note:
+      ja: 焼肉は焼いてからタレや塩をつけて食べるほか、あらかじめ下味をつけてから焼くこともある（日本食肉消費総合センター）。牛タンは焼肉店では「タン塩」として食べることが多い（同）。1948年に最初の専門店が生まれた仙台名物の牛たん焼きでは、塩味にこだわる老舗のほか味噌や醤油味の店もあり、味付けは店ごとに異なる。
+      zh: 烤肉既可以烤好后蘸酱汁或盐吃，也可以先调好底味再烤（日本食肉消费综合中心）。牛舌在烤肉店多以「タン塩」（盐烤牛舌）的形式来吃（同上）。仙台名产烤牛舌的第一家专卖店诞生于1948年，当地既有坚持盐味的老店，也有味噌味、酱油味的店，调味因店而异。
+      en: Yakiniku may be dipped in sauce or salt after grilling, or seasoned before it goes on the grill (Japan Meat Information Service Center). At yakiniku restaurants beef tongue is most often eaten as tan-shio, salted tongue (same source). In Sendai, whose grilled-tongue specialty dates from the first dedicated restaurant in 1948, old shops that stick to salt sit alongside ones seasoning with miso or soy sauce.
+    sources:
+      - title: 日本食肉消費総合センター 用語集「焼き肉」
+        url: https://www.jmi.or.jp/info/word/ya/ya_002.html
+      - title: 日本食肉消費総合センター 用語集「タン」
+        url: https://www.jmi.or.jp/info/word/ta/ta_025.html
+      - title: 仙台観光国際協会「せんだい旅日和」必見・仙台名物グルメ情報
+        url: https://www.sentabi.jp/delicious
+      - title: 仙台観光国際協会「せんだい旅日和」仙台牛たん焼き、食べ比べの楽しみ
+        url: https://www.sentabi.jp/features/42
+  - id: tare
+    ja: タレ
+    kana: たれ
+    romaji: tare
+    mean:
+      ja: 焼肉のたれ
+      zh: 烤肉酱汁
+      en: Sauce (tare)
+    part:
+      ja: 醤油をベースにした液状の合わせ調味料。焼いた肉につける、または肉を漬け込んでから焼く
+      zh: 以酱油为底的液体复合调味料，用来蘸烤好的肉，或先把肉腌在里面再烤
+      en: A soy-based liquid seasoning, used as a dip for grilled meat or as a marinade before grilling
+    note:
+      ja: 漢字では「垂れ」と書き、もとは味噌の垂れ汁（たれじる）から始まった言葉で、醤油・みりんなどを合わせて煮つめた調味液をいう（日本大百科全書）。焼肉では焼いた肉につけるほか、肉をタレに漬け込んでから焼く食べ方もある。家庭用の「焼肉のたれ」は1968年にエバラ食品が発売し、醤油ベースなので、他社が使っていた「ソース」ではなく「たれ」と名付けたという。
+      zh: 汉字写作「垂れ」，原本出自味噌滴下的汁液（垂れ汁），指酱油、味醂等调和熬制的调味汁（《日本大百科全书》）。吃烤肉时可以烤好后蘸，也可以先把肉腌在酱汁里再烤。家用「焼肉のたれ」由荏原食品（エバラ食品）于1968年推出；因为是酱油底，没有沿用别家用的“沙司”（ソース）一词，而取名为「たれ」。
+      en: Written 垂れ (“drippings”), the word began with the liquid that drips from miso, and means a seasoning of soy sauce, mirin and the like simmered together (Nipponica encyclopedia). At yakiniku it is either a dip for grilled meat or a marinade the meat soaks in before grilling. Ebara Foods launched bottled yakiniku no tare for the home in 1968 and, because it was soy-based, called it tare rather than the “sauce” (sōsu) other makers used.
+    sources:
+      - title: 日本大百科全書「たれ」（コトバンク）
+        url: https://kotobank.jp/word/%E3%81%9F%E3%82%8C-563411
+      - title: デジタル大辞泉「垂れ」（コトバンク）
+        url: https://kotobank.jp/word/%E5%9E%82%E3%82%8C-519814
+      - title: 日本食肉消費総合センター 用語集「焼き肉」
+        url: https://www.jmi.or.jp/info/word/ya/ya_002.html
+      - title: エバラ食品「エバラ焼肉部」
+        url: https://www.ebarafoods.com/sp/yakiniku/
+      - title: エバラ食品「「焼肉のたれ」誕生秘話」
+        url: https://www.ebarafoods.com/company/about/history/progress/yakiniku/
+      - title: エバラ食品「沿革」
+        url: https://www.ebarafoods.com/company/about/history/
+  - id: jo
+    ja: 上
+    ruby: "{上|じょう}"
+    kana: じょう
+    romaji: jō
+    mean:
+      ja: 普通より上等
+      zh: 上等（比普通的好）
+      en: Premium (a cut above standard)
+    part:
+      ja: 品書きで部位名の前に付ける等級。「上カルビ」「上タン塩」など
+      zh: 菜单上放在部位名前的档次标记，如「上カルビ」「上タン塩」
+      en: "A grade prefix before the cut on menus: jō-karubi, jō-tan-shio"
+    note:
+      ja: 「うえ」ではなく「じょう」と読み、普通のものより価値・程度が優れていることを表す語で、世阿弥『風姿花伝』の「上・中・下」にも用例がある（日本国語大辞典）。牛肉の公的な格付は日本食肉格付協会の歩留等級A〜Cと肉質等級5〜1を組み合わせた15区分（A5など）で、「上」という等級はない。一方、豚枝肉の格付は「極上・上・中・並・等外」の5段階で、「上」が正式な等級名になっている。また「上ミノ」は、第一胃のうち特に厚い部分の名前として定着している。
+      zh: 读作“じょう”（jō）而不是“うえ”，表示比普通的更好，世阿弥《风姿花传》的“上・中・下”就是这个用法（《日本国语大辞典》）。牛肉的官方评级由日本食肉格付协会把出肉率等级A–C和肉质等级5–1组合成15档（如A5），没有“上”这一级。而猪胴体的官方评级分“极上・上・中・并・等外”五级，“上”是正式等级名。另外「上ミノ」已固定用来指第一胃中特别厚的部分。
+      en: Read jō rather than ue, the word marks something better than ordinary, a sense found as early as Zeami’s Fūshi Kaden with its “upper, middle, lower” (Nihon Kokugo Daijiten). Official beef grading by the Japan Meat Grading Association combines yield grades A–C with quality grades 5–1 into 15 classes (A5 and so on); there is no jō grade. Pork carcasses, by contrast, are graded gokujō, jō, chū, nami and tōgai, so jō is an official pork grade. And jō-mino has become the name of the especially thick part of the rumen.
+    sources:
+      - title: 精選版 日本国語大辞典「上（じょう）」（コトバンク）
+        url: https://kotobank.jp/word/%E4%B8%8A-33718
+      - title: 日本食肉格付協会「牛枝肉取引規格」
+        url: https://www.jmga.or.jp/index.php/standard/beef/
+      - title: 日本食肉格付協会「豚枝肉取引規格」
+        url: https://www.jmga.or.jp/index.php/standard/pork/
+      - title: 農林水産省 aff 2016年8月号 特集2「牛肉(1) 牛肉の格付 A5ランクって何？」
+        url: https://www.maff.go.jp/j/pr/aff/1608/spe2_01.html
+      - title: 日本食肉消費総合センター 用語集「ミノ」
+        url: https://www.jmi.or.jp/info/word/ma/ma_036.html
+  - id: tokujo
+    ja: 特上
+    ruby: "{特上|とくじょう}"
+    kana: とくじょう
+    romaji: tokujō
+    mean:
+      ja: 特別に上等
+      zh: 特等（比「上」更高）
+      en: Top grade, extra premium
+    part:
+      ja: 「上」よりさらに上の品書きの等級。「特上カルビ」「特上ロース」など
+      zh: 比「上」更高一档的菜单标记，如「特上カルビ」「特上ロース」
+      en: "The menu grade above jō: tokujō-karubi, tokujō-rōsu"
+    note:
+      ja: 「特別に上等であること。最上の品物」を表す語で（日本国語大辞典）、デジタル大辞泉は用例に「特上の肉」を挙げる。農林水産省の部位図鑑は、かたロースの中でもしっかり霜降りが入る「ザブトン」を「お店では特上ロースとして提供される」と紹介している。公的な格付の最上位は牛肉なら「A5」、豚枝肉なら「極上」で、「特上」は格付の用語ではない。
+      zh: 意思是“特别上等、最好的东西”（《日本国语大辞典》），《数字大辞泉》举的例句就是「特上の肉」（特上的肉）。农林水产省的部位图鉴介绍，肩胛里脊中霜降较多的「ザブトン」（坐垫肉）“在店里作为「特上ロース」供应”。官方评级的最高级，牛肉是“A5”，猪胴体是“极上”，「特上」并不是评级用语。
+      en: It means “specially superior; the very best article” (Nihon Kokugo Daijiten), and the Digital Daijisen’s example is tokujō no niku, “top-grade meat”. MAFF’s cut guide says zabuton, the well-marbled part of the chuck roll, is “served in restaurants as tokujō rōsu”. The top official grades are A5 for beef and gokujō for pork carcasses; tokujō is not a grading term.
+    sources:
+      - title: 精選版 日本国語大辞典・デジタル大辞泉「特上」（コトバンク）
+        url: https://kotobank.jp/word/%E7%89%B9%E4%B8%8A-582616
+      - title: 農林水産省 aff 2020年9月号「牛の部位図鑑」（監修：日本食肉消費総合センター）
+        url: https://www.maff.go.jp/j/pr/aff/2009/pdf/aff2009_02_poster01.pdf
+      - title: 日本食肉格付協会「牛枝肉取引規格」
+        url: https://www.jmga.or.jp/index.php/standard/beef/
+      - title: 日本食肉格付協会「豚枝肉取引規格」
+        url: https://www.jmga.or.jp/index.php/standard/pork/
+  - id: kisho-bui
+    ja: 希少部位
+    ruby: "{希少|きしょう}{部位|ぶい}"
+    kana: きしょうぶい
+    romaji: kishō bui
+    mean:
+      ja: 1頭から少ししか取れない部位
+      zh: 稀少部位
+      en: Rare cut
+    part:
+      ja: 大きな部位をさらに細かく分けて取る小さな部位の総称（ミスジ、ザブトン、イチボなど）
+      zh: 把大部位再细分后取出的小块部位的统称（如ミスジ、ザブトン、イチボ）
+      en: Small sub-cuts taken from the major primals (misuji, zabuton, ichibo and so on)
+    note:
+      ja: 明確な定義はなく、牛肉の部位は「食肉小売品質基準」で11部位に分けられるが、焼肉店などではさらに細かく分けた希少部位が味わえる（農林水産省）。エバラ食品の解説によれば、牛1頭から取れる食肉約400kgのうち0.5％、約2kgほどしか取れない部位を指すことが多い。一部の焼肉店が付加価値をつけてメニューにしたのが始まりで、2000年代初頭の焼肉ブームで広まり、カメノコ（うちももの一部）やメガネ（骨盤まわりの赤身）など細分化が進んだという（同）。
+      zh: 没有明确定义：按「食肉小売品質基準」（肉类零售品质基准），牛肉分为11个部位，而烤肉店等会进一步细分，提供稀少部位（农林水产省）。据荏原食品（エバラ食品）介绍，一头牛约可取400公斤肉，其中只占0.5%、约2公斤左右的部位通常被称为稀少部位。这一说法始于部分烤肉店为提升附加值推出的菜品，随2000年代初的烤肉热普及，后来又细分出「カメノコ」（内侧腿肉的一部分）、「メガネ」（骨盆周围的瘦肉）等（同上）。
+      en: "There is no formal definition: Japan’s retail meat standard divides beef into 11 parts, while yakiniku restaurants cut further into rare cuts (MAFF). Ebara Foods explains that the term usually means parts yielding only about 2 kg—0.5% of the roughly 400 kg of meat from one animal. It began as a value-adding menu device at some yakiniku shops, spread with the early-2000s yakiniku boom, and has since split into ever smaller cuts such as kamenoko (part of the inside round) and megane (lean meat around the pelvis) (same source)."
+    sources:
+      - title: 農林水産省 aff 2016年8月号 特集2「牛肉(2) 牛肉の部位図鑑」
+        url: https://www.maff.go.jp/j/pr/aff/1608/spe2_02.html
+      - title: エバラ食品「スーパーでも手に入るようになった「希少部位」おうちでおいしく食べる調理術をお肉の達人が伝授します」（2020年8月31日）
+        url: https://www.ebarafoods.com/sp/meat/32/
+  - id: atsugiri
+    ja: 厚切り
+    ruby: "{厚切|あつぎ}り"
+    kana: あつぎり
+    romaji: atsugiri
+    mean:
+      ja: 厚く切ること・厚く切ったもの
+      zh: 厚切
+      en: Thick-cut
+    part:
+      ja: 肉を厚めに切ったもの。「厚切りタン」のように部位名の前に付ける
+      zh: 把肉切得较厚，放在部位名前，如「厚切りタン」
+      en: Meat sliced thick; placed before the cut name, as in atsugiri-tan
+    note:
+      ja: 対義語は「薄切り」で（デジタル大辞泉）、食肉は部分肉から厚切り・薄切り・かたまり・ひき肉など用途に合わせた精肉にカットされて売られる（日本食肉消費総合センター）。牛タンは根元ほど柔らかく舌先ほど硬い部位で（農林水産省）、日本食肉消費総合センターは、脂肪は多いがかたく、薄切りか長時間の煮込みでやわらかく食べられると説明している。1948年に最初の専門店ができた仙台の牛たん焼きでは、厚切りを看板にする店が複数ある。
+      zh: 反义词是「薄切り」（薄切）（《数字大辞泉》）；肉类会由分割肉切成厚片、薄片、整块、肉末等按用途销售的精肉（日本食肉消费综合中心）。牛舌越靠舌根越软、越靠舌尖越硬（农林水产省），日本食肉消费综合中心也说它脂肪多但偏硬，切薄片或长时间炖煮才吃得软嫩。仙台烤牛舌的第一家专卖店诞生于1948年，当地有好几家以厚切牛舌为招牌的店。
+      en: The opposite is usugiri, “thin-cut” (Digital Daijisen); retail meat is cut from primals into thick slices, thin slices, blocks or mince to suit its use (Japan Meat Information Service Center). Beef tongue is softer toward the root and tougher toward the tip (MAFF), and the same center notes it is fatty but tough, eaten tender only when sliced thin or braised for a long time. In Sendai, where the first grilled-tongue restaurant opened in 1948, several shops make thick-cut tongue their calling card.
+    sources:
+      - title: デジタル大辞泉「厚切り」（コトバンク）
+        url: https://kotobank.jp/word/%E5%8E%9A%E5%88%87%E3%82%8A-425460
+      - title: 日本食肉消費総合センター『新食肉がわかる本』「国産牛肉・豚肉の流通」「牛・豚の副生物の流通」
+        url: https://www.jmi.or.jp/common/download.php/%E6%96%B0%E9%A3%9F%E8%82%89%E3%81%8C%E3%82%8F%E3%81%8B%E3%82%8B%E6%9C%AC1.pdf?id=MTMw
+      - title: 農林水産省 aff 2020年9月号「牛の部位図鑑」（監修：日本食肉消費総合センター）
+        url: https://www.maff.go.jp/j/pr/aff/2009/pdf/aff2009_02_poster01.pdf
+      - title: 日本食肉消費総合センター 用語集「タン」
+        url: https://www.jmi.or.jp/info/word/ta/ta_025.html
+      - title: 仙台観光国際協会「せんだい旅日和」必見・仙台名物グルメ情報
+        url: https://www.sentabi.jp/delicious
+      - title: 仙台観光国際協会「せんだい旅日和」仙台牛たん焼き、食べ比べの楽しみ
+        url: https://www.sentabi.jp/features/42
+  - id: moriawase
+    ja: 盛り合わせ
+    ruby: "{盛|も}り{合|あ}わせ"
+    kana: もりあわせ
+    romaji: moriawase
+    mean:
+      ja: 数種類を一皿に盛ったもの
+      zh: 拼盘
+      en: Assorted platter
+    part:
+      ja: 異なる部位や料理をいくつか取り合わせて一つの器に盛った品
+      zh: 把几种不同的部位或菜放在同一个盘子里
+      en: Several different cuts or dishes arranged together on one plate
+    note:
+      ja: 「盛る」と「合わせる」からなる語で、料理で一つの器に異なるものをいくつか取り合わせて盛ったものをいう（世界の料理がわかる辞典）。たとえばナムルは、ほうれん草・大豆もやし・ぜんまいの3種を盛り合わせることが多い（同）。刺身の盛り合わせのように部位別の肉に名札を付けて大皿に並べる焼肉店が増えたことが、希少部位の名が広まった一因とされる（エバラ食品）。
+      zh: 由「盛る」（盛装）和「合わせる」（搭配）构成，指在一个容器里搭配盛放几种不同的菜（《世界の料理がわかる辞典》）。例如韩式拌菜常把菠菜、黄豆芽、蕨菜三样拼在一起（同上）。有观点认为，烤肉店像生鱼片拼盘那样，把各部位的肉配上名牌摆在大盘里，是稀少部位名称普及的原因之一（荏原食品）。
+      en: "From moru (“to heap on a dish”) and awaseru (“to combine”): several different foods arranged together in one vessel (Sekai no Ryōri ga Wakaru Jiten). Namul, for instance, is usually served as a trio of spinach, soybean sprouts and bracken (same source). Yakiniku shops laying out cuts with name tags on a big platter, like a sashimi assortment, are credited with helping the names of rare cuts catch on (Ebara Foods)."
+    sources:
+      - title: 世界の料理がわかる辞典「盛り合わせ」（コトバンク）
+        url: https://kotobank.jp/word/%E7%9B%9B%E3%82%8A%E5%90%88%E3%82%8F%E3%81%9B-1496365
+      - title: デジタル大辞泉・精選版 日本国語大辞典・世界の料理がわかる辞典「ナムル」（コトバンク）
+        url: https://kotobank.jp/word/%E3%81%AA%E3%82%80%E3%82%8B-3215386
+      - title: エバラ食品「スーパーでも手に入るようになった「希少部位」おうちでおいしく食べる調理術をお肉の達人が伝授します」（2020年8月31日）
+        url: https://www.ebarafoods.com/sp/meat/32/
+  - id: ninmae
+    ja: 人前
+    ruby: "{人前|にんまえ}"
+    kana: にんまえ
+    romaji: ninmae
+    mean:
+      ja: …人分
+      zh: …人份
+      en: Serving(s)
+    part:
+      ja: 数の後に付けて、何人分の量かを表す語。「1人前」「2人前」
+      zh: 接在数字后表示几人份的量，如「1人前」「2人前」
+      en: "Suffix after a number giving how many people’s portions: ichi-ninmae (one serving), ni-ninmae (two)"
+    note:
+      ja: 「一人前（いちにんまえ）」は一人に割り当てる量をいい、1701年の浮世草子『傾城色三味線』に用例がある（日本国語大辞典）。同じ「一人前」は「成人であること」「技芸などが一応の水準に達していること」も表し、「一人前の医者」のように使う。「人前」だけだと「ひとまえ」と読み、「人の見ている前・公衆の面前」という別の意味になる。
+      zh: 「一人前」（いちにんまえ）指分给一个人的量，1701年的浮世草子《倾城色三味线》中已有用例（《日本国语大辞典》）。同样的「一人前」还表示“成年”“技艺等达到一定水准”，如「一人前の医者」（独当一面的医生）。单独的「人前」读作“ひとまえ”，意思变成“人前、众人面前”。
+      en: Ichi-ninmae is the amount allotted to one person, attested in the 1701 ukiyo-zōshi Keisei Iro Jamisen (Nihon Kokugo Daijiten). The same ichi-ninmae also means “adult” or “fully qualified”, as in ichi-ninmae no isha, “a full-fledged doctor”. On its own, 人前 is read hitomae and means “in front of others, in public”.
+    sources:
+      - title: デジタル大辞泉・精選版 日本国語大辞典「一人前」（コトバンク）
+        url: https://kotobank.jp/word/%E4%B8%80%E4%BA%BA%E5%89%8D-31335
+      - title: デジタル大辞泉・精選版 日本国語大辞典「人前」（コトバンク）
+        url: https://kotobank.jp/word/%E4%BA%BA%E5%89%8D-611659
+  - id: tabehodai
+    ja: 食べ放題
+    ruby: "{食|た}べ{放題|ほうだい}"
+    kana: たべほうだい
+    romaji: tabehōdai
+    mean:
+      ja: 一定料金で好きなだけ食べられること
+      zh: 吃到饱（自助）
+      en: All-you-can-eat
+    part:
+      ja: 一定料金で、多くは制限時間内に好きなだけ注文・飲食できる方式
+      zh: 付固定价格，通常在限定时间内想吃多少点多少
+      en: A fixed price for as much as you like, usually within a time limit
+    note:
+      ja: 「放題」は動詞の連用形などに付いて思いのままにする意を表す接尾語で、「飲み放題」「言いたい放題」のほか、「伸び放題」のように成り行きに任せる意にもなる（デジタル大辞泉）。食べ放題は一定料金で好きなだけ食べられる方式で時間制限が設けられることが多く、料理を並べて各自が取る「バイキング」は、1958年に帝国ホテルが北欧のスモーガスボードを参考に始めた日本独自の呼び名である。焼肉チェーンではテーブルのタッチパネルで注文して席まで運んでもらう方式もあり、焼肉きんぐの食べ放題は100分制。
+      zh: 「放題」是接在动词连用形等后面的后缀，表示随心所欲地做；除「飲み放題」（畅饮）、「言いたい放題」（想说什么说什么）外，「伸び放題」（任其疯长）则表示放任不管（《数字大辞泉》）。「食べ放題」是付固定价格随便吃的方式，多有时间限制；把菜摆出来各自取用的形式在日本叫“バイキング”（维京），是帝国饭店1958年参考北欧的 smörgåsbord 首创的日式叫法。烤肉连锁店也有用桌上触摸屏点单、由店员送到桌边的方式，例如焼肉きんぐ的自助是100分钟制。
+      en: "-hōdai is a suffix meaning “as much as one likes”: nomi-hōdai (all-you-can-drink), iitai-hōdai (saying whatever one pleases), and also “left to run wild”, as in nobi-hōdai (overgrown) (Digital Daijisen). Tabehōdai means unlimited eating for a fixed price, usually with a time limit; the self-serve buffet is called baikingu (“Viking”) in Japan, a name the Imperial Hotel coined in 1958 for a buffet modelled on the Scandinavian smörgåsbord. Yakiniku chains also run table-order versions where you order on a touch panel and staff bring the food; Yakiniku King’s all-you-can-eat runs 100 minutes."
+    sources:
+      - title: デジタル大辞泉・精選版 日本国語大辞典「放題」（コトバンク）
+        url: https://kotobank.jp/word/%E6%94%BE%E9%A1%8C-628148
+      - title: 世界の料理がわかる辞典「食べ放題」（コトバンク）
+        url: https://kotobank.jp/word/%E9%A3%9F%E3%81%B9%E6%94%BE%E9%A1%8C-562600
+      - title: 精選版 日本国語大辞典・日本大百科全書・世界の料理がわかる辞典「バイキング料理」（コトバンク）
+        url: https://kotobank.jp/word/%E3%81%B0%E3%81%84%E3%81%8D%E3%82%93%E3%81%90%E6%96%99%E7%90%86-3164021
+      - title: 焼肉きんぐ 公式サイト（食べ放題コース）
+        url: https://www.yakiniku-king.jp/

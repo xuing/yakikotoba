@@ -1,0 +1,11 @@
+- file: hotate-nigiri.jpg
+  kind: dish
+  caption:
+    ja: "ホタテのにぎり"
+    zh: "扇贝握寿司"
+    en: "Scallop (hotate) nigiri"
+  source:
+    title: "Hotate gai.jpg（Wikimedia Commons）"
+    url: "https://commons.wikimedia.org/wiki/File:Hotate_gai.jpg"
+    license: "CC BY-SA 3.0"
+    author: "Arashiyama"

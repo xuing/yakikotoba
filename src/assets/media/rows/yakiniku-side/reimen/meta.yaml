@@ -1,0 +1,11 @@
+- file: commons.jpg
+  kind: dish
+  caption:
+    ja: "盛岡冷麺（焼肉店にて）"
+    zh: "盛冈冷面（摄于烤肉店）"
+    en: "Morioka reimen at a yakiniku restaurant"
+  source:
+    title: "Wikimedia Commons「Morioka Reimen3.jpg」"
+    url: "https://commons.wikimedia.org/wiki/File:Morioka_Reimen3.jpg"
+    license: "CC BY-SA 4.0"
+    author: "Koltonsmith"

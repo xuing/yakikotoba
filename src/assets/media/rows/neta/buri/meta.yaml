@@ -1,0 +1,11 @@
+- file: kanburi-nigiri.jpg
+  kind: dish
+  caption:
+    ja: "寒ブリのにぎり（回転寿司）"
+    zh: "寒鰤握寿司（回转寿司）"
+    en: "Winter yellowtail (kan-buri) nigiri at a conveyor-belt sushi bar"
+  source:
+    title: "Sushiro---2020-02-29 005.jpg（Wikimedia Commons）"
+    url: "https://commons.wikimedia.org/wiki/File:Sushiro---2020-02-29_005.jpg"
+    license: "CC BY 4.0"
+    author: "RuinDig/Yuki Uchida"

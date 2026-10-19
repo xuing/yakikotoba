@@ -1,0 +1,22 @@
+- file: sanma-shioyaki.jpg
+  kind: dish
+  caption:
+    ja: "新さんまの塩焼き（大根おろし添え）"
+    zh: "盐烤当季秋刀鱼（配萝卜泥）"
+    en: "Salt-grilled new-season sanma with grated daikon"
+  source:
+    title: "Shin sanma shioyaki by ayustety in Morishita, Tokyo.jpg（Wikimedia Commons）"
+    url: "https://commons.wikimedia.org/wiki/File:Shin_sanma_shioyaki_by_ayustety_in_Morishita,_Tokyo.jpg"
+    license: "CC BY-SA 2.0"
+    author: "ayustety"
+- file: maff.jpg
+  kind: cooked
+  caption:
+    ja: 鮎の塩焼き
+    zh: 盐烤香鱼
+    en: Salt-grilled ayu (sweetfish)
+  source:
+    title: 農林水産省「うちの郷土料理」鮎塩焼き（群馬県）
+    url: https://www.maff.go.jp/j/keikaku/syokubunka/k_ryouri/search_menu/menu/32_17_gunma.html
+    license: 公共データ利用規約（第1.0版）
+    author: 画像提供元：上野村漁業協同組合

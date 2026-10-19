@@ -1,0 +1,11 @@
+- file: katsuo-nigiri.jpg
+  kind: dish
+  caption:
+    ja: "カツオのにぎり"
+    zh: "鲣鱼握寿司"
+    en: "Katsuo (skipjack tuna) nigiri"
+  source:
+    title: "Katsuo (bonito) Nigiri.jpg（Wikimedia Commons）"
+    url: "https://commons.wikimedia.org/wiki/File:Katsuo_(bonito)_Nigiri.jpg"
+    license: "CC BY-SA 4.0"
+    author: "Zheng Zhou"

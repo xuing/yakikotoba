@@ -1,0 +1,11 @@
+- file: buri-teriyaki.jpg
+  kind: dish
+  caption:
+    ja: "ブリの照り焼き（小松菜添え）"
+    zh: "照烧鰤鱼（配小松菜）"
+    en: "Yellowtail (buri) teriyaki with komatsuna greens"
+  source:
+    title: "Yellowtail teriyaki with komatsuna greens ブリ照り焼きと小松菜.jpg（Wikimedia Commons）"
+    url: "https://commons.wikimedia.org/wiki/File:Yellowtail_teriyaki_with_komatsuna_greens_%E3%83%96%E3%83%AA%E7%85%A7%E3%82%8A%E7%84%BC%E3%81%8D%E3%81%A8%E5%B0%8F%E6%9D%BE%E8%8F%9C.jpg"
+    license: "CC BY 2.0"
+    author: "naotakem"

@@ -1,0 +1,11 @@
+- file: madako-nigiri.jpg
+  kind: dish
+  caption:
+    ja: "真だこのにぎり（回転寿司）"
+    zh: "真章鱼握寿司（回转寿司）"
+    en: "Madako (common octopus) nigiri at a conveyor-belt sushi bar"
+  source:
+    title: "はま寿司 真だこ.jpg（Wikimedia Commons）"
+    url: "https://commons.wikimedia.org/wiki/File:%E3%81%AF%E3%81%BE%E5%AF%BF%E5%8F%B8_%E7%9C%9F%E3%81%A0%E3%81%93.jpg"
+    license: "CC BY-SA 4.0"
+    author: "Kyu3"

@@ -1,0 +1,8 @@
+- file: maff.jpg
+  kind: raw
+  caption:
+    ja: シマチョウ（大腸）
+  source:
+    title: 農林水産省「aff」2020年9月号 牛の部位図鑑（監修：日本食肉消費総合センター）
+    url: https://www.maff.go.jp/j/pr/aff/2009/pdf/aff2009_02_poster01.pdf
+    license: 公共データ利用規約（第1.0版）· ポスターから写真を切り出して使用

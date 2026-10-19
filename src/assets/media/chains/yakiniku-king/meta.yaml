@@ -1,0 +1,102 @@
+- file: logo.svg
+  kind: logo
+  source:
+    title: 焼肉きんぐ公式サイト
+    url: "https://www.yakiniku-king.jp/"
+    license: © THE MONOGATARI CORPORATION
+- file: king-karubi.webp
+  kind: dish
+  source:
+    title: 焼肉きんぐ公式サイト 五大名物
+    url: "https://www.yakiniku-king.jp/menu_all/new/"
+    license: © THE MONOGATARI CORPORATION
+- file: tsubozuke-ippon-shimacho.webp
+  kind: dish
+  source:
+    title: 焼肉きんぐ公式サイト 五大名物
+    url: "https://www.yakiniku-king.jp/menu_all/new/"
+    license: © THE MONOGATARI CORPORATION
+- file: aburi-misuji.webp
+  kind: dish
+  source:
+    title: 焼肉きんぐ公式サイト 五大名物
+    url: "https://www.yakiniku-king.jp/menu_all/new/"
+    license: © THE MONOGATARI CORPORATION
+- file: oban-sudare-jo-karubi.webp
+  kind: dish
+  source:
+    title: 焼肉きんぐ公式サイト 五大名物
+    url: "https://www.yakiniku-king.jp/menu_all/new/"
+    license: © THE MONOGATARI CORPORATION
+- file: chogokuatsu-harami.webp
+  kind: dish
+  source:
+    title: 焼肉きんぐ公式サイト 五大名物
+    url: "https://www.yakiniku-king.jp/menu_all/new/"
+    license: © THE MONOGATARI CORPORATION
+- file: aburi-sukiyaki-karubi.webp
+  kind: dish
+  source:
+    title: 焼肉きんぐ公式サイト 単品メニュー すき焼カルビ
+    url: "https://www.yakiniku-king.jp/menu_all/tanpin/sukiyaki/"
+    license: © THE MONOGATARI CORPORATION
+- file: kuroge-wagyu-jo-karubi.webp
+  kind: dish
+  source:
+    title: 焼肉きんぐ公式サイト 単品メニュー 黒毛和牛・黒毛牛・特選
+    url: "https://www.yakiniku-king.jp/menu_all/tanpin/domestic_beef/"
+    license: © THE MONOGATARI CORPORATION
+- file: kurogegyu-yakishabu-karubi.webp
+  kind: dish
+  source:
+    title: 焼肉きんぐ公式サイト 単品メニュー 黒毛和牛・黒毛牛・特選
+    url: "https://www.yakiniku-king.jp/menu_all/tanpin/domestic_beef/"
+    license: © THE MONOGATARI CORPORATION
+- file: kurogegyu-dodeka-jo-rosu.webp
+  kind: dish
+  source:
+    title: 焼肉きんぐ公式サイト 単品メニュー 黒毛和牛・黒毛牛・特選
+    url: "https://www.yakiniku-king.jp/menu_all/tanpin/domestic_beef/"
+    license: © THE MONOGATARI CORPORATION
+- file: tokusen-atsugiri-gyutan.webp
+  kind: dish
+  source:
+    title: 焼肉きんぐ公式サイト 単品メニュー 黒毛和牛・黒毛牛・特選
+    url: "https://www.yakiniku-king.jp/menu_all/tanpin/domestic_beef/"
+    license: © THE MONOGATARI CORPORATION
+- file: tokusen-mino-steak.webp
+  kind: dish
+  source:
+    title: 焼肉きんぐ公式サイト 単品メニュー 黒毛和牛・黒毛牛・特選
+    url: "https://www.yakiniku-king.jp/menu_all/tanpin/domestic_beef/"
+    license: © THE MONOGATARI CORPORATION
+- file: king-shiotan-pork.webp
+  kind: dish
+  source:
+    title: 焼肉きんぐ公式サイト 単品メニュー タン
+    url: "https://www.yakiniku-king.jp/menu_all/tanpin/tan/"
+    license: © THE MONOGATARI CORPORATION
+- file: yamitsuki-harami-pork.webp
+  kind: dish
+  source:
+    title: 焼肉きんぐ公式サイト 単品メニュー ハラミ
+    url: "https://www.yakiniku-king.jp/menu_all/tanpin/harami/"
+    license: © THE MONOGATARI CORPORATION
+- file: maboroshi-no-tori-harami.webp
+  kind: dish
+  source:
+    title: 焼肉きんぐ公式サイト 単品メニュー ハラミ
+    url: "https://www.yakiniku-king.jp/menu_all/tanpin/harami/"
+    license: © THE MONOGATARI CORPORATION
+- file: tori-karubi.webp
+  kind: dish
+  source:
+    title: 焼肉きんぐ公式サイト 単品メニュー 豚・鶏
+    url: "https://www.yakiniku-king.jp/menu_all/tanpin/buta_tori/"
+    license: © THE MONOGATARI CORPORATION
+- file: atsugiri-buta-karubi.webp
+  kind: dish
+  source:
+    title: 焼肉きんぐ公式サイト 単品メニュー 豚・鶏
+    url: "https://www.yakiniku-king.jp/menu_all/tanpin/buta_tori/"
+    license: © THE MONOGATARI CORPORATION

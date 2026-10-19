@@ -1,0 +1,215 @@
+order: 4
+ja: 寿司の種類
+zh: 寿司的种类
+en: Kinds of sushi
+note:
+  ja: 「すし」は「酸（す）し」が語源とされ、古くは魚を塩と飯で漬けて自然発酵させた「なれずし」（近江の鮒ずしなど）を指した。江戸時代に酢を使ってすぐ食べられる「早ずし」が生まれ、握り・巻き・ちらし・いなりはいずれもこの系統に入る。古い字は「鮓」「鮨」で、「寿司」は縁起をかついだ当て字とされる。
+  zh: “すし”一词据说源自“酸し”（酸的），古时指把鱼和盐、米饭一起腌渍、自然发酵的“熟寿司”（如近江的鲫鱼寿司）。江户时代出现了用醋调味、做好即可食用的“早寿司”，握寿司、卷寿司、散寿司、稻荷寿司都属于这一系统。古字写作“鮓”“鮨”，“寿司”被认为是讨吉利的借字。
+  en: "Sushi is thought to come from sushi 酸し, “sour”, and originally meant narezushi: fish packed in salt and rice and left to ferment, as in Ōmi’s funazushi. The Edo period brought hayazushi, seasoned with vinegar and eaten at once, and nigiri, rolls, chirashi and inari all descend from it. The old characters are 鮓 and 鮨; 寿司 is an auspicious phonetic spelling."
+items:
+  - id: nigiri
+    ja: 握り
+    ruby: "{握|にぎ}り"
+    kana: にぎり
+    romaji: nigiri
+    mean:
+      ja: 握りずし
+      zh: 握寿司
+      en: Nigiri sushi
+    part:
+      ja: 一口大に握ったすし飯（シャリ）にネタをのせたすし
+      zh: 把醋饭捏成一口大小，上面放一片料（ネタ）的寿司
+      en: A bite-sized, hand-pressed block of vinegared rice topped with a slice of fish or other topping
+    note:
+      ja: 文化・文政期（1804〜30）の江戸で生まれた早ずしで、両国の華屋与兵衛が始めたという説がある。当時は屋台の軽食で、大きさは現在の2〜3倍あり、ネタは煮たアナゴ・イカ・エビなど火を通したものが多く、酢漬けや生の魚は少なかったという。1923年の関東大震災より前は、屋台も含めほとんどのすし職人が座って握っていたという。数える単位は「貫」で、1貫を1個とするか2個とするかは地域や店によって異なる。
+      zh: 握寿司诞生于江户（今东京）的文化、文政年间（1804—1830），一说由两国的华屋与兵卫首创。当时是路边摊的小吃，个头是现在的两三倍；料多是煮过的星鳗、乌贼、虾等熟料，醋腌鱼和生鱼用得很少。据说1923年关东大地震以前，包括路边摊在内，大多数寿司师傅是坐着捏寿司的。量词用“贯”（貫），一贯算一个还是两个，因地区和店家而异。
+      en: Nigiri appeared in Edo (Tokyo) in the Bunka–Bunsei era (1804–30) as a kind of “fast sushi”; one theory credits Hanaya Yohei of Ryōgoku. It was street-stall food two to three times today’s size, and the toppings were mostly cooked, such as simmered conger eel, squid and prawns, with little vinegared or raw fish. Until the 1923 Great Kantō Earthquake most sushi makers, stall-keepers included, are said to have worked seated. Pieces are counted in kan (貫), and whether one kan means one piece or two varies by region and shop.
+    sources:
+      - title: コトバンク「握り鮨」（デジタル大辞泉・精選版 日本国語大辞典・ブリタニカ国際大百科事典）
+        url: https://kotobank.jp/word/%E6%8F%A1%E3%82%8A%E9%AE%A8-109183
+      - title: 農林水産省「うちの郷土料理」にぎりずし（東京都）
+        url: https://www.maff.go.jp/j/keikaku/syokubunka/k_ryouri/search_menu/menu/34_2_tokyo.html
+      - title: 半田市「ミツカン展示室（常設展示室Ⅲ）」解説（PDF）
+        url: https://www.city.handa.lg.jp/_res/projects/default_project/_page_/001/010/802/japanese-version_mizkan-room.pdf
+      - title: コトバンク「鮨屋」（改訂新版 世界大百科事典）
+        url: https://kotobank.jp/word/%E9%AE%A8%E5%B1%8B-541679
+      - title: nippon.com「おすし屋さんの業界用語：これであなたも「通」の仲間入り！」（2023年）
+        url: https://www.nippon.com/ja/japan-data/h01735/
+      - title: コトバンク「すし」（日本大百科全書(ニッポニカ)）
+        url: https://kotobank.jp/word/%E3%81%99%E3%81%97-541612
+      - title: コトバンク「鮨」（デジタル大辞泉・精選版 日本国語大辞典・ブリタニカ国際大百科事典）
+        url: https://kotobank.jp/word/%E9%AE%A8-83780
+  - id: gunkan
+    ja: 軍艦巻き
+    ruby: "{軍艦|ぐんかん}{巻|ま}き"
+    kana: ぐんかんまき
+    romaji: gunkan maki
+    mean:
+      ja: 軍艦の形をしたすし
+      zh: 军舰卷
+      en: Battleship roll
+    part:
+      ja: 握ったシャリの側面に幅広の海苔を巻き、上にウニ・イクラなど崩れやすいネタをのせたすし
+      zh: 捏好的醋饭外侧围一圈较宽的海苔，上面放海胆、鲑鱼子等容易散开的料
+      en: A block of rice wrapped round with a wide strip of nori, forming a cup for loose toppings such as sea urchin or salmon roe
+    note:
+      ja: 横から見た形が軍艦に似ていることからの名で、単に「軍艦」とも言う。銀座久兵衛は、初代店主が1940年代にウニの軍艦巻きを考案したとしており、握りにはのせにくい柔らかいネタを出せる方法として広まった。回転寿司の品書きでは「まぐろたたき軍艦」「かにみそ軍艦」（はま寿司）、「かずのこ軍艦」（くら寿司）のように「〜軍艦」と書かれ、くら寿司は分類名をひらがなで「ぐんかん」としている。
+      zh: 因从侧面看形似军舰而得名，也简称“军舰”。银座久兵卫称，其初代店主在1940年代想出了海胆军舰卷，这种做法能让不便捏的软料也做成寿司，后来普及开来。回转寿司菜单上写作“まぐろたたき軍艦”“かにみそ軍艦”（はま寿司）、“かずのこ軍艦”（鲱鱼籽军舰，くら寿司）等“～军舰”，くら寿司的分类名则用平假名写作“ぐんかん”。
+      en: Named for its warship-like profile seen from the side, it is often called simply gunkan. Ginza Kyūbey says its founder devised the sea-urchin gunkan in the 1940s, a way of serving soft toppings that cannot be pressed onto rice, and the style spread from there. Conveyor-belt menus write it as “…軍艦”, e.g. まぐろたたき軍艦 or かにみそ軍艦 at Hama-zushi and かずのこ軍艦 (herring roe) at Kura Sushi, which heads the category in hiragana as ぐんかん.
+    sources:
+      - title: コトバンク「軍艦巻」（デジタル大辞泉）
+        url: https://kotobank.jp/word/%E8%BB%8D%E8%89%A6%E5%B7%BB-487619
+      - title: 銀座久兵衛「久兵衛の歴史」
+        url: https://www.kyubey.jp/history/
+      - title: nippon.com「おすし屋さんの業界用語：これであなたも「通」の仲間入り！」（2023年）
+        url: https://www.nippon.com/ja/japan-data/h01735/
+      - title: はま寿司「メニュー紹介」
+        url: https://www.hama-sushi.co.jp/menu/
+      - title: くら寿司「メニュー」
+        url: https://www.kurasushi.co.jp/menu/
+  - id: hosomaki
+    ja: 細巻き
+    ruby: "{細巻|ほそま}き"
+    kana: ほそまき
+    romaji: hosomaki
+    mean:
+      ja: 細いのり巻き
+      zh: 细卷
+      en: Thin roll
+    part:
+      ja: 全形の海苔を半分に切って巻いた細いのり巻き。芯の具は1種類のことが多い
+      zh: 用半张海苔卷成的细寿司卷，芯里多半只放一种料
+      en: A slim roll made with a half sheet of nori, usually around a single filling
+    note:
+      ja: 海苔1枚をそのまま使うのが太巻き、半分に切って使うのが細巻き。江戸では「のり巻き」といえば干瓢（かんぴょう）巻きを指し、江戸後期の『守貞謾稿』にも海苔巻には干瓢だけを入れるとある。関東の細巻きは干瓢が基本で、芯がマグロなら鉄火巻、キュウリならかっぱ巻、たくあんなどの漬物なら新香巻と呼ぶ。関西では卵焼き・シイタケ・干瓢などを合わせた太巻きが主流で、干瓢巻きはなじみが薄い。
+      zh: 用整张海苔卷的是太卷，切成半张卷的是细卷。在江户，说“海苔卷”就是指干瓢卷（瓠瓜干条卷），江户后期的《守贞谩稿》也记载海苔卷里只放干瓢。关东的细卷以干瓢为基本，芯放金枪鱼叫铁火卷，放黄瓜叫河童卷，放腌萝卜等咸菜叫新香卷。关西则以放玉子烧、香菇、干瓢等多种料的太卷为主，干瓢卷并不常见。
+      en: "A whole sheet of nori makes a futomaki; a half sheet makes a hosomaki. In Edo “norimaki” meant the kanpyō (dried gourd strip) roll, and the late-Edo Morisada Mankō notes that the nori roll held kanpyō alone. Kantō thin rolls still start from kanpyō: with tuna it is tekkamaki, with cucumber kappamaki, with pickles such as takuan shinkomaki. In Kansai the thick futomaki with omelette, shiitake and kanpyō dominates, and kanpyō rolls are little known."
+    sources:
+      - title: コトバンク「巻き鮨」（デジタル大辞泉・講談社 世界の料理がわかる辞典）
+        url: https://kotobank.jp/word/%E5%B7%BB%E3%81%8D%E9%AE%A8-633525
+      - title: コトバンク「海苔巻」（精選版 日本国語大辞典）
+        url: https://kotobank.jp/word/%E6%B5%B7%E8%8B%94%E5%B7%BB-597619
+      - title: 農林水産省「うちの郷土料理」かんぴょう巻き（東京都）
+        url: https://www.maff.go.jp/j/keikaku/syokubunka/k_ryouri/search_menu/menu/34_13_tokyo.html
+      - title: コトバンク「新香巻」（世界大百科事典（旧版））
+        url: https://kotobank.jp/word/%E6%96%B0%E9%A6%99%E5%B7%BB-1343414
+  - id: tekkamaki
+    ja: 鉄火巻き
+    ruby: "{鉄火|てっか}{巻|ま}き"
+    kana: てっかまき
+    romaji: tekka maki
+    mean:
+      ja: マグロの細巻き
+      zh: 金枪鱼细卷
+      en: Tuna roll
+    part:
+      ja: 拍子木形に切ったマグロの赤身とおろしワサビを芯にした細巻き
+      zh: 以切成长条的金枪鱼赤身和山葵泥为芯的细卷
+      en: A thin roll with a stick of lean tuna and grated wasabi at its core
+    note:
+      ja: 「鉄火」は真っ赤に焼けた鉄のことで、すし屋ではマグロの赤身もこう呼ぶ。名の由来は、明治中期に鉄火場（賭博場）で勝負をしながら食べる簡易食だったからという説が知られるが、赤くて辛みのきいたものを「鉄火」と呼んだ例は江戸時代の鉄火みそにもある。鉄火巻きの名が見えるのは明治以降で、マグロを丼飯にのせた「鉄火丼」の名は大正以後とされる。
+      zh: “铁火”本指烧得通红的铁，寿司店里也用来指金枪鱼赤身。名称来历以“明治中期在赌场（铁火场）边赌边吃的简便食物”一说最为流行；不过江户时代已有把又红又辣的东西叫“铁火”的例子（铁火味噌）。“铁火卷”一名见于明治以后，金枪鱼盖饭“铁火丼”一名则据说始于大正以后。
+      en: Tekka means red-hot iron, and sushi bars also use it for lean red tuna. The best-known theory traces the name to gambling dens (tekkaba), where the roll was a quick meal eaten mid-game in the mid-Meiji era; but in the Edo period red, fiery-hot foods were already called tekka, as in tekka-miso. The name tekkamaki appears from the Meiji era, and tekkadon (tuna over rice) only from the Taishō era.
+    sources:
+      - title: コトバンク「鉄火巻」（百科事典マイペディア・ブリタニカ国際大百科事典ほか）
+        url: https://kotobank.jp/word/%E9%89%84%E7%81%AB%E5%B7%BB-101036
+      - title: コトバンク「鉄火」（デジタル大辞泉・日本大百科全書(ニッポニカ)）
+        url: https://kotobank.jp/word/%E9%89%84%E7%81%AB-576046
+      - title: nippon.com「おすし屋さんの業界用語：これであなたも「通」の仲間入り！」（2023年）
+        url: https://www.nippon.com/ja/japan-data/h01735/
+  - id: kappamaki
+    ja: かっぱ巻き
+    ruby: かっぱ{巻|ま}き
+    kana: かっぱまき
+    romaji: kappa maki
+    mean:
+      ja: キュウリの細巻き
+      zh: 黄瓜细卷
+      en: Cucumber roll
+    part:
+      ja: 生のキュウリを芯にした細巻き
+      zh: 以生黄瓜为芯的细卷
+      en: A thin roll with raw cucumber at its core
+    note:
+      ja: すし屋でキュウリを「かっぱ」と呼ぶことからの名で、河童の好物がキュウリとされるためという。河童は水神の性格をもつ妖怪で、水神祭や川祭にキュウリを供えて水難よけを祈る地方が多い。キュウリの断面が河童の頭の皿に似ているからという説もある。
+      zh: 寿司店把黄瓜叫“河童”（かっぱ），卷名由此而来，据说是因为传说中的河童最爱吃黄瓜。河童是带有水神性质的妖怪，许多地方在水神祭、河祭时供奉黄瓜，祈求免遭水难。另一说认为黄瓜的切面像河童头顶的碟子。
+      en: Sushi bars call cucumber kappa, after the water imp said to love cucumbers. The kappa has the character of a water deity, and many regions offer cucumbers at water-god and river festivals to ward off drowning. Another theory says a cucumber’s cut face looks like the water-filled dish on a kappa’s head.
+    sources:
+      - title: コトバンク「河童巻」（デジタル大辞泉・精選版 日本国語大辞典）
+        url: https://kotobank.jp/word/%E6%B2%B3%E7%AB%A5%E5%B7%BB-464517
+      - title: コトバンク「河童」（デジタル大辞泉・日本大百科全書(ニッポニカ)・改訂新版 世界大百科事典）
+        url: https://kotobank.jp/word/%E6%B2%B3%E7%AB%A5-45345
+      - title: nippon.com「おすし屋さんの業界用語：これであなたも「通」の仲間入り！」（2023年）
+        url: https://www.nippon.com/ja/japan-data/h01735/
+  - id: temaki
+    ja: 手巻き
+    ruby: "{手巻|てま}き"
+    kana: てまき
+    romaji: temaki
+    mean:
+      ja: 手巻きずし
+      zh: 手卷
+      en: Hand roll
+    part:
+      ja: 巻き簀を使わず、海苔にシャリと具をのせて手で巻いたすし
+      zh: 不用竹帘，在海苔上放醋饭和料、用手卷成的寿司
+      en: Sushi rolled by hand in a sheet of nori, without a bamboo mat
+    note:
+      ja: 巻き簀などの道具を使わず、手だけで巻くことからの名。作り置きはせず、海苔・すし飯・ネタを並べて各自がその場で巻いて食べることが多い。回転寿司の品書きでは「えび天手巻」（くら寿司）のように送り仮名を省いて書くことがあり、はま寿司はネタとシャリに半切り海苔を添えた持ち帰り用の「手巻きセット」を売っている。
+      zh: 因不用竹帘等工具、只用手卷而得名。通常不事先做好，而是把海苔、醋饭和各种料摆上桌，各人当场自己卷着吃。回转寿司菜单上有时省略送假名写作“手巻”，如くら寿司的“えび天手巻”（炸虾手卷）；はま寿司还卖附有半张海苔的外带“手卷套装”。
+      en: "The name means “hand-rolled”: no bamboo mat or other tool is used. It is rarely made ahead; nori, sushi rice and toppings are set out and everyone rolls their own at the table. Chain menus may drop the okurigana and write 手巻, as in Kura Sushi’s えび天手巻 (shrimp-tempura hand roll), and Hama-zushi sells a take-home “temaki set” of toppings, rice and half-size nori sheets."
+    sources:
+      - title: コトバンク「手巻き鮨」（デジタル大辞泉・講談社 世界の料理がわかる辞典）
+        url: https://kotobank.jp/word/%E6%89%8B%E5%B7%BB%E3%81%8D%E9%AE%A8-679081
+      - title: くら寿司「メニュー」
+        url: https://www.kurasushi.co.jp/menu/
+      - title: はま寿司「メニュー紹介」
+        url: https://www.hama-sushi.co.jp/menu/
+  - id: chirashi
+    ja: ちらし寿司
+    ruby: ちらし{寿司|ずし}
+    kana: ちらしずし
+    romaji: chirashi-zushi
+    mean:
+      ja: 散らしずし
+      zh: 散寿司
+      en: Scattered sushi
+    part:
+      ja: 器に盛ったすし飯の上に具を散らしたすし。関西では具をすし飯に混ぜ込む
+      zh: 在盛入容器的醋饭上铺撒各种料的寿司；关西多把料拌进饭里
+      en: Sushi rice in a bowl or box with toppings scattered over it (in Kansai, mixed through it)
+    note:
+      ja: 関東のすし屋のちらしは、すし飯の上に刺身・ゆでたエビ・玉子焼きなど握りのネタを並べたもの。関西では刻んだ具をすし飯に混ぜ、錦糸玉子をのせて「ばらずし」「五目ずし」「かやくずし」と呼ぶ。岡山の「ばらずし（まつりずし）」には、藩主が倹約令で庶民に「一汁一菜」を命じた際、具を飯に混ぜればおかずにならないと考えて作ったという話が伝わる。ひなまつりの定番料理でもある。
+      zh: 关东寿司店的散寿司，是在醋饭上摆放生鱼片、煮虾、玉子烧等握寿司的料。关西则把切碎的料拌进醋饭，再铺上蛋丝，叫“ばらずし”“五目ずし”“かやくずし”。冈山的“ばらずし（祭寿司）”流传着这样的故事：藩主颁布节俭令，命令百姓只准“一汤一菜”，百姓便把鱼和菜拌进饭里，这样就不算菜了。散寿司也是女儿节的固定菜色。
+      en: "At a Kantō sushi bar, chirashi is sushi rice laid with nigiri toppings: sashimi, boiled prawns, tamagoyaki. In Kansai chopped ingredients are mixed into the rice and topped with shredded omelette, and the dish is called barazushi, gomokuzushi or kayakuzushi. Okayama’s barazushi (matsurizushi) carries a story that when the domain lord’s frugality edict allowed commoners only “one soup, one side dish”, people mixed fish and vegetables into the rice so they would not count as a side dish. It is also a standard dish for Hinamatsuri, the Girls’ Festival."
+    sources:
+      - title: コトバンク「散らし鮨」（デジタル大辞泉・講談社 世界の料理がわかる辞典）
+        url: https://kotobank.jp/word/%E6%95%A3%E3%82%89%E3%81%97%E9%AE%A8-569649
+      - title: 農林水産省「うちの郷土料理」まつりずし／ばらずし（岡山県）
+        url: https://www.maff.go.jp/j/keikaku/syokubunka/k_ryouri/search_menu/menu/41_1_okayama.html
+      - title: 農林水産省「お家で祝うひなまつり！」
+        url: https://www.maff.go.jp/j/keikaku/syokubunka/culture/wagohan/articles/2302/spe14_03.html
+  - id: inari
+    ja: いなり寿司
+    ruby: いなり{寿司|ずし}
+    kana: いなりずし
+    romaji: inari-zushi
+    mean:
+      ja: 稲荷ずし
+      zh: 稻荷寿司（豆皮寿司）
+      en: Inari sushi
+    part:
+      ja: 甘辛く煮た油揚げを袋状に開き、すし飯を詰めたもの
+      zh: 把甜咸口煮过的油炸豆腐皮撑成袋状，塞入醋饭
+      en: Sushi rice stuffed into a pouch of fried tofu simmered sweet and salty
+    note:
+      ja: 稲荷神の使いとされるキツネが油揚げを好むとされることからの名で、「しのだずし」「きつねずし」ともいう。『守貞謾稿』によれば発祥は名古屋で、江戸では天保（1830〜44）の末ごろから、鳥居を描いた行灯をともした稲荷ずし売りが夜の町を売り歩いた。関東は濃口醤油で煮た長方形、関西は薄揚げと淡口醤油を使った三角形が多く、西日本では五目の具を混ぜることも多い。いなりと巻きずしの詰め合わせを「助六」と呼ぶのは、歌舞伎『助六』の恋人「揚巻」に「揚げ」と「巻き」を掛けたもの。
+      zh: 名字来自传说中稻荷神的使者狐狸爱吃油炸豆腐，也叫“信太寿司”“狐狸寿司”。据《守贞谩稿》，它起源于名古屋；江户从天保末年（1840年代初）起，有小贩点着画有鸟居的灯笼，夜里沿街叫卖。关东多用浓口酱油煮成长方形，关西多用薄油豆腐和淡口酱油做成三角形，西日本还常在饭里拌入什锦配料。稻荷寿司配卷寿司的拼盘叫“助六”，取歌舞伎《助六》中情人“扬卷”的谐音：“扬”指油豆腐，“卷”指卷寿司。
+      en: The name comes from the belief that foxes, messengers of the Inari deity, love fried tofu; it is also called shinoda-zushi or kitsune-zushi. According to the Morisada Mankō it began in Nagoya, and in Edo from the end of the Tenpō era (early 1840s) vendors hawked it at night under lanterns painted with a torii gate. Kantō versions are oblong and simmered in dark soy sauce; Kansai ones are often triangular, made with thin fried tofu and light soy sauce, and western Japan often mixes vegetables into the rice. A box of inari and maki is called “Sukeroku” after the kabuki hero whose lover Agemaki’s name puns on age (fried tofu) and maki (roll).
+    sources:
+      - title: コトバンク「稲荷鮨」（精選版 日本国語大辞典・改訂新版 世界大百科事典ほか）
+        url: https://kotobank.jp/word/%E7%A8%B2%E8%8D%B7%E9%AE%A8-435209
+      - title: 農林水産省「根強い人気のいなり寿司はファストフード」
+        url: https://www.maff.go.jp/j/keikaku/syokubunka/culture/wagohan/articles/2301/spe13_03.html
+      - title: コトバンク「助六鮨」（デジタル大辞泉）
+        url: https://kotobank.jp/word/%E5%8A%A9%E5%85%AD%E9%AE%A8-541488

@@ -1,0 +1,11 @@
+- file: commons.jpg
+  kind: dish
+  caption:
+    ja: "茶碗に盛ったご飯"
+    zh: "一碗白米饭"
+    en: "A bowl of cooked white rice"
+  source:
+    title: "Wikimedia Commons「Meshi 002.jpg」"
+    url: "https://commons.wikimedia.org/wiki/File:Meshi_002.jpg"
+    license: "CC0 1.0"
+    author: "Ocdp"

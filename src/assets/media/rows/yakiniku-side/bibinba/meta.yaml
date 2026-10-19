@@ -1,0 +1,11 @@
+- file: commons.jpg
+  kind: dish
+  caption:
+    ja: "ビビンバ"
+    zh: "拌饭"
+    en: "Bibimbap"
+  source:
+    title: "Wikimedia Commons「Korean cuisine-Bibimbap-01.jpg」"
+    url: "https://commons.wikimedia.org/wiki/File:Korean_cuisine-Bibimbap-01.jpg"
+    license: "CC BY 2.0"
+    author: "Jerine Lay"

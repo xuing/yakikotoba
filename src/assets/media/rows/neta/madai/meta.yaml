@@ -1,0 +1,11 @@
+- file: madai-nigiri.jpg
+  kind: dish
+  caption:
+    ja: "真鯛のにぎり（塩を振ったもの）"
+    zh: "真鲷握寿司（撒了盐）"
+    en: "Red sea bream nigiri, finished with salt"
+  source:
+    title: "Tokyo-Uenohirokouji---2024-11-27 018.jpg（Wikimedia Commons）"
+    url: "https://commons.wikimedia.org/wiki/File:Tokyo-Uenohirokouji---2024-11-27_018.jpg"
+    license: "CC BY 4.0"
+    author: "RuinDig/Yuki Uchida"

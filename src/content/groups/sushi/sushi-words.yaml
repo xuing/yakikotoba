@@ -1,0 +1,182 @@
+order: 6
+ja: 用語
+zh: 寿司店用语
+en: Sushi-bar words
+note:
+  ja: すし屋には店の者どうしで使う業界用語（符丁）が多く、ここに挙げた語のほか、醤油を「むらさき」、わさびを「なみだ」、会計を「おあいそ」と呼ぶ。「おあいそ」は、精算の際に店側が「愛想がなくて申し訳ありません」と詫びたのが始まりとされる。
+  zh: 寿司店里有很多店员之间使用的行话，除本组的词以外，还把酱油叫“むらさき”（紫）、山葵叫“なみだ”（眼泪）、结账叫“おあいそ”。“おあいそ”据说源于结账时店家致歉“招待不周（愛想がなくて），实在抱歉”。
+  en: "Sushi bars have plenty of trade jargon used among staff: besides the words here, soy sauce is murasaki (“purple”), wasabi namida (“tears”) and the bill oaiso, said to come from the shop apologising at payment for its lack of aiso (hospitality)."
+items:
+  - id: shari
+    ja: シャリ
+    kana: しゃり
+    romaji: shari
+    mean:
+      ja: すし飯
+      zh: 寿司饭
+      en: Sushi rice
+    part:
+      ja: 酢・塩・砂糖の合わせ酢で味をつけた、すし用のご飯
+      zh: 用醋、盐、糖调成的混合醋调味的寿司米饭
+      en: Rice seasoned with a mixture of vinegar, salt and sugar for sushi
+    note:
+      ja: 仏の遺骨を意味する「舎利」（梵語 śarīra の音写）が、形が似ていることから米粒や飯を指すようになった語で、白米の飯を「銀シャリ」と呼ぶのは戦中・戦後の食糧難の時代からという。すし飯は白飯よりやや硬めに炊き、熱いうちに合わせ酢を混ぜる。1804年に江戸で早ずしに出会ったミツカン創業者の中埜又左衛門が酒粕から造った粕酢（赤酢）は、江戸のすし屋に欠かせない調味料になった。回転寿司の品書きには「シャリハーフ」（くら寿司）、「シャリ大盛り」（はま寿司の丼）といった表示もある。
+      zh: 源自意为佛骨的“舍利”（梵语 śarīra 的音译），因形状相似，后来用来指米粒和米饭；把白米饭叫“银舍利”（銀シャリ），据说始于战时和战后的粮荒年代。寿司饭比普通米饭煮得稍硬，趁热拌入混合醋。1804年在江户见识了早寿司的味滋康（ミツカン）创始人中埜又左卫门用酒糟酿出的粕醋（红醋），成了江户寿司店不可缺少的调料。回转寿司的菜单上还能看到“シャリハーフ”（半份饭，くら寿司）、“シャリ大盛り”（大份饭，はま寿司的盖饭）等字样。
+      en: From shari 舎利, the Buddha’s relics (Sanskrit śarīra), applied to grains of rice because of their resemblance; calling plain white rice gin-shari (“silver shari”) dates from the food shortages of the war and post-war years. Sushi rice is cooked slightly firmer than ordinary rice and dressed with the vinegar mix while hot. Nakano Matazaemon, founder of Mizkan, encountered Edo’s new fast sushi in 1804 and began making vinegar from sake lees; this red vinegar (akazu) became indispensable to Edo sushi bars. Chain menus also show options such as シャリハーフ (half rice, Kura Sushi) and シャリ大盛り (extra rice, on Hama-zushi’s rice bowls).
+    sources:
+      - title: コトバンク「舎利」（デジタル大辞泉・精選版 日本国語大辞典）
+        url: https://kotobank.jp/word/%E8%88%8E%E5%88%A9-76362
+      - title: コトバンク「銀舎利」（デジタル大辞泉）
+        url: https://kotobank.jp/word/%E9%8A%80%E8%88%8E%E5%88%A9-481239
+      - title: コトバンク「鮨」（デジタル大辞泉・精選版 日本国語大辞典・ブリタニカ国際大百科事典）
+        url: https://kotobank.jp/word/%E9%AE%A8-83780
+      - title: 半田市「ミツカン展示室（常設展示室Ⅲ）」解説（PDF）
+        url: https://www.city.handa.lg.jp/_res/projects/default_project/_page_/001/010/802/japanese-version_mizkan-room.pdf
+      - title: くら寿司「メニュー」
+        url: https://www.kurasushi.co.jp/menu/
+      - title: はま寿司「メニュー紹介」
+        url: https://www.hama-sushi.co.jp/menu/
+  - id: neta
+    ja: ネタ
+    kana: ねた
+    romaji: neta
+    mean:
+      ja: すし種
+      zh: 寿司料
+      en: Sushi topping
+    part:
+      ja: すし飯にのせる魚介・玉子焼きなどの材料（すしだね）
+      zh: 放在醋饭上的鱼贝、玉子烧等材料（すしだね）
+      en: The fish, shellfish, omelette and so on placed on the rice (sushi-dane)
+    note:
+      ja: 「たね（種）」を逆さに読んだ隠語で、1818〜45年ごろの随筆『松屋筆記』に用例がある。本来の形で「タネ」「すしだね」とも言い、すし以外でも新聞記事の材料や手品の仕掛け、芸人の演目を「ねた」と呼ぶ。すし種のうち、コハダ・サバ・アジなど皮が青白く光る魚は「光り物」と呼ばれる。
+      zh: 是把“たね”（种，材料）倒过来念的行话，1818—45年前后的随笔《松屋笔记》中已有用例。也可按本来的说法叫“タネ”“すしだね”；寿司以外，新闻报道的素材、魔术的机关、艺人的段子也叫“ねた”。寿司料中，斑鰶、鲭鱼、竹荚鱼等鱼皮泛青白光泽的鱼称为“光り物”。
+      en: Inverted slang for tane (種, “seed, material”), attested in the essay collection Matsunoya hikki (c. 1818–45). The plain forms tane and sushi-dane are also used, and outside sushi neta means a news story’s material, a magic trick’s secret or a comedian’s routine. Toppings with bluish, shining skin such as kohada, mackerel and horse mackerel are grouped as hikarimono, “shiny things”.
+    sources:
+      - title: コトバンク「ねた」（デジタル大辞泉・精選版 日本国語大辞典）
+        url: https://kotobank.jp/word/%E3%81%AD%E3%81%9F-595058
+      - title: nippon.com「おすし屋さんの業界用語：これであなたも「通」の仲間入り！」（2023年）
+        url: https://www.nippon.com/ja/japan-data/h01735/
+      - title: コトバンク「光り物」（デジタル大辞泉）
+        url: https://kotobank.jp/word/%E5%85%89%E3%82%8A%E7%89%A9-608881
+  - id: gari
+    ja: ガリ
+    kana: がり
+    romaji: gari
+    mean:
+      ja: すしに添える甘酢しょうが
+      zh: 寿司醋姜片
+      en: Pickled ginger for sushi
+    part:
+      ja: 薄切りにしたショウガ（多くは新ショウガ）を軽くゆで、甘酢に漬けたもの
+      zh: 把姜（多用嫩姜）切薄片、稍微焯水后泡在甜醋里
+      en: Thin slices of ginger, usually young ginger, blanched and pickled in sweet vinegar
+    note:
+      ja: 噛むと「ガリガリ」と音がすることからの名とされる。一般には「甘酢しょうが」といい焼き魚などにも添えるが、すしに添えるものを特に「ガリ」と呼ぶ。回転寿司では、ガリ・お茶・醤油・箸がカウンターに置かれ、客が自分で取るのがふつう。
+      zh: 据说因嚼起来“嘎吱嘎吱”（ガリガリ）作响而得名。一般叫“甜醋姜”（甘酢しょうが），也用来配烤鱼等，配寿司的则特称“ガリ”。在回转寿司店，醋姜、茶、酱油、筷子一般都放在柜台上，由客人自取。
+      en: The name is said to imitate the crunching sound, gari-gari, it makes. The general term is amazu-shōga (sweet-vinegar ginger), also served with grilled fish, but the version served with sushi is called gari. At conveyor-belt sushi bars, gari, tea, soy sauce and chopsticks usually sit on the counter for diners to help themselves.
+    sources:
+      - title: コトバンク「がり」（講談社 世界の料理がわかる辞典）
+        url: https://kotobank.jp/word/%E3%81%8C%E3%82%8A-467747
+      - title: コトバンク「甘酢生姜」（講談社 世界の料理がわかる辞典）
+        url: https://kotobank.jp/word/%E7%94%98%E9%85%A2%E7%94%9F%E5%A7%9C-198424
+      - title: nippon.com「おすし屋さんの業界用語：これであなたも「通」の仲間入り！」（2023年）
+        url: https://www.nippon.com/ja/japan-data/h01735/
+      - title: コトバンク「回転寿司」（デジタル大辞泉・百科事典マイペディア）
+        url: https://kotobank.jp/word/%E5%9B%9E%E8%BB%A2%E5%AF%BF%E5%8F%B8-458090
+  - id: agari
+    ja: あがり
+    kana: あがり
+    romaji: agari
+    mean:
+      ja: お茶
+      zh: 茶
+      en: Tea
+    part:
+      ja: すし屋で出すお茶。「上がり花」の略
+      zh: 寿司店对茶的叫法，是“上がり花”的简称
+      en: The sushi-bar word for tea, short for agaribana
+    note:
+      ja: 遊郭や料理屋で入れたての茶を「上がり花」と呼んだのが略されたもので、すし屋ではもともと食事の最後に飲むお茶を指した。暇なことを表す「お茶をひく」（茶葉を臼でひくこと）が芸者や遊女の忌み言葉だったため、「客が上がる」に掛けて「上がり花」「あがり」と呼ぶようになったとされる。入れたての香りのよい茶は一般には「出花」といい、「鬼も十八、番茶も出花」ということわざに残る。
+      zh: 源自游廓（花街）和料亭把刚沏好的茶叫“上がり花”，后来简称“あがり”；在寿司店原指饭后最后喝的那杯茶。因为表示“闲着没客人”的“お茶をひく”（用石臼磨茶叶）是艺伎和游女忌讳的说法，便取“客人上门”（客が上がる）的吉利意思，把茶叫作“上がり花”“あがり”。刚沏好、香气正浓的茶一般叫“出花”，见于俗语“鬼も十八、番茶も出花”（丑女十八也动人，粗茶初沏也香醇）。
+      en: In pleasure quarters and restaurants freshly made tea was called agaribana, later shortened to agari; at sushi bars it originally meant the tea drunk at the end of the meal. Because ocha o hiku (“grinding tea”, i.e. sitting idle with no clients) was a taboo phrase for geisha and courtesans, the tea was named after the lucky phrase kyaku ga agaru, “a customer comes up”. Freshly brewed, fragrant tea is otherwise called debana, as in the proverb “Oni mo jūhachi, bancha mo debana” (even an ogre is pretty at eighteen, even coarse tea is good fresh-brewed).
+    sources:
+      - title: nippon.com「おすし屋さんの業界用語：これであなたも「通」の仲間入り！」（2023年）
+        url: https://www.nippon.com/ja/japan-data/h01735/
+      - title: コトバンク「上がり」（デジタル大辞泉）
+        url: https://kotobank.jp/word/%E4%B8%8A%E3%81%8C%E3%82%8A-422907
+      - title: コトバンク「上がり花」（デジタル大辞泉）
+        url: https://kotobank.jp/word/%E4%B8%8A%E3%81%8C%E3%82%8A%E8%8A%B1-422929
+      - title: コトバンク「出花」（デジタル大辞泉）
+        url: https://kotobank.jp/word/%E5%87%BA%E8%8A%B1-576640
+  - id: sabinuki
+    ja: さび抜き
+    ruby: さび{抜|ぬ}き
+    kana: さびぬき
+    romaji: sabinuki
+    mean:
+      ja: わさび抜き
+      zh: 不放山葵
+      en: No wasabi
+    part:
+      ja: 握りずしのシャリとネタの間にわさびを入れないこと。「さび」はわさびの略
+      zh: 握寿司的醋饭和料之间不放山葵；“さび”是“わさび”的省略
+      en: Nigiri made without the dab of wasabi between rice and topping; sabi is short for wasabi
+    note:
+      ja: 握りずしにわさびを挟むのは、1820年（文政3）ごろ江戸の華屋与兵衛がコハダやエビの握りで考案して評判になったとされ、全国に広まったのは明治以降。わさびの辛味成分アリルイソチオシアネートは、すりおろして細胞が壊れると酵素の働きで生じ、市販の粉わさびの多くはセイヨウワサビ（ホースラディッシュ）の粉末に葉緑素や着色料を加えたもの。すし屋ではわさびを「なみだ」とも呼び、伊豆諸島の島ずしのように、ワサビが手に入らずからしで代用した地域もある。
+      zh: 在握寿司里夹山葵，据说是1820年（文政3年）前后江户的华屋与兵卫在斑鰶、虾的握寿司上首创并大受欢迎，明治以后才普及全国。山葵的辣味成分异硫氰酸烯丙酯，是磨碎时细胞破裂、在酶的作用下生成的；市售的山葵粉大多是辣根（西洋山葵）粉加叶绿素或色素做成的。寿司店也把山葵叫“なみだ”（眼泪）；伊豆诸岛的岛寿司当年弄不到山葵，就用黄芥末代替。
+      en: Tucking wasabi into nigiri is credited to Hanaya Yohei of Edo around 1820, for his kohada and prawn pieces, and it only spread nationwide in the Meiji era. Wasabi’s heat, allyl isothiocyanate, forms by enzyme action when grating ruptures the cells; most powdered “wasabi” on sale is horseradish powder with chlorophyll or colouring added. Sushi bars also call wasabi namida (“tears”), and in the Izu Islands, where real wasabi was unobtainable, shimazushi used hot mustard instead.
+    sources:
+      - title: コトバンク「さび抜き」（デジタル大辞泉）
+        url: https://kotobank.jp/word/%E3%81%95%E3%81%B3%E6%8A%9C%E3%81%8D-681483
+      - title: コトバンク「ワサビ」（日本大百科全書(ニッポニカ)・改訂新版 世界大百科事典）
+        url: https://kotobank.jp/word/%E3%82%8F%E3%81%95%E3%81%B3-1779097
+      - title: nippon.com「おすし屋さんの業界用語：これであなたも「通」の仲間入り！」（2023年）
+        url: https://www.nippon.com/ja/japan-data/h01735/
+      - title: 農林水産省「うちの郷土料理」島ずし（東京都）
+        url: https://www.maff.go.jp/j/keikaku/syokubunka/k_ryouri/search_menu/menu/34_19_tokyo.html
+  - id: omakase
+    ja: おまかせ
+    kana: おまかせ
+    romaji: omakase
+    mean:
+      ja: 店に一任すること
+      zh: 主厨精选（交给师傅）
+      en: Chef’s choice
+    part:
+      ja: 何を出すかを店（職人）に一任する頼み方
+      zh: 把吃什么全权交给店家（师傅）决定的点法
+      en: Ordering by leaving the selection entirely to the chef
+    note:
+      ja: 「任せる」に接頭語「お」が付いた語で、特に料理屋で料理の内容を店に一任することをいい、「おまかせコース」のように使う。すし店でおまかせにすると、その日のおすすめのネタで握ったすしが出される。英語にも omakase として入り、Merriam-Webster は名詞の初出を1967年とし、職人の裁量で選んだ一連の少量の料理（すしなど）を定額で出すもの、と定義している。
+      zh: 由“任せる”（交给）加前缀“お”构成，特指在餐馆把菜品全权交给店家，常见“おまかせコース”（主厨精选套餐）等说法。在寿司店点“おまかせ”，师傅会用当天推荐的料来捏。这个词也进入了英语，韦氏词典记载其名词用法最早见于1967年，释义为“由厨师决定、按固定价格供应的一系列小份菜品（如寿司）”。
+      en: "O- (honorific) + makase, “leaving it to someone”: in restaurants, leaving the content of the meal to the house, as in omakase kōsu (chef’s-choice course). At a sushi bar, omakase brings nigiri made from the day’s recommended toppings. English has borrowed the word: Merriam-Webster dates the noun to 1967 and defines it as a series of small servings or courses (as of sushi) offered at a fixed price and selected at the chef’s discretion."
+    sources:
+      - title: コトバンク「御任せ」（デジタル大辞泉）
+        url: https://kotobank.jp/word/%E5%BE%A1%E4%BB%BB%E3%81%9B-454386
+      - title: GO TOKYO（東京観光財団）「東京の寿司ガイド」
+        url: https://www.gotokyo.org/jp/story/guide/from-skipjack-to-salmon-a-guide-to-eating-sushi-in-tokyo/index.html
+      - title: Merriam-Webster “omakase”
+        url: https://www.merriam-webster.com/dictionary/omakase
+  - id: kaitenzushi
+    ja: 回転寿司
+    ruby: "{回転|かいてん}{寿司|ずし}"
+    kana: かいてんずし
+    romaji: kaiten-zushi
+    mean:
+      ja: 回るすし
+      zh: 回转寿司
+      en: Conveyor-belt sushi
+    part:
+      ja: 小皿に盛ったすしが客の前を回るベルトに乗って流れ、客が好きな皿を取る方式の店
+      zh: 小碟寿司放在顾客面前循环的传送带上，任客人自取的寿司店
+      en: A sushi restaurant where small plates ride a belt past the counter and diners take what they like
+    note:
+      ja: 大阪・布施市（現東大阪市）で立ち食いずしを1皿4貫20円で出していた白石義明が、吹田市のビール工場で見たベルトコンベアから着想し、町工場の経営者らと約10年かけて「コンベア旋回式食事台」を開発、1958年4月に近鉄布施駅近くで「廻る元禄寿司」1号店を開いた（特許は1962年取得、1978年失効）。1970年の大阪万博への出店で一躍知られ、1991年には広辞苑（第4版）に「回転寿司」が初めて載った。国内の店舗は4,000店を超え、市場規模は2022年に7,252億円（富士経済調べ）。皿の色や柄で値段を分け、食べ終えた皿の枚数で会計する。
+      zh: 在大阪布施市（今东大阪市）以每盘4个20日元卖站着吃的寿司的白石义明，从吹田市一家啤酒厂的传送带得到灵感，与当地小工厂老板们花了约10年开发出“传送带回旋式餐台”，1958年4月在近铁布施站附近开出“廻る元禄寿司”1号店（1962年取得专利，1978年失效）。1970年大阪世博会出店后一举成名，1991年“回转寿司”首次收入《广辞苑》（第4版）。如今日本国内门店超过4000家，2022年市场规模达7252亿日元（富士经济调查）。按盘子的颜色或花纹分价，吃完按盘子数量结账。
+      en: Shiraishi Yoshiaki, who sold stand-up sushi at four pieces for ¥20 in Fuse (now Higashi-Ōsaka), took the idea from a conveyor belt at a beer plant in Suita and spent about ten years with local machine shops developing a “conveyor rotating dining counter”; the first Mawaru Genroku Sushi opened near Kintetsu Fuse Station in April 1958 (patented 1962, expired 1978). A stand at the 1970 Osaka Expo made it famous, and the Kōjien dictionary first listed 回転寿司 in its 4th edition (1991). Japan now has more than 4,000 such restaurants, and the market reached ¥725.2 billion in 2022 (Fuji Keizai). Prices are coded by plate colour or pattern, and the bill is counted from the empty plates.
+    sources:
+      - title: J-Net21（中小企業基盤整備機構）「「外食産業元年」に歴史の1ページを刻んだ回転寿司【元禄産業株式会社】」
+        url: https://j-net21.smrj.go.jp/special/expo1970/20231113.html
+      - title: コトバンク「回転寿司」（デジタル大辞泉・百科事典マイペディア）
+        url: https://kotobank.jp/word/%E5%9B%9E%E8%BB%A2%E5%AF%BF%E5%8F%B8-458090

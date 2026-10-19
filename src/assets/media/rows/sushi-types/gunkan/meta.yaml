@@ -1,0 +1,11 @@
+- file: ikura-gunkan.jpg
+  kind: dish
+  caption:
+    ja: "イクラの軍艦巻き"
+    zh: "鲑鱼籽军舰卷"
+    en: "Ikura (salmon roe) gunkan-maki"
+  source:
+    title: "Ikura (salmon roe) Gunkanmaki.jpg（Wikimedia Commons）"
+    url: "https://commons.wikimedia.org/wiki/File:Ikura_(salmon_roe)_Gunkanmaki.jpg"
+    license: "CC BY-SA 4.0"
+    author: "Zheng Zhou"

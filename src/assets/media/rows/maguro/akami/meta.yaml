@@ -1,0 +1,11 @@
+- file: akami-nigiri.jpg
+  kind: dish
+  caption:
+    ja: "マグロ赤身のにぎり"
+    zh: "金枪鱼赤身握寿司"
+    en: "Akami (lean tuna) nigiri"
+  source:
+    title: "Maguro Akami (lean tuna) Nigiri.jpg（Wikimedia Commons）"
+    url: "https://commons.wikimedia.org/wiki/File:Maguro_Akami_(lean_tuna)_Nigiri.jpg"
+    license: "CC BY-SA 4.0"
+    author: "Zheng Zhou"

@@ -1,0 +1,21 @@
+- file: maff.jpg
+  kind: raw
+  caption:
+    ja: "ぼんじり"
+    zh: "鸡尾肉"
+    en: "Bonjiri (tail)"
+  source:
+    title: "農林水産省「aff」2020年9月号 お肉丸わかり図鑑"
+    url: "https://www.maff.go.jp/j/pr/aff/2009/spe1_02.html"
+    license: "公共データ利用規約（第1.0版）"
+- file: commons.jpg
+  kind: dish
+  caption:
+    ja: "ぼんじりの焼き鳥"
+    zh: "鸡尾肉串"
+    en: "Bonjiri yakitori"
+  source:
+    title: "Wikimedia Commons「Yakitori 010.jpg」"
+    url: "https://commons.wikimedia.org/wiki/File:Yakitori_010.jpg"
+    license: "CC0 1.0"
+    author: "Ocdp"

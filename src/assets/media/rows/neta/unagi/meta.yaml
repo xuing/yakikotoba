@@ -1,0 +1,10 @@
+- file: maff.jpg
+  kind: dish
+  caption:
+    ja: 鰻のかば焼き（うな重）
+    zh: 蒲烧鳗鱼（鳗鱼饭）
+    en: Kabayaki eel over rice (unajū)
+  source:
+    title: 農林水産省「うちの郷土料理」鰻のかば焼き（東京都）
+    url: https://www.maff.go.jp/j/keikaku/syokubunka/k_ryouri/search_menu/menu/34_24_tokyo.html
+    license: 公共データ利用規約（第1.0版）

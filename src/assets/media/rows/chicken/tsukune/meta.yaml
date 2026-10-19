@@ -1,0 +1,11 @@
+- file: commons.jpg
+  kind: dish
+  caption:
+    ja: "つくね"
+    zh: "鸡肉丸串"
+    en: "Tsukune yakitori"
+  source:
+    title: "Wikimedia Commons「Yakitori 003.jpg」"
+    url: "https://commons.wikimedia.org/wiki/File:Yakitori_003.jpg"
+    license: "CC0 1.0"
+    author: "Ocdp"

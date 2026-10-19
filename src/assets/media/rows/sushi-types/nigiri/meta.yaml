@@ -1,0 +1,10 @@
+- file: maff.jpg
+  kind: dish
+  caption:
+    ja: にぎりずし（マグロ・アナゴ・エビ・コハダなど）
+    zh: 握寿司（金枪鱼、星鳗、虾、斑鰶等）
+    en: Nigiri — tuna, conger eel, shrimp, gizzard shad (kohada) and more
+  source:
+    title: 農林水産省「うちの郷土料理」にぎりずし（東京都）
+    url: https://www.maff.go.jp/j/keikaku/syokubunka/k_ryouri/search_menu/menu/34_2_tokyo.html
+    license: 公共データ利用規約（第1.0版）

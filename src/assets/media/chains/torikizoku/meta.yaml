@@ -1,0 +1,180 @@
+- file: logo.svg
+  kind: logo
+  source:
+    title: 鳥貴族公式サイト
+    url: "https://torikizoku.co.jp/"
+    license: © 株式会社エターナルホスピタリティジャパン
+- file: momo-kizokuyaki.webp
+  kind: dish
+  source:
+    title: 鳥貴族公式サイト メニュー「焼鳥」
+    url: "https://torikizoku.co.jp/menu/yakitori/"
+    license: © 株式会社エターナルホスピタリティジャパン
+- file: mune-kizokuyaki.webp
+  kind: dish
+  source:
+    title: 鳥貴族公式サイト メニュー「焼鳥」
+    url: "https://torikizoku.co.jp/menu/yakitori/"
+    license: © 株式会社エターナルホスピタリティジャパン
+- file: tebasaki-shio.webp
+  kind: dish
+  source:
+    title: 鳥貴族公式サイト メニュー「焼鳥」
+    url: "https://torikizoku.co.jp/menu/yakitori/"
+    license: © 株式会社エターナルホスピタリティジャパン
+- file: sankaku.webp
+  kind: dish
+  source:
+    title: 鳥貴族公式サイト メニュー「焼鳥」
+    url: "https://torikizoku.co.jp/menu/yakitori/"
+    license: © 株式会社エターナルホスピタリティジャパン
+- file: tsukune-shio.webp
+  kind: dish
+  source:
+    title: 鳥貴族公式サイト メニュー「焼鳥」
+    url: "https://torikizoku.co.jp/menu/yakitori/"
+    license: © 株式会社エターナルホスピタリティジャパン
+- file: sasami-shioyaki.webp
+  kind: dish
+  source:
+    title: 鳥貴族公式サイト メニュー「焼鳥」
+    url: "https://torikizoku.co.jp/menu/yakitori/"
+    license: © 株式会社エターナルホスピタリティジャパン
+- file: heart-shio.webp
+  kind: dish
+  source:
+    title: 鳥貴族公式サイト メニュー「焼鳥」
+    url: "https://torikizoku.co.jp/menu/yakitori/"
+    license: © 株式会社エターナルホスピタリティジャパン
+- file: sunazuri.webp
+  kind: dish
+  source:
+    title: 鳥貴族公式サイト メニュー「焼鳥」
+    url: "https://torikizoku.co.jp/menu/yakitori/"
+    license: © 株式会社エターナルホスピタリティジャパン
+- file: kawa-shio.webp
+  kind: dish
+  source:
+    title: 鳥貴族公式サイト メニュー「焼鳥」
+    url: "https://torikizoku.co.jp/menu/yakitori/"
+    license: © 株式会社エターナルホスピタリティジャパン
+- file: yagen-nankotsu.webp
+  kind: dish
+  source:
+    title: 鳥貴族公式サイト メニュー「焼鳥」
+    url: "https://torikizoku.co.jp/menu/yakitori/"
+    license: © 株式会社エターナルホスピタリティジャパン
+- file: seseri.webp
+  kind: dish
+  source:
+    title: 鳥貴族公式サイト メニュー「焼鳥」
+    url: "https://torikizoku.co.jp/menu/yakitori/"
+    license: © 株式会社エターナルホスピタリティジャパン
+- file: tebasaki-tare.webp
+  kind: dish
+  source:
+    title: 鳥貴族公式サイト メニュー「焼鳥」
+    url: "https://torikizoku.co.jp/menu/yakitori/"
+    license: © 株式会社エターナルホスピタリティジャパン
+- file: mitare.webp
+  kind: dish
+  source:
+    title: 鳥貴族公式サイト メニュー「焼鳥」
+    url: "https://torikizoku.co.jp/menu/yakitori/"
+    license: © 株式会社エターナルホスピタリティジャパン
+- file: kimo.webp
+  kind: dish
+  source:
+    title: 鳥貴族公式サイト メニュー「焼鳥」
+    url: "https://torikizoku.co.jp/menu/yakitori/"
+    license: © 株式会社エターナルホスピタリティジャパン
+- file: tsukune-cheese-yaki.webp
+  kind: dish
+  source:
+    title: 鳥貴族公式サイト メニュー「焼鳥」
+    url: "https://torikizoku.co.jp/menu/yakitori/"
+    license: © 株式会社エターナルホスピタリティジャパン
+- file: tsukune-tare.webp
+  kind: dish
+  source:
+    title: 鳥貴族公式サイト メニュー「焼鳥」
+    url: "https://torikizoku.co.jp/menu/yakitori/"
+    license: © 株式会社エターナルホスピタリティジャパン
+- file: kawa-tare.webp
+  kind: dish
+  source:
+    title: 鳥貴族公式サイト メニュー「焼鳥」
+    url: "https://torikizoku.co.jp/menu/yakitori/"
+    license: © 株式会社エターナルホスピタリティジャパン
+- file: heart-tare.webp
+  kind: dish
+  source:
+    title: 鳥貴族公式サイト メニュー「焼鳥」
+    url: "https://torikizoku.co.jp/menu/yakitori/"
+    license: © 株式会社エターナルホスピタリティジャパン
+- file: kimo-yaki.webp
+  kind: dish
+  source:
+    title: 鳥貴族公式サイト メニュー「焼鳥」
+    url: "https://torikizoku.co.jp/menu/yakitori/"
+    license: © 株式会社エターナルホスピタリティジャパン
+- file: piman-nikuzume.webp
+  kind: dish
+  source:
+    title: 鳥貴族公式サイト メニュー「焼鳥」
+    url: "https://torikizoku.co.jp/menu/yakitori/"
+    license: © 株式会社エターナルホスピタリティジャパン
+- file: mune-mentai-mayo-yaki.webp
+  kind: dish
+  source:
+    title: 鳥貴族公式サイト メニュー「焼鳥」
+    url: "https://torikizoku.co.jp/menu/yakitori/"
+    license: © 株式会社エターナルホスピタリティジャパン
+- file: butabara-kushiyaki.webp
+  kind: dish
+  source:
+    title: 鳥貴族公式サイト メニュー「焼鳥」
+    url: "https://torikizoku.co.jp/menu/yakitori/"
+    license: © 株式会社エターナルホスピタリティジャパン
+- file: horumon-negimori-ponzu.webp
+  kind: dish
+  source:
+    title: 鳥貴族公式サイト メニュー「スピードメニュー」
+    url: "https://torikizoku.co.jp/menu/speed/"
+    license: © 株式会社エターナルホスピタリティジャパン
+- file: toriki-no-karaage.webp
+  kind: dish
+  source:
+    title: 鳥貴族公式サイト メニュー「逸品料理」
+    url: "https://torikizoku.co.jp/menu/ippin/"
+    license: © 株式会社エターナルホスピタリティジャパン
+- file: chicken-nanban.webp
+  kind: dish
+  source:
+    title: 鳥貴族公式サイト メニュー「逸品料理」
+    url: "https://torikizoku.co.jp/menu/ippin/"
+    license: © 株式会社エターナルホスピタリティジャパン
+- file: hiza-nankotsu-karaage.webp
+  kind: dish
+  source:
+    title: 鳥貴族公式サイト メニュー「逸品料理」
+    url: "https://torikizoku.co.jp/menu/ippin/"
+    license: © 株式会社エターナルホスピタリティジャパン
+- file: torikawa-chip.webp
+  kind: dish
+  source:
+    title: 鳥貴族公式サイト メニュー「逸品料理」
+    url: "https://torikizoku.co.jp/menu/ippin/"
+    license: © 株式会社エターナルホスピタリティジャパン
+- file: toriumadon-tare.webp
+  kind: dish
+  source:
+    title: 鳥貴族公式サイト メニュー「ご飯もの・デザート」
+    url: "https://torikizoku.co.jp/menu/gohan/"
+    license: © 株式会社エターナルホスピタリティジャパン
+- file: toriumadon-shio.webp
+  kind: dish
+  source:
+    title: 鳥貴族公式サイト メニュー「ご飯もの・デザート」
+    url: "https://torikizoku.co.jp/menu/gohan/"
+    license: © 株式会社エターナルホスピタリティジャパン

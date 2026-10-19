@@ -1,0 +1,10 @@
+- file: maff.jpg
+  kind: dish
+  caption:
+    ja: 金目鯛の煮付け
+    zh: 酱汁煮金目鲷
+    en: Simmered kinmedai (splendid alfonsino)
+  source:
+    title: 農林水産省「うちの郷土料理」金目の煮付け（静岡県）
+    url: https://www.maff.go.jp/j/keikaku/syokubunka/k_ryouri/search_menu/menu/36_17_shizuoka.html
+    license: 公共データ利用規約（第1.0版）

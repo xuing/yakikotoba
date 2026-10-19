@@ -1,0 +1,348 @@
+ja: 鳥貴族
+ruby: "{鳥貴族|とりきぞく}"
+kana: とりきぞく
+romaji: Torikizoku
+cuisine: yakitori
+url: "https://torikizoku.co.jp/"
+note:
+  ja: 1985年に東大阪で創業した焼鳥チェーン。国産鶏肉を店で串打ちし、全品均一価格（2026年10月から税込410円）、焼鳥は各2本。
+  zh: 1985年创立于大阪府东大阪市的烤鸡串连锁店；用日本国产鸡肉在店内穿串，全部菜品统一价格（2026年10月起含税410日元），烤串每份2串。
+  en: "Yakitori chain founded in Higashi-Osaka in 1985; domestic chicken skewered in-store, one price for every item (¥410 incl. tax from Oct 2026), two skewers per order."
+items:
+  # 貴族焼（名物）
+  - id: momo-kizokuyaki
+    ja: もも貴族焼
+    ruby: "もも{貴族|きぞく}{焼|やき}"
+    kana: ももきぞくやき
+    romaji: momo kizokuyaki
+    rows: [chicken/momo, chicken/negima]
+    mean:
+      ja: もも肉とねぎを交互に刺した名物串。たれ・塩・スパイスから選べる
+      zh: 鸡腿肉与大葱交替串成的招牌串，可选酱汁、盐或香辣味
+      en: Signature skewer of thigh and leek; choose tare, salt or spice
+    signature: true
+    image: momo-kizokuyaki.webp
+  - id: mune-kizokuyaki
+    ja: むね貴族焼
+    ruby: "むね{貴族|きぞく}{焼|やき}"
+    kana: むねきぞくやき
+    romaji: mune kizokuyaki
+    rows: [chicken/mune, chicken/negima]
+    mean:
+      ja: むね肉とねぎを交互に刺した貴族焼。たれ・塩・スパイスから選べる
+      zh: 鸡胸肉与大葱交替串成的「贵族烤」，可选酱汁、盐或香辣味
+      en: The kizokuyaki made with breast and leek; tare, salt or spice
+    signature: true
+    image: mune-kizokuyaki.webp
+  # 塩焼
+  - id: tebasaki-shio
+    ja: 手羽先塩
+    ruby: "{手羽先|てばさき}{塩|しお}"
+    kana: てばさきしお
+    romaji: tebasaki shio
+    rows: [chicken/tebasaki, yakitori-words/shio]
+    mean:
+      ja: 手羽先を岩塩で焼いたもの
+      zh: 用岩盐烤的鸡翅
+      en: Chicken wings grilled with rock salt
+    image: tebasaki-shio.webp
+  - id: sankaku
+    ja: 三角（ぼんじり）
+    ruby: "{三角|さんかく}（ぼんじり）"
+    kana: さんかく（ぼんじり）
+    romaji: sankaku (bonjiri)
+    rows: [chicken/bonjiri]
+    mean:
+      ja: 「三角」はぼんじりのこと。店は鶏で最も脂の乗った部位と説明
+      zh: 「三角」即鸡尾（ぼんじり）；店方称其为鸡身上脂肪最多的部位
+      en: Sankaku (triangle) is bonjiri, the tail; billed as the fattiest part of the chicken
+    image: sankaku.webp
+  - id: tsukune-shio
+    ja: つくね塩
+    ruby: "つくね{塩|しお}"
+    kana: つくねしお
+    romaji: tsukune shio
+    rows: [chicken/tsukune, yakitori-words/shio]
+    mean:
+      ja: 大葉が香るつくねの塩焼き
+      zh: 带紫苏叶香的鸡肉丸，盐烤
+      en: Salt-grilled chicken meatballs with a shiso aroma
+    image: tsukune-shio.webp
+  - id: sasami-shioyaki
+    ja: ささみ塩焼
+    ruby: "ささみ{塩焼|しおやき}"
+    kana: ささみしおやき
+    romaji: sasami shioyaki
+    rows: [chicken/sasami, yakitori-words/shio]
+    mean:
+      ja: ささみの塩焼き。粗くおろした本わさび（国産西洋わさびとのブレンド）を添える
+      zh: 盐烤鸡里脊，配粗磨的山葵（掺有日本产辣根）
+      en: Salt-grilled tenderloin with coarse-grated wasabi (blended with Japanese horseradish)
+    image: sasami-shioyaki.webp
+  - id: heart-shio
+    ja: ハート（ハツ）塩
+    ruby: "ハート（ハツ）{塩|しお}"
+    kana: はーと（はつ）しお
+    romaji: hāto (hatsu) shio
+    rows: [chicken/hatsu, yakitori-words/shio]
+    mean:
+      ja: 「ハート」はハツ（心臓）のこと。塩焼き
+      zh: 「ハート」（heart）即鸡心（ハツ），盐烤
+      en: Hāto (heart) means hatsu, chicken heart; salt-grilled
+    image: heart-shio.webp
+  - id: sunazuri
+    ja: 砂ずり（砂肝）
+    ruby: "{砂|すな}ずり（{砂肝|すなぎも}）"
+    kana: すなずり（すなぎも）
+    romaji: sunazuri (sunagimo)
+    rows: [chicken/sunagimo]
+    mean:
+      ja: 「砂ずり」は砂肝の別名。コリコリした食感の塩焼き
+      zh: 「砂ずり」是鸡胗（砂肝）的别名；盐烤，口感脆
+      en: Sunazuri is another name for sunagimo (gizzard); salt-grilled and crunchy
+    image: sunazuri.webp
+  - id: kawa-shio
+    ja: かわ塩
+    ruby: "かわ{塩|しお}"
+    kana: かわしお
+    romaji: kawa shio
+    rows: [chicken/kawa, yakitori-words/shio]
+    mean:
+      ja: 下ゆでした鶏皮をカリッと焼いた塩焼き
+      zh: 先焯水的鸡皮，盐烤至酥脆
+      en: Pre-boiled chicken skin, salt-grilled until crisp
+    image: kawa-shio.webp
+  - id: yagen-nankotsu
+    ja: やげんなんこつ
+    kana: やげんなんこつ
+    romaji: yagen nankotsu
+    rows: [chicken/nankotsu]
+    mean:
+      ja: 胸骨の先の軟骨（やげん）の塩焼き
+      zh: 盐烤鸡胸骨尖端的软骨（やげん）
+      en: Salt-grilled cartilage from the tip of the breastbone (yagen)
+    image: yagen-nankotsu.webp
+  - id: seseri
+    ja: せせり
+    kana: せせり
+    romaji: seseri
+    rows: [chicken/seseri]
+    mean:
+      ja: 首の肉の塩焼き。噛むほど肉汁が出る
+      zh: 盐烤鸡脖肉，越嚼越多汁
+      en: Salt-grilled neck meat; the more you chew, the juicier
+    image: seseri.webp
+  # たれ焼
+  - id: tebasaki-tare
+    ja: 手羽先たれ
+    ruby: "{手羽先|てばさき}たれ"
+    kana: てばさきたれ
+    romaji: tebasaki tare
+    rows: [chicken/tebasaki, yakitori-words/tare]
+    mean:
+      ja: 手羽先をたれで焼いたもの
+      zh: 刷酱汁烤的鸡翅
+      en: Chicken wings grilled with tare
+    image: tebasaki-tare.webp
+  - id: mitare
+    ja: みたれ（もも肉）
+    ruby: "みたれ（もも{肉|にく}）"
+    kana: みたれ（ももにく）
+    romaji: mitare (momoniku)
+    rows: [chicken/momo, yakitori-words/tare]
+    mean:
+      ja: もも肉だけを刺したたれ焼き
+      zh: 只串鸡腿肉的酱汁烤串
+      en: Thigh meat only, grilled with tare
+    image: mitare.webp
+  - id: kimo
+    ja: きも（レバー）
+    kana: きも（ればー）
+    romaji: kimo (rebā)
+    rows: [chicken/reba]
+    mean:
+      ja: 鶏レバーのたれ焼き。「きも」は肝のこと
+      zh: 酱汁烤鸡肝；「きも」即“肝”
+      en: Chicken liver grilled with tare; kimo means liver
+    image: kimo.webp
+  - id: tsukune-cheese-yaki
+    ja: つくねチーズ焼
+    ruby: "つくねチーズ{焼|やき}"
+    kana: つくねちーずやき
+    romaji: tsukune chīzu-yaki
+    rows: [chicken/tsukune]
+    mean:
+      ja: たれで焼いたつくねにチーズをかけたもの
+      zh: 酱汁烤鸡肉丸，上面盖奶酪
+      en: Tare-grilled chicken meatballs topped with cheese
+    image: tsukune-cheese-yaki.webp
+  - id: tsukune-tare
+    ja: つくねたれ
+    kana: つくねたれ
+    romaji: tsukune tare
+    rows: [chicken/tsukune, yakitori-words/tare]
+    mean:
+      ja: つくねのたれ焼き
+      zh: 刷酱汁烤的鸡肉丸
+      en: Chicken meatballs grilled with tare
+    image: tsukune-tare.webp
+  - id: kawa-tare
+    ja: かわたれ
+    kana: かわたれ
+    romaji: kawa tare
+    rows: [chicken/kawa, yakitori-words/tare]
+    mean:
+      ja: 余分な脂を下処理で除いた鶏皮のたれ焼き
+      zh: 预先去掉多余脂肪的鸡皮，刷酱汁烤
+      en: Chicken skin trimmed of excess fat, grilled with tare
+    image: kawa-tare.webp
+  - id: heart-tare
+    ja: ハート（ハツ）たれ
+    kana: はーと（はつ）たれ
+    romaji: hāto (hatsu) tare
+    rows: [chicken/hatsu, yakitori-words/tare]
+    mean:
+      ja: ハツ（心臓）のたれ焼き
+      zh: 刷酱汁烤的鸡心
+      en: Chicken heart grilled with tare
+    image: heart-tare.webp
+  # 串焼
+  - id: kimo-yaki
+    ja: きも焼
+    ruby: "きも{焼|やき}"
+    kana: きもやき
+    romaji: kimoyaki
+    rows: [chicken/reba]
+    mean:
+      ja: 焼いたレバーに刻みねぎとおろしにんにくをのせ、塩ごま油を添える
+      zh: 烤鸡肝铺葱花和蒜泥，配盐味麻油
+      en: Grilled chicken liver topped with scallions and grated garlic, with salted sesame oil
+    image: kimo-yaki.webp
+  - id: piman-nikuzume
+    ja: ピーマン肉詰
+    ruby: "ピーマン{肉詰|にくづめ}"
+    kana: ぴーまんにくづめ
+    romaji: pīman nikuzume
+    rows: [chicken/tsukune]
+    mean:
+      ja: ピーマンにつくねを詰めて焼いた串。ポン酢味
+      zh: 青椒里塞入鸡肉丸馅烤成的串，橙醋味
+      en: Green peppers stuffed with tsukune mince and grilled; ponzu flavor
+    image: piman-nikuzume.webp
+  - id: mune-mentai-mayo-yaki
+    ja: むね明太マヨ焼
+    ruby: "むね{明太|めんたい}マヨ{焼|やき}"
+    kana: むねめんたいまよやき
+    romaji: mune mentai mayo-yaki
+    rows: [chicken/mune]
+    mean:
+      ja: むね肉に北海道産明太子のマヨネーズをのせて焼いた串
+      zh: 鸡胸肉串抹上北海道产明太子蛋黄酱烤制
+      en: Breast skewer grilled under Hokkaido mentaiko mayonnaise
+    image: mune-mentai-mayo-yaki.webp
+  - id: butabara-kushiyaki
+    ja: 豚バラ串焼
+    ruby: "{豚|ぶた}バラ{串焼|くしやき}"
+    kana: ぶたばらくしやき
+    romaji: butabara kushiyaki
+    rows: [pork/bara, yakitori-words/kushi]
+    mean:
+      ja: 赤身と脂が層になった豚バラ（三枚肉）の串焼き
+      zh: 猪五花（瘦肥相间的「三枚肉」）烤串
+      en: Pork belly skewers (sanmainiku, layered lean and fat)
+    image: butabara-kushiyaki.webp
+  # スピードメニュー
+  - id: horumon-negimori-ponzu
+    ja: ホルモンねぎ盛ポン酢
+    ruby: "ホルモンねぎ{盛|もり}ポン{酢|ず}"
+    kana: ほるもんねぎもりぽんず
+    romaji: horumon negimori ponzu
+    rows: [chicken/sunagimo, chicken/hatsu]
+    mean:
+      ja: 砂肝やハツなど鶏のホルモンにねぎを盛り、ポン酢をかけた小鉢
+      zh: 鸡胗、鸡心等鸡杂铺上葱花、浇橙醋的小菜
+      en: Chicken offal such as gizzard and heart under chopped leek, dressed with ponzu
+    image: horumon-negimori-ponzu.webp
+  # 逸品
+  - id: toriki-no-karaage
+    ja: トリキの唐揚
+    ruby: "トリキの{唐揚|からあげ}"
+    kana: とりきのからあげ
+    romaji: toriki no karaage
+    rows: [chicken/mune]
+    mean:
+      ja: 鶏むね肉の唐揚。利尻昆布と焼きあごのうま味。「トリキ」は鳥貴族の略称
+      zh: 鸡胸肉日式炸鸡块，带利尻海带与烤飞鱼干的鲜味；「トリキ」是鸟贵族的简称
+      en: Breast-meat karaage with Rishiri kelp and grilled flying-fish umami; Toriki is short for Torikizoku
+    signature: true
+    image: toriki-no-karaage.webp
+  - id: chicken-nanban
+    ja: チキン南蛮
+    ruby: "チキン{南蛮|なんばん}"
+    kana: ちきんなんばん
+    romaji: chikin nanban
+    rows: [chicken/momo]
+    mean:
+      ja: 揚げたもも肉にタルタルソースをかけた一品
+      zh: 炸鸡腿肉浇塔塔酱
+      en: Fried chicken thigh topped with tartar sauce
+    image: chicken-nanban.webp
+  - id: hiza-nankotsu-karaage
+    ja: ひざなんこつ唐揚
+    ruby: "ひざなんこつ{唐揚|からあげ}"
+    kana: ひざなんこつからあげ
+    romaji: hiza nankotsu karaage
+    rows: [chicken/nankotsu]
+    mean:
+      ja: 膝の軟骨の唐揚。サクサク・コリコリの塩味
+      zh: 炸鸡膝软骨，咸香酥脆
+      en: Fried knee cartilage; salty, crisp and crunchy
+    image: hiza-nankotsu-karaage.webp
+  - id: torikawa-chip
+    ja: 鶏皮チップ
+    ruby: "{鶏皮|とりかわ}チップ"
+    kana: とりかわちっぷ
+    romaji: torikawa chippu
+    rows: [chicken/kawa]
+    mean:
+      ja: 厚みのある鶏むね皮をサクッと揚げたチップ
+      zh: 把较厚的鸡胸皮炸成的脆片
+      en: Crisp-fried chips of thick chicken-breast skin
+    image: torikawa-chip.webp
+  # ご飯もの
+  - id: toriumadon-tare
+    ja: 鶏旨丼(タレ)
+    ruby: "{鶏|とり}{旨|うま}{丼|どん}(タレ)"
+    kana: とりうまどん(たれ)
+    romaji: toriumadon (tare)
+    rows: [chicken/momo, yakitori-words/tare]
+    mean:
+      ja: タレで焼いたもも肉に、けずり粉とマヨネーズをかけた焼鳥丼
+      zh: 酱汁烤鸡腿肉盖饭，撒鱼干粉、挤蛋黄酱
+      en: "Yakitori rice bowl: tare-grilled thigh with dried-fish powder and mayo"
+    image: toriumadon-tare.webp
+  - id: toriumadon-shio
+    ja: 鶏旨丼(塩)
+    ruby: "{鶏|とり}{旨|うま}{丼|どん}({塩|しお})"
+    kana: とりうまどん(しお)
+    romaji: toriumadon (shio)
+    rows: [chicken/momo, yakitori-words/shio]
+    mean:
+      ja: 岩塩で焼いたもも肉に、けずり粉とマヨネーズをかけた焼鳥丼
+      zh: 岩盐烤鸡腿肉盖饭，撒鱼干粉、挤蛋黄酱
+      en: "Yakitori rice bowl: thigh grilled with rock salt, with dried-fish powder and mayo"
+    image: toriumadon-shio.webp
+sources:
+  - { title: 鳥貴族公式サイト メニュー「焼鳥」, url: "https://torikizoku.co.jp/menu/yakitori/" }
+  - { title: 鳥貴族公式サイト メニュー「逸品料理」, url: "https://torikizoku.co.jp/menu/ippin/" }
+  - { title: 鳥貴族公式サイト メニュー「スピードメニュー」, url: "https://torikizoku.co.jp/menu/speed/" }
+  - { title: 鳥貴族公式サイト メニュー「ご飯もの・デザート」, url: "https://torikizoku.co.jp/menu/gohan/" }
+  - { title: 鳥貴族公式サイト メニュートップ, url: "https://torikizoku.co.jp/menu/" }
+  - { title: 鳥貴族公式サイト テイクアウトメニュー, url: "https://torikizoku.co.jp/menu/takeout/" }
+  - { title: 鳥貴族 グランドメニュー（日本語PDF・2026年10月）, url: "https://torikizoku.co.jp/assets/uploads/2026/10/menu_jp.pdf" }
+  - { title: "TORIKIZOKU English menu (PDF, Oct 2026)", url: "https://torikizoku.co.jp/assets/uploads/2026/10/menu_en.pdf" }
+  - { title: 鸟贵族 中文菜单（PDF，2026年10月）, url: "https://torikizoku.co.jp/assets/uploads/2026/10/menu_cn.pdf" }
+  - { title: 鳥貴族公式サイト 鳥貴族のこだわり, url: "https://torikizoku.co.jp/about/" }
+  - { title: 鳥貴族公式サイト 焼鳥のこだわり, url: "https://torikizoku.co.jp/about/yakitori/" }
+  - { title: 価格改定に関するお知らせ（2026年9月10日、エターナルホスピタリティジャパン）, url: "https://torikizoku.co.jp/assets/uploads/2026/09/2026.09.10.pdf" }
+  - { title: エターナルホスピタリティグループ ヒストリー, url: "https://eternal-hospitality.co.jp/company/history/" }

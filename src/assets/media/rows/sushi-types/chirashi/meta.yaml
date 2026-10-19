@@ -1,0 +1,11 @@
+- file: chirashi-zushi.jpg
+  kind: dish
+  caption:
+    ja: "ちらし寿司（寿司桶に盛ったもの）"
+    zh: "散寿司（盛在寿司桶里）"
+    en: "Chirashi-zushi served in a wooden sushi tub"
+  source:
+    title: "Chirashi-zushi.jpg（Wikimedia Commons）"
+    url: "https://commons.wikimedia.org/wiki/File:Chirashi-zushi.jpg"
+    license: "CC BY-SA 3.0"
+    author: "Arashiyama"

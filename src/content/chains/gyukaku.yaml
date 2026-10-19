@@ -1,0 +1,438 @@
+ja: 牛角
+ruby: "{牛角|ぎゅうかく}"
+kana: ぎゅうかく
+romaji: Gyūkaku
+cuisine: yakiniku
+url: "https://www.gyukaku.ne.jp/"
+note:
+  ja: 1996年1月に東京・三軒茶屋で開業した焼肉チェーン（運営はレインズインターナショナル）。七輪で焼くスタイルで、単品注文と90分の食べ放題（5コース）がある。
+  zh: 1996年1月在东京三轩茶屋开业的烤肉连锁（由Reins International运营）。用七轮小炉自己烤，可单点，也有90分钟吃到饱（5种套餐）。
+  en: Yakiniku chain that opened in Sangenjaya, Tokyo, in January 1996 (run by Reins International); you grill on a shichirin and can order à la carte or take one of five 90-minute all-you-can-eat courses.
+items:
+  - id: gyukaku-tanshio
+    ja: 牛角タン塩
+    ruby: "{牛角|ぎゅうかく}タン{塩|しお}"
+    kana: ぎゅうかくたんしお
+    romaji: gyūkaku tanshio
+    rows: [beef/tan, yakiniku-words/shio]
+    mean:
+      ja: 牛タンの塩味。無料のトッピング「魔法のつけ塩」もある
+      zh: 盐味牛舌，另有免费配料「魔法蘸盐」
+      en: Salted beef tongue; a free topping, "magic dipping salt", is also offered
+    image: gyukaku-tanshio.jpg
+  - id: jo-tanshio
+    ja: 上タン塩
+    ruby: "{上|じょう}タン{塩|しお}"
+    kana: じょうたんしお
+    romaji: jō tanshio
+    rows: [beef/tan, yakiniku-words/jo, yakiniku-words/shio]
+    mean:
+      ja: 牛角タン塩より一段上のランクの牛タン（塩味）
+      zh: 比「牛角盐味牛舌」高一档的牛舌（盐味）
+      en: Salted beef tongue one grade above the house tanshio
+    image: jo-tanshio.jpg
+  - id: tontan-shio
+    ja: とんタン塩
+    ruby: とんタン{塩|しお}
+    kana: とんたんしお
+    romaji: tontan shio
+    rows: [pork/tan, yakiniku-words/shio]
+    mean:
+      ja: 「とん」は豚。豚タンの塩味で、形を整える加工をしている（公式表記）
+      zh: 「とん」指猪，即盐味猪舌；官方注明经过整形加工
+      en: '"Ton" means pork: salted pork tongue, officially noted as reshaped'
+    image: tontan-shio.jpg
+  - id: gyukaku-jo-karubi
+    ja: 牛角上カルビ
+    ruby: "{牛角|ぎゅうかく}{上|じょう}カルビ"
+    kana: ぎゅうかくじょうかるび
+    romaji: gyūkaku jō karubi
+    rows: [beef/karubi, yakiniku-words/jo]
+    mean:
+      ja: 店名を冠した上カルビ。メニューに「オススメ」の印がある
+      zh: 冠以店名的上等牛五花，菜单上标有「推荐」
+      en: Premium karubi named after the chain, marked "recommended" on the menu
+    signature: true
+    image: gyukaku-jo-karubi.jpg
+  - id: osama-karubi
+    ja: 王様カルビ
+    ruby: "{王様|おうさま}カルビ"
+    kana: おうさまかるび
+    romaji: ōsama karubi
+    rows: [beef/karubi]
+    mean:
+      ja: にんにくの効いた甘辛い「醤（ジャン）ダレ」で味付けしたカルビ
+      zh: 用带蒜香的甜辣「酱（jan）汁」调味的牛五花
+      en: Karubi seasoned with jan-dare, a garlicky sweet-savory sauce
+    image: osama-karubi.jpg
+  - id: gensen-toro-karubi
+    ja: 厳選とろカルビ
+    ruby: "{厳選|げんせん}とろカルビ"
+    kana: げんせんとろかるび
+    romaji: gensen toro karubi
+    rows: [beef/karubi]
+    mean:
+      ja: 単品でいちばん安い牛カルビ。バラ肉のうち脂と赤身のバランスがよい部位を大判で
+      zh: 单点里最便宜的牛五花：选牛腩（バラ）中肥瘦均衡的部分，切成大片
+      en: "The cheapest beef karubi à la carte: well-balanced belly (bara) cut in large slices"
+    image: gensen-toro-karubi.jpg
+  - id: kuroge-wagyu-geta-karubi
+    ja: 黒毛和牛ゲタカルビ
+    ruby: "{黒毛和牛|くろげわぎゅう}ゲタカルビ"
+    kana: くろげわぎゅうげたかるび
+    romaji: kuroge wagyū geta karubi
+    rows: [beef/karubi]
+    mean:
+      ja: 肋骨の間の肉（中落ちカルビ）。形が下駄の歯に似ることからの名とされる
+      zh: 肋骨之间的肉（中落五花），据说因形似木屐（下駄）的齿而得名
+      en: Meat from between the ribs (nakaochi karubi); the name is said to come from a likeness to the teeth of geta clogs
+    image: kuroge-wagyu-geta-karubi.jpg
+  - id: gyukaku-jo-harami
+    ja: 牛角上ハラミ
+    ruby: "{牛角|ぎゅうかく}{上|じょう}ハラミ"
+    kana: ぎゅうかくじょうはらみ
+    romaji: gyūkaku jō harami
+    rows: [beef/harami, yakiniku-words/jo, yakiniku-words/tare]
+    mean:
+      ja: 「30日間熟成」と表示された上ハラミ。タレか塩ダレ
+      zh: 标注「熟成30天」的上等横膈膜肉，配酱汁或盐味酱
+      en: Premium harami labelled "aged 30 days"; tare or salt sauce
+    image: gyukaku-jo-harami.jpg
+  - id: gyu-harami
+    ja: 牛ハラミ
+    ruby: "{牛|ぎゅう}ハラミ"
+    kana: ぎゅうはらみ
+    romaji: gyū harami
+    rows: [beef/harami]
+    mean:
+      ja: 牛の横隔膜。豚ハラミもあるので「牛」と明記。やわらかくする加工あり（公式表記）
+      zh: 牛横膈膜肉；店里也有猪横膈膜，所以写明「牛」。官方注明经过嫩化加工
+      en: Beef skirt; "gyū" is spelled out because pork harami is also sold; officially noted as tenderized
+    image: gyu-harami.jpg
+  - id: atsugiri-sagari
+    ja: 厚切りサガリ
+    ruby: "{厚切|あつぎ}りサガリ"
+    kana: あつぎりさがり
+    romaji: atsugiri sagari
+    rows: [beef/sagari, yakiniku-words/atsugiri]
+    mean:
+      ja: 厚切りのサガリ（横隔膜の腰椎側）。メニューに「オススメ」の印
+      zh: 厚切的サガリ（牛横膈膜靠腰椎一侧的肉），菜单标「推荐」
+      en: Thick-cut sagari (hanger, the lumbar end of the diaphragm), marked "recommended"
+    image: atsugiri-sagari.jpg
+  - id: gyukaku-rosu
+    ja: 牛角ロース
+    ruby: "{牛角|ぎゅうかく}ロース"
+    kana: ぎゅうかくろーす
+    romaji: gyūkaku rōsu
+    rows: [beef/rosu]
+    mean:
+      ja: 店名を冠した牛ロース。公式の焼き方は「焼きすぎず、固くなる前が食べ頃」
+      zh: 冠以店名的牛里脊；官方烤法：别烤过头，变硬前就吃
+      en: "The house beef loin; the chain's tip: don't overcook, eat it before it toughens"
+    image: gyukaku-rosu.jpg
+  - id: kuroge-wagyu-jo-akami-kurashita
+    ja: 黒毛和牛上赤身くらした
+    ruby: "{黒毛和牛|くろげわぎゅう}{上|じょう}{赤身|あかみ}くらした"
+    kana: くろげわぎゅうじょうあかみくらした
+    romaji: kuroge wagyū jō akami kurashita
+    rows: [beef/rosu, yakiniku-words/jo]
+    mean:
+      ja: 「くらした（鞍下）」は肩ロースの関西での別名。黒毛和牛の赤身
+      zh: 「鞍下（kurashita）」是肩里脊在关西的别名；黑毛和牛的瘦肉
+      en: Kurashita ("under the saddle") is the Kansai name for chuck roll; lean Japanese Black wagyu
+    image: kuroge-wagyu-jo-akami-kurashita.jpg
+  - id: buta-karubi
+    ja: 豚カルビ
+    ruby: "{豚|ぶた}カルビ"
+    kana: ぶたかるび
+    romaji: buta karubi
+    rows: [pork/bara, yakiniku-words/tare]
+    mean:
+      ja: 豚のバラ肉。タレ・塩ダレ・味噌ダレから選ぶ
+      zh: 猪五花，可选酱汁、盐味酱或味噌酱
+      en: Pork belly, with tare, salt sauce or miso sauce
+    image: buta-karubi.jpg
+  - id: negishio-buta-karubi
+    ja: ねぎ塩豚カルビ
+    ruby: ねぎ{塩|しお}{豚|ぶた}カルビ
+    kana: ねぎしおぶたかるび
+    romaji: negishio buta karubi
+    rows: [pork/bara, yakiniku-words/shio]
+    mean:
+      ja: 刻みねぎをのせて焼く、塩味の豚カルビ
+      zh: 铺上葱花烤的盐味猪五花
+      en: Salt-seasoned pork karubi grilled under chopped leek
+    image: negishio-buta-karubi.jpg
+  - id: pitoro
+    ja: ピートロ
+    kana: ぴーとろ
+    romaji: pītoro
+    rows: [pork/tontoro]
+    mean:
+      ja: 豚トロ（首まわりの肉）の牛角での名。1999年導入の「牛角発祥」メニューで、「トロ＋ピッグ」の「トロピー」を逆にした名だという（牛角談）
+      zh: 牛角对猪颈肉（豚トロ）的叫法，1999年推出，菜单标「牛角发祥」；据牛角说，名字是把「トロ＋Pig」的「toropī」倒过来
+      en: Gyu-Kaku's name for pork toro (neck meat), on the menu since 1999 and labelled a Gyu-Kaku original; per the chain, it reverses "toropī" (toro + pig)
+    signature: true
+    image: pitoro.jpg
+  - id: torimomo
+    ja: とりもも
+    kana: とりもも
+    romaji: torimomo
+    rows: [chicken/momo]
+    mean:
+      ja: 鶏のもも肉。タレ・塩ダレ・味噌ダレ
+      zh: 鸡腿肉，酱汁、盐味酱或味噌酱
+      en: Chicken thigh; tare, salt sauce or miso sauce
+    image: torimomo.jpg
+  - id: bonchiri
+    ja: ぼんちり
+    kana: ぼんちり
+    romaji: bonchiri
+    rows: [chicken/bonjiri]
+    mean:
+      ja: 「ぼんじり」（鶏の尾の付け根）を「ぼんちり」と書く
+      zh: 即「ぼんじり」（鸡尾根部），这里写作「ぼんちり」
+      en: Bonjiri (chicken tail), spelled bonchiri here
+    image: bonchiri.jpg
+  - id: yagen-nankotsu
+    ja: やげん軟骨
+    ruby: やげん{軟骨|なんこつ}
+    kana: やげんなんこつ
+    romaji: yagen nankotsu
+    rows: [chicken/nankotsu]
+    mean:
+      ja: 鶏の胸骨の先の軟骨（やげん）。塩ダレか黒胡椒塩ダレ
+      zh: 鸡胸骨尖的软骨（yagen），盐味酱或黑胡椒盐味酱
+      en: Cartilage from the tip of the chicken breastbone (yagen); salt or black-pepper salt sauce
+    image: yagen-nankotsu.jpg
+  - id: sappari-torikawa-ponzu
+    ja: さっぱり鶏皮ポン酢
+    ruby: さっぱり{鶏皮|とりかわ}ポン{酢|ず}
+    kana: さっぱりとりかわぽんず
+    romaji: sappari torikawa ponzu
+    rows: [chicken/kawa]
+    mean:
+      ja: 鶏皮にポン酢を合わせた一品料理
+      zh: 配柚子醋的鸡皮小菜
+      en: Chicken skin with ponzu, served as a side dish
+    image: sappari-torikawa-ponzu.jpg
+  - id: atsugiri-mino
+    ja: 厚切りミノ
+    ruby: "{厚切|あつぎ}りミノ"
+    kana: あつぎりみの
+    romaji: atsugiri mino
+    rows: [horumon/mino, yakiniku-words/atsugiri]
+    mean:
+      ja: 牛の第一胃（ミノ）の厚切り。塩ダレか味噌ダレ
+      zh: 厚切牛瘤胃（第一胃），盐味酱或味噌酱
+      en: Thick-cut beef rumen (first stomach); salt or miso sauce
+    image: atsugiri-mino.jpg
+  - id: shimacho
+    ja: シマチョウ
+    kana: しまちょう
+    romaji: shimachō
+    rows: [horumon/shimacho]
+    mean:
+      ja: 牛の大腸。塩ダレか味噌ダレ
+      zh: 牛大肠，盐味酱或味噌酱
+      en: Beef large intestine; salt or miso sauce
+    image: shimacho.jpg
+  - id: yamitsuki-buta-horumon
+    ja: やみつき豚ホルモン
+    ruby: やみつき{豚|ぶた}ホルモン
+    kana: やみつきぶたほるもん
+    romaji: yamitsuki buta horumon
+    rows: [horumon/horumon]
+    mean:
+      ja: 豚のホルモン。塩ダレか味噌ダレ
+      zh: 猪内脏，盐味酱或味噌酱
+      en: Pork offal; salt or miso sauce
+    image: yamitsuki-buta-horumon.jpg
+  - id: gyu-reba
+    ja: 牛レバー
+    ruby: "{牛|ぎゅう}レバー"
+    kana: ぎゅうればー
+    romaji: gyū rebā
+    rows: [horumon/reba]
+    mean:
+      ja: 牛の肝臓。塩ダレか味噌ダレ
+      zh: 牛肝，盐味酱或味噌酱
+      en: Beef liver; salt or miso sauce
+    image: gyu-reba.jpg
+  - id: horumon-yonshu-mori
+    ja: ホルモン四種盛り
+    ruby: ホルモン{四種|よんしゅ}{盛|も}り
+    kana: ほるもんよんしゅもり
+    romaji: horumon yonshu mori
+    rows: [horumon/horumon, yakiniku-words/moriawase]
+    mean:
+      ja: ホルモン4種の盛り合わせ。塩ダレか味噌ダレ
+      zh: 四种内脏拼盘，盐味酱或味噌酱
+      en: Four kinds of offal on one plate; salt or miso sauce
+    image: horumon-yonshu-mori.jpg
+  - id: variety-yonshu-mori
+    ja: バラエティー四種盛り
+    ruby: バラエティー{四種|よんしゅ}{盛|も}り
+    kana: ばらえてぃーよんしゅもり
+    romaji: baraetī yonshu mori
+    rows: [yakiniku-words/moriawase, yakiniku-words/ninmae]
+    mean:
+      ja: 厳選とろカルビ・牛ハラミ・豚カルビ・とりももの大皿。並（2〜3人前・約320g）と大（3〜4人前・約500g）
+      zh: 精选牛五花、牛横膈膜、猪五花、鸡腿的大拼盘；普通份（2–3人份，约320克）和大份（3–4人份，约500克）
+      en: Big platter of gensen toro karubi, beef harami, pork karubi and chicken thigh; regular serves 2–3 (about 320 g), large 3–4 (about 500 g)
+    image: variety-yonshu-mori.jpg
+  - id: gensen-gyukaku-mori
+    ja: 厳選牛角盛り
+    ruby: "{厳選|げんせん}{牛角|ぎゅうかく}{盛|も}り"
+    kana: げんせんぎゅうかくもり
+    romaji: gensen gyūkaku mori
+    rows: [yakiniku-words/moriawase, yakiniku-words/ninmae]
+    mean:
+      ja: 牛角上カルビ・王様カルビ・厚切りサガリ・牛角上ハラミの大皿。並（2〜3人前）と大（3〜4人前）
+      zh: 牛角上等五花、国王五花、厚切垂肉、牛角上等横膈膜的大拼盘；普通份（2–3人份）和大份（3–4人份）
+      en: Big platter of the house jō karubi, ōsama karubi, thick sagari and house jō harami; regular serves 2–3, large 3–4
+    image: gensen-gyukaku-mori.jpg
+  - id: sanchu
+    ja: サンチュ10枚
+    ruby: サンチュ{10枚|じゅうまい}
+    kana: さんちゅじゅうまい
+    romaji: sanchu jūmai
+    rows: [yakiniku-side/sanchu]
+    mean:
+      ja: 肉を包む葉10枚。5枚もある
+      zh: 包肉用的生菜10片，也有5片装
+      en: Ten leaves for wrapping meat; a five-leaf order also exists
+    image: sanchu.jpg
+  - id: gyukaku-kimuchi
+    ja: 牛角キムチ
+    ruby: "{牛角|ぎゅうかく}キムチ"
+    kana: ぎゅうかくきむち
+    romaji: gyūkaku kimuchi
+    rows: [yakiniku-side/kimuchi]
+    mean:
+      ja: 白菜のキムチ。大盛もある
+      zh: 白菜泡菜，有大份
+      en: Napa-cabbage kimchi; large size available
+    image: gyukaku-kimuchi.jpg
+  - id: kakuteki
+    ja: カクテキ
+    kana: かくてき
+    romaji: kakuteki
+    rows: [yakiniku-side/kimuchi]
+    mean:
+      ja: 角切り大根のキムチ。大盛もある
+      zh: 萝卜块泡菜，有大份
+      en: Cubed daikon kimchi; large size available
+    image: kakuteki.jpg
+  - id: namuru-sanshu-moriawase
+    ja: ナムルの3種盛り合わせ
+    ruby: ナムルの{3種|さんしゅ}{盛|も}り{合|あ}わせ
+    kana: なむるのさんしゅもりあわせ
+    romaji: namuru no sanshu moriawase
+    rows: [yakiniku-side/namuru, yakiniku-words/moriawase]
+    mean:
+      ja: ナムル3種の盛り合わせ。大盛もある
+      zh: 三种拌菜拼盘，有大份
+      en: Three kinds of namul on one plate; large size available
+    image: namuru-sanshu-moriawase.jpg
+  - id: karubi-senyo-gohan
+    ja: カルビ専用ごはん
+    ruby: カルビ{専用|せんよう}ごはん
+    kana: かるびせんようごはん
+    romaji: karubi sen'yō gohan
+    rows: [yakiniku-side/rice]
+    mean:
+      ja: カルビに合わせたごはん。まかない（従業員の食事）から生まれた。小・中・大
+      zh: 专配牛五花的米饭，源自员工餐；有小、中、大
+      en: Rice made to go with karubi, born from a staff meal; small, medium or large
+    image: karubi-senyo-gohan.jpg
+  - id: ishiyaki-bibinba
+    ja: 石焼ビビンバ
+    ruby: "{石焼|いしやき}ビビンバ"
+    kana: いしやきびびんば
+    romaji: ishiyaki bibinba
+    rows: [yakiniku-side/bibinba]
+    mean:
+      ja: 石鍋で出すビビンバ。ハーフもある
+      zh: 石锅拌饭，有半份
+      en: Bibimbap in a stone pot; half size available
+    image: ishiyaki-bibinba.jpg
+  - id: umami-tappuri-karubi-kuppa
+    ja: 旨味たっぷりカルビクッパ
+    ruby: "{旨味|うまみ}たっぷりカルビクッパ"
+    kana: うまみたっぷりかるびくっぱ
+    romaji: umami tappuri karubi kuppa
+    rows: [yakiniku-side/kuppa]
+    mean:
+      ja: カルビスープにごはんを入れたクッパ
+      zh: 牛五花汤泡饭
+      en: Rice in karubi soup
+    image: umami-tappuri-karubi-kuppa.jpg
+  - id: gyukaku-reimen
+    ja: 牛角冷麺
+    ruby: "{牛角|ぎゅうかく}{冷麺|れいめん}"
+    kana: ぎゅうかくれいめん
+    romaji: gyūkaku reimen
+    rows: [yakiniku-side/reimen]
+    mean:
+      ja: 店名を冠した冷麺。ハーフもある
+      zh: 冠以店名的冷面，有半份
+      en: The house cold noodles; half size available
+    image: gyukaku-reimen.jpg
+  - id: gyukaku-course
+    ja: 牛角コース
+    ruby: "{牛角|ぎゅうかく}コース"
+    kana: ぎゅうかくこーす
+    romaji: gyūkaku kōsu
+    rows: [yakiniku-words/tabehodai]
+    mean:
+      ja: 90分の食べ放題（ラストオーダー70分）。全5コースの3番目
+      zh: 90分钟吃到饱（第70分钟最后点单），5种套餐中的第3档
+      en: 90-minute all-you-can-eat (last order at 70 min), the third of five courses
+    image: gyukaku-course.jpg
+  - id: yuto-ebi
+    ja: 有頭海老
+    ruby: "{有頭|ゆうとう}{海老|えび}"
+    kana: ゆうとうえび
+    romaji: yūtō ebi
+    rows: [neta/ebi]
+    mean:
+      ja: 頭付きのエビ2尾。「海老」はエビの漢字表記
+      zh: 带头的虾2只；「海老」是「エビ」的汉字写法
+      en: Two head-on prawns; 海老 is the kanji spelling of ebi
+  - id: yawaraka-ikayaki
+    ja: やわらかイカ焼き
+    ruby: やわらかイカ{焼|や}き
+    kana: やわらかいかやき
+    romaji: yawaraka ikayaki
+    rows: [neta/ika]
+    mean:
+      ja: 焼いて食べるイカ
+      zh: 烤着吃的鱿鱼
+      en: Squid for grilling
+sources:
+  - title: 牛角公式サイト メニュー紹介 単品メニュー
+    url: "https://www.gyukaku.ne.jp/menu/menu-niku.php"
+  - title: 牛角公式サイト メニュー紹介 サラダ
+    url: "https://www.gyukaku.ne.jp/menu/menu-salad.php"
+  - title: 牛角公式サイト メニュー紹介 一品・七輪おつまみ・海鮮
+    url: "https://www.gyukaku.ne.jp/menu/menu-ippin.php"
+  - title: 牛角公式サイト メニュー紹介 飯・スープ・麺
+    url: "https://www.gyukaku.ne.jp/menu/menu-menmeshi.php"
+  - title: 牛角公式サイト 食べ放題
+    url: "https://www.gyukaku.ne.jp/menu/menu-tabehoudai.php"
+  - title: 牛角公式サイト 食べ放題 牛角コース
+    url: "https://www.gyukaku.ne.jp/menu/gyukaku-course.php"
+  - title: 牛角 2026春夏グランドメニュー プレスリリース（レインズインターナショナル、2026年4月22日）
+    url: "https://www.gyukaku.ne.jp/pdf/release_20260422.pdf"
+  - title: 牛角 2026年春夏GM お肉の産地一覧（2026.4.23〜）
+    url: "https://www.gyukaku.ne.jp/pdf/sanchi.pdf"
+  - title: レインズインターナショナル FC加盟募集ブランドの紹介（牛角）
+    url: "https://www.reins.co.jp/fc/brand/"
+  - title: 日本食糧新聞 外食史に残したいロングセラー探訪（38）牛角「ピートロ」（2010年3月1日）
+    url: "https://news.nissyoku.co.jp/restaurant/tanakak20100301023430611"
+  - title: お肉の教科書 ゲタカルビとは？
+    url: "https://tamakiya.tokyo/geta-karubi/"
+  - title: Wikipedia 牛かたロース（クラシタ）
+    url: "https://ja.wikipedia.org/wiki/%E7%89%9B%E3%81%8B%E3%81%9F%E3%83%AD%E3%83%BC%E3%82%B9"

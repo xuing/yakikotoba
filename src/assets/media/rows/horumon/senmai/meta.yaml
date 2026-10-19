@@ -1,0 +1,10 @@
+- file: maff.jpg
+  kind: raw
+  caption:
+    ja: "センマイ（第三胃）"
+    zh: "百叶（牛的第三个胃）"
+    en: "Senmai (omasum, third stomach)"
+  source:
+    title: "農林水産省「aff」2016年8月号 特集2 牛内臓の部位図鑑（取材協力：萬野屋）"
+    url: "https://www.maff.go.jp/j/pr/aff/1608/spe2_03.html"
+    license: "公共データ利用規約（第1.0版）"

@@ -1,0 +1,11 @@
+- file: shimesaba.jpg
+  kind: dish
+  caption:
+    ja: "しめさば（刺身）"
+    zh: "醋腌鲭鱼（刺身）"
+    en: "Shime-saba (vinegar-cured mackerel), sliced"
+  source:
+    title: "Japanese shimesaba 2014.jpg（Wikimedia Commons）"
+    url: "https://commons.wikimedia.org/wiki/File:Japanese_shimesaba_2014.jpg"
+    license: "CC BY-SA 4.0"
+    author: "Kentin"

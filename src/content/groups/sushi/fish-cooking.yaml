@@ -1,0 +1,290 @@
+order: 5
+ja: 料理法
+zh: 鱼的做法
+en: Ways with fish
+items:
+  - id: sashimi
+    ja: 刺身
+    ruby: "{刺身|さしみ}"
+    kana: さしみ
+    romaji: sashimi
+    mean:
+      ja: 生の魚の切り身
+      zh: 刺身（生鱼片）
+      en: Sliced raw fish
+    part:
+      ja: 新鮮な魚介を生のまま薄く、または小さく切ったもの。すし飯は付かない
+      zh: 把新鲜鱼贝生着切成薄片或小块，不配饭
+      en: Fresh raw fish or shellfish cut into slices or pieces, served without rice
+    note:
+      ja: 古くは「指身」「差味」とも書き、文献に見える古い例は『鈴鹿家記』応永6年（1399）の「指身 鯉，イリ酒，ワサビ」。名の由来は、何の魚か分かるようにひれを刺しておいたからとも、「切る」を忌んで「刺す」と言い換えたからともいわれ、定説はない。切り方には平造り・糸造り・角造り、フグやヒラメなどに使う薄造りなどがあり、刺身を作ることは「切る」ではなく「引く」という。大根などの「けん」、大葉などの「つま」、わさびなどの薬味を添え、「お造り」「作り身」とも呼ぶ。
+      zh: 古时也写作“指身”“差味”，文献中较早的例子是《铃鹿家记》应永6年（1399）条的“指身 鲤、煎酒、山葵”。名称由来有两说：一说为了分辨是什么鱼，把鱼鳍插在切片上；一说忌讳“切”字而改称“刺”，并无定论。切法有平造、丝造、角造，以及河豚、比目鱼等用的薄造等，做刺身不说“切”而说“引”。通常配萝卜丝等“けん”、紫苏叶等“つま”以及山葵等佐料，也叫“お造り”“作り身”。
+      en: "Older spellings include 指身 and 差味; an early record is the Suzuka-ke ki entry for 1399: “sashimi of carp, with irizake and wasabi”. The name is said to come either from sticking the fish’s fin on the slices to show the species, or from avoiding the ill-omened word kiru (cut) in favour of sasu (pierce); there is no settled answer. Cuts include hira-zukuri (flat slices), ito-zukuri (threads), kaku-zukuri (cubes) and usu-zukuri (paper-thin, for fugu or flounder), and chefs say they “pull” (hiku) rather than cut sashimi. It comes with ken (shredded daikon etc.), tsuma (shiso leaves etc.) and a pungent condiment such as wasabi, and is also called otsukuri."
+    sources:
+      - title: コトバンク「刺身」（日本大百科全書(ニッポニカ)・改訂新版 世界大百科事典ほか）
+        url: https://kotobank.jp/word/%E5%88%BA%E8%BA%AB-69016
+  - id: aburi
+    ja: 炙り
+    ruby: "{炙|あぶ}り"
+    kana: あぶり
+    romaji: aburi
+    mean:
+      ja: 表面を火であぶったもの
+      zh: 炙烤
+      en: Flame-seared
+    part:
+      ja: ネタや切り身の表面だけを直火やガスバーナーで焼いたもの
+      zh: 只用明火或喷枪把鱼肉、寿司料的表面烤一下
+      en: Fish or a sushi topping seared on the surface only, over a flame or with a gas torch
+    note:
+      ja: 「あぶる」は火で焼くこと、特に食べ物をほどよく焦がすことをいう。和食には、魚の皮目を直火であぶってすぐ冷水で冷ます「焼き霜」があり、生臭みと余分な脂を除いて風味を増す技法としてタイ・アイナメ・ハモなどに使われ、カツオのたたきもこの手法による（熱湯をかける方法は「湯霜」「皮霜」）。回転寿司には「炙り豚とろ」「炙りえびマヨ」（はま寿司）、「あぶりチーズサーモン」（くら寿司）のように、魚以外のネタやチーズ・マヨネーズを炙ったすしも並び、表記も「炙り」「あぶり」と店によって異なる。
+      zh: “炙る”意为用火烤，尤指把食物烤到微焦。日本料理中有“焼き霜”技法：用明火炙烤鱼皮一面后立刻浸冷水，可去腥、去多余油脂并增香，常用于真鲷、六线鱼、海鳗，鲣鱼“たたき”也属此法（浇开水的做法叫“湯霜”“皮霜”）。回转寿司还有“炙り豚とろ”（炙烤猪颈肉）、“炙りえびマヨ”（炙烤蛋黄酱虾，はま寿司）、“あぶりチーズサーモン”（炙烤芝士三文鱼，くら寿司）等非鱼类或加芝士、蛋黄酱的炙烤寿司，写法也有汉字“炙り”和平假名“あぶり”之分。
+      en: "Aburu means to roast over a flame, especially to char food lightly. Classic Japanese cooking has yakishimo: the skin side of a fish is seared over direct flame and plunged into cold water, removing fishy smells and excess fat while adding aroma; it is used for sea bream, greenling and pike conger, and katsuo no tataki is made the same way (pouring boiling water over the skin instead is yushimo or kawashimo). Conveyor-belt chains also sear non-fish toppings and mayo or cheese, as in Hama-zushi’s 炙り豚とろ (pork jowl) and 炙りえびマヨ (shrimp with mayonnaise) or Kura Sushi’s あぶりチーズサーモン, and spell the word either 炙り or あぶり."
+    sources:
+      - title: コトバンク「炙る」（精選版 日本国語大辞典）
+        url: https://kotobank.jp/word/%E7%82%99%E3%82%8B-2003083
+      - title: コトバンク「焼き霜」（講談社 世界の料理がわかる辞典）
+        url: https://kotobank.jp/word/%E7%84%BC%E3%81%8D%E9%9C%9C-1496386
+      - title: コトバンク「霜降り」（日本大百科全書(ニッポニカ)・改訂新版 世界大百科事典）
+        url: https://kotobank.jp/word/%E9%9C%9C%E9%99%8D%E3%82%8A-524266
+      - title: コトバンク「刺身」（日本大百科全書(ニッポニカ)・改訂新版 世界大百科事典ほか）
+        url: https://kotobank.jp/word/%E5%88%BA%E8%BA%AB-69016
+      - title: はま寿司「メニュー紹介」
+        url: https://www.hama-sushi.co.jp/menu/
+      - title: くら寿司「メニュー」
+        url: https://www.kurasushi.co.jp/menu/
+      - title: 東京消防庁 報道発表「ガストーチバーナを使用した火災にご注意を！～炙り調理中の火災が増加しています!!～」（2021年12月23日）
+        url: https://www.tfd.metro.tokyo.lg.jp/content/000003061.pdf
+  - id: zuke
+    ja: 漬け
+    ruby: "{漬|づ}け"
+    kana: づけ
+    romaji: zuke
+    mean:
+      ja: 醤油漬けのすし種
+      zh: 酱油腌渍的寿司料
+      en: Soy-marinated topping
+    part:
+      ja: 醤油、または醤油・酒・みりんのたれに漬け込んだマグロの赤身などのネタ
+      zh: 用酱油或酱油、酒、味醂调成的汁腌过的金枪鱼赤身等寿司料
+      en: Lean tuna or other fish steeped in soy sauce or a soy–sake–mirin marinade
+    note:
+      ja: すし屋の隠語で、もとはマグロの赤身のすしを「づけ」と呼んだ。天保7〜8年（1836〜37）ごろの大漁を機にマグロが握りの代表的なネタになり、明治初年に三陸から取り寄せる際、冷凍設備がないため醤油漬けにして送ったのが名の由来とされる。現在は醤油・酒・みりんのたれにマグロやカツオなどを漬けたものをいい、八丈島の郷土料理「島ずし」も、醤油ベースのたれに漬けた魚をワサビの代わりにからしを添えて握る。
+      zh: 这是寿司店的行话，原指金枪鱼赤身寿司。天保7—8年（1836—37年）前后金枪鱼大丰收，金枪鱼从此成为握寿司的代表性食材；明治初年从三陆地区运金枪鱼时，因为没有冷冻设备，便用酱油腌着运来，“づけ”之名据说由此而来。如今指把金枪鱼、鲣鱼等浸在酱油、酒、味醂调的汁里腌制的寿司料；八丈岛的乡土料理“岛寿司”也是用酱油汁腌鱼再捏成寿司，并以黄芥末代替山葵。
+      en: Zuke began as sushi-bar slang for lean-tuna nigiri. Tuna only became a leading nigiri topping after a huge catch around 1836–37, and in the early Meiji era, with no freezing facilities, tuna brought in from the Sanriku coast was shipped steeped in soy sauce, which is said to be the origin of the name. Today it means tuna, bonito or similar steeped in a soy, sake and mirin marinade; Hachijō Island’s shimazushi likewise uses soy-marinated fish, with hot mustard in place of wasabi.
+    sources:
+      - title: コトバンク「漬け」（デジタル大辞泉）
+        url: https://kotobank.jp/word/%E6%BC%AC%E3%81%91-571486
+      - title: コトバンク「すし」（日本大百科全書(ニッポニカ)）
+        url: https://kotobank.jp/word/%E3%81%99%E3%81%97-541612
+      - title: nippon.com「おすし屋さんの業界用語：これであなたも「通」の仲間入り！」（2023年）
+        url: https://www.nippon.com/ja/japan-data/h01735/
+      - title: 農林水産省「うちの郷土料理」島ずし（東京都）
+        url: https://www.maff.go.jp/j/keikaku/syokubunka/k_ryouri/search_menu/menu/34_19_tokyo.html
+  - id: shime
+    ja: 〆
+    ruby: "{〆|しめ}"
+    kana: しめ
+    romaji: shime
+    mean:
+      ja: 塩や酢で締めたもの
+      zh: 用盐、醋腌紧
+      en: Salt- or vinegar-cured
+    part:
+      ja: 塩を振って身を締め、さらに酢や昆布で締めた魚。「〆」は「締め」の別表記
+      zh: 先撒盐让鱼肉紧实，再用醋或昆布腌制的鱼；“〆”是“締め”的另一种写法
+      en: Fish firmed with salt and then cured in vinegar or between sheets of kelp; 〆 is another way of writing 締め (shime)
+    note:
+      ja: 酢締めは、魚に塩を振ってしばらく置き、軽く水で流してから酢に漬けて身を締める技法で、しめさばはサバを三枚におろして塩をし、酢に浸してさらに締めたもの。江戸前の光り物の代表コハダも塩でしめて酢漬けにし、富山の「昆布〆」は江戸時代に北前船が運んだ北海道の昆布で富山湾の魚を挟んだのが始まりとされる。品書きの「〆」は意味が一つではなく、はま寿司のメニューには「塩〆黒そい」（塩で締めた）、「活〆まだい」（鮮度を保つため血抜きした活け締め）、「〆シャリ」（締めのご飯）が並ぶ。
+      zh: “醋腌”（酢締め）是先给鱼撒盐放一会儿，稍加冲洗后再泡醋，让鱼肉紧实的方法；醋鲭鱼（しめさば）就是把鲭鱼片成三片、撒盐后再泡醋腌成的。江户前寿司“光物”的代表斑鰶（コハダ）也是先盐腌再醋腌；富山的“昆布〆”据说起源于江户时代用北前船运来的北海道昆布夹住富山湾的鱼。菜单上的“〆”不止一个意思：はま寿司的菜单上同时有“塩〆黒そい”（盐腌许氏平鲉）、“活〆まだい”（为保鲜而活杀放血的真鲷）和“〆シャリ”（收尾的米饭）。
+      en: "Sujime (vinegar curing) means salting fish, leaving it a while, rinsing it lightly and then steeping it in vinegar to firm the flesh; shime-saba is mackerel filleted, salted and then soaked in vinegar. Kohada (gizzard shad), the emblem of Edo-style “shiny” fish, is likewise salted and vinegared, and Toyama’s kobujime is said to have begun in the Edo period by pressing Toyama Bay fish between Hokkaido kelp brought by Kitamae trading ships. 〆 on a menu has more than one meaning: Hama-zushi lists 塩〆黒そい (salt-cured rockfish), 活〆まだい (sea bream killed and bled alive, ikejime, to keep it fresh) and 〆シャリ (rice to round off the meal) side by side."
+    sources:
+      - title: コトバンク「酢締め」（講談社 世界の料理がわかる辞典）
+        url: https://kotobank.jp/word/%E9%85%A2%E7%B7%A0%E3%82%81-302448
+      - title: コトバンク「締め鯖」（デジタル大辞泉）
+        url: https://kotobank.jp/word/%E7%B7%A0%E3%82%81%E9%AF%96-524027
+      - title: コトバンク「締める」（デジタル大辞泉）
+        url: https://kotobank.jp/word/%E7%B7%A0%E3%82%81%E3%82%8B-524084
+      - title: コトバンク「締め」（デジタル大辞泉）
+        url: https://kotobank.jp/word/%E7%B7%A0%E3%82%81-523972
+      - title: 農林水産省「うちの郷土料理」こはだの粟づけ（東京都）
+        url: https://www.maff.go.jp/j/keikaku/syokubunka/k_ryouri/search_menu/menu/34_21_tokyo.html
+      - title: 農林水産省「うちの郷土料理」昆布〆（富山県）
+        url: https://www.maff.go.jp/j/keikaku/syokubunka/k_ryouri/search_menu/menu/37_12_toyama.html
+      - title: はま寿司「メニュー紹介」
+        url: https://www.hama-sushi.co.jp/menu/
+  - id: tataki
+    ja: たたき
+    kana: たたき
+    romaji: tataki
+    mean:
+      ja: あぶった魚／たたいた魚
+      zh: 炙鱼片／剁碎的鱼
+      en: Seared or chopped fish
+    part:
+      ja: ①皮付きの身の表面を強火であぶり、厚めに切ったもの（カツオなど）②生の魚を包丁でたたいて細かくしたもの（アジなど）
+      zh: ①带皮鱼块用大火炙烤表面后切厚片（鲣鱼等）②用刀把生鱼剁碎（竹荚鱼等）
+      en: (1) Skin-on fish seared over high flame and cut thick (e.g. bonito); (2) raw fish chopped fine with a knife (e.g. horse mackerel)
+    note:
+      ja: 土佐のカツオのたたきは、三枚におろした身を藁などの炎で、皮は少し焦げるまで、身は白くなる程度にあぶり、厚めに切って塩やタレをかけ、包丁などで叩いてなじませることからの名とされる。高知では柚子酢と醤油のタレにニンニクの薄切りを必ず添え、脂ののった秋の下りカツオがたたきに最適とされる。アジやイワシのたたきは包丁の刃でたたいて細かくし、ネギやショウガを加えたもの。江戸時代の文献にいう「カツオのたたき」は、カツオの身や小骨をたたいて漬けた塩辛のことだった。
+      zh: 土佐（高知）的鲣鱼たたき，是把片好的鲣鱼用稻草等的火焰炙烤，鱼皮略焦、鱼肉表面变白即可，切厚片后撒盐或浇汁，再用刀等拍打使其入味，名字据说由此而来。高知的吃法是浇柚子醋和酱油调的汁，一定配大蒜片，以秋季南下、脂肪丰满的“下りカツオ”最适合。竹荚鱼、沙丁鱼的たたき，则是用刀刃把鱼肉剁碎，再加葱、姜等。江户时代文献中所说的“鲣鱼たたき”，其实是把鲣鱼肉和小骨剁碎腌成的盐辛（咸鱼酱）。
+      en: "Tosa-style katsuo no tataki is bonito fillet seared over burning straw until the skin chars slightly and the flesh just whitens, then cut thick, salted or dressed and patted with the knife so the seasoning sinks in; the patting (tataku) is said to give the name. In Kōchi it is dressed with yuzu vinegar and soy sauce and always topped with sliced garlic, and fatty autumn bonito on its way south is considered best. Aji or iwashi tataki is raw fish chopped fine with the knife edge, with negi or ginger. In Edo-period texts “katsuo no tataki” meant something else: shiokara, a salt-fermented paste of chopped bonito meat and small bones."
+    sources:
+      - title: コトバンク「たたき」（日本大百科全書(ニッポニカ)・改訂新版 世界大百科事典）
+        url: https://kotobank.jp/word/%E3%81%9F%E3%81%9F%E3%81%8D-849999
+      - title: コトバンク「叩き」（デジタル大辞泉・講談社 世界の料理がわかる辞典）
+        url: https://kotobank.jp/word/%E5%8F%A9%E3%81%8D-560687
+      - title: 農林水産省「うちの郷土料理」かつおのたたき（高知県）
+        url: https://www.maff.go.jp/j/keikaku/syokubunka/k_ryouri/search_menu/menu/katuonotataki_kochi.html
+  - id: shioyaki
+    ja: 塩焼き
+    ruby: "{塩焼|しおや}き"
+    kana: しおやき
+    romaji: shioyaki
+    mean:
+      ja: 塩を振って焼いた魚
+      zh: 盐烤
+      en: Salt-grilled
+    part:
+      ja: 魚に塩を振って焼いたもの。姿焼きにも切り身にもいう
+      zh: 鱼撒盐后烤制，整条或切块都可以
+      en: Fish sprinkled with salt and grilled, whole or as a fillet
+    note:
+      ja: 和食の焼き物の基本で、振り塩をすると塩が浸透して身がしまり、焼くと溶けたタンパク質が再び固まってうま味が逃げない。白身魚や小魚は焼く直前に、青背の魚や脂の多い魚は焼く30分〜1時間前に塩をする。姿焼きでは尾やひれに塩をたっぷりすり込む「化粧塩」で焦げを防ぎ、尾がぴんと跳ね上がるように「踊り串（うねり串）」を打つ。
+      zh: 盐烤是日本料理烤物的基础：撒盐后盐分渗入、鱼肉收紧，加热时溶出的蛋白质重新凝固，鲜味不会流失。白身鱼和小鱼在烤之前才撒盐，青背鱼和多脂的鱼则提前30分钟到1小时撒盐。整条烤时在鱼尾、鱼鳍上厚厚抹盐（“化妆盐”）以免烤焦，并穿“跃串”（踊り串），让鱼尾高高翘起。
+      en: "Salt-grilling is the foundation of Japanese grilled dishes: salt penetrates and firms the flesh, and as it cooks the dissolved proteins set again so the flavour stays in. White-fleshed and small fish are salted just before grilling, blue-backed or oily fish 30 minutes to an hour ahead. For a whole fish, keshō-jio (“make-up salt”) is rubbed thickly onto the tail and fins to stop them burning, and an odori-gushi (“dancing skewer”) is woven through the body so the tail flicks up."
+    sources:
+      - title: コトバンク「塩焼き」（日本大百科全書(ニッポニカ)）
+        url: https://kotobank.jp/word/%E5%A1%A9%E7%84%BC%E3%81%8D-1495052
+      - title: コトバンク「化粧塩」（日本大百科全書(ニッポニカ)ほか）
+        url: https://kotobank.jp/word/%E5%8C%96%E7%B2%A7%E5%A1%A9-490026
+  - id: nitsuke
+    ja: 煮付け
+    ruby: "{煮付|につ}け"
+    kana: につけ
+    romaji: nitsuke
+    mean:
+      ja: 甘辛く煮た魚
+      zh: 酱烧鱼
+      en: Simmered in sweet soy
+    part:
+      ja: 醤油・砂糖・みりん・酒の煮汁で、汁を少なめにして甘辛く煮た魚（野菜にもいう）
+      zh: 用酱油、砂糖、味醂、酒调的少量汤汁，把鱼煮得甜咸入味（也用于蔬菜）
+      en: Fish (or vegetables) simmered in a little soy sauce, sugar, mirin and sake until sweet-savoury
+    note:
+      ja: 煮物のうち煮汁を少なくして煮る類に入り、魚を味付けして煮たもの全般は「煮魚」と呼ぶ（みそを加えるみそ煮、大根おろしを加えるおろし煮もある）。カレイ・メバル・キンメダイ・カサゴといった白身魚がよく煮付けにされ、メバルは煮付けにすると身がころりと外れるという。鍋より一回り小さく材料に直接のせる落とし蓋は、煮汁の回りをよくし煮崩れを防ぐ。魚の煮汁が冷えて固まったものは「煮凝り（にこごり）」と呼ばれる。
+      zh: 属于煮物中汤汁较少的一类；凡调味后煮的鱼统称“煮鱼”（煮魚），此外还有加味噌的味噌煮、加萝卜泥的“おろし煮”。常做煮付的是鲽鱼、无备平鲉（メバル）、金眼鲷、褐菖鲉（カサゴ）等白身鱼，据说メバル煮好后鱼肉会整块脱落。比锅口小一圈、直接压在食材上的“落盖”（落とし蓋）能让汤汁均匀循环、防止鱼肉煮散。鱼的汤汁冷却后凝成的冻叫“煮凝り”。
+      en: It belongs to the kind of nimono cooked in only a little liquid; seasoned simmered fish in general is nizakana, which also includes miso-ni (with miso) and oroshi-ni (with grated daikon). White fish such as flounder, mebaru (Japanese rockfish), kinmedai (splendid alfonsino) and kasago (scorpionfish) are the usual choices, and simmered mebaru flesh is said to come away cleanly. A drop lid (otoshibuta) laid directly on the fish keeps the liquid circulating and stops the flesh breaking up, and fish broth that sets into jelly as it cools is called nikogori.
+    sources:
+      - title: コトバンク「煮付け」（デジタル大辞泉・講談社 世界の料理がわかる辞典）
+        url: https://kotobank.jp/word/%E7%85%AE%E4%BB%98%E3%81%91-592186
+      - title: コトバンク「煮物」（日本大百科全書(ニッポニカ)）
+        url: https://kotobank.jp/word/%E7%85%AE%E7%89%A9-110357
+      - title: コトバンク「カレイ」（日本大百科全書(ニッポニカ)ほか）
+        url: https://kotobank.jp/word/%E3%81%8B%E3%82%8C%E3%81%84-3148071
+      - title: コトバンク「メバル」（日本大百科全書(ニッポニカ)）
+        url: https://kotobank.jp/word/%E3%82%81%E3%81%B0%E3%82%8B-3172999
+      - title: コトバンク「キンメダイ」（食の医学館ほか）
+        url: https://kotobank.jp/word/%E3%81%8D%E3%82%93%E3%82%81%E3%81%A0%E3%81%84-1778813
+      - title: コトバンク「カサゴ」（日本大百科全書(ニッポニカ)ほか）
+        url: https://kotobank.jp/word/%E3%81%8B%E3%81%95%E3%81%94-3147238
+      - title: コトバンク「落とし蓋」（講談社 食器・調理器具がわかる辞典）
+        url: https://kotobank.jp/word/%E8%90%BD%E3%81%A8%E3%81%97%E8%93%8B-807599
+      - title: コトバンク「煮凝り」（デジタル大辞泉）
+        url: https://kotobank.jp/word/%E7%85%AE%E5%87%9D%E3%82%8A-109247
+  - id: teriyaki
+    ja: 照り焼き
+    ruby: "{照|て}り{焼|や}き"
+    kana: てりやき
+    romaji: teriyaki
+    mean:
+      ja: たれを塗ってつやよく焼いたもの
+      zh: 照烧
+      en: Teriyaki (glaze-grilled)
+    part:
+      ja: 醤油・みりん・酒などのたれを塗りながら、または漬けてから、つやよく焼いたもの
+      zh: 边刷（或先腌）酱油、味醂、酒等调成的酱汁边烤，烤出光泽
+      en: Grilled while basted with, or after marinating in, a soy–mirin–sake sauce until glossy
+    note:
+      ja: たれを何度もつけながら焼くと照り（つや）が出ることからの名で、日本大百科全書はたれの割合をみりん1.5・酒1・醤油1とし、材料にサワラ・ブリ・生サケ・マナガツオ・イワシなどを挙げる。ウナギの蒲焼きも照り焼きの一種だが、焦げ目をつけ、焼くときの煙が材料に戻るのが特色という。醤油・酒・みりんにユズの輪切りを浸したたれで焼くのは「幽庵焼き」で、考案した茶人北村幽庵の名からという。英語の teriyaki は、Merriam-Webster によれば1901年から用例がある。
+      zh: 因反复刷酱汁烤出光泽（照り）而得名；《日本大百科全书》给出的酱汁比例为味醂1.5、酒1、酱油1，适用的鱼有鲅鱼、鰤鱼、新鲜鲑鱼、鲳鱼、沙丁鱼等。鳗鱼的蒲烧也是照烧的一种，特点是烤出焦痕，并让烤时的烟回熏到食材上。用浸了柚子片的酱油、酒、味醂汁烤的叫“幽庵烧”，据说得名于创制者茶人北村幽庵。英语中的 teriyaki 据韦氏词典最早见于1901年。
+      en: "The name comes from the shine (teri) built up by brushing on sauce again and again; the Nipponica encyclopedia gives mirin 1.5 : sake 1 : soy 1 and names Spanish mackerel, yellowtail, fresh salmon, silver pomfret and sardine as typical fish. Eel kabayaki is a kind of teriyaki, set apart by its charred spots and by letting the grilling smoke flavour the eel. Fish grilled in soy, sake and mirin steeped with yuzu slices is yūan-yaki, said to be named after its inventor, the tea master Kitamura Yūan. Merriam-Webster dates “teriyaki” in English to 1901."
+    sources:
+      - title: コトバンク「照焼き」（日本大百科全書(ニッポニカ)）
+        url: https://kotobank.jp/word/%E7%85%A7%E7%84%BC%E3%81%8D-1565945
+      - title: コトバンク「照焼」（デジタル大辞泉）
+        url: https://kotobank.jp/word/%E7%85%A7%E7%84%BC-577166
+      - title: コトバンク「幽庵焼」（デジタル大辞泉）
+        url: https://kotobank.jp/word/%E5%B9%BD%E5%BA%B5%E7%84%BC-2131656
+      - title: Merriam-Webster “teriyaki”
+        url: https://www.merriam-webster.com/dictionary/teriyaki
+  - id: tenpura
+    ja: 天ぷら
+    ruby: "{天|てん}ぷら"
+    kana: てんぷら
+    romaji: tenpura
+    mean:
+      ja: 衣揚げ
+      zh: 天妇罗
+      en: Tempura
+    part:
+      ja: 魚介や野菜に、小麦粉を卵と水で溶いた衣をつけて植物油で揚げたもの
+      zh: 鱼贝、蔬菜裹上用鸡蛋和水调开的面衣，用植物油炸
+      en: Seafood or vegetables coated in a batter of flour, egg and water and deep-fried in vegetable oil
+    note:
+      ja: 江戸時代は上方と江戸で中身が違い、上方では魚のすり身を揚げたもの（今の薩摩揚げ）、江戸では衣揚げを「てんぷら」と呼んだ。今も西日本には薩摩揚げを「てんぷら」と呼ぶ所がある。江戸では屋台の立ち食いとして広まり、エビ・キス・イカ・アナゴなど江戸前の魚介をごま油で揚げ、揚げたてを次々に食べるのが特色とされる。語源はポルトガル語 tempero（調理）や têmporas（四季の斎日）などとする説があるが、決め手となる当時の文献は見つかっていない。
+      zh: 江户时代上方（京都、大阪）与江户的“天ぷら”并不是一回事：上方指油炸的鱼浆（即今天的萨摩扬），江户则指挂面衣炸的东西。如今西日本仍有地方把萨摩扬叫“天ぷら”。在江户，天妇罗作为路边摊上站着吃的小吃流行开来，特色是用芝麻油炸虾、沙鮻、乌贼、星鳗等江户前海鲜，炸好一样吃一样。词源有葡萄牙语 tempero（烹调）、têmporas（四季斋日）等说法，但至今没有找到能证实的当时文献。
+      en: "In the Edo period the word meant different things: in Kamigata (Kyoto–Osaka) it was fried fish paste, today’s satsuma-age, while in Edo it was batter-fried food; parts of western Japan still call satsuma-age “tenpura”. In Edo it spread as stand-up street-stall food, its hallmark being Edo Bay seafood such as prawns, kisu (sillago), squid and anago fried in sesame oil and eaten piece by piece straight from the pot. Portuguese tempero (“seasoning”) or têmporas (Ember Days) and other words have been proposed as its origin, but no decisive contemporary document has been found."
+    sources:
+      - title: コトバンク「天麩羅」（デジタル大辞泉・改訂新版 世界大百科事典ほか）
+        url: https://kotobank.jp/word/%E5%A4%A9%E9%BA%A9%E7%BE%85-578873
+      - title: 農林水産省「うちの郷土料理」てんぷら（東京都）
+        url: https://www.maff.go.jp/j/keikaku/syokubunka/k_ryouri/search_menu/menu/34_6_tokyo.html
+  - id: karaage
+    ja: 唐揚げ
+    ruby: "{唐揚|からあ}げ"
+    kana: からあげ
+    romaji: karaage
+    mean:
+      ja: 粉をまぶして揚げたもの
+      zh: 日式炸（唐扬）
+      en: Karaage (dusted and fried)
+    part:
+      ja: 小麦粉やかたくり粉を薄くまぶして、または何もつけずに油で揚げたもの
+      zh: 薄薄拍上面粉或淀粉（或什么都不裹）直接油炸
+      en: Food dusted lightly with flour or potato starch, or left bare, and deep-fried
+    note:
+      ja: 「唐（中国）風の揚げ物」の意とする説と、衣をつけない「空揚げ」の意とする説があり、どちらの表記も使われる。魚では、アジ・キス・ハゼ・アユ・フナなどの小魚に小麦粉とかたくり粉を厚めにまぶし、高温でさっと揚げてから二度揚げすると、頭から尾まで骨ごと食べられる。アジ・キス・アナゴなどの中骨を素揚げにしたものは「骨せんべい」という。
+      zh: 名称一说意为“唐（中国）式的炸物”，一说是不挂面衣的“空扬”，两种写法都有人用。鱼类的唐扬，是给竹荚鱼、沙鮻、虾虎鱼、香鱼、鲫鱼等小鱼厚厚拍上面粉和淀粉，高温快炸后再复炸一次，这样从头到尾连骨头都能吃。把竹荚鱼、沙鮻、星鳗等的中骨直接下锅炸，叫“骨煎饼”（骨せんべい）。
+      en: One view reads the name as “Tang (Chinese)-style frying”, another as kara-age, “empty frying” without batter; both spellings, 唐揚げ and 空揚げ, are used, and Merriam-Webster follows the “empty” etymology. Small fish such as aji, kisu, goby, ayu or crucian carp are coated fairly thickly with flour and potato starch, fried briefly at high heat and then fried a second time so they can be eaten bones and all, head to tail. Backbones of aji, kisu or anago fried bare are called hone senbei, “bone crackers”.
+    sources:
+      - title: コトバンク「から揚げ」（日本大百科全書(ニッポニカ)）
+        url: https://kotobank.jp/word/%E3%81%8B%E3%82%89%E6%8F%9A%E3%81%92-1519218
+      - title: コトバンク「空揚げ」（世界大百科事典（旧版））
+        url: https://kotobank.jp/word/%E7%A9%BA%E6%8F%9A%E3%81%92-1293090
+      - title: Merriam-Webster “karaage”
+        url: https://www.merriam-webster.com/dictionary/karaage
+  - id: himono
+    ja: 干物
+    ruby: "{干物|ひもの}"
+    kana: ひもの
+    romaji: himono
+    mean:
+      ja: 干した魚
+      zh: 鱼干
+      en: Dried fish
+    part:
+      ja: 魚介類を生のまま、または塩をして干したもの。開き・丸干し・一夜干しなど
+      zh: 把鱼贝生的或抹盐后晒干的食品，有剖开晒（開き）、整条晒（丸干し）、一夜干等
+      en: "Fish or shellfish dried raw or after salting: split (hiraki), whole (maruboshi), overnight-dried (ichiyaboshi) and more"
+    note:
+      ja: 製法により、塩をせずに干す素干し（するめ・身欠きにしん）、塩をして干す塩干し（アジ・サバ・サンマの開き、イワシの丸干し・目刺し）、煮てから干す煮干し、焼いてから干す焼干し、みりん干しなどの調味干しに分けられ、ふつう「干物」といえば塩干しを指す。開きは魚を背開きまたは腹開きにして干したもの、一夜干しは軽く塩をした魚を一晩外気に当てて干したもの。かつては日持ちさせるために強く干したが、今は水分60〜70％ほどの生干しが好まれ、干すことはうま味を引き出す手段になっている。
+      zh: 按制法可分为不加盐直接晒的素干（鱿鱼干、鲱鱼干）、抹盐后晒的盐干（竹荚鱼、鲭鱼、秋刀鱼的开片干，沙丁鱼整条干、“目刺”）、煮后晒的煮干、烤后晒的烤干，以及味醂干等调味干；一般说“干物”多指盐干。“開き”是把鱼从背部或腹部剖开晒干，“一夜干し”是轻轻撒盐后吹一夜风晾干。过去为了耐放晒得很干，如今更受欢迎的是含水约60%—70%的半干品，晒干更多成了增添鲜味的手段。
+      en: "By method there are suboshi (dried unsalted, e.g. surume squid, migaki herring), shiboshi (salted then dried: split aji, saba or sanma, whole iwashi and mezashi), niboshi (boiled then dried), yakiboshi (grilled then dried) and seasoned types such as mirin-boshi; “himono” usually means the salted kind. Hiraki is fish split open from the back or the belly and dried; ichiyaboshi is lightly salted fish left out in the air overnight. Fish were once dried hard to keep, but today semi-dried fish of about 60–70% moisture is preferred, and drying is used more to develop flavour than to preserve."
+    sources:
+      - title: コトバンク「干物」（日本大百科全書(ニッポニカ)・改訂新版 世界大百科事典ほか）
+        url: https://kotobank.jp/word/%E5%B9%B2%E7%89%A9-120933
+      - title: コトバンク「開き」（デジタル大辞泉）
+        url: https://kotobank.jp/word/%E9%96%8B%E3%81%8D-613780
+      - title: コトバンク「一夜干し」（デジタル大辞泉）
+        url: https://kotobank.jp/word/%E4%B8%80%E5%A4%9C%E5%B9%B2%E3%81%97-433791

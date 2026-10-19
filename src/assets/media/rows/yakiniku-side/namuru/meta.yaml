@@ -1,0 +1,11 @@
+- file: commons.jpg
+  kind: dish
+  caption:
+    ja: "ナムル"
+    zh: "凉拌菜（ナムル）"
+    en: "Namul"
+  source:
+    title: "Wikimedia Commons「202408191813 IMG 1983.jpg」"
+    url: "https://commons.wikimedia.org/wiki/File:202408191813_IMG_1983.jpg"
+    license: "CC BY-SA 4.0"
+    author: "ウィ貴公子"

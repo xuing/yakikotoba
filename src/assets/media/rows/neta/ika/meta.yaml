@@ -1,0 +1,11 @@
+- file: surumeika-nigiri.jpg
+  kind: dish
+  caption:
+    ja: "スルメイカのにぎり"
+    zh: "太平洋褶柔鱼（スルメイカ）握寿司"
+    en: "Surume-ika (Japanese flying squid) nigiri"
+  source:
+    title: "Tachiguizushi-Aburi-Hyakkan-Kaihinmakuhari 066.jpg（Wikimedia Commons）"
+    url: "https://commons.wikimedia.org/wiki/File:Tachiguizushi-Aburi-Hyakkan-Kaihinmakuhari_066.jpg"
+    license: "CC BY 4.0"
+    author: "RuinDig/Yuki Uchida"

@@ -1,0 +1,11 @@
+- file: aji-nigiri.jpg
+  kind: dish
+  caption:
+    ja: "アジのにぎり"
+    zh: "竹荚鱼握寿司"
+    en: "Aji (horse mackerel) nigiri"
+  source:
+    title: "Tachiguizushi-Aburi-Hyakkan-Kaihinmakuhari 064.jpg（Wikimedia Commons）"
+    url: "https://commons.wikimedia.org/wiki/File:Tachiguizushi-Aburi-Hyakkan-Kaihinmakuhari_064.jpg"
+    license: "CC BY 4.0"
+    author: "RuinDig/Yuki Uchida"

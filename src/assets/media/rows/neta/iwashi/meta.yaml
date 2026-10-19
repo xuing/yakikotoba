@@ -1,0 +1,11 @@
+- file: iwashi-nigiri.jpg
+  kind: dish
+  caption:
+    ja: "イワシのにぎり"
+    zh: "沙丁鱼握寿司"
+    en: "Sardine (iwashi) nigiri"
+  source:
+    title: "イワシの握り.jpg（Wikimedia Commons）"
+    url: "https://commons.wikimedia.org/wiki/File:%E3%82%A4%E3%83%AF%E3%82%B7%E3%81%AE%E6%8F%A1%E3%82%8A.jpg"
+    license: "CC BY-SA 4.0"
+    author: "Mikkabie"

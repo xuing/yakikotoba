@@ -1,0 +1,11 @@
+- file: otoro-nigiri.jpg
+  kind: dish
+  caption:
+    ja: "本マグロ大トロのにぎり"
+    zh: "蓝鳍金枪鱼大腹（大トロ）握寿司"
+    en: "Bluefin ōtoro nigiri"
+  source:
+    title: "Tachiguizushi-Aburi-Hyakkan-Kaihinmakuhari 039.jpg（Wikimedia Commons）"
+    url: "https://commons.wikimedia.org/wiki/File:Tachiguizushi-Aburi-Hyakkan-Kaihinmakuhari_039.jpg"
+    license: "CC BY 4.0"
+    author: "RuinDig/Yuki Uchida"

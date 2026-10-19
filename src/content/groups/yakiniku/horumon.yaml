@@ -1,0 +1,253 @@
+order: 2
+ja: ホルモン
+zh: 内脏
+en: Offal
+note:
+  ja: 牛の胃は4つあり、第一胃をミノ、第二胃をハチノス、第三胃をセンマイ、第四胃をギアラ（赤センマイ）と呼ぶ。業界では胃や腸など白っぽい内臓を「白物（しろもの）」、心臓や肝臓など赤っぽい内臓を「赤物（あかもの）」と呼び分けて扱う。
+  zh: 牛有四个胃，日语依次叫ミノ（第一胃）、ハチノス（第二胃）、センマイ（第三胃）和ギアラ（第四胃，又叫“赤センマイ”）。行业里把胃、肠等发白的内脏叫「白物」，把心、肝等发红的内脏叫「赤物」，分开处理。
+  en: "Cattle have four stomachs, called mino, hachinosu, senmai and giara (also aka-senmai, “red senmai”) in that order. The trade sorts offal into shiromono (“white things”: stomachs and intestines) and akamono (“red things”: heart, liver and the like)."
+items:
+  - id: horumon
+    ja: ホルモン
+    kana: ほるもん
+    romaji: horumon
+    mean:
+      ja: 牛・豚などの食用内臓
+      zh: 牛、猪等的可食用内脏
+      en: Edible offal (beef, pork)
+    part:
+      ja: 枝肉と皮を除いた可食部（畜産副生物）の通称
+      zh: 去掉胴体肉（枝肉）和皮之后剩下的可食部分（畜产副产品）的俗称
+      en: Everyday name for the edible parts left once the carcass meat and hide are removed
+    note:
+      ja: 業界の統一名称は「畜産副生物」で、「ホルモン」「モツ」はもとは業界語であり、農林水産省の資料は小腸を「ホルモンの代名詞」、大腸を「ホルモンの代表的な存在」と紹介している。語源は医学用語の「ホルモン（独 Hormon）」で、1920年ごろには精のつく料理を「ホルモン料理」と呼んでおり、大阪の洋食店「北極星」の創業者・北橋茂男が内臓の意味で広めたとされる。大阪弁の「放るもん（捨てるもの）」に由来するという説は日本国語大辞典も「一説に」として載せるが、語が1920年ごろから使われていたことから俗説とみられ、広まったのは1970年代からという。一般に西日本では牛、東日本では豚の内臓が多く消費される。
+      zh: 行业的统一名称是「畜産副生物」（畜产副产品），「ホルモン」「モツ」原本都是行话；农林水产省的资料称小肠是“内脏的代名词”，大肠是“内脏的代表”。词源是医学用语“荷尔蒙”（德语 Hormon）：约1920年起，滋补强身的菜就被叫作「ホルモン料理」，据说是大阪西餐馆「北極星」的创办人北桥茂男把这个词推广成“内脏”的意思。流传很广的“源自大阪话「放るもん」（扔掉的东西）”一说，《日本国语大辞典》也以“一说”收录，但由于这个词约1920年就已在使用，一般视为民间词源，1970年代以后才传开。一般来说，西日本多吃牛内脏，东日本多吃猪内脏。
+      en: "The trade’s official term is chikusan fukuseibutsu (“livestock by-products”); horumon and motsu began as trade jargon, and MAFF materials call the small intestine the “byword for horumon” and the large intestine its “typical example”. The word comes from the medical term “hormone” (German Hormon): by around 1920 invigorating dishes were called horumon ryōri, and Kitahashi Shigeo, founder of the Osaka restaurant Hokkyokusei, is credited with popularising it to mean offal. The popular derivation from Osaka dialect hōrumon (“stuff to throw away”) appears in the Nihon Kokugo Daijiten only as “one theory”; since the word was already in use around 1920 it is regarded as folk etymology, and it spread only from the 1970s. In general, western Japan eats more beef offal and eastern Japan more pork offal."
+    sources:
+      - title: 日本食肉消費総合センター 用語集「畜産副生物」
+        url: https://www.jmi.or.jp/info/word/ta/ta_034.html
+      - title: 日本食肉消費総合センター 用語集「ホルモン料理」
+        url: https://www.jmi.or.jp/info/word/ha/ha_186.html
+      - title: 農林水産省 aff 2016年8月号 特集2「牛肉(3)」
+        url: https://www.maff.go.jp/j/pr/aff/1608/spe2_03.html
+      - title: 農林水産省 aff 2020年9月号「牛の部位図鑑」（監修：日本食肉消費総合センター）
+        url: https://www.maff.go.jp/j/pr/aff/2009/pdf/aff2009_02_poster01.pdf
+      - title: 日本経済新聞「「ホルモン」 オムライス店が広げる？」（2019年7月9日）
+        url: https://www.nikkei.com/article/DGXMZO47092250Y9A700C1AA1P00/
+      - title: 精選版 日本国語大辞典「ホルモン焼き」（コトバンク）
+        url: https://kotobank.jp/word/%E3%81%BB%E3%82%8B%E3%82%82%E3%82%93%E7%84%BC%E3%81%8D-3218912
+      - title: 日本食肉消費総合センター『新食肉がわかる本』「国産牛肉・豚肉の流通」「牛・豚の副生物の流通」
+        url: https://www.jmi.or.jp/common/download.php/%E6%96%B0%E9%A3%9F%E8%82%89%E3%81%8C%E3%82%8F%E3%81%8B%E3%82%8B%E6%9C%AC1.pdf?id=MTMw
+      - title: 京都市「と畜検査について（牛の内臓検査・白物編）」
+        url: https://www.city.kyoto.lg.jp/hokenfukushi/cmsfiles/contents/0000175/175343/usisiro.pdf
+      - title: 京都市「と畜検査について（牛の内臓検査・赤物編）」
+        url: https://www.city.kyoto.lg.jp/hokenfukushi/cmsfiles/contents/0000175/175343/usiaka.pdf
+  - id: shimacho
+    ja: シマチョウ
+    kana: しまちょう
+    romaji: shimachō
+    mean:
+      ja: 牛の大腸
+      zh: 牛大肠
+      en: Beef large intestine
+    part:
+      ja: 大腸（小腸の末端から直腸までの管）を切り開いて平らにしたもの
+      zh: 大肠（从小肠末端到直肠的一段管道），剖开后摊平
+      en: The large intestine (the tube from the end of the small intestine to the rectum), slit open and laid flat
+    note:
+      ja: 表面に縞（しま）模様があることからの名で、関西では韓国語 대창（テチャン＝大腸）に由来する「テッチャン」とも呼ぶ。牛の大腸は長さ約10.7m・直径約7.6cmの管で、洗浄後に切り開いて平らにし、焼肉用には3〜4cmに切る（米国食肉輸出連合会）。小腸より厚くてかたく、コリコリした歯ごたえと甘みのある付着脂肪が持ち味。日本畜産副産物協会が普及を図る部位表示での名称は「シマチョウ（ダイチョウ）」。
+      zh: 名字来自表面的条纹（「縞」，读 shima）；关西又叫「テッチャン」，源自韩语 대창（大肠）。牛大肠是一条长约10.7米、直径约7.6厘米的管子，洗净后剖开摊平，烤肉用的切成3–4厘米（美国肉类出口协会）。比小肠厚、硬，嚼起来脆韧，附着的脂肪带甜味。日本畜产副产物协会推广的部位标示把它写作「シマチョウ（ダイチョウ）」。
+      en: Named for the stripes (shima) on its surface; in Kansai it is also tetchan, from Korean daechang, “large intestine”. A beef large intestine is a tube about 10.7 m long and 7.6 cm across; after cleaning it is slit open and laid flat, then cut into 3–4 cm pieces for yakiniku (U.S. Meat Export Federation). Thicker and firmer than the small intestine, it is prized for its springy chew and the sweet fat clinging to it. The parts labelling promoted by the Japan Animal By-products Association lists it as “shimachō (daichō)”.
+    sources:
+      - title: 米国食肉輸出連合会（USMEF）「アメリカン・ビーフ「シマチョウ」の徹底活用ガイド」（2018年）
+        url: https://www.americanmeat.jp/trd/publications/book/pdf/shimachyo.pdf
+      - title: 日本食肉消費総合センター 用語集「シマチョウ」
+        url: https://www.jmi.or.jp/info/word/sa/sa_045.html
+      - title: 農林水産省 aff 2016年8月号 特集2「牛肉(3)」
+        url: https://www.maff.go.jp/j/pr/aff/1608/spe2_03.html
+      - title: 京都市「と畜検査について（牛の内臓検査・白物編）」
+        url: https://www.city.kyoto.lg.jp/hokenfukushi/cmsfiles/contents/0000175/175343/usisiro.pdf
+      - title: 語源由来辞典「テッチャン」
+        url: https://gogen-yurai.jp/tecchan/
+      - title: 国立国語院『標準国語大辞典』「대창」
+        url: https://stdict.korean.go.kr/search/searchResult.do?searchKeyword=%EB%8C%80%EC%B0%BD
+      - title: 日本食肉消費総合センター『新食肉がわかる本』「国産牛肉・豚肉の流通」「牛・豚の副生物の流通」
+        url: https://www.jmi.or.jp/common/download.php/%E6%96%B0%E9%A3%9F%E8%82%89%E3%81%8C%E3%82%8F%E3%81%8B%E3%82%8B%E6%9C%AC1.pdf?id=MTMw
+  - id: marucho
+    ja: マルチョウ
+    kana: まるちょう
+    romaji: maruchō
+    mean:
+      ja: 牛の小腸（筒状のまま）
+      zh: 牛小肠（保持管状）
+      en: Beef small intestine, left whole
+    part:
+      ja: 小腸を縦に裂かず、筒の形のまま使うもの
+      zh: 小肠不纵向剖开，保持圆筒形使用
+      en: The small intestine used whole as a tube, not slit lengthwise
+    note:
+      ja: 関西では小腸のうち裂かないものを「マルチョウ」、裂いたものを「コテッチャン」と呼び分ける（農林水産省）。小腸そのものは韓国語 곱창 から「コプチャン」、形から「ヒモ」、京都では「ホソ」とも呼ばれ、日本畜産副産物協会が普及を図る部位表示では「ショウチョウ」。脂肪が多く付き、生100gあたり脂質26.1g・268kcalと、大腸（脂質13.0g）の約2倍の脂質を含む（日本食品標準成分表）。なお農林水産省aff 2020年9月号の部位図鑑はマルチョウを大腸（シマチョウ）の別名として載せており、呼び名は資料や地域によって揺れがある。
+      zh: 在关西，小肠中不剖开的叫「マルチョウ」，剖开的叫「コテッチャン」（农林水产省）。小肠本身还有「コプチャン」（来自韩语 곱창）、「ヒモ」（因形似绳子）、「ホソ」（京都）等叫法，日本畜产副产物协会推广的部位标示写作「ショウチョウ」（小肠）。附着脂肪多，每100克生小肠含脂肪26.1克、268千卡，约为大肠（脂肪13.0克）的两倍（日本食品标准成分表）。不过农林水产省2020年9月号《aff》的部位图鉴把マルチョウ列为大肠（シマチョウ）的别名，叫法因资料和地区而异。
+      en: "In Kansai, small intestine left unsplit is maruchō and split open is kotetchan (MAFF). The small intestine itself is also called kopuchan (from Korean gopchang), himo (“string”, from its shape) or, in Kyoto, hoso; the parts labelling promoted by the Japan Animal By-products Association uses shōchō. It carries a lot of fat: 100 g raw has 26.1 g fat and 268 kcal, about twice the fat of large intestine (13.0 g) (Standard Tables of Food Composition in Japan). Note that MAFF’s 2020 aff cut guide lists maruchō as another name for the large intestine (shimachō), so usage varies by source and region."
+    sources:
+      - title: 農林水産省 aff 2016年8月号 特集2「牛肉(3)」
+        url: https://www.maff.go.jp/j/pr/aff/1608/spe2_03.html
+      - title: 農林水産省 aff 2020年9月号「牛の部位図鑑」（監修：日本食肉消費総合センター）
+        url: https://www.maff.go.jp/j/pr/aff/2009/pdf/aff2009_02_poster01.pdf
+      - title: 京都市「と畜検査について（牛の内臓検査・白物編）」
+        url: https://www.city.kyoto.lg.jp/hokenfukushi/cmsfiles/contents/0000175/175343/usisiro.pdf
+      - title: 日本食肉消費総合センター 用語集「ヒモ（小腸）」
+        url: https://www.jmi.or.jp/info/word/ha/ha_077.html
+      - title: 日本食肉消費総合センター『新食肉がわかる本』「国産牛肉・豚肉の流通」「牛・豚の副生物の流通」
+        url: https://www.jmi.or.jp/common/download.php/%E6%96%B0%E9%A3%9F%E8%82%89%E3%81%8C%E3%82%8F%E3%81%8B%E3%82%8B%E6%9C%AC1.pdf?id=MTMw
+      - title: 国立国語院『標準国語大辞典』「곱창」
+        url: https://stdict.korean.go.kr/search/searchResult.do?searchKeyword=%EA%B3%B1%EC%B0%BD
+      - title: 文部科学省 食品成分データベース（日本食品標準成分表（八訂）増補2023年）「うし［副生物］小腸 生」
+        url: https://fooddb.mext.go.jp/details/details.pl?ITEM_NO=11_11098_7
+      - title: 文部科学省 食品成分データベース（日本食品標準成分表（八訂）増補2023年）「うし［副生物］大腸 生」
+        url: https://fooddb.mext.go.jp/details/details.pl?ITEM_NO=11_11099_7
+  - id: mino
+    ja: ミノ
+    kana: みの
+    romaji: mino
+    mean:
+      ja: 牛の第一胃
+      zh: 牛的第一胃（瘤胃）
+      en: Beef rumen (first stomach)
+    part:
+      ja: 4つある胃の最初で最大の胃（瘤胃・ルーメン）
+      zh: 四个胃中的第一个，也是最大的一个（瘤胃）
+      en: The first and largest of the four stomachs (rumen)
+    note:
+      ja: 4つの胃で最も大きく、第二胃と合わせると全胃容積の約8割、牛では100〜150Lに達する。肉厚でかたいがくせは少なく、焼肉では切れ込みを入れて出す。一般に売られるのは特に厚い部分の「上ミノ」で、身と身の間に濃厚な脂を挟んだ厚い部分は「ミノサンド」と呼ばれる希少な部位。名は切り開いた形が雨具の蓑（みの）に似ることからという説がある。
+      zh: 是四个胃中最大的，与第二胃合计约占全部胃容积的八成，牛的可达100–150升。肉厚而硬，但异味少；烤肉店上桌前会先切上花刀。市面上卖的一般是特别厚的部分「上ミノ」；肉层之间夹着一层浓厚油脂的厚块叫「ミノサンド」，量很少。一说名字来自剖开后的样子像蓑衣（日语「蓑」读 mino）。
+      en: "The largest of the four stomachs: together with the second stomach it makes up about 80% of total stomach volume—100–150 litres in cattle. Thick and tough but mild in flavour, it is scored with knife cuts before serving at yakiniku restaurants. What is usually sold is the extra-thick jō-mino; a thick section with a layer of rich fat sandwiched inside is the scarce mino-sando. One theory derives the name from mino, the straw raincoat it resembles when cut open."
+    sources:
+      - title: 日本食肉消費総合センター 用語集「ミノ」
+        url: https://www.jmi.or.jp/info/word/ma/ma_036.html
+      - title: 農林水産省 aff 2016年8月号 特集2「牛肉(3)」
+        url: https://www.maff.go.jp/j/pr/aff/1608/spe2_03.html
+      - title: 農林水産省 aff 2020年9月号「牛の部位図鑑」（監修：日本食肉消費総合センター）
+        url: https://www.maff.go.jp/j/pr/aff/2009/pdf/aff2009_02_poster01.pdf
+      - title: 改訂新版 世界大百科事典・日本大百科全書・精選版 日本国語大辞典「反芻胃」（コトバンク）
+        url: https://kotobank.jp/word/%E5%8F%8D%E8%8A%BB%E8%83%83-606670
+      - title: デジタル大辞泉「ミノ」（コトバンク）
+        url: https://kotobank.jp/word/%E3%81%BF%E3%81%AE-2085535
+      - title: 語源由来辞典「ミノ」
+        url: https://gogen-yurai.jp/mino-niku/
+  - id: hachinosu
+    ja: ハチノス
+    kana: はちのす
+    romaji: hachinosu
+    mean:
+      ja: 牛の第二胃
+      zh: 牛网胃（金钱肚）
+      en: Honeycomb tripe (second stomach)
+    part:
+      ja: 第一胃に続く2番目の胃（網胃・蜂巣胃）
+      zh: 紧接第一胃的第二个胃（网胃、蜂巢胃）
+      en: The second stomach, next to the rumen (reticulum)
+    note:
+      ja: 胃壁のひだが四〜六角形の小部屋をつくり蜂の巣のように見えることからの名で、学術的にも「蜂巣胃」「網胃」と呼ぶ。反芻のとき、食べた物を丸めて口へ戻す働きをする胃である。胃の中ではあっさりした味わいで、煮込み料理やもつ焼きに使われ、イタリア料理ではトリッパ（trippa）と呼ばれる。
+      zh: 胃壁的褶皱围成一个个四到六边形的小格，看上去像蜂巢，因而得名；动物学上也叫“蜂巢胃”“网胃”。反刍时，正是它把吃下的食物揉成团送回口中。在牛胃中口味清淡，多用于炖菜和串烤内脏，意大利菜里叫 trippa。
+      en: Its wall is ridged into four- to six-sided cells like a honeycomb, hence the name; zoologists likewise call it the honeycomb stomach or reticulum. During rumination it is the stomach that rolls food into a bolus and sends it back up to the mouth. Mild in flavour for a stomach, it goes into stews and offal skewers, and is the trippa of Italian cooking.
+    sources:
+      - title: 日本食肉消費総合センター 用語集「ハチノス」
+        url: https://www.jmi.or.jp/info/word/ha/ha_016.html
+      - title: デジタル大辞泉「蜂の巣」（コトバンク）
+        url: https://kotobank.jp/word/%E8%9C%82%E3%81%AE%E5%B7%A3-602046
+      - title: 改訂新版 世界大百科事典・日本大百科全書・精選版 日本国語大辞典「反芻胃」（コトバンク）
+        url: https://kotobank.jp/word/%E5%8F%8D%E8%8A%BB%E8%83%83-606670
+      - title: 農林水産省 aff 2016年8月号 特集2「牛肉(3)」
+        url: https://www.maff.go.jp/j/pr/aff/1608/spe2_03.html
+      - title: 農林水産省 aff 2020年9月号「牛の部位図鑑」（監修：日本食肉消費総合センター）
+        url: https://www.maff.go.jp/j/pr/aff/2009/pdf/aff2009_02_poster01.pdf
+  - id: senmai
+    ja: センマイ
+    kana: せんまい
+    romaji: senmai
+    mean:
+      ja: 牛の第三胃
+      zh: 牛百叶（瓣胃）
+      en: Omasum (third stomach)
+    part:
+      ja: 3番目の胃（葉胃・重弁胃）で、内側に薄いひだが何枚も重なる
+      zh: 第三个胃（瓣胃），内壁是层层叠叠的薄褶
+      en: The third stomach (omasum), lined with many thin, leaf-like folds
+    note:
+      ja: ひだが何層にも重なり「千枚」あるように見えることからの名とされ、韓国語でも第三胃を천엽（千葉）、英語ではブックトライプ（book tripe）と呼ぶが、デジタル大辞泉は語源未詳とする。脂肪が少なくシコシコした食感で、生100gあたり57kcal・脂質1.3g・鉄6.8mgを含む（日本食品標準成分表）。一般にゆでたものが売られている。
+      zh: 据说因褶皱层层叠叠、看上去有“千枚”而得名；韩语也把第三胃叫 천엽（千叶），英语叫 book tripe，不过《数字大辞泉》认为词源不详。脂肪少，口感爽脆有嚼劲，每100克生百叶含57千卡、脂肪1.3克、铁6.8毫克（日本食品标准成分表）。市面上一般卖的是已经煮过的。
+      en: It is said to be named for its “thousand sheets” (sen-mai) of folds—Korean likewise calls the omasum cheonyeop, “thousand leaves”, and English “book tripe”—though the Digital Daijisen calls the etymology unknown. Low in fat with a crisp, springy bite, 100 g raw has 57 kcal, 1.3 g fat and 6.8 mg iron (Standard Tables of Food Composition in Japan). It is generally sold already boiled.
+    sources:
+      - title: 日本食肉消費総合センター 用語集「センマイ」
+        url: https://www.jmi.or.jp/info/word/sa/sa_178.html
+      - title: 農林水産省 aff 2016年8月号 特集2「牛肉(3)」
+        url: https://www.maff.go.jp/j/pr/aff/1608/spe2_03.html
+      - title: 農林水産省 aff 2020年9月号「牛の部位図鑑」（監修：日本食肉消費総合センター）
+        url: https://www.maff.go.jp/j/pr/aff/2009/pdf/aff2009_02_poster01.pdf
+      - title: デジタル大辞泉「せんまい」（コトバンク）
+        url: https://kotobank.jp/word/%E3%81%9B%E3%82%93%E3%81%BE%E3%81%84-551294
+      - title: 国立国語院『標準国語大辞典』「천엽」
+        url: https://stdict.korean.go.kr/search/searchResult.do?searchKeyword=%EC%B2%9C%EC%97%BD
+      - title: 改訂新版 世界大百科事典・日本大百科全書・精選版 日本国語大辞典「反芻胃」（コトバンク）
+        url: https://kotobank.jp/word/%E5%8F%8D%E8%8A%BB%E8%83%83-606670
+      - title: 文部科学省 食品成分データベース（日本食品標準成分表（八訂）増補2023年）「うし［副生物］第三胃 生」
+        url: https://fooddb.mext.go.jp/details/details.pl?ITEM_NO=11_11096_7
+  - id: hatsu
+    ja: ハツ
+    kana: はつ
+    romaji: hatsu
+    mean:
+      ja: 牛の心臓
+      zh: 牛心
+      en: Beef heart
+    part:
+      ja: 心臓（心筋）
+      zh: 心脏（心肌）
+      en: The heart (cardiac muscle)
+    note:
+      ja: 英語の heart から。心筋は組織が緻密で筋繊維が細かく、コリコリと歯切れがよく、脂肪や臭みが少なく味は淡白。心臓につながる大動脈は「ハツモト」（別名コリコリ）として別の部位に分けられる（日本畜産副産物協会が普及を図る部位表示）。業界では肝臓などとともに「赤物」に分類され、赤物は夏場に焼肉の材料としてよく消費される傾向がある。
+      zh: 来自英语 heart。心肌组织致密、纤维细，口感脆而利落，脂肪和腥味都少，味道清淡。连着心脏的大动脉另算一个部位，叫「ハツモト」（又叫「コリコリ」）（日本畜产副产物协会推广的部位标示）。行业里它和肝脏等同属「赤物」（红色内脏），赤物在夏季多作为烤肉食材，消费量较大。
+      en: From English “heart”. Dense cardiac muscle with fine fibres gives a crisp, clean bite; it is lean, mild and has little offal smell. The aorta attached to it is a separate cut, hatsumoto (also korikori), in the parts labelling promoted by the Japan Animal By-products Association. The trade classes it with the liver as akamono (“red offal”), which is eaten more in summer, much of it as yakiniku.
+    sources:
+      - title: デジタル大辞泉・精選版 日本国語大辞典「ハツ」（コトバンク）
+        url: https://kotobank.jp/word/%E3%81%AF%E3%81%A4-3216146
+      - title: 日本食肉消費総合センター 用語集「ハツ」
+        url: https://www.jmi.or.jp/info/word/ha/ha_017.html
+      - title: 農林水産省 aff 2020年9月号「牛の部位図鑑」（監修：日本食肉消費総合センター）
+        url: https://www.maff.go.jp/j/pr/aff/2009/pdf/aff2009_02_poster01.pdf
+      - title: 日本食肉消費総合センター『新食肉がわかる本』「国産牛肉・豚肉の流通」「牛・豚の副生物の流通」
+        url: https://www.jmi.or.jp/common/download.php/%E6%96%B0%E9%A3%9F%E8%82%89%E3%81%8C%E3%82%8F%E3%81%8B%E3%82%8B%E6%9C%AC1.pdf?id=MTMw
+      - title: 京都市「と畜検査について（牛の内臓検査・赤物編）」
+        url: https://www.city.kyoto.lg.jp/hokenfukushi/cmsfiles/contents/0000175/175343/usiaka.pdf
+  - id: reba
+    ja: レバー
+    kana: ればー
+    romaji: rebā
+    mean:
+      ja: 牛の肝臓
+      zh: 牛肝
+      en: Beef liver
+    part:
+      ja: 肝臓
+      zh: 肝脏
+      en: The liver
+    note:
+      ja: 英語の liver からで、1904年の村井弦斎『食道楽』に「レバー」の用例がある。牛1頭の肝臓は約6kgあり、内臓の中で最もやわらかく、なめらかな歯触りと濃厚なコクがあるが、豚や鶏の肝臓より臭みは強い。ビタミンA・B2・鉄が多く、生100gあたりビタミンA（レチノール活性当量）1100µg・鉄4.0mgを含む（日本食品標準成分表）。生の薄切りを塩入りのごま油で食べる「レバ刺し」は主に焼肉店やもつ焼き店で出されていたが、2012年7月に食品衛生法に基づき牛の肝臓を生食用として販売・提供することが禁止された。
+      zh: 来自英语 liver；1904年村井弦斋的小说《食道乐》中已有「レバー」的用例。一头牛的肝脏约6公斤，是内脏中最软的，口感细滑、味道浓郁，但腥味比猪肝、鸡肝重。富含维生素A、B2和铁，每100克生牛肝含维生素A（视黄醇活性当量）1100微克、铁4.0毫克（日本食品标准成分表）。生切薄片、蘸加盐香油吃的「レバ刺し」过去主要在烤肉店和串烤内脏店供应，但2012年7月起，依据《食品卫生法》禁止把牛肝作为生食用途销售或提供。
+      en: "From English “liver”; the word appears in Japanese as early as Murai Gensai’s novel Kuidōraku (1904). One animal’s liver weighs about 6 kg; it is the softest of the organs, smooth and rich, though stronger-smelling than pork or chicken liver. It is rich in vitamin A, B2 and iron: 100 g raw has 1,100 µg vitamin A (retinol activity equivalents) and 4.0 mg iron (Standard Tables of Food Composition in Japan). Raw slices dipped in salted sesame oil (reba-sashi) were served mainly at yakiniku and offal-skewer restaurants until July 2012, when the Food Sanitation Act banned selling or serving beef liver for raw consumption."
+    sources:
+      - title: 精選版 日本国語大辞典「レバー」（コトバンク）
+        url: https://kotobank.jp/word/%E3%82%8C%E3%81%B0%E3%83%BC-3176022
+      - title: 京都市「と畜検査について（牛の内臓検査・赤物編）」
+        url: https://www.city.kyoto.lg.jp/hokenfukushi/cmsfiles/contents/0000175/175343/usiaka.pdf
+      - title: 日本食肉消費総合センター 用語集「レバー」
+        url: https://www.jmi.or.jp/info/word/ra/ra_045.html
+      - title: 農林水産省 aff 2020年9月号「牛の部位図鑑」（監修：日本食肉消費総合センター）
+        url: https://www.maff.go.jp/j/pr/aff/2009/pdf/aff2009_02_poster01.pdf
+      - title: 文部科学省 食品成分データベース（日本食品標準成分表（八訂）増補2023年）「うし［副生物］肝臓 生」
+        url: https://fooddb.mext.go.jp/details/details.pl?ITEM_NO=11_11092_7
+      - title: 世界の料理がわかる辞典「レバ刺」（コトバンク）
+        url: https://kotobank.jp/word/%E3%82%8C%E3%81%B0%E5%88%BA-1496510
+      - title: 厚生労働省「牛レバーを生食するのは、やめましょう（「レバ刺し」等）」
+        url: https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/shokuhin/syouhisya/110720/index.html

@@ -1,0 +1,175 @@
+order: 2
+ja: 用語
+zh: 菜单用语
+en: Menu words
+# Group note sources:
+# - コトバンク「焼き鳥」（日本大百科全書）https://kotobank.jp/word/%E7%84%BC%E3%81%8D%E9%B3%A5-898078 （明治・大正のころまでは小鳥を丸焼き）
+# - コトバンク「焼鳥」（精選版 日本国語大辞典：季語・冬）https://kotobank.jp/word/%E7%84%BC%E9%B3%A5-647701
+# - ミシュランガイド日本「焼鳥」https://guide.michelin.com/jp/ja/article/features/Yakitori_JP （明治半ばの屋台、牛・豚の臓物も総称して「やきとり」）
+# - サライ「『焼き鳥』と『やきとり』は違う食べ物？」https://serai.jp/gourmet/1020196 （書き分け、豚を「やきとり」と呼ぶ地域）
+note:
+  ja: "「焼き鳥」は明治・大正のころまで、ツグミやスズメなどの小鳥を丸ごと直火で焼いたものを指した。明治半ばに鶏の端肉や内臓を串に刺してタレで焼く屋台が生まれ、牛や豚の臓物の串もまとめて「やきとり」と呼んだため、今も豚の串焼きを「やきとり」と呼ぶ地域があり、漢字の「焼き鳥」は鶏、ひらがなの「やきとり」は鶏に限らないと書き分ける専門家もいる。俳句では冬の季語。"
+  zh: "直到明治、大正年间，“焼き鳥”还是指把斑鸫、麻雀等小鸟整只用明火烤。明治中期出现了把鸡的边角肉和内脏串起来刷酱烤的路边摊，牛、猪内脏串也统称“やきとり”，所以至今仍有地方把烤猪肉串叫“やきとり”；也有专家区分写法：汉字“焼き鳥”专指鸡，平假名“やきとり”则不限于鸡。在俳句中它是冬季的季语。"
+  en: "Until the Meiji and Taishō eras, yakitori meant small birds such as thrushes and sparrows grilled whole over an open flame. In the mid-Meiji period street stalls began skewering chicken trimmings and offal and grilling them with tare, and beef and pork offal skewers went by the same name – so some regions still call pork skewers yakitori, and some experts write 焼き鳥 for chicken but やきとり for skewers of any meat. In haiku it is a winter season word."
+items:
+- id: shio
+  ja: 塩
+  ruby: '{塩|しお}'
+  kana: しお
+  romaji: shio
+  mean:
+    ja: "塩味（塩焼き）"
+    zh: "盐味（盐烤）"
+    en: "Salt (salt-grilled)"
+  part:
+    ja: "タレを使わず、串に塩を振って焼く味付け。焼き鳥の味付けは基本的に「塩」か「タレ」"
+    zh: "不刷酱汁、只撒盐烤的调味方式；烤鸡串的调味基本是“盐”或“酱汁”二选一"
+    en: "Seasoning with salt alone instead of tare; yakitori is basically ordered either shio or tare"
+  note:
+    ja: "辞書は焼き鳥を、串に刺して素焼きにしてから「たれ、塩などをつけて焼いたもの」と定義し、材料に塩を振りかけることを「振り塩」（あて塩）という。どの部位を塩にするかは店が決め、鳥貴族はぼんじり（三角）・砂肝・ささみ・せせり・やげんなんこつを塩焼きのみ、レバー（きも）はタレのみで出し、手羽先・つくね・皮・ハツは両方から選べる。京橋の伊勢廣のコースでも、ささみ（わさび添え）・砂肝・皮身・手羽は塩、レバーやもも肉はタレで焼く。"
+    zh: "词典把烤鸡串定义为串好后先素烤、再“蘸酱汁或盐等烤制的食物”，往食材上撒盐叫“振り塩”（又称“あて塩”）。哪些部位用盐由店家决定：鸟贵族的鸡屁股（三角）、鸡胗、鸡里脊、鸡颈肉、药研软骨只做盐烤，鸡肝（きも）只做酱汁烤，鸡翅、鸡肉丸、鸡皮、鸡心两种可选。京桥伊势广的套餐里，鸡里脊（配山葵）、鸡胗、皮身、鸡翅用盐，鸡肝和腿肉则刷酱汁。"
+    en: "Dictionaries define yakitori as skewers grilled plain and then “with tare, salt and so on”; sprinkling salt over food is called furi-jio (also ate-jio). Each shop decides which cuts get salt: Torikizoku serves bonjiri (sankaku), gizzard, sasami, seseri and yagen cartilage salt-only and liver (kimo) tare-only, and lets you choose for wings, tsukune, skin and heart. Ise-hiro's course in Kyōbashi likewise salt-grills sasami (with wasabi), gizzard, 皮身 (skin with neck meat) and wings, and uses tare for liver and thigh."
+  sources:
+  - { title: "コトバンク「焼鳥」（精選版 日本国語大辞典・デジタル大辞泉）", url: "https://kotobank.jp/word/%E7%84%BC%E9%B3%A5-647701" }
+  - { title: "コトバンク「振り塩」（和・洋・中・エスニック 世界の料理がわかる辞典）", url: "https://kotobank.jp/word/%E6%8C%AF%E3%82%8A%E5%A1%A9-1496094" }
+  - { title: "鳥貴族 メニュー「焼鳥」", url: "https://torikizoku.co.jp/menu/yakitori/" }
+  - { title: "京橋伊勢廣 本店（コース内容）", url: "https://www.isehiro.co.jp/honten/" }
+  - { title: "サライ「東京の老舗や名店で味わう、奥深き『焼き鳥』の世界」2025年", url: "https://serai.jp/gourmet/1225015" }
+- id: tare
+  ja: タレ
+  kana: たれ
+  romaji: tare
+  mean:
+    ja: "焼き鳥のたれ"
+    zh: "烤鸡串酱汁"
+    en: "Tare (basting sauce)"
+  part:
+    ja: "醤油と味醂などを合わせて煮詰めた甘辛い調味液。素焼きにした串に付けて焼く"
+    zh: "酱油和味醂等调合熬制的甜咸调味汁，刷在素烤过的串上再烤"
+    en: "A sweet-savoury sauce of soy sauce, mirin and the like, cooked down and brushed on skewers after a plain first grilling"
+  note:
+    ja: "「たれ」は、もとは味噌の垂れ汁（たれじる）から始まった語で、漢字では「垂れ」と書く。焼き鳥のたれは醤油と味醂を同割（1対1）にしたものが基本で、白焼きにした後、たれを繰り返し付けながら焼く（付け焼き）。京橋の伊勢廣は戦後の再開以来、醤油と味醂だけのタレを、減った分だけ少しずつ補う「仕継ぎ」で受け継いでいる。寿司で使う煮詰めたたれを「つめ」と呼ぶのも同じ系統の調味液である。"
+    zh: "“たれ”一词源自味噌滴出的汁（垂汁），汉字写作“垂れ”。烤鸡串酱汁以酱油和味醂各半（1:1）为基础，先素烤，再反复蘸酱烤（付け焼き）。东京京桥的老店伊势广自战后重新开业以来，一直沿用只用酱油和味醂的酱汁，用掉多少就一点点补多少，称为“仕継ぎ”。寿司上用的熬浓酱汁叫“つめ”（煮詰め），也属同一类调味汁。"
+    en: "The word began with the juice that drips from miso (tarejiru) and is written 垂れ, “dripping”. Yakitori tare is basically equal parts soy sauce and mirin; skewers are first grilled plain, then basted and grilled repeatedly (tsuke-yaki). Ise-hiro in Kyōbashi has kept its soy-and-mirin-only tare going since reopening after the war, topping it up only by what is used (shitsugi). The reduced sauce brushed on sushi, tsume, belongs to the same family of seasoning."
+  sources:
+  - { title: "コトバンク「たれ」（日本大百科全書）", url: "https://kotobank.jp/word/%E3%81%9F%E3%82%8C-563411" }
+  - { title: "コトバンク「垂れ」（デジタル大辞泉）", url: "https://kotobank.jp/word/%E5%9E%82%E3%82%8C-519814" }
+  - { title: "コトバンク「焼き鳥」（日本大百科全書）", url: "https://kotobank.jp/word/%E7%84%BC%E3%81%8D%E9%B3%A5-898078" }
+  - { title: "コトバンク「付け焼き」（和・洋・中・エスニック 世界の料理がわかる辞典）", url: "https://kotobank.jp/word/%E4%BB%98%E3%81%91%E7%84%BC%E3%81%8D-1495546" }
+  - { title: "サライ「もてなしの本質を求め100年。完成させた鶏と炭火の芸術｜京橋 伊勢廣 本店」2023年", url: "https://serai.jp/gourmet/1147567" }
+- id: hon
+  ja: 本
+  ruby: '{本|ほん}'
+  kana: ほん
+  romaji: hon
+  mean:
+    ja: "串を数える助数詞"
+    zh: "串（数串的量词）"
+    en: "Counter for skewers"
+  part:
+    ja: "長い物・細長い棒状の物を数える助数詞。焼き鳥は串1本ずつ数える"
+    zh: "数长条形物品的量词；烤鸡串按串数计"
+    en: "The counter for long, thin objects; yakitori is counted skewer by skewer"
+  note:
+    ja: "前の数によって「ほん・ぼん・ぽん」と音が変わり、1本いっぽん、2本にほん、3本さんぼん、4本よんほん、5本ごほん、6本ろっぽん、7本ななほん、8本はっぽん、9本きゅうほん、10本じっぽん。常用漢字表は「十」のこの読みを「ジッ」とし、「ジュッ」も認めている（じゅっぽん）。1皿の本数は店によって異なり、鳥貴族の焼鳥は各2本、京橋の伊勢廣は焼鳥7本の「7本コース」や持ち帰りの「10本入り」を設けている。"
+    zh: "读音随前面的数字变成“ほん／ぼん／ぽん”：1本いっぽん、2本にほん、3本さんぼん、4本よんほん、5本ごほん、6本ろっぽん、7本ななほん、8本はっぽん、9本きゅうほん、10本じっぽん。《常用汉字表》把“十”在这里的读音定为“ジッ”，同时认可“ジュッ”（じゅっぽん）。每份几串因店而异：鸟贵族的烤鸡串每份2串，京桥伊势广有7串的“7本套餐”和外带“10串装”。"
+    en: "The sound shifts with the number: ippon, nihon, sanbon, yonhon, gohon, roppon, nanahon, happon, kyūhon, jippon (1–10). The official Jōyō kanji table lists ジッ for 十 here (jippon) and accepts ジュッ as an alternative (juppon). How many come per order varies: every yakitori item at Torikizoku is two skewers, while Ise-hiro in Kyōbashi offers a seven-skewer course and a ten-skewer takeaway box."
+  sources:
+  - { title: "コトバンク「本」（デジタル大辞泉）", url: "https://kotobank.jp/word/%E6%9C%AC-631932" }
+  - { title: "東京都教育委員会「日本語初期指導 第27単元（買い物・乗り物）」", url: "https://www.kyoiku.metro.tokyo.lg.jp/documents/d/kyoiku/1_31_2" }
+  - { title: "文化庁「常用漢字表」（平成22年内閣告示第2号）", url: "https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/pdf/joyokanjihyo_20101130.pdf" }
+  - { title: "鳥貴族 メニュー（2026年10月版PDF）", url: "https://torikizoku.co.jp/assets/uploads/2026/10/menu_jp.pdf" }
+  - { title: "京橋伊勢廣 本店（コース内容）", url: "https://www.isehiro.co.jp/honten/" }
+  - { title: "京橋伊勢廣 テイクアウト", url: "https://www.isehiro.co.jp/takeout/" }
+- id: kushi
+  ja: 串
+  ruby: '{串|くし}'
+  kana: くし
+  romaji: kushi
+  mean:
+    ja: "串"
+    zh: "签子；串"
+    en: "Skewer"
+  part:
+    ja: "食材を刺し通して焼いたり干したりする、先のとがった竹や鉄の細い棒。串に刺して焼く料理は「串焼き」"
+    zh: "用来穿起食材烤制或晾干的尖头竹签或铁签；串起来烤的菜叫“串焼き”（烤串）"
+    en: "A pointed bamboo or metal stick for threading food to grill or dry; food grilled on one is kushiyaki"
+  note:
+    ja: "「櫛（くし）」と同語源とされ、漢字「串」は物を串刺しにした形の象形文字。古くは「焼串（やいぐし）」と呼ばれて竹製がほとんどで、室町時代の『四条流庖丁書』（1489年）は大焼串を長さ1尺2寸（約36cm）、小焼串を1尺（約30cm）と定めている。串に刺すことを「串を打つ」「串打ち」といい、職人の世界では「串打ち三年、焼き一生」と言われる。京橋の伊勢廣は毎朝届く丸鶏を捌き、部位ごとに串を打つ。"
+    zh: "据说与“櫛”（梳子）同源；汉字“串”是把东西穿在一起的象形字。古称“焼串”（やいぐし），几乎都是竹制，室町时代的《四条流庖丁书》（1489年）规定大烤签长1尺2寸（约36厘米）、小烤签长1尺（约30厘米）。穿串叫“串を打つ”（串打ち），行内有“穿串三年，烤一辈子”（串打ち三年、焼き一生）的说法。京桥伊势广每天早上把送来的整鸡分割，再按部位穿串。"
+    en: "The word is thought to share its origin with kushi “comb”, and the kanji 串 is a pictograph of things threaded on a stick. Anciently called yaigushi (“grilling skewer”) and almost always bamboo, skewers were given set sizes in the Muromachi-period cookery text Shijō-ryū Hōchōgaki (1489): 1 shaku 2 sun (about 36 cm) for a large one, 1 shaku (about 30 cm) for a small one. Threading is kushi-uchi, and the trade saying goes “three years to skewer, a lifetime to grill” (kushi-uchi sannen, yaki isshō). Ise-hiro in Kyōbashi butchers whole birds delivered every morning and skewers them part by part."
+  sources:
+  - { title: "コトバンク「串」（デジタル大辞泉・字通・世界大百科事典・日本大百科全書）", url: "https://kotobank.jp/word/%E4%B8%B2-483230" }
+  - { title: "コトバンク「焼串」（精選版 日本国語大辞典）", url: "https://kotobank.jp/word/%E7%84%BC%E4%B8%B2-647666" }
+  - { title: "コトバンク「串打ち」（デジタル大辞泉）", url: "https://kotobank.jp/word/%E4%B8%B2%E6%89%93%E3%81%A1-483258" }
+  - { title: "コトバンク「串焼き」（和・洋・中・エスニック 世界の料理がわかる辞典）", url: "https://kotobank.jp/word/%E4%B8%B2%E7%84%BC%E3%81%8D-1494712" }
+  - { title: "サライ「『焼き鳥』と『やきとり』は違う食べ物？【焼き鳥の雑学と作法】」2021年", url: "https://serai.jp/gourmet/1020196" }
+  - { title: "京橋伊勢廣「伊勢廣について」（東京都公式広報サイト TOKYO UPDATES より）", url: "https://www.isehiro.co.jp/history/" }
+  - { title: "京橋伊勢廣 公式サイト", url: "https://www.isehiro.co.jp/" }
+- id: omakase
+  ja: おまかせ
+  kana: おまかせ
+  romaji: omakase
+  mean:
+    ja: "店に任せること"
+    zh: "交给店家安排"
+    en: "Chef's choice"
+  part:
+    ja: "料理の内容（どの串を、どの順で出すか）を店に一任する注文の仕方。漢字では「お任せ」"
+    zh: "把菜品内容（上哪些串、按什么顺序）全权交给店家决定的点法，汉字写作“お任せ”"
+    en: "Leaving the selection – which skewers, in what order – to the shop; written お任せ in kanji"
+  note:
+    ja: "「任せる」に丁寧の接頭語「お（御）」が付いた語で、辞書は特に「料理屋で料理の内容を店に一任すること」とし、「お任せコース」を用例に挙げる。京橋の伊勢廣は夜はコースのみで、焼鳥9本にスープなどが付く12品の「フルコース」は、鶏1羽のすべての部位を味わえるよう創業者夫妻が考案したという。池尻大橋の「鳥とみ」のように、焼き鳥と水炊きのコースだけを出す店もある。"
+    zh: "由“任せる”（托付）加上敬语前缀“お”构成；词典特别解释为“在饭馆把菜品内容全权交给店家”，并以“お任せコース”（主厨套餐）为例。东京京桥的老店伊势广晚上只提供套餐，其12道的“全套”（9串烤鸡加汤等）据说是创始人夫妇为让客人尝遍一只鸡的所有部位而设计的。也有店像池尻大桥的“鸟とみ”那样只供应烤鸡串加水炊锅的套餐。"
+    en: "From makaseru, “to entrust”, with the polite prefix o-; dictionaries note its special use for leaving the menu to a restaurant and cite omakase kōsu (“chef's-choice course”). At Ise-hiro in Kyōbashi dinner is course-only, and its 12-item full course – nine skewers plus soup and sides – was devised by the founding couple so diners could taste every part of one bird. Some shops, such as Toritomi in Ikejiri-Ōhashi, serve nothing but a set course of yakitori and mizutaki."
+  sources:
+  - { title: "コトバンク「御任せ」（デジタル大辞泉）", url: "https://kotobank.jp/word/%E5%BE%A1%E4%BB%BB%E3%81%9B-454386" }
+  - { title: "京橋伊勢廣 本店（コース内容）", url: "https://www.isehiro.co.jp/honten/" }
+  - { title: "京橋伊勢廣「伊勢廣について」（東京都公式広報サイト TOKYO UPDATES より）", url: "https://www.isehiro.co.jp/history/" }
+  - { title: "サライ「東京の老舗や名店で味わう、奥深き『焼き鳥』の世界」2025年", url: "https://serai.jp/gourmet/1225015" }
+- id: moriawase
+  ja: 盛り合わせ
+  ruby: '{盛|も}り{合|あ}わせ'
+  kana: もりあわせ
+  romaji: moriawase
+  mean:
+    ja: "数種を一皿に盛ったもの"
+    zh: "拼盘"
+    en: "Assortment (mixed plate)"
+  part:
+    ja: "一つの器に異なるものをいくつか取り合わせて盛ったもの。焼き鳥では数種類の串を一皿にまとめた品"
+    zh: "把几种不同的东西搭配盛在一个容器里；烤鸡串里指把几种串装成一盘"
+    en: "Several different items arranged together in one dish; for yakitori, a plate of mixed skewers"
+  note:
+    ja: "「盛る」（器に入れて満たす・積み上げる）と「合わせる」から成る語で、辞書の見出しは【盛（り）合（わ）せ】、つまり送り仮名を省いた「盛合せ」「盛り合せ」も通用する表記。辞書の用例は「刺身を三人前盛り合わせにする」。器に盛るのが盛り合わせで、箱や籠に2種類以上を詰めたものは「詰め合わせ」と呼び分ける。"
+    zh: "由“盛る”（盛入容器、堆起）和“合わせる”（搭配）构成；词典词头写作【盛（り）合（わ）せ】，即省略送假名的“盛合せ”“盛り合せ”等写法也通行。词典例句是“把生鱼片做成三人份的拼盘”（刺身を三人前盛り合わせにする）。盛在器皿里的叫“盛り合わせ”，把两种以上的东西装进盒子或篮子里的则叫“詰め合わせ”（什锦装）。"
+    en: "Formed from moru (“to heap into a dish”) and awaseru (“to put together”); dictionaries head it 盛(り)合(わ)せ, so spellings that drop the optional kana, such as 盛合せ or 盛り合せ, are also standard. The dictionary example is “to make sashimi for three into a moriawase”. Arranged in a dish it is moriawase; two or more kinds packed together in a box or basket are tsumeawase."
+  sources:
+  - { title: "コトバンク「盛合せ」（デジタル大辞泉）", url: "https://kotobank.jp/word/%E7%9B%9B%E5%90%88%E3%81%9B-646829" }
+  - { title: "コトバンク「盛り合わせ」（和・洋・中・エスニック 世界の料理がわかる辞典）", url: "https://kotobank.jp/word/%E7%9B%9B%E3%82%8A%E5%90%88%E3%82%8F%E3%81%9B-1496365" }
+  - { title: "コトバンク「盛る」（デジタル大辞泉）", url: "https://kotobank.jp/word/%E7%9B%9B%E3%82%8B-509250" }
+  - { title: "コトバンク「詰合せ」（デジタル大辞泉）", url: "https://kotobank.jp/word/%E8%A9%B0%E5%90%88%E3%81%9B-3228371" }
+- id: yakiton
+  ja: 焼きとん
+  ruby: '{焼|や}きとん'
+  kana: やきとん
+  romaji: yakiton
+  mean:
+    ja: "豚の串焼き"
+    zh: "烤猪肉串（猪杂串）"
+    en: "Pork skewers"
+  part:
+    ja: "豚の肉や内臓（もつ）を串に刺して焼いたもの。「とん」は「豚」の音読み"
+    zh: "把猪肉或猪内脏（もつ）串起来烤的食物；“とん”是“豚”（猪）的音读"
+    en: "Pork meat or offal (motsu) grilled on skewers; ton is the Sino-Japanese reading of 豚, “pig”"
+  note:
+    ja: "「もつ焼き」とも呼ばれ、「もつ」は「臓物」の略で、七味唐辛子を薬味にする。内臓は肝臓をレバー、心臓をハツ、大腸をシロ、腎臓をマメなどと呼び、頭の肉「カシラ」のうち目の横の「コメカミ」も焼き鳥店で串に出されることが多い。明治半ばの屋台は鶏の端肉と並んで牛・豚の臓物も焼き、まとめて「やきとり」と呼んだため、今も豚の串を「やきとり」と呼ぶ地域があり、埼玉県東松山は豚のカシラ肉をピリ辛の味噌だれで、北海道室蘭は豚ロース肉の間に玉ねぎを挟んで出す。"
+    zh: "也叫“もつ焼き”（烤内脏串），“もつ”是“臓物”（内脏）的略称，佐料用七味辣椒粉。内脏各有叫法：肝叫“レバー”，心叫“ハツ”，大肠叫“シロ”，肾叫“マメ”；猪头肉“カシラ”中眼睛旁边的“コメカミ”（太阳穴肉）也常在烤串店里做成串。明治中期的路边摊除了鸡的边角肉也烤牛、猪内脏，统称“やきとり”，所以至今仍有地方把猪肉串叫“やきとり”：埼玉县东松山用猪头肉配微辣味噌酱，北海道室兰则在猪里脊肉之间夹洋葱。"
+    en: "Also called motsu-yaki – motsu is short for zōmotsu, “innards” – and seasoned with shichimi chili pepper. Offal cuts have their own names: liver is rebā, heart hatsu, large intestine shiro, kidney mame; from the head meat (kashira), the komekami beside the eye is often skewered at yakitori shops. Mid-Meiji street stalls grilled beef and pork offal alongside chicken scraps under the single name yakitori, so some towns still call pork skewers yakitori: Higashimatsuyama in Saitama serves pork head meat with spicy miso, and Muroran in Hokkaidō sandwiches onion between pieces of pork loin."
+  sources:
+  - { title: "コトバンク「もつ焼き」（精選版 日本国語大辞典・世界の料理がわかる辞典）", url: "https://kotobank.jp/word/%E3%82%82%E3%81%A4%E7%84%BC%E3%81%8D-398102" }
+  - { title: "コトバンク「焼鳥」（改訂新版 世界大百科事典）", url: "https://kotobank.jp/word/%E7%84%BC%E9%B3%A5-647701" }
+  - { title: "農林水産省 aff 2020年9月号「牛、豚、鶏の部位を徹底解説！お肉丸わかり図鑑」", url: "https://www.maff.go.jp/j/pr/aff/2009/spe1_02.html" }
+  - { title: "ミシュランガイド日本「焼鳥」", url: "https://guide.michelin.com/jp/ja/article/features/Yakitori_JP" }
+  - { title: "サライ「『焼き鳥』と『やきとり』は違う食べ物？【焼き鳥の雑学と作法】」2021年", url: "https://serai.jp/gourmet/1020196" }
+  - { title: "文化庁「常用漢字表」（平成22年内閣告示第2号）", url: "https://www.bunka.go.jp/kokugo_nihongo/sisaku/joho/joho/kijun/naikaku/pdf/joyokanjihyo_20101130.pdf" }

@@ -1,7 +1,7 @@
 # やきことば · Yaki Kotoba
 
-用焼肉、焼き鳥（含焼きとん）学日语的图鉴：每个菜单词怎么读、什么意思、为什么这么叫、在动物身上的哪里、长什么样。
-日文始终显示，界面可切换中文 / English。
+焼肉・焼き鳥・寿司のことば —— 菜单上最常用的日语，一页一张表：读音、发音、意思、部位、解说。
+日语为主，中文和英文为辅，可以随时隐藏。连锁店作为筛选项：选中一家店，表格只显示这家店有的菜，并显示店内的写法和官方图片。
 
 ## 运行
 
@@ -12,24 +12,23 @@ npm run build    # 输出到 dist/，可直接放到任何静态托管
 npm run tts      # 生成缺失的发音（需要 .env 里的 GEMINI_API_KEY 和 ffmpeg）
 ```
 
-## 目录
+## 内容
+
+格式见 [docs/CONTENT.md](docs/CONTENT.md)。
 
 | 路径 | 内容 |
 |---|---|
-| `src/content/` | 全部内容，YAML 格式，一个条目一个文件，格式见 [docs/CONTENT.md](docs/CONTENT.md) |
-| `src/assets/media/` | 图片；每个文件夹里的 `meta.yaml` 写明每张图的来源 |
-| `src/maps/` | 部位图 SVG，取自农林水产省 aff「部位図鑑」海报 |
-| `src/pages/` | 页面：`/[lang]/cuts`、`chains`、`words`、`dishes`、`phrases`、`search` |
-| `src/components/`、`src/lib/` | 组件；数据读取、注音（`{漢字|かな}`）、图片、部位图 |
-| `src/i18n/ui.ts` | 界面文字。加一种语言就在这里加一份 |
-| `scripts/tts.mjs` | Gemini TTS（`gemini-3.8-flash-lite-tts`）→ ffmpeg → `public/audio/*.mp3` |
+| `src/content/tabs/` | 标签页：焼肉、焼き鳥、寿司・魚 |
+| `src/content/groups/<tab>/<group>.yaml` | 表格的一组，例如 牛、ホルモン、マグロ |
+| `src/content/chains/<id>.yaml` | 连锁店：店里的菜对应表格的哪一行 |
+| `src/assets/media/` | 图片；每个目录的 `meta.yaml` 写明出处 |
 
-## 加内容
+- 加一行：在对应的 group 文件里加一项，然后跑 `npm run tts`。
+- 加一家店：新建 `src/content/chains/<id>.yaml`，图片放到 `src/assets/media/chains/<id>/`。
 
-- **部位**：新建 `src/content/cuts/<section>/<id>.yaml`。要在部位图上标出位置，在 `src/content/maps/<map>.yaml` 对应的编号里加上它的 id。
-- **连锁店**：新建 `src/content/chains/<id>.yaml`，logo 和菜品图放到 `src/assets/media/chains/<id>/`，并在 `meta.yaml` 里写明来源。
-- 加完内容后跑一次 `npm run tts`，只会为新加或改过的词生成发音。
+## 图片出处
 
-## 图片来源
+- 肉的照片来自农林水产省「aff」2020 年 9 月号「お肉丸わかり図鑑」（监修：日本食肉消費総合センター），按公共数据利用规约（PDL1.0）注明出处使用。
+- 连锁店的 logo 和菜品图来自各店官网。
 
-部位图和大部分部位实拍图来自农林水产省 aff 2020 年 9 月号「お肉丸わかり図鑑」（监修：日本食肉消費総合センター）。连锁店的 logo 和菜品图来自各店官网。每张图的具体出处都写在对应的 `meta.yaml` 里，页面上也会显示，完整列表见网站的「关于」页。
+每张图的出处写在对应的 `meta.yaml` 里，页面底部也有汇总。

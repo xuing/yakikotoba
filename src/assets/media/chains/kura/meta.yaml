@@ -1,0 +1,210 @@
+- file: logo.svg
+  kind: logo
+  source:
+    title: "くら寿司公式サイト"
+    url: "https://www.kurasushi.co.jp/"
+    license: "© くら寿司株式会社"
+- file: jukusei-maguro.webp
+  kind: dish
+  source:
+    title: "くら寿司公式サイト メニュー"
+    url: "https://www.kurasushi.co.jp/menu/"
+    license: "© くら寿司株式会社"
+- file: jukusei-chutoro.webp
+  kind: dish
+  source:
+    title: "くら寿司公式サイト メニュー"
+    url: "https://www.kurasushi.co.jp/menu/"
+    license: "© くら寿司株式会社"
+- file: negimaguro-gunkan.webp
+  kind: dish
+  source:
+    title: "くら寿司公式サイト メニュー"
+    url: "https://www.kurasushi.co.jp/menu/"
+    license: "© くら寿司株式会社"
+- file: jukusei-zuke-maguro.webp
+  kind: dish
+  source:
+    title: "くら寿司公式サイト メニュー"
+    url: "https://www.kurasushi.co.jp/menu/"
+    license: "© くら寿司株式会社"
+- file: samon.webp
+  kind: dish
+  source:
+    title: "くら寿司公式サイト メニュー"
+    url: "https://www.kurasushi.co.jp/menu/"
+    license: "© くら寿司株式会社"
+- file: yaki-harasu.webp
+  kind: dish
+  source:
+    title: "くら寿司公式サイト メニュー"
+    url: "https://www.kurasushi.co.jp/menu/"
+    license: "© くら寿司株式会社"
+- file: aburi-chizu-samon.webp
+  kind: dish
+  source:
+    title: "くら寿司公式サイト メニュー"
+    url: "https://www.kurasushi.co.jp/menu/"
+    license: "© くら寿司株式会社"
+- file: hamachi.webp
+  kind: dish
+  source:
+    title: "くら寿司公式サイト メニュー"
+    url: "https://www.kurasushi.co.jp/menu/"
+    license: "© くら寿司株式会社"
+- file: jukusei-madai.webp
+  kind: dish
+  source:
+    title: "くら寿司公式サイト メニュー"
+    url: "https://www.kurasushi.co.jp/menu/"
+    license: "© くら寿司株式会社"
+- file: aji.webp
+  kind: dish
+  source:
+    title: "くら寿司公式サイト メニュー"
+    url: "https://www.kurasushi.co.jp/menu/"
+    license: "© くら寿司株式会社"
+- file: ma-iwashi.webp
+  kind: dish
+  source:
+    title: "くら寿司公式サイト メニュー"
+    url: "https://www.kurasushi.co.jp/menu/"
+    license: "© くら寿司株式会社"
+- file: ogiri-toro-shimesaba.webp
+  kind: dish
+  source:
+    title: "くら寿司公式サイト メニュー"
+    url: "https://www.kurasushi.co.jp/menu/"
+    license: "© くら寿司株式会社"
+- file: yuzushio-katsuo-tataki.webp
+  kind: dish
+  source:
+    title: "くら寿司公式サイト メニュー"
+    url: "https://www.kurasushi.co.jp/menu/"
+    license: "© くら寿司株式会社"
+- file: tokujo-unadon.webp
+  kind: dish
+  source:
+    title: "くら寿司公式サイト メニュー"
+    url: "https://www.kurasushi.co.jp/menu/"
+    license: "© くら寿司株式会社"
+- file: anago.webp
+  kind: dish
+  source:
+    title: "くら寿司公式サイト メニュー"
+    url: "https://www.kurasushi.co.jp/menu/"
+    license: "© くら寿司株式会社"
+- file: ika.webp
+  kind: dish
+  source:
+    title: "くら寿司公式サイト メニュー"
+    url: "https://www.kurasushi.co.jp/menu/"
+    license: "© くら寿司株式会社"
+- file: ebi.webp
+  kind: dish
+  source:
+    title: "くら寿司公式サイト メニュー"
+    url: "https://www.kurasushi.co.jp/menu/"
+    license: "© くら寿司株式会社"
+- file: ama-ebi.webp
+  kind: dish
+  source:
+    title: "くら寿司公式サイト メニュー"
+    url: "https://www.kurasushi.co.jp/menu/"
+    license: "© くら寿司株式会社"
+- file: omori-kaibashira.webp
+  kind: dish
+  source:
+    title: "くら寿司公式サイト メニュー"
+    url: "https://www.kurasushi.co.jp/menu/"
+    license: "© くら寿司株式会社"
+- file: hotatehimo-pirikara-wasabi.webp
+  kind: dish
+  source:
+    title: "くら寿司公式サイト メニュー"
+    url: "https://www.kurasushi.co.jp/menu/"
+    license: "© くら寿司株式会社"
+- file: tako-uni.webp
+  kind: dish
+  source:
+    title: "くら寿司公式サイト メニュー"
+    url: "https://www.kurasushi.co.jp/menu/"
+    license: "© くら寿司株式会社"
+- file: ikura.webp
+  kind: dish
+  source:
+    title: "くら寿司公式サイト メニュー"
+    url: "https://www.kurasushi.co.jp/menu/"
+    license: "© くら寿司株式会社"
+- file: kanimiso.webp
+  kind: dish
+  source:
+    title: "くら寿司公式サイト メニュー"
+    url: "https://www.kurasushi.co.jp/menu/"
+    license: "© くら寿司株式会社"
+- file: tamagoyaki.webp
+  kind: dish
+  source:
+    title: "くら寿司公式サイト メニュー"
+    url: "https://www.kurasushi.co.jp/menu/"
+    license: "© くら寿司株式会社"
+- file: engawa-karei.webp
+  kind: dish
+  source:
+    title: "くら寿司公式サイト メニュー"
+    url: "https://www.kurasushi.co.jp/menu/"
+    license: "© くら寿司株式会社"
+- file: tekkamaki.webp
+  kind: dish
+  source:
+    title: "くら寿司公式サイト メニュー"
+    url: "https://www.kurasushi.co.jp/menu/"
+    license: "© くら寿司株式会社"
+- file: kyurimaki.webp
+  kind: dish
+  source:
+    title: "くら寿司公式サイト メニュー"
+    url: "https://www.kurasushi.co.jp/menu/"
+    license: "© くら寿司株式会社"
+- file: inari.webp
+  kind: dish
+  source:
+    title: "くら寿司公式サイト メニュー"
+    url: "https://www.kurasushi.co.jp/menu/"
+    license: "© くら寿司株式会社"
+- file: magutaku-temaki.webp
+  kind: dish
+  source:
+    title: "くら寿司公式サイト メニュー"
+    url: "https://www.kurasushi.co.jp/menu/"
+    license: "© くら寿司株式会社"
+- file: jukusei-maguro-shari-nashi.webp
+  kind: dish
+  source:
+    title: "くら寿司公式サイト メニュー"
+    url: "https://www.kurasushi.co.jp/menu/"
+    license: "© くら寿司株式会社"
+- file: ebiten-nigiri.webp
+  kind: dish
+  source:
+    title: "くら寿司公式サイト メニュー"
+    url: "https://www.kurasushi.co.jp/menu/"
+    license: "© くら寿司株式会社"
+- file: teriyaki-chikin.webp
+  kind: dish
+  source:
+    title: "くら寿司公式サイト メニュー"
+    url: "https://www.kurasushi.co.jp/menu/"
+    license: "© くら寿司株式会社"
+- file: nankotsu-karaage.webp
+  kind: dish
+  source:
+    title: "くら寿司公式サイト メニュー"
+    url: "https://www.kurasushi.co.jp/menu/"
+    license: "© くら寿司株式会社"
+- file: umadare-gyu-karubi.webp
+  kind: dish
+  source:
+    title: "くら寿司公式サイト メニュー"
+    url: "https://www.kurasushi.co.jp/menu/"
+    license: "© くら寿司株式会社"

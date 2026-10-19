@@ -1,0 +1,305 @@
+order: 1
+ja: 牛
+zh: 牛肉
+en: Beef
+note:
+  ja: "卸売の「牛部分肉取引規格」は半丸枝肉をネック・かた・かたロース・かたばら・ヒレ・リブロース・サーロイン・ともばら・うちもも・しんたま・らんいち・そともも・すねの13部位に分け、小売表示では「食肉小売品質基準」の9部位にネック・すねを加えた11部位が使われる。ミスジ・ザブトン・イチボ・三角バラなどはこれをさらに細かく分けた呼び名で、焼肉店のメニュー名は同基準の対象外のため、同じ名前でも店によって指す範囲が違うことがある。タン・ハラミ・サガリは正肉ではなく副生物（内臓）に分類される。"
+  zh: "批发用的《牛分割肉交易规格》把半边胴体分成ネック、かた、かたロース、かたばら、ヒレ、リブロース、サーロイン、ともばら、うちもも、しんたま、らんいち、そともも、すね共13块；零售标示则用《食肉零售品质基准》的9个部位再加上ネック（颈肉）和すね（腱子），共11个。ミスジ、ザブトン、イチボ、三角バラ等是在此基础上进一步细分的叫法；烤肉店的菜单名不受该基准约束，同一个名字在不同店里所指的范围可能不同。タン、ハラミ、サガリ不算正肉，而是副产物（内脏）。"
+  en: "Japan’s wholesale beef standard divides a side into 13 primals (neck, kata, kata-rōsu, kata-bara, hire, rib-rōsu, sāroin, tomo-bara, uchimomo, shintama, ran-ichi, sotomomo, sune); retail labels use the nine cuts of the Retail Meat Quality Standard plus neck and shin, 11 in all. Names such as misuji, zabuton, ichibo and sankaku-bara are finer subdivisions, and restaurant menus fall outside the retail standard, so the same name can cover different meat from shop to shop. Tongue, harami and sagari are classed as by-products (offal), not muscle meat."
+items:
+  - id: tan
+    ja: タン
+    kana: たん
+    romaji: tan
+    mean:
+      ja: "牛の舌"
+      zh: "牛舌"
+      en: "Beef tongue"
+    part:
+      ja: "舌。根元側を「タン元」、先端を「タン先」と呼ぶ"
+      zh: "舌头；舌根一侧叫“タン元”，舌尖一侧叫“タン先”"
+      en: "The tongue; the root end is tan-moto, the tip tan-saki"
+    note:
+      ja: "英語の tongue に由来し、弾力のあるサクッとした歯ごたえで、根元ほど柔らかく舌先ほど硬い。日本食品標準成分表では「副生物」に分類され、生100gあたりの脂質は31.8g。焼肉では塩で焼いてレモンを添える「タン塩」が最初の一皿の定番で、一説に1976年開業の叙々苑六本木1号店で、卸業者の提案から生まれたメニューとされる。厚切りを炭火で焼く「牛たん焼き」は仙台発祥で、1948年（昭和23年）に最初の専門店ができ、焼肉店の2〜3mmに対して1〜2cmの厚さで出される。"
+      zh: "名称来自英语 tongue；口感有弹性、脆嫩，越靠舌根越软，越近舌尖越硬。日本食品标准成分表把它归入“副产物”，生的每100克含脂质31.8克。烤肉店里第一盘通常点撒盐烤、配柠檬的“タン塩”（盐烤牛舌）；一说这道菜诞生于1976年开业的叙叙苑六本木1号店，最初是肉品批发商的提议。厚切后用炭火烤的“牛舌烧”（牛たん焼き）起源于仙台，1948年出现第一家专门店；一般烤肉店切2—3毫米，仙台则切成1—2厘米厚。"
+      en: "From English “tongue”; it has a springy, crisp bite, tender at the root and firmer towards the tip. Japan’s food composition tables class it as a by-product (offal), with 31.8 g of fat per 100 g raw. The customary first order at yakiniku is tan-shio, tongue grilled with salt and served with lemon; one account says it began at Jojoen’s first restaurant in Roppongi, opened in 1976, on a meat wholesaler’s suggestion. Thick-cut, charcoal-grilled gyūtan-yaki comes from Sendai, where the first specialist shop opened in 1948; slices there are 1–2 cm thick, against the usual 2–3 mm at yakiniku restaurants."
+    sources:
+      - title: "農林水産省 aff 2020年9月号「牛の部位図鑑」（監修：日本食肉消費総合センター）"
+        url: "https://www.maff.go.jp/j/pr/aff/2009/pdf/aff2009_02_poster01.pdf"
+      - title: "コトバンク「タン」（デジタル大辞泉・精選版 日本国語大辞典）"
+        url: "https://kotobank.jp/word/%E3%81%9F%E3%82%93-3158309"
+      - title: "文部科学省「日本食品標準成分表（八訂）増補2023年」（うし［副生物］舌）"
+        url: "https://www.mext.go.jp/a_menu/syokuhinseibun/mext_00001.html"
+      - title: "米国食肉輸出連合会（USMEF）「YAKINIKU GUIDE BOOK」（牛タン・ポークタン）"
+        url: "https://americanmeat.jp/trd/publications/book/pdf/yakiniku2014.pdf"
+      - title: "東洋経済オンライン（小関尚紀）「「タン塩にはレモン」と何の疑問も抱かずに振りかけている人に知ってほしい《誕生秘話》」（2025年9月20日）"
+        url: "https://toyokeizai.net/articles/-/905792"
+      - title: "Forbes JAPAN「焼肉業界に異変？「タンでなくサーロインから」が進んでいる理由」（2023年7月9日）"
+        url: "https://forbesjapan.com/articles/detail/64183"
+      - title: "仙台市「仙台ふるさと応援寄附 おすすめ返礼品（仙台名物 牛たん）」"
+        url: "https://www.city.sendai.jp/zaiseikikaku-somu/furusato/henreihin.html"
+      - title: "仙台市「仙台市の厚切り牛タン―歴史とブランドができるまで」"
+        url: "https://www.city.sendai.jp/zaiseikikaku-somu/shise/zaise/zaimu/zaise/sendaishi/oenkifu/kuwashiku/5.html"
+
+  - id: karubi
+    ja: カルビ
+    kana: かるび
+    romaji: karubi
+    mean:
+      ja: "牛のばら肉（あばら肉）"
+      zh: "牛五花（牛小排）"
+      en: "Short rib / belly (kalbi)"
+    part:
+      ja: "ばら（あばら骨まわりの腹側の肉）。焼肉では主に後ろ寄りの「ともばら」"
+      zh: "五花，即肋骨周围的腹部肉；烤肉用的主要是靠后的“ともばら”"
+      en: "The belly around the ribs (bara); for yakiniku mainly the rear belly, tomo-bara"
+    note:
+      ja: "朝鮮語で「あばら骨（の肉）」を意味する갈비（カルビ）に由来し、日本では主にばら肉を指すが、辞書には「ばら肉以外の部位で、脂身の多いものをさすこともある」とある。全国焼肉協会によれば、戦後の焼肉店のメニューは当初「ロース」と「カルビ」の2つだけで、カルビには部位としての厳密な表示基準がない。肋骨の間の肉は「ゲタカルビ（中落ち）」、骨付きショートリブを骨ごと約8mmに切ったものは「L.A.カルビ」と呼ばれる。日本食品標準成分表では、和牛ばら（脂身つき・生）の脂質は100gあたり50.0gで、輸入牛ばらの32.9gを大きく上回る。"
+      zh: "源自朝鲜语“갈비”（肋骨、肋排肉）；在日本主要指五花肉，但词典也注明有时指“五花以外、脂肪多的部位”。据日本全国烧肉协会介绍，战后烤肉店最初的菜单只有“ロース”和“カルビ”两样，而“カルビ”作为部位名并没有严格的标示标准。肋骨之间的肉叫“ゲタカルビ”（中落ち），带骨牛小排连骨切成约8毫米厚的叫“L.A.カルビ”。日本食品标准成分表中，和牛五花（带脂、生）每100克含脂质50.0克，远高于进口牛五花的32.9克。"
+      en: "From Korean galbi (갈비), “rib (meat)”: in Japan it usually means belly meat, though dictionaries note it can also mean a fatty cut from elsewhere. According to Japan’s national yakiniku association, post-war yakiniku menus first offered only rōsu and karubi, and karubi has no strict labelling definition as a cut. Meat from between the ribs is geta-karubi (nakaochi), and bone-in short rib sawn about 8 mm thick across the bones is “L.A. karubi”. Raw wagyu belly with its fat contains 50.0 g of fat per 100 g, far above the 32.9 g of imported beef belly."
+    sources:
+      - title: "農林水産省 aff 2020年9月号「牛の部位図鑑」（監修：日本食肉消費総合センター）"
+        url: "https://www.maff.go.jp/j/pr/aff/2009/pdf/aff2009_02_poster01.pdf"
+      - title: "農林水産省 aff 2016年8月号 特集2「牛肉の部位図鑑」"
+        url: "https://www.maff.go.jp/j/pr/aff/1608/spe2_02.html"
+      - title: "コトバンク「カルビ」（デジタル大辞泉・精選版 日本国語大辞典）"
+        url: "https://kotobank.jp/word/%E3%81%8B%E3%82%8B%E3%81%B3-3209506"
+      - title: "コトバンク「ばら肉」（百科事典マイペディア）"
+        url: "https://kotobank.jp/word/%E3%81%B0%E3%82%89%E8%82%89-771028"
+      - title: "日本食肉消費総合センター「部位別料理 -牛-」"
+        url: "https://www.jmi.or.jp/recipe/apart/cooking_apart1.html"
+      - title: "J-CASTニュース「「ロース」と「赤身」違います 焼肉メニューで消費者庁が「指導」」（2010年10月14日）"
+        url: "https://www.j-cast.com/2010/10/14078222.html?p=all"
+      - title: "米国食肉輸出連合会（USMEF）「YAKINIKU GUIDE BOOK」（ボンインショートリブ・リブフィンガー・プレートフィンガー）"
+        url: "https://americanmeat.jp/trd/publications/book/pdf/yakiniku2014.pdf"
+      - title: "文部科学省「日本食品標準成分表（八訂）増補2023年」（うし ばら）"
+        url: "https://www.mext.go.jp/a_menu/syokuhinseibun/mext_00001.html"
+
+  - id: rosu
+    ja: ロース
+    kana: ろーす
+    romaji: rōsu
+    mean:
+      ja: "牛の背中の肉"
+      zh: "牛背脊肉（上脑、眼肉、西冷一带）"
+      en: "Loin (back meat)"
+    part:
+      ja: "背中の肉。首側からかたロース・リブロース・サーロインと続く"
+      zh: "背部的肉，从颈部往后依次是上脑（かたロース）、眼肉（リブロース）、西冷（サーロイン）"
+      en: "The back muscles: from the neck end, chuck roll (kata-rōsu), rib loin (rib-rōsu) and sirloin (sāroin)"
+    note:
+      ja: "英語の roast に由来し「ローストに適する肉」の意で、明治初期の仮名垣魯文『安愚楽鍋』（1871〜72年）には「ラウス」の形で見える。牛部分肉取引規格では、ネックとかたロースを第6〜7頸椎の間、リブロースとサーロインを第10〜11胸椎の間で切り分け、関西ではかたロースを「くらした（鞍下）」、リブロースを単に「ロース」と呼ぶ。焼肉業界では「ロース」を赤身肉の意味で使う慣行があり、2010年10月、消費者庁はもも肉などを「ロース」と表示しないよう業界団体に求めた。小売店はすでに1977年の食肉小売品質基準により、「ロース」と表示できるのをサーロインやリブロースなどロース系の部位に限られている。"
+      zh: "来自英语 roast，意为“适合烤制的肉”；明治初期假名垣鲁文的《安愚乐锅》（1871—72年）里写作“ラウス”。按日本《牛分割肉交易规格》，颈肉与上脑在第6、7颈椎之间分开，眼肉与西冷在第10、11胸椎之间分开；关西把上脑叫“くらした”（鞍下），把眼肉直接叫“ロース”。烤肉业界一向有把瘦肉统称“ロース”的惯例，2010年10月日本消费者厅要求行业团体不要再把牛腿肉等标成“ロース”。零售店早在1977年就受《食肉零售品质基准》约束，只有西冷、眼肉等背脊部位才能标“ロース”。"
+      en: "From English “roast”, meat fit for roasting; it appears as rausu in Kanagaki Robun’s Aguranabe (1871–72). The wholesale beef standard separates the neck from the chuck roll between the 6th and 7th cervical vertebrae and the rib loin from the sirloin between the 10th and 11th thoracic vertebrae; in Kansai the chuck roll is called kurashita (“under the saddle”) and the rib loin simply rōsu. Yakiniku restaurants long used rōsu to mean lean meat in general, and in October 2010 the Consumer Affairs Agency asked the trade to stop labelling round (momo) and other cuts as rōsu. Retailers had been bound since 1977 by the Retail Meat Quality Standard to use the name only for loin cuts such as sirloin and rib loin."
+    sources:
+      - title: "コトバンク「ロース」（デジタル大辞泉・精選版 日本国語大辞典・百科事典マイペディア）"
+        url: "https://kotobank.jp/word/%E3%82%8D%E3%83%BC%E3%81%99-3176559"
+      - title: "日本食肉格付協会「牛部分肉取引規格」"
+        url: "https://www.jmga.or.jp/standard/beef-partial/"
+      - title: "日本食肉消費総合センター「部位別料理 -牛-」（関西名）"
+        url: "https://www.jmi.or.jp/recipe/apart/cooking_apart1.html"
+      - title: "PRESIDENT Online（松浦達也）「「ロース、サーロイン、モモ、カルビを高い順に並べよ」本当に焼肉が好きな人ほど、この問題に困惑する理由」（2022年7月10日）"
+        url: "https://president.jp/articles/-/59316"
+      - title: "J-CASTニュース「「ロース」と「赤身」違います 焼肉メニューで消費者庁が「指導」」（2010年10月14日）"
+        url: "https://www.j-cast.com/2010/10/14078222.html?p=all"
+
+  - id: harami
+    ja: ハラミ
+    kana: はらみ
+    romaji: harami
+    mean:
+      ja: "牛の横隔膜（肋骨側）"
+      zh: "牛横膈膜肉（肋骨侧）"
+      en: "Outside skirt (diaphragm)"
+    part:
+      ja: "横隔膜のうち、肋骨に接する腹側の平たい部分"
+      zh: "横膈膜中贴着肋骨、靠腹侧的扁平部分"
+      en: "The flat, rib-side (costal) part of the diaphragm"
+    note:
+      ja: "漢字では「腹身」と書く。肉厚で柔らかく、脂もほどよく入って赤身肉に見えるが内臓（副生物）扱いで、日本食品標準成分表でも「うし［副生物］横隔膜」として載り、生100gあたりの脂質は27.3g。輸入名はアウトサイドスカートで、米国産は幅10cmほどの平たい長方形の形で入ってくる。腰椎側のサガリと区別せず、まとめて「ハラミ」と呼ぶこともある。"
+      zh: "汉字写作“腹身”。肉厚柔嫩、脂肪适中，看起来像红肉，其实属于内脏（副产物）；日本食品标准成分表也把它列为“牛［副产物］横膈膜”，生的每100克含脂质27.3克。进口货叫 outside skirt，美国产的是宽约10厘米的扁平长条。有时也不区分靠腰椎的“サガリ”，统称“ハラミ”。"
+      en: "Written 腹身, “belly meat”, in kanji. Thick, tender and moderately fatty, it looks like red meat but is classed as offal: Japan’s food composition tables list it as beef by-product “diaphragm”, with 27.3 g of fat per 100 g raw. Imported, it is the outside skirt, which arrives from the US as a flat strip about 10 cm wide. The lumbar-side sagari is sometimes sold under the same name."
+    sources:
+      - title: "農林水産省 aff 2020年9月号「牛の部位図鑑」（監修：日本食肉消費総合センター）"
+        url: "https://www.maff.go.jp/j/pr/aff/2009/pdf/aff2009_02_poster01.pdf"
+      - title: "農林水産省 aff 2016年8月号 特集2「牛内臓の部位図鑑」"
+        url: "https://www.maff.go.jp/j/pr/aff/1608/spe2_03.html"
+      - title: "コトバンク「腹身」（デジタル大辞泉）"
+        url: "https://kotobank.jp/word/%E8%85%B9%E8%BA%AB-605112"
+      - title: "文部科学省「日本食品標準成分表（八訂）増補2023年」（うし［副生物］横隔膜）"
+        url: "https://www.mext.go.jp/a_menu/syokuhinseibun/mext_00001.html"
+      - title: "日本食肉消費総合センター「部位別料理 -牛-」（ハラミ・サガリ）"
+        url: "https://www.jmi.or.jp/recipe/apart/cooking_apart1.html"
+      - title: "米国食肉輸出連合会（USMEF）「YAKINIKU GUIDE BOOK」（アウトサイドスカート）"
+        url: "https://americanmeat.jp/trd/publications/book/pdf/yakiniku2014.pdf"
+
+  - id: sagari
+    ja: サガリ
+    kana: さがり
+    romaji: sagari
+    mean:
+      ja: "牛の横隔膜（腰椎側）"
+      zh: "牛横膈膜肉（腰椎侧）"
+      en: "Hanger steak (hanging tender)"
+    part:
+      ja: "横隔膜のうち、背骨（腰椎）に接する部分"
+      zh: "横膈膜中贴着脊柱（腰椎）的部分"
+      en: "The part of the diaphragm attached to the lumbar spine"
+    note:
+      ja: "ハラミと同じ横隔膜の一部で、見た目はほとんど同じだが脂が少なめであっさりしており、肉質は柔らかい。別名「ビワハラミ」。輸入名はハンギングテンダーで、米国産は背骨から腰椎にかけて内臓を囲む18cmほどの丸く太い筋肉として流通し、内臓扱いながら肉と同等の価値があるとされる。ハラミと区別せずに「ハラミ」と呼ぶこともある。"
+      zh: "和ハラミ同属横膈膜，外观几乎一样，但脂肪较少、味道清爽，肉质柔嫩。别名“ビワハラミ”。进口货叫 hanging tender，美国产的是从脊椎到腰椎、环绕内脏的一段约18厘米、又圆又粗的肌肉，虽然归为内脏，却被视为与正肉同等的食材。有时也不加区分，直接叫“ハラミ”。"
+      en: "Part of the same diaphragm as harami and almost identical in looks, but leaner and milder, with a tender texture; it is also called biwa-harami. Imported, it is the hanging tender: a thick, round muscle of about 18 cm that runs from the spine to the lumbar vertebrae around the organs, classed as offal but valued like muscle meat. It is sometimes simply sold as harami."
+    sources:
+      - title: "農林水産省 aff 2020年9月号「牛の部位図鑑」（監修：日本食肉消費総合センター）"
+        url: "https://www.maff.go.jp/j/pr/aff/2009/pdf/aff2009_02_poster01.pdf"
+      - title: "農林水産省 aff 2016年8月号 特集2「牛内臓の部位図鑑」"
+        url: "https://www.maff.go.jp/j/pr/aff/1608/spe2_03.html"
+      - title: "日本食肉消費総合センター「部位別料理 -牛-」（ハラミ・サガリ）"
+        url: "https://www.jmi.or.jp/recipe/apart/cooking_apart1.html"
+      - title: "コトバンク「さがり」（栄養・生化学辞典）"
+        url: "https://kotobank.jp/word/%E3%81%95%E3%81%8C%E3%82%8A-176938"
+      - title: "米国食肉輸出連合会（USMEF）「YAKINIKU GUIDE BOOK」（ハンギングテンダー）"
+        url: "https://americanmeat.jp/trd/publications/book/pdf/yakiniku2014.pdf"
+
+  - id: hire
+    ja: ヒレ
+    kana: ひれ
+    romaji: hire
+    mean:
+      ja: "牛のヒレ肉"
+      zh: "牛里脊（牛柳、菲力）"
+      en: "Tenderloin (fillet)"
+    part:
+      ja: "腰の背骨（腰椎）の内側に、左右1本ずつある細長い肉"
+      zh: "腰椎内侧左右各一条的细长肌肉"
+      en: "A long, narrow muscle on the inner side of the lumbar spine, one on each side"
+    note:
+      ja: "フランス語の filet に由来し、関西では「ヘレ」とも呼び、村井弦斎『食道楽』（1903年）にすでに用例がある。脂肪が少なく非常に柔らかく、和牛ヒレ（赤肉・生）の脂質は100gあたり15.0gと、和牛リブロース（脂身つき・生）56.5gの約4分の1。牛部分肉取引規格では、片側1本のヒレを3.5kg以上なら「L」、未満なら「S」と区分する。中心部の「シャトーブリアン」は牛一頭から約600gしか取れず、名は19世紀フランスの作家・政治家シャトーブリアンにちなみ、彼の料理人が考案したとも、彼の好物だったからともいう。"
+      zh: "来自法语 filet，关西也叫“ヘレ”，明治时期村井弦斋的小说《食道乐》（1903年）里已有用例。脂肪少、极嫩：和牛菲力（瘦肉、生）每100克脂质15.0克，约为和牛眼肉（带脂、生）56.5克的四分之一。按日本《牛分割肉交易规格》，单侧一条3.5公斤以上为“L”，不足为“S”。中心部分叫“シャトーブリアン”（夏多布里昂），一头牛只出约600克，名字来自19世纪法国作家、政治家夏多布里昂，一说是他的厨师所创，一说因为他最爱吃。"
+      en: "From French filet, also called here (ヘレ) in Kansai; it already appears in Murai Gensai’s novel Kuidōraku (1903). Lean and very tender: raw wagyu fillet has 15.0 g of fat per 100 g, about a quarter of the 56.5 g in wagyu rib loin with its fat. The wholesale beef standard grades a single fillet from one side as L at 3.5 kg or more and S below that. The centre section, the chateaubriand, yields only about 600 g per animal; it is named after the 19th-century French writer and statesman Chateaubriand, either because his cook devised the dish or because it was his favourite."
+    sources:
+      - title: "コトバンク「ヒレ」（デジタル大辞泉・精選版 日本国語大辞典・世界の料理がわかる辞典）"
+        url: "https://kotobank.jp/word/%E3%81%B2%E3%82%8C-1583003"
+      - title: "日本食肉消費総合センター「部位別料理 -牛-」（関西名）"
+        url: "https://www.jmi.or.jp/recipe/apart/cooking_apart1.html"
+      - title: "農林水産省 aff 2020年9月号「牛の部位図鑑」（監修：日本食肉消費総合センター）"
+        url: "https://www.maff.go.jp/j/pr/aff/2009/pdf/aff2009_02_poster01.pdf"
+      - title: "文部科学省「日本食品標準成分表（八訂）増補2023年」（うし［和牛肉］ヒレ・リブロース）"
+        url: "https://www.mext.go.jp/a_menu/syokuhinseibun/mext_00001.html"
+      - title: "日本食肉格付協会「牛部分肉取引規格」（別表3 重量区分）"
+        url: "https://www.jmga.or.jp/standard/beef-partial/"
+      - title: "農林水産省 aff 2020年9月号「牛、豚、鶏の部位を徹底解説！お肉丸わかり図鑑」"
+        url: "https://www.maff.go.jp/j/pr/aff/2009/spe1_02.html"
+      - title: "コトバンク「シャトーブリアン」（デジタル大辞泉・精選版 日本国語大辞典）"
+        url: "https://kotobank.jp/word/%E3%81%97%E3%82%84%E3%81%A8%E3%83%BC%E3%81%B6%E3%82%8A%E3%81%82%E3%82%93-3154255"
+      - title: "農畜産業振興機構「【まめ知識】牛肉の「トウガラシ」「ザブトン」「ネクタイ」ってなあに？」（2019年）"
+        url: "https://www.alic.go.jp/koho/kikaku03_001173.html"
+
+  - id: misuji
+    ja: ミスジ
+    kana: みすじ
+    romaji: misuji
+    mean:
+      ja: "牛の肩甲骨まわりの肉"
+      zh: "板腱（牛肩胛肉）"
+      en: "Top blade (oyster blade)"
+    part:
+      ja: "かた（うで）の一部で、肩甲骨に沿う筋肉"
+      zh: "肩部（前腿上方）的一部分，贴着肩胛骨的肌肉"
+      en: "Part of the shoulder clod (kata): the muscle lying along the shoulder blade"
+    note:
+      ja: "牛一頭から約3kgしか取れない希少部位で、米国では「トップブレード」と呼ばれる。肩まわりはよく動くため硬い部位が多いが、ミスジはあまり動かないので霜降りが入りやすく柔らかく、脂の口溶けがよい。肉塊の中心に太いスジが1本通り、先端側ほど霜降りが濃い。水分が少なく、焼きすぎるとパサつきやすい。"
+      zh: "一头牛只能取约3公斤的稀有部位，美国叫 top blade。肩部肌肉活动多，大多偏硬，而这块很少活动，所以容易长出雪花，口感柔嫩，油脂入口即化。中间贯穿一条粗筋，越靠前端雪花越密。含水量少，烤过头容易发柴。"
+      en: "A rare cut—only about 3 kg per animal—known in the US as the top blade. Most shoulder muscles work hard and are tough, but this one moves little, so it marbles readily and stays tender, with fat that melts easily. A thick sinew runs through the centre, and the marbling is heaviest at the tip end. It holds little moisture and dries out quickly if overcooked."
+    sources:
+      - title: "農林水産省 aff 2020年9月号「牛、豚、鶏の部位を徹底解説！お肉丸わかり図鑑」"
+        url: "https://www.maff.go.jp/j/pr/aff/2009/spe1_02.html"
+      - title: "米国食肉輸出連合会（USMEF）「U.S. Meat New Alternative Cuts」（トップブレードマッスル）"
+        url: "https://americanmeat.jp/trd/publications/book/pdf/new_cut_guide_2026.pdf"
+      - title: "米国食肉輸出連合会（USMEF）「赤身ステーキを強化！ショルダークロッドの活用」"
+        url: "https://americanmeat.jp/trd/publications/book/pdf/shoulder_clod.pdf"
+
+  - id: zabuton
+    ja: ザブトン
+    kana: ざぶとん
+    romaji: zabuton
+    mean:
+      ja: "牛の肩ロースの一部"
+      zh: "上脑里的雪花块（座垫肉）"
+      en: "Chuck flap"
+    part:
+      ja: "かたロースのうち、あばら骨側の部分"
+      zh: "上脑（かたロース）中靠肋骨的一侧"
+      en: "The rib side of the chuck roll (kata-rōsu)"
+    note:
+      ja: "四角い形に切り出せることから座布団にたとえた名。かたロースの中でもしっかり霜降りが入る部位で、焼肉店では「特上ロース」や「特上カルビ」として出されることもある。米国産ではかたロース（チャックアイロール）を「カタロース芯」と「チャックフラップ（ザブトン）」などに分割し、ザブトンは全体に均一にサシが入るが、途中で繊維の向きが横から縦に変わる。"
+      zh: "因为能切成方方正正的一块，像日本的坐垫（座布団）而得名。它是上脑里雪花分布得很充分的部位，烤肉店有时把它当作“特上ロース”或“特上カルビ”来卖。美国产上脑卷（chuck eye roll）会分成“上脑芯”和 chuck flap（即ザブトン）等块；这块雪花分布均匀，但肌纤维的走向中途由横转竖。"
+      en: "Named after the square floor cushion (zabuton), because it can be cut out as a neat square block. A heavily marbled part of the chuck roll, it is sometimes served as tokujō rōsu or tokujō karubi (premium loin or kalbi). US packers split the chuck eye roll into the eye (kata-rōsu shin) and the chuck flap, i.e. the zabuton, which is evenly marbled but has a grain that turns from horizontal to vertical partway along."
+    sources:
+      - title: "農畜産業振興機構「【まめ知識】牛肉の「トウガラシ」「ザブトン」「ネクタイ」ってなあに？」（2019年）"
+        url: "https://www.alic.go.jp/koho/kikaku03_001173.html"
+      - title: "農林水産省 aff 2020年9月号「牛の部位図鑑」（監修：日本食肉消費総合センター）"
+        url: "https://www.maff.go.jp/j/pr/aff/2009/pdf/aff2009_02_poster01.pdf"
+      - title: "米国食肉輸出連合会（USMEF）「U.S. Meat New Alternative Cuts」（チャックアイロール）"
+        url: "https://americanmeat.jp/trd/publications/book/pdf/new_cut_guide_2026.pdf"
+      - title: "米国食肉輸出連合会（USMEF）「YAKINIKU GUIDE BOOK」（チャックフラップ）"
+        url: "https://americanmeat.jp/trd/publications/book/pdf/yakiniku2014.pdf"
+
+  - id: ichibo
+    ja: イチボ
+    kana: いちぼ
+    romaji: ichibo
+    mean:
+      ja: "牛の尻（腰骨付近）の肉"
+      zh: "牛臀肉（近腰骨处）"
+      en: "Rump cap"
+    part:
+      ja: "ももの臀部、腰骨付近の部分。部分肉では「らんいち」に含まれる"
+      zh: "后腿的臀部、腰骨附近；在分割肉规格里属于“らんいち”"
+      en: "The buttock end of the hindquarter, near the hip bone; part of the ran-ichi primal"
+    note:
+      ja: "英語の aitchbone（牛の腰骨）に由来し、村井弦斎『食道楽』（1903年）に「俗に牛肉屋でイチボと云ふのは腰の三角肉で」とある。部分によって肉質が違い、サーロイン側は霜降りが多く柔らかいため焼肉に向き、外もも側は筋肉質で硬めだが赤身と霜降りのバランスがよい。もも肉なのにサーロインに似た味わいで「もも肉のロース」とも呼ばれ、米国のトップサーロインキャップ（クーレット）はイチボの一部にあたる。なお日本食肉消費総合センターは、らんぷの関西での呼び名として「らむ」「いちぼ」を挙げている。"
+      zh: "名称来自英语 aitchbone（牛的腰骨）；1903年村井弦斋的《食道乐》里已写道：“肉铺俗称的イチボ，就是腰部的三角肉。”不同位置肉质不同：靠西冷一侧雪花多、柔软，适合烤肉；靠外侧后腿（そともも）一侧肌肉多、偏硬，但瘦肉和雪花比例均衡。虽是后腿肉，味道却像西冷，被称为“后腿里的ロース”；美国的 top sirloin cap（coulotte）相当于它的一部分。另据日本食肉消费综合中心的资料，关西把臀腰肉“らんぷ”叫作“らむ”或“いちぼ”。"
+      en: "From English “aitchbone”, the rump bone; Murai Gensai’s Kuidōraku (1903) already notes that “what butchers commonly call ichibo is the triangular meat of the hip”. Texture varies across the cut: the sirloin side is well marbled and tender, ideal for yakiniku, while the outside-round side is more muscular and firmer, with a good balance of lean and marbling. Though it is hindquarter (momo) meat it tastes like sirloin, earning the nickname “the rōsu of the round”, and the American top sirloin cap (coulotte) is part of it. The Japan Meat Information Service Center lists ramu and ichibo as Kansai names for the whole rump (ranpu)."
+    sources:
+      - title: "コトバンク「イチボ」（デジタル大辞泉・精選版 日本国語大辞典）"
+        url: "https://kotobank.jp/word/%E3%81%84%E3%81%A1%E3%81%BC-3207198"
+      - title: "農林水産省 aff 2020年9月号「牛、豚、鶏の部位を徹底解説！お肉丸わかり図鑑」"
+        url: "https://www.maff.go.jp/j/pr/aff/2009/spe1_02.html"
+      - title: "農林水産省 aff 2016年8月号 特集2「牛肉の部位図鑑」"
+        url: "https://www.maff.go.jp/j/pr/aff/1608/spe2_02.html"
+      - title: "農林水産省 aff 2020年9月号「牛の部位図鑑」（監修：日本食肉消費総合センター）"
+        url: "https://www.maff.go.jp/j/pr/aff/2009/pdf/aff2009_02_poster01.pdf"
+      - title: "米国食肉輸出連合会（USMEF）「U.S. Meat New Alternative Cuts」（トップサーロインバットキャップ）"
+        url: "https://americanmeat.jp/trd/publications/book/pdf/new_cut_guide_2026.pdf"
+      - title: "日本食肉消費総合センター「部位別料理 -牛-」（関西名）"
+        url: "https://www.jmi.or.jp/recipe/apart/cooking_apart1.html"
+      - title: "日本食肉格付協会「牛部分肉取引規格」"
+        url: "https://www.jmga.or.jp/standard/beef-partial/"
+
+  - id: sankaku-bara
+    ja: 三角バラ
+    ruby: "{三角|さんかく}バラ"
+    kana: さんかくばら
+    romaji: sankaku bara
+    mean:
+      ja: "かたばらの三角形の部分"
+      zh: "前腹三角五花"
+      en: "Chuck short rib"
+    part:
+      ja: "かたばら（第6肋骨より前のばら）の一部"
+      zh: "前腹五花（かたばら，第6肋骨以前的五花）的一部分"
+      en: "Part of the forequarter belly (kata-bara), in front of the 6th rib"
+    note:
+      ja: "かたばらから三角形に切り出されることからの名で、ばら肉の中でも最上級の肉質とされる。きめが細かく美しい霜降りが入り、脂の甘みと赤身のうま味を同時に味わえる。米国産では第1〜5肋骨の間の肩バラからブリスケットを外した三角形の部分が「チャックリブ」として流通し、霜降りのカルビ用に使われる。"
+      zh: "因从前腹五花（かたばら）上切成三角形而得名，被认为是五花里肉质最好的部分。肌理细腻、雪花漂亮，能同时吃到脂肪的甘甜和瘦肉的鲜味。美国产的对应部位叫 chuck rib：在第1至第5肋骨之间的肩部五花上去掉牛胸（brisket）后剩下的三角形块，多用来做雪花“カルビ”。"
+      en: "Named for the triangle in which it is cut from the forequarter belly, it is rated the finest meat of the whole belly. Fine-grained and beautifully marbled, it delivers sweet fat and savoury lean in the same bite. The US equivalent, “chuck rib”, is the triangular piece left when the brisket is removed from the shoulder belly between ribs 1 and 5, and is cut for marbled karubi."
+    sources:
+      - title: "農林水産省 aff 2016年8月号 特集2「牛肉の部位図鑑」"
+        url: "https://www.maff.go.jp/j/pr/aff/1608/spe2_02.html"
+      - title: "農林水産省 aff 2020年9月号「牛の部位図鑑」（監修：日本食肉消費総合センター）"
+        url: "https://www.maff.go.jp/j/pr/aff/2009/pdf/aff2009_02_poster01.pdf"
+      - title: "日本食肉格付協会「牛部分肉取引規格」（別表1 分割・整形方法）"
+        url: "https://www.jmga.or.jp/standard/beef-partial/"
+      - title: "米国食肉輸出連合会（USMEF）「YAKINIKU GUIDE BOOK」（チャックリブ）"
+        url: "https://americanmeat.jp/trd/publications/book/pdf/yakiniku2014.pdf"

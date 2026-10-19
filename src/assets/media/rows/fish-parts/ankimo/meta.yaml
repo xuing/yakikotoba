@@ -1,0 +1,11 @@
+- file: ankimo.jpg
+  kind: cooked
+  caption:
+    ja: "あん肝"
+    zh: "鮟鱇鱼肝"
+    en: "Ankimo (monkfish liver)"
+  source:
+    title: "Ankimo2.jpg（Wikimedia Commons）"
+    url: "https://commons.wikimedia.org/wiki/File:Ankimo2.jpg"
+    license: "CC BY 2.0"
+    author: "takaokun"

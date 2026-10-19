@@ -1,0 +1,412 @@
+ja: 叙々苑
+ruby: "{叙々苑|じょじょえん}"
+kana: じょじょえん
+romaji: Jojoen
+cuisine: yakiniku
+url: "https://www.jojoen.co.jp/"
+note:
+  ja: 1976年4月に東京・六本木で創業した焼肉チェーン。「タン塩焼」と「上カルビ焼」は自店が発祥だとしている。
+  zh: 1976年4月创立于东京六本木的烤肉连锁（中文官网写作“叙叙苑”），自称「盐烤牛舌」和「上等五花」都起源于本店。
+  en: Yakiniku chain founded in Roppongi, Tokyo, in April 1976; it says salted tongue (tanshio) and premium karubi (jō karubi) were both born there.
+items:
+  - id: tanshio-yaki
+    ja: タン塩焼
+    ruby: タン{塩焼|しおやき}
+    kana: たんしおやき
+    romaji: tanshio-yaki
+    rows: [beef/tan, yakiniku-words/shio]
+    mean:
+      ja: 牛タンの塩焼。初めは塩・コショウだけで、客の要望でレモンだれで食べる形になったと同社は説明
+      zh: 盐烤牛舌；据叙々苑说，起初只撒盐和胡椒，后来应客人要求改成蘸柠檬汁吃
+      en: Salt-grilled tongue; Jojoen says it was first served with just salt and pepper, and lemon sauce came at a customer's request
+    signature: true
+    image: tanshio-yaki.jpg
+  - id: jo-negi-tanshio-yaki
+    ja: 上ネギタン塩焼
+    ruby: "{上|じょう}ネギタン{塩焼|しおやき}"
+    kana: じょうねぎたんしおやき
+    romaji: jō negi tanshio-yaki
+    rows: [beef/tan, yakiniku-words/jo, yakiniku-words/shio]
+    mean:
+      ja: ネギをのせた上ランクのタン塩焼
+      zh: 铺葱的上等盐烤牛舌
+      en: Premium salt-grilled tongue topped with leek
+    image: jo-negi-tanshio-yaki.jpg
+  - id: jo-tan-atsugiri-shioyaki
+    ja: 上タン厚切塩焼
+    ruby: "{上|じょう}タン{厚切|あつぎり}{塩焼|しおやき}"
+    kana: じょうたんあつぎりしおやき
+    romaji: jō tan atsugiri shioyaki
+    rows: [beef/tan, yakiniku-words/jo, yakiniku-words/atsugiri, yakiniku-words/shio]
+    mean:
+      ja: 上タンの厚切り塩焼。「厚切り」の「り」を省いて「厚切」と書く
+      zh: 厚切上等盐烤牛舌；菜单把「厚切り」写成「厚切」，省掉了「り」
+      en: Thick-cut premium salted tongue; the menu writes 厚切, dropping the り of 厚切り
+  - id: tokusen-tanshio-yaki
+    ja: 特選タン塩焼
+    ruby: "{特選|とくせん}タン{塩焼|しおやき}"
+    kana: とくせんたんしおやき
+    romaji: tokusen tanshio-yaki
+    rows: [beef/tan, yakiniku-words/tokujo, yakiniku-words/shio]
+    mean:
+      ja: タン塩焼の最上ランク。叙々苑は「特上」ではなく「特選」と書く
+      zh: 盐烤牛舌的最高档；叙々苑写「特选」而不写「特上」
+      en: Top-grade salted tongue; Jojoen writes tokusen where others write tokujō
+  - id: tsubozuke-karubi-yaki
+    ja: 壺漬カルビ焼
+    ruby: "{壺漬|つぼづけ}カルビ{焼|やき}"
+    kana: つぼづけかるびやき
+    romaji: tsubozuke karubi-yaki
+    rows: [beef/karubi]
+    mean:
+      ja: 漬け込んで壺ごと出すカルビ
+      zh: 腌渍后连坛端上的牛五花
+      en: Marinated karubi brought to the table in its crock
+    image: tsubozuke-karubi-yaki.jpg
+  - id: karubi-yaki
+    ja: カルビ焼
+    ruby: カルビ{焼|やき}
+    kana: かるびやき
+    romaji: karubi-yaki
+    rows: [beef/karubi]
+    mean:
+      ja: 並のカルビ。上カルビ焼・特選カルビ焼と合わせて3段階
+      zh: 普通档五花，与「上」「特选」共三档
+      en: Standard karubi, the first of three grades (then jō, then tokusen)
+  - id: jo-karubi-yaki
+    ja: 上カルビ焼
+    ruby: "{上|じょう}カルビ{焼|やき}"
+    kana: じょうかるびやき
+    romaji: jō karubi-yaki
+    rows: [beef/karubi, yakiniku-words/jo]
+    mean:
+      ja: 叙々苑が発祥とする上カルビ。「良い部分だけを選び脂を切ったカルビを」という客の注文から独立したメニューになったという
+      zh: 叙々苑称「上五花」源于本店：起于客人要「只挑好的部位并去掉脂肪」的五花，后来成为独立菜品
+      en: "Jojoen says jō karubi began here: a request for only the best parts with the fat trimmed became its own menu item"
+    signature: true
+    image: jo-karubi-yaki.jpg
+  - id: tokusen-karubi-yaki
+    ja: 特選カルビ焼
+    ruby: "{特選|とくせん}カルビ{焼|やき}"
+    kana: とくせんかるびやき
+    romaji: tokusen karubi-yaki
+    rows: [beef/karubi, yakiniku-words/tokujo]
+    mean:
+      ja: カルビの最上ランク。メニューに「上」「特選」とランクを付けたのも叙々苑が最初だという
+      zh: 五花的最高档；叙々苑还称在菜单上用「上」「特选」分级也是本店首创
+      en: Top-grade karubi; Jojoen also claims it was the first to grade menu items as jō and tokusen
+  - id: karubi-santen-mori
+    ja: カルビ三点盛
+    ruby: カルビ{三点|さんてん}{盛|もり}
+    kana: かるびさんてんもり
+    romaji: karubi santen-mori
+    rows: [beef/karubi, yakiniku-words/moriawase]
+    mean:
+      ja: カルビ焼・上カルビ焼・特選カルビ焼の盛合せ
+      zh: 普通、上等、特选三档五花的拼盘
+      en: The three karubi grades on one plate
+  - id: tokusen-sudare-kata-rosu-yaki
+    ja: 特選すだれ肩ロース焼
+    ruby: "{特選|とくせん}すだれ{肩|かた}ロース{焼|やき}"
+    kana: とくせんすだれかたろーすやき
+    romaji: tokusen sudare kata rōsu-yaki
+    rows: [beef/rosu]
+    mean:
+      ja: すだれ（簾）のように細かく切り込みを入れた肩ロース
+      zh: 像竹帘一样划满细刀口的肩里脊
+      en: Chuck roll scored with fine cuts like a bamboo blind (sudare)
+    image: tokusen-sudare-kata-rosu-yaki.jpg
+  - id: akami-rosu-yaki
+    ja: 赤身ロース焼
+    ruby: "{赤身|あかみ}ロース{焼|やき}"
+    kana: あかみろーすやき
+    romaji: akami rōsu-yaki
+    rows: [beef/rosu]
+    mean:
+      ja: 脂の少ない赤身のロース
+      zh: 脂肪少的瘦里脊
+      en: Lean loin
+    image: akami-rosu-yaki.jpg
+  - id: jo-rosu-yaki
+    ja: 上ロース焼
+    ruby: "{上|じょう}ロース{焼|やき}"
+    kana: じょうろーすやき
+    romaji: jō rōsu-yaki
+    rows: [beef/rosu, yakiniku-words/jo]
+    mean:
+      ja: 上ランクのロース
+      zh: 上等里脊
+      en: Premium loin
+  - id: kata-rosu-atsugiri-yaki
+    ja: 肩ロース厚切焼
+    ruby: "{肩|かた}ロース{厚切|あつぎり}{焼|やき}"
+    kana: かたろーすあつぎりやき
+    romaji: kata rōsu atsugiri-yaki
+    rows: [beef/rosu, yakiniku-words/atsugiri]
+    mean:
+      ja: 肩ロースの厚切り
+      zh: 厚切肩里脊
+      en: Thick-cut chuck roll
+  - id: tokusen-sirloin-yaki
+    ja: 特選サーロイン焼
+    ruby: "{特選|とくせん}サーロイン{焼|やき}"
+    kana: とくせんさーろいんやき
+    romaji: tokusen sāroin-yaki
+    rows: [beef/rosu]
+    mean:
+      ja: サーロイン（ロースの腰側の部分）
+      zh: 西冷（里脊靠腰的部分）
+      en: Sirloin, the rear (lumbar) part of the loin
+  - id: jo-hire-yaki
+    ja: 上ヒレ焼
+    ruby: "{上|じょう}ヒレ{焼|やき}"
+    kana: じょうひれやき
+    romaji: jō hire-yaki
+    rows: [beef/hire, yakiniku-words/jo]
+    mean:
+      ja: 上ランクのヒレ。並の「ヒレ焼」もある
+      zh: 上等菲力；也有普通档「菲力烧」
+      en: Premium fillet; a standard fillet is also listed
+  - id: tokusen-chateaubriand
+    ja: 特選シャトーブリアン
+    ruby: "{特選|とくせん}シャトーブリアン"
+    kana: とくせんしゃとーぶりあん
+    romaji: tokusen shatōburian
+    rows: [beef/hire]
+    mean:
+      ja: ヒレの中心部（シャトーブリアン）。160g
+      zh: 菲力中心部位「夏多布里昂」，160克
+      en: Chateaubriand, the centre of the fillet; 160 g
+  - id: harami-yaki
+    ja: ハラミ焼
+    ruby: ハラミ{焼|やき}
+    kana: はらみやき
+    romaji: harami-yaki
+    rows: [beef/harami]
+    mean:
+      ja: 牛の横隔膜。壺漬にした「壺漬ハラミ焼」もある
+      zh: 牛横膈膜肉；也有坛腌版「壶渍横膈膜」
+      en: Beef skirt (diaphragm); a crock-marinated version is also listed
+  - id: gensen-santen-mori
+    ja: 厳選三点盛
+    ruby: "{厳選|げんせん}{三点|さんてん}{盛|もり}"
+    kana: げんせんさんてんもり
+    romaji: gensen santen-mori
+    rows: [yakiniku-words/moriawase]
+    mean:
+      ja: 特選カルビ焼・上ヒレ焼・特選サーロイン焼の盛合せ
+      zh: 特选五花、上等菲力、特选西冷的拼盘
+      en: Tokusen karubi, jō fillet and tokusen sirloin on one plate
+  - id: jo-mino-yaki
+    ja: 上ミノ焼
+    ruby: "{上|じょう}ミノ{焼|やき}"
+    kana: じょうみのやき
+    romaji: jō mino-yaki
+    rows: [horumon/mino, yakiniku-words/jo]
+    mean:
+      ja: 牛の第一胃（ミノ）の上ランク。ネギをのせた辛口塩味もある
+      zh: 上等牛瘤胃（第一胃）；也有铺葱的辣味盐味版
+      en: Premium rumen (first stomach); a leek-topped spicy salt version is also listed
+  - id: jo-horumon-yaki
+    ja: 上ホルモン焼
+    ruby: "{上|じょう}ホルモン{焼|やき}"
+    kana: じょうほるもんやき
+    romaji: jō horumon-yaki
+    rows: [horumon/horumon, yakiniku-words/jo]
+    mean:
+      ja: 上ランクのホルモン。ネギをのせた辛口塩味もある
+      zh: 上等内脏；也有铺葱的辣味盐味版
+      en: Premium offal; a leek-topped spicy salt version is also listed
+  - id: jo-reba-yaki
+    ja: 上レバー焼
+    ruby: "{上|じょう}レバー{焼|やき}"
+    kana: じょうればーやき
+    romaji: jō rebā-yaki
+    rows: [horumon/reba, yakiniku-words/jo]
+    mean:
+      ja: 上ランクのレバー。ごま塩だれを添えた厚切りの塩焼もある
+      zh: 上等肝；也有配芝麻盐酱的厚切盐烤版
+      en: Premium liver; a thick-cut salt-grilled version with sesame-salt sauce is also listed
+  - id: horumon-santen-mori
+    ja: ホルモン三点盛
+    ruby: ホルモン{三点|さんてん}{盛|もり}
+    kana: ほるもんさんてんもり
+    romaji: horumon santen-mori
+    rows: [horumon/horumon, yakiniku-words/moriawase]
+    mean:
+      ja: 上ミノ焼・上ホルモン焼・上レバー焼の盛合せ
+      zh: 上等毛肚、上等内脏、上等肝的拼盘
+      en: Jō mino, jō horumon and jō liver on one plate
+  - id: shiro-senmai
+    ja: 白センマイ
+    ruby: "{白|しろ}センマイ"
+    kana: しろせんまい
+    romaji: shiro senmai
+    rows: [horumon/senmai]
+    mean:
+      ja: 黒ずんだ薄皮をはがした白いセンマイ（第三胃）。一品料理として出る
+      zh: 剥掉黑色薄皮的白色牛百叶（第三胃），作为单品菜
+      en: Omasum (third stomach) with its dark skin peeled off, served as a side dish
+  - id: tontoro-yaki
+    ja: 豚トロ焼
+    ruby: "{豚|とん}トロ{焼|やき}"
+    kana: とんとろやき
+    romaji: tontoro-yaki
+    rows: [pork/tontoro]
+    mean:
+      ja: 豚トロ（豚の首まわりの脂ののった肉）
+      zh: 猪颈肉（猪脖子周围带脂肪的肉）
+      en: Pork toro, fatty meat from around the neck
+  - id: butabara-yaki
+    ja: 豚バラ焼
+    ruby: "{豚|ぶた}バラ{焼|やき}"
+    kana: ぶたばらやき
+    romaji: butabara-yaki
+    rows: [pork/bara]
+    mean:
+      ja: 豚のバラ肉
+      zh: 猪五花
+      en: Pork belly
+  - id: tori-momo-yaki
+    ja: 鶏モモ焼
+    ruby: "{鶏|とり}モモ{焼|やき}"
+    kana: とりももやき
+    romaji: tori momo-yaki
+    rows: [chicken/momo]
+    mean:
+      ja: 鶏のもも肉。「モモ」とカタカナで書く
+      zh: 鸡腿肉；这里用片假名写「モモ」
+      en: Chicken thigh, written in katakana (モモ) here
+  - id: ebi-yaki
+    ja: エビ焼
+    ruby: エビ{焼|やき}
+    kana: えびやき
+    romaji: ebi-yaki
+    rows: [neta/ebi]
+    mean:
+      ja: ブラックタイガー（エビ）を塩だれで焼く。車エビ焼もある
+      zh: 盐味酱烤黑虎虾；也有车虾
+      en: Black tiger prawn grilled with salt sauce; kuruma prawn is also listed
+  - id: hotate-yaki
+    ja: ホタテ焼
+    ruby: ホタテ{焼|やき}
+    kana: ほたてやき
+    romaji: hotate-yaki
+    rows: [neta/hotate]
+    mean:
+      ja: ホタテを塩だれで焼く
+      zh: 盐味酱烤扇贝
+      en: Scallop grilled with salt sauce
+  - id: zuwaigani-yaki
+    ja: ズワイ蟹焼
+    ruby: ズワイ{蟹|がに}{焼|やき}
+    kana: ずわいがにやき
+    romaji: zuwaigani-yaki
+    rows: [neta/kani]
+    mean:
+      ja: ズワイガニを塩だれで焼く。タラバ蟹焼もある
+      zh: 盐味酱烤松叶蟹（雪蟹）；也有帝王蟹
+      en: Snow crab grilled with salt sauce; king crab is also listed
+  - id: kimuchi
+    ja: キムチ
+    kana: きむち
+    romaji: kimuchi
+    rows: [yakiniku-side/kimuchi]
+    mean:
+      ja: 白菜のキムチ。漬物は叙々苑フードファクトリーでほぼ手作業で作るという
+      zh: 白菜泡菜；据叙々苑说，泡菜等腌菜在自家食品工厂几乎全靠手工制作
+      en: Napa-cabbage kimchi; Jojoen says its pickles are made almost entirely by hand at its own food factory
+  - id: kimuchi-moriawase
+    ja: キムチ盛合せ
+    ruby: キムチ{盛|もり}{合|あわ}せ
+    kana: きむちもりあわせ
+    romaji: kimuchi moriawase
+    rows: [yakiniku-side/kimuchi, yakiniku-words/moriawase]
+    mean:
+      ja: キムチの盛合せ（小・中・大）。「盛り合わせ」を「盛合せ」と書く
+      zh: 泡菜拼盘（小、中、大）；把「盛り合わせ」写成「盛合せ」
+      en: Assorted kimchi (S/M/L); written 盛合せ, a shortened spelling of 盛り合わせ
+    image: kimuchi-moriawase.jpg
+  - id: namuru
+    ja: ナムル
+    kana: なむる
+    romaji: namuru
+    rows: [yakiniku-side/namuru]
+    mean:
+      ja: 一品料理のナムル
+      zh: 韩式凉拌菜（单品）
+      en: Namul, listed as a side dish
+  - id: sanchu
+    ja: サンチュ
+    kana: さんちゅ
+    romaji: sanchu
+    rows: [yakiniku-side/sanchu]
+    mean:
+      ja: 肉を包む葉。サンチュ・ネギごま和え・ニンニクチップの「おともセット」もある
+      zh: 包肉用生菜；也有生菜、芝麻拌葱、蒜片组成的「搭配套餐」
+      en: Leaves for wrapping meat; the "otomo set" adds sesame leek and garlic chips
+  - id: ginban-reimen
+    ja: 銀盤冷麺
+    ruby: "{銀盤|ぎんばん}{冷麺|れいめん}"
+    kana: ぎんばんれいめん
+    romaji: ginban reimen
+    rows: [yakiniku-side/reimen]
+    mean:
+      ja: 冷麺。麺はそば粉麺か小麦粉麺を選ぶ。小盛もある
+      zh: 冷面，面条可选荞麦面或小麦面，有小份
+      en: Cold noodles; choose buckwheat or wheat noodles; small size available
+    image: ginban-reimen.jpg
+  - id: ishiyaki-bibinba
+    ja: 石焼ビビンバ
+    ruby: "{石焼|いしやき}ビビンバ"
+    kana: いしやきびびんば
+    romaji: ishiyaki bibinba
+    rows: [yakiniku-side/bibinba]
+    mean:
+      ja: 石鍋のビビンバ。スープ付きで、小盛もある
+      zh: 石锅拌饭，附汤，有小份
+      en: Stone-pot bibimbap with soup; small size available
+    image: ishiyaki-bibinba.jpg
+  - id: karubi-kuppa
+    ja: カルビクッパ
+    kana: かるびくっぱ
+    romaji: karubi kuppa
+    rows: [yakiniku-side/kuppa]
+    mean:
+      ja: カルビのクッパ。野菜・ユッケジャン（辛口）・コムタンのクッパもある
+      zh: 牛五花汤泡饭；也有蔬菜、辣牛肉汤（辣）、牛骨汤口味
+      en: Karubi rice soup; vegetable, spicy yukgaejang and gomtang (beef-bone) versions are also listed
+  - id: raisu
+    ja: ライス
+    kana: らいす
+    romaji: raisu
+    rows: [yakiniku-side/rice]
+    mean:
+      ja: ご飯。小盛もある
+      zh: 米饭，有小份
+      en: Plain rice; small size available
+  - id: yakiniku-no-tare
+    ja: 焼肉のたれ
+    ruby: "{焼肉|やきにく}のたれ"
+    kana: やきにくのたれ
+    romaji: yakiniku no tare
+    rows: [yakiniku-words/tare]
+    mean:
+      ja: 持ち帰り用に売る市販のたれ。同社は焼肉のたれの基本を「すき焼きの割り下にゴマ油を加えたもの」と説明
+      zh: 外带零售的瓶装烤肉酱；叙々苑称烤肉酱的基本是「寿喜烧酱汁加芝麻油」
+      en: Bottled sauce sold to take home; Jojoen describes basic yakiniku tare as sukiyaki sauce plus sesame oil
+sources:
+  - title: 叙々苑 六本木本店 店舗情報（アラカルト・ランチ・テイクアウトのメニュー）
+    url: "https://www.jojoen.co.jp/shop/jojoen/roppongi/"
+  - title: 叙々苑 会社概要・沿革
+    url: "https://www.jojoen.co.jp/corp/"
+  - title: 叙々苑のこだわり 第七回『お客さまへの想いが生んだこだわりのメニュー』
+    url: "https://www.jojoen.co.jp/guides/kodawari07/"
+  - title: 叙々苑のこだわり 第五回『焼肉のたれ のこだわり』
+    url: "https://www.jojoen.co.jp/guides/kodawari05/"
+  - title: 叙々苑のこだわり 第四回『漬物のこだわり』
+    url: "https://www.jojoen.co.jp/guides/kodawari04/"
+  - title: 叙々苑 簡体中文サイト（烤肉 叙叙苑）
+    url: "https://www.jojoen.co.jp/cn/"
+  - title: デリッシュキッチン センマイとは？（白センマイと黒センマイ）
+    url: "https://delishkitchen.tv/articles/1819"

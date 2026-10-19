@@ -1,0 +1,328 @@
+ja: 焼肉きんぐ
+ruby: "{焼肉|やきにく}きんぐ"
+kana: やきにくきんぐ
+romaji: Yakiniku Kingu
+cuisine: yakiniku
+url: "https://www.yakiniku-king.jp/"
+note:
+  ja: 物語コーポレーションが運営する焼肉食べ放題専門店（350店舗以上）。食べ放題は全コース100分で、タッチパネルで注文すると席まで運ばれる。単品注文もできる。
+  zh: 物语公司（Monogatari Corporation）运营的烤肉吃到饱专门店（350家以上）。所有吃到饱套餐都是100分钟，用触摸屏点单，店员送到桌边；也可以单点。
+  en: "All-you-can-eat yakiniku specialist run by Monogatari Corporation (350+ branches): every course lasts 100 minutes, you order on a touch panel and staff bring it to the table; à la carte ordering is also possible."
+items:
+  - id: king-karubi
+    ja: きんぐカルビ
+    kana: きんぐかるび
+    romaji: kingu karubi
+    rows: [beef/karubi, yakiniku-words/kisho-bui]
+    mean:
+      ja: 1頭から500gほどしか取れない希少部位。赤身と脂身は6:4
+      zh: 每头牛只能取约500克的稀有部位，瘦肥约6:4
+      en: A rare cut, about 500 g per animal; lean to fat about 6:4
+    signature: true
+    image: king-karubi.webp
+  - id: tsubozuke-ippon-shimacho
+    ja: 韓式ヤンニョムだれ 壺漬け一本シマチョウ
+    ruby: "{韓式|かんしき}ヤンニョムだれ {壺漬|つぼづ}け{一本|いっぽん}シマチョウ"
+    kana: かんしきやんにょむだれ つぼづけいっぽんしまちょう
+    romaji: kanshiki yannyomu-dare tsubozuke ippon shimachō
+    rows: [horumon/shimacho, yakiniku-words/tare]
+    mean:
+      ja: 甘辛いヤンニョムだれ（韓国式の合わせだれ）に漬け込んだシマチョウ（牛の大腸）
+      zh: 用甜辣的韩式调味酱（yangnyeom）腌渍的牛大肠
+      en: Beef large intestine (shimachō) marinated in sweet-spicy Korean yangnyeom sauce
+    signature: true
+    image: tsubozuke-ippon-shimacho.webp
+  - id: aburi-misuji
+    ja: 炙りミスジ ～ねぎ塩ポン酢～
+    ruby: "{炙|あぶ}りミスジ ～ねぎ{塩|しお}ポン{酢|ず}～"
+    kana: あぶりみすじ ねぎしおぽんず
+    romaji: aburi misuji negishio ponzu
+    rows: [beef/misuji, yakiniku-words/kisho-bui]
+    mean:
+      ja: 希少部位のミスジをあぶり、ねぎ塩ポン酢にくぐらせて食べる
+      zh: 炙烤稀有部位板腱，蘸葱盐柚子醋吃
+      en: Seared oyster blade, a rare cut, dipped in leek-salt ponzu
+    signature: true
+    image: aburi-misuji.webp
+  - id: oban-sudare-jo-karubi
+    ja: 大判すだれ上カルビ
+    ruby: "{大判|おおばん}すだれ{上|じょう}カルビ"
+    kana: おおばんすだれじょうかるび
+    romaji: ōban sudare jō karubi
+    rows: [beef/karubi, yakiniku-words/jo]
+    mean:
+      ja: すだれ状に切り込みを入れた大判の上カルビ。旨辛だれ
+      zh: 划成竹帘状刀口的大片上等五花，配香辣酱
+      en: A big premium karubi slice scored like a bamboo blind, in savory-spicy sauce
+    signature: true
+    image: oban-sudare-jo-karubi.webp
+  - id: chogokuatsu-harami
+    ja: 超極厚ハラミ ～ガリバタ醤油～
+    ruby: "{超極厚|ちょうごくあつ}ハラミ ～ガリバタ{醤油|しょうゆ}～"
+    kana: ちょうごくあつはらみ がりばたしょうゆ
+    romaji: chōgokuatsu harami garibata shōyu
+    rows: [beef/harami, yakiniku-words/atsugiri]
+    mean:
+      ja: 極厚に切って切り込みを入れたハラミ。温めたガリバタ醤油にくぐらせる。やわらか加工・形を整える加工あり（公式表記）
+      zh: 切得极厚并划刀口的横膈膜肉，过一下加热的蒜香黄油酱油；官方注明经过嫩化和整形加工
+      en: Extra-thick scored harami dipped in hot garlic-butter soy; officially noted as tenderized and reshaped
+    signature: true
+    image: chogokuatsu-harami.webp
+  - id: aburi-sukiyaki-karubi
+    ja: 炙りすき焼カルビ
+    ruby: "{炙|あぶ}りすき{焼|やき}カルビ"
+    kana: あぶりすきやきかるび
+    romaji: aburi sukiyaki karubi
+    rows: [beef/karubi]
+    mean:
+      ja: すき焼のたれのカルビをあぶり、卵・とろろ・トマトのどれか1つにくぐらせる
+      zh: 寿喜烧酱五花，炙烤后蘸生蛋、山药泥或番茄（每次点单选一种）
+      en: Karubi in sukiyaki sauce, seared and dipped in egg, grated yam or tomato (one per order)
+    image: aburi-sukiyaki-karubi.webp
+  - id: kuroge-wagyu-jo-karubi
+    ja: 黒毛和牛上カルビ
+    ruby: "{黒毛和牛|くろげわぎゅう}{上|じょう}カルビ"
+    kana: くろげわぎゅうじょうかるび
+    romaji: kuroge wagyū jō karubi
+    rows: [beef/karubi, yakiniku-words/jo]
+    mean:
+      ja: 黒毛和牛の上カルビ。食べ放題ではプレミアムコース限定。タレ・塩・わさび醤油
+      zh: 黑毛和牛上等五花，吃到饱中仅限高级套餐；酱汁、盐或山葵酱油
+      en: Japanese Black wagyu premium karubi, among the courses only in Premium; tare, salt or wasabi soy
+    image: kuroge-wagyu-jo-karubi.webp
+  - id: kurogegyu-yakishabu-karubi
+    ja: 黒毛牛焼しゃぶカルビ
+    ruby: "{黒毛牛|くろげぎゅう}{焼|やき}しゃぶカルビ"
+    kana: くろげぎゅうやきしゃぶかるび
+    romaji: kurogegyū yakishabu karubi
+    rows: [beef/karubi]
+    mean:
+      ja: 薄切りをさっと焼いてポン酢で食べる「焼しゃぶ」。ここでの黒毛牛は交雑種（公式表記）
+      zh: 「烤涮」：薄片快烤后蘸柚子醋；这里的「黑毛牛」是杂交种（官方注明）
+      en: 'Yakishabu: thin slices grilled briefly and eaten with ponzu; "kurogegyū" here means crossbred cattle (per the chain)'
+    image: kurogegyu-yakishabu-karubi.webp
+  - id: kurogegyu-dodeka-jo-rosu
+    ja: 黒毛牛ドでか！上ロース
+    ruby: "{黒毛牛|くろげぎゅう}ドでか！{上|じょう}ロース"
+    kana: くろげぎゅうどでかじょうろーす
+    romaji: kurogegyū dodeka jō rōsu
+    rows: [beef/rosu, yakiniku-words/jo]
+    mean:
+      ja: 大きく切った上ロース。部位は「かた」または「かたロース」（公式表記）
+      zh: 切得很大的上等里脊；部位是「肩」或「肩里脊」（官方注明）
+      en: An oversized premium rōsu slice; the chain says it is shoulder or chuck roll
+    image: kurogegyu-dodeka-jo-rosu.webp
+  - id: tokusen-atsugiri-gyutan
+    ja: 【特選】厚切り牛タン
+    ruby: 【{特選|とくせん}】{厚切|あつぎ}り{牛|ぎゅう}タン
+    kana: とくせんあつぎりぎゅうたん
+    romaji: tokusen atsugiri gyūtan
+    rows: [beef/tan, yakiniku-words/atsugiri]
+    mean:
+      ja: 厚切りの牛タン。食べ放題ではプレミアムコース限定。やわらか加工・形を整える加工あり（公式表記）
+      zh: 厚切牛舌，吃到饱中仅限高级套餐；官方注明经过嫩化和整形加工
+      en: Thick-cut beef tongue, among the courses only in Premium; officially tenderized and reshaped
+    image: tokusen-atsugiri-gyutan.webp
+  - id: tokusen-mino-steak
+    ja: 【特選】ミノステーキ
+    ruby: 【{特選|とくせん}】ミノステーキ
+    kana: とくせんみのすてーき
+    romaji: tokusen mino sutēki
+    rows: [horumon/mino]
+    mean:
+      ja: ミノ（牛の第一胃）のステーキ。コリコリした食感。食べ放題ではプレミアムコース限定
+      zh: 牛瘤胃（毛肚）排，口感脆；吃到饱中仅限高级套餐
+      en: Rumen (first stomach) steak with a crunchy bite; among the courses only in Premium
+    image: tokusen-mino-steak.webp
+  - id: king-shiotan-pork
+    ja: きんぐ塩タン【ポーク】
+    ruby: きんぐ{塩|しお}タン【ポーク】
+    kana: きんぐしおたん ぽーく
+    romaji: kingu shiotan pōku
+    rows: [pork/tan, yakiniku-words/shio]
+    mean:
+      ja: 【ポーク】＝豚のタン。やわらか加工・形を整える加工あり（公式表記）
+      zh: 标【ポーク】即猪舌；官方注明经过嫩化和整形加工
+      en: 【ポーク】 marks pork tongue; officially tenderized and reshaped
+    image: king-shiotan-pork.webp
+  - id: tori-karubi
+    ja: 鶏カルビ
+    ruby: "{鶏|とり}カルビ"
+    kana: とりかるび
+    romaji: tori karubi
+    rows: [chicken/momo]
+    mean:
+      ja: 「カルビ」と名乗るが、大きめに切った鶏もも。タレ・塩・味噌
+      zh: 名叫「鸡五花」，其实是切大块的鸡腿肉；酱汁、盐或味噌
+      en: Called "karubi" but it is large-cut chicken thigh; tare, salt or miso
+    image: tori-karubi.webp
+  - id: atsugiri-buta-karubi
+    ja: 厚切り豚カルビ
+    ruby: "{厚切|あつぎ}り{豚|ぶた}カルビ"
+    kana: あつぎりぶたかるび
+    romaji: atsugiri buta karubi
+    rows: [pork/bara, yakiniku-words/atsugiri]
+    mean:
+      ja: 旨味の強い三枚バラ（豚バラ）の厚切り。タレ・塩
+      zh: 厚切三层五花肉（猪五花），酱汁或盐
+      en: Thick-cut three-layer pork belly; tare or salt
+    image: atsugiri-buta-karubi.webp
+  - id: tontoro
+    ja: 豚トロ
+    ruby: "{豚|とん}トロ"
+    kana: とんとろ
+    romaji: tontoro
+    rows: [pork/tontoro]
+    mean:
+      ja: 豚トロ。店はサクサクした独特の食感を売りにする。タレ・塩
+      zh: 猪颈肉，店家强调其脆爽口感；酱汁或盐
+      en: Pork toro, sold on its distinctive crisp bite; tare or salt
+  - id: torikawa
+    ja: 鶏皮
+    ruby: "{鶏皮|とりかわ}"
+    kana: とりかわ
+    romaji: torikawa
+    rows: [chicken/kawa]
+    mean:
+      ja: 鶏の皮。塩か味噌
+      zh: 鸡皮，盐或味噌
+      en: Chicken skin; salt or miso
+  - id: yawaraka-horumon
+    ja: やわらかホルモン
+    kana: やわらかほるもん
+    romaji: yawaraka horumon
+    rows: [horumon/horumon]
+    mean:
+      ja: 独自製法でやわらかくしたホルモン。塩か味噌
+      zh: 用独家工艺做软的内脏，盐或味噌
+      en: Offal made tender by the chain's own method; salt or miso
+  - id: kimuchi-moriawase
+    ja: キムチ盛合せ
+    ruby: キムチ{盛|もり}{合|あわ}せ
+    kana: きむちもりあわせ
+    romaji: kimuchi moriawase
+    rows: [yakiniku-side/kimuchi, yakiniku-words/moriawase]
+    mean:
+      ja: キムチの盛合せ。白菜・大根・きゅうりのキムチは単品でもある
+      zh: 泡菜拼盘；白菜、萝卜、黄瓜泡菜也可单点
+      en: Assorted kimchi; napa, radish and cucumber kimchi are also sold separately
+  - id: namuru-mori
+    ja: ナムル盛り
+    ruby: ナムル{盛|も}り
+    kana: なむるもり
+    romaji: namuru mori
+    rows: [yakiniku-side/namuru, yakiniku-words/moriawase]
+    mean:
+      ja: ナムルの盛り合わせ
+      zh: 拌菜拼盘
+      en: Assorted namul
+  - id: sanchu
+    ja: サンチュ
+    kana: さんちゅ
+    romaji: sanchu
+    rows: [yakiniku-side/sanchu]
+    mean:
+      ja: 肉を包む葉。1皿3枚
+      zh: 包肉用生菜，每份3片
+      en: Leaves for wrapping meat, three per order
+  - id: hitokuchi-reimen
+    ja: ひとくち冷麺
+    ruby: ひとくち{冷麺|れいめん}
+    kana: ひとくちれいめん
+    romaji: hitokuchi reimen
+    rows: [yakiniku-side/reimen]
+    mean:
+      ja: 少量の冷麺（「ひとくち」は一口の意）
+      zh: 小份冷面（「ひとくち」意为一口）
+      en: A small "one-bite" portion of cold noodles
+  - id: ishiyaki-bibinba
+    ja: 石焼ビビンバ
+    ruby: "{石焼|いしやき}ビビンバ"
+    kana: いしやきびびんば
+    romaji: ishiyaki bibinba
+    rows: [yakiniku-side/bibinba]
+    mean:
+      ja: 石鍋のビビンバ。石鍋でない「ビビンバ」もある
+      zh: 石锅拌饭；也有非石锅的「拌饭」
+      en: Stone-pot bibimbap; a plain bibimbap is also listed
+  - id: tamago-kuppa
+    ja: 玉子クッパ
+    ruby: "{玉子|たまご}クッパ"
+    kana: たまごくっぱ
+    romaji: tamago kuppa
+    rows: [yakiniku-side/kuppa]
+    mean:
+      ja: 卵入りのクッパ。旨辛カルビクッパもある
+      zh: 鸡蛋汤泡饭；也有香辣五花汤泡饭
+      en: Egg rice soup; a spicy karubi version is also listed
+  - id: gohan
+    ja: ごはん
+    kana: ごはん
+    romaji: gohan
+    rows: [yakiniku-side/rice]
+    mean:
+      ja: 白ごはん。小・中・特盛
+      zh: 白米饭，小、中、特大
+      en: Plain rice; small, medium or extra-large
+  - id: ika-yaki
+    ja: イカ焼
+    ruby: イカ{焼|やき}
+    kana: いかやき
+    romaji: ika-yaki
+    rows: [neta/ika]
+    mean:
+      ja: 焼いて食べるイカ
+      zh: 烤着吃的鱿鱼
+      en: Squid for grilling
+  - id: ebi-yaki
+    ja: エビ焼
+    ruby: エビ{焼|やき}
+    kana: えびやき
+    romaji: ebi-yaki
+    rows: [neta/ebi]
+    mean:
+      ja: 焼いて食べるエビ。食べ放題ではきんぐコース以上
+      zh: 烤着吃的虾；吃到饱中「King套餐」及以上才有
+      en: Prawns for grilling; among the courses, King course and up
+  - id: king-course
+    ja: きんぐコース
+    kana: きんぐこーす
+    romaji: kingu kōsu
+    rows: [yakiniku-words/tabehodai]
+    mean:
+      ja: 一番人気の食べ放題コース（100分、ラストオーダーは20分前）。五大名物も頼める
+      zh: 最受欢迎的吃到饱套餐（100分钟，结束前20分钟最后点单），可点五大招牌
+      en: The most popular all-you-can-eat course (100 min, last order 20 min before the end), including the five signature dishes
+sources:
+  - title: 焼肉きんぐ公式サイト 五大名物
+    url: "https://www.yakiniku-king.jp/menu_all/new/"
+  - title: 焼肉きんぐ公式サイト きんぐコース
+    url: "https://www.yakiniku-king.jp/menu_all/free1/"
+  - title: 焼肉きんぐ公式サイト プレミアムコース
+    url: "https://www.yakiniku-king.jp/menu_all/free2/"
+  - title: 焼肉きんぐ公式サイト 58品コース
+    url: "https://www.yakiniku-king.jp/menu_all/free3/"
+  - title: 焼肉きんぐ公式サイト ランチ食べ放題コース
+    url: "https://www.yakiniku-king.jp/menu_all/lunch/"
+  - title: 焼肉きんぐ公式サイト 単品メニュー 黒毛和牛・黒毛牛・特選
+    url: "https://www.yakiniku-king.jp/menu_all/tanpin/domestic_beef/"
+  - title: 焼肉きんぐ公式サイト 単品メニュー タン
+    url: "https://www.yakiniku-king.jp/menu_all/tanpin/tan/"
+  - title: 焼肉きんぐ公式サイト 単品メニュー ハラミ
+    url: "https://www.yakiniku-king.jp/menu_all/tanpin/harami/"
+  - title: 焼肉きんぐ公式サイト 単品メニュー すき焼カルビ
+    url: "https://www.yakiniku-king.jp/menu_all/tanpin/sukiyaki/"
+  - title: 焼肉きんぐ公式サイト 単品メニュー 豚・鶏
+    url: "https://www.yakiniku-king.jp/menu_all/tanpin/buta_tori/"
+  - title: 焼肉きんぐ公式サイト 単品メニュー ホルモン
+    url: "https://www.yakiniku-king.jp/menu_all/tanpin/horumon/"
+  - title: 焼肉きんぐ公式サイト 美味しい食べ方ガイド
+    url: "https://www.yakiniku-king.jp/howto/"
+  - title: 焼肉きんぐ公式サイト 焼肉きんぐについて
+    url: "https://www.yakiniku-king.jp/about/"
+  - title: 焼肉きんぐ公式サイト はじめてのご利用ガイド
+    url: "https://www.yakiniku-king.jp/userguide/ja/"
+  - title: 焼肉きんぐ グランドメニュー改定および価格改定のお知らせ（2026年6月9日）
+    url: "https://www.yakiniku-king.jp/news/6196/"
+  - title: 烤肉King 首次使用指南
+    url: "https://www.yakiniku-king.jp/userguide/zh/"

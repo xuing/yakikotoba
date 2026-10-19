@@ -1,0 +1,323 @@
+order: 1
+ja: 鶏
+zh: 鸡
+en: Chicken
+# Group note sources:
+# - 日本食鳥協会『食鶏取引規格・食鶏小売規格』（令和8年4月改正）: 若どり = 3ヵ月齢未満, こにく
+# - 農林水産省 aff 2020年9月号「お肉の豆知識」https://www.maff.go.jp/j/pr/aff/2009/spe1_01.html （ブロイラーは品種ではない、地鶏のJAS条件）
+# - 農林水産省「地鶏肉の日本農林規格」新旧対照表 https://www.maff.go.jp/j/jas/attach/pdf/250527_siryou-3.pdf
+# - サライ「なぜ、焼き鳥はカウンター席がおすすめなのか？」https://serai.jp/gourmet/1020200 （地鶏・銘柄鶏・ブロイラー、40〜50日で出荷）
+# - コトバンク「地鶏」（共同通信ニュース用語解説）https://kotobank.jp/word/%E5%9C%B0%E9%B6%8F-284345 （50日程度で出荷）
+# - 農林水産省 aff 2020年9月号「お肉丸わかり図鑑」https://www.maff.go.jp/j/pr/aff/2009/spe1_02.html （せせり・ぼんじりは規格に分類されない部位）
+note:
+  ja: "部位名は農林水産省の「食鶏小売規格」（2026年4月改正）で定められているが、せせり・ぼんじりなどは規格にない店の通称で、首の肉は規格では「こにく」と呼ぶ。焼き鳥に使う鶏は大きく、ブロイラー（品種名ではなく、短期間で大きく育つよう改良された肉用若鶏の総称で、40〜50日ほどで出荷。規格の「若どり」はふ化後3か月未満の鶏をいう）、飼料や飼い方に工夫を加えた「銘柄鶏」、JASの基準を満たす「地鶏」の三つに分かれる。地鶏の基準は、在来種由来の血が50％以上、ふ化日から75日以上の飼育、28日齢以降は平飼いで1㎡あたり10羽以下。"
+  zh: "鸡的部位名称由日本农林水产省《食鸡零售规格》（2026年4月修订）规定，せせり（鸡颈肉）、ぼんじり（鸡屁股）等是规格里没有的店家俗称，颈肉在规格中叫“こにく”（小肉）。烤鸡串用的鸡大致分三类：白羽肉鸡（broiler，不是品种名，而是经改良、能快速长大的肉用仔鸡的统称，约40–50天出栏；规格上的“若鸡”指孵化后不满3个月的鸡）、在饲料和饲养方式上下功夫的“品牌鸡”（銘柄鶏），以及符合JAS标准的“地鸡”（地鶏）。地鸡须满足：本土品种血统占50%以上，自孵化日起饲养75天以上，28日龄起平养且每平方米不超过10只。"
+  en: "Cut names are fixed by MAFF's retail standard for chicken (revised April 2026); seseri and bonjiri are shop names not found in it, where neck meat is called koniku. Yakitori chicken comes in three classes: broilers – not a breed but a general term for young meat chickens bred to grow fast, usually shipped at about 40–50 days (the standard's wakadori means any bird under three months); meigara-dori, branded birds raised on modified feed or methods; and jidori, which must meet the JAS standard. That means at least 50% native-breed blood, at least 75 days from hatching, and floor rearing at no more than 10 birds per m² from day 28."
+items:
+- id: momo
+  ja: もも
+  kana: もも
+  romaji: momo
+  mean:
+    ja: "鶏のもも肉"
+    zh: "鸡腿肉"
+    en: "Chicken thigh"
+  part:
+    ja: "脚（腿）の肉。規格の「もも肉」は腿から骨を除いた皮つきの肉で、ひざ関節より上を「うわもも」（大腿）、下を「したもも」（下腿）という"
+    zh: "鸡腿的肉。规格中的“腿肉”指去骨带皮的整条腿肉，膝关节以上叫“上腿”（うわもも，大腿），以下叫“下腿”（したもも，小腿）"
+    en: "Leg meat. In the standard, momo-niku is boneless, skin-on leg; above the knee joint is uwamomo (thigh proper), below it shitamomo (drumstick)"
+  note:
+    ja: "赤みを帯びた肉厚の肉で、うま味とコクが強い。若どりのもも（皮つき・生）は100gあたり190kcal・脂質14.2g・たんぱく質16.6g、皮を除くと113kcal・脂質5.0g。焼き鳥店では「正肉（せいにく）」とも呼び（規格の「正肉」はむね肉ともも肉を合わせたもの）、ねぎまにもふつうもも肉を使う。もも肉の付け根近くの小さな肉「ソリ」は仏語 sot-l'y-laisse（愚か者はそこを残す）に由来し、この呼び名は銀座「バードランド」が発祥とされる。"
+    zh: "肉色偏红、厚实，鲜味和醇厚感强。若鸡带皮生鸡腿肉每100克190千卡、脂肪14.2克、蛋白质16.6克，去皮后为113千卡、脂肪5.0克。烤鸡串店也把它叫作“正肉”（せいにく），而规格上的“正肉”指胸肉加腿肉；鸡肉大葱串（ねぎま）一般也用腿肉。腿根附近的一小块肉叫“ソリ”，源自法语sot-l'y-laisse（“傻瓜才会剩下”），这一叫法据说始于东京银座的烤鸡店“Bird Land”（バードランド）。"
+    en: "Reddish, thick meat with a rich, savoury flavour. Raw skin-on thigh from young chickens has 190 kcal, 14.2 g fat and 16.6 g protein per 100 g; skinless, 113 kcal and 5.0 g fat. Yakitori shops also call it seiniku (“proper meat”) – whereas in the standard 正肉 means breast and thigh together – and negima is normally made with thigh. The small morsel near the top of the thigh is called sori, from French sot-l'y-laisse (“only a fool leaves it”), a name said to have started at Bird Land in Ginza."
+  sources:
+  - { title: "農林水産省 aff 2020年9月号「鶏の部位図鑑」ポスター（監修：日本食肉消費総合センター）", url: "https://www.maff.go.jp/j/pr/aff/2009/pdf/aff2009_02_poster05.pdf" }
+  - { title: "日本食鳥協会『食鶏取引規格・食鶏小売規格』（農林水産省畜産局長通達、令和8年4月改正）", url: "https://www.j-chicken.jp/wp-chicken/wp-content/uploads/2026/07/%E9%A3%9F%E9%B6%8F%E5%8F%96%E5%BC%95-%E5%B0%8F%E5%A3%B2%E8%A6%8F%E6%A0%BC-R7%EF%BC%88%E8%A7%A3%E4%BD%93%E5%93%81%E5%9B%B3%E8%A6%8B%E9%96%8B%E3%81%8D%EF%BC%89.pdf" }
+  - { title: "文部科学省「日本食品標準成分表（八訂）増補2023年」", url: "https://www.mext.go.jp/a_menu/syokuhinseibun/mext_00001.html" }
+  - { title: "コトバンク「鶏肉」（百科事典マイペディア）", url: "https://kotobank.jp/word/%E9%B6%8F%E8%82%89-59097" }
+  - { title: "コトバンク「正肉」（デジタル大辞泉）", url: "https://kotobank.jp/word/%E6%AD%A3%E8%82%89-689032" }
+  - { title: "nippon.com「生でピリっと、煮込んでトロっと：ネギのお料理コレクション」", url: "https://www.nippon.com/ja/japan-topics/c153360/" }
+  - { title: "ミシュランガイド日本「焼鳥」", url: "https://guide.michelin.com/jp/ja/article/features/Yakitori_JP" }
+- id: negima
+  ja: ねぎま
+  kana: ねぎま
+  romaji: negima
+  mean:
+    ja: "鶏肉とねぎの串"
+    zh: "鸡肉大葱串"
+    en: "Chicken and negi (Japanese leek) skewer"
+  part:
+    ja: "鶏肉（ふつうはもも）と長ねぎを交互に串に刺したもの"
+    zh: "鸡肉（一般是腿肉）与大葱段交替串在一根签子上"
+    en: "Pieces of chicken (usually thigh) alternated with lengths of negi on one skewer"
+  note:
+    ja: "「ねぎま」は本来「葱鮪」と書き、ネギとマグロを煮た料理（ねぎま鍋・ねぎま汁）を指す語で、『東海道中膝栗毛』（1802〜09年）に用例がある。「ま」は「間」ではない。鶏の串がこの名で呼ばれる理由は、一説にネギとマグロを交互に刺して焼いた江戸の串に姿が似ていたため、一説にマグロのトロが高級になり手頃な鶏肉で代用したためという。店によって名が違い、鳥貴族は「もも貴族焼」、京橋の伊勢廣（1921年創業）はネギとシシトウを挟んだ串を単に「もも肉」と呼ぶ。"
+    zh: "“ねぎま”原写作“葱鮪”，本指葱和金枪鱼同煮的菜（葱鲔锅、葱鲔汤），江户后期的《东海道中膝栗毛》（1802–09年）已有用例；“ま”并不是“间”的意思。鸡肉串沿用这个名字，一说是因为外形像江户时代把葱和金枪鱼交替串起来烤的串，一说是金枪鱼腩变贵后改用便宜的鸡肉代替。各店叫法不同：连锁店鸟贵族叫“もも贵族烧”，1921年创业的京桥老店伊势广则把夹着葱和糯米椒（シシトウ）的串直接叫“もも肉”（腿肉）。"
+    en: "Negima was originally written 葱鮪, “leek and tuna”: a dish of negi simmered with tuna (as a hotpot or soup), attested in Tōkaidōchū Hizakurige (1802–09); the ma does not mean “between”. One theory says chicken skewers took the name because they looked like Edo-period skewers of alternating negi and tuna; another says cheaper chicken replaced tuna belly once toro became a luxury. Names vary by shop: Torikizoku calls its version momo kizoku-yaki, and Ise-hiro in Kyōbashi (founded 1921) simply calls its thigh skewer with negi and shishito peppers momo-niku."
+  sources:
+  - { title: "コトバンク「葱鮪」（精選版 日本国語大辞典・デジタル大辞泉）", url: "https://kotobank.jp/word/%E8%91%B1%E9%AE%AA-594717" }
+  - { title: "ミシュランガイド日本「焼鳥」", url: "https://guide.michelin.com/jp/ja/article/features/Yakitori_JP" }
+  - { title: "nippon.com「生でピリっと、煮込んでトロっと：ネギのお料理コレクション」", url: "https://www.nippon.com/ja/japan-topics/c153360/" }
+  - { title: "鳥貴族 メニュー「焼鳥」", url: "https://torikizoku.co.jp/menu/yakitori/" }
+  - { title: "京橋伊勢廣 本店（コース内容）", url: "https://www.isehiro.co.jp/honten/" }
+- id: mune
+  ja: むね
+  kana: むね
+  romaji: mune
+  mean:
+    ja: "鶏の胸肉"
+    zh: "鸡胸肉"
+    en: "Chicken breast"
+  part:
+    ja: "胸部の肉（骨を除いた皮つき肉）。規格では手羽と首の皮を除いた胸の肉で、手羽もとの付け根部分は「かたこにく」として分ける"
+    zh: "胸部去骨带皮的肉。规格上指去掉整只翅膀和颈皮后的胸肉，翅根根部那块另称“かたこにく”（肩小肉）"
+    en: "Boneless, skin-on breast. The standard defines it as the breast minus the whole wing and neck skin, with the piece at the base of the wing classed separately as katakoniku"
+  note:
+    ja: "脂肪が少なく淡白で、若どりのむね（皮なし・生）は100gあたり105kcal・脂質1.9g・たんぱく質23.3g、皮つきは133kcal・脂質5.9g。高温で加熱するとパサつきやすい。イミダゾールジペプチドを多く含む。むね肉と手羽もとの間にある「ふりそで」は、もも肉より脂が控えめでむね肉よりジューシーな部位で、スーパーでは「鶏肩肉」として売られる。"
+    zh: "脂肪少、味清淡：若鸡去皮生鸡胸每100克105千卡、脂肪1.9克、蛋白质23.3克，带皮为133千卡、脂肪5.9克。高温加热容易发柴。鸡胸肉富含咪唑二肽（imidazole dipeptide）。胸肉与翅根之间的“ふりそで”脂肪比腿肉少、又比胸肉多汁，超市里以“鸡肩肉”的名称出售。"
+    en: "Lean and mild: raw skinless breast from young chickens has 105 kcal, 1.9 g fat and 23.3 g protein per 100 g (skin-on: 133 kcal, 5.9 g fat). It dries out easily at high heat. Breast meat is rich in imidazole dipeptides. The furisode, between the breast and the wing drumette, is leaner than thigh but juicier than breast, and is sold in supermarkets as “chicken shoulder”."
+  sources:
+  - { title: "農林水産省 aff 2020年9月号「鶏の部位図鑑」ポスター（監修：日本食肉消費総合センター）", url: "https://www.maff.go.jp/j/pr/aff/2009/pdf/aff2009_02_poster05.pdf" }
+  - { title: "農林水産省 aff 2020年9月号「牛、豚、鶏の部位を徹底解説！お肉丸わかり図鑑」", url: "https://www.maff.go.jp/j/pr/aff/2009/spe1_02.html" }
+  - { title: "農林水産省 aff 2020年9月号「誰かに話したくなる お肉の豆知識」", url: "https://www.maff.go.jp/j/pr/aff/2009/spe1_01.html" }
+  - { title: "日本食鳥協会『食鶏取引規格・食鶏小売規格』（農林水産省畜産局長通達、令和8年4月改正）", url: "https://www.j-chicken.jp/wp-chicken/wp-content/uploads/2026/07/%E9%A3%9F%E9%B6%8F%E5%8F%96%E5%BC%95-%E5%B0%8F%E5%A3%B2%E8%A6%8F%E6%A0%BC-R7%EF%BC%88%E8%A7%A3%E4%BD%93%E5%93%81%E5%9B%B3%E8%A6%8B%E9%96%8B%E3%81%8D%EF%BC%89.pdf" }
+  - { title: "文部科学省「日本食品標準成分表（八訂）増補2023年」", url: "https://www.mext.go.jp/a_menu/syokuhinseibun/mext_00001.html" }
+- id: sasami
+  ja: ささみ
+  kana: ささみ
+  romaji: sasami
+  mean:
+    ja: "鶏のささみ"
+    zh: "鸡里脊（鸡小胸）"
+    en: "Chicken tenderloin (tender)"
+  part:
+    ja: "むね肉の内側で胸骨に沿う紡錘形の肉（深胸筋）。1羽に左右2本"
+    zh: "胸肉内侧、沿胸骨的纺锤形肉（深层胸肌），每只鸡左右各一条"
+    en: "The spindle-shaped deep pectoral muscle beneath the breast, along the breastbone; two per bird"
+  note:
+    ja: "名は形が笹の葉に似ることから（「笹身」、1859年の歌舞伎に用例）。たんぱく質が多く脂肪は1％に満たず、若どりのささみ（生）は100gあたり98kcal・たんぱく質23.9g・脂質0.8g。中央に腱（すじ）が1本通り、規格には腱つき・「すじ切り」・「すじなし」の3区分がある。焼き鳥では塩で焼いてわさびを添える出し方があり、京橋の伊勢廣（塩で軽く焼きワサビをつける）や鳥貴族（わさび粗おろし添え）がこの形で出す。"
+    zh: "名字来自形似竹叶（写作“笹身”，1859年的歌舞伎中已有用例）。蛋白质多、脂肪不到1%：若鸡生鸡里脊每100克98千卡、蛋白质23.9克、脂肪0.8克。中间贯穿一条筋腱，规格分为带筋、“切筋”和“去筋”三种。烤鸡串有撒盐烤后配山葵的吃法，京桥伊势广（盐轻烤、抹山葵）和鸟贵族（配粗磨山葵）都这样上。"
+    en: "Named for its bamboo-leaf (sasa) shape – written 笹身 and attested in an 1859 kabuki play. It is high in protein with under 1% fat: raw sasami from young chickens has 98 kcal, 23.9 g protein and 0.8 g fat per 100 g. A single tendon runs through it, and the standard distinguishes tendon-on, scored (sujikiri) and tendon-removed (sujinashi) sasami. One yakitori style is salt-grilled and topped with wasabi, as served at Ise-hiro in Kyōbashi and at Torikizoku."
+  sources:
+  - { title: "コトバンク「笹身」（デジタル大辞泉・精選版 日本国語大辞典）", url: "https://kotobank.jp/word/%E7%AC%B9%E8%BA%AB-510213" }
+  - { title: "コトバンク「ささみ」（日本大百科全書）", url: "https://kotobank.jp/word/%E3%81%95%E3%81%95%E3%81%BF-1324262" }
+  - { title: "農林水産省 aff 2020年9月号「鶏の部位図鑑」ポスター（監修：日本食肉消費総合センター）", url: "https://www.maff.go.jp/j/pr/aff/2009/pdf/aff2009_02_poster05.pdf" }
+  - { title: "日本食鳥協会『食鶏取引規格・食鶏小売規格』（農林水産省畜産局長通達、令和8年4月改正）", url: "https://www.j-chicken.jp/wp-chicken/wp-content/uploads/2026/07/%E9%A3%9F%E9%B6%8F%E5%8F%96%E5%BC%95-%E5%B0%8F%E5%A3%B2%E8%A6%8F%E6%A0%BC-R7%EF%BC%88%E8%A7%A3%E4%BD%93%E5%93%81%E5%9B%B3%E8%A6%8B%E9%96%8B%E3%81%8D%EF%BC%89.pdf" }
+  - { title: "文部科学省「日本食品標準成分表（八訂）増補2023年」", url: "https://www.mext.go.jp/a_menu/syokuhinseibun/mext_00001.html" }
+  - { title: "京橋伊勢廣 本店（コース内容）", url: "https://www.isehiro.co.jp/honten/" }
+  - { title: "鳥貴族 メニュー「焼鳥」", url: "https://torikizoku.co.jp/menu/yakitori/" }
+- id: tsukune
+  ja: つくね
+  kana: つくね
+  romaji: tsukune
+  mean:
+    ja: "鶏肉をこねて丸めたもの"
+    zh: "鸡肉丸（鸡肉丸子串）"
+    en: "Chicken meatball skewer"
+  part:
+    ja: "鶏肉をたたいて細かくし、卵や山芋などのつなぎを加えて手でこね、丸めたもの。焼き鳥では串に刺して焼く"
+    zh: "把鸡肉剁碎，加鸡蛋、山药等作粘合剂，用手揉捏成团；烤鸡串店把它串起来烤"
+    en: "Chicken chopped fine, bound with egg, grated yam or the like, kneaded by hand and shaped into balls; at yakitori shops, skewered and grilled"
+  note:
+    ja: "動詞「つくねる（捏ねる）」の連用形が名詞になった語で、手でこねて丸く固めることをいう（「つくねる」は束ねる・こねるの意）。配合や形は店ごとに異なり、京橋の伊勢廣（1921年創業）は「団子」の名で、つなぎを一切使わず麻の実を加えたものを出し、職人は手の感覚だけで重さの誤差を2g以内にそろえるという。鳥貴族は大葉を合わせた「つくね塩」のほか、「つくねたれ」「つくねチーズ焼」を出す。"
+    zh: "来自动词“つくねる”（捏ねる，揉捏）的连用形名词化，指用手揉捏成团；“つくねる”有捆扎、揉捏之意。配方和形状各店不同：1921年创业的京桥老店伊势广称之为“团子”，完全不加粘合剂、拌入麻籽，据说老师傅仅凭手感就能把每个的重量误差控制在2克以内。鸟贵族则有加紫苏叶的“盐味つくね”，以及酱汁つくね和芝士つくね。"
+    en: "The noun form of the verb tsukuneru, “to knead into a ball by hand” (the verb also means to bundle together). Recipes and shapes vary by shop: Ise-hiro in Kyōbashi (founded 1921) serves it as dango (“dumpling”), made with no binder at all and studded with hemp seeds, and says its cooks shape each one to within 2 g by feel alone. Torikizoku offers it salted with shiso leaf, with tare, or grilled with cheese."
+  sources:
+  - { title: "コトバンク「捏（つくね）」（精選版 日本国語大辞典）", url: "https://kotobank.jp/word/%E6%8D%8F-595113" }
+  - { title: "コトバンク「つくね」（日本大百科全書）", url: "https://kotobank.jp/word/%E3%81%A4%E3%81%8F%E3%81%AD-1369749" }
+  - { title: "京橋伊勢廣「伊勢廣について」（東京都公式広報サイト TOKYO UPDATES より）", url: "https://www.isehiro.co.jp/history/" }
+  - { title: "京橋伊勢廣 本店（コース内容）", url: "https://www.isehiro.co.jp/honten/" }
+  - { title: "鳥貴族 メニュー「焼鳥」", url: "https://torikizoku.co.jp/menu/yakitori/" }
+- id: kawa
+  ja: 皮
+  ruby: '{皮|かわ}'
+  kana: かわ
+  romaji: kawa
+  mean:
+    ja: "鶏の皮"
+    zh: "鸡皮"
+    en: "Chicken skin"
+  part:
+    ja: "鶏の皮（皮下脂肪を含む）。取引規格は首の皮（頸皮）を「かわⅠ型」、それ以外の皮を「かわⅡ型」と分ける"
+    zh: "鸡皮（含皮下脂肪）。交易规格把颈皮定为“皮Ⅰ型”，其余部位的皮为“皮Ⅱ型”"
+    en: "Skin with its subcutaneous fat. The wholesale standard classes neck skin as kawa type I and all other skin as type II"
+  note:
+    ja: "皮下脂肪を含むため脂質が多く、もも皮（生）は100gあたり脂質51.6g・474kcal、むね皮は48.1g・466kcalで、カロリーはささみの約5倍。博多名物の「とりかわ」は首の皮を串にらせん状に巻き付け、タレに漬けては焼く工程を数日かけて繰り返して脂を落とす（福岡の「かわ屋」は6日間かけて仕込む）。京橋の伊勢廣は皮を首の肉ではさんだ「皮身」を塩で焼き、鳥貴族はゆでた皮を塩かタレで焼く。"
+    zh: "因含皮下脂肪，脂肪很高：生鸡腿皮每100克脂肪51.6克、474千卡，胸皮48.1克、466千卡，热量约为鸡里脊的5倍。博多名物“鸡皮串”（とりかわ）把颈皮螺旋状缠在签子上，反复蘸酱、烤制、放凉，花上数天逼出油脂（福冈的“かわ屋”要准备6天）。京桥伊势广把鸡皮夹上颈肉做成“皮身”撒盐烤；鸟贵族则把焯过水的鸡皮做成盐烤或酱汁烤。"
+    en: "Including the subcutaneous fat, it is very rich: raw thigh skin has 51.6 g fat and 474 kcal per 100 g, breast skin 48.1 g and 466 kcal – about five times the calories of sasami. Hakata's torikawa winds neck skin in a spiral around the skewer, then dips it in tare and grills it again and again over several days to render out the fat (Kawaya in Fukuoka takes six days). Ise-hiro in Kyōbashi salt-grills skin sandwiched with neck meat (its 皮身 skewer), and Torikizoku grills pre-boiled skin with salt or tare."
+  sources:
+  - { title: "文部科学省「日本食品標準成分表（八訂）増補2023年」", url: "https://www.mext.go.jp/a_menu/syokuhinseibun/mext_00001.html" }
+  - { title: "農林水産省 aff 2020年9月号「鶏の部位図鑑」ポスター（監修：日本食肉消費総合センター）", url: "https://www.maff.go.jp/j/pr/aff/2009/pdf/aff2009_02_poster05.pdf" }
+  - { title: "日本食鳥協会『食鶏取引規格・食鶏小売規格』（農林水産省畜産局長通達、令和8年4月改正）", url: "https://www.j-chicken.jp/wp-chicken/wp-content/uploads/2026/07/%E9%A3%9F%E9%B6%8F%E5%8F%96%E5%BC%95-%E5%B0%8F%E5%A3%B2%E8%A6%8F%E6%A0%BC-R7%EF%BC%88%E8%A7%A3%E4%BD%93%E5%93%81%E5%9B%B3%E8%A6%8B%E9%96%8B%E3%81%8D%EF%BC%89.pdf" }
+  - { title: "関西ウォーカー（ウォーカープラス）「大阪で本場『博多のとり皮』が味わえる店4選」2019年", url: "https://www.walkerplus.com/article/193716/" }
+  - { title: "現代ビジネス「やみつきになる、博多独自のとりかわ［福岡美食ガイド⑦］」2018年", url: "https://gendai.media/articles/-/61450" }
+  - { title: "京橋伊勢廣 本店（コース内容）", url: "https://www.isehiro.co.jp/honten/" }
+  - { title: "鳥貴族 メニュー「焼鳥」", url: "https://torikizoku.co.jp/menu/yakitori/" }
+- id: bonjiri
+  ja: ぼんじり
+  kana: ぼんじり
+  romaji: bonjiri
+  mean:
+    ja: "鶏の尾の付け根の肉"
+    zh: "鸡屁股（鸡尾肉）"
+    en: "Chicken tail (pope's nose)"
+  part:
+    ja: "尾の付け根、尾骨の周りについている肉"
+    zh: "尾巴根部、尾骨周围的肉"
+    en: "The meat around the tailbone at the base of the tail"
+  note:
+    ja: "鶏肉の中で最も脂がのっているといわれるが、よく動かす部分のため身は締まり、噛むほどにうま味が出る。規格にはない通称で、鳥貴族の品書きでは「三角（ぼんじり）」と書く。尾の付け根の背側には羽づくろい用の脂を出す「尾腺」があり、規格は販売する部位から尾腺を除くよう定めている。下処理では、脂をためた「油壺」と呼ばれるクリーム色の部分を切り落とす。"
+    zh: "据说是鸡肉中脂肪最多的部位，但因经常活动而肉质紧实，越嚼越香。它不是规格里的名称而是俗称，鸟贵族的菜单写作“三角（ぼんじり）”。尾根背侧有分泌理羽油脂的“尾脂腺”，规格规定出售的分割品须去除尾脂腺；处理时要切掉积存油脂、叫作“油壶”的奶油色部分。"
+    en: "Said to be the fattiest part of the bird, yet firm because it is a much-used muscle, it gives up more flavour the longer you chew. Bonjiri is a trade name, not a term in the standard; Torikizoku lists it as sankaku (“triangle”). On top of the tail base sits the uropygial (preen) gland, whose oil the bird spreads on its feathers, and the standard requires it to be removed from cuts sold. In preparation, the cream-coloured, fat-filled abura-tsubo (“oil pot”) is cut away."
+  sources:
+  - { title: "コトバンク「ぼんじり」（デジタル大辞泉）", url: "https://kotobank.jp/word/%E3%81%BC%E3%82%93%E3%81%98%E3%82%8A-673676" }
+  - { title: "農林水産省 aff 2020年9月号「牛、豚、鶏の部位を徹底解説！お肉丸わかり図鑑」", url: "https://www.maff.go.jp/j/pr/aff/2009/spe1_02.html" }
+  - { title: "農林水産省 aff 2020年9月号「鶏の部位図鑑」ポスター（監修：日本食肉消費総合センター）", url: "https://www.maff.go.jp/j/pr/aff/2009/pdf/aff2009_02_poster05.pdf" }
+  - { title: "日本食鳥協会『食鶏取引規格・食鶏小売規格』（農林水産省畜産局長通達、令和8年4月改正）", url: "https://www.j-chicken.jp/wp-chicken/wp-content/uploads/2026/07/%E9%A3%9F%E9%B6%8F%E5%8F%96%E5%BC%95-%E5%B0%8F%E5%A3%B2%E8%A6%8F%E6%A0%BC-R7%EF%BC%88%E8%A7%A3%E4%BD%93%E5%93%81%E5%9B%B3%E8%A6%8B%E9%96%8B%E3%81%8D%EF%BC%89.pdf" }
+  - { title: "コトバンク「尾腺」（精選版 日本国語大辞典）", url: "https://kotobank.jp/word/%E5%B0%BE%E8%85%BA-119899" }
+  - { title: "鳥貴族 メニュー「焼鳥」", url: "https://torikizoku.co.jp/menu/yakitori/" }
+  - { title: "Merriam-Webster “pope's nose”", url: "https://www.merriam-webster.com/dictionary/pope%27s%20nose" }
+- id: seseri
+  ja: せせり
+  kana: せせり
+  romaji: seseri
+  mean:
+    ja: "鶏の首の肉"
+    zh: "鸡颈肉（鸡脖肉）"
+    en: "Chicken neck meat"
+  part:
+    ja: "首の骨についている肉を切り取ったもの。規格での名は「こにく」（取引規格の「こにくⅠ型」）"
+    zh: "从鸡脖子骨上剔下的肉；规格中叫“小肉”（こにく，交易规格的“小肉Ⅰ型”）"
+    en: "Meat cut from the neck bones; the standard's name is koniku (type I in the wholesale standard)"
+  note:
+    ja: "一羽から少量しか取れない希少な部位であることから「小肉（こにく）」とも呼ばれる。鶏は常に首を動かしているため肉質が引き締まり、プリプリした弾力と濃いうま味、噛むほどに出る肉汁が特徴で、コラーゲンも多い。鳥貴族は塩焼きのみで出し、京橋の伊勢廣は首の肉で皮をはさんだ「皮身」に使う。"
+    zh: "因一只鸡只能取下少量、比较稀少，又叫“小肉”（こにく）。鸡的脖子总在活动，所以肉质紧实，弹牙、鲜味浓，越嚼汁水越多，胶原蛋白也丰富。鸟贵族只做盐烤；京桥伊势广则用颈肉夹住鸡皮，做成“皮身”。"
+    en: "Because only a little comes from each bird it is also called koniku, “small meat”. Constant neck movement makes the meat firm and springy, with deep flavour, juices that flow as you chew, and plenty of collagen. Torikizoku serves it salt-grilled only, and Ise-hiro in Kyōbashi uses it to sandwich skin in its 皮身 skewer."
+  sources:
+  - { title: "農林水産省 aff 2020年9月号「牛、豚、鶏の部位を徹底解説！お肉丸わかり図鑑」", url: "https://www.maff.go.jp/j/pr/aff/2009/spe1_02.html" }
+  - { title: "農林水産省 aff 2020年9月号「鶏の部位図鑑」ポスター（監修：日本食肉消費総合センター）", url: "https://www.maff.go.jp/j/pr/aff/2009/pdf/aff2009_02_poster05.pdf" }
+  - { title: "コトバンク「せせり」（デジタル大辞泉）", url: "https://kotobank.jp/word/%E3%81%9B%E3%81%9B%E3%82%8A-672017" }
+  - { title: "日本食鳥協会『食鶏取引規格・食鶏小売規格』（農林水産省畜産局長通達、令和8年4月改正）", url: "https://www.j-chicken.jp/wp-chicken/wp-content/uploads/2026/07/%E9%A3%9F%E9%B6%8F%E5%8F%96%E5%BC%95-%E5%B0%8F%E5%A3%B2%E8%A6%8F%E6%A0%BC-R7%EF%BC%88%E8%A7%A3%E4%BD%93%E5%93%81%E5%9B%B3%E8%A6%8B%E9%96%8B%E3%81%8D%EF%BC%89.pdf" }
+  - { title: "鳥貴族 メニュー「焼鳥」", url: "https://torikizoku.co.jp/menu/yakitori/" }
+  - { title: "京橋伊勢廣 本店（コース内容）", url: "https://www.isehiro.co.jp/honten/" }
+- id: sunagimo
+  ja: 砂肝
+  ruby: '{砂肝|すなぎも}'
+  kana: すなぎも
+  romaji: sunagimo
+  mean:
+    ja: "鶏の砂嚢（筋胃）"
+    zh: "鸡胗"
+    en: "Chicken gizzard"
+  part:
+    ja: "胃の後半部、厚い筋肉でできた筋胃（砂嚢）。規格の「すなぎも」は腺胃と内層を除いた筋胃"
+    zh: "胃的后半部分、由厚实肌肉构成的肌胃（砂囊）；规格中的“砂肝”指去掉腺胃和内层膜的肌胃"
+    en: "The muscular rear stomach (gizzard). In the retail standard, sunagimo is the gizzard with the glandular stomach and inner lining removed"
+  note:
+    ja: "鳥の胃は消化液を出す前胃（腺胃）と、それに続く筋胃に分かれる。筋胃は厚い筋肉層と丈夫な膜をもち、歯のない鳥が飲み込んだ砂粒をためて食物をすりつぶすため「砂嚢（さのう）」（嚢は袋の意）とも呼ばれる。弾力があるのにさっくり噛み切れる淡白な部位で、100gあたり86kcal・脂質1.8g・たんぱく質18.3g（生）。別名「砂ぎも」「砂ずり」（主に関西で多いといわれ、鳥貴族も「砂ずり（砂肝）」と書く）で、規格には腱質を除いた「すなぎも（すじなし）」もある。"
+    zh: "鸟的胃分为分泌消化液的前胃（腺胃）和其后的肌胃。肌胃有厚实的肌肉层和坚韧的内膜，鸟没有牙齿，靠储存在其中的砂粒把食物磨碎，因此又叫“砂囊”。口感有弹性却一咬就断，味道清淡，每100克（生）86千卡、脂肪1.8克、蛋白质18.3克。别名“砂ぎも”“砂ずり”（据说关西较常用，鸟贵族菜单也写作“砂ずり（砂肝）”），规格中另有去掉筋膜的“去筋砂肝”。"
+    en: "A bird's stomach has two parts: the glandular proventriculus, which secretes digestive juices, and the muscular gizzard behind it. Birds have no teeth, so the gizzard – thick-walled with a tough lining – stores swallowed grit to grind food, hence its other name sanō, “sand bag”. Springy yet clean to bite and mild in taste, it has 86 kcal, 1.8 g fat and 18.3 g protein per 100 g (raw). It is also called sunazuri, said to be commoner in Kansai (Torikizoku writes “sunazuri (sunagimo)”), and the standard also lists sunagimo with the tough sinew removed (sujinashi)."
+  sources:
+  - { title: "コトバンク「砂嚢」（デジタル大辞泉・精選版 日本国語大辞典・ブリタニカ国際大百科事典）", url: "https://kotobank.jp/word/%E7%A0%82%E5%9A%A2-69447" }
+  - { title: "コトバンク「筋胃」（精選版 日本国語大辞典）", url: "https://kotobank.jp/word/%E7%AD%8B%E8%83%83-247485" }
+  - { title: "コトバンク「腺胃」（世界大百科事典）", url: "https://kotobank.jp/word/%E8%85%BA%E8%83%83-1352763" }
+  - { title: "農林水産省 aff 2020年9月号「鶏の部位図鑑」ポスター（監修：日本食肉消費総合センター）", url: "https://www.maff.go.jp/j/pr/aff/2009/pdf/aff2009_02_poster05.pdf" }
+  - { title: "文部科学省「日本食品標準成分表（八訂）増補2023年」", url: "https://www.mext.go.jp/a_menu/syokuhinseibun/mext_00001.html" }
+  - { title: "日本食鳥協会『食鶏取引規格・食鶏小売規格』（農林水産省畜産局長通達、令和8年4月改正）", url: "https://www.j-chicken.jp/wp-chicken/wp-content/uploads/2026/07/%E9%A3%9F%E9%B6%8F%E5%8F%96%E5%BC%95-%E5%B0%8F%E5%A3%B2%E8%A6%8F%E6%A0%BC-R7%EF%BC%88%E8%A7%A3%E4%BD%93%E5%93%81%E5%9B%B3%E8%A6%8B%E9%96%8B%E3%81%8D%EF%BC%89.pdf" }
+  - { title: "Weblio 実用日本語表現辞典「砂ずり」", url: "https://www.weblio.jp/content/%E7%A0%82%E3%81%9A%E3%82%8A" }
+  - { title: "鳥貴族 メニュー「焼鳥」", url: "https://torikizoku.co.jp/menu/yakitori/" }
+- id: hatsu
+  ja: ハツ
+  kana: はつ
+  romaji: hatsu
+  mean:
+    ja: "鶏の心臓"
+    zh: "鸡心"
+    en: "Chicken heart"
+  part:
+    ja: "心臓。規格では肝臓と合わせて「きも」とし、心臓だけを売るときは「心臓」「ハート」「ハツ」と表示する"
+    zh: "心脏。规格上与肝脏合称“きも”，单独出售心脏时标作“心脏”“ハート”或“ハツ”"
+    en: "The heart. The standards group heart and liver together as kimo; heart sold on its own is labelled shinzō, hāto or hatsu"
+  note:
+    ja: "「ハツ」は英語 heart から来た語で、品書きでは鳥貴族が「ハート（ハツ）」、秋吉が「しんぞう」と書くなど表記が分かれる。周りの脂肪や血管を取り除き血抜きするとクセのない味になり、規格にも血抜きして上部を除いた「ハツ（血ぬき）」がある。100gあたり186kcal・脂質15.5g（生）で、肝臓（3.1g）や砂肝（1.8g）より脂質が多い。大動脈がつながる上部「ハツモト」は1羽から取れる量が少なく、柔らかく歯切れがよい。"
+    zh: "“ハツ”来自英语heart，菜单写法不一：鸟贵族写“ハート（ハツ）”，秋吉写“しんぞう”（心脏）。去掉周围的脂肪和血管并放血后没有腥膻味，规格中也有放过血、切除上部的“ハツ（血ぬき）”。每100克（生）186千卡、脂肪15.5克，脂肪比鸡肝（3.1克）和鸡胗（1.8克）多。连着主动脉的上端叫“ハツモト”（心根），一只鸡只能取下一点，肉质柔软、脆爽。"
+    en: "Hatsu comes from English “heart”, and menus differ – Torikizoku writes hāto (hatsu), Akiyoshi shinzō (“heart”). Trimmed of the surrounding fat and vessels and bled, it has no off-flavour, and the standard lists a bled, top-trimmed “hatsu (chinuki)”. It has 186 kcal and 15.5 g fat per 100 g (raw) – far more fat than liver (3.1 g) or gizzard (1.8 g). The top where the aorta joins, hatsumoto, yields only a little per bird and is tender with a clean bite."
+  sources:
+  - { title: "コトバンク「ハツ」（デジタル大辞泉・精選版 日本国語大辞典）", url: "https://kotobank.jp/word/%E3%81%AF%E3%81%A4-3216146" }
+  - { title: "日本食鳥協会『食鶏取引規格・食鶏小売規格』（農林水産省畜産局長通達、令和8年4月改正）", url: "https://www.j-chicken.jp/wp-chicken/wp-content/uploads/2026/07/%E9%A3%9F%E9%B6%8F%E5%8F%96%E5%BC%95-%E5%B0%8F%E5%A3%B2%E8%A6%8F%E6%A0%BC-R7%EF%BC%88%E8%A7%A3%E4%BD%93%E5%93%81%E5%9B%B3%E8%A6%8B%E9%96%8B%E3%81%8D%EF%BC%89.pdf" }
+  - { title: "農林水産省 aff 2020年9月号「鶏の部位図鑑」ポスター（監修：日本食肉消費総合センター）", url: "https://www.maff.go.jp/j/pr/aff/2009/pdf/aff2009_02_poster05.pdf" }
+  - { title: "文部科学省「日本食品標準成分表（八訂）増補2023年」", url: "https://www.mext.go.jp/a_menu/syokuhinseibun/mext_00001.html" }
+  - { title: "鳥貴族 メニュー「焼鳥」", url: "https://torikizoku.co.jp/menu/yakitori/" }
+  - { title: "やきとりの名門 秋吉 メニュー", url: "https://www.akiyoshi.co.jp/menu/" }
+- id: reba
+  ja: レバー
+  kana: ればー
+  romaji: rebā
+  mean:
+    ja: "鶏の肝臓"
+    zh: "鸡肝"
+    en: "Chicken liver"
+  part:
+    ja: "肝臓。規格では心臓と合わせて「きも」とし、肝臓だけなら「肝臓」または「レバー」と表示する"
+    zh: "肝脏。规格上与心脏合称“きも”，单独出售时标作“肝脏”或“レバー”"
+    en: "The liver. The standards sell it with the heart as kimo, or alone as kanzō or rebā"
+  note:
+    ja: "英語 liver から来た語で、1904年の村井弦斎『食道楽』に用例がある。別名「きも」で、鳥貴族も「きも（レバー）」と書く。100gあたり（生）たんぱく質18.9g・脂質3.1gのほか、鉄9.0mg、ビタミンA（レチノール活性当量）14,000µg、ビタミンB12 44.0µgを含む。鳥貴族はタレ焼きのみで出し、京橋の伊勢廣は肝臓・心臓・腎臓などを合わせた串をタレで焼き、100羽に1羽ほどしか取れない脂肪を蓄えた肝を選んで使うとしている。"
+    zh: "来自英语liver，1904年村井弦斋的小说《食道乐》中已有用例。别名“きも”（肝），鸟贵族菜单也写作“きも（レバー）”。每100克（生）含蛋白质18.9克、脂肪3.1克，另含铁9.0毫克、维生素A（视黄醇活性当量）14000微克、维生素B12 44.0微克。鸟贵族只做酱汁烤；京桥伊势广把肝、心、肾等串在一起刷酱烤，并称专挑约100只鸡里才有1只的、积满脂肪的肝。"
+    en: "From English “liver”, attested in Murai Gensai's novel Kuidōraku (1904). It is also called kimo, and Torikizoku writes kimo (rebā). Per 100 g raw it has 18.9 g protein and 3.1 g fat, plus 9.0 mg iron, 14,000 µg vitamin A (retinol activity equivalents) and 44.0 µg vitamin B12. Torikizoku grills it with tare only; Ise-hiro in Kyōbashi grills a mixed skewer of liver, heart, kidney and more with tare, and says it picks fat-rich livers found in only about one bird in a hundred."
+  sources:
+  - { title: "コトバンク「レバー」（精選版 日本国語大辞典・日本大百科全書）", url: "https://kotobank.jp/word/%E3%82%8C%E3%81%B0%E3%83%BC-3176022" }
+  - { title: "農林水産省 aff 2020年9月号「鶏の部位図鑑」ポスター（監修：日本食肉消費総合センター）", url: "https://www.maff.go.jp/j/pr/aff/2009/pdf/aff2009_02_poster05.pdf" }
+  - { title: "日本食鳥協会『食鶏取引規格・食鶏小売規格』（農林水産省畜産局長通達、令和8年4月改正）", url: "https://www.j-chicken.jp/wp-chicken/wp-content/uploads/2026/07/%E9%A3%9F%E9%B6%8F%E5%8F%96%E5%BC%95-%E5%B0%8F%E5%A3%B2%E8%A6%8F%E6%A0%BC-R7%EF%BC%88%E8%A7%A3%E4%BD%93%E5%93%81%E5%9B%B3%E8%A6%8B%E9%96%8B%E3%81%8D%EF%BC%89.pdf" }
+  - { title: "文部科学省「日本食品標準成分表（八訂）増補2023年」", url: "https://www.mext.go.jp/a_menu/syokuhinseibun/mext_00001.html" }
+  - { title: "鳥貴族 メニュー「焼鳥」", url: "https://torikizoku.co.jp/menu/yakitori/" }
+  - { title: "京橋伊勢廣 本店（コース内容）", url: "https://www.isehiro.co.jp/honten/" }
+  - { title: "京橋伊勢廣「伊勢廣について」（東京都公式広報サイト TOKYO UPDATES より）", url: "https://www.isehiro.co.jp/history/" }
+- id: tebasaki
+  ja: 手羽先
+  ruby: '{手羽先|てばさき}'
+  kana: てばさき
+  romaji: tebasaki
+  mean:
+    ja: "鶏の手羽先"
+    zh: "鸡翅（翅中连翅尖）"
+    en: "Chicken wing (flat and tip)"
+  part:
+    ja: "手羽（翼の上腕から先端まで）から上腕部分の「手羽もと」を除いた残り。橈骨・尺骨部分の「手羽なか」と先端部分の「手羽はし」から成る"
+    zh: "整只翅膀（从上臂到翅尖）去掉上臂部分“翅根”（手羽もと）后剩下的部分，由桡骨和尺骨段的“翅中”（手羽なか）和末端的“翅尖”（手羽はし）组成"
+    en: "The wing (upper arm to tip) minus the upper-arm drumette (tebamoto): the flat (tebanaka, the radius-and-ulna section) plus the tip (tebahashi)"
+  note:
+    ja: "ゼラチン質と脂質が多くうま味が濃い部位で、若どりの手羽さき（皮つき・生）は100gあたり207kcal・脂質16.2g、重量の40％が骨。手羽なかを縦半分に割ったものは「鶏スペアリブ」と呼ばれる。焼き鳥では京橋の伊勢廣が骨ごとぶつ切りにして塩で焼き、鳥貴族は塩とタレの両方で出す。名古屋名物の手羽先唐揚げは1963年創業の「風来坊」が元祖を名乗り、手羽先がスープの材料程度にしか使われなかった時代、発注ミスで丸鶏が届かなかった日に生まれたという。"
+    zh: "富含胶质和脂肪，鲜味浓：若鸡带皮生翅（手羽先）每100克207千卡、脂肪16.2克，重量的40%是骨头。把翅中纵向劈成两半的叫“鸡肋排”（鶏スペアリブ）。烤鸡串店里，京桥伊势广连骨剁块撒盐烤，鸟贵族则盐味和酱汁都有。名古屋名物“炸鸡翅”以1963年创业的“风来坊”自称元祖；据该店说，当时鸡翅几乎只用来熬汤，某天因订货失误整鸡没到货，才把鸡翅蘸上秘制酱汁端上桌。"
+    en: "Rich in gelatin and fat, with deep flavour: raw skin-on tebasaki from young chickens has 207 kcal and 16.2 g fat per 100 g, and 40% of its weight is bone. A flat split lengthwise is sold as “chicken spare ribs”. Ise-hiro in Kyōbashi chops it bone-in and salt-grills it; Torikizoku offers salt or tare. Nagoya's famous fried wings are claimed by Fūraibō (founded 1963), which says they were born when wings went mostly into stock and a mis-order left the shop without whole chickens one day."
+  sources:
+  - { title: "日本食鳥協会『食鶏取引規格・食鶏小売規格』（農林水産省畜産局長通達、令和8年4月改正）", url: "https://www.j-chicken.jp/wp-chicken/wp-content/uploads/2026/07/%E9%A3%9F%E9%B6%8F%E5%8F%96%E5%BC%95-%E5%B0%8F%E5%A3%B2%E8%A6%8F%E6%A0%BC-R7%EF%BC%88%E8%A7%A3%E4%BD%93%E5%93%81%E5%9B%B3%E8%A6%8B%E9%96%8B%E3%81%8D%EF%BC%89.pdf" }
+  - { title: "コトバンク「手羽」（デジタル大辞泉）", url: "https://kotobank.jp/word/%E6%89%8B%E7%BE%BD-576592" }
+  - { title: "農林水産省 aff 2020年9月号「鶏の部位図鑑」ポスター（監修：日本食肉消費総合センター）", url: "https://www.maff.go.jp/j/pr/aff/2009/pdf/aff2009_02_poster05.pdf" }
+  - { title: "文部科学省「日本食品標準成分表（八訂）増補2023年」", url: "https://www.mext.go.jp/a_menu/syokuhinseibun/mext_00001.html" }
+  - { title: "京橋伊勢廣 本店（コース内容）", url: "https://www.isehiro.co.jp/honten/" }
+  - { title: "鳥貴族 メニュー「焼鳥」", url: "https://torikizoku.co.jp/menu/yakitori/" }
+  - { title: "風来坊「元祖手羽先唐揚 誕生ものがたり」", url: "https://furaibou.com/tanzyo/" }
+- id: nankotsu
+  ja: なんこつ
+  kana: なんこつ
+  romaji: nankotsu
+  mean:
+    ja: "鶏の軟骨"
+    zh: "鸡软骨"
+    en: "Chicken cartilage"
+  part:
+    ja: "胸骨の先端の軟骨（ヤゲン）や関節の軟骨。規格では「胸骨及び関節の軟骨」とし、「なんこつ（胸骨）」のように部位を添えて表示する"
+    zh: "胸骨尖端的软骨（ヤゲン，药研软骨）及关节软骨。规格定义为“胸骨及关节的软骨”，并须注明部位，如“软骨（胸骨）”"
+    en: "Cartilage from the breastbone tip (yagen) and from joints. The standard defines nankotsu as cartilage of the breastbone and joints, labelled with the part, e.g. nankotsu (breastbone)"
+  note:
+    ja: "「軟骨」という語は『解体新書』（1774年）でオランダ語 kraakbeen の訳語として初めて見える。胸骨の先端は、生薬をすりつぶす舟形でV字にくぼんだ器具「薬研（やげん）」に形が似ることから「ヤゲン」と呼ばれ、肉がついたまま調理することが多く、肉の食感とコリコリ感を同時に楽しめる。胸の軟骨（生）は100gあたり54kcal・脂質0.4g・水分85.0g。農林水産省の aff はヤゲンやゲンコツなど骨の位置で食感が違うとし、鳥貴族は串の「やげんなんこつ」と「ひざなんこつ唐揚」を出している。"
+    zh: "“軟骨”一词最早见于《解体新书》（1774年），是荷兰语kraakbeen的译词。胸骨尖端因形似研磨中药用的船形V字槽器具“药研”（やげん）而叫“ヤゲン”，多连着肉一起烹调，能同时吃到肉的口感和脆劲。鸡胸软骨（生）每100克54千卡、脂肪0.4克、水分85.0克。农水省aff指出ヤゲン、ゲンコツ等因骨头位置不同口感各异；鸟贵族有“药研软骨”串和“炸膝软骨”。"
+    en: "The word 軟骨 first appears in Kaitai Shinsho (1774) as a translation of Dutch kraakbeen. The breastbone tip is called yagen after the yagen, a boat-shaped, V-grooved tool for grinding herbal medicine, which it resembles; it is usually cooked with meat attached, giving tender meat and crunch together. Raw breast cartilage has 54 kcal, 0.4 g fat and 85.0 g water per 100 g. MAFF notes that cartilage from different bones, such as yagen and genkotsu, differs in texture; Torikizoku sells yagen-nankotsu skewers and fried hiza (knee) nankotsu."
+  sources:
+  - { title: "コトバンク「軟骨」（精選版 日本国語大辞典）", url: "https://kotobank.jp/word/%E8%BB%9F%E9%AA%A8-108797" }
+  - { title: "コトバンク「薬研」（デジタル大辞泉）", url: "https://kotobank.jp/word/%E8%96%AC%E7%A0%94-143601" }
+  - { title: "農林水産省 aff 2020年9月号「鶏の部位図鑑」ポスター（監修：日本食肉消費総合センター）", url: "https://www.maff.go.jp/j/pr/aff/2009/pdf/aff2009_02_poster05.pdf" }
+  - { title: "日本食鳥協会『食鶏取引規格・食鶏小売規格』（農林水産省畜産局長通達、令和8年4月改正）", url: "https://www.j-chicken.jp/wp-chicken/wp-content/uploads/2026/07/%E9%A3%9F%E9%B6%8F%E5%8F%96%E5%BC%95-%E5%B0%8F%E5%A3%B2%E8%A6%8F%E6%A0%BC-R7%EF%BC%88%E8%A7%A3%E4%BD%93%E5%93%81%E5%9B%B3%E8%A6%8B%E9%96%8B%E3%81%8D%EF%BC%89.pdf" }
+  - { title: "文部科学省「日本食品標準成分表（八訂）増補2023年」", url: "https://www.mext.go.jp/a_menu/syokuhinseibun/mext_00001.html" }
+  - { title: "鳥貴族 メニュー（2026年10月版PDF）", url: "https://torikizoku.co.jp/assets/uploads/2026/10/menu_jp.pdf" }

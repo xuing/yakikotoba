@@ -1,0 +1,11 @@
+- file: kinmedai-himono.jpg
+  kind: dish
+  caption:
+    ja: "金目鯛の干物を焼いたもの"
+    zh: "烤金目鲷鱼干"
+    en: "Grilled kinmedai himono (split, dried fish)"
+  source:
+    title: "金目鯛の干物---2024-04-19.jpg（Wikimedia Commons）"
+    url: "https://commons.wikimedia.org/wiki/File:%E9%87%91%E7%9B%AE%E9%AF%9B%E3%81%AE%E5%B9%B2%E7%89%A9---2024-04-19.jpg"
+    license: "CC BY 4.0"
+    author: "RuinDig/Yuki Uchida"

@@ -1,0 +1,11 @@
+- file: shimesaba-nigiri.jpg
+  kind: dish
+  caption:
+    ja: "しめさばのにぎり"
+    zh: "醋腌鲭鱼握寿司"
+    en: "Shime-saba (vinegar-cured mackerel) nigiri"
+  source:
+    title: "Shimesaba.jpg（Wikimedia Commons）"
+    url: "https://commons.wikimedia.org/wiki/File:Shimesaba.jpg"
+    license: "CC BY-SA 3.0"
+    author: "Arashiyama"

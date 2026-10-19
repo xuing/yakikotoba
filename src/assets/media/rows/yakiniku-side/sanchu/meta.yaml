@@ -1,0 +1,11 @@
+- file: commons.jpg
+  kind: dish
+  caption:
+    ja: "サンチュ"
+    zh: "包肉用生菜（サンチュ）"
+    en: "Sangchu lettuce for wrapping"
+  source:
+    title: "Wikimedia Commons「Korean barbeque-vegetables-01.jpg」（Flickr原題「サンチュ、エゴマの葉」）"
+    url: "https://commons.wikimedia.org/wiki/File:Korean_barbeque-vegetables-01.jpg"
+    license: "CC BY-SA 2.0"
+    author: "ayustety (Flickr)"

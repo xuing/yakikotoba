@@ -1,0 +1,179 @@
+order: 4
+ja: サイド
+zh: 饭面小菜
+en: Sides
+items:
+  - id: rice
+    ja: ライス
+    kana: らいす
+    romaji: raisu
+    mean:
+      ja: 白いご飯
+      zh: 白米饭
+      en: Plain rice
+    part:
+      ja: 器に盛った白飯。焼肉店では肉とは別に単品で頼む
+      zh: 盛在碗里的白米饭，在烤肉店要另外单点
+      en: A bowl of plain white rice, ordered separately from the meat
+    note:
+      ja: 英語の rice から。日本語の「ライス」は米・米飯のことで、特に西洋料理に添える米飯をいい、1877年の『米欧回覧実記』に用例がある（日本国語大辞典）。焼肉チェーンには「ごはん」と書く店もあり、牛角は「ごはん」「カルビ専用ごはん」、焼肉きんぐは「ごはん」を小・中・特盛の3サイズで出している。
+      zh: 来自英语 rice。日语的「ライス」指米或米饭，尤其指配西餐的米饭，1877年的《米欧回览实记》中已有用例（《日本国语大辞典》）。也有烤肉连锁店在菜单上写「ごはん」：牛角写「ごはん」和「カルビ専用ごはん」（配五花肉专用饭），焼肉きんぐ的「ごはん」分小、中、特大三种份量。
+      en: "From English “rice”: in Japanese, raisu means rice or cooked rice, especially rice served with Western-style dishes, and is attested as early as 1877 in the Bei-Ō Kairan Jikki (Nihon Kokugo Daijiten). Some yakiniku chains write gohan instead: Gyū-Kaku lists gohan and a karubi-senyō gohan (rice meant for karubi), and Yakiniku King serves gohan in small, medium and extra-large."
+    sources:
+      - title: 精選版 日本国語大辞典・デジタル大辞泉「ライス」（コトバンク）
+        url: https://kotobank.jp/word/%E3%82%89%E3%81%84%E3%81%99-2572126
+      - title: 牛角 メニュー「麺・飯」
+        url: https://www.gyukaku.ne.jp/menu/menu-menmeshi.php
+      - title: 焼肉きんぐ 単品メニュー「ご飯」
+        url: https://www.yakiniku-king.jp/menu_all/tanpin/rice/
+  - id: reimen
+    ja: 冷麺
+    ruby: "{冷麺|れいめん}"
+    kana: れいめん
+    romaji: reimen
+    mean:
+      ja: 冷たいスープの麺料理
+      zh: 冷面
+      en: Cold noodles (naengmyeon)
+    part:
+      ja: 朝鮮半島の冷麺に由来する、コシの強い麺を冷たいスープで食べる料理
+      zh: 源自朝鲜半岛冷面，筋道的面条配冰凉的汤
+      en: Korean-style chewy noodles served in a chilled broth
+    note:
+      ja: 朝鮮半島の冷麺はそば粉とでんぷんの生地を型から押し出してゆでる麺で、もとは12月の時食としてオンドルの部屋で涼を味わう冬の料理だった（平壌の水冷麺、咸興のビビン冷麺が有名）。盛岡冷麺は1954年創業の盛岡の焼肉店「食道園」が発祥とされ、そば粉を使わず小麦粉と馬鈴薯でんぷんで麺を作り、わんこそば・じゃじゃ麺と並ぶ盛岡三大麺に数えられる。食道園では辛さを特辛・辛口・普通・別辛の4段階から選ぶ。なお関西では「冷麺」が冷やし中華を指すことがある。
+      zh: 朝鲜半岛的冷面是把荞麦粉加淀粉的面团从模具中压出、再煮熟的面，原本是十二月在暖炕（温突）屋里吃来感受凉意的冬季时令食物（平壤水冷面、咸兴拌冷面最有名）。盛冈冷面据说发源于1954年开业的盛冈烤肉店「食道園」，面条不用荞麦粉，而用小麦粉和马铃薯淀粉制成，与碗子荞麦面、炸酱面并称“盛冈三大面”。食道園的辣度分特辣、辣、普通、辣料另上（「別辛」）四档。另外在关西，「冷麺」有时指中式凉面（冷やし中華）。
+      en: "Korean naengmyeon uses noodles pressed from a buckwheat-and-starch dough through a mould and boiled; it began as a December seasonal dish, eaten for its chill in ondol-heated rooms (Pyongyang’s brothy and Hamhung’s spicy mixed versions are the classics). Morioka reimen traces to Shokudōen, a yakiniku restaurant founded in Morioka in 1954; its noodles use wheat flour and potato starch instead of buckwheat, and it counts among Morioka’s “three great noodles” with wanko soba and jajamen. Shokudōen lets you choose the heat: extra hot, hot, regular, or betsukara (spice served on the side). In Kansai, reimen can also mean hiyashi chūka, Chinese-style chilled ramen."
+    sources:
+      - title: 日本大百科全書・デジタル大辞泉・精選版 日本国語大辞典「冷麺」（コトバンク）
+        url: https://kotobank.jp/word/%E5%86%B7%E9%BA%BA-661227
+      - title: 国立国語院『標準国語大辞典』「냉면」
+        url: https://stdict.korean.go.kr/search/searchResult.do?searchKeyword=%EB%83%89%EB%A9%B4
+      - title: 日本の郷土料理がわかる辞典・デジタル大辞泉プラス「盛岡冷麺」（コトバンク）
+        url: https://kotobank.jp/word/%E7%9B%9B%E5%B2%A1%E5%86%B7%E9%BA%BA-808905
+      - title: GOOD LUCK TRIP「元祖 平壌冷麺 食道園」（掲載施設による確認済み情報）
+        url: https://www.gltjp.com/ja/directory/item/17631/
+  - id: bibinba
+    ja: ビビンバ
+    kana: びびんば
+    romaji: bibinba
+    mean:
+      ja: 混ぜご飯（朝鮮料理）
+      zh: 拌饭
+      en: Bibimbap (mixed rice)
+    part:
+      ja: ご飯にナムル・焼き肉・卵などをのせ、コチュジャンを加えてよく混ぜて食べる料理
+      zh: 米饭上铺凉拌菜、烤肉、鸡蛋等，加辣椒酱拌匀再吃
+      en: Rice topped with namul, grilled meat and egg, mixed with gochujang before eating
+    note:
+      ja: 朝鮮語 비빔밥（ピビムパプ）の「ピビム」は「混ぜる」、「パプ」は「飯」の意で、日本語ではビビンバのほかピビンパとも書く。ご飯の上に焼き肉や数種のナムル、薄焼き卵の細切りなどをのせ、コチュジャンを好みの量加えてよく混ぜてから食べる（日本食肉消費総合センター）。石焼きビビンバは熱した石の器で出し、卵黄をのせることが多く、器の熱で少し焦げたご飯の風味を楽しむ。韓国の標準国語大辞典は類義語として「골동반（骨董飯）」を挙げている。
+      zh: 韩语 비빔밥 中，“비빔”是“拌”，“밥”是“饭”；日语写作ビビンバ，也写作ピビンパ。在米饭上放烤肉、几种凉拌菜（ナムル）和蛋丝等，按口味加辣椒酱（コチュジャン）拌匀后食用（日本食肉消费综合中心）。石锅拌饭（石焼きビビンバ）用烧热的石碗盛装，常放一个蛋黄，享受碗壁把米饭烤出的焦香。韩国《标准国语大辞典》把「골동반（骨董饭）」列为它的同义词。
+      en: In Korean bibimbap, bibim means “mixing” and bap “rice”; Japanese writes it bibinba or pibinpa. Rice is topped with grilled meat, several kinds of namul and strips of thin omelette, then mixed well with gochujang to taste (Japan Meat Information Service Center). Ishiyaki bibinba comes in a heated stone bowl, often crowned with an egg yolk, and is prized for the rice the hot bowl scorches. Korea’s Standard Korean Language Dictionary gives goldongban (骨董飯) as a synonym.
+    sources:
+      - title: 世界の料理がわかる辞典・デジタル大辞泉・精選版 日本国語大辞典「ビビンバ」（コトバンク）
+        url: https://kotobank.jp/word/%E3%81%B3%E3%81%B3%E3%82%93%E3%81%B0-3217047
+      - title: 日本食肉消費総合センター 用語集「ビビンバ」
+        url: https://www.jmi.or.jp/info/word/ha/ha_074.html
+      - title: 世界の料理がわかる辞典「石焼きビビンバ」（コトバンク）
+        url: https://kotobank.jp/word/%E7%9F%B3%E7%84%BC%E3%81%8D%E3%81%B3%E3%81%B3%E3%82%93%E3%81%B0-1494193
+      - title: 国立国語院『標準国語大辞典』「비빔밥」
+        url: https://stdict.korean.go.kr/search/searchResult.do?searchKeyword=%EB%B9%84%EB%B9%94%EB%B0%A5
+  - id: kuppa
+    ja: クッパ
+    kana: くっぱ
+    romaji: kuppa
+    mean:
+      ja: スープご飯（朝鮮料理）
+      zh: 汤饭
+      en: Gukbap (rice in soup)
+    part:
+      ja: 肉や野菜を煮込んだ熱いスープにご飯を入れた料理
+      zh: 把米饭泡进炖了肉和蔬菜的热汤里
+      en: Rice served in a hot soup of meat and vegetables
+    note:
+      ja: 朝鮮語 국밥（クッパプ）で、「クッ」は汁物、「パプ」はご飯の意。韓国の標準国語大辞典は「煮たスープにご飯を入れたもの、またはスープにご飯を入れてから煮たもの」と定義している。焼肉チェーンでは「たまごクッパ」「カルビクッパ」（牛角）、「玉子クッパ」「旨辛カルビクッパ」（焼肉きんぐ）のように具の名を冠して出す。
+      zh: 韩语 국밥，“국”是汤，“밥”是饭。韩国《标准国语大辞典》的定义是“把饭放进煮好的汤里，或者先把饭放进汤里再煮”的食物。在烤肉连锁店，名字前常冠以配料，如牛角的「たまごクッパ」（鸡蛋汤饭）、「カルビクッパ」（牛五花汤饭），焼肉きんぐ的「旨辛カルビクッパ」（香辣牛五花汤饭）。
+      en: "Korean gukbap: guk means “soup” and bap “rice”. The Standard Korean Language Dictionary defines it as rice put into hot soup, or rice simmered in the soup. Yakiniku chains name it after what goes in—Gyū-Kaku’s tamago kuppa (egg) and karubi kuppa, Yakiniku King’s spicy umakara karubi kuppa."
+    sources:
+      - title: 世界の料理がわかる辞典・デジタル大辞泉「クッパ」（コトバンク）
+        url: https://kotobank.jp/word/%E3%81%8F%E3%81%A4%E3%81%B1-3210075
+      - title: 国立国語院『標準国語大辞典』「국밥」
+        url: https://stdict.korean.go.kr/search/searchResult.do?searchKeyword=%EA%B5%AD%EB%B0%A5
+      - title: 牛角 メニュー「麺・飯」
+        url: https://www.gyukaku.ne.jp/menu/menu-menmeshi.php
+      - title: 焼肉きんぐ 単品メニュー「ご飯」
+        url: https://www.yakiniku-king.jp/menu_all/tanpin/rice/
+  - id: kimuchi
+    ja: キムチ
+    kana: きむち
+    romaji: kimuchi
+    mean:
+      ja: 朝鮮半島の漬物
+      zh: 韩式泡菜
+      en: Kimchi
+    part:
+      ja: 塩漬けした白菜・大根・きゅうりなどを、唐辛子・にんにく・塩辛などの薬味で漬け込んだ発酵漬物
+      zh: 把盐渍过的白菜、萝卜、黄瓜等，用辣椒、大蒜、鱼虾酱等调料腌制发酵而成
+      en: Salted cabbage, radish, cucumber and the like, fermented with chilli, garlic and salted seafood
+    note:
+      ja: 朝鮮半島の漬物の総称で数十種あり、白菜のペチュキムチ、大根を角切りにしたカクテキ（깍두기）、きゅうりのオイキムチなどがある。唐辛子が使われるようになったのは17世紀後半からで、それ以前は山椒・生姜・にんにくを使う、主に塩味だけのものだった。漬けるときに重石はせず、日本の漬物のように洗って絞ることもしない。初冬に越冬用のキムチを一斉に漬ける「キムジャン」は、2013年にユネスコ無形文化遺産に登録された。
+      zh: 是朝鲜半岛腌菜的总称，有几十种，如白菜做的「ペチュキムチ」、萝卜切块的「カクテキ」（깍두기）、黄瓜做的「オイキムチ」。17世纪后半叶才开始用辣椒，此前用山椒、生姜、大蒜，基本只有咸味。腌制时不压石头，也不像日本咸菜那样洗净拧干。初冬家家集中腌制过冬泡菜的「김장」（越冬泡菜），2013年列入联合国教科文组织人类非物质文化遗产代表作名录。
+      en: "The umbrella term for Korean pickles, with dozens of kinds: baechu kimchi (napa cabbage), kakuteki (kkakdugi, cubed radish) and oi kimchi (cucumber) among them. Chilli only came into use in the late 17th century; before that kimchi was a mainly salty pickle flavoured with sansho, ginger and garlic. No weight is pressed on it, and unlike Japanese pickles it is not rinsed and wrung out. Kimjang, the communal early-winter making of kimchi for the cold months, was inscribed on UNESCO’s Intangible Cultural Heritage list in 2013."
+    sources:
+      - title: 日本大百科全書・改訂新版 世界大百科事典・デジタル大辞泉「キムチ」（コトバンク）
+        url: https://kotobank.jp/word/%E3%81%8D%E3%82%80%E3%81%A1-3149026
+      - title: 精選版 日本国語大辞典「カクテキ」（コトバンク）
+        url: https://kotobank.jp/word/%E3%81%8B%E3%81%8F%E3%81%A6%E3%81%8D-3209164
+      - title: 国立国語院『標準国語大辞典』「깍두기」
+        url: https://stdict.korean.go.kr/search/searchResult.do?searchKeyword=%EA%B9%8D%EB%91%90%EA%B8%B0
+      - title: UNESCO “Kimjang, making and sharing kimchi in the Republic of Korea”
+        url: https://ich.unesco.org/en/RL/kimjang-making-and-sharing-kimchi-in-the-republic-of-korea-00881
+  - id: namuru
+    ja: ナムル
+    kana: なむる
+    romaji: namuru
+    mean:
+      ja: 野菜の和え物（朝鮮料理）
+      zh: 韩式凉拌菜
+      en: Namul (seasoned vegetables)
+    part:
+      ja: もやし・ほうれん草・ぜんまいなどをゆでるなどして、ごま油・醤油・にんにくなどで和えたもの
+      zh: 豆芽、菠菜、蕨菜等焯水后，用香油、酱油、蒜等拌成
+      en: Bean sprouts, spinach, bracken and the like, blanched and dressed with sesame oil, soy sauce and garlic
+    note:
+      ja: 朝鮮語 나물 は、食べられる草や葉そのものと、それをゆでる・炒める・生のまま味付けして和えた料理の両方を指す。生野菜を和えた「生菜（センチェ）」と、湯通ししてから和えた「熟菜（スクチェ）」がある。ほうれん草・大豆もやし・ぜんまいの3種を盛り合わせることが多く、ビビンバの具にもなる。韓国の標準国語大辞典の用例には「正月の大満月（旧暦1月15日）には五穀飯と9種類のナムルを食べる」とある。
+      zh: 韩语 나물 既指可食用的野菜、树叶本身，也指把它们焯、炒或生着调味拌成的菜。分生拌的「生菜」（センチェ）和焯水后再拌的「熟菜」（スクチェ）。常见菠菜、黄豆芽、蕨菜三样拼在一起，也是拌饭的配料。韩国《标准国语大辞典》的例句说：“正月十五（大满月）吃五谷饭和九种拌菜。”
+      en: "Korean namul means both edible greens themselves and the dish made by boiling, stir-frying or simply seasoning them. There are saengchae, dressed raw, and sukchae, blanched first. A trio of spinach, soybean sprouts and bracken is the usual assortment, and namul also tops bibimbap. An example sentence in the Standard Korean Language Dictionary reads: “On the first full moon of the lunar year we eat five-grain rice and nine kinds of namul.”"
+    sources:
+      - title: 国立国語院『標準国語大辞典』「나물」
+        url: https://stdict.korean.go.kr/search/searchView.do?word_no=409778&searchKeywordTo=3
+      - title: デジタル大辞泉・精選版 日本国語大辞典・世界の料理がわかる辞典「ナムル」（コトバンク）
+        url: https://kotobank.jp/word/%E3%81%AA%E3%82%80%E3%82%8B-3215386
+  - id: sanchu
+    ja: サンチュ
+    kana: さんちゅ
+    romaji: sanchu
+    mean:
+      ja: 焼肉を包む葉野菜
+      zh: 包肉用的生菜
+      en: Leaf lettuce for wraps
+    part:
+      ja: 結球しないチシャ（レタスの仲間）の栽培品種。葉で焼肉などを包んで食べる
+      zh: 不结球的莴苣（生菜类）品种，用叶子包着烤肉吃
+      en: A non-heading lettuce variety whose leaves are used to wrap grilled meat
+    note:
+      ja: 朝鮮語 상추（サンチュ）はチシャ（レタス）のことで、焼肉などを包んで食べることから日本では「包み菜」ともいう。下葉から順に掻き取って収穫する「掻きちしゃ（チマサンチュ）」の類で、日本にも古くからあった。熱い肉を包んでも葉がしんなりしにくく味の相性もよいため、焼肉ブームとともに人気が出た（日本食肉消費総合センター）。朝鮮語でご飯や肉を葉で包んで食べる料理を「サム（쌈）」といい、一緒に包む甘辛い合わせ味噌を「サムジャン」と呼ぶ。
+      zh: 韩语 상추 就是莴苣（生菜）；因为用来包烤肉吃，日本也叫「包み菜」（包菜叶）。属于从下部叶片开始逐片掰取收获的「掻きちしゃ」（チマサンチュ）一类，日本很早就有。包热肉叶子也不容易蔫，和烤肉味道也相配，随着烤肉热潮流行起来（日本食肉消费综合中心）。韩语把用菜叶包饭、包肉吃叫「쌈」（ssam），一起包进去的甜辣拌酱叫「쌈장」（サムジャン）。
+      en: Korean sangchu means lettuce; because it is used to wrap yakiniku, Japanese also calls it tsutsumi-na (“wrapping greens”). It is a leaf-picking kaki-chisha (chima sangchu), harvested a leaf at a time from the bottom, and has long existed in Japan too. Its leaves stay crisp around hot meat and suit its flavour, so it caught on with the yakiniku boom (Japan Meat Information Service Center). Wrapping rice or meat in leaves is ssam in Korean, and the sweet-spicy paste tucked in with it is ssamjang.
+    sources:
+      - title: デジタル大辞泉「サンチュ」（コトバンク）
+        url: https://kotobank.jp/word/%E3%81%95%E3%82%93%E3%81%A1%E3%82%86-3211452
+      - title: デジタル大辞泉「掻き萵苣」（コトバンク）
+        url: https://kotobank.jp/word/%E6%8E%BB%E3%81%8D%E8%90%B5%E8%8B%A3-670708
+      - title: 日本食肉消費総合センター 用語集「サンチュ」
+        url: https://www.jmi.or.jp/info/word/sa/sa_024.html
+      - title: 国立国語院『標準国語大辞典』「상추」
+        url: https://stdict.korean.go.kr/search/searchResult.do?searchKeyword=%EC%83%81%EC%B6%94
+      - title: 国立国語院『標準国語大辞典』「쌈」
+        url: https://stdict.korean.go.kr/search/searchResult.do?searchKeyword=%EC%8C%88
+      - title: 世界の料理がわかる辞典「サムジャン」（コトバンク）
+        url: https://kotobank.jp/word/%E3%81%95%E3%82%80%E3%81%98%E3%82%84%E3%82%93-1494991

@@ -1,0 +1,11 @@
+- file: ikura-temaki.jpg
+  kind: dish
+  caption:
+    ja: "イクラの手巻き"
+    zh: "鲑鱼籽手卷"
+    en: "Ikura hand roll (temaki)"
+  source:
+    title: "Temaki-zushi.jpg（Wikimedia Commons）"
+    url: "https://commons.wikimedia.org/wiki/File:Temaki-zushi.jpg"
+    license: "CC BY-SA 3.0"
+    author: "Arashiyama"

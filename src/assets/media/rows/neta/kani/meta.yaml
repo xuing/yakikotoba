@@ -1,0 +1,11 @@
+- file: kani-oshizushi.jpg
+  kind: dish
+  caption:
+    ja: "カニの身をのせた押し寿司"
+    zh: "铺满蟹肉的押寿司"
+    en: "Pressed sushi topped with crab meat"
+  source:
+    title: "Crab meat sushi (8303688824).jpg（Wikimedia Commons）"
+    url: "https://commons.wikimedia.org/wiki/File:Crab_meat_sushi_(8303688824).jpg"
+    license: "CC BY-SA 2.0"
+    author: "pelican"
