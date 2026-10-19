@@ -127,15 +127,22 @@ async function synth(text) {
       method: 'POST',
       headers: { 'x-goog-api-key': process.env.GEMINI_API_KEY, 'Content-Type': 'application/json' },
       body: JSON.stringify(body),
-    });
+      signal: AbortSignal.timeout(60_000),
+    }).catch((e) => ({ ok: false, status: 599, text: async () => String(e) }));
     if (r.ok) {
       const j = await r.json();
       const part = j.candidates?.[0]?.content?.parts?.find((p) => p.inlineData || p.inline_data);
       const blob = part?.inlineData ?? part?.inline_data;
       if (blob?.data) return { data: Buffer.from(blob.data, 'base64'), mime: blob.mimeType ?? blob.mime_type ?? '' };
       if (attempt >= 4) throw new Error(`no audio in response: ${JSON.stringify(j).slice(0, 200)}`);
-    } else if (attempt >= 5 || ![429, 500, 502, 503, 504].includes(r.status)) {
-      throw new Error(`HTTP ${r.status}: ${(await r.text()).slice(0, 200)}`);
+    } else {
+      const msg = await r.text();
+      // daily quota used up: retrying cannot help until it resets
+      if (r.status === 429 && /per_?day|PerDay/i.test(msg)) {
+        quotaExhausted = true;
+        throw new Error(`daily quota for ${MODEL} is used up — run npm run tts again after it resets`);
+      }
+      if (attempt >= 5 || ![429, 500, 502, 503, 504, 599].includes(r.status)) throw new Error(`HTTP ${r.status}: ${msg.slice(0, 200)}`);
     }
     await new Promise((res) => setTimeout(res, 1500 * 2 ** attempt));
   }
@@ -158,10 +165,10 @@ function encode({ data, mime }, outFile) {
   }
 }
 
-let done = 0, failed = 0;
+let done = 0, failed = 0, quotaExhausted = false;
 const queue = [...todo];
 async function worker() {
-  while (queue.length) {
+  while (queue.length && !quotaExhausted) {
     const job = queue.shift();
     try {
       encode(await synth(job.text), path.join(OUT_DIR, job.file));
@@ -183,4 +190,4 @@ await Promise.all(Array.from({ length: Math.min(CONCURRENCY, todo.length || 1) }
 // drop manifest entries whose key no longer exists in the content
 for (const k of Object.keys(manifest)) if (!jobs.has(k)) delete manifest[k];
 fs.writeFileSync(MANIFEST, JSON.stringify(sortKeys(manifest), null, 1));
-console.log(`done: ${done} generated, ${failed} failed, ${Object.keys(manifest).length} keys with audio`);
+console.log(`done: ${done} generated, ${failed} failed, ${Object.keys(manifest).length} keys with audio${quotaExhausted ? ` — stopped: daily quota for ${MODEL} used up, ${queue.length + failed} left` : ''}`);
