@@ -1,0 +1,76 @@
+---
+// Plays the generated mp3 when there is one, otherwise the browser's Japanese voice.
+import { audioFor } from '../lib/audio';
+import { t, type Locale } from '../i18n/ui';
+interface Props { audioKey?: string; text: string; locale: Locale; size?: 'sm' | 'md' | 'lg' }
+const { audioKey, text, locale, size = 'md' } = Astro.props;
+const src = audioKey ? audioFor(audioKey) : undefined;
+---
+<say-ja data-src={src} data-text={text} class={`say ${size}`}>
+  <button type="button" aria-label={`${t(locale, 'audio.play')}: ${text}`} title={t(locale, 'audio.play')}>
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path class="spk" d="M4 9.5h3.2L12 5.5v13l-4.8-4H4z"></path>
+      <path class="w1" d="M15.2 9.2a4 4 0 0 1 0 5.6"></path>
+      <path class="w2" d="M17.8 6.6a7.6 7.6 0 0 1 0 10.8"></path>
+    </svg>
+  </button>
+</say-ja>
+
+<script>
+  let current: HTMLAudioElement | null = null;
+  let currentEl: HTMLElement | null = null;
+
+  function speak(text: string, done: () => void) {
+    if (!('speechSynthesis' in window)) return done();
+    const u = new SpeechSynthesisUtterance(text);
+    u.lang = 'ja-JP';
+    u.rate = 0.92;
+    const v = speechSynthesis.getVoices().find((x) => x.lang?.toLowerCase().startsWith('ja'));
+    if (v) u.voice = v;
+    u.onend = u.onerror = done;
+    speechSynthesis.cancel();
+    speechSynthesis.speak(u);
+  }
+
+  class SayJa extends HTMLElement {
+    connectedCallback() {
+      this.querySelector('button')?.addEventListener('click', () => this.play());
+    }
+    play() {
+      current?.pause();
+      currentEl?.removeAttribute('playing');
+      if ('speechSynthesis' in window) speechSynthesis.cancel();
+      currentEl = this;
+      this.setAttribute('playing', '');
+      const done = () => this.removeAttribute('playing');
+      const text = this.dataset.text ?? '';
+      const src = this.dataset.src;
+      if (src) {
+        current = new Audio(src);
+        current.onended = done;
+        current.play().catch(() => speak(text, done));
+      } else speak(text, done);
+    }
+  }
+  if (!customElements.get('say-ja')) customElements.define('say-ja', SayJa);
+</script>
+
+<style>
+  .say { display: inline-flex; flex-shrink: 0; }
+  button {
+    display: grid; place-items: center; border-radius: 999px;
+    width: 40px; height: 40px; border: 1px solid var(--line-2);
+    background: var(--surface); color: var(--ink);
+    transition: background .2s, color .2s, border-color .2s, transform .15s;
+  }
+  .sm button { width: 32px; height: 32px; }
+  .lg button { width: 48px; height: 48px; }
+  button:hover { border-color: var(--accent); color: var(--accent); }
+  button:active { transform: scale(.94); }
+  svg { width: 55%; height: 55%; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
+  .spk { fill: currentColor; stroke: none; }
+  [playing] button { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
+  [playing] .w1 { animation: pulse 0.9s ease-in-out infinite; }
+  [playing] .w2 { animation: pulse 0.9s ease-in-out .15s infinite; }
+  @keyframes pulse { 50% { opacity: .25; } }
+</style>

@@ -1,0 +1,24 @@
+{
+  "name": "yaki-kotoba",
+  "type": "module",
+  "version": "0.1.0",
+  "private": true,
+  "description": "やきことば — learn the Japanese of yakiniku & yakitori menus",
+  "engines": {
+    "node": ">=22.22.0"
+  },
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "check": "node scripts/check.mjs",
+    "tts": "node scripts/tts.mjs",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "astro": "^7.4.0",
+    "sharp": "^0.35.5",
+    "wanakana": "^5.3.1",
+    "yaml": "^2.9.1"
+  }
+}

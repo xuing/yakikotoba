@@ -1,0 +1,8 @@
+---
+// Renders furigana markup ({上|じょう}タン) as <ruby>. Falls back to plain text.
+import { parseRuby } from '../lib/ruby';
+interface Props { text: string; ruby?: string }
+const { text, ruby } = Astro.props;
+const segs = ruby ? parseRuby(ruby) : [{ text }];
+---
+{segs.map((s) => (s.rt ? <ruby>{s.text}<rt>{s.rt}</rt></ruby> : s.text))}

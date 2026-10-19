@@ -1,0 +1,73 @@
+---
+import Seal from './Seal.astro';
+import { href, locales, localeLabel, t, type Locale } from '../i18n/ui';
+
+interface Props { locale: Locale; path: string; current?: string }
+const { locale, path, current } = Astro.props;
+const links = [
+  { key: 'cuts', label: t(locale, 'nav.cuts'), url: href(locale, 'cuts') },
+  { key: 'chains', label: t(locale, 'nav.chains'), url: href(locale, 'chains') },
+  { key: 'words', label: t(locale, 'nav.words'), url: href(locale, 'words') },
+  { key: 'dishes', label: t(locale, 'nav.dishes'), url: href(locale, 'dishes') },
+  { key: 'phrases', label: t(locale, 'nav.phrases'), url: href(locale, 'phrases') },
+];
+---
+<header class="site-header">
+  <div class="wrap bar">
+    <a class="brand" href={href(locale)} aria-label={t(locale, 'site.name')}>
+      <Seal size={30} />
+      <span class="word mincho" lang="ja">やきことば</span>
+    </a>
+    <nav class="nav" aria-label="Main">
+      {links.map((l) => <a href={l.url} aria-current={current === l.key ? 'page' : undefined}>{l.label}</a>)}
+    </nav>
+    <div class="tools">
+      <a class="icon-btn" href={href(locale, 'search')} aria-label={t(locale, 'nav.search')} aria-current={current === 'search' ? 'page' : undefined}>
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="11" cy="11" r="6.5"></circle><path d="m16 16 4.5 4.5"></path></svg>
+      </a>
+      <div class="lang" role="group" aria-label="Language">
+        {locales.map((l) => (
+          <a href={`/${l}/${path.replace(/^\/+/, '')}`} hreflang={l} aria-current={l === locale ? 'true' : undefined}>{localeLabel[l]}</a>
+        ))}
+      </div>
+    </div>
+  </div>
+</header>
+
+<style>
+  .site-header {
+    position: sticky; top: 0; z-index: 20;
+    background: color-mix(in srgb, var(--bg) 86%, transparent);
+    backdrop-filter: saturate(1.4) blur(14px);
+    -webkit-backdrop-filter: saturate(1.4) blur(14px);
+    border-bottom: 1px solid var(--line);
+  }
+  .bar { display: flex; align-items: center; gap: 28px; height: 60px; }
+  .brand { display: inline-flex; align-items: center; gap: 10px; text-decoration: none; flex-shrink: 0; }
+  .word { font-size: 21px; font-weight: 800; letter-spacing: .04em; }
+  .nav { display: flex; gap: 4px; flex: 1; min-width: 0; }
+  .nav a {
+    position: relative; text-decoration: none; color: var(--ink-2);
+    padding: 6px 12px; border-radius: 999px; font-size: 15px; white-space: nowrap;
+    transition: color .2s, background .2s;
+  }
+  .nav a:hover { color: var(--ink); background: var(--bg-2); }
+  .nav a[aria-current='page'] { color: var(--ink); background: var(--bg-2); font-weight: 600; }
+  .tools { display: flex; align-items: center; gap: 10px; margin-left: auto; }
+  .icon-btn {
+    display: grid; place-items: center; width: 38px; height: 38px; border-radius: 999px;
+    color: var(--ink-2); transition: background .2s, color .2s;
+  }
+  .icon-btn:hover, .icon-btn[aria-current='page'] { background: var(--bg-2); color: var(--ink); }
+  .lang { display: inline-flex; border: 1px solid var(--line); border-radius: 999px; padding: 2px; }
+  .lang a { text-decoration: none; font-size: 12.5px; padding: 3px 9px; border-radius: 999px; color: var(--ink-3); font-weight: 600; font-family: var(--font-zh); }
+  .lang a[aria-current='true'] { background: var(--ink); color: var(--bg); }
+
+  @media (max-width: 760px) {
+    .bar { flex-wrap: wrap; height: auto; padding-top: 10px; gap: 6px 12px; }
+    .nav { order: 3; flex-basis: 100%; overflow-x: auto; scrollbar-width: none; margin-inline: calc(-1 * var(--gutter)); padding: 2px var(--gutter) 10px; }
+    .nav::-webkit-scrollbar { display: none; }
+    .nav a { font-size: 14.5px; padding: 6px 12px; background: var(--surface); border: 1px solid var(--line); }
+    .nav a[aria-current='page'] { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+  }
+</style>

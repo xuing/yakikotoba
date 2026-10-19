@@ -1,0 +1,41 @@
+---
+// A Japanese word as the learner should see it: ruby, kana (when needed), romaji, audio.
+import Ruby from './Ruby.astro';
+import AudioButton from './AudioButton.astro';
+import { hasKanji, rubyToKana } from '../lib/ruby';
+import type { Locale } from '../i18n/ui';
+
+interface Props {
+  ja: string; ruby?: string; kana?: string; romaji?: string; tts?: string;
+  audioKey?: string; locale: Locale; size?: 'xl' | 'lg' | 'md' | 'sm'; as?: 'h1' | 'h2' | 'h3' | 'div' | 'span';
+}
+const { ja, ruby, kana, romaji, tts, audioKey, locale, size = 'md', as: Tag = 'div' } = Astro.props;
+const showKana = !!kana && !ruby && hasKanji(ja);
+const speakText = tts ?? kana ?? (ruby ? rubyToKana(ruby) : ja);
+---
+<div class={`jaword ${size}`}>
+  <Tag class="ja mincho" lang="ja"><Ruby text={ja} ruby={ruby} /></Tag>
+  <div class="meta">
+    <AudioButton audioKey={audioKey} text={speakText} locale={locale} size={size === 'xl' ? 'lg' : size === 'sm' ? 'sm' : 'md'} />
+    <div class="readings">
+      {showKana && <span class="kana" lang="ja">{kana}</span>}
+      {romaji && <span class="romaji">{romaji}</span>}
+    </div>
+  </div>
+</div>
+
+<style>
+  .jaword { display: flex; flex-direction: column; gap: 10px; min-width: 0; }
+  .ja { font-weight: 800; line-height: 1.25; letter-spacing: .02em; overflow-wrap: anywhere; }
+  .xl .ja { font-size: clamp(44px, 8vw, 76px); line-height: 1.15; }
+  .lg .ja { font-size: clamp(30px, 5vw, 44px); }
+  .md .ja { font-size: 24px; }
+  .sm .ja { font-size: 19px; font-weight: 700; }
+  .xl .ja :global(rt) { font-size: .32em; }
+  .meta { display: flex; align-items: center; gap: 12px; }
+  .readings { display: flex; flex-wrap: wrap; align-items: baseline; gap: 2px 12px; min-width: 0; }
+  .kana { color: var(--ink-2); font-size: 15px; }
+  .romaji { font-size: 17px; }
+  .xl .romaji { font-size: 21px; }
+  .sm .romaji, .sm .kana { font-size: 14px; }
+</style>

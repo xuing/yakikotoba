@@ -1,0 +1,208 @@
+---
+import Base from '../../../layouts/Base.astro';
+import JaWord from '../../../components/JaWord.astro';
+import Ruby from '../../../components/Ruby.astro';
+import AudioButton from '../../../components/AudioButton.astro';
+import MapThumb from '../../../components/MapThumb.astro';
+import Photo from '../../../components/Photo.astro';
+import { locales, pick, t, href, type Locale } from '../../../i18n/ui';
+import { getChains, getCut, getTerm, cutUrl, termUrl, locateCut, type ChainItem } from '../../../lib/content';
+import { imageByName, logoFor } from '../../../lib/media';
+import { rubyToKana } from '../../../lib/ruby';
+
+export async function getStaticPaths() {
+  const chains = await getChains();
+  return locales.flatMap((lang) => chains.map((chain) => ({ params: { lang, id: chain.id }, props: { chain } })));
+}
+const { chain } = Astro.props;
+const locale = Astro.params.lang as Locale;
+const d = chain.data;
+const folder = `chains/${chain.id}`;
+const logo = logoFor(folder);
+
+async function enrich(item: ChainItem) {
+  const cuts = (await Promise.all(item.cuts.map((r) => getCut(r)))).filter((c): c is NonNullable<typeof c> => !!c);
+  const terms = (await Promise.all(item.terms.map((r) => getTerm(r)))).filter((x): x is NonNullable<typeof x> => !!x);
+  const loc = cuts[0] ? (await locateCut(cuts[0]))[0] : undefined;
+  return { item, cuts, terms, loc, img: imageByName(folder, item.image) };
+}
+const items = await Promise.all(d.items.map(enrich));
+const signature = items.filter((x) => x.item.signature);
+const rest = items.filter((x) => !x.item.signature);
+const yen = (n?: number) => (n != null ? `¥${n.toLocaleString('ja-JP')}` : '');
+const speak = (x: { ja: string; kana?: string; ruby?: string; tts?: string }) => x.tts ?? x.kana ?? (x.ruby ? rubyToKana(x.ruby) : x.ja);
+const tr = (v: { zh?: string; en?: string }) => (locale === 'zh' ? v.zh ?? v.en : v.en ?? v.zh);
+---
+<Base locale={locale} title={d.ja} description={pick(d.summary, locale)} path={`chains/${chain.id}/`} nav="chains">
+  <div class="wrap page">
+    <nav class="crumbs"><a href={href(locale, 'chains')}>{t(locale, 'nav.chains')}</a></nav>
+    <header class="head">
+      {logo && <div class="logo-box"><img src={logo.image.src} alt={d.brand ?? d.ja} class="logo" /></div>}
+      <div class="ident">
+        <JaWord ja={d.ja} ruby={d.ruby} kana={d.kana} romaji={d.romaji} audioKey={`chain:${chain.id}`} locale={locale} size="lg" as="h1" />
+        <div class="tags">
+          <span class="tag">{t(locale, `cuisine.${d.cuisine}` as any)}</span>
+          {d.format && <span class="tag">{t(locale, `chain.format.${d.format}` as any) || d.format}</span>}
+          {d.brand && <span class="tag">{d.brand}</span>}
+          {d.url && <a class="tag link" href={d.url} rel="noopener">{t(locale, 'chain.official')} ↗</a>}
+        </div>
+      </div>
+    </header>
+    {d.summary && <p class="summary">{pick(d.summary, locale)}</p>}
+
+    {d.courses.length > 0 && (
+      <section class="block">
+        <div class="section-title"><h2>{t(locale, 'chain.courses')}</h2></div>
+        <div class="courses">
+          {d.courses.map((c: any, i: number) => (
+            <div class="card course">
+              <div class="c-head">
+                <span class="mincho c-ja" lang="ja"><Ruby text={c.ja} ruby={c.ruby} /></span>
+                <AudioButton audioKey={`course:${chain.id}/${i}`} text={speak(c)} locale={locale} size="sm" />
+              </div>
+              {c.romaji && <span class="romaji">{c.romaji}</span>}
+              {c.name && <span class="muted">{pick(c.name, locale)}</span>}
+              <div class="c-meta num">
+                {c.price != null && <span class="price">{yen(c.price)}<small> {t(locale, 'chain.taxIncl')}</small></span>}
+                {c.minutes != null && <span>{c.minutes} {t(locale, 'chain.minutes')}</span>}
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+    )}
+
+    {signature.length > 0 && (
+      <section class="block">
+        <div class="section-title"><h2>{t(locale, 'chain.signature')}</h2></div>
+        <div class="sig">
+          {signature.map(({ item, cuts, terms, loc, img }) => (
+            <article class="card sig-card" id={item.id}>
+              {img && <Photo item={img} locale={locale} alt={item.ja} widths={[480, 800]} sizes="(max-width: 760px) 100vw, 540px" class="sig-img" />}
+              <div class="sig-body">
+                <JaWord ja={item.ja} ruby={item.ruby} kana={item.kana} romaji={item.romaji} tts={item.tts} audioKey={`chain-item:${chain.id}/${item.id}`} locale={locale} size="md" as="h3" />
+                {item.name && <p class="nm">{pick(item.name, locale)}</p>}
+                {item.summary && <p class="muted">{pick(item.summary, locale)}</p>}
+                {cuts.length > 0 && (
+                  <a class="cutlink" href={cutUrl(locale, cuts[0])}>
+                    {loc && <span class="mt"><MapThumb map={loc.map} x={loc.markers[0]?.x} y={loc.markers[0]?.y} /></span>}
+                    <span class="cl-text">
+                      <span class="eyebrow">{t(locale, 'chain.cut')}</span>
+                      <span class="mincho cl-ja" lang="ja">{cuts.map((c) => c.data.ja).join('・')}</span>
+                      <span class="faint">{cuts.map((c) => pick(c.data.name, locale)).join(' / ')}</span>
+                    </span>
+                  </a>
+                )}
+                {terms.length > 0 && (
+                  <p class="terms">
+                    {terms.map((x) => <a class="chip" href={termUrl(locale, x.id)}><span lang="ja"><Ruby text={x.data.ja} ruby={x.data.ruby} /></span><span class="faint">{pick(x.data.name, locale)}</span></a>)}
+                  </p>
+                )}
+              </div>
+            </article>
+          ))}
+        </div>
+      </section>
+    )}
+
+    {rest.length > 0 && (
+      <section class="block">
+        <div class="section-title"><h2>{t(locale, 'chain.items')}</h2></div>
+        <ul class="rows">
+          {rest.map(({ item, cuts, img }) => (
+            <li class="row" id={item.id}>
+              {img && !img.isSvg ? <span class="r-img"><Photo item={img} locale={locale} credit={false} widths={[160, 320]} sizes="72px" /></span> : <span class="r-img empty"></span>}
+              <div class="r-word">
+                <span class="mincho r-ja" lang="ja"><Ruby text={item.ja} ruby={item.ruby} /></span>
+                {item.romaji && <span class="romaji">{item.romaji}</span>}
+              </div>
+              <div class="r-mean">
+                {item.name && <span>{pick(item.name, locale)}</span>}
+                {cuts.length > 0 && <span class="r-cuts">{cuts.map((c) => <a href={cutUrl(locale, c)} lang="ja">{c.data.ja}</a>)}</span>}
+              </div>
+              <AudioButton audioKey={`chain-item:${chain.id}/${item.id}`} text={speak(item)} locale={locale} size="sm" />
+            </li>
+          ))}
+        </ul>
+      </section>
+    )}
+
+    {d.vocab.length > 0 && (
+      <section class="block">
+        <div class="section-title"><h2>{t(locale, 'chain.vocab')}</h2></div>
+        <ul class="rows">
+          {d.vocab.map((v, i) => (
+            <li class="row vocab">
+              <div class="r-word"><span class="mincho r-ja" lang="ja"><Ruby text={v.ja} ruby={v.ruby} /></span>{v.romaji && <span class="romaji">{v.romaji}</span>}</div>
+              <div class="r-mean">{tr(v)}</div>
+              <AudioButton audioKey={`vocab:${chain.id}/${i}`} text={speak(v)} locale={locale} size="sm" />
+            </li>
+          ))}
+        </ul>
+      </section>
+    )}
+
+    {d.sources.length > 0 && (
+      <section class="sources">
+        <h2 class="eyebrow">{t(locale, 'cut.sources')}</h2>
+        <ul>{d.sources.map((s) => <li>{s.url ? <a href={s.url} rel="noopener">{s.title ?? s.url}</a> : s.title}</li>)}</ul>
+      </section>
+    )}
+  </div>
+</Base>
+
+<style>
+  .page { padding-top: 22px; }
+  .crumbs { font-size: 14px; margin-bottom: 18px; }
+  .crumbs a { color: var(--ink-2); text-decoration: none; }
+  .head { display: flex; gap: 24px; align-items: center; flex-wrap: wrap; }
+  .logo-box { width: 132px; height: 132px; border-radius: 22px; background: #fff; border: 1px solid var(--line); display: grid; place-items: center; padding: 16px; flex-shrink: 0; }
+  .logo { max-width: 100%; max-height: 100%; object-fit: contain; }
+  .ident { display: grid; gap: 14px; min-width: 0; }
+  .tags { display: flex; gap: 6px; flex-wrap: wrap; }
+  .tag.link { text-decoration: none; }
+  .summary { margin-top: 20px; font-size: 17px; color: var(--ink-2); max-width: 48em; }
+  .block { margin-top: 44px; }
+  .courses { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 12px; }
+  .course { padding: 16px 18px; display: grid; gap: 4px; }
+  .c-head { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+  .c-ja { font-size: 19px; font-weight: 700; }
+  .c-meta { display: flex; gap: 14px; align-items: baseline; margin-top: 6px; color: var(--ink-2); }
+  .price { font-size: 20px; font-weight: 700; color: var(--ink); }
+  .price small { font-size: 11px; color: var(--ink-3); font-weight: 500; }
+  .sig { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 16px; }
+  .sig-card { overflow: hidden; display: flex; flex-direction: column; scroll-margin-top: 90px; }
+  .sig-card :global(.sig-img img) { border-radius: 0; aspect-ratio: 4 / 3; object-fit: contain; padding: 14px; background: radial-gradient(closest-side, var(--surface), var(--surface-2)); }
+  .sig-card :global(.sig-img figcaption) { padding: 0 16px; }
+  .sig-body { padding: 16px 18px 20px; display: grid; gap: 10px; }
+  .nm { font-weight: 600; }
+  .cutlink { display: flex; gap: 12px; align-items: center; text-decoration: none; color: var(--ink); background: var(--surface-2); border: 1px solid var(--line); border-radius: 12px; padding: 10px 12px; }
+  .cutlink:hover { border-color: var(--line-2); }
+  .mt { width: 92px; flex-shrink: 0; }
+  .cl-text { display: grid; gap: 1px; font-size: 13px; }
+  .cl-ja { font-size: 17px; font-weight: 700; }
+  .terms { display: flex; flex-wrap: wrap; gap: 6px; }
+  .rows { list-style: none; padding: 0; border-top: 1px solid var(--line); max-width: 920px; }
+  .row { display: grid; grid-template-columns: 64px minmax(0, 1.2fr) minmax(0, 1fr) auto; gap: 16px; align-items: center; padding: 12px 0; border-bottom: 1px solid var(--line); scroll-margin-top: 90px; }
+  .row.vocab { grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr) auto; }
+  .r-img { width: 64px; height: 64px; border-radius: 10px; overflow: hidden; background: var(--surface-2); }
+  .r-img :global(img) { width: 64px; height: 64px; object-fit: contain; border-radius: 10px; }
+  .r-img.empty { background: transparent; }
+  .r-word { display: grid; gap: 2px; min-width: 0; }
+  .r-ja { font-size: 18px; font-weight: 700; line-height: 1.6; }
+  .r-mean { display: grid; gap: 4px; font-size: 14.5px; color: var(--ink-2); }
+  .r-cuts { display: flex; gap: 8px; flex-wrap: wrap; font-size: 13px; }
+  .r-cuts a { color: var(--accent); text-decoration: none; }
+  .sources { margin-top: 48px; font-size: 13px; color: var(--ink-3); display: grid; gap: 8px; }
+  .sources ul { padding-left: 1.2em; }
+  .sources a { color: var(--ink-2); }
+  @media (max-width: 640px) {
+    .row { grid-template-columns: 52px minmax(0, 1fr) auto; }
+    .r-mean { grid-column: 2 / 3; grid-row: 2; }
+    .row :global(.say) { grid-row: 1; grid-column: 3; }
+    .r-img, .r-img :global(img) { width: 52px; height: 52px; }
+    .row.vocab { grid-template-columns: minmax(0, 1fr) auto; }
+    .row.vocab .r-mean { grid-column: 1; grid-row: 2; }
+    .logo-box { width: 96px; height: 96px; }
+  }
+</style>

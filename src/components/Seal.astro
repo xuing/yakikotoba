@@ -1,0 +1,13 @@
+---
+// The mark: a vermilion seal (落款) with 焼.
+interface Props { size?: number }
+const { size = 30 } = Astro.props;
+---
+<svg class="seal" width={size} height={size} viewBox="0 0 64 64" aria-hidden="true">
+  <rect x="2" y="2" width="60" height="60" rx="14" fill="var(--accent)"></rect>
+  <rect x="7" y="7" width="50" height="50" rx="10" fill="none" stroke="var(--accent-ink)" stroke-opacity=".35" stroke-width="1.5"></rect>
+  <text x="32" y="44.5" text-anchor="middle" font-size="36" font-weight="800" fill="var(--accent-ink)" font-family="'Shippori Mincho B1','Hiragino Mincho ProN','Yu Mincho',serif" lang="ja">焼</text>
+</svg>
+<style>
+  .seal { flex-shrink: 0; }
+</style>

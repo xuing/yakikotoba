@@ -1,0 +1,183 @@
+/* やきことば — design tokens & base styles.
+   Light = paper & ink; dark = charcoal. Accent is 朱 (vermilion), used sparingly. */
+
+:root {
+  color-scheme: light;
+  --bg: #f6f1e8;
+  --bg-2: #efe8dc;
+  --surface: #fffcf6;
+  --surface-2: #f9f4ec;
+  --ink: #1d1a16;
+  --ink-2: #574f45;
+  --ink-3: #8c8376;
+  --line: #e5ddcf;
+  --line-2: #d5cab7;
+  --accent: #c0391f;
+  --accent-ink: #fffaf5;
+  --accent-soft: #f6e0d6;
+  --map-body: #e6d8c4;
+  --map-line: #fffcf6;
+  --map-organ: #f3ebdf;
+  --map-mark: #8c8376;
+  --shadow-1: 0 1px 2px rgb(40 30 20 / .06);
+  --shadow-2: 0 1px 2px rgb(40 30 20 / .05), 0 10px 30px -14px rgb(40 30 20 / .25);
+
+  --sec-beef: #a8432c;
+  --sec-horumon: #a8752a;
+  --sec-pork: #b55a72;
+  --sec-chicken: #a88512;
+  --sec-more: #4c7a5a;
+
+  --font-latin: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  --font-ja: var(--font-latin), "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic UI", "Yu Gothic", Meiryo, "Noto Sans JP", sans-serif;
+  --font-zh: var(--font-latin), "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei UI", "Microsoft YaHei", "Noto Sans SC", sans-serif;
+  --font-mincho: "Shippori Mincho B1", "Hiragino Mincho ProN", "Yu Mincho", YuMincho, "Noto Serif JP", serif;
+  --font-serif: "Newsreader", "Iowan Old Style", Georgia, serif;
+
+  --radius: 16px;
+  --radius-sm: 10px;
+  --wrap: 1120px;
+  --gutter: clamp(16px, 4vw, 32px);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --bg: #131110;
+    --bg-2: #1a1715;
+    --surface: #1c1916;
+    --surface-2: #221e1a;
+    --ink: #f1eae0;
+    --ink-2: #b9afa1;
+    --ink-3: #857c70;
+    --line: #2c2823;
+    --line-2: #3b352e;
+    --accent: #ff6f4f;
+    --accent-ink: #1a0d08;
+    --accent-soft: #3b1c14;
+    --map-body: #3b342c;
+    --map-line: #1c1916;
+    --map-organ: #2a2520;
+    --map-mark: #857c70;
+    --shadow-1: 0 1px 2px rgb(0 0 0 / .4);
+    --shadow-2: 0 1px 2px rgb(0 0 0 / .3), 0 12px 32px -16px rgb(0 0 0 / .7);
+    --sec-beef: #e07a5f;
+    --sec-horumon: #d9a556;
+    --sec-pork: #e08aa0;
+    --sec-chicken: #d6b648;
+    --sec-more: #7fb08c;
+  }
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #131110;
+  --bg-2: #1a1715;
+  --surface: #1c1916;
+  --surface-2: #221e1a;
+  --ink: #f1eae0;
+  --ink-2: #b9afa1;
+  --ink-3: #857c70;
+  --line: #2c2823;
+  --line-2: #3b352e;
+  --accent: #ff6f4f;
+  --accent-ink: #1a0d08;
+  --accent-soft: #3b1c14;
+  --map-body: #3b342c;
+  --map-line: #1c1916;
+  --map-organ: #2a2520;
+  --map-mark: #857c70;
+  --shadow-1: 0 1px 2px rgb(0 0 0 / .4);
+  --shadow-2: 0 1px 2px rgb(0 0 0 / .3), 0 12px 32px -16px rgb(0 0 0 / .7);
+  --sec-beef: #e07a5f;
+  --sec-horumon: #d9a556;
+  --sec-pork: #e08aa0;
+  --sec-chicken: #d6b648;
+  --sec-more: #7fb08c;
+}
+
+/* ---------- reset ---------- */
+*, *::before, *::after { box-sizing: border-box; }
+* { margin: 0; }
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+img, svg, video { display: block; max-width: 100%; }
+img { height: auto; }
+button, input { font: inherit; color: inherit; }
+button { cursor: pointer; }
+a { color: inherit; }
+
+/* ---------- base ---------- */
+html { background: var(--bg); }
+body {
+  min-height: 100dvh;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-zh);
+  font-size: 16px;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-feature-settings: "palt" 0;
+}
+html[lang="en"] body { font-family: var(--font-latin), "Hiragino Sans", "Yu Gothic UI", sans-serif; line-height: 1.6; }
+[lang="ja"] { font-family: var(--font-ja); }
+[lang="zh-Hans"] { font-family: var(--font-zh); }
+.mincho, .mincho[lang="ja"] { font-family: var(--font-mincho); font-feature-settings: "palt" 1; }
+.serif { font-family: var(--font-serif); }
+
+::selection { background: var(--accent-soft); color: var(--ink); }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 6px; }
+
+ruby { ruby-position: over; }
+rt { font-size: .5em; letter-spacing: .02em; color: var(--ink-3); font-family: var(--font-ja); font-weight: 500; }
+html.no-furigana rt { visibility: hidden; }
+
+.wrap { width: min(100% - 2 * var(--gutter), var(--wrap)); margin-inline: auto; }
+.visually-hidden { position: absolute !important; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+/* ---------- type helpers ---------- */
+.eyebrow {
+  font-size: 12px; letter-spacing: .14em; text-transform: uppercase;
+  color: var(--ink-3); font-weight: 600; font-family: var(--font-latin);
+}
+.num { font-variant-numeric: tabular-nums; font-family: var(--font-latin); }
+.muted { color: var(--ink-2); }
+.faint { color: var(--ink-3); }
+.romaji { font-family: var(--font-serif); font-style: italic; color: var(--ink-2); letter-spacing: .01em; }
+
+/* ---------- surfaces ---------- */
+.card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-1);
+}
+a.card { text-decoration: none; transition: border-color .2s, box-shadow .2s, transform .2s; }
+a.card:hover { border-color: var(--line-2); box-shadow: var(--shadow-2); transform: translateY(-1px); }
+
+.chip {
+  display: inline-flex; align-items: center; gap: .4em;
+  padding: .28em .75em; border-radius: 999px;
+  border: 1px solid var(--line); background: var(--surface);
+  font-size: 14px; line-height: 1.5; text-decoration: none; color: var(--ink);
+  transition: border-color .2s, background .2s;
+}
+a.chip:hover { border-color: var(--ink-3); }
+.tag {
+  display: inline-flex; align-items: center; gap: .35em;
+  font-size: 12px; line-height: 1; padding: .45em .65em; border-radius: 6px;
+  background: var(--bg-2); color: var(--ink-2); font-weight: 500;
+}
+.tag.accent { background: var(--accent-soft); color: var(--accent); }
+.dot { width: .55em; height: .55em; border-radius: 50%; background: currentColor; display: inline-block; }
+
+.section-title { display: flex; align-items: baseline; gap: .6em; flex-wrap: wrap; margin-block: 0 18px; }
+.section-title h2 { font-family: var(--font-mincho); font-weight: 700; font-size: clamp(22px, 3vw, 28px); letter-spacing: .02em; }
+.section-title .sub { color: var(--ink-3); font-size: 14px; }
+
+.hr { height: 1px; background: var(--line); border: 0; margin-block: 40px; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+}
+
+@view-transition { navigation: auto; }

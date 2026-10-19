@@ -1,0 +1,67 @@
+---
+// Inline anatomy chart with numbered markers. Used once per page (detail / section overview).
+import { mapSvg } from '../lib/maps';
+import type { Marker } from '../lib/content';
+
+interface Props {
+  map: string;
+  markers?: Marker[];
+  active?: string[]; // marker numbers to emphasise
+  regions?: string[]; // region ids (svg id="r-<id>") to fill
+  links?: Record<string, string>; // marker number → url
+  labels?: Record<string, string>; // marker number → tooltip
+  numbers?: boolean;
+  label?: string;
+}
+const { map, markers = [], active = [], regions = [], links = {}, labels = {}, numbers = false, label } = Astro.props;
+const svg = mapSvg(map);
+const uid = `m${map.replace(/\W/g, '')}${Math.random().toString(36).slice(2, 7)}`;
+const unit = svg ? Math.max(svg.width, svg.height) / 100 : 1;
+const R = unit * (numbers ? 2.2 : 1.5);
+const regionCss = regions.length
+  ? `${regions.map((id) => `.amap[data-uid="${uid}"] [id="r-${id}"]`).join(',')}{fill:var(--accent)!important;fill-opacity:.9}`
+  : '';
+const isOn = (m: Marker) => active.includes(String(m.n));
+const sorted = [...markers].sort((a, b) => Number(isOn(a)) - Number(isOn(b)));
+---
+{svg && (
+  <figure class="amap" data-uid={uid} role="img" aria-label={label}>
+    {regionCss && <style is:inline set:html={regionCss}></style>}
+    <svg viewBox={svg.viewBox} xmlns="http://www.w3.org/2000/svg">
+      <g class="art" set:html={svg.inner}></g>
+      <g class="marks">
+        {sorted.map((m) => {
+          const on = isOn(m);
+          const url = links[String(m.n)];
+          const g = (
+            <g class:list={['mk', { on, link: !!url }]} transform={`translate(${m.x} ${m.y})`}>
+              {on && <circle class="halo" r={R * 1.6}></circle>}
+              <circle class="dot" r={on ? R * 1.15 : numbers ? R : R * 0.62}></circle>
+              {numbers && <text class="n" dy=".36em" font-size={R * 1.12}>{m.n}</text>}
+              <title>{labels[String(m.n)] ?? m.label}</title>
+            </g>
+          );
+          return url ? <a href={url} aria-label={labels[String(m.n)] ?? m.label}>{g}</a> : g;
+        })}
+      </g>
+    </svg>
+  </figure>
+)}
+
+<style>
+  .amap { margin: 0; }
+  svg { width: 100%; height: auto; overflow: visible; }
+  .art :global(*) { vector-effect: non-scaling-stroke; }
+  .art :global(.body) { fill: var(--map-body); }
+  .art :global(.organ) { fill: var(--map-organ); stroke: var(--map-line); stroke-width: 1.2px; }
+  .art :global(.line) { fill: none; stroke: var(--map-line); stroke-width: 1.6px; }
+  .mk .dot { fill: var(--surface); stroke: var(--map-mark); stroke-width: 1.4px; vector-effect: non-scaling-stroke; transition: fill .2s, stroke .2s; }
+  .mk .n { fill: var(--ink-2); text-anchor: middle; font-weight: 700; font-family: var(--font-latin); pointer-events: none; }
+  .mk.on .dot { fill: var(--accent); stroke: var(--surface); stroke-width: 2px; }
+  .mk.on .n { fill: var(--accent-ink); }
+  .mk .halo { fill: var(--accent); opacity: .22; transform-box: fill-box; transform-origin: center; animation: ping 2.4s ease-out infinite; }
+  a:hover .mk .dot, a:focus-visible .mk .dot { fill: var(--accent); stroke: var(--accent); }
+  a:hover .mk .n, a:focus-visible .mk .n { fill: var(--accent-ink); }
+  a { outline: none; }
+  @keyframes ping { 0% { transform: scale(.7); opacity: .35; } 80%, 100% { transform: scale(1.7); opacity: 0; } }
+</style>

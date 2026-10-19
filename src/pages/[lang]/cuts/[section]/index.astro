@@ -1,0 +1,87 @@
+---
+import Base from '../../../../layouts/Base.astro';
+import AnatomyMap from '../../../../components/AnatomyMap.astro';
+import CutCard from '../../../../components/CutCard.astro';
+import { locales, t, href, type Locale } from '../../../../i18n/ui';
+import { SECTIONS, cutsIn, getMaps, getCut, cutUrl } from '../../../../lib/content';
+import { hasMap } from '../../../../lib/maps';
+
+export function getStaticPaths() {
+  return locales.flatMap((lang) => SECTIONS.map((s) => ({ params: { lang, section: s.id }, props: { sec: s } })));
+}
+const { sec } = Astro.props;
+const locale = Astro.params.lang as Locale;
+const cuts = await cutsIn(sec.id);
+const allMaps = await getMaps();
+const charts = await Promise.all(
+  sec.maps.filter((m) => hasMap(m)).map(async (id) => {
+    const map = allMaps.find((m) => m.id === id);
+    const links: Record<string, string> = {};
+    const labels: Record<string, string> = {};
+    const legend: { n: string; label: string; url?: string }[] = [];
+    for (const mk of map?.data.markers ?? []) {
+      const target = (await Promise.all(mk.cuts.map((r) => getCut(r)))).find(Boolean);
+      const n = String(mk.n);
+      if (target) links[n] = cutUrl(locale, target);
+      labels[n] = mk.label ?? '';
+      legend.push({ n, label: mk.label ?? '', url: links[n] });
+    }
+    legend.sort((a, b) => Number(a.n) - Number(b.n));
+    const title = map?.data.title as any;
+    return { id, map, links, labels, legend, title: title?.[locale] ?? title?.ja ?? id, titleJa: title?.ja };
+  }),
+);
+const name = locale === 'zh' ? sec.zh : sec.en;
+---
+<Base locale={locale} title={`${sec.ja} · ${name}`} path={`cuts/${sec.id}/`} nav="cuts">
+  <div class="wrap page" style={`--sec: var(--sec-${sec.id})`}>
+    <nav class="crumbs"><a href={href(locale, 'cuts')}>{t(locale, 'nav.cuts')}</a></nav>
+    <header class="head">
+      <h1 class="mincho" lang="ja">{sec.ja}</h1>
+      <div class="sub"><span class="romaji">{sec.romaji}</span><span class="nm">{name}</span><span class="faint num">{cuts.length} {t(locale, 'home.entries')}</span></div>
+    </header>
+
+    {charts.length > 0 && (
+      <div class:list={['charts', { two: charts.length > 1 }]}>
+        {charts.map((c) => (
+          <section class="chart card">
+            <h2 class="eyebrow"><span lang="ja">{c.titleJa}</span>{c.title !== c.titleJa && <> · {c.title}</>}</h2>
+            <AnatomyMap map={c.id} markers={c.map?.data.markers ?? []} links={c.links} labels={c.labels} numbers label={c.title} />
+            <ol class="legend">
+              {c.legend.map((l) => (
+                <li>{l.url ? <a href={l.url}><span class="n num">{l.n}</span><span lang="ja">{l.label}</span></a> : <span class="off"><span class="n num">{l.n}</span><span lang="ja">{l.label}</span></span>}</li>
+              ))}
+            </ol>
+          </section>
+        ))}
+      </div>
+    )}
+
+    <div class="cards">
+      {cuts.map((c, i) => <CutCard cut={c} locale={locale} no={i + 1} />)}
+    </div>
+  </div>
+</Base>
+
+<style>
+  .page { padding-top: 22px; }
+  .crumbs { font-size: 14px; margin-bottom: 18px; }
+  .crumbs a { color: var(--ink-2); text-decoration: none; }
+  .head { display: grid; gap: 6px; margin-bottom: 26px; }
+  h1 { font-size: clamp(48px, 9vw, 84px); font-weight: 800; line-height: 1.05; letter-spacing: .04em; }
+  h1::after { content: ''; display: block; width: 44px; height: 4px; border-radius: 2px; background: var(--sec); margin-top: 14px; }
+  .sub { display: flex; flex-wrap: wrap; gap: 4px 14px; align-items: baseline; font-size: 18px; }
+  .romaji { font-size: 20px; }
+  .nm { font-weight: 600; }
+  .charts { display: grid; gap: 16px; margin-bottom: 28px; }
+  .charts.two { grid-template-columns: 1fr 1fr; }
+  .chart { padding: 18px 20px 20px; display: grid; gap: 12px; align-content: start; }
+  .legend { list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 4px 6px; font-size: 13.5px; }
+  .legend a, .legend .off { display: inline-flex; align-items: center; gap: 6px; padding: 3px 9px 3px 4px; border-radius: 999px; text-decoration: none; color: var(--ink); border: 1px solid var(--line); background: var(--surface); }
+  .legend a:hover { border-color: var(--accent); }
+  .legend .off { color: var(--ink-3); border-style: dashed; }
+  .n { display: inline-grid; place-items: center; min-width: 20px; height: 20px; border-radius: 999px; background: var(--bg-2); font-size: 11px; font-weight: 700; color: var(--ink-2); }
+  .cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); gap: 14px; }
+  @media (max-width: 860px) { .charts.two { grid-template-columns: 1fr; } }
+  @media (max-width: 520px) { .cards { grid-template-columns: 1fr 1fr; gap: 10px; } }
+</style>
