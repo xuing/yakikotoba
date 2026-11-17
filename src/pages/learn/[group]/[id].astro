@@ -1,0 +1,160 @@
+---
+import { getImage } from 'astro:assets';
+import Guide from '../../../layouts/Guide.astro';
+import Icon from '../../../components/Icon.astro';
+import Ruby from '../../../components/Ruby.astro';
+import AudioButton from '../../../components/AudioButton.astro';
+import EntryCard from '../../../components/EntryCard.astro';
+import { getGuide, categories, type GuideEntry } from '../../../lib/guide';
+
+export async function getStaticPaths() {
+  const { entries } = await getGuide();
+  return entries.map(entry => ({ params: { group: entry.group, id: entry.item.id }, props: { entry } }));
+}
+interface Props { entry: GuideEntry }
+const { entry: e } = Astro.props;
+const { entries } = await getGuide();
+const it = e.item;
+const category = categories.find(c => c.id === e.category)!;
+const related = entries.filter(r => r.group === e.group && r.ref !== e.ref).slice(0, 3);
+const tunaCuts = e.group === 'maguro' ? ['akami', 'chutoro', 'otoro'].map(id => entries.find(r => r.ref === `maguro/${id}`)!) : [];
+const examples = await Promise.all(e.chains.slice(0, 8).map(async hit => ({ ...hit, src: hit.image ? (await getImage({ src: hit.image.image, width: Math.min(240, hit.image.image.width), format: 'webp' })).src : undefined })));
+const paragraphsZh = (it.note?.zh ?? '').split(/(?<=[。！？])(?=[^”」）])/).reduce<string[]>((all, sentence) => {
+  if (!all.length || all[all.length - 1].length > 160) all.push(sentence); else all[all.length - 1] += sentence;
+  return all;
+}, []);
+const paragraphsJa = (it.note?.ja ?? '').split(/(?<=[。！？])(?=[^”」）])/).reduce<string[]>((all, sentence) => {
+  if (!all.length || all[all.length - 1].length > 160) all.push(sentence); else all[all.length - 1] += sentence;
+  return all;
+}, []);
+---
+<Guide title={`${it.ja} · ${it.mean?.zh ?? e.title} | やきことば`} description={e.summary} active="atlas">
+  <div class="container">
+    <nav class="breadcrumbs" aria-label="当前位置">
+      <a href="/"><span class="i18n-zh">发现</span><span class="i18n-ja">探索</span></a>
+      <Icon name="chevron" size={11} />
+      <a href={`/?view=atlas&category=${e.category}`}><span class="i18n-zh">{category.title}</span><span class="i18n-ja">{category.ja}</span></a>
+      <Icon name="chevron" size={11} />
+      <span>{it.ja}</span>
+    </nav>
+    <section class="detail-hero">
+      <div>
+        <p class="eyebrow section-eyebrow">{category.en} <span> / </span> <span class="i18n-zh">{e.groupTitle}</span><span class="i18n-ja">{e.groupJa}</span></p>
+        <h1 lang="ja"><Ruby text={it.ja} ruby={it.ruby} /></h1>
+        <div class="pronunciation">
+          <span>{it.kana ?? e.kana}</span><span>·</span><span>{it.romaji}</span>
+          <AudioButton audioKey={`row:${e.ref}`} text={e.kana} size="sm" />
+        </div>
+        <h2>
+          <span class="i18n-zh">{it.mean?.zh ?? e.title}</span>
+          <span class="i18n-ja">{it.mean?.ja ?? it.ja}</span>
+        </h2>
+        <p class="detail-description">
+          <span class="i18n-zh">{e.summary}</span>
+          <span class="i18n-ja">{it.part?.ja ?? it.note?.ja ?? e.summary}</span>
+        </p>
+        <div class="detail-actions">
+          <button class="button button-outline" type="button" data-save={e.ref} aria-pressed="false">
+            <Icon name="bookmark" size={16} />
+            <span data-save-label><span class="i18n-zh">收藏这个知识</span><span class="i18n-ja">お気に入りに追加</span></span>
+          </button>
+          {e.chains.length > 0 && <a class="button button-outline" href="#menu-names"><span class="i18n-zh">看看店里怎么叫</span><span class="i18n-ja">お店での呼び方を見る</span> <Icon name="arrow" size={16} /></a>}
+        </div>
+      </div>
+      {e.photo ? <figure class:list={['detail-photo', { 'specimen-photo': e.ref === 'neta/hirame' }]}><img src={e.cover} alt={e.photo.caption?.zh ?? it.mean?.zh ?? it.ja} width="720" height="480" fetchpriority="high" /><figcaption>{e.photo.caption?.zh && <span class:list={{ 'example-label': e.example }}><span class="i18n-zh">{e.photo.caption.zh}</span><span class="i18n-ja">{e.photo.caption.ja ?? e.photo.caption.zh}</span><br /></span>}{e.photo.source && <><span class="i18n-zh">图片来源：</span><span class="i18n-ja">画像出典：</span>{e.photo.source.url ? <a href={e.photo.source.url} target="_blank" rel="noopener noreferrer">{e.photo.source.title}</a> : e.photo.source.title}{e.photo.source.author && <> · {e.photo.source.author}</>}{e.photo.source.license && <> · {e.photo.source.license}</>}</>}</figcaption></figure> : <div class="word-cover">{it.ja}</div>}
+    </section>
+    <div class="detail-body">
+      <article>
+        {(it.part?.zh || it.part?.ja) && <section class="knowledge-section" id="what-is-it">
+          <h2><span>01</span><span class="i18n-zh">它是什么，来自哪里？</span><span class="i18n-ja">どんな部位？どこから来る？</span></h2>
+          {it.part?.zh && <div class="part-callout i18n-zh">{it.part.zh}</div>}
+          {it.part?.ja && <div class="part-callout i18n-ja">{it.part.ja}</div>}
+          {it.part?.ja && <details class="ja-reading i18n-zh"><summary>用日语读一读 · 日本語で読む</summary><p lang="ja">{it.part.ja}</p>{it.part.en && <p lang="en">{it.part.en}</p>}</details>}
+          {it.part?.zh && <details class="ja-reading i18n-ja"><summary>中国語・英語の解説を見る</summary><p lang="zh">{it.part.zh}</p>{it.part.en && <p lang="en">{it.part.en}</p>}</details>}
+        </section>}
+        {(it.note?.zh || it.note?.ja) && <section class="knowledge-section" id="the-story">
+          <h2><span>02</span><span class="i18n-zh">名字背后，还有这些故事。</span><span class="i18n-ja">名前の由来とストーリー。</span></h2>
+          <div class="i18n-zh">{paragraphsZh.map(p => <p style="margin-bottom: 14px">{p}</p>)}</div>
+          <div class="i18n-ja">{paragraphsJa.map(p => <p style="margin-bottom: 14px">{p}</p>)}</div>
+          {it.note?.ja && <details class="ja-reading i18n-zh"><summary>再挑战一下日语原文 · 日本語で読む</summary><p lang="ja">{it.note.ja}</p>{it.note.en && <p lang="en">{it.note.en}</p>}</details>}
+          {it.note?.zh && <details class="ja-reading i18n-ja"><summary>中国語・英語の原文を見る</summary><p lang="zh">{it.note.zh}</p>{it.note.en && <p lang="en">{it.note.en}</p>}</details>}
+          {tunaCuts.length > 0 && <div class="tuna-comparison">
+            <h3><span class="i18n-zh">同一条鱼，三个部位。</span><span class="i18n-ja">一匹のマグロ、3つの部位。</span></h3>
+            <table>
+              <thead>
+                <tr>
+                  <th scope="col"><span class="i18n-zh">菜单上的名字</span><span class="i18n-ja">メニュー名</span></th>
+                  <th scope="col"><span class="i18n-zh">来自哪里</span><span class="i18n-ja">部位・特徴</span></th>
+                </tr>
+              </thead>
+              <tbody>
+                {tunaCuts.map(cut => <tr class:list={{ 'current-cut': cut.ref === e.ref }}>
+                  <th scope="row"><a href={cut.url}>{cut.item.ja}<small><span class="i18n-zh">{cut.item.mean?.zh}</span><span class="i18n-ja">{cut.item.mean?.ja ?? cut.item.ja}</span></small></a></th>
+                  <td><span class="i18n-zh">{cut.item.part?.zh}</span><span class="i18n-ja">{cut.item.part?.ja}</span></td>
+                </tr>)}
+              </tbody>
+            </table>
+            <p><span class="i18n-zh">点击名字，继续认识对应部位。资料出处见各词条。</span><span class="i18n-ja">名前をクリックして各部位の解説をご覧ください。</span></p>
+          </div>}
+        </section>}
+        {examples.length > 0 && <section class="knowledge-section" id="menu-names">
+          <h2><span>03</span><span class="i18n-zh">到了店里，它叫什么？</span><span class="i18n-ja">お店ではどう呼ばれる？</span></h2>
+          <div class="chain-example-grid">{examples.map(hit => <a class="chain-example" href={`/menu/#${e.category}/${hit.chain}`}>
+            {hit.src && <img src={hit.src} alt={hit.ja} width="120" height="90" loading="lazy" />}
+            <div>
+              <small>{hit.chainJa}{hit.signature && <><span class="i18n-zh"> · 店内招牌</span><span class="i18n-ja"> · 名物</span></>}</small>
+              <h3 lang="ja"><Ruby text={hit.ja} ruby={hit.ruby} /></h3>
+              {hit.mean?.zh && <p><span class="i18n-zh">{hit.mean.zh}</span><span class="i18n-ja">{hit.mean.ja ?? hit.mean.zh}</span></p>}
+            </div>
+          </a>)}</div>
+          <p class="chain-note">
+            <span class="i18n-zh">展示各店菜单中的叫法与示例。菜品、做法和供应情况可能调整，以门店当日菜单为准。店铺菜品图片来源见<a href="/menu/">完整词典的图片出处</a>。</span>
+            <span class="i18n-ja">各チェーン店でのメニュー表記例です。季節や店舗により変更となる場合があります。画像出典は<a href="/menu/">メニュー辞典</a>をご覧ください。</span>
+          </p>
+        </section>}
+        {it.sources.length > 0 && <details class="detail-sources">
+          <summary>
+            <span class="i18n-zh">知识有出处 · 查看 {it.sources.length} 条参考资料</span>
+            <span class="i18n-ja">確かな情報源 · {it.sources.length}件の参考文献・資料</span>
+          </summary>
+          <ol>{it.sources.map(s => <li>{s.url ? <a href={s.url} target="_blank" rel="noopener noreferrer">{s.title ?? s.url}</a> : s.title}</li>)}</ol>
+        </details>}
+        <button class="read-button" type="button" data-mark-read={e.ref} aria-pressed="false">
+          <Icon name="check" size={19} />
+          <span>
+            <span class="i18n-zh">今天又学会了一个知识</span>
+            <span class="i18n-ja">今日も新しい知識をひとつ覚えた</span>
+          </span>
+        </button>
+      </article>
+      <aside class="detail-sidebar">
+        <div class="sidebar-card">
+          <p class="eyebrow section-eyebrow">A LITTLE FIELD NOTE</p>
+          <Icon name={category.icon} size={28} />
+          <h3>
+            <span class="i18n-zh">带着好奇心上桌。</span>
+            <span class="i18n-ja">好奇心をつれて、食卓へ。</span>
+          </h3>
+          <p>
+            <span class="i18n-zh">先认识食材，再听听读音。<br />下次看到这个名字，你就知道怎么点了。</span>
+            <span class="i18n-ja">食材を知り、発音を耳で聞く。<br />次にこの名前を見たとき、自信を持って注文できます。</span>
+          </p>
+          {(it.part?.zh || it.part?.ja) && <a href="#what-is-it"><span class="i18n-zh">食材与部位</span><span class="i18n-ja">部位と特徴</span> <Icon name="arrow" size={15} /></a>}
+          {(it.note?.zh || it.note?.ja) && <a href="#the-story"><span class="i18n-zh">背景与故事</span><span class="i18n-ja">名前の由来</span> <Icon name="arrow" size={15} /></a>}
+          {examples.length > 0 && <a href="#menu-names"><span class="i18n-zh">店里的叫法</span><span class="i18n-ja">店舗での表記</span> <Icon name="arrow" size={15} /></a>}
+          <a href={`/?view=atlas&category=${e.category}`}><span class="i18n-zh">继续认识{category.title}</span><span class="i18n-ja">{category.ja}をさらに探索</span> <Icon name="arrow" size={15} /></a>
+        </div>
+      </aside>
+    </div>
+    {related.length > 0 && <section class="related-section">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow section-eyebrow">KEEP YOUR CURIOSITY GOING</p>
+          <h2><span class="i18n-zh">下一口新知。</span><span class="i18n-ja">次の一皿を知る。</span></h2>
+        </div>
+        <a class="text-link" href={`/?view=atlas&category=${e.category}`}><span class="i18n-zh">继续探索</span><span class="i18n-ja">さらに見る</span> <Icon name="arrow" size={16} /></a>
+      </div>
+      <div class="related-grid">{related.map(entry => <EntryCard entry={entry} />)}</div>
+    </section>}
+  </div>
+</Guide>

@@ -1,0 +1,42 @@
+---
+import Icon from './Icon.astro';
+import type { GuideEntry } from '../lib/guide';
+interface Props { entry: GuideEntry; editorial?: boolean }
+const { entry: e, editorial = false } = Astro.props;
+---
+<article class:list={['entry-card', e.color, { 'editorial-card': editorial, 'specimen-card': e.ref === 'neta/hirame' }]} data-entry={e.ref} data-category={e.category} data-search={[e.title, e.item.ja, e.kana, e.item.romaji, e.item.mean?.zh, e.item.mean?.ja, e.item.mean?.en, e.item.part?.zh, e.item.part?.ja, ...e.chains.map(c => c.ja)].filter(Boolean).join(' ')}>
+  <div class="entry-picture">
+    <a href={e.url} tabindex="-1" aria-hidden="true">
+      {e.cover ? <img src={e.cover} alt={e.item.mean?.zh ?? e.item.ja} width="720" height="480" loading="lazy" /> : <div class="word-cover" lang="ja">{e.item.ja}</div>}
+    </a>
+    <span class="picture-tag">
+      <span class="i18n-zh">{editorial ? e.tag : e.categoryTitle}</span>
+      <span class="i18n-ja">{editorial ? e.item.ja : e.categoryJa}</span>
+    </span>
+    <button class="save-button" type="button" data-save={e.ref} aria-label={`收藏${e.item.ja}`} aria-pressed="false"><Icon name="bookmark" size={17} /></button>
+  </div>
+  <div class="entry-copy">
+    <div class="entry-eyebrow">
+      <span>{e.item.ja}</span>
+      <span class="roman">{e.item.romaji}</span>
+      <span class="read-indicator" data-read-indicator={e.ref} hidden>
+        <span class="i18n-zh">已读</span><span class="i18n-ja">読了</span>
+      </span>
+    </div>
+    <h3>
+      <a href={e.url}>
+        <span class="i18n-zh">{editorial ? e.title : e.item.mean?.zh ?? e.item.ja}</span>
+        <span class="i18n-ja">{e.item.mean?.ja ?? e.item.ja}</span>
+      </a>
+    </h3>
+    <p class="i18n-zh">{e.summary}</p>
+    <p class="i18n-ja">{e.item.part?.ja ?? e.item.note?.ja ?? e.summary}</p>
+    <a class="entry-more" href={e.url}>
+      <span>
+        <span class="i18n-zh">{editorial ? '读一读背后的故事' : '认识这个食材'}</span>
+        <span class="i18n-ja">{editorial ? 'ストーリーを読む' : 'この食材を知る'}</span>
+      </span>
+      <Icon name="arrow" size={17} />
+    </a>
+  </div>
+</article>

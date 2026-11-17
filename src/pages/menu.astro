@@ -1,0 +1,619 @@
+---
+import { Picture, getImage } from 'astro:assets';
+import Base from '../layouts/Base.astro';
+import Seal from '../components/Seal.astro';
+import Ruby from '../components/Ruby.astro';
+import AudioButton from '../components/AudioButton.astro';
+import { getModel, type Tri } from '../lib/content';
+import { allMedia, type MediaItem } from '../lib/media';
+import { rubyToKana, hasKanji, stripRuby } from '../lib/ruby';
+
+const tabs = await getModel();
+const speak = (x: { ja: string; ruby?: string; kana?: string; tts?: string }) =>
+  x.tts ?? (x.ruby ? rubyToKana(x.ruby) : hasKanji(x.ja) ? (x.kana ?? x.ja) : x.ja);
+const has = (t?: Tri) => !!(t && (t.ja || t.zh || t.en));
+
+// large versions for the photo viewer
+const full = new Map<string, string>();
+for (const m of tabs.flatMap((t) => t.groups.flatMap((g) => g.rows.flatMap((r) => [r.photo, ...r.chains.map((h) => h.image)])))) {
+  if (m && !full.has(m.path)) full.set(m.path, m.isSvg ? m.image.src : (await getImage({ src: m.image, width: Math.min(1600, m.image.width), format: 'webp' })).src);
+}
+/** data-* attributes the photo viewer reads */
+const lb = (m: MediaItem, title: string) => ({
+  href: full.get(m.path),
+  'data-lb': '',
+  'data-title': title,
+  'data-cap': [m.caption?.ja, m.caption?.zh, m.caption?.en].filter(Boolean).join('\n'),
+  'data-credit': m.source ? [m.source.title, m.source.author, m.source.license].filter(Boolean).join(' · ') : '',
+  'data-credit-url': m.source?.url ?? '',
+});
+
+// image credits, grouped by source, for the footer
+const sources = new Map<string, { title: string; url?: string; license?: string; n: number }>();
+for (const m of allMedia()) {
+  if (!m.source) continue;
+  const key = m.source.url ?? m.source.title ?? '';
+  const row = sources.get(key) ?? { title: m.source.title ?? key, url: m.source.url, license: m.source.license, n: 0 };
+  row.n++;
+  sources.set(key, row);
+}
+const COLS = [
+  { ja: 'ことば', zh: '词', en: 'Word' },
+  { ja: '意味', zh: '意思', en: 'Meaning' },
+  { ja: '部位・正体', zh: '部位', en: 'What & where' },
+  { ja: '解説', zh: '说明', en: 'Notes' },
+];
+---
+<Base title="完整菜单词典 · やきことば">
+  <nav class="dict-topbar" aria-label="ナビゲーション · 导航">
+    <div class="wrap dict-topbar-in">
+      <a href="/">
+        <span aria-hidden="true">←</span>
+        <span><span lang="ja">探索</span><span lang="zh-Hans" class="zh"> · 知识图鉴</span></span>
+      </a>
+      <div class="dict-topbar-links">
+        <a href="/menus/">
+          <span><span lang="ja">店舗</span><span lang="zh-Hans" class="zh"> · 店铺菜单</span></span>
+        </a>
+        <a href="/scan/" class="dict-topbar-scan">
+          <span><span lang="ja">AI メニュー認識</span><span lang="zh-Hans" class="zh"> · 拍照识菜单</span></span>
+        </a>
+      </div>
+    </div>
+  </nav>
+  <header class="top wrap">
+    <a class="brand" href="/">
+      <Seal size={32} />
+      <span class="name mincho" lang="ja">やきことば</span>
+    </a>
+    <p class="tagline">
+      <span lang="ja">焼肉・焼き鳥・寿司のことば</span>
+      <span lang="zh-Hans" class="zh">烤肉、烤鸡串、寿司菜单上的日语</span>
+      <span lang="en" class="en">The Japanese of yakiniku, yakitori &amp; sushi</span>
+    </p>
+  </header>
+
+  <nav class="bar" aria-label="分類">
+    <div class="wrap bar-in">
+      <div class="tabs" role="tablist">
+        {tabs.map((t, i) => (
+          <a role="tab" href={`#${t.id}`} data-tab={t.id} aria-selected={i === 0 ? 'true' : 'false'}>
+            <span class="t-ja mincho" lang="ja"><Ruby text={t.ja} ruby={t.ruby} /></span>
+            <span class="t-sub"><span lang="zh-Hans" class="zh">{t.zh}</span><span lang="en" class="en">{t.en}</span></span>
+          </a>
+        ))}
+      </div>
+      <div class="langs" role="group" aria-label="表示言語 · 显示语言 · Languages">
+        <label title="中文を表示 · 显示中文 · Show Chinese"><input type="checkbox" data-lang-toggle="zh" checked /><span>中</span></label>
+        <label title="英語を表示 · 显示英文 · Show English"><input type="checkbox" data-lang-toggle="en" checked /><span>EN</span></label>
+      </div>
+    </div>
+  </nav>
+
+  <main class="wrap">
+    {tabs.map((t, i) => (
+      <section class="panel" id={t.id} data-panel={t.id} role="tabpanel" hidden={i !== 0}>
+        <div class="tools">
+          {t.chains.length > 0 && (
+            <div class="filter">
+              <span class="f-label"><span lang="ja">店で絞り込む</span><span lang="zh-Hans" class="zh">按店筛选</span><span lang="en" class="en">Filter by chain</span></span>
+              <div class="chips" role="radiogroup" aria-label="店">
+                <button type="button" class="chip on" data-chain="" role="radio" aria-checked="true">
+                  <span lang="ja">すべて</span>
+                </button>
+                {t.chains.map((c) => (
+                  <button type="button" class="chip" data-chain={c.id} role="radio" aria-checked="false">
+                    {c.logo && <img src={c.logo.image.src} alt="" class="c-logo" />}
+                    <span lang="ja">{c.ja}</span>
+                    <span class="count num">{c.count}</span>
+                  </button>
+                ))}
+              </div>
+            </div>
+          )}
+          <nav class="jump" aria-label="目次">
+            {t.groups.map((g) => (
+              <a href={`#g-${g.id}`} data-jump={g.id}><span lang="ja">{g.ja}</span><span class="num count">{g.rows.length}</span></a>
+            ))}
+          </nav>
+          {t.chains.map((c) => (
+            <div class="chain-info" data-chain-info={c.id} hidden>
+              {c.logo && <span class="ci-logo"><img src={c.logo.image.src} alt={c.ja} /></span>}
+              <div class="ci-text">
+                <p class="ci-name"><span class="mincho" lang="ja"><Ruby text={c.ja} ruby={c.ruby} /></span>{c.romaji && <span class="romaji">{c.romaji}</span>}</p>
+                {c.note?.ja && <p lang="ja">{c.note.ja}</p>}
+                {c.note?.zh && <p lang="zh-Hans" class="zh">{c.note.zh}</p>}
+                {c.note?.en && <p lang="en" class="en">{c.note.en}</p>}
+                {c.url && <p><a href={c.url} rel="noopener" target="_blank" class="ci-link">公式サイト ↗</a></p>}
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {t.groups.map((g) => (
+          <section class="group" id={`g-${g.id}`} data-group={g.id}>
+            <h2 class="g-title">
+              <span class="mincho" lang="ja">{g.ja}</span>
+              <span lang="zh-Hans" class="zh">{g.zh}</span>
+              <span lang="en" class="en">{g.en}</span>
+            </h2>
+            {has(g.note) && (
+              <p class="g-note">
+                {g.note?.ja && <span lang="ja">{g.note.ja}</span>}
+                {g.note?.zh && <span lang="zh-Hans" class="zh">{g.note.zh}</span>}
+                {g.note?.en && <span lang="en" class="en">{g.note.en}</span>}
+              </p>
+            )}
+            <table class="tbl">
+              <thead>
+                <tr>
+                  {COLS.map((c) => (
+                    <th scope="col"><span lang="ja">{c.ja}</span><span lang="zh-Hans" class="zh">{c.zh}</span><span lang="en" class="en">{c.en}</span></th>
+                  ))}
+                </tr>
+              </thead>
+              <tbody>
+                {g.rows.map((r) => {
+                  const it = r.item;
+                  return (
+                    <tr id={r.ref.replace('/', '-')} data-row={r.ref} data-chains={r.chains.map((h) => h.chain).join(' ')}>
+                      <td class="c-word" data-label={COLS[0].ja}>
+                        <div class="word">
+                          {r.photo && (
+                            <a class:list={['pic', 'pic-row', { example: r.example }]} {...lb(r.photo, it.ja)} aria-label={`写真を拡大：${it.ja}`}>
+                              <Picture src={r.photo.image} alt={it.ja} formats={['avif']} fallbackFormat="webp" widths={[96, 192]} sizes="72px" loading="lazy" />
+                              {r.example && <span class="ex-badge" aria-hidden="true">例</span>}
+                            </a>
+                          )}
+                          <div class="w-text">
+                            <span class="w-ja mincho" lang="ja"><Ruby text={it.ja} ruby={it.ruby} /></span>
+                            {it.romaji && <span class="romaji">{it.romaji}</span>}
+                            <a class="w-learn" href={`/learn/${r.ref}/`} aria-label={`${it.ja} の詳細・ストーリーを読む`}>
+                              <span lang="ja">図鑑</span><span lang="zh-Hans" class="zh"> · 故事</span><span lang="en" class="en"> · Story</span>
+                              <span aria-hidden="true">→</span>
+                            </a>
+                          </div>
+                          <AudioButton audioKey={`row:${r.ref}`} text={speak(it)} size="sm" />
+                        </div>
+                        {r.chains.map((h) => (
+                          <div class:list={['hit', { 'has-img': !!h.image }]} data-hit={h.chain} hidden>
+                            {h.image && (
+                              <a class="pic pic-hit" {...lb(h.image, `${h.chainJa}「${stripRuby(h.ruby ?? h.ja)}」`)} aria-label={`写真を拡大：${h.ja}`}>
+                                <Picture src={h.image.image} alt={h.ja} formats={['avif']} fallbackFormat="webp" widths={[240, 480]} sizes="(max-width: 860px) 90vw, 300px" loading="lazy" />
+                              </a>
+                            )}
+                            <div class="h-text">
+                              <span class="h-label">{h.signature ? '名物' : '店内表記'}</span>
+                              <span class="h-ja mincho" lang="ja"><Ruby text={h.ja} ruby={h.ruby} /></span>
+                              {h.romaji && <span class="romaji">{h.romaji}</span>}
+                              {h.mean?.ja && <span lang="ja" class="h-mean">{h.mean.ja}</span>}
+                              {h.mean?.zh && <span lang="zh-Hans" class="zh">{h.mean.zh}</span>}
+                              {h.mean?.en && <span lang="en" class="en">{h.mean.en}</span>}
+                            </div>
+                            <AudioButton audioKey={h.audioKey} text={speak(h)} size="sm" />
+                          </div>
+                        ))}
+                      </td>
+                      <td class:list={['c-mean', { empty: !has(it.mean) }]} data-label={COLS[1].ja}>
+                        {it.mean?.ja && <p lang="ja" class="ja">{it.mean.ja}</p>}
+                        {it.mean?.zh && <p lang="zh-Hans" class="zh">{it.mean.zh}</p>}
+                        {it.mean?.en && <p lang="en" class="en">{it.mean.en}</p>}
+                      </td>
+                      <td class:list={['c-part', { empty: !has(it.part) }]} data-label={COLS[2].ja}>
+                        {it.part?.ja && <p lang="ja" class="ja">{it.part.ja}</p>}
+                        {it.part?.zh && <p lang="zh-Hans" class="zh">{it.part.zh}</p>}
+                        {it.part?.en && <p lang="en" class="en">{it.part.en}</p>}
+                      </td>
+                      <td class:list={['c-note', { empty: !has(it.note) && !it.sources.length }]} data-label={COLS[3].ja}>
+                        {it.note?.ja && <p lang="ja" class="ja">{it.note.ja}</p>}
+                        {it.note?.zh && <p lang="zh-Hans" class="zh">{it.note.zh}</p>}
+                        {it.note?.en && <p lang="en" class="en">{it.note.en}</p>}
+                        {it.sources.length > 0 && (
+                          <details class="src">
+                            <summary>出典 · {it.sources.length}</summary>
+                            <ol>{it.sources.map((s) => <li>{s.url ? <a href={s.url} rel="noopener" target="_blank">{s.title ?? s.url}</a> : s.title}</li>)}</ol>
+                          </details>
+                        )}
+                      </td>
+                    </tr>
+                  );
+                })}
+              </tbody>
+            </table>
+          </section>
+        ))}
+      </section>
+    ))}
+  </main>
+
+  <footer class="foot wrap">
+    <p><span lang="ja">写真の出典</span> · <span lang="zh-Hans" class="zh">图片来源</span> · <span lang="en" class="en">Image credits</span></p>
+    <ul>
+      {[...sources.values()].map((s) => (
+        <li>{s.url ? <a href={s.url} rel="noopener" target="_blank">{s.title}</a> : s.title}{s.license && <span class="faint"> · {s.license}</span>}<span class="faint num"> · {s.n}</span></li>
+      ))}
+    </ul>
+    <p class="faint small">発音：Gemini TTS</p>
+  </footer>
+
+  <dialog class="lb" aria-label="写真 · 照片 · Photo" tabindex="-1">
+    <div class="lb-stage">
+      <img class="lb-img" alt="" decoding="async" />
+    </div>
+    <div class="lb-info">
+      <p class="lb-title mincho" lang="ja"></p>
+      <p class="lb-cap"></p>
+      <p class="lb-credit"><span>出典：</span><a target="_blank" rel="noopener"></a></p>
+    </div>
+    <span class="lb-count num" aria-live="polite"></span>
+    <button type="button" class="lb-btn lb-close" aria-label="閉じる · 关闭 · Close">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"></path></svg>
+    </button>
+    <button type="button" class="lb-btn lb-prev" aria-label="前へ · 上一张 · Previous">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"></path></svg>
+    </button>
+    <button type="button" class="lb-btn lb-next" aria-label="次へ · 下一张 · Next">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"></path></svg>
+    </button>
+  </dialog>
+</Base>
+
+<script>
+  // Tabs, chain filter (kept in the URL: #tab or #tab/chain), language toggles, photo viewer.
+  const tabs = [...document.querySelectorAll<HTMLAnchorElement>('[data-tab]')];
+  const panels = [...document.querySelectorAll<HTMLElement>('[data-panel]')];
+  const panelOf = (id: string) => panels.find((p) => p.dataset.panel === id);
+  const activePanel = () => panels.find((p) => !p.hidden) ?? panels[0];
+
+  function setHash(tab: string, chain = '') {
+    history.replaceState(null, '', `#${tab}${chain ? `/${chain}` : ''}`);
+  }
+
+  function showTab(id: string) {
+    if (!panelOf(id)) id = panels[0]?.dataset.panel ?? '';
+    for (const p of panels) p.hidden = p.dataset.panel !== id;
+    for (const t of tabs) t.setAttribute('aria-selected', String(t.dataset.tab === id));
+  }
+
+  function setChain(panel: HTMLElement, id: string) {
+    panel.querySelectorAll<HTMLButtonElement>('.chip[data-chain]').forEach((c) => {
+      const on = (c.dataset.chain ?? '') === id;
+      c.classList.toggle('on', on);
+      c.setAttribute('aria-checked', String(on));
+    });
+    panel.querySelectorAll<HTMLElement>('[data-chain-info]').forEach((el) => (el.hidden = el.dataset.chainInfo !== id));
+    panel.querySelectorAll<HTMLElement>('tr[data-row]').forEach((tr) => {
+      tr.hidden = !!id && !(tr.dataset.chains ?? '').split(' ').includes(id);
+      let hitImg = false;
+      tr.querySelectorAll<HTMLElement>('[data-hit]').forEach((h) => {
+        h.hidden = h.dataset.hit !== id;
+        if (!h.hidden && h.classList.contains('has-img')) hitImg = true;
+      });
+      tr.classList.toggle('hit-img', hitImg); // the shop's own photo replaces the row photo
+    });
+    panel.querySelectorAll<HTMLElement>('[data-group]').forEach((g) => {
+      const n = g.querySelectorAll('tr[data-row]:not([hidden])').length;
+      g.hidden = n === 0;
+      const j = panel.querySelector<HTMLElement>(`[data-jump="${g.dataset.group}"]`);
+      if (j) {
+        j.hidden = n === 0;
+        j.querySelector('.count')!.textContent = String(n);
+      }
+    });
+  }
+
+  for (const t of tabs) {
+    t.addEventListener('click', (e) => {
+      e.preventDefault();
+      const id = t.dataset.tab!;
+      showTab(id);
+      const chain = panelOf(id)?.querySelector<HTMLElement>('.chip.on')?.dataset.chain ?? '';
+      setHash(id, chain);
+      window.scrollTo({ top: 0 });
+    });
+  }
+  for (const panel of panels) {
+    panel.querySelectorAll<HTMLButtonElement>('.chip[data-chain]').forEach((chip) =>
+      chip.addEventListener('click', () => {
+        setChain(panel, chip.dataset.chain ?? '');
+        setHash(panel.dataset.panel!, chip.dataset.chain ?? '');
+      }),
+    );
+    panel.querySelectorAll<HTMLAnchorElement>('[data-jump]').forEach((a) =>
+      a.addEventListener('click', (e) => {
+        e.preventDefault();
+        document.getElementById(`g-${a.dataset.jump}`)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }),
+    );
+  }
+
+  // initial state from the URL: #tab, #tab/chain, or a row id like #beef-tan
+  {
+    const h = decodeURIComponent(location.hash.slice(1));
+    const row = h && !h.includes('/') ? document.getElementById(h) : null;
+    if (row?.matches('tr[data-row]')) {
+      showTab(row.closest<HTMLElement>('[data-panel]')!.dataset.panel!);
+      row.classList.add('flash');
+      requestAnimationFrame(() => row.scrollIntoView({ block: 'center' }));
+    } else {
+      const [tab, chain = ''] = h.split('/');
+      showTab(tab);
+      if (chain && activePanel().querySelector(`.chip[data-chain="${CSS.escape(chain)}"]`)) setChain(activePanel(), chain);
+    }
+  }
+
+  // language toggles (remembered on this device)
+  const root = document.documentElement;
+  for (const box of document.querySelectorAll<HTMLInputElement>('[data-lang-toggle]')) {
+    const lang = box.dataset.langToggle!;
+    let off = false;
+    try { off = localStorage.getItem(`hide-${lang}`) === '1'; } catch {}
+    box.checked = !off;
+    root.classList.toggle(`hide-${lang}`, off);
+    box.addEventListener('change', () => {
+      root.classList.toggle(`hide-${lang}`, !box.checked);
+      try { localStorage.setItem(`hide-${lang}`, box.checked ? '0' : '1'); } catch {}
+    });
+  }
+
+  // photo viewer
+  const dlg = document.querySelector<HTMLDialogElement>('dialog.lb')!;
+  const img = dlg.querySelector<HTMLImageElement>('.lb-img')!;
+  const title = dlg.querySelector<HTMLElement>('.lb-title')!;
+  const cap = dlg.querySelector<HTMLElement>('.lb-cap')!;
+  const credit = dlg.querySelector<HTMLAnchorElement>('.lb-credit a')!;
+  const creditRow = dlg.querySelector<HTMLElement>('.lb-credit')!;
+  const count = dlg.querySelector<HTMLElement>('.lb-count')!;
+  let list: HTMLAnchorElement[] = [];
+  let index = 0;
+
+  const visiblePics = () =>
+    [...activePanel().querySelectorAll<HTMLAnchorElement>('a[data-lb]')].filter((a) => a.offsetParent !== null);
+
+  function show(i: number) {
+    index = (i + list.length) % list.length;
+    const a = list[index];
+    img.classList.remove('ready');
+    img.style.width = '';
+    img.onload = () => {
+      // small official photos: show them up to 2x, never beyond the screen
+      if (img.naturalWidth < 480) img.style.width = `${Math.min(img.naturalWidth * 2, innerWidth - 32)}px`;
+      img.classList.add('ready');
+    };
+    img.src = a.href;
+    img.alt = a.dataset.title ?? '';
+    title.textContent = a.dataset.title ?? '';
+    cap.textContent = a.dataset.cap ?? '';
+    cap.hidden = !a.dataset.cap;
+    credit.textContent = a.dataset.credit ?? '';
+    credit.href = a.dataset.creditUrl || '#';
+    creditRow.hidden = !a.dataset.credit;
+    count.textContent = list.length > 1 ? `${index + 1} / ${list.length}` : '';
+    dlg.classList.toggle('single', list.length < 2);
+    // warm the neighbours
+    for (const k of [index + 1, index - 1]) {
+      const n = list[(k + list.length) % list.length];
+      if (n) new Image().src = n.href;
+    }
+  }
+
+  document.addEventListener('click', (e) => {
+    const a = (e.target as Element).closest<HTMLAnchorElement>('a[data-lb]');
+    if (!a || e.metaKey || e.ctrlKey || e.shiftKey) return;
+    e.preventDefault();
+    list = visiblePics();
+    show(Math.max(0, list.indexOf(a)));
+    dlg.showModal();
+    dlg.focus();
+    root.classList.add('lb-open');
+  });
+  dlg.addEventListener('close', () => root.classList.remove('lb-open'));
+  dlg.querySelector('.lb-close')!.addEventListener('click', () => dlg.close());
+  dlg.querySelector('.lb-prev')!.addEventListener('click', () => show(index - 1));
+  dlg.querySelector('.lb-next')!.addEventListener('click', () => show(index + 1));
+  dlg.addEventListener('click', (e) => {
+    if (e.target === dlg || (e.target as Element).classList.contains('lb-stage')) dlg.close();
+  });
+  dlg.addEventListener('keydown', (e) => {
+    if (e.key === 'ArrowRight') show(index + 1);
+    if (e.key === 'ArrowLeft') show(index - 1);
+  });
+  let x0 = 0, y0 = 0;
+  dlg.addEventListener('touchstart', (e) => { x0 = e.touches[0].clientX; y0 = e.touches[0].clientY; }, { passive: true });
+  dlg.addEventListener('touchend', (e) => {
+    const dx = e.changedTouches[0].clientX - x0, dy = e.changedTouches[0].clientY - y0;
+    if (Math.abs(dx) > 50 && Math.abs(dx) > Math.abs(dy)) show(index + (dx < 0 ? 1 : -1));
+    else if (dy > 90 && Math.abs(dy) > Math.abs(dx)) dlg.close();
+  });
+</script>
+
+<style>
+  /* top navigation bar */
+  .dict-topbar { background: var(--bg-2); border-bottom: 1px solid var(--line); font-size: 12.5px; color: var(--ink-2); }
+  .dict-topbar-in { display: flex; align-items: center; justify-content: space-between; gap: 8px 18px; flex-wrap: wrap; padding-block: 8px; }
+  .dict-topbar-links { display: flex; align-items: center; gap: 8px 16px; flex-wrap: wrap; }
+  .dict-topbar a { display: inline-flex; align-items: center; gap: 5px; text-decoration: none; color: var(--ink-2); transition: color .15s, background .15s; }
+  .dict-topbar a:hover { color: var(--accent); }
+  .dict-topbar a.dict-topbar-scan { padding: 2px 10px; border-radius: 999px; background: var(--accent-soft); color: var(--accent); font-weight: 600; }
+  .dict-topbar a.dict-topbar-scan:hover { background: var(--accent); color: var(--accent-ink); }
+
+  /* header */
+  .top { display: flex; align-items: center; gap: 8px 22px; flex-wrap: wrap; padding-block: 20px 14px; }
+  .brand { display: inline-flex; align-items: center; gap: 10px; text-decoration: none; }
+  .name { font-size: 25px; font-weight: 800; letter-spacing: .05em; }
+  .tagline { display: flex; flex-direction: column; font-size: 12.5px; line-height: 1.5; color: var(--ink-2); flex: 1; min-width: 220px; }
+  .tagline [lang='ja'] { color: var(--ink); font-size: 14px; }
+
+  /* sticky bar: tabs + language switches */
+  .bar { position: sticky; top: 0; z-index: 10; background: color-mix(in srgb, var(--bg) 88%, transparent); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border-bottom: 1px solid var(--line); }
+  .bar-in { display: flex; align-items: center; gap: 12px; }
+  .tabs { display: flex; gap: 2px; overflow-x: auto; scrollbar-width: none; flex: 1; min-width: 0; }
+  .tabs::-webkit-scrollbar { display: none; }
+  [role='tab'] { display: grid; padding: 10px 16px 8px; text-decoration: none; color: var(--ink-3); border-bottom: 3px solid transparent; white-space: nowrap; transition: color .2s, border-color .2s; }
+  [role='tab']:hover { color: var(--ink-2); }
+  [role='tab'][aria-selected='true'] { color: var(--ink); border-bottom-color: var(--accent); }
+  .t-ja { font-size: 22px; font-weight: 800; line-height: 1.45; }
+  .t-ja :global(rt) { font-size: .45em; }
+  .t-sub { display: flex; gap: 8px; font-size: 12px; }
+  .langs { display: flex; gap: 4px; flex-shrink: 0; }
+  .langs label { position: relative; cursor: pointer; }
+  .langs input { position: absolute; opacity: 0; inset: 0; cursor: pointer; }
+  .langs span { display: inline-grid; place-items: center; min-width: 34px; height: 30px; padding: 0 8px; border-radius: 8px; border: 1px solid var(--line-2); font-size: 12.5px; font-weight: 700; color: var(--ink-3); font-family: var(--font-zh); transition: background .15s, color .15s; }
+  .langs input:checked + span { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+  .langs input:focus-visible + span { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+  /* tools: chain filter, jump links, chain info */
+  .tools { margin-top: 20px; display: grid; gap: 12px; }
+  .filter { display: grid; gap: 8px; }
+  .f-label { display: flex; gap: 10px; flex-wrap: wrap; align-items: baseline; font-size: 13px; color: var(--ink-2); }
+  .f-label [lang='ja'] { color: var(--ink); font-weight: 600; }
+  .chips { display: flex; flex-wrap: wrap; gap: 8px; }
+  .chip { cursor: pointer; display: inline-flex; align-items: center; gap: 8px; padding: 6px 14px; min-height: 40px; border: 1px solid var(--line); border-radius: 999px; background: var(--surface); font-size: 14.5px; font-family: var(--font-ja); color: var(--ink); transition: border-color .15s, background .15s; }
+  .chip:hover { border-color: var(--line-2); }
+  .chip.on { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+  .c-logo { height: 22px; width: auto; max-width: 64px; object-fit: contain; background: #fff; border-radius: 5px; padding: 1px 3px; }
+  .count { font-size: 11px; color: var(--ink-3); }
+  .chip.on .count { color: color-mix(in srgb, var(--bg) 70%, transparent); }
+  .jump { display: flex; flex-wrap: wrap; gap: 4px 14px; font-size: 13.5px; }
+  .jump a { display: inline-flex; gap: 5px; align-items: baseline; color: var(--ink-2); text-decoration: none; padding: 2px 0; border-bottom: 1px dotted var(--line-2); }
+  .jump a:hover { color: var(--accent); border-bottom-color: var(--accent); }
+  .jump a[hidden] { display: none; }
+  .chain-info { display: flex; gap: 16px; align-items: flex-start; padding: 14px 16px; border: 1px solid var(--line); border-radius: 14px; background: var(--surface); }
+  .chain-info[hidden] { display: none; }
+  .ci-logo { width: 84px; height: 64px; display: grid; place-items: center; background: #fff; border-radius: 10px; border: 1px solid var(--line); padding: 8px; flex-shrink: 0; }
+  .ci-logo img { max-width: 100%; max-height: 100%; object-fit: contain; }
+  .ci-text { display: grid; gap: 3px; font-size: 14px; }
+  .ci-name { display: flex; gap: 10px; align-items: baseline; flex-wrap: wrap; }
+  .ci-name .mincho { font-size: 20px; font-weight: 800; }
+  .ci-link { color: var(--accent); text-decoration: none; font-size: 13px; }
+
+  /* groups & table */
+  .group { margin-top: 40px; scroll-margin-top: 84px; }
+  .group[hidden] { display: none; }
+  .g-title { display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap; margin-bottom: 8px; font-weight: 400; }
+  .g-title .mincho { font-size: 26px; font-weight: 800; letter-spacing: .03em; }
+  .g-title .zh, .g-title .en { font-size: 14px; color: var(--ink-2); }
+  .g-note { display: grid; gap: 4px; font-size: 13.5px; line-height: 1.7; color: var(--ink-2); max-width: 64em; margin: 4px 0 14px; padding: 2px 0 2px 14px; border-left: 3px solid var(--line-2); }
+  .g-note [lang='ja'] { color: var(--ink); }
+  .tbl { width: 100%; border-collapse: collapse; table-layout: fixed; }
+  thead th { text-align: left; vertical-align: bottom; padding: 8px 12px; border-bottom: 1.5px solid var(--ink); font-weight: 600; font-size: 13px; }
+  thead th span { display: block; line-height: 1.4; }
+  thead th .zh, thead th .en { font-weight: 400; font-size: 11.5px; color: var(--ink-3); }
+  th:nth-child(1) { width: 25%; }
+  th:nth-child(2) { width: 17%; }
+  th:nth-child(3) { width: 19%; }
+  td { vertical-align: top; padding: 14px 12px; border-bottom: 1px solid var(--line); }
+  tr { scroll-margin-top: 90px; }
+  tr[hidden] { display: none; }
+  tr.flash td { animation: flash 2.4s ease-out; }
+  @keyframes flash { 0%, 30% { background: var(--accent-soft); } 100% { background: transparent; } }
+  td p { margin: 0; }
+  td .ja { font-size: 14.5px; line-height: 1.75; color: var(--ink); }
+  td .zh { font-size: 13.5px; line-height: 1.7; color: var(--ink-2); margin-top: 3px; }
+  td .en { font-size: 13px; line-height: 1.55; color: var(--ink-2); margin-top: 3px; }
+  .c-note .ja { font-size: 14px; }
+  .c-mean .ja { font-weight: 600; }
+  .src { font-size: 11.5px; color: var(--ink-3); margin-top: 8px; line-height: 1.6; }
+  .src summary { cursor: pointer; width: fit-content; list-style: none; padding: 1px 8px; border: 1px solid var(--line); border-radius: 999px; }
+  .src summary::-webkit-details-marker { display: none; }
+  .src[open] summary { color: var(--ink-2); border-color: var(--line-2); }
+  .src ol { margin: 6px 0 0; padding-left: 1.4em; display: grid; gap: 2px; }
+  .src a { color: inherit; text-underline-offset: 2px; text-decoration-color: var(--line-2); }
+
+  .word { display: flex; align-items: center; gap: 12px; }
+  .w-text { display: grid; gap: 1px; flex: 1; min-width: 0; }
+  .w-ja { font-size: 23px; font-weight: 800; line-height: 1.45; letter-spacing: .02em; }
+  .w-ja :global(rt) { font-size: .45em; }
+  .romaji { font-size: 14.5px; }
+  .w-learn {
+    display: inline-flex; flex-wrap: wrap; align-items: center; gap: 0 3px;
+    justify-self: start; width: fit-content; margin-top: 3px;
+    font-size: 11.5px; line-height: 1.4; color: var(--ink-3);
+    text-decoration: none; border-bottom: 1px dotted var(--line-2);
+    transition: color .15s, border-color .15s;
+  }
+  .w-learn:hover { color: var(--accent); border-bottom-color: var(--accent); }
+
+  /* photos (click to enlarge) */
+  .pic { position: relative; display: block; flex-shrink: 0; border-radius: 10px; overflow: hidden; background: var(--surface-2); cursor: zoom-in; outline-offset: 2px; }
+  .pic :global(img) { width: 100%; height: 100%; object-fit: cover; transition: transform .25s ease; }
+  .pic:hover :global(img) { transform: scale(1.06); }
+  .pic-row { width: 64px; height: 64px; box-shadow: 0 0 0 1px var(--line); }
+  .ex-badge { position: absolute; left: 4px; bottom: 4px; font-size: 10px; line-height: 1; padding: 3px 4px; border-radius: 4px; background: color-mix(in srgb, var(--ink) 72%, transparent); color: var(--bg); font-family: var(--font-ja); }
+  .hit-img .pic-row { display: none; }
+  .hit { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 8px 10px; align-items: start; margin-top: 10px; padding: 10px; border-radius: 12px; background: var(--surface); border: 1px solid var(--line); }
+  .hit[hidden] { display: none; }
+  .pic-hit { grid-column: 1 / -1; width: 100%; aspect-ratio: 3 / 2; max-height: 220px; background: var(--surface-2); }
+  .pic-hit :global(img) { object-fit: contain; }
+  .hit :global(.say) { grid-column: 2; }
+  .h-text { display: grid; gap: 1px; min-width: 0; font-size: 12.5px; }
+  .h-label { font-size: 11px; color: var(--accent); font-weight: 700; letter-spacing: .06em; }
+  .h-ja { font-size: 16px; font-weight: 800; line-height: 1.5; }
+  .h-text .romaji { font-size: 13px; }
+  .h-mean { font-size: 13px; line-height: 1.6; color: var(--ink); margin-top: 2px; }
+  .h-text .zh, .h-text .en { font-size: 12.5px; line-height: 1.55; }
+
+  /* photo viewer */
+  .lb { width: 100vw; height: 100dvh; max-width: none; max-height: none; margin: 0; padding: 0; border: 0; background: rgb(14 12 10 / .95); color: #f3ede4; overflow: hidden; outline: none; }
+  .lb::backdrop { background: rgb(12 10 9 / .92); }
+  .lb[open] { display: grid; grid-template-rows: minmax(0, 1fr) auto; animation: lb-in .18s ease-out; }
+  @keyframes lb-in { from { opacity: 0; } }
+  .lb-stage { display: grid; place-items: center; min-height: 0; padding: 56px 72px 12px; cursor: zoom-out; }
+  .lb-img { max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 8px; opacity: 0; transform: scale(.985); transition: opacity .2s, transform .2s; background: #fff; cursor: default; }
+  .lb-img.ready { opacity: 1; transform: none; }
+  .lb-info { padding: 8px 24px 22px; text-align: center; display: grid; gap: 3px; max-width: 760px; margin: 0 auto; }
+  .lb-title { font-size: 20px; font-weight: 800; }
+  .lb-cap { font-size: 13px; white-space: pre-line; color: #d8d0c4; }
+  .lb-cap[hidden], .lb-credit[hidden] { display: none; }
+  .lb-credit { font-size: 11.5px; color: #a89f92; }
+  .lb-credit a { color: inherit; text-underline-offset: 2px; }
+  .lb-count { position: absolute; top: 18px; left: 22px; font-size: 13px; color: #a89f92; }
+  .lb-btn { position: absolute; display: grid; place-items: center; width: 44px; height: 44px; border-radius: 999px; border: 0; background: rgb(255 255 255 / .1); color: #fff; transition: background .15s; }
+  .lb-btn:hover { background: rgb(255 255 255 / .22); }
+  .lb-btn svg { width: 22px; height: 22px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+  .lb-close { top: 10px; right: 12px; }
+  .lb-prev, .lb-next { top: 50%; transform: translateY(-50%); }
+  .lb-prev { left: 14px; }
+  .lb-next { right: 14px; }
+  .lb.single .lb-prev, .lb.single .lb-next { display: none; }
+  :global(html.lb-open) { overflow: hidden; }
+
+  /* language toggles */
+  :global(html.hide-zh) .zh, :global(html.hide-zh) [lang='zh-Hans']:not(html) { display: none !important; }
+  :global(html.hide-en) .en, :global(html.hide-en) [lang='en']:not(html) { display: none !important; }
+
+  /* footer */
+  .foot { margin-top: 72px; padding-block: 28px 56px; border-top: 1px solid var(--line); font-size: 13px; color: var(--ink-2); display: grid; gap: 10px; }
+  .foot ul { padding-left: 1.2em; display: grid; gap: 3px; }
+  .foot a { color: var(--ink-2); }
+  .small { font-size: 12px; }
+
+  @media (max-width: 860px) {
+    .dict-topbar { font-size: 12px; }
+    .dict-topbar-in { padding-block: 7px; }
+    .dict-topbar-links { gap: 6px 12px; }
+    .top { padding-block: 14px 10px; }
+    .tagline { min-width: 0; }
+    .tagline .zh, .tagline .en { display: none; }
+    [role='tab'] { padding: 8px 10px 6px; }
+    .t-ja { font-size: 19px; }
+    .t-sub { font-size: 11px; gap: 5px; }
+    .langs span { min-width: 30px; height: 28px; padding: 0 6px; font-size: 12px; }
+    thead { display: none; }
+    .tbl, .tbl tbody, .tbl tr, .tbl td { display: block; width: 100%; }
+    .tbl tr { padding: 14px 0 12px; border-bottom: 1px solid var(--line); }
+    .tbl td { border: 0; padding: 0; }
+    .tbl td.c-word { margin-bottom: 8px; }
+    .tbl td.empty { display: none; }
+    .tbl td:not(.c-word) { display: grid; grid-template-columns: 4.2em minmax(0, 1fr); column-gap: 10px; padding: 3px 0; }
+    .tbl td:not(.c-word)::before { content: attr(data-label); grid-row: 1 / span 4; font-size: 11px; line-height: 2.1; letter-spacing: .04em; color: var(--ink-3); font-weight: 600; }
+    .tbl td:not(.c-word) > * { grid-column: 2; }
+    td .zh, td .en { margin-top: 1px; }
+    .w-ja { font-size: 24px; }
+    .pic-row { width: 60px; height: 60px; }
+    .group { scroll-margin-top: 70px; }
+    .lb-stage { padding: 52px 8px 8px; }
+    .lb-prev, .lb-next { display: none; }
+    .lb-info { padding: 6px 16px 18px; }
+  }
+</style>

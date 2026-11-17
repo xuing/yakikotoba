@@ -1,0 +1,624 @@
+---
+import Guide from '../layouts/Guide.astro';
+import Icon from '../components/Icon.astro';
+import { getGuide } from '../lib/guide';
+
+const { entries } = await getGuide();
+
+// Prepare lookup dictionary for client-side matching
+const db = Object.fromEntries(
+  entries.map((e) => [
+    e.ref,
+    {
+      ref: e.ref,
+      group: e.group,
+      id: e.item.id,
+      ja: e.item.ja,
+      ruby: e.item.ruby,
+      kana: e.kana,
+      romaji: e.item.romaji,
+      zh: e.item.mean?.zh ?? e.title,
+      meanJa: e.item.mean?.ja ?? e.item.ja,
+      en: e.item.mean?.en ?? '',
+      cover: e.cover,
+      audio: e.audio,
+      url: e.url,
+      summary: e.summary,
+      summaryJa: e.item.part?.ja ?? e.item.note?.ja ?? e.item.mean?.ja ?? e.summary,
+      category: e.category,
+      categoryTitle: e.categoryTitle,
+      categoryJa: e.category === 'yakiniku' ? '焼肉' : e.category === 'yakitori' ? '焼き鳥' : '寿司・魚',
+    },
+  ])
+);
+---
+
+<Guide
+  title="拍照识别菜单 · メニューを撮って調べる | やきことば"
+  description="拍下看不懂的日语菜单，Gemini 瞬间识别菜名、部位与发音。スマホでメニューを撮るだけで、料理名・部位・読み方を即座に解説します。"
+  active="scan"
+>
+  <div class="scan-page container">
+    <header class="scan-header">
+      <p class="eyebrow section-eyebrow">
+        <Icon name="spark" size={14} />
+        <span>GOOGLE GEMINI MULTIMODAL VISION</span>
+      </p>
+      <h1>
+        <span class="i18n-zh">拍照识别菜单<span class="accent">。</span></span>
+        <span class="i18n-ja">メニューを撮って調べる<span class="accent">。</span></span>
+      </h1>
+      <p class="scan-subtitle">
+        <span class="i18n-zh">拍下看不懂的日语菜单，Gemini 瞬间识别菜名、部位与发音，连接背后的食材故事。</span>
+        <span class="i18n-ja">読めないメニューをカメラでパシャリ。Gemini が文字を読み解き、部位・読み方・おいしい物語を即座に解説します。</span>
+      </p>
+    </header>
+
+    <!-- Upload / Capture Area -->
+    <section class="scan-upload-card" id="drop-zone">
+      <input type="file" id="file-input" accept="image/*" hidden />
+      <input type="file" id="camera-input" accept="image/*" capture="environment" hidden />
+
+      <div class="upload-drop-content" id="upload-prompt">
+        <div class="upload-icon-circle">
+          <Icon name="camera" size={32} />
+        </div>
+        <h3>
+          <span class="i18n-zh">拍摄菜单或上传图片</span>
+          <span class="i18n-ja">メニューの写真を撮る・アップロード</span>
+        </h3>
+        <p class="upload-hint">
+          <span class="i18n-zh">支持居酒屋、烤肉店、烧鸟店、寿司店等日语菜单（手写・竖排均可）</span>
+          <span class="i18n-ja">居酒屋・焼肉・焼き鳥・寿司のメニューに対応（手書き・縦書きもOK）</span>
+        </p>
+
+        <div class="upload-actions">
+          <button type="button" class="button button-primary" id="btn-camera">
+            <Icon name="camera" size={18} />
+            <span class="i18n-zh">拍照</span>
+            <span class="i18n-ja">写真を撮る</span>
+          </button>
+          <button type="button" class="button button-outline" id="btn-browse">
+            <Icon name="search" size={18} />
+            <span class="i18n-zh">从相册选择</span>
+            <span class="i18n-ja">画像ファイルを選択</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Sample Menus for quick testing -->
+      <div class="sample-section">
+        <span class="sample-label">
+          <Icon name="spark" size={13} />
+          <span class="i18n-zh">没有菜单照片？试试预置菜单：</span>
+          <span class="i18n-ja">メニュー写真をお持ちでない方へ（ワンクリックで試せます）：</span>
+        </span>
+        <div class="sample-pills">
+          <button type="button" class="sample-pill" data-sample="yakiniku">
+            <span class="i18n-zh">🥩 烤肉店菜单（カルビ・牛タン・ハラミ）</span>
+            <span class="i18n-ja">🥩 焼肉メニュー（カルビ・牛タン・ハラミ）</span>
+          </button>
+          <button type="button" class="sample-pill" data-sample="yakitori">
+            <span class="i18n-zh">🍢 烧鸟居酒屋（もも貴族焼・ねぎま・生ビール）</span>
+            <span class="i18n-ja">🍢 焼き鳥居酒屋（もも貴族焼・ねぎま・生ビール）</span>
+          </button>
+          <button type="button" class="sample-pill" data-sample="sushi">
+            <span class="i18n-zh">🍣 寿司店菜单（本マグロ大トロ・サーモン・〆さば）</span>
+            <span class="i18n-ja">🍣 寿司店お品書き（本マグロ大トロ・サーモン・〆さば）</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Scanning / Progress state -->
+    <section class="scan-loading-card" id="scan-loading" hidden>
+      <div class="scanning-preview-box">
+        <img id="preview-image" alt="Uploaded menu preview" />
+        <div class="scanner-laser"></div>
+      </div>
+      <div class="scanning-meta">
+        <div class="loading-spinner"></div>
+        <h3 id="loading-title">
+          <span class="i18n-zh">Gemini 正在多模态解析菜单…</span>
+          <span class="i18n-ja">Gemini がメニューをマルチモーダル解析中…</span>
+        </h3>
+        <p id="loading-desc">
+          <span class="i18n-zh">正在提取菜品名称、日语读音并与 {entries.length} 个图鉴词条进行严密比对</span>
+          <span class="i18n-ja">料理名・読み仮名を抽出し、{entries.length}の公式食材図鑑と照合しています</span>
+        </p>
+      </div>
+    </section>
+
+    <!-- Results Section -->
+    <section class="scan-results-section" id="scan-results" hidden>
+      <div class="results-toolbar">
+        <div>
+          <h2>
+            <span class="i18n-zh">识别结果</span>
+            <span class="i18n-ja">解析結果</span>
+          </h2>
+          <p class="results-stat" id="results-count"></p>
+        </div>
+        <div class="results-filter-buttons">
+          <button type="button" class="filter-chip active" data-filter="all">
+            <span class="i18n-zh">全部</span>
+            <span class="i18n-ja">すべて</span>
+            <span class="chip-count" id="chip-all-count">0</span>
+          </button>
+          <button type="button" class="filter-chip" data-filter="matched">
+            <span class="i18n-zh">图鉴收录</span>
+            <span class="i18n-ja">図鑑収録</span>
+            <span class="chip-count" id="chip-matched-count">0</span>
+          </button>
+          <button type="button" class="filter-chip" data-filter="ai">
+            <span class="i18n-zh">AI 解析</span>
+            <span class="i18n-ja">AI 推定</span>
+            <span class="chip-count" id="chip-ai-count">0</span>
+          </button>
+          <button type="button" class="button button-outline button-sm" id="btn-rescan">
+            <Icon name="camera" size={14} />
+            <span class="i18n-zh">重新拍照</span>
+            <span class="i18n-ja">別の写真を撮る</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="results-grid" id="results-container"></div>
+    </section>
+
+    <!-- Error state -->
+    <div class="scan-error-card" id="scan-error" hidden>
+      <p class="error-msg" id="error-text"></p>
+      <button type="button" class="button button-primary" id="btn-error-retry">
+        <span class="i18n-zh">重新尝试</span>
+        <span class="i18n-ja">もう一度やり直す</span>
+      </button>
+    </div>
+  </div>
+
+  <script id="scan-db" type="application/json" set:html={JSON.stringify(db).replace(/</g, '\\u003c')} />
+  <script src="../scripts/scan.ts"></script>
+</Guide>
+
+<style>
+  .scan-page {
+    padding-block: 48px 80px;
+  }
+  .scan-header {
+    text-align: center;
+    max-width: 720px;
+    margin: 0 auto 40px;
+  }
+  .scan-header h1 {
+    font: 600 clamp(32px, 4vw, 48px) / 1.35 var(--serif);
+    margin: 14px 0 16px;
+    letter-spacing: 0.02em;
+  }
+  .scan-subtitle {
+    color: var(--ink-2);
+    font-size: 14px;
+    line-height: 1.9;
+  }
+  .scan-upload-card {
+    background: var(--surface);
+    border: 2px dashed var(--line-2);
+    border-radius: 12px;
+    padding: 50px 30px 36px;
+    text-align: center;
+    transition: border-color 0.2s, background 0.2s;
+  }
+  .scan-upload-card.dragover {
+    border-color: var(--accent);
+    background: var(--accent-soft);
+  }
+  .upload-icon-circle {
+    display: grid;
+    place-items: center;
+    width: 68px;
+    height: 68px;
+    border-radius: 50%;
+    background: var(--accent-soft);
+    color: var(--accent);
+    margin: 0 auto 18px;
+  }
+  .upload-drop-content h3 {
+    font: 600 22px var(--serif);
+    margin-bottom: 8px;
+  }
+  .upload-hint {
+    color: var(--ink-3);
+    font-size: 12px;
+    margin-bottom: 24px;
+  }
+  .upload-actions {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+  .sample-section {
+    margin-top: 36px;
+    padding-top: 24px;
+    border-top: 1px solid var(--line);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+  .sample-label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 12px;
+    color: var(--ink-2);
+    font-weight: 500;
+  }
+  .sample-pills {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .sample-pill {
+    background: var(--surface-2);
+    border: 1px solid var(--line-2);
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 12px;
+    color: var(--ink);
+    transition: background 0.2s, border-color 0.2s, transform 0.15s;
+  }
+  .sample-pill:hover {
+    background: white;
+    border-color: var(--accent);
+    color: var(--accent);
+    transform: translateY(-1px);
+  }
+
+  /* Loading State */
+  .scan-loading-card {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 40px 24px;
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 36px;
+    align-items: center;
+    margin-top: 20px;
+  }
+  .scanning-preview-box {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    aspect-ratio: 4 / 3;
+    background: #111;
+  }
+  .scanning-preview-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.85;
+  }
+  .scanner-laser {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: var(--accent);
+    box-shadow: 0 0 12px 3px var(--accent);
+    animation: scan-laser 2s ease-in-out infinite alternate;
+  }
+  @keyframes scan-laser {
+    0% { top: 5%; }
+    100% { top: 95%; }
+  }
+  .scanning-meta {
+    display: grid;
+    gap: 12px;
+  }
+  .loading-spinner {
+    width: 32px;
+    height: 32px;
+    border: 3px solid var(--line-2);
+    border-top-color: var(--accent);
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+  }
+  @keyframes spin {
+    to { transform: rotate(360deg); }
+  }
+  .scanning-meta h3 {
+    font: 600 22px var(--serif);
+  }
+  .scanning-meta p {
+    color: var(--ink-2);
+    font-size: 13px;
+  }
+
+  /* Results */
+  .scan-results-section {
+    margin-top: 36px;
+  }
+  .results-toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 20px;
+    border-bottom: 1px solid var(--line);
+    padding-bottom: 18px;
+    margin-bottom: 24px;
+    flex-wrap: wrap;
+  }
+  .results-toolbar h2 {
+    font: 600 26px var(--serif);
+  }
+  .results-stat {
+    font-size: 12px;
+    color: var(--ink-3);
+    margin-top: 4px;
+  }
+  .results-filter-buttons {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .filter-chip {
+    padding: 6px 14px;
+    border-radius: 20px;
+    border: 1px solid var(--line-2);
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background: var(--surface);
+  }
+  .filter-chip.active {
+    background: var(--ink);
+    color: white;
+    border-color: var(--ink);
+  }
+  .chip-count {
+    font-size: 10px;
+    opacity: 0.8;
+  }
+  .button-sm {
+    padding: 6px 14px;
+    font-size: 11px;
+    min-height: 34px;
+    gap: 8px;
+  }
+
+  /* Grid of dynamically rendered cards */
+  .results-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 22px;
+  }
+
+  .results-grid :global(.scan-result-card) {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .results-grid :global(.scan-result-card:hover) {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(40, 43, 37, 0.08);
+  }
+  .results-grid :global(.card-thumb) {
+    position: relative;
+    height: 180px;
+    background: var(--surface-2);
+    overflow: hidden;
+  }
+  .results-grid :global(.card-thumb img) {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .results-grid :global(.card-thumb-ai) {
+    display: grid;
+    place-items: center;
+    background: repeating-linear-gradient(45deg, #f6f4ec, #f6f4ec 10px, #efece2 10px, #efece2 20px);
+  }
+  .results-grid :global(.ai-dish-icon) {
+    font-size: 44px;
+    opacity: 0.85;
+  }
+  .results-grid :global(.card-badge) {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    padding: 3px 9px;
+    border-radius: 4px;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+  }
+  .results-grid :global(.badge-matched) {
+    background: #476646;
+    color: #fff;
+  }
+  .results-grid :global(.badge-ai) {
+    background: var(--accent);
+    color: #fff;
+  }
+  .results-grid :global(.card-category) {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: rgba(255, 254, 250, 0.92);
+    backdrop-filter: blur(4px);
+    padding: 3px 8px;
+    border-radius: 3px;
+    font-size: 10px;
+    color: var(--ink-2);
+    font-weight: 500;
+  }
+  .results-grid :global(.card-content) {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    flex: 1;
+  }
+  .results-grid :global(.card-names) {
+    display: grid;
+    gap: 3px;
+  }
+  .results-grid :global(.dish-reading) {
+    font-size: 11px;
+    color: var(--ink-3);
+  }
+  .results-grid :global(.dish-title) {
+    font: 600 22px / 1.35 'Shippori Mincho B1', var(--serif);
+    color: var(--ink);
+  }
+  .results-grid :global(.dish-match-info) {
+    font-size: 13px;
+    color: var(--ink-2);
+    margin-top: 4px;
+  }
+  .results-grid :global(.match-name) {
+    font-weight: 600;
+    color: var(--ink);
+  }
+  .results-grid :global(.match-sep) {
+    margin: 0 4px;
+    color: var(--ink-3);
+  }
+  .results-grid :global(.dish-summary) {
+    font-size: 12px;
+    color: var(--ink-2);
+    line-height: 1.85;
+    flex: 1;
+  }
+  .results-grid :global(.dish-ai-desc) {
+    background: var(--surface-2);
+    border-radius: 6px;
+    padding: 12px 14px;
+    display: grid;
+    gap: 6px;
+    border-left: 3px solid var(--accent);
+    flex: 1;
+  }
+  .results-grid :global(.desc-ja) {
+    font-size: 12px;
+    line-height: 1.8;
+    color: var(--ink);
+  }
+  .results-grid :global(.desc-zh) {
+    font-size: 11px;
+    line-height: 1.7;
+    color: var(--ink-2);
+  }
+  .results-grid :global(.card-actions) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 14px;
+    border-top: 1px solid var(--line);
+    margin-top: auto;
+  }
+  .results-grid :global(.card-actions .say button) {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 5px 12px;
+    border-radius: 4px;
+    border: 1px solid var(--line-2);
+    background: var(--surface);
+    font-size: 11px;
+    color: var(--ink-2);
+    cursor: pointer;
+    transition: background 0.15s, color 0.15s, border-color 0.15s;
+  }
+  .results-grid :global(.card-actions .say button:hover) {
+    border-color: var(--accent);
+    color: var(--accent);
+    background: var(--surface-2);
+  }
+  .results-grid :global(.card-actions .say[playing] button) {
+    border-color: var(--accent);
+    background: var(--accent-soft);
+    color: var(--accent);
+  }
+  .results-grid :global(.card-actions .say[playing] .w1) {
+    animation: scan-pulse 0.9s ease-in-out infinite;
+  }
+  .results-grid :global(.card-actions .say[playing] .w2) {
+    animation: scan-pulse 0.9s ease-in-out 0.15s infinite;
+  }
+  @keyframes scan-pulse {
+    50% { opacity: 0.25; }
+  }
+  .results-grid :global(.card-detail-link) {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 11px;
+    font-weight: 500;
+    color: var(--accent);
+  }
+  .results-grid :global(.card-detail-link:hover) {
+    text-decoration: underline;
+  }
+  .results-grid :global(.ai-note-tag) {
+    font-size: 10px;
+    color: var(--ink-3);
+  }
+
+  .scan-error-card {
+    background: #fdf2f0;
+    border: 1px solid #f2c7c0;
+    color: #9c2e1f;
+    padding: 24px;
+    border-radius: 8px;
+    text-align: center;
+    margin-top: 24px;
+    display: grid;
+    gap: 14px;
+    place-items: center;
+  }
+
+  @media (max-width: 650px) {
+    .scan-page {
+      padding-block: 28px 60px;
+    }
+    .scan-header h1 {
+      font-size: clamp(26px, 7vw, 34px);
+    }
+    .scan-upload-card {
+      padding: 30px 16px 24px;
+    }
+    .upload-drop-content h3 {
+      font-size: 19px;
+    }
+    .upload-actions .button {
+      width: 100%;
+      justify-content: center;
+    }
+    .scan-loading-card {
+      grid-template-columns: 1fr;
+      padding: 20px 16px;
+      gap: 20px;
+    }
+    .results-grid {
+      grid-template-columns: 1fr;
+    }
+    .results-toolbar {
+      align-items: flex-start;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .results-toolbar h2 {
+      font-size: 22px;
+    }
+  }
+</style>

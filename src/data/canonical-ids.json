@@ -1,0 +1,1702 @@
+[
+  {
+    "ref": "fish-cooking/sashimi",
+    "group": "fish-cooking",
+    "id": "sashimi",
+    "ja": "刺身",
+    "ruby": "{刺身|さしみ}",
+    "kana": "さしみ",
+    "zh": "刺身（生鱼片）",
+    "en": "Sliced raw fish",
+    "aliases": []
+  },
+  {
+    "ref": "fish-cooking/aburi",
+    "group": "fish-cooking",
+    "id": "aburi",
+    "ja": "炙り",
+    "ruby": "{炙|あぶ}り",
+    "kana": "あぶり",
+    "zh": "炙烤",
+    "en": "Flame-seared",
+    "aliases": [
+      "厳選まぐろ中とろ食べ比べ（中とろ・炙りゆず塩）",
+      "炙りうなぎ",
+      "炙りえびマヨ",
+      "あぶりチーズサーモン",
+      "炙りサーモンバター醤油"
+    ]
+  },
+  {
+    "ref": "fish-cooking/zuke",
+    "group": "fish-cooking",
+    "id": "zuke",
+    "ja": "漬け",
+    "ruby": "{漬|づ}け",
+    "kana": "づけ",
+    "zh": "酱油腌渍的寿司料",
+    "en": "Soy-marinated topping",
+    "aliases": [
+      "特製漬けまぐろ",
+      "熟成漬けまぐろ",
+      "厳選まぐろ赤身 煮切り醤油漬け",
+      "天然さば食べ比べ"
+    ]
+  },
+  {
+    "ref": "fish-cooking/shime",
+    "group": "fish-cooking",
+    "id": "shime",
+    "ja": "〆",
+    "ruby": "{〆|しめ}",
+    "kana": "しめ",
+    "zh": "用盐、醋腌紧",
+    "en": "Salt- or vinegar-cured",
+    "aliases": [
+      "活〆まだい（四国・九州産）",
+      "さばの押し寿司",
+      "北海道産塩〆黒そい（もみじおろしのせ）",
+      "大切りとろ〆さば（一貫）",
+      "活〆はまち",
+      "活〆真鯛"
+    ]
+  },
+  {
+    "ref": "fish-cooking/tataki",
+    "group": "fish-cooking",
+    "id": "tataki",
+    "ja": "たたき",
+    "ruby": "",
+    "kana": "たたき",
+    "zh": "炙鱼片／剁碎的鱼",
+    "en": "Seared or chopped fish",
+    "aliases": [
+      "まぐろたたき軍艦",
+      "ゆず塩かつおたたき",
+      "サーモンたたき軍艦"
+    ]
+  },
+  {
+    "ref": "fish-cooking/shioyaki",
+    "group": "fish-cooking",
+    "id": "shioyaki",
+    "ja": "塩焼き",
+    "ruby": "{塩焼|しおや}き",
+    "kana": "しおやき",
+    "zh": "盐烤",
+    "en": "Salt-grilled",
+    "aliases": []
+  },
+  {
+    "ref": "fish-cooking/nitsuke",
+    "group": "fish-cooking",
+    "id": "nitsuke",
+    "ja": "煮付け",
+    "ruby": "{煮付|につ}け",
+    "kana": "につけ",
+    "zh": "酱烧鱼",
+    "en": "Simmered in sweet soy",
+    "aliases": []
+  },
+  {
+    "ref": "fish-cooking/teriyaki",
+    "group": "fish-cooking",
+    "id": "teriyaki",
+    "ja": "照り焼き",
+    "ruby": "{照|て}り{焼|や}き",
+    "kana": "てりやき",
+    "zh": "照烧",
+    "en": "Teriyaki (glaze-grilled)",
+    "aliases": [
+      "照り焼きチキン"
+    ]
+  },
+  {
+    "ref": "fish-cooking/tenpura",
+    "group": "fish-cooking",
+    "id": "tenpura",
+    "ja": "天ぷら",
+    "ruby": "{天|てん}ぷら",
+    "kana": "てんぷら",
+    "zh": "天妇罗",
+    "en": "Tempura",
+    "aliases": [
+      "えび天握り",
+      "えび天にぎり"
+    ]
+  },
+  {
+    "ref": "fish-cooking/karaage",
+    "group": "fish-cooking",
+    "id": "karaage",
+    "ja": "唐揚げ",
+    "ruby": "{唐揚|からあ}げ",
+    "kana": "からあげ",
+    "zh": "日式炸（唐扬）",
+    "en": "Karaage (dusted and fried)",
+    "aliases": [
+      "なんこつのから揚げ",
+      "なんこつ唐揚げ"
+    ]
+  },
+  {
+    "ref": "fish-cooking/himono",
+    "group": "fish-cooking",
+    "id": "himono",
+    "ja": "干物",
+    "ruby": "{干物|ひもの}",
+    "kana": "ひもの",
+    "zh": "鱼干",
+    "en": "Dried fish",
+    "aliases": []
+  },
+  {
+    "ref": "fish-parts/kama",
+    "group": "fish-parts",
+    "id": "kama",
+    "ja": "カマ",
+    "ruby": "",
+    "kana": "かま",
+    "zh": "鱼下巴（鳃下胸鳍根部的肉）",
+    "en": "Fish collar",
+    "aliases": []
+  },
+  {
+    "ref": "fish-parts/nakaochi",
+    "group": "fish-parts",
+    "id": "nakaochi",
+    "ja": "中落ち",
+    "ruby": "{中落|なかお}ち",
+    "kana": "なかおち",
+    "zh": "鱼脊骨及其附着的肉",
+    "en": "Backbone and the meat left on it",
+    "aliases": []
+  },
+  {
+    "ref": "fish-parts/harasu",
+    "group": "fish-parts",
+    "id": "harasu",
+    "ja": "ハラス",
+    "ruby": "",
+    "kana": "はらす",
+    "zh": "鲑鱼腹肉（三文鱼腩）",
+    "en": "Salmon belly",
+    "aliases": [
+      "焼きはらす",
+      "焼とろサーモン"
+    ]
+  },
+  {
+    "ref": "fish-parts/engawa",
+    "group": "fish-parts",
+    "id": "engawa",
+    "ja": "エンガワ",
+    "ruby": "",
+    "kana": "えんがわ",
+    "zh": "比目鱼鳍边肉（裙边）",
+    "en": "Flatfish fin-base muscle",
+    "aliases": [
+      "えんがわ",
+      "えんがわ（かれい）"
+    ]
+  },
+  {
+    "ref": "fish-parts/shirako",
+    "group": "fish-parts",
+    "id": "shirako",
+    "ja": "白子",
+    "ruby": "{白子|しらこ}",
+    "kana": "しらこ",
+    "zh": "鱼白（鱼的精巢）",
+    "en": "Milt (fish testes)",
+    "aliases": []
+  },
+  {
+    "ref": "fish-parts/ankimo",
+    "group": "fish-parts",
+    "id": "ankimo",
+    "ja": "あん肝",
+    "ruby": "あん{肝|きも}",
+    "kana": "あんきも",
+    "zh": "鮟鱇鱼肝",
+    "en": "Monkfish liver",
+    "aliases": [
+      "あんきも軍艦"
+    ]
+  },
+  {
+    "ref": "maguro/maguro",
+    "group": "maguro",
+    "id": "maguro",
+    "ja": "マグロ",
+    "ruby": "",
+    "kana": "まぐろ",
+    "zh": "金枪鱼",
+    "en": "Tuna",
+    "aliases": [
+      "まぐろ",
+      "熟成まぐろ",
+      "厳選まぐろ赤身"
+    ]
+  },
+  {
+    "ref": "maguro/akami",
+    "group": "maguro",
+    "id": "akami",
+    "ja": "赤身",
+    "ruby": "{赤身|あかみ}",
+    "kana": "あかみ",
+    "zh": "金枪鱼红肉（瘦肉）",
+    "en": "Lean red tuna",
+    "aliases": [
+      "まぐろ",
+      "特製漬けまぐろ",
+      "熟成まぐろ",
+      "熟成漬けまぐろ",
+      "厳選まぐろ赤身",
+      "厳選まぐろ赤身 煮切り醤油漬け"
+    ]
+  },
+  {
+    "ref": "maguro/chutoro",
+    "group": "maguro",
+    "id": "chutoro",
+    "ja": "中トロ",
+    "ruby": "{中|ちゅう}トロ",
+    "kana": "ちゅうとろ",
+    "zh": "金枪鱼中腹（中脂）",
+    "en": "Medium-fatty tuna belly",
+    "aliases": [
+      "厳選まぐろ中とろ食べ比べ（中とろ・炙りゆず塩）",
+      "熟成中とろ（一貫）",
+      "本鮪中とろ"
+    ]
+  },
+  {
+    "ref": "maguro/otoro",
+    "group": "maguro",
+    "id": "otoro",
+    "ja": "大トロ",
+    "ruby": "{大|おお}トロ",
+    "kana": "おおとろ",
+    "zh": "金枪鱼大腹（大脂）",
+    "en": "Fattiest tuna belly",
+    "aliases": []
+  },
+  {
+    "ref": "maguro/noten",
+    "group": "maguro",
+    "id": "noten",
+    "ja": "脳天",
+    "ruby": "{脳天|のうてん}",
+    "kana": "のうてん",
+    "zh": "金枪鱼头顶肉",
+    "en": "Tuna head-top meat",
+    "aliases": []
+  },
+  {
+    "ref": "maguro/negitoro",
+    "group": "maguro",
+    "id": "negitoro",
+    "ja": "ネギトロ",
+    "ruby": "",
+    "kana": "ねぎとろ",
+    "zh": "金枪鱼泥配葱花",
+    "en": "Minced tuna with scallion",
+    "aliases": [
+      "まぐろたたき軍艦",
+      "ねぎまぐろ軍艦"
+    ]
+  },
+  {
+    "ref": "neta/samon",
+    "group": "neta",
+    "id": "samon",
+    "ja": "サーモン",
+    "ruby": "",
+    "kana": "さーもん",
+    "zh": "三文鱼（生食用的养殖鲑鳟）",
+    "en": "Salmon (farmed, for eating raw)",
+    "aliases": [
+      "サーモン",
+      "大とろサーモン",
+      "焼きはらす",
+      "あぶりチーズサーモン",
+      "焼とろサーモン",
+      "炙りサーモンバター醤油",
+      "サーモンたたき軍艦"
+    ]
+  },
+  {
+    "ref": "neta/hamachi",
+    "group": "neta",
+    "id": "hamachi",
+    "ja": "ハマチ",
+    "ruby": "",
+    "kana": "はまち",
+    "zh": "鰤鱼的幼鱼；也指养殖鰤鱼",
+    "en": "Young yellowtail; also farmed yellowtail",
+    "aliases": [
+      "活〆はまち",
+      "はまち"
+    ]
+  },
+  {
+    "ref": "neta/buri",
+    "group": "neta",
+    "id": "buri",
+    "ja": "ブリ",
+    "ruby": "",
+    "kana": "ぶり",
+    "zh": "鰤鱼（五条鰤）成鱼",
+    "en": "Japanese amberjack (yellowtail), adult",
+    "aliases": []
+  },
+  {
+    "ref": "neta/madai",
+    "group": "neta",
+    "id": "madai",
+    "ja": "真鯛",
+    "ruby": "{真鯛|まだい}",
+    "kana": "まだい",
+    "zh": "真鲷",
+    "en": "Red sea bream",
+    "aliases": [
+      "活〆まだい（四国・九州産）",
+      "熟成　真鯛(一貫)",
+      "活〆真鯛"
+    ]
+  },
+  {
+    "ref": "neta/hirame",
+    "group": "neta",
+    "id": "hirame",
+    "ja": "ヒラメ",
+    "ruby": "",
+    "kana": "ひらめ",
+    "zh": "牙鲆（比目鱼）",
+    "en": "Olive flounder",
+    "aliases": []
+  },
+  {
+    "ref": "neta/aji",
+    "group": "neta",
+    "id": "aji",
+    "ja": "アジ",
+    "ruby": "",
+    "kana": "あじ",
+    "zh": "竹荚鱼（日本竹荚鱼）",
+    "en": "Japanese horse mackerel",
+    "aliases": [
+      "光り物三種盛り",
+      "あじ",
+      "メアジ"
+    ]
+  },
+  {
+    "ref": "neta/saba",
+    "group": "neta",
+    "id": "saba",
+    "ja": "サバ",
+    "ruby": "",
+    "kana": "さば",
+    "zh": "鲭鱼（鲐鱼）",
+    "en": "Mackerel",
+    "aliases": [
+      "さばの押し寿司",
+      "光り物三種盛り",
+      "大切りとろ〆さば（一貫）",
+      "天然さば食べ比べ"
+    ]
+  },
+  {
+    "ref": "neta/iwashi",
+    "group": "neta",
+    "id": "iwashi",
+    "ja": "イワシ",
+    "ruby": "",
+    "kana": "いわし",
+    "zh": "沙丁鱼（远东拟沙丁鱼）",
+    "en": "Sardine (Japanese sardine)",
+    "aliases": [
+      "宮城県産とろいわし",
+      "光り物三種盛り",
+      "真いわし",
+      "天然いわし"
+    ]
+  },
+  {
+    "ref": "neta/katsuo",
+    "group": "neta",
+    "id": "katsuo",
+    "ja": "カツオ",
+    "ruby": "",
+    "kana": "かつお",
+    "zh": "鲣鱼",
+    "en": "Skipjack tuna (bonito)",
+    "aliases": [
+      "ゆず塩かつおたたき"
+    ]
+  },
+  {
+    "ref": "neta/unagi",
+    "group": "neta",
+    "id": "unagi",
+    "ja": "うなぎ",
+    "ruby": "",
+    "kana": "うなぎ",
+    "zh": "日本鳗鲡（河鳗）",
+    "en": "Japanese eel",
+    "aliases": [
+      "炙りうなぎ",
+      "特上うな丼",
+      "うなぎの蒲焼き"
+    ]
+  },
+  {
+    "ref": "neta/anago",
+    "group": "neta",
+    "id": "anago",
+    "ja": "穴子",
+    "ruby": "{穴子|あなご}",
+    "kana": "あなご",
+    "zh": "星康吉鳗（星鳗）",
+    "en": "Whitespotted conger",
+    "aliases": [
+      "煮あなご",
+      "あなご",
+      "上穴子"
+    ]
+  },
+  {
+    "ref": "neta/ika",
+    "group": "neta",
+    "id": "ika",
+    "ja": "イカ",
+    "ruby": "",
+    "kana": "いか",
+    "zh": "鱿鱼、乌贼",
+    "en": "Squid and cuttlefish",
+    "aliases": [
+      "やわらかイカ焼き",
+      "アカイカ",
+      "いか",
+      "うにいか軍艦",
+      "イカ焼"
+    ]
+  },
+  {
+    "ref": "neta/tako",
+    "group": "neta",
+    "id": "tako",
+    "ja": "タコ",
+    "ruby": "",
+    "kana": "たこ",
+    "zh": "章鱼（真蛸）",
+    "en": "Octopus (common octopus)",
+    "aliases": [
+      "真だこ",
+      "たこうに",
+      "たこ"
+    ]
+  },
+  {
+    "ref": "neta/ebi",
+    "group": "neta",
+    "id": "ebi",
+    "ja": "エビ",
+    "ruby": "",
+    "kana": "えび",
+    "zh": "虾",
+    "en": "Shrimp / prawn",
+    "aliases": [
+      "有頭海老",
+      "えび",
+      "炙りえびマヨ",
+      "えび天握り",
+      "エビ焼",
+      "えび天にぎり"
+    ]
+  },
+  {
+    "ref": "neta/amaebi",
+    "group": "neta",
+    "id": "amaebi",
+    "ja": "甘エビ",
+    "ruby": "{甘|あま}エビ",
+    "kana": "あまえび",
+    "zh": "甜虾（北国赤虾）",
+    "en": "Sweet shrimp (northern shrimp)",
+    "aliases": [
+      "甘えび"
+    ]
+  },
+  {
+    "ref": "neta/hotate",
+    "group": "neta",
+    "id": "hotate",
+    "ja": "ホタテ",
+    "ruby": "",
+    "kana": "ほたて",
+    "zh": "扇贝（虾夷扇贝）的贝柱",
+    "en": "Scallop (adductor muscle)",
+    "aliases": [
+      "ほたて(北海道・青森県産)",
+      "ホタテ焼",
+      "大盛り貝柱",
+      "ほたてひもピリ辛わさび",
+      "国産ほたて貝柱"
+    ]
+  },
+  {
+    "ref": "neta/uni",
+    "group": "neta",
+    "id": "uni",
+    "ja": "ウニ",
+    "ruby": "",
+    "kana": "うに",
+    "zh": "海胆（生殖腺）",
+    "en": "Sea urchin (gonads)",
+    "aliases": [
+      "うに軍艦",
+      "たこうに",
+      "うにいか軍艦"
+    ]
+  },
+  {
+    "ref": "neta/ikura",
+    "group": "neta",
+    "id": "ikura",
+    "ja": "イクラ",
+    "ruby": "",
+    "kana": "いくら",
+    "zh": "鲑鱼籽",
+    "en": "Salmon roe",
+    "aliases": [
+      "いくら",
+      "いくら軍艦"
+    ]
+  },
+  {
+    "ref": "neta/kani",
+    "group": "neta",
+    "id": "kani",
+    "ja": "カニ",
+    "ruby": "",
+    "kana": "かに",
+    "zh": "蟹（雪蟹、帝王蟹等）",
+    "en": "Crab (snow crab, king crab, etc.)",
+    "aliases": [
+      "かに軍艦",
+      "ズワイ蟹焼",
+      "かにみそ",
+      "大型生本ずわい蟹"
+    ]
+  },
+  {
+    "ref": "neta/tamago",
+    "group": "neta",
+    "id": "tamago",
+    "ja": "玉子",
+    "ruby": "{玉子|たまご}",
+    "kana": "たまご",
+    "zh": "玉子烧（厚蛋烧）",
+    "en": "Sweet rolled omelette (tamagoyaki)",
+    "aliases": [
+      "旨だしたまご",
+      "たまご焼き",
+      "たまご"
+    ]
+  },
+  {
+    "ref": "sushi-types/nigiri",
+    "group": "sushi-types",
+    "id": "nigiri",
+    "ja": "握り",
+    "ruby": "{握|にぎ}り",
+    "kana": "にぎり",
+    "zh": "握寿司",
+    "en": "Nigiri sushi",
+    "aliases": [
+      "えび天握り",
+      "えび天にぎり"
+    ]
+  },
+  {
+    "ref": "sushi-types/gunkan",
+    "group": "sushi-types",
+    "id": "gunkan",
+    "ja": "軍艦巻き",
+    "ruby": "{軍艦|ぐんかん}{巻|ま}き",
+    "kana": "ぐんかんまき",
+    "zh": "军舰卷",
+    "en": "Battleship roll",
+    "aliases": [
+      "まぐろたたき軍艦",
+      "うに軍艦",
+      "いくら",
+      "かに軍艦",
+      "あんきも軍艦",
+      "ねぎまぐろ軍艦",
+      "ほたてひもピリ辛わさび",
+      "たこうに",
+      "かにみそ",
+      "サーモンたたき軍艦",
+      "うにいか軍艦",
+      "いくら軍艦"
+    ]
+  },
+  {
+    "ref": "sushi-types/hosomaki",
+    "group": "sushi-types",
+    "id": "hosomaki",
+    "ja": "細巻き",
+    "ruby": "{細巻|ほそま}き",
+    "kana": "ほそまき",
+    "zh": "细卷",
+    "en": "Thin roll",
+    "aliases": [
+      "鉄火巻",
+      "かっぱ巻",
+      "きゅうり巻"
+    ]
+  },
+  {
+    "ref": "sushi-types/tekkamaki",
+    "group": "sushi-types",
+    "id": "tekkamaki",
+    "ja": "鉄火巻き",
+    "ruby": "{鉄火|てっか}{巻|ま}き",
+    "kana": "てっかまき",
+    "zh": "金枪鱼细卷",
+    "en": "Tuna roll",
+    "aliases": [
+      "鉄火巻"
+    ]
+  },
+  {
+    "ref": "sushi-types/kappamaki",
+    "group": "sushi-types",
+    "id": "kappamaki",
+    "ja": "かっぱ巻き",
+    "ruby": "かっぱ{巻|ま}き",
+    "kana": "かっぱまき",
+    "zh": "黄瓜细卷",
+    "en": "Cucumber roll",
+    "aliases": [
+      "かっぱ巻",
+      "きゅうり巻"
+    ]
+  },
+  {
+    "ref": "sushi-types/temaki",
+    "group": "sushi-types",
+    "id": "temaki",
+    "ja": "手巻き",
+    "ruby": "{手巻|てま}き",
+    "kana": "てまき",
+    "zh": "手卷",
+    "en": "Hand roll",
+    "aliases": [
+      "おうちではま寿司 手巻きセット",
+      "まぐたく手巻（一貫）"
+    ]
+  },
+  {
+    "ref": "sushi-types/chirashi",
+    "group": "sushi-types",
+    "id": "chirashi",
+    "ja": "ちらし寿司",
+    "ruby": "ちらし{寿司|ずし}",
+    "kana": "ちらしずし",
+    "zh": "散寿司",
+    "en": "Scattered sushi",
+    "aliases": []
+  },
+  {
+    "ref": "sushi-types/inari",
+    "group": "sushi-types",
+    "id": "inari",
+    "ja": "いなり寿司",
+    "ruby": "いなり{寿司|ずし}",
+    "kana": "いなりずし",
+    "zh": "稻荷寿司（豆皮寿司）",
+    "en": "Inari sushi",
+    "aliases": [
+      "いなり(ごま入り)",
+      "いなり"
+    ]
+  },
+  {
+    "ref": "sushi-words/shari",
+    "group": "sushi-words",
+    "id": "shari",
+    "ja": "シャリ",
+    "ruby": "",
+    "kana": "しゃり",
+    "zh": "寿司饭",
+    "en": "Sushi rice",
+    "aliases": [
+      "追加シャリ",
+      "熟成まぐろ(シャリなし)"
+    ]
+  },
+  {
+    "ref": "sushi-words/neta",
+    "group": "sushi-words",
+    "id": "neta",
+    "ja": "ネタ",
+    "ruby": "",
+    "kana": "ねた",
+    "zh": "寿司料",
+    "en": "Sushi topping",
+    "aliases": []
+  },
+  {
+    "ref": "sushi-words/gari",
+    "group": "sushi-words",
+    "id": "gari",
+    "ja": "ガリ",
+    "ruby": "",
+    "kana": "がり",
+    "zh": "寿司醋姜片",
+    "en": "Pickled ginger for sushi",
+    "aliases": []
+  },
+  {
+    "ref": "sushi-words/agari",
+    "group": "sushi-words",
+    "id": "agari",
+    "ja": "あがり",
+    "ruby": "",
+    "kana": "あがり",
+    "zh": "茶",
+    "en": "Tea",
+    "aliases": []
+  },
+  {
+    "ref": "sushi-words/sabinuki",
+    "group": "sushi-words",
+    "id": "sabinuki",
+    "ja": "さび抜き",
+    "ruby": "さび{抜|ぬ}き",
+    "kana": "さびぬき",
+    "zh": "不放山葵",
+    "en": "No wasabi",
+    "aliases": []
+  },
+  {
+    "ref": "sushi-words/omakase",
+    "group": "sushi-words",
+    "id": "omakase",
+    "ja": "おまかせ",
+    "ruby": "",
+    "kana": "おまかせ",
+    "zh": "主厨精选（交给师傅）",
+    "en": "Chef’s choice",
+    "aliases": []
+  },
+  {
+    "ref": "sushi-words/kaitenzushi",
+    "group": "sushi-words",
+    "id": "kaitenzushi",
+    "ja": "回転寿司",
+    "ruby": "{回転|かいてん}{寿司|ずし}",
+    "kana": "かいてんずし",
+    "zh": "回转寿司",
+    "en": "Conveyor-belt sushi",
+    "aliases": []
+  },
+  {
+    "ref": "beef/tan",
+    "group": "beef",
+    "id": "tan",
+    "ja": "タン",
+    "ruby": "",
+    "kana": "たん",
+    "zh": "牛舌",
+    "en": "Beef tongue",
+    "aliases": [
+      "牛角タン塩",
+      "上タン塩",
+      "タン塩焼",
+      "上ネギタン塩焼",
+      "上タン厚切塩焼",
+      "特選タン塩焼",
+      "【特選】厚切り牛タン"
+    ]
+  },
+  {
+    "ref": "beef/karubi",
+    "group": "beef",
+    "id": "karubi",
+    "ja": "カルビ",
+    "ruby": "",
+    "kana": "かるび",
+    "zh": "牛五花（牛小排）",
+    "en": "Short rib / belly (kalbi)",
+    "aliases": [
+      "牛角上カルビ",
+      "王様カルビ",
+      "厳選とろカルビ",
+      "黒毛和牛ゲタカルビ",
+      "壺漬カルビ焼",
+      "カルビ焼",
+      "上カルビ焼",
+      "特選カルビ焼",
+      "カルビ三点盛",
+      "旨だれ牛カルビ",
+      "牛塩カルビ",
+      "きんぐカルビ",
+      "大判すだれ上カルビ",
+      "炙りすき焼カルビ",
+      "黒毛和牛上カルビ",
+      "黒毛牛焼しゃぶカルビ"
+    ]
+  },
+  {
+    "ref": "beef/rosu",
+    "group": "beef",
+    "id": "rosu",
+    "ja": "ロース",
+    "ruby": "",
+    "kana": "ろーす",
+    "zh": "牛背脊肉（上脑、眼肉、西冷一带）",
+    "en": "Loin (back meat)",
+    "aliases": [
+      "牛角ロース",
+      "黒毛和牛上赤身くらした",
+      "特選すだれ肩ロース焼",
+      "赤身ロース焼",
+      "上ロース焼",
+      "肩ロース厚切焼",
+      "特選サーロイン焼",
+      "黒毛牛ドでか！上ロース"
+    ]
+  },
+  {
+    "ref": "beef/harami",
+    "group": "beef",
+    "id": "harami",
+    "ja": "ハラミ",
+    "ruby": "",
+    "kana": "はらみ",
+    "zh": "牛横膈膜肉（肋骨侧）",
+    "en": "Outside skirt (diaphragm)",
+    "aliases": [
+      "牛角上ハラミ",
+      "牛ハラミ",
+      "ハラミ焼",
+      "超極厚ハラミ ～ガリバタ醤油～"
+    ]
+  },
+  {
+    "ref": "beef/sagari",
+    "group": "beef",
+    "id": "sagari",
+    "ja": "サガリ",
+    "ruby": "",
+    "kana": "さがり",
+    "zh": "牛横膈膜肉（腰椎侧）",
+    "en": "Hanger steak (hanging tender)",
+    "aliases": [
+      "厚切りサガリ"
+    ]
+  },
+  {
+    "ref": "beef/hire",
+    "group": "beef",
+    "id": "hire",
+    "ja": "ヒレ",
+    "ruby": "",
+    "kana": "ひれ",
+    "zh": "牛里脊（牛柳、菲力）",
+    "en": "Tenderloin (fillet)",
+    "aliases": [
+      "上ヒレ焼",
+      "特選シャトーブリアン"
+    ]
+  },
+  {
+    "ref": "beef/misuji",
+    "group": "beef",
+    "id": "misuji",
+    "ja": "ミスジ",
+    "ruby": "",
+    "kana": "みすじ",
+    "zh": "板腱（牛肩胛肉）",
+    "en": "Top blade (oyster blade)",
+    "aliases": [
+      "炙りミスジ ～ねぎ塩ポン酢～"
+    ]
+  },
+  {
+    "ref": "beef/zabuton",
+    "group": "beef",
+    "id": "zabuton",
+    "ja": "ザブトン",
+    "ruby": "",
+    "kana": "ざぶとん",
+    "zh": "上脑里的雪花块（座垫肉）",
+    "en": "Chuck flap",
+    "aliases": []
+  },
+  {
+    "ref": "beef/ichibo",
+    "group": "beef",
+    "id": "ichibo",
+    "ja": "イチボ",
+    "ruby": "",
+    "kana": "いちぼ",
+    "zh": "牛臀肉（近腰骨处）",
+    "en": "Rump cap",
+    "aliases": []
+  },
+  {
+    "ref": "beef/sankaku-bara",
+    "group": "beef",
+    "id": "sankaku-bara",
+    "ja": "三角バラ",
+    "ruby": "{三角|さんかく}バラ",
+    "kana": "さんかくばら",
+    "zh": "前腹三角五花",
+    "en": "Chuck short rib",
+    "aliases": []
+  },
+  {
+    "ref": "horumon/horumon",
+    "group": "horumon",
+    "id": "horumon",
+    "ja": "ホルモン",
+    "ruby": "",
+    "kana": "ほるもん",
+    "zh": "牛、猪等的可食用内脏",
+    "en": "Edible offal (beef, pork)",
+    "aliases": [
+      "やみつき豚ホルモン",
+      "ホルモン四種盛り",
+      "上ホルモン焼",
+      "ホルモン三点盛",
+      "やわらかホルモン"
+    ]
+  },
+  {
+    "ref": "horumon/shimacho",
+    "group": "horumon",
+    "id": "shimacho",
+    "ja": "シマチョウ",
+    "ruby": "",
+    "kana": "しまちょう",
+    "zh": "牛大肠",
+    "en": "Beef large intestine",
+    "aliases": [
+      "シマチョウ",
+      "韓式ヤンニョムだれ 壺漬け一本シマチョウ"
+    ]
+  },
+  {
+    "ref": "horumon/marucho",
+    "group": "horumon",
+    "id": "marucho",
+    "ja": "マルチョウ",
+    "ruby": "",
+    "kana": "まるちょう",
+    "zh": "牛小肠（保持管状）",
+    "en": "Beef small intestine, left whole",
+    "aliases": []
+  },
+  {
+    "ref": "horumon/mino",
+    "group": "horumon",
+    "id": "mino",
+    "ja": "ミノ",
+    "ruby": "",
+    "kana": "みの",
+    "zh": "牛的第一胃（瘤胃）",
+    "en": "Beef rumen (first stomach)",
+    "aliases": [
+      "みの",
+      "厚切りミノ",
+      "上ミノ焼",
+      "【特選】ミノステーキ"
+    ]
+  },
+  {
+    "ref": "horumon/hachinosu",
+    "group": "horumon",
+    "id": "hachinosu",
+    "ja": "ハチノス",
+    "ruby": "",
+    "kana": "はちのす",
+    "zh": "牛网胃（金钱肚）",
+    "en": "Honeycomb tripe (second stomach)",
+    "aliases": []
+  },
+  {
+    "ref": "horumon/senmai",
+    "group": "horumon",
+    "id": "senmai",
+    "ja": "センマイ",
+    "ruby": "",
+    "kana": "せんまい",
+    "zh": "牛百叶（瓣胃）",
+    "en": "Omasum (third stomach)",
+    "aliases": [
+      "白センマイ"
+    ]
+  },
+  {
+    "ref": "horumon/hatsu",
+    "group": "horumon",
+    "id": "hatsu",
+    "ja": "ハツ",
+    "ruby": "",
+    "kana": "はつ",
+    "zh": "牛心",
+    "en": "Beef heart",
+    "aliases": []
+  },
+  {
+    "ref": "horumon/reba",
+    "group": "horumon",
+    "id": "reba",
+    "ja": "レバー",
+    "ruby": "",
+    "kana": "ればー",
+    "zh": "牛肝",
+    "en": "Beef liver",
+    "aliases": [
+      "牛レバー",
+      "上レバー焼"
+    ]
+  },
+  {
+    "ref": "pork/tontoro",
+    "group": "pork",
+    "id": "tontoro",
+    "ja": "豚トロ",
+    "ruby": "{豚|とん}トロ",
+    "kana": "とんとろ",
+    "zh": "猪颈肉",
+    "en": "Pork jowl / neck (P-toro)",
+    "aliases": [
+      "ピートロ",
+      "豚トロ焼",
+      "豚トロ"
+    ]
+  },
+  {
+    "ref": "pork/bara",
+    "group": "pork",
+    "id": "bara",
+    "ja": "豚バラ",
+    "ruby": "{豚|ぶた}バラ",
+    "kana": "ぶたばら",
+    "zh": "猪五花肉",
+    "en": "Pork belly",
+    "aliases": [
+      "豚カルビ",
+      "ねぎ塩豚カルビ",
+      "豚バラ焼",
+      "豚バラ串焼",
+      "厚切り豚カルビ"
+    ]
+  },
+  {
+    "ref": "pork/tan",
+    "group": "pork",
+    "id": "tan",
+    "ja": "豚タン",
+    "ruby": "{豚|ぶた}タン",
+    "kana": "ぶたたん",
+    "zh": "猪舌",
+    "en": "Pork tongue",
+    "aliases": [
+      "とんタン塩",
+      "きんぐ塩タン【ポーク】"
+    ]
+  },
+  {
+    "ref": "yakiniku-side/rice",
+    "group": "yakiniku-side",
+    "id": "rice",
+    "ja": "ライス",
+    "ruby": "",
+    "kana": "らいす",
+    "zh": "白米饭",
+    "en": "Plain rice",
+    "aliases": [
+      "カルビ専用ごはん",
+      "ライス",
+      "ごはん"
+    ]
+  },
+  {
+    "ref": "yakiniku-side/reimen",
+    "group": "yakiniku-side",
+    "id": "reimen",
+    "ja": "冷麺",
+    "ruby": "{冷麺|れいめん}",
+    "kana": "れいめん",
+    "zh": "冷面",
+    "en": "Cold noodles (naengmyeon)",
+    "aliases": [
+      "牛角冷麺",
+      "銀盤冷麺",
+      "ひとくち冷麺"
+    ]
+  },
+  {
+    "ref": "yakiniku-side/bibinba",
+    "group": "yakiniku-side",
+    "id": "bibinba",
+    "ja": "ビビンバ",
+    "ruby": "",
+    "kana": "びびんば",
+    "zh": "拌饭",
+    "en": "Bibimbap (mixed rice)",
+    "aliases": [
+      "石焼ビビンバ"
+    ]
+  },
+  {
+    "ref": "yakiniku-side/kuppa",
+    "group": "yakiniku-side",
+    "id": "kuppa",
+    "ja": "クッパ",
+    "ruby": "",
+    "kana": "くっぱ",
+    "zh": "汤饭",
+    "en": "Gukbap (rice in soup)",
+    "aliases": [
+      "旨味たっぷりカルビクッパ",
+      "カルビクッパ",
+      "玉子クッパ"
+    ]
+  },
+  {
+    "ref": "yakiniku-side/kimuchi",
+    "group": "yakiniku-side",
+    "id": "kimuchi",
+    "ja": "キムチ",
+    "ruby": "",
+    "kana": "きむち",
+    "zh": "韩式泡菜",
+    "en": "Kimchi",
+    "aliases": [
+      "牛角キムチ",
+      "カクテキ",
+      "キムチ",
+      "キムチ盛合せ"
+    ]
+  },
+  {
+    "ref": "yakiniku-side/namuru",
+    "group": "yakiniku-side",
+    "id": "namuru",
+    "ja": "ナムル",
+    "ruby": "",
+    "kana": "なむる",
+    "zh": "韩式凉拌菜",
+    "en": "Namul (seasoned vegetables)",
+    "aliases": [
+      "ナムルの3種盛り合わせ",
+      "ナムル",
+      "ナムル盛り"
+    ]
+  },
+  {
+    "ref": "yakiniku-side/sanchu",
+    "group": "yakiniku-side",
+    "id": "sanchu",
+    "ja": "サンチュ",
+    "ruby": "",
+    "kana": "さんちゅ",
+    "zh": "包肉用的生菜",
+    "en": "Leaf lettuce for wraps",
+    "aliases": [
+      "サンチュ10枚",
+      "サンチュ"
+    ]
+  },
+  {
+    "ref": "yakiniku-words/shio",
+    "group": "yakiniku-words",
+    "id": "shio",
+    "ja": "塩",
+    "ruby": "{塩|しお}",
+    "kana": "しお",
+    "zh": "盐味",
+    "en": "Salt (seasoning)",
+    "aliases": [
+      "牛角タン塩",
+      "上タン塩",
+      "とんタン塩",
+      "ねぎ塩豚カルビ",
+      "タン塩焼",
+      "上ネギタン塩焼",
+      "上タン厚切塩焼",
+      "特選タン塩焼",
+      "牛塩カルビ",
+      "きんぐ塩タン【ポーク】"
+    ]
+  },
+  {
+    "ref": "yakiniku-words/tare",
+    "group": "yakiniku-words",
+    "id": "tare",
+    "ja": "タレ",
+    "ruby": "",
+    "kana": "たれ",
+    "zh": "烤肉酱汁",
+    "en": "Sauce (tare)",
+    "aliases": [
+      "牛角上ハラミ",
+      "豚カルビ",
+      "焼肉のたれ",
+      "旨だれ牛カルビ",
+      "韓式ヤンニョムだれ 壺漬け一本シマチョウ"
+    ]
+  },
+  {
+    "ref": "yakiniku-words/jo",
+    "group": "yakiniku-words",
+    "id": "jo",
+    "ja": "上",
+    "ruby": "{上|じょう}",
+    "kana": "じょう",
+    "zh": "上等（比普通的好）",
+    "en": "Premium (a cut above standard)",
+    "aliases": [
+      "上タン塩",
+      "牛角上カルビ",
+      "牛角上ハラミ",
+      "黒毛和牛上赤身くらした",
+      "上ネギタン塩焼",
+      "上タン厚切塩焼",
+      "上カルビ焼",
+      "上ロース焼",
+      "上ヒレ焼",
+      "上ミノ焼",
+      "上ホルモン焼",
+      "上レバー焼",
+      "上穴子",
+      "大判すだれ上カルビ",
+      "黒毛和牛上カルビ",
+      "黒毛牛ドでか！上ロース"
+    ]
+  },
+  {
+    "ref": "yakiniku-words/tokujo",
+    "group": "yakiniku-words",
+    "id": "tokujo",
+    "ja": "特上",
+    "ruby": "{特上|とくじょう}",
+    "kana": "とくじょう",
+    "zh": "特等（比「上」更高）",
+    "en": "Top grade, extra premium",
+    "aliases": [
+      "特選タン塩焼",
+      "特選カルビ焼",
+      "特上うな丼",
+      "特上セット12種(1人前)"
+    ]
+  },
+  {
+    "ref": "yakiniku-words/kisho-bui",
+    "group": "yakiniku-words",
+    "id": "kisho-bui",
+    "ja": "希少部位",
+    "ruby": "{希少|きしょう}{部位|ぶい}",
+    "kana": "きしょうぶい",
+    "zh": "稀少部位",
+    "en": "Rare cut",
+    "aliases": [
+      "きんぐカルビ",
+      "炙りミスジ ～ねぎ塩ポン酢～"
+    ]
+  },
+  {
+    "ref": "yakiniku-words/atsugiri",
+    "group": "yakiniku-words",
+    "id": "atsugiri",
+    "ja": "厚切り",
+    "ruby": "{厚切|あつぎ}り",
+    "kana": "あつぎり",
+    "zh": "厚切",
+    "en": "Thick-cut",
+    "aliases": [
+      "厚切りサガリ",
+      "厚切りミノ",
+      "上タン厚切塩焼",
+      "肩ロース厚切焼",
+      "超極厚ハラミ ～ガリバタ醤油～",
+      "【特選】厚切り牛タン",
+      "厚切り豚カルビ"
+    ]
+  },
+  {
+    "ref": "yakiniku-words/moriawase",
+    "group": "yakiniku-words",
+    "id": "moriawase",
+    "ja": "盛り合わせ",
+    "ruby": "{盛|も}り{合|あ}わせ",
+    "kana": "もりあわせ",
+    "zh": "拼盘",
+    "en": "Assorted platter",
+    "aliases": [
+      "ホルモン四種盛り",
+      "バラエティー四種盛り",
+      "厳選牛角盛り",
+      "ナムルの3種盛り合わせ",
+      "カルビ三点盛",
+      "厳選三点盛",
+      "ホルモン三点盛",
+      "キムチ盛合せ",
+      "ナムル盛り"
+    ]
+  },
+  {
+    "ref": "yakiniku-words/ninmae",
+    "group": "yakiniku-words",
+    "id": "ninmae",
+    "ja": "人前",
+    "ruby": "{人前|にんまえ}",
+    "kana": "にんまえ",
+    "zh": "…人份",
+    "en": "Serving(s)",
+    "aliases": [
+      "バラエティー四種盛り",
+      "厳選牛角盛り",
+      "特上セット12種(1人前)"
+    ]
+  },
+  {
+    "ref": "yakiniku-words/tabehodai",
+    "group": "yakiniku-words",
+    "id": "tabehodai",
+    "ja": "食べ放題",
+    "ruby": "{食|た}べ{放題|ほうだい}",
+    "kana": "たべほうだい",
+    "zh": "吃到饱（自助）",
+    "en": "All-you-can-eat",
+    "aliases": [
+      "牛角コース",
+      "きんぐコース"
+    ]
+  },
+  {
+    "ref": "chicken/momo",
+    "group": "chicken",
+    "id": "momo",
+    "ja": "もも",
+    "ruby": "",
+    "kana": "もも",
+    "zh": "鸡腿肉",
+    "en": "Chicken thigh",
+    "aliases": [
+      "純けい",
+      "ねぎま",
+      "とりもも",
+      "鶏モモ焼",
+      "もも貴族焼",
+      "みたれ（もも肉）",
+      "チキン南蛮",
+      "鶏旨丼(タレ)",
+      "鶏旨丼(塩)",
+      "鶏カルビ"
+    ]
+  },
+  {
+    "ref": "chicken/negima",
+    "group": "chicken",
+    "id": "negima",
+    "ja": "ねぎま",
+    "ruby": "",
+    "kana": "ねぎま",
+    "zh": "鸡肉大葱串",
+    "en": "Chicken and negi (Japanese leek) skewer",
+    "aliases": [
+      "ねぎま",
+      "もも貴族焼",
+      "むね貴族焼"
+    ]
+  },
+  {
+    "ref": "chicken/mune",
+    "group": "chicken",
+    "id": "mune",
+    "ja": "むね",
+    "ruby": "",
+    "kana": "むね",
+    "zh": "鸡胸肉",
+    "en": "Chicken breast",
+    "aliases": [
+      "むね貴族焼",
+      "むね明太マヨ焼",
+      "トリキの唐揚"
+    ]
+  },
+  {
+    "ref": "chicken/sasami",
+    "group": "chicken",
+    "id": "sasami",
+    "ja": "ささみ",
+    "ruby": "",
+    "kana": "ささみ",
+    "zh": "鸡里脊（鸡小胸）",
+    "en": "Chicken tenderloin (tender)",
+    "aliases": [
+      "ささみ",
+      "ささみ塩焼"
+    ]
+  },
+  {
+    "ref": "chicken/tsukune",
+    "group": "chicken",
+    "id": "tsukune",
+    "ja": "つくね",
+    "ruby": "",
+    "kana": "つくね",
+    "zh": "鸡肉丸（鸡肉丸子串）",
+    "en": "Chicken meatball skewer",
+    "aliases": [
+      "つくね",
+      "つくね塩",
+      "つくねチーズ焼",
+      "つくねたれ",
+      "ピーマン肉詰"
+    ]
+  },
+  {
+    "ref": "chicken/kawa",
+    "group": "chicken",
+    "id": "kawa",
+    "ja": "皮",
+    "ruby": "{皮|かわ}",
+    "kana": "かわ",
+    "zh": "鸡皮",
+    "en": "Chicken skin",
+    "aliases": [
+      "若皮",
+      "さっぱり鶏皮ポン酢",
+      "かわ塩",
+      "かわたれ",
+      "鶏皮チップ",
+      "鶏皮"
+    ]
+  },
+  {
+    "ref": "chicken/bonjiri",
+    "group": "chicken",
+    "id": "bonjiri",
+    "ja": "ぼんじり",
+    "ruby": "",
+    "kana": "ぼんじり",
+    "zh": "鸡屁股（鸡尾肉）",
+    "en": "Chicken tail (pope's nose)",
+    "aliases": [
+      "ぼんちり",
+      "三角（ぼんじり）"
+    ]
+  },
+  {
+    "ref": "chicken/seseri",
+    "group": "chicken",
+    "id": "seseri",
+    "ja": "せせり",
+    "ruby": "",
+    "kana": "せせり",
+    "zh": "鸡颈肉（鸡脖肉）",
+    "en": "Chicken neck meat",
+    "aliases": [
+      "せせり"
+    ]
+  },
+  {
+    "ref": "chicken/sunagimo",
+    "group": "chicken",
+    "id": "sunagimo",
+    "ja": "砂肝",
+    "ruby": "{砂肝|すなぎも}",
+    "kana": "すなぎも",
+    "zh": "鸡胗",
+    "en": "Chicken gizzard",
+    "aliases": [
+      "すなぎも",
+      "砂ずり（砂肝）",
+      "ホルモンねぎ盛ポン酢"
+    ]
+  },
+  {
+    "ref": "chicken/hatsu",
+    "group": "chicken",
+    "id": "hatsu",
+    "ja": "ハツ",
+    "ruby": "",
+    "kana": "はつ",
+    "zh": "鸡心",
+    "en": "Chicken heart",
+    "aliases": [
+      "ハート（ハツ）塩",
+      "ハート（ハツ）たれ",
+      "ホルモンねぎ盛ポン酢"
+    ]
+  },
+  {
+    "ref": "chicken/reba",
+    "group": "chicken",
+    "id": "reba",
+    "ja": "レバー",
+    "ruby": "",
+    "kana": "ればー",
+    "zh": "鸡肝",
+    "en": "Chicken liver",
+    "aliases": [
+      "きも（レバー）",
+      "きも焼"
+    ]
+  },
+  {
+    "ref": "chicken/tebasaki",
+    "group": "chicken",
+    "id": "tebasaki",
+    "ja": "手羽先",
+    "ruby": "{手羽先|てばさき}",
+    "kana": "てばさき",
+    "zh": "鸡翅（翅中连翅尖）",
+    "en": "Chicken wing (flat and tip)",
+    "aliases": [
+      "若どり手羽揚げ",
+      "手羽先塩",
+      "手羽先たれ"
+    ]
+  },
+  {
+    "ref": "chicken/nankotsu",
+    "group": "chicken",
+    "id": "nankotsu",
+    "ja": "なんこつ",
+    "ruby": "",
+    "kana": "なんこつ",
+    "zh": "鸡软骨",
+    "en": "Chicken cartilage",
+    "aliases": [
+      "やげん軟骨",
+      "なんこつのから揚げ",
+      "なんこつ唐揚げ",
+      "やげんなんこつ",
+      "ひざなんこつ唐揚"
+    ]
+  },
+  {
+    "ref": "yakitori-words/shio",
+    "group": "yakitori-words",
+    "id": "shio",
+    "ja": "塩",
+    "ruby": "{塩|しお}",
+    "kana": "しお",
+    "zh": "盐味（盐烤）",
+    "en": "Salt (salt-grilled)",
+    "aliases": [
+      "純けい",
+      "ささみ",
+      "すなぎも",
+      "若皮",
+      "しんぞう",
+      "はらみ",
+      "手羽先塩",
+      "つくね塩",
+      "ささみ塩焼",
+      "ハート（ハツ）塩",
+      "かわ塩",
+      "鶏旨丼(塩)"
+    ]
+  },
+  {
+    "ref": "yakitori-words/tare",
+    "group": "yakitori-words",
+    "id": "tare",
+    "ja": "タレ",
+    "ruby": "",
+    "kana": "たれ",
+    "zh": "烤鸡串酱汁",
+    "en": "Tare (basting sauce)",
+    "aliases": [
+      "ねぎま",
+      "つくね",
+      "しろ",
+      "あか",
+      "手羽先たれ",
+      "みたれ（もも肉）",
+      "つくねたれ",
+      "かわたれ",
+      "ハート（ハツ）たれ",
+      "鶏旨丼(タレ)"
+    ]
+  },
+  {
+    "ref": "yakitori-words/hon",
+    "group": "yakitori-words",
+    "id": "hon",
+    "ja": "本",
+    "ruby": "{本|ほん}",
+    "kana": "ほん",
+    "zh": "串（数串的量词）",
+    "en": "Counter for skewers",
+    "aliases": []
+  },
+  {
+    "ref": "yakitori-words/kushi",
+    "group": "yakitori-words",
+    "id": "kushi",
+    "ja": "串",
+    "ruby": "{串|くし}",
+    "kana": "くし",
+    "zh": "签子；串",
+    "en": "Skewer",
+    "aliases": [
+      "串カツ",
+      "豚バラ串焼"
+    ]
+  },
+  {
+    "ref": "yakitori-words/omakase",
+    "group": "yakitori-words",
+    "id": "omakase",
+    "ja": "おまかせ",
+    "ruby": "",
+    "kana": "おまかせ",
+    "zh": "交给店家安排",
+    "en": "Chef's choice",
+    "aliases": []
+  },
+  {
+    "ref": "yakitori-words/moriawase",
+    "group": "yakitori-words",
+    "id": "moriawase",
+    "ja": "盛り合わせ",
+    "ruby": "{盛|も}り{合|あ}わせ",
+    "kana": "もりあわせ",
+    "zh": "拼盘",
+    "en": "Assortment (mixed plate)",
+    "aliases": []
+  },
+  {
+    "ref": "yakitori-words/yakiton",
+    "group": "yakitori-words",
+    "id": "yakiton",
+    "ja": "焼きとん",
+    "ruby": "{焼|や}きとん",
+    "kana": "やきとん",
+    "zh": "烤猪肉串（猪杂串）",
+    "en": "Pork skewers",
+    "aliases": [
+      "しろ",
+      "あか",
+      "しんぞう",
+      "はらみ",
+      "ピートロ"
+    ]
+  }
+]

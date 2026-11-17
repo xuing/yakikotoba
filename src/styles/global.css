@@ -15,18 +15,8 @@
   --accent: #c0391f;
   --accent-ink: #fffaf5;
   --accent-soft: #f6e0d6;
-  --map-body: #e6d8c4;
-  --map-line: #fffcf6;
-  --map-organ: #f3ebdf;
-  --map-mark: #8c8376;
   --shadow-1: 0 1px 2px rgb(40 30 20 / .06);
   --shadow-2: 0 1px 2px rgb(40 30 20 / .05), 0 10px 30px -14px rgb(40 30 20 / .25);
-
-  --sec-beef: #a8432c;
-  --sec-horumon: #a8752a;
-  --sec-pork: #b55a72;
-  --sec-chicken: #a88512;
-  --sec-more: #4c7a5a;
 
   --font-latin: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
   --font-ja: var(--font-latin), "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic UI", "Yu Gothic", Meiryo, "Noto Sans JP", sans-serif;
@@ -55,17 +45,8 @@
     --accent: #ff6f4f;
     --accent-ink: #1a0d08;
     --accent-soft: #3b1c14;
-    --map-body: #3b342c;
-    --map-line: #1c1916;
-    --map-organ: #2a2520;
-    --map-mark: #857c70;
     --shadow-1: 0 1px 2px rgb(0 0 0 / .4);
     --shadow-2: 0 1px 2px rgb(0 0 0 / .3), 0 12px 32px -16px rgb(0 0 0 / .7);
-    --sec-beef: #e07a5f;
-    --sec-horumon: #d9a556;
-    --sec-pork: #e08aa0;
-    --sec-chicken: #d6b648;
-    --sec-more: #7fb08c;
   }
 }
 :root[data-theme="dark"] {
@@ -82,17 +63,8 @@
   --accent: #ff6f4f;
   --accent-ink: #1a0d08;
   --accent-soft: #3b1c14;
-  --map-body: #3b342c;
-  --map-line: #1c1916;
-  --map-organ: #2a2520;
-  --map-mark: #857c70;
   --shadow-1: 0 1px 2px rgb(0 0 0 / .4);
   --shadow-2: 0 1px 2px rgb(0 0 0 / .3), 0 12px 32px -16px rgb(0 0 0 / .7);
-  --sec-beef: #e07a5f;
-  --sec-horumon: #d9a556;
-  --sec-pork: #e08aa0;
-  --sec-chicken: #d6b648;
-  --sec-more: #7fb08c;
 }
 
 /* ---------- reset ---------- */
@@ -118,6 +90,7 @@ body {
   text-rendering: optimizeLegibility;
   font-feature-settings: "palt" 0;
 }
+html[lang="ja"] body { font-family: var(--font-ja); }
 html[lang="en"] body { font-family: var(--font-latin), "Hiragino Sans", "Yu Gothic UI", sans-serif; line-height: 1.6; }
 [lang="ja"] { font-family: var(--font-ja); }
 [lang="zh-Hans"] { font-family: var(--font-zh); }
@@ -129,10 +102,8 @@ html[lang="en"] body { font-family: var(--font-latin), "Hiragino Sans", "Yu Goth
 
 ruby { ruby-position: over; }
 rt { font-size: .5em; letter-spacing: .02em; color: var(--ink-3); font-family: var(--font-ja); font-weight: 500; }
-html.no-furigana rt { visibility: hidden; }
 
 .wrap { width: min(100% - 2 * var(--gutter), var(--wrap)); margin-inline: auto; }
-.visually-hidden { position: absolute !important; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 
 /* ---------- type helpers ---------- */
 .eyebrow {
@@ -145,15 +116,6 @@ html.no-furigana rt { visibility: hidden; }
 .romaji { font-family: var(--font-serif); font-style: italic; color: var(--ink-2); letter-spacing: .01em; }
 
 /* ---------- surfaces ---------- */
-.card {
-  background: var(--surface);
-  border: 1px solid var(--line);
-  border-radius: var(--radius);
-  box-shadow: var(--shadow-1);
-}
-a.card { text-decoration: none; transition: border-color .2s, box-shadow .2s, transform .2s; }
-a.card:hover { border-color: var(--line-2); box-shadow: var(--shadow-2); transform: translateY(-1px); }
-
 .chip {
   display: inline-flex; align-items: center; gap: .4em;
   padding: .28em .75em; border-radius: 999px;
@@ -162,19 +124,6 @@ a.card:hover { border-color: var(--line-2); box-shadow: var(--shadow-2); transfo
   transition: border-color .2s, background .2s;
 }
 a.chip:hover { border-color: var(--ink-3); }
-.tag {
-  display: inline-flex; align-items: center; gap: .35em;
-  font-size: 12px; line-height: 1; padding: .45em .65em; border-radius: 6px;
-  background: var(--bg-2); color: var(--ink-2); font-weight: 500;
-}
-.tag.accent { background: var(--accent-soft); color: var(--accent); }
-.dot { width: .55em; height: .55em; border-radius: 50%; background: currentColor; display: inline-block; }
-
-.section-title { display: flex; align-items: baseline; gap: .6em; flex-wrap: wrap; margin-block: 0 18px; }
-.section-title h2 { font-family: var(--font-mincho); font-weight: 700; font-size: clamp(22px, 3vw, 28px); letter-spacing: .02em; }
-.section-title .sub { color: var(--ink-3); font-size: 14px; }
-
-.hr { height: 1px; background: var(--line); border: 0; margin-block: 40px; }
 
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation: none !important; transition: none !important; }

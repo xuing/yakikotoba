@@ -11,7 +11,7 @@ export type MediaItem = {
   image: ImageMetadata;
   isSvg: boolean;
   kind: string; // raw | cooked | dish | logo | other
-  caption?: { zh?: string; en?: string };
+  caption?: { ja?: string; zh?: string; en?: string };
   source?: Credit;
 };
 

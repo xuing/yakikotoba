@@ -1,0 +1,46 @@
+---
+import Guide from '../layouts/Guide.astro';
+import Icon from '../components/Icon.astro';
+import { getGuide, categories } from '../lib/guide';
+const { tabs } = await getGuide();
+---
+<Guide title="看懂菜单 · メニュー図鑑 | やきことば" active="menus">
+  <div class="menus-page container">
+    <p class="eyebrow section-eyebrow">A FIELD GUIDE FOR YOUR NEXT MEAL</p>
+    <h1>
+      <span class="i18n-zh">菜单，终于看懂了<span class="accent">。</span></span>
+      <span class="i18n-ja">メニューが、ついに読める<span class="accent">。</span></span>
+    </h1>
+    <p class="menus-intro">
+      <span class="i18n-zh">同一种食材，在不同店里可能有不同名字。<br />选一家店，看看菜单上的日语、实际的食材和背后的知识。</span>
+      <span class="i18n-ja">同じ食材でも、お店によって名前が変わる面白さ。<br />気になるお店を選んで、メニューの日本語・実際の食材・背景の知識を比べてみましょう。</span>
+    </p>
+    {tabs.map(tab => {
+      const category = categories.find(c => c.id === tab.id)!;
+      return <section class="chain-section">
+        <div class="chain-section-heading">
+          <Icon name={category.icon} size={23} />
+          <h2><span class="i18n-zh">{category.title}</span><span class="i18n-ja">{category.ja}</span></h2>
+          <span>{category.en} · {tab.chains.length} <span class="i18n-zh">家店铺</span><span class="i18n-ja">店舗</span></span>
+        </div>
+        <div class="chain-grid">
+          {tab.chains.map(chain => <a class="chain-card" href={`/menu/#${tab.id}/${chain.id}`}>
+            <span class="chain-logo">{chain.logo ? <img src={chain.logo.image.src} alt={`${chain.ja} 标志`} width="65" height="53" loading="lazy" /> : <Icon name={category.icon} size={28} />}</span>
+            <div>
+              <h3 lang="ja">{chain.ja}</h3>
+              <p>{chain.romaji} · {chain.count} <span class="i18n-zh">个食材与用语对照</span><span class="i18n-ja">品の食材・メニュー対照</span></p>
+            </div>
+            <Icon name="arrow" size={18} />
+          </a>)}
+        </div>
+      </section>;
+    })}
+    <div class="menus-tip">
+      <Icon name="book" size={23} />
+      <p>
+        <span class="i18n-zh">想先学通用叫法？<a href="/menu/">翻开完整菜单词典</a>，对照日语、中文与英文，听读音、看实物，再慢慢读背后的故事。</span>
+        <span class="i18n-ja">標準的な呼び方を学びたい方は、<a href="/menu/">メニュー辞典（日・中・英）</a>へどうぞ。発音を聞き、写真を見ながら、背景知識をじっくり学べます。</span>
+      </p>
+    </div>
+  </div>
+</Guide>

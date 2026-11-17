@@ -1,0 +1,139 @@
+---
+import '../styles/guide.css';
+import Icon from '../components/Icon.astro';
+import { getGuide } from '../lib/guide';
+interface Props { title?: string; description?: string; active?: string }
+const { title = 'やきことば · 每一口，都有新发现', description = '从烤肉、烧鸟到寿司，认识食材部位、菜单日语和食物背后的故事。你的日本餐桌知识图鉴。', active = 'explore' } = Astro.props;
+const { search } = await getGuide();
+---
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="description" content={description} />
+    <meta name="theme-color" content="#f8f7f2" />
+    <title>{title}</title>
+    {Astro.site && <link rel="canonical" href={new URL(Astro.url.pathname, Astro.site)} />}
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="やきことば" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@600;800&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet" />
+    <script is:inline>
+      (function() {
+        try {
+          var stored = localStorage.getItem('yakikotoba-lang');
+          var lang = stored || (navigator.language && navigator.language.toLowerCase().startsWith('ja') ? 'ja' : 'zh');
+          document.documentElement.lang = lang === 'ja' ? 'ja' : 'zh-CN';
+          document.documentElement.setAttribute('data-lang', lang);
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main"><span class="i18n-zh">跳到主要内容</span><span class="i18n-ja">メインコンテンツへスキップ</span></a>
+    <header class="site-header">
+      <div class="header-inner container">
+        <a class="site-brand" href="/" aria-label="やきことば 首页">
+          <span class="brand-seal" aria-hidden="true">食</span>
+          <span>
+            <strong lang="ja">やきことば<span class="brand-dot">。</span></strong>
+            <small><span class="i18n-zh">一口日语，一点新知</span><span class="i18n-ja">ひとくちの日本語、あたらしい知識</span></small>
+          </span>
+        </a>
+        <nav class="desktop-nav" aria-label="主要导航">
+          <a href="/" data-nav="explore" class:list={{ active: active === 'explore' }}>
+            <span class="i18n-zh">发现</span><span class="i18n-ja">探索</span>
+            <span class="nav-ja">DISCOVER</span>
+          </a>
+          <a href="/?view=atlas" data-nav="atlas" class:list={{ active: active === 'atlas' }}>
+            <span class="i18n-zh">食材图鉴</span><span class="i18n-ja">食材図鑑</span>
+          </a>
+          <a href="/menus/" data-nav="menus" class:list={{ active: active === 'menus' }}>
+            <span class="i18n-zh">看懂菜单</span><span class="i18n-ja">メニュー図鑑</span>
+          </a>
+          <a href="/scan/" data-nav="scan" class:list={{ active: active === 'scan' }} class="nav-scan-btn">
+            <Icon name="camera" size={15} />
+            <span class="i18n-zh">拍照识菜单</span><span class="i18n-ja">メニューを撮って調べる</span>
+            <span class="nav-ai-badge">AI</span>
+          </a>
+          <a href="/?view=saved" data-nav="saved" class:list={{ active: active === 'saved' }}>
+            <span class="i18n-zh">我的收藏</span><span class="i18n-ja">お気に入り</span>
+            <span class="saved-count" data-saved-count hidden>0</span>
+          </a>
+        </nav>
+        <div class="header-actions">
+          <button class="header-search" type="button" data-open-search aria-label="搜索食材、日语或菜单">
+            <Icon name="search" size={20} />
+            <span><span class="i18n-zh">搜一搜</span><span class="i18n-ja">検索</span></span>
+            <kbd>/</kbd>
+          </button>
+          <span class="header-divider"></span>
+          <button class="lang-switcher" type="button" data-toggle-lang aria-label="语言切换 / 言語切替">
+            <span class="lang-opt" data-opt="zh">中文</span>
+            <span class="lang-sep">·</span>
+            <span class="lang-opt" data-opt="ja">日本語</span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <main id="main"><slot /></main>
+    <footer class="site-footer container">
+      <a class="footer-brand" href="/">やきことば<span>。</span></a>
+      <p>
+        <span class="i18n-zh">带着好奇心上桌，带着新知识离开。</span>
+        <span class="i18n-ja">好奇心をつれて食卓へ。あたらしい一口、あたらしい世界。</span>
+        <small>ひとくちから、世界がひろがる。</small>
+      </p>
+      <div>
+        <a href="/menu/">
+          <span class="i18n-zh">完整菜单词典</span><span class="i18n-ja">メニュー辞典（日・中・英）</span>
+          <Icon name="diagonal" size={13} />
+        </a>
+        <span>
+          <span class="i18n-zh">食材知识附有出处 · 图片保留来源信息</span>
+          <span class="i18n-ja">食材知識の出典明記 · 写真・ロゴは引用元を表記</span>
+        </span>
+      </div>
+    </footer>
+    <nav class="mobile-nav" aria-label="移动导航">
+      <a href="/" data-nav="explore" class:list={{ active: active === 'explore' }}><Icon name="spark" /><span><span class="i18n-zh">发现</span><span class="i18n-ja">探索</span></span></a>
+      <a href="/?view=atlas" data-nav="atlas" class:list={{ active: active === 'atlas' }}><Icon name="grid" /><span><span class="i18n-zh">图鉴</span><span class="i18n-ja">図鑑</span></span></a>
+      <a href="/scan/" data-nav="scan" class:list={{ active: active === 'scan' }} class="mobile-scan-highlight"><Icon name="camera" /><span><span class="i18n-zh">拍照</span><span class="i18n-ja">撮る</span></span></a>
+      <a href="/menus/" data-nav="menus" class:list={{ active: active === 'menus' }}><Icon name="book" /><span><span class="i18n-zh">菜单</span><span class="i18n-ja">メニュー</span></span></a>
+      <a href="/?view=saved" data-nav="saved" class:list={{ active: active === 'saved' }}><Icon name="bookmark" /><span><span class="i18n-zh">收藏</span><span class="i18n-ja">保存</span></span></a>
+    </nav>
+    <dialog class="search-dialog" aria-labelledby="search-title">
+      <div class="search-dialog-head">
+        <h2 id="search-title">
+          <span class="i18n-zh">今天想认识什么？</span>
+          <span class="i18n-ja">今日は何を知りたいですか？</span>
+        </h2>
+        <button type="button" class="icon-button" data-close-search aria-label="关闭搜索 / 閉じる"><Icon name="close" /></button>
+      </div>
+      <div class="dialog-input">
+        <Icon name="search" />
+        <input type="search" id="global-search" placeholder="试试：牛舌、ハラミ、maguro…" data-placeholder-zh="试试：牛舌、ハラミ、maguro…" data-placeholder-ja="例：牛タン、ハラミ、カルビ、マグロ…" aria-label="搜索食材与菜单" autocomplete="off" />
+      </div>
+      <p class="search-hint">
+        <span class="i18n-zh">中文、日语、假名、罗马字，甚至店内菜名都可以。</span>
+        <span class="i18n-ja">日本語・かな・ローマ字・中国語・店舗のメニュー名で検索できます。</span>
+      </p>
+      <div class="search-results" aria-live="polite"></div>
+      <div class="search-footer">
+        <span>
+          <span class="i18n-zh">从一个陌生的名字，认识一段新故事。</span>
+          <span class="i18n-ja">ひとつの料理名から、あたらしいストーリーへ。</span>
+        </span>
+        <kbd>ESC <span class="i18n-zh">关闭</span><span class="i18n-ja">閉じる</span></kbd>
+      </div>
+    </dialog>
+    <div class="toast" role="status" aria-live="polite"></div>
+    <script id="search-data" type="application/json" set:html={JSON.stringify(search).replace(/</g, '\u003c')} />
+    <script src="../scripts/guide.ts"></script>
+  </body>
+</html>

@@ -9,6 +9,7 @@ export type Item = Group['data']['items'][number];
 
 export type ChainHit = {
   chain: string;
+  chainJa: string;
   ja: string;
   ruby?: string;
   kana?: string;
@@ -19,7 +20,7 @@ export type ChainHit = {
   image?: MediaItem;
   audioKey: string;
 };
-export type Row = { ref: string; item: Item; photo?: MediaItem; chains: ChainHit[] };
+export type Row = { ref: string; item: Item; photo?: MediaItem; example?: boolean; chains: ChainHit[] };
 export type GroupModel = { id: string; ja: string; zh?: string; en?: string; note?: Tri; rows: Row[] };
 export type ChainModel = { id: string; ja: string; ruby?: string; kana?: string; romaji?: string; url?: string; note?: Tri; cuisine: string; logo?: MediaItem; count: number };
 export type TabModel = { id: string; ja: string; ruby?: string; romaji?: string; zh?: string; en?: string; groups: GroupModel[]; chains: ChainModel[] };
@@ -39,7 +40,7 @@ export async function getModel(): Promise<TabModel[]> {
       const refs = it.rows ?? it.cuts ?? [];
       for (const ref of refs) {
         const hit: ChainHit = {
-          chain: ch.id, ja: it.ja, ruby: it.ruby, kana: it.kana, romaji: it.romaji, tts: it.tts,
+          chain: ch.id, chainJa: ch.data.ja, ja: it.ja, ruby: it.ruby, kana: it.kana, romaji: it.romaji, tts: it.tts,
           mean: it.mean ?? it.name, signature: it.signature, image: imageByName(`chains/${ch.id}`, it.image),
           audioKey: `chain-item:${ch.id}/${it.id}`,
         };
@@ -58,7 +59,15 @@ export async function getModel(): Promise<TabModel[]> {
           id: gid, ja: g.data.ja, zh: g.data.zh, en: g.data.en, note: g.data.note,
           rows: g.data.items.map((item) => {
             const ref = `${gid}/${item.id}`;
-            return { ref, item, photo: photosFor(`rows/${ref}`)[0], chains: (hits.get(ref) ?? []).sort((a, b) => Number(b.signature) - Number(a.signature)) };
+            const all = (hits.get(ref) ?? []).sort((a, b) => Number(b.signature) - Number(a.signature));
+            const own = photosFor(`rows/${ref}`)[0];
+            // no photo of its own: borrow a chain's official photo of the dish, labelled as an example
+            const borrowed = own ? undefined : all.find((h) => h.image && !h.image.isSvg);
+            const photo = own ?? (borrowed && {
+              ...borrowed.image!,
+              caption: { ja: `例：${borrowed.chainJa}「${borrowed.ja}」`, zh: `例：${borrowed.chainJa}的「${borrowed.ja}」`, en: `Example: “${borrowed.ja}” at ${borrowed.chainJa}` },
+            });
+            return { ref, item, photo, example: !own && !!photo, chains: all };
           }),
         };
       });

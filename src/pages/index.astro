@@ -1,374 +1,279 @@
 ---
-import { Picture, getImage } from 'astro:assets';
-import Base from '../layouts/Base.astro';
-import Seal from '../components/Seal.astro';
-import Ruby from '../components/Ruby.astro';
-import AudioButton from '../components/AudioButton.astro';
-import { getModel, type Tri } from '../lib/content';
-import { allMedia, type MediaItem } from '../lib/media';
-import { rubyToKana, hasKanji } from '../lib/ruby';
-
-const tabs = await getModel();
-const speak = (x: { ja: string; ruby?: string; kana?: string; tts?: string }) =>
-  x.tts ?? (x.ruby ? rubyToKana(x.ruby) : hasKanji(x.ja) ? (x.kana ?? x.ja) : x.ja);
-const credit = (m?: MediaItem) => [m?.caption?.ja, m?.source ? `出典：${[m.source.title, m.source.author, m.source.license].filter(Boolean).join(' · ')}` : ''].filter(Boolean).join(' / ');
-// full-size versions for the thumbnail links
-const full = new Map<string, string>();
-for (const m of tabs.flatMap((t) => t.groups.flatMap((g) => g.rows.flatMap((r) => [r.photo, ...r.chains.map((h) => h.image)])))) {
-  if (m && !full.has(m.path)) full.set(m.path, m.isSvg ? m.image.src : (await getImage({ src: m.image, width: Math.min(1400, m.image.width), format: 'webp' })).src);
-}
-const has = (t?: Tri) => !!(t && (t.ja || t.zh || t.en));
-
-// image credits, grouped by source, for the footer
-const sources = new Map<string, { title: string; url?: string; license?: string; n: number }>();
-for (const m of allMedia()) {
-  if (!m.source) continue;
-  const key = m.source.url ?? m.source.title ?? '';
-  const row = sources.get(key) ?? { title: m.source.title ?? key, url: m.source.url, license: m.source.license, n: 0 };
-  row.n++;
-  sources.set(key, row);
-}
-const COLS = [
-  { ja: 'ことば', zh: '词', en: 'Word' },
-  { ja: '意味', zh: '意思', en: 'Meaning' },
-  { ja: '部位・正体', zh: '部位', en: 'What & where' },
-  { ja: '解説', zh: '说明', en: 'Notes' },
-];
+import Guide from '../layouts/Guide.astro';
+import Icon from '../components/Icon.astro';
+import EntryCard from '../components/EntryCard.astro';
+import { categories, getGuide } from '../lib/guide';
+const { tabs, entries } = await getGuide();
+const find = (ref: string) => entries.find(e => e.ref === ref)!;
+const featured = ['beef/karubi', 'maguro/otoro', 'chicken/negima', 'neta/hirame'].map(find);
+const hero = find('chicken/negima');
+const totalChains = new Set(tabs.flatMap(t => t.chains.map(c => c.id))).size;
 ---
-<Base>
-  <header class="top wrap">
-    <a class="brand" href="/">
-      <Seal size={34} />
-      <span class="name mincho" lang="ja">やきことば</span>
-    </a>
-    <p class="tagline">
-      <span lang="ja">焼肉・焼き鳥・寿司のことば</span>
-      <span lang="zh-Hans">烤肉、烤鸡串、寿司菜单上的日语</span>
-      <span lang="en">The Japanese of yakiniku, yakitori &amp; sushi</span>
-    </p>
-    <div class="langs" role="group" aria-label="表示言語">
-      <span class="faint">表示</span>
-      <label><input type="checkbox" data-lang-toggle="zh" checked /> 中文</label>
-      <label><input type="checkbox" data-lang-toggle="en" checked /> EN</label>
-    </div>
-  </header>
+<Guide>
+  <div data-discover>
+    <section class="hero container">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="tiny-line"></span><span class="i18n-zh">日本餐桌知识图鉴</span><span class="i18n-ja">日本の食卓・部位図鑑</span> <span class="eyebrow-en">A TASTE OF JAPAN</span></p>
+        <h1>
+          <span class="i18n-zh">每一口，<br />都有<span class="accent-word">新发现<svg viewBox="0 0 220 15" aria-hidden="true"><path d="M3 10C65 1 150 1 216 9M20 14c65-7 130-6 177-1" /></svg></span>。</span>
+          <span class="i18n-ja">ひとくちに、<br />あたらしい<span class="accent-word">発見を<svg viewBox="0 0 220 15" aria-hidden="true"><path d="M3 10C65 1 150 1 216 9M20 14c65-7 130-6 177-1" /></svg></span>。</span>
+        </h1>
+        <p class="hero-description">
+          <span class="i18n-zh">不止是读懂日语菜单。<br />从食材的来处，到好吃的门道，<br class="mobile-only" />把每一顿饭，变成一次小小的探索。</span>
+          <span class="i18n-ja">単なるメニューの翻訳にとどまらず。<br />食材のルーツから、美味しさの秘密まで。<br class="mobile-only" />いつもの食事を、小さな探検に。</span>
+        </p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="/scan/"><Icon name="camera" size={17} /> <span class="i18n-zh">拍照识菜单</span><span class="i18n-ja">メニューを撮って調べる</span></a>
+          <a class="button button-outline" href="#topics"><span class="i18n-zh">开始探索</span><span class="i18n-ja">探索をはじめる</span> <Icon name="arrow" size={18} /></a>
+          <a class="text-link" href="/menus/"><Icon name="book" size={17} /> <span class="i18n-zh">看懂菜单</span><span class="i18n-ja">メニュー図鑑</span></a>
+        </div>
+        <div class="hero-bottom">
+          <span class="little-circle">知</span>
+          <span><b>{entries.length}</b> <span class="i18n-zh">个知识词条</span><span class="i18n-ja">の知識エントリー</span></span>
+          <i></i>
+          <span><span class="i18n-zh">3 种餐桌场景</span><span class="i18n-ja">3つの食卓シーン</span></span>
+          <i></i>
+          <span><span class="i18n-zh">日语 × 生活知识</span><span class="i18n-ja">日本語 × 食文化の知恵</span></span>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <a class="hero-image-link" href={hero.url} aria-label="认识鸡肉大葱串ねぎま"><img class="hero-image" src={hero.cover} width="720" height="480" alt="刷着酱汁、带着炭火焦香的鸡肉大葱串" fetchpriority="high" /><span class="photo-shade"></span><span class="hero-image-label"><span>焼き鳥の時間</span><small>YAKITORI · <span class="i18n-zh">日常里的小确幸</span><span class="i18n-ja">日常の小さな発見</span></small></span><span class="photo-arrow"><Icon name="diagonal" size={22} /></span></a>
+        <span class="vertical-note" lang="ja">おいしい、その先を知る。</span>
+        <a class="hero-note" href={hero.url}><span class="note-icon"><Icon name="spark" size={21} /></span><div><span class="note-eyebrow"><span class="i18n-zh">你知道吗？</span><span class="i18n-ja">知っていましたか？</span></span><p class="i18n-zh">「ねぎま」的「ま」，<br /><strong>最初指的竟然是金枪鱼。</strong></p><p class="i18n-ja">「ねぎま」の「ま」は、<br /><strong>実はもともと「マグロ」のこと。</strong></p></div><Icon name="diagonal" size={18} /></a>
+        <span class="hero-caption">PHOTO: Ocdp / WIKIMEDIA COMMONS · CC0</span>
+      </div>
+    </section>
 
-  <nav class="tabs" role="tablist" aria-label="分類">
-    <div class="wrap tabs-in">
-      {tabs.map((t, i) => (
-        <a role="tab" href={`#${t.id}`} data-tab={t.id} aria-selected={i === 0 ? 'true' : 'false'}>
-          <span class="t-ja mincho" lang="ja"><Ruby text={t.ja} ruby={t.ruby} /></span>
-          <span class="t-sub"><span lang="zh-Hans" class="zh">{t.zh}</span><span lang="en" class="en">{t.en}</span></span>
-        </a>
-      ))}
-    </div>
-  </nav>
-
-  <main class="wrap">
-    {tabs.map((t, i) => (
-      <section class="panel" id={t.id} data-panel={t.id} role="tabpanel" hidden={i !== 0}>
-        {t.chains.length > 0 && (
-          <div class="filter">
-            <span class="f-label"><span lang="ja">店で絞り込む</span><span lang="zh-Hans" class="zh">按店筛选</span><span lang="en" class="en">Filter by chain</span></span>
-            <div class="chips">
-              <button type="button" class="chip on" data-chain="">
-                <span lang="ja">すべて</span>
-              </button>
-              {t.chains.map((c) => (
-                <button type="button" class="chip" data-chain={c.id}>
-                  {c.logo && <img src={c.logo.image.src} alt="" class="c-logo" />}
-                  <span lang="ja">{c.ja}</span>
-                  <span class="count num">{c.count}</span>
-                </button>
-              ))}
-            </div>
-            {t.chains.map((c) => (
-              <div class="chain-info" data-chain-info={c.id} hidden>
-                {c.logo && <span class="ci-logo"><img src={c.logo.image.src} alt={c.ja} /></span>}
-                <div class="ci-text">
-                  <p class="ci-name"><span class="mincho" lang="ja"><Ruby text={c.ja} ruby={c.ruby} /></span>{c.romaji && <span class="romaji">{c.romaji}</span>}</p>
-                  {c.note?.ja && <p lang="ja">{c.note.ja}</p>}
-                  {c.note?.zh && <p lang="zh-Hans" class="zh">{c.note.zh}</p>}
-                  {c.note?.en && <p lang="en" class="en">{c.note.en}</p>}
-                  {c.url && <p><a href={c.url} rel="noopener" class="ci-link">公式サイト ↗</a></p>}
-                </div>
-              </div>
-            ))}
+    <!-- AI Menu Scanner Feature Card -->
+    <section class="scan-banner container">
+      <div class="scan-banner-inner">
+        <div class="scan-banner-content">
+          <p class="eyebrow section-eyebrow"><Icon name="spark" size={14} /><span>GOOGLE GEMINI MULTIMODAL FEATURE</span></p>
+          <h2>
+            <span class="i18n-zh">看不懂菜单？拍张照，AI 瞬间读懂<span class="accent">。</span></span>
+            <span class="i18n-ja">メニューを撮るだけ。AI が料理と部位を即座に解説<span class="accent">。</span></span>
+          </h2>
+          <p class="scan-banner-desc">
+            <span class="i18n-zh">进店看到手写或竖排菜单不再困惑。Gemini 3.8 Flash 多模态视觉精准提取菜品名称与读音，直接匹配图鉴词条，部位解剖图、发音与背景故事立等可取。</span>
+            <span class="i18n-ja">手書きや縦書きのメニューも安心。Gemini 3.8 Flash のマルチモーダルAIが文字を読み解き、{entries.length}の公式食材図鑑と連携して部位・発音・ストーリーをお届けします。</span>
+          </p>
+          <div class="scan-banner-cta">
+            <a class="button button-primary" href="/scan/">
+              <Icon name="camera" size={18} />
+              <span class="i18n-zh">拍照识菜单</span><span class="i18n-ja">メニューを撮って調べる</span>
+            </a>
+            <span class="scan-banner-note">
+              <span class="i18n-zh">※ 手机拍照或上传图片即可使用</span>
+              <span class="i18n-ja">※ 写真を撮るかアップロードしてすぐ体験できます</span>
+            </span>
           </div>
-        )}
-
-        {t.groups.map((g) => (
-          <section class="group" data-group>
-            <h2 class="g-title">
-              <span class="mincho" lang="ja">{g.ja}</span>
-              <span lang="zh-Hans" class="zh">{g.zh}</span>
-              <span lang="en" class="en">{g.en}</span>
-            </h2>
-            {has(g.note) && (
-              <p class="g-note">
-                {g.note?.ja && <span lang="ja">{g.note.ja}</span>}
-                {g.note?.zh && <span lang="zh-Hans" class="zh">{g.note.zh}</span>}
-                {g.note?.en && <span lang="en" class="en">{g.note.en}</span>}
-              </p>
-            )}
-            <table class="tbl">
-              <thead>
-                <tr>
-                  {COLS.map((c) => (
-                    <th scope="col"><span lang="ja">{c.ja}</span><span lang="zh-Hans" class="zh">{c.zh}</span><span lang="en" class="en">{c.en}</span></th>
-                  ))}
-                </tr>
-              </thead>
-              <tbody>
-                {g.rows.map((r) => {
-                  const it = r.item;
-                  return (
-                    <tr id={r.ref.replace('/', '-')} data-row={r.ref} data-chains={r.chains.map((h) => h.chain).join(' ')}>
-                      <td class="c-word" data-label={COLS[0].ja}>
-                        <div class="word">
-                          {r.photo && (
-                            <a class="pic pic-row" href={full.get(r.photo.path)} target="_blank" rel="noopener" title={credit(r.photo)}>
-                              <Picture src={r.photo.image} alt={it.ja} formats={['avif']} fallbackFormat="webp" widths={[96, 192]} sizes="72px" loading="lazy" />
-                            </a>
-                          )}
-                          <div class="w-text">
-                            <span class="w-ja mincho" lang="ja"><Ruby text={it.ja} ruby={it.ruby} /></span>
-                            {it.romaji && <span class="romaji">{it.romaji}</span>}
-                          </div>
-                          <AudioButton audioKey={`row:${r.ref}`} text={speak(it)} size="sm" />
-                        </div>
-                        {r.chains.map((h) => (
-                          <div class="hit" data-hit={h.chain} hidden>
-                            {h.image && (
-                              <a class="pic pic-hit" href={full.get(h.image.path)} target="_blank" rel="noopener" title={credit(h.image)}>
-                                <Picture src={h.image.image} alt={h.ja} formats={['avif']} fallbackFormat="webp" widths={[160, 320]} sizes="120px" loading="lazy" />
-                              </a>
-                            )}
-                            <div class="h-text">
-                              <span class="h-label">{h.signature ? '名物' : '店内表記'}</span>
-                              <span class="h-ja mincho" lang="ja"><Ruby text={h.ja} ruby={h.ruby} /></span>
-                              {h.romaji && <span class="romaji">{h.romaji}</span>}
-                              {h.mean?.ja && <span lang="ja" class="h-mean">{h.mean.ja}</span>}
-                              {h.mean?.zh && <span lang="zh-Hans" class="zh">{h.mean.zh}</span>}
-                              {h.mean?.en && <span lang="en" class="en">{h.mean.en}</span>}
-                            </div>
-                            <AudioButton audioKey={h.audioKey} text={speak(h)} size="sm" />
-                          </div>
-                        ))}
-                      </td>
-                      <td class:list={["c-mean", { empty: !has(it.mean) }]} data-label={COLS[1].ja}>
-                        {it.mean?.ja && <p lang="ja" class="ja">{it.mean.ja}</p>}
-                        {it.mean?.zh && <p lang="zh-Hans" class="zh">{it.mean.zh}</p>}
-                        {it.mean?.en && <p lang="en" class="en">{it.mean.en}</p>}
-                      </td>
-                      <td class:list={["c-part", { empty: !has(it.part) }]} data-label={COLS[2].ja}>
-                        {it.part?.ja && <p lang="ja" class="ja">{it.part.ja}</p>}
-                        {it.part?.zh && <p lang="zh-Hans" class="zh">{it.part.zh}</p>}
-                        {it.part?.en && <p lang="en" class="en">{it.part.en}</p>}
-                      </td>
-                      <td class:list={["c-note", { empty: !has(it.note) && !it.sources.length }]} data-label={COLS[3].ja}>
-                        {it.note?.ja && <p lang="ja" class="ja">{it.note.ja}</p>}
-                        {it.note?.zh && <p lang="zh-Hans" class="zh">{it.note.zh}</p>}
-                        {it.note?.en && <p lang="en" class="en">{it.note.en}</p>}
-                        {it.sources.length > 0 && (
-                          <details class="src">
-                            <summary>出典 · {it.sources.length}</summary>
-                            <ol>{it.sources.map((s) => <li>{s.url ? <a href={s.url} rel="noopener">{s.title ?? s.url}</a> : s.title}</li>)}</ol>
-                          </details>
-                        )}
-                      </td>
-                    </tr>
-                  );
-                })}
-              </tbody>
-            </table>
-          </section>
-        ))}
-      </section>
-    ))}
-  </main>
-
-  <footer class="foot wrap">
-    <p><span lang="ja">写真の出典</span> · <span lang="zh-Hans" class="zh">图片来源</span> · <span lang="en" class="en">Image credits</span></p>
-    <ul>
-      {[...sources.values()].map((s) => (
-        <li>{s.url ? <a href={s.url} rel="noopener">{s.title}</a> : s.title}{s.license && <span class="faint"> · {s.license}</span>}<span class="faint num"> · {s.n}</span></li>
-      ))}
-    </ul>
-    <p class="faint small">発音：Gemini TTS</p>
-  </footer>
-</Base>
-
-<script>
-  // Tabs (hash), chain filter, and language toggles. Everything works without JS too (all panels just stay visible).
-  const tabs = [...document.querySelectorAll<HTMLAnchorElement>('[data-tab]')];
-  const panels = [...document.querySelectorAll<HTMLElement>('[data-panel]')];
-
-  function showTab(id: string) {
-    if (!panels.some((p) => p.dataset.panel === id)) id = panels[0]?.dataset.panel ?? '';
-    for (const p of panels) p.hidden = p.dataset.panel !== id;
-    for (const t of tabs) t.setAttribute('aria-selected', String(t.dataset.tab === id));
-  }
-  for (const t of tabs) {
-    t.addEventListener('click', (e) => {
-      e.preventDefault();
-      history.replaceState(null, '', `#${t.dataset.tab}`);
-      showTab(t.dataset.tab!);
-    });
-  }
-  showTab(location.hash.slice(1));
-
-  for (const panel of panels) {
-    const chips = [...panel.querySelectorAll<HTMLButtonElement>('.chip[data-chain]')];
-    chips.forEach((chip) =>
-      chip.addEventListener('click', () => {
-        const id = chip.dataset.chain ?? '';
-        chips.forEach((c) => c.classList.toggle('on', c === chip));
-        panel.querySelectorAll<HTMLElement>('[data-chain-info]').forEach((el) => (el.hidden = el.dataset.chainInfo !== id));
-        panel.querySelectorAll<HTMLElement>('tr[data-row]').forEach((tr) => {
-          const on = !id || (tr.dataset.chains ?? '').split(' ').includes(id);
-          tr.hidden = !on;
-          tr.querySelectorAll<HTMLElement>('[data-hit]').forEach((h) => (h.hidden = h.dataset.hit !== id));
-          tr.classList.toggle('chain-on', !!id);
-        });
-        panel.querySelectorAll<HTMLElement>('[data-group]').forEach((g) => {
-          g.hidden = !g.querySelector('tr[data-row]:not([hidden])');
-        });
-      }),
-    );
-  }
-
-  const root = document.documentElement;
-  for (const box of document.querySelectorAll<HTMLInputElement>('[data-lang-toggle]')) {
-    const lang = box.dataset.langToggle!;
-    let off = false;
-    try { off = localStorage.getItem(`hide-${lang}`) === '1'; } catch {}
-    box.checked = !off;
-    root.classList.toggle(`hide-${lang}`, off);
-    box.addEventListener('change', () => {
-      root.classList.toggle(`hide-${lang}`, !box.checked);
-      try { localStorage.setItem(`hide-${lang}`, box.checked ? '0' : '1'); } catch {}
-    });
-  }
-</script>
-
-<style>
-  /* header */
-  .top { display: flex; align-items: center; gap: 14px 22px; flex-wrap: wrap; padding-block: 22px 16px; }
-  .brand { display: inline-flex; align-items: center; gap: 11px; text-decoration: none; }
-  .name { font-size: 26px; font-weight: 800; letter-spacing: .05em; }
-  .tagline { display: flex; flex-direction: column; font-size: 13px; line-height: 1.5; color: var(--ink-2); flex: 1; min-width: 220px; }
-  .tagline [lang='ja'] { color: var(--ink); font-size: 14px; }
-  .langs { display: flex; align-items: center; gap: 10px; font-size: 13px; color: var(--ink-2); }
-  .langs label { display: inline-flex; align-items: center; gap: 5px; cursor: pointer; }
-  .langs input { accent-color: var(--accent); }
-
-  /* tabs */
-  .tabs { position: sticky; top: 0; z-index: 10; background: color-mix(in srgb, var(--bg) 88%, transparent); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border-bottom: 1px solid var(--line); }
-  .tabs-in { display: flex; gap: 4px; overflow-x: auto; scrollbar-width: none; }
-  .tabs-in::-webkit-scrollbar { display: none; }
-  [role='tab'] { display: grid; gap: 0; padding: 12px 18px 10px; text-decoration: none; color: var(--ink-3); border-bottom: 3px solid transparent; white-space: nowrap; transition: color .2s, border-color .2s; }
-  [role='tab']:hover { color: var(--ink-2); }
-  [role='tab'][aria-selected='true'] { color: var(--ink); border-bottom-color: var(--accent); }
-  .t-ja { font-size: 22px; font-weight: 800; line-height: 1.5; }
-  .t-ja :global(rt) { font-size: .45em; }
-  .t-sub { display: flex; gap: 8px; font-size: 12px; }
-
-  /* filter */
-  .filter { margin-top: 22px; display: grid; gap: 10px; }
-  .f-label { display: flex; gap: 10px; flex-wrap: wrap; align-items: baseline; font-size: 13px; color: var(--ink-2); }
-  .f-label [lang='ja'] { color: var(--ink); font-weight: 600; }
-  .chips { display: flex; flex-wrap: wrap; gap: 8px; }
-  .chip { cursor: pointer; display: inline-flex; align-items: center; gap: 8px; padding: 6px 14px; border: 1px solid var(--line); border-radius: 999px; background: var(--surface); font-size: 14.5px; font-family: var(--font-ja); }
-  .chip:hover { border-color: var(--line-2); }
-  .chip.on { background: var(--ink); color: var(--bg); border-color: var(--ink); }
-  .c-logo { height: 20px; width: auto; max-width: 64px; object-fit: contain; background: #fff; border-radius: 4px; padding: 1px 3px; }
-  .count { font-size: 11px; color: var(--ink-3); }
-  .chip.on .count { color: color-mix(in srgb, var(--bg) 70%, transparent); }
-  .chain-info { display: flex; gap: 16px; align-items: flex-start; padding: 14px 16px; border: 1px solid var(--line); border-radius: 14px; background: var(--surface); }
-  .chain-info[hidden] { display: none; }
-  .ci-logo { width: 84px; height: 64px; display: grid; place-items: center; background: #fff; border-radius: 10px; border: 1px solid var(--line); padding: 8px; flex-shrink: 0; }
-  .ci-logo img { max-width: 100%; max-height: 100%; object-fit: contain; }
-  .ci-text { display: grid; gap: 3px; font-size: 14px; }
-  .ci-name { display: flex; gap: 10px; align-items: baseline; flex-wrap: wrap; }
-  .ci-name .mincho { font-size: 20px; font-weight: 800; }
-  .ci-link { color: var(--accent); text-decoration: none; font-size: 13px; }
-
-  /* groups & table */
-  .group { margin-top: 40px; }
-  .group[hidden] { display: none; }
-  .g-title { display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap; margin-bottom: 8px; font-weight: 400; }
-  .g-title .mincho { font-size: 26px; font-weight: 800; letter-spacing: .03em; }
-  .g-title .zh, .g-title .en { font-size: 14px; color: var(--ink-2); }
-  .g-note { display: grid; gap: 4px; font-size: 13.5px; line-height: 1.7; color: var(--ink-2); max-width: 64em; margin: 4px 0 14px; padding: 2px 0 2px 14px; border-left: 3px solid var(--line-2); }
-  .g-note [lang='ja'] { color: var(--ink); }
-  .tbl { width: 100%; border-collapse: collapse; table-layout: fixed; }
-  thead th { text-align: left; vertical-align: bottom; padding: 8px 12px; border-bottom: 1.5px solid var(--ink); font-weight: 600; font-size: 13px; }
-  thead th span { display: block; line-height: 1.4; }
-  thead th .zh, thead th .en { font-weight: 400; font-size: 11.5px; color: var(--ink-3); }
-  th:nth-child(1) { width: 25%; }
-  th:nth-child(2) { width: 17%; }
-  th:nth-child(3) { width: 19%; }
-  td { vertical-align: top; padding: 14px 12px; border-bottom: 1px solid var(--line); }
-  tr[hidden] { display: none; }
-  td p { margin: 0; }
-  td .ja { font-size: 14.5px; line-height: 1.75; color: var(--ink); }
-  td .zh { font-size: 13.5px; line-height: 1.7; color: var(--ink-2); margin-top: 3px; }
-  td .en { font-size: 13px; line-height: 1.55; color: var(--ink-2); margin-top: 3px; }
-  .c-note .ja { font-size: 14px; }
-  .c-mean .ja { font-weight: 600; }
-  .src { font-size: 11.5px; color: var(--ink-3); margin-top: 8px; line-height: 1.6; }
-  .src summary { cursor: pointer; width: fit-content; list-style: none; padding: 1px 8px; border: 1px solid var(--line); border-radius: 999px; }
-  .src summary::-webkit-details-marker { display: none; }
-  .src[open] summary { color: var(--ink-2); border-color: var(--line-2); }
-  .src ol { margin: 6px 0 0; padding-left: 1.4em; display: grid; gap: 2px; }
-  .src a { color: inherit; text-underline-offset: 2px; text-decoration-color: var(--line-2); }
-
-  .word { display: flex; align-items: center; gap: 12px; }
-  .w-text { display: grid; gap: 1px; flex: 1; min-width: 0; }
-  .w-ja { font-size: 23px; font-weight: 800; line-height: 1.45; letter-spacing: .02em; }
-  .w-ja :global(rt) { font-size: .45em; }
-  .romaji { font-size: 14.5px; }
-  .pic { display: block; flex-shrink: 0; border-radius: 10px; overflow: hidden; background: var(--surface-2); }
-  .pic :global(img) { width: 100%; height: 100%; object-fit: cover; }
-  .pic-row { width: 64px; height: 64px; }
-  .chain-on .pic-row { display: none; }
-  .hit { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 8px 10px; align-items: start; margin-top: 10px; padding: 10px; border-radius: 12px; background: var(--surface); border: 1px solid var(--line); }
-  .hit[hidden] { display: none; }
-  .pic-hit { grid-column: 1 / -1; width: 100%; aspect-ratio: 3 / 2; max-height: 200px; background: var(--surface-2); }
-  .pic-hit :global(img) { object-fit: contain; }
-  .hit :global(.say) { grid-column: 2; }
-  .h-text { display: grid; gap: 1px; flex: 1; min-width: 0; font-size: 12.5px; }
-  .h-label { font-size: 11px; color: var(--accent); font-weight: 700; letter-spacing: .06em; }
-  .h-ja { font-size: 16px; font-weight: 800; line-height: 1.5; }
-  .h-text .romaji { font-size: 13px; }
-  .h-mean { font-size: 13px; line-height: 1.6; color: var(--ink); margin-top: 2px; }
-  .h-text .zh, .h-text .en { font-size: 12.5px; line-height: 1.55; }
-
-  /* language toggles */
-  :global(html.hide-zh) .zh, :global(html.hide-zh) [lang='zh-Hans']:not(html) { display: none !important; }
-  :global(html.hide-en) .en, :global(html.hide-en) [lang='en']:not(html) { display: none !important; }
-
-  /* footer */
-  .foot { margin-top: 72px; padding-block: 28px 56px; border-top: 1px solid var(--line); font-size: 13px; color: var(--ink-2); display: grid; gap: 10px; }
-  .foot ul { padding-left: 1.2em; display: grid; gap: 3px; }
-  .foot a { color: var(--ink-2); }
-  .small { font-size: 12px; }
-
-  @media (max-width: 860px) {
-    thead { display: none; }
-    .tbl, .tbl tbody, .tbl tr, .tbl td { display: block; width: 100%; }
-    .tbl tr { padding: 14px 0 12px; border-bottom: 1px solid var(--line); }
-    .tbl td { border: 0; padding: 0; }
-    .tbl td.c-word { margin-bottom: 8px; }
-    .tbl td.empty { display: none; }
-    .tbl td:not(.c-word) { display: grid; grid-template-columns: 4.2em minmax(0, 1fr); column-gap: 10px; padding: 3px 0; }
-    .tbl td:not(.c-word)::before { content: attr(data-label); grid-row: 1 / span 4; font-size: 11px; line-height: 2.1; letter-spacing: .04em; color: var(--ink-3); font-weight: 600; }
-    .tbl td:not(.c-word) > * { grid-column: 2; }
-    td .zh, td .en { margin-top: 1px; }
-    .w-ja { font-size: 24px; }
-    .pic-row { width: 56px; height: 56px; }
-    [role='tab'] { padding: 10px 12px 8px; }
-    .t-ja { font-size: 20px; }
-  }
-</style>
+        </div>
+        <div class="scan-banner-badge-box">
+          <div class="scan-mini-mockup">
+            <div class="mini-mock-head">
+              <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+              <span class="mock-label"><span class="i18n-zh">AI 识别示例</span><span class="i18n-ja">AI 認識サンプル</span></span>
+            </div>
+            <div class="mini-mock-row matched">
+              <span class="mock-tag"><span class="i18n-zh">图鉴收录</span><span class="i18n-ja">図鑑収録</span></span>
+              <div class="mock-text">
+                <strong>特選上カルビ</strong>
+                <small>じょうかるび · <span class="i18n-zh">牛五花</span><span class="i18n-ja">牛バラ肉</span></small>
+              </div>
+              <span class="mock-link">→</span>
+            </div>
+            <div class="mini-mock-row matched">
+              <span class="mock-tag"><span class="i18n-zh">图鉴收录</span><span class="i18n-ja">図鑑収録</span></span>
+              <div class="mock-text">
+                <strong>もも貴族焼</strong>
+                <small>ももきぞくやき → ねぎま</small>
+              </div>
+              <span class="mock-link">→</span>
+            </div>
+            <div class="mini-mock-row ai">
+              <span class="mock-tag ai"><span class="i18n-zh">AI 解析</span><span class="i18n-ja">AI 推定</span></span>
+              <div class="mock-text">
+                <strong>自家製ポテトサラダ</strong>
+                <small><span class="i18n-zh">招牌手工前菜</span><span class="i18n-ja">名物手作り前菜</span></small>
+              </div>
+              <span class="mock-check">✓</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="topics-section container" id="topics">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow section-eyebrow">FOLLOW YOUR APPETITE</p>
+          <h2>
+            <span class="i18n-zh">今天，想了解哪一味<span class="accent">？</span></span>
+            <span class="i18n-ja">今日、どの味を知る<span class="accent">？</span></span>
+          </h2>
+        </div>
+        <span class="section-aside">
+          <span class="i18n-zh">从喜欢吃的开始，慢慢认识日本。</span>
+          <span class="i18n-ja">好きな料理から、日本の食文化を広げよう。</span>
+        </span>
+      </div>
+      <div class="topic-grid">
+        {categories.map((c, i) => {
+          const picture = find(c.cover);
+          return <a class:list={['topic-card', c.color]} href={`/?view=atlas&category=${c.id}`}>
+            <div class="topic-image"><img src={picture.cover} alt={c.title} width="720" height="480" loading="lazy" /><span class="topic-number">0{i + 1}</span><span class="topic-japanese" lang="ja">{c.ja}</span></div>
+            <div class="topic-copy">
+              <div>
+                <p class="topic-english">{c.en}</p>
+                <h3>
+                  <span class="i18n-zh">{c.title}</span><span class="i18n-ja">{c.ja}</span>
+                  <span class="topic-sub"><span class="i18n-zh">{c.ja}</span><span class="i18n-ja">{c.en}</span></span>
+                </h3>
+                <p class="topic-description"><span class="i18n-zh">{c.subtitle}</span><span class="i18n-ja">{c.subtitleJa}</span></p>
+                <span class="topic-count">
+                  {entries.filter(e => e.category === c.id).length} <span class="i18n-zh">个知识词条</span><span class="i18n-ja">件の知識</span>
+                  <span>·</span>
+                  {tabs.find(t => t.id === c.id)?.chains.length} <span class="i18n-zh">家店铺菜单</span><span class="i18n-ja">店舗メニュー</span>
+                </span>
+              </div>
+              <span class="round-arrow"><Icon name="arrow" size={19} /></span>
+            </div>
+          </a>;
+        })}
+      </div>
+    </section>
+    <section class="stories-section container" id="stories">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow section-eyebrow">A LITTLE KNOWLEDGE, A BETTER BITE</p>
+          <h2>
+            <span class="i18n-zh">好吃，也想知道为什么。</span>
+            <span class="i18n-ja">美味しさの理由を、知る。</span>
+          </h2>
+        </div>
+        <a class="text-link" href="/?view=atlas">
+          <span class="i18n-zh">翻开全部图鉴</span><span class="i18n-ja">すべての図鑑を見る</span>
+          <Icon name="arrow" size={17} />
+        </a>
+      </div>
+      <div class="story-grid">{featured.map(e => <EntryCard entry={e} editorial />)}</div>
+    </section>
+    <section class="daily-section container">
+      <div class="daily-kicker">
+        <Icon name="spark" size={25} />
+        <span>
+          <span class="i18n-zh">每日一口</span><span class="i18n-ja">きょうの一口</span>
+          <small>A BITE OF KNOWLEDGE</small>
+        </span>
+      </div>
+      <div class="daily-question">
+        <p>
+          <span class="i18n-zh">吃起来像瘦肉的「ハラミ」，其实来自哪里？</span>
+          <span class="i18n-ja">お肉のように見える「ハラミ」、実はどこの部位？</span>
+        </p>
+        <div class="quiz-options" data-quiz>
+          <button type="button" data-answer="wrong"><span class="i18n-zh">牛的腿部</span><span class="i18n-ja">牛の脚</span></button>
+          <button type="button" data-answer="correct"><span class="i18n-zh">牛的横膈膜</span><span class="i18n-ja">牛の横隔膜</span></button>
+          <button type="button" data-answer="wrong"><span class="i18n-zh">牛的背部</span><span class="i18n-ja">牛の背中</span></button>
+        </div>
+        <p class="quiz-result" role="status" hidden></p>
+      </div>
+      <a class="daily-link" href="/learn/beef/harami/">
+        <span class="i18n-zh">认识ハラミ</span><span class="i18n-ja">ハラミをもっと知る</span>
+        <Icon name="arrow" size={18} />
+      </a>
+    </section>
+    <section class="menu-promo container">
+      <div>
+        <p class="eyebrow section-eyebrow">THE MENU MAKES SENSE NOW</p>
+        <h2>
+          <span class="i18n-zh">同一种食材，<br />换家店就换了名字？</span>
+          <span class="i18n-ja">同じ食材でも、<br />店が変われば名前も変わる？</span>
+        </h2>
+        <p>
+          <span class="i18n-zh">从鸟贵族的「もも貴族焼」，认出熟悉的ねぎま。<br />对照 {totalChains} 家连锁店菜单，把知识带上餐桌。</span>
+          <span class="i18n-ja">鳥貴族の「もも貴族焼」から、おなじみの「ねぎま」へ。<br />大手 {totalChains} 社のメニューと照らし合わせて、食卓を学びの場に。</span>
+        </p>
+        <a class="button button-dark" href="/menus/">
+          <span class="i18n-zh">去看懂菜单</span><span class="i18n-ja">メニュー図鑑を見る</span>
+          <Icon name="arrow" size={18} />
+        </a>
+      </div>
+      <div class="menu-example">
+        <span class="menu-example-top">
+          <span class="i18n-zh">菜单上的名字 <Icon name="arrow" size={18} /> 你认识的食材</span>
+          <span class="i18n-ja">メニューでの名前 <Icon name="arrow" size={18} /> 食材の部位</span>
+        </span>
+        <div>
+          <span lang="ja">もも貴族焼<small><span class="i18n-zh">鳥貴族 · 招牌串烧</span><span class="i18n-ja">鳥貴族 · 名物串</span></small></span>
+          <Icon name="arrow" />
+          <span lang="ja">ねぎま<small><span class="i18n-zh">鸡肉大葱串</span><span class="i18n-ja">ねぎま串</span></small></span>
+        </div>
+        <div>
+          <span lang="ja">三角（さんかく）<small><span class="i18n-zh">鳥貴族 · 店内叫法</span><span class="i18n-ja">鳥貴族 · 店内表記</span></small></span>
+          <Icon name="arrow" />
+          <span lang="ja">ぼんじり<small><span class="i18n-zh">鸡尾肉</span><span class="i18n-ja">ぼんじり</span></small></span>
+        </div>
+        <a href="/menus/">
+          <span class="i18n-zh">读懂名字背后的食材 <Icon name="diagonal" size={16} /></span>
+          <span class="i18n-ja">名前の裏の食材を知る <Icon name="diagonal" size={16} /></span>
+        </a>
+      </div>
+    </section>
+  </div>
+  <section class="atlas-page container" data-atlas hidden>
+    <p class="eyebrow section-eyebrow" data-atlas-eyebrow>YOUR JAPANESE FOOD FIELD GUIDE</p>
+    <div class="section-heading atlas-heading">
+      <div>
+        <h1 data-atlas-title>
+          <span class="i18n-zh">食材图鉴<span class="accent">。</span></span>
+          <span class="i18n-ja">食材図鑑<span class="accent">。</span></span>
+        </h1>
+        <p data-atlas-description>
+          <span class="i18n-zh">从菜单上的一个名字，找到食材、部位和背后的故事。</span>
+          <span class="i18n-ja">メニューの料理名から、食材・部位・背景の物語へ。</span>
+        </p>
+      </div>
+      <div class="atlas-stat"><strong data-visible-count>{entries.length}</strong><span><span class="i18n-zh">个知识词条</span><span class="i18n-ja">件の知識</span></span></div>
+    </div>
+    <div class="atlas-tools">
+      <div class="category-tabs" aria-label="按场景筛选">
+        <button type="button" class="selected" data-category-filter="all">
+          <span class="i18n-zh">全部主题</span><span class="i18n-ja">すべて</span>
+        </button>
+        {categories.map(c => <button type="button" data-category-filter={c.id}>
+          <Icon name={c.icon} size={17} />
+          <span class="i18n-zh">{c.title}</span><span class="i18n-ja">{c.ja}</span>
+        </button>)}
+      </div>
+      <label class="atlas-search">
+        <Icon name="search" size={18} />
+        <input type="search" placeholder="搜索食材、读音或部位…" data-placeholder-zh="搜索食材、读音或部位…" data-placeholder-ja="食材、読み方、部位で検索…" aria-label="筛选图鉴词条" data-atlas-search />
+      </label>
+    </div>
+    <div class="atlas-summary" aria-live="polite">
+      <span data-results-label>
+        <span class="i18n-zh">全部知识</span><span class="i18n-ja">全知識</span>
+      </span>
+      <button type="button" data-clear-filters hidden>
+        <span class="i18n-zh">清除筛选</span><span class="i18n-ja">絞り込み解除</span>
+        <Icon name="close" size={13} />
+      </button>
+    </div>
+    <div class="atlas-grid">{entries.map(e => <EntryCard entry={e} />)}</div>
+    <div class="empty-state" data-empty hidden>
+      <span class="empty-icon"><Icon name="bookmark" size={30} /></span>
+      <h2 data-empty-title>
+        <span class="i18n-zh">收藏你的第一口新知</span>
+        <span class="i18n-ja">最初のお気に入りを保存</span>
+      </h2>
+      <p data-empty-description>
+        <span class="i18n-zh">点击食材卡片上的书签，把想了解的知识留在这里。</span>
+        <span class="i18n-ja">カードのしおりボタンを押して、気になる食材を保存しましょう。</span>
+      </p>
+      <a class="button button-primary" href="/?view=atlas">
+        <span class="i18n-zh">去逛逛图鉴</span><span class="i18n-ja">図鑑をみる</span>
+        <Icon name="arrow" size={17} />
+      </a>
+    </div>
+  </section>
+</Guide>
