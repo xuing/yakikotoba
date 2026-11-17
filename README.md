@@ -19,6 +19,12 @@
 
 [![やきことば · Yaki Kotoba](docs/preview.webp)](https://yakikotoba.pages.dev/)
 
+| [互动食材图鉴](https://yakikotoba.pages.dev/?view=atlas) | [AI 拍照识菜单](https://yakikotoba.pages.dev/scan/) |
+| :---: | :---: |
+| [![互动食材图鉴](docs/screenshots/atlas.webp)](https://yakikotoba.pages.dev/?view=atlas) | [![AI 拍照识菜单](docs/screenshots/scan.webp)](https://yakikotoba.pages.dev/scan/) |
+| **[词条详情与故事](https://yakikotoba.pages.dev/learn/maguro/otoro/)** | **[三语词典与连锁店对照](https://yakikotoba.pages.dev/menu/#yakiniku/gyukaku)** |
+| [![词条详情与故事](docs/screenshots/detail.webp)](https://yakikotoba.pages.dev/learn/maguro/otoro/) | [![三语词典与连锁店对照](docs/screenshots/dictionary.webp)](https://yakikotoba.pages.dev/menu/#yakiniku/gyukaku) |
+
 ---
 
 ## 核心功能

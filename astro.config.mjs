@@ -44,69 +44,73 @@ function sendJson(res, statusCode, payload) {
   res.end(JSON.stringify(payload));
 }
 
-/** Dev server integration to handle /api/scan locally in astro dev */
-function scanDevApiIntegration() {
+/** Dev server Vite plugin to handle /api/scan ahead of Astro's trailingSlash middleware */
+function scanDevApiVitePlugin() {
   return {
-    name: 'scan-dev-api',
-    hooks: {
-      'astro:server:setup': ({ server }) => {
-        server.middlewares.use('/api/scan', async (req, res, next) => {
-          if (req.method !== 'POST') return next();
-          try {
-            const apiKeys = parseGeminiApiKeys(process.env.GEMINI_API_KEY, process.env.GEMINI_API_KEYS);
-            if (!apiKeys.length) {
-              return sendJson(res, 500, { error: 'GEMINI_API_KEY is not configured in .env' });
-            }
+    name: 'scan-dev-api-vite',
+    enforce: 'post',
+    configureServer(server) {
+      return () => {
+        server.middlewares.stack.unshift({
+          route: '/api/scan',
+          handle: async (req, res, next) => {
+            if (req.method !== 'POST') return next();
+            try {
+              const apiKeys = parseGeminiApiKeys(process.env.GEMINI_API_KEY, process.env.GEMINI_API_KEYS);
+              if (!apiKeys.length) {
+                return sendJson(res, 500, { error: 'GEMINI_API_KEY is not configured in .env' });
+              }
 
-            const maxBodyBytes = Math.ceil(MAX_IMAGE_BYTES * 1.4);
-            const declared = Number(req.headers['content-length'] || 0);
-            if (declared > maxBodyBytes) {
-              return sendJson(res, 413, { error: '画像が大きすぎます（5MB まで）。' });
-            }
-
-            const chunks = [];
-            let totalBytes = 0;
-            for await (const chunk of req) {
-              const buf = typeof chunk === 'string' ? Buffer.from(chunk) : chunk;
-              totalBytes += buf.byteLength;
-              if (totalBytes > maxBodyBytes) {
+              const maxBodyBytes = Math.ceil(MAX_IMAGE_BYTES * 1.4);
+              const declared = Number(req.headers['content-length'] || 0);
+              if (declared > maxBodyBytes) {
                 return sendJson(res, 413, { error: '画像が大きすぎます（5MB まで）。' });
               }
-              chunks.push(buf);
-            }
 
-            const bodyBuffer = Buffer.concat(chunks);
-            const contentType = String(req.headers['content-type'] || '');
-            const input = contentType.includes('multipart/form-data')
-              ? await parseScanRequest(
-                  new Request('http://localhost/api/scan', {
-                    method: 'POST',
-                    headers: {
-                      'content-type': contentType,
-                      'content-length': String(bodyBuffer.byteLength),
-                    },
-                    body: bodyBuffer,
-                  })
-                )
-              : parseJsonScanBody(bodyBuffer.toString('utf8'));
+              const chunks = [];
+              let totalBytes = 0;
+              for await (const chunk of req) {
+                const buf = typeof chunk === 'string' ? Buffer.from(chunk) : chunk;
+                totalBytes += buf.byteLength;
+                if (totalBytes > maxBodyBytes) {
+                  return sendJson(res, 413, { error: '画像が大きすぎます（5MB まで）。' });
+                }
+                chunks.push(buf);
+              }
 
-            const items = await recognizeMenuWithGemini(input, {
-              apiKey: apiKeys,
-              model: process.env.GEMINI_SCAN_MODEL,
-            });
-            return sendJson(res, 200, items);
-          } catch (err) {
-            if (err instanceof ScanRequestError) {
-              return sendJson(res, err.status, {
-                error: err.message,
-                ...(err.details ? { details: err.details } : {}),
+              const bodyBuffer = Buffer.concat(chunks);
+              const contentType = String(req.headers['content-type'] || '');
+              const input = contentType.includes('multipart/form-data')
+                ? await parseScanRequest(
+                    new Request('http://localhost/api/scan', {
+                      method: 'POST',
+                      headers: {
+                        'content-type': contentType,
+                        'content-length': String(bodyBuffer.byteLength),
+                      },
+                      body: bodyBuffer,
+                    })
+                  )
+                : parseJsonScanBody(bodyBuffer.toString('utf8'));
+
+              const items = await recognizeMenuWithGemini(input, {
+                apiKey: apiKeys,
+                model: process.env.GEMINI_SCAN_MODEL,
               });
+              return sendJson(res, 200, items);
+            } catch (err) {
+              if (err instanceof ScanRequestError) {
+                return sendJson(res, err.status, {
+                  error: err.message,
+                  ...(err.details ? { details: err.details } : {}),
+                });
+              }
+              const message = err instanceof Error ? err.message : 'Server error';
+              return sendJson(res, 500, { error: message });
             }
-            const message = err instanceof Error ? err.message : 'Server error';
-            return sendJson(res, 500, { error: message });
-          }
+          },
         });
-      },
+      };
     },
   };
 }
@@ -116,5 +120,7 @@ export default defineConfig({
   trailingSlash: 'always',
   build: { format: 'directory' },
   devToolbar: { enabled: false },
-  integrations: [scanDevApiIntegration()],
+  vite: {
+    plugins: [scanDevApiVitePlugin()],
+  },
 });

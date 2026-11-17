@@ -19,6 +19,12 @@
 
 [![やきことば · Yaki Kotoba](docs/preview.webp)](https://yakikotoba.pages.dev/)
 
+| [Interactive Food Atlas](https://yakikotoba.pages.dev/?view=atlas) | [AI Menu Scanner](https://yakikotoba.pages.dev/scan/) |
+| :---: | :---: |
+| [![Interactive Food Atlas](docs/screenshots/atlas.webp)](https://yakikotoba.pages.dev/?view=atlas) | [![AI Menu Scanner](docs/screenshots/scan.webp)](https://yakikotoba.pages.dev/scan/) |
+| **[Entry Story & Cuts](https://yakikotoba.pages.dev/learn/maguro/otoro/)** | **[Trilingual Dictionary & Chain Filter](https://yakikotoba.pages.dev/menu/#yakiniku/gyukaku)** |
+| [![Entry Story & Cuts](docs/screenshots/detail.webp)](https://yakikotoba.pages.dev/learn/maguro/otoro/) | [![Trilingual Dictionary & Chain Filter](docs/screenshots/dictionary.webp)](https://yakikotoba.pages.dev/menu/#yakiniku/gyukaku) |
+
 ---
 
 ## Core Features

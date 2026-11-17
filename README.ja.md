@@ -19,6 +19,12 @@
 
 [![やきことば · Yaki Kotoba](docs/preview.webp)](https://yakikotoba.pages.dev/)
 
+| [食材図鑑](https://yakikotoba.pages.dev/?view=atlas) | [AI メニュー認識](https://yakikotoba.pages.dev/scan/) |
+| :---: | :---: |
+| [![食材図鑑](docs/screenshots/atlas.webp)](https://yakikotoba.pages.dev/?view=atlas) | [![AI メニュー認識](docs/screenshots/scan.webp)](https://yakikotoba.pages.dev/scan/) |
+| **[部位解説・ストーリー](https://yakikotoba.pages.dev/learn/maguro/otoro/)** | **[三言語辞典・チェーン対照](https://yakikotoba.pages.dev/menu/#yakiniku/gyukaku)** |
+| [![部位解説・ストーリー](docs/screenshots/detail.webp)](https://yakikotoba.pages.dev/learn/maguro/otoro/) | [![三言語辞典・チェーン対照](docs/screenshots/dictionary.webp)](https://yakikotoba.pages.dev/menu/#yakiniku/gyukaku) |
+
 ---
 
 ## 主な機能
