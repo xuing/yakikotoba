@@ -1,6 +1,24 @@
+# Dependencies & build output
 node_modules/
 dist/
 .astro/
+.wrangler/
+.playwright-mcp/
+.firebase/
+
+# Environment & secrets
 .env
+.env.*
+!.env.example
+.dev.vars
+
+# Logs & OS junk
 *.log
-research/media-candidates/
+.DS_Store
+Thumbs.db
+
+# Local contest video & archives
+contest-video/
+*.mp4
+*.mov
+*.zip
