@@ -24,10 +24,54 @@ const OUT_DIR = path.join(ROOT, 'public/audio');
 const MANIFEST = path.join(ROOT, 'src/data/audio.json');
 
 // ---------- config ----------
+function parseEnvValue(raw) {
+  const s = raw.trim();
+  if (s.length >= 2 && s[0] === "'" && s[s.length - 1] === "'") return s.slice(1, -1);
+  if (s.length >= 2 && s[0] === '"' && s[s.length - 1] === '"') {
+    const inner = s.slice(1, -1);
+    if (!inner.includes('"')) return inner;
+    try {
+      const parsed = JSON.parse(s);
+      if (typeof parsed === 'string') return parsed;
+    } catch {}
+  }
+  return s;
+}
+
+function parseGeminiApiKeys(...sources) {
+  const keys = [];
+  const seen = new Set();
+  const pushKey = (raw) => {
+    const cleaned = raw.trim().replace(/^["']+|["']+$/g, '').trim();
+    if (cleaned && !seen.has(cleaned)) {
+      seen.add(cleaned);
+      keys.push(cleaned);
+    }
+  };
+  for (const src of sources) {
+    if (!src) continue;
+    const trimmed = String(src).trim();
+    if (!trimmed) continue;
+    if (trimmed.startsWith('[') && trimmed.endsWith(']')) {
+      let parsed = null;
+      try { parsed = JSON.parse(trimmed); } catch {}
+      if (Array.isArray(parsed)) {
+        for (const item of parsed) if (typeof item === 'string') pushKey(item);
+        continue;
+      }
+      for (const part of trimmed.slice(1, -1).split(/[,;\r\n]+/)) pushKey(part);
+      continue;
+    }
+    for (const part of trimmed.split(/[,;\r\n]+/)) pushKey(part);
+  }
+  return keys;
+}
+
 for (const line of fs.existsSync(path.join(ROOT, '.env')) ? fs.readFileSync(path.join(ROOT, '.env'), 'utf8').split(/\r?\n/) : []) {
   const m = line.match(/^\s*([A-Z0-9_]+)\s*=\s*(.*?)\s*$/);
-  if (m && !process.env[m[1]]) process.env[m[1]] = m[2].replace(/^["']|["']$/g, '');
+  if (m && !process.env[m[1]]) process.env[m[1]] = parseEnvValue(m[2]);
 }
+const API_KEYS = parseGeminiApiKeys(process.env.GEMINI_API_KEY, process.env.GEMINI_API_KEYS);
 const args = process.argv.slice(2);
 const flag = (n) => args.includes(n);
 const opt = (n, d) => (args.includes(n) ? args[args.indexOf(n) + 1] : d);
@@ -96,36 +140,65 @@ for (const [key, text] of jobs) {
   if (ONLY && !key.startsWith(ONLY)) continue;
   byText.set(text, [...(byText.get(text) ?? []), key]);
 }
-const todo = [...byText.entries()]
-  .map(([text, keys]) => ({ text, keys, file: `${hashOf(text)}.mp3` }))
-  .filter((j) => flag('--force') || !fs.existsSync(path.join(OUT_DIR, j.file)))
-  .slice(0, LIMIT);
+const existingAudioFor = (text, keys) => {
+  const currentFile = `${hashOf(text)}.mp3`;
+  if (fs.existsSync(path.join(OUT_DIR, currentFile))) return `/audio/${currentFile}`;
+  for (const k of keys) {
+    const entry = manifest[k];
+    const rel = typeof entry === 'string' ? entry : entry?.file;
+    if (rel && fs.existsSync(path.join(ROOT, 'public', rel.replace(/^\/+/, '')))) return rel;
+  }
+  return null;
+};
 
-// keys whose audio already exists just need a manifest entry
+const todo = [];
 for (const [text, keys] of byText) {
-  const file = `${hashOf(text)}.mp3`;
-  if (fs.existsSync(path.join(OUT_DIR, file))) for (const k of keys) manifest[k] = `/audio/${file}`;
+  const existing = flag('--force') ? null : existingAudioFor(text, keys);
+  if (existing) {
+    for (const k of keys) manifest[k] = existing;
+  } else if (todo.length < LIMIT) {
+    todo.push({ text, keys, file: `${hashOf(text)}.mp3` });
+  }
 }
-console.log(`${jobs.size} keys · ${byText.size} distinct texts · ${todo.length} to generate · ${MODEL} / ${VOICE}`);
+console.log(`${jobs.size} keys · ${byText.size} distinct texts · ${todo.length} to generate · ${MODEL} / ${VOICE} · ${API_KEYS.length} key(s)`);
 if (flag('--dry-run')) {
   for (const j of todo.slice(0, 50)) console.log(`  ${j.keys[0]}${j.keys.length > 1 ? ` (+${j.keys.length - 1})` : ''}  ${j.text}`);
   process.exit(0);
 }
-if (todo.length && !process.env.GEMINI_API_KEY) {
+if (todo.length && !API_KEYS.length) {
   console.error('GEMINI_API_KEY is missing — put it in .env (see .env.example).');
   process.exit(1);
 }
 
 // ---------- synthesis ----------
+const exhaustedKeys = new Set();
+let keyCursor = 0;
+function nextApiKey() {
+  if (exhaustedKeys.size >= API_KEYS.length) return null;
+  for (let i = 0; i < API_KEYS.length; i++) {
+    const candidate = API_KEYS[(keyCursor + i) % API_KEYS.length];
+    if (!exhaustedKeys.has(candidate)) {
+      keyCursor = (keyCursor + i + 1) % API_KEYS.length;
+      return candidate;
+    }
+  }
+  return null;
+}
+
 async function synth(text) {
   const body = {
     contents: [{ parts: [{ text, speech_metadata: { style: STYLE } }] }],
     generationConfig: { responseModalities: ['AUDIO'], speechConfig: { voiceConfig: { prebuiltVoiceConfig: { voiceName: VOICE } } } },
   };
-  for (let attempt = 1; ; attempt++) {
+  for (let attempt = 1; ; ) {
+    const apiKey = nextApiKey();
+    if (!apiKey) {
+      quotaExhausted = true;
+      throw new Error(`daily quota for ${MODEL} is used up on all ${API_KEYS.length} key(s) — run npm run tts again after it resets`);
+    }
     const r = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${MODEL}:generateContent`, {
       method: 'POST',
-      headers: { 'x-goog-api-key': process.env.GEMINI_API_KEY, 'Content-Type': 'application/json' },
+      headers: { 'x-goog-api-key': apiKey, 'Content-Type': 'application/json' },
       body: JSON.stringify(body),
       signal: AbortSignal.timeout(60_000),
     }).catch((e) => ({ ok: false, status: 599, text: async () => String(e) }));
@@ -137,14 +210,17 @@ async function synth(text) {
       if (attempt >= 4) throw new Error(`no audio in response: ${JSON.stringify(j).slice(0, 200)}`);
     } else {
       const msg = await r.text();
-      // daily quota used up: retrying cannot help until it resets
+      // daily quota used up on this key: fail over to another key if available
       if (r.status === 429 && /per_?day|PerDay/i.test(msg)) {
+        exhaustedKeys.add(apiKey);
+        if (exhaustedKeys.size < API_KEYS.length) continue;
         quotaExhausted = true;
-        throw new Error(`daily quota for ${MODEL} is used up — run npm run tts again after it resets`);
+        throw new Error(`daily quota for ${MODEL} is used up on all ${API_KEYS.length} key(s) — run npm run tts again after it resets`);
       }
       if (attempt >= 5 || ![429, 500, 502, 503, 504, 599].includes(r.status)) throw new Error(`HTTP ${r.status}: ${msg.slice(0, 200)}`);
     }
     await new Promise((res) => setTimeout(res, 1500 * 2 ** attempt));
+    attempt++;
   }
 }
 
@@ -190,4 +266,4 @@ await Promise.all(Array.from({ length: Math.min(CONCURRENCY, todo.length || 1) }
 // drop manifest entries whose key no longer exists in the content
 for (const k of Object.keys(manifest)) if (!jobs.has(k)) delete manifest[k];
 fs.writeFileSync(MANIFEST, JSON.stringify(sortKeys(manifest), null, 1));
-console.log(`done: ${done} generated, ${failed} failed, ${Object.keys(manifest).length} keys with audio${quotaExhausted ? ` — stopped: daily quota for ${MODEL} used up, ${queue.length + failed} left` : ''}`);
+console.log(`done: ${done} generated, ${failed} failed, ${Object.keys(manifest).length} keys with audio${quotaExhausted ? ` — stopped: daily quota for ${MODEL} used up on all ${API_KEYS.length} key(s), ${queue.length + failed} left` : ''}`);

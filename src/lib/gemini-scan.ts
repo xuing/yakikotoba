@@ -38,6 +38,62 @@ export function resolveScanModel(envModel?: string): string {
   return trimmed ? trimmed : DEFAULT_GEMINI_SCAN_MODEL;
 }
 
+/**
+ * Parse one or more Gemini API keys from a single string, JSON/pseudo-JSON array string,
+ * comma/semicolon/newline-separated string, or string array, preserving order and deduplicating.
+ */
+export function parseGeminiApiKeys(...sources: Array<string | string[] | undefined>): string[] {
+  const keys: string[] = [];
+  const seen = new Set<string>();
+
+  const pushKey = (raw: string) => {
+    const cleaned = raw.trim().replace(/^["']+|["']+$/g, '').trim();
+    if (cleaned && !seen.has(cleaned)) {
+      seen.add(cleaned);
+      keys.push(cleaned);
+    }
+  };
+
+  for (const src of sources) {
+    if (!src) continue;
+    if (Array.isArray(src)) {
+      for (const item of src) {
+        if (typeof item === 'string') pushKey(item);
+      }
+      continue;
+    }
+
+    const trimmed = src.trim();
+    if (!trimmed) continue;
+
+    if (trimmed.startsWith('[') && trimmed.endsWith(']')) {
+      let parsedJson: unknown;
+      try {
+        parsedJson = JSON.parse(trimmed);
+      } catch {
+        parsedJson = null;
+      }
+      if (Array.isArray(parsedJson)) {
+        for (const item of parsedJson) {
+          if (typeof item === 'string') pushKey(item);
+        }
+        continue;
+      }
+      const inner = trimmed.slice(1, -1);
+      for (const part of inner.split(/[,;\r\n]+/)) {
+        pushKey(part);
+      }
+      continue;
+    }
+
+    for (const part of trimmed.split(/[,;\r\n]+/)) {
+      pushKey(part);
+    }
+  }
+
+  return keys;
+}
+
 /** Estimate decoded byte size of a base64-encoded payload. */
 export function estimateBase64Bytes(base64: string): number {
   const clean = base64.replace(/\s+/g, '');
@@ -247,34 +303,55 @@ export function normalizeGeminiScanResponse(result: unknown): ScanItem[] {
 }
 
 export interface RecognizeMenuOptions {
-  apiKey: string;
+  apiKey: string | string[];
   model?: string;
   fetchFn?: typeof fetch;
 }
 
-/** Call Gemini generateContent using x-goog-api-key header and return normalized items. */
+let scanKeyCursor = 0;
+
+/**
+ * Call Gemini generateContent using x-goog-api-key header, rotating across configured keys
+ * and failing over automatically on rate-limit (429) or transient 5xx responses.
+ */
 export async function recognizeMenuWithGemini(
   input: ScanImageInput,
   { apiKey, model, fetchFn = fetch }: RecognizeMenuOptions
 ): Promise<ScanItem[]> {
+  const keys = parseGeminiApiKeys(apiKey);
+  if (!keys.length) {
+    throw new ScanRequestError(500, 'GEMINI_API_KEY is not configured');
+  }
+
   const resolvedModel = resolveScanModel(model);
   const geminiUrl = `https://generativelanguage.googleapis.com/v1beta/models/${encodeURIComponent(resolvedModel)}:generateContent`;
+  const payload = JSON.stringify(buildGeminiScanPayload(input));
+  const start = scanKeyCursor++ % keys.length;
 
-  const resp = await fetchFn(geminiUrl, {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-      'x-goog-api-key': apiKey,
-    },
-    body: JSON.stringify(buildGeminiScanPayload(input)),
-  });
+  for (let i = 0; i < keys.length; i++) {
+    const key = keys[(start + i) % keys.length];
+    const resp = await fetchFn(geminiUrl, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'x-goog-api-key': key,
+      },
+      body: payload,
+    });
 
-  if (!resp.ok) {
+    if (resp.ok) {
+      const data = await resp.json();
+      return normalizeGeminiScanResponse(data);
+    }
+
     const errText = await resp.text();
+    if (i < keys.length - 1 && [429, 500, 502, 503, 504].includes(resp.status)) {
+      continue;
+    }
+
     const status = resp.status === 429 ? 429 : 502;
     throw new ScanRequestError(status, `Gemini API returned error (${resp.status})`, errText);
   }
 
-  const data = await resp.json();
-  return normalizeGeminiScanResponse(data);
+  throw new ScanRequestError(502, 'Gemini API request failed');
 }

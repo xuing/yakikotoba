@@ -5,10 +5,27 @@ import path from 'node:path';
 import {
   MAX_IMAGE_BYTES,
   ScanRequestError,
+  parseGeminiApiKeys,
   parseJsonScanBody,
   parseScanRequest,
   recognizeMenuWithGemini,
 } from './src/lib/gemini-scan';
+
+function parseEnvValue(raw) {
+  const s = raw.trim();
+  if (s.length >= 2 && s[0] === "'" && s[s.length - 1] === "'") {
+    return s.slice(1, -1);
+  }
+  if (s.length >= 2 && s[0] === '"' && s[s.length - 1] === '"') {
+    const inner = s.slice(1, -1);
+    if (!inner.includes('"')) return inner;
+    try {
+      const parsed = JSON.parse(s);
+      if (typeof parsed === 'string') return parsed;
+    } catch {}
+  }
+  return s;
+}
 
 // Load .env in dev if present
 const rootDir = process.cwd();
@@ -16,7 +33,7 @@ const envFile = path.join(rootDir, '.env');
 if (fs.existsSync(envFile)) {
   for (const line of fs.readFileSync(envFile, 'utf8').split(/\r?\n/)) {
     const m = line.match(/^\s*([A-Z0-9_]+)\s*=\s*(.*?)\s*$/);
-    if (m && !process.env[m[1]]) process.env[m[1]] = m[2].replace(/^["']|["']$/g, '');
+    if (m && !process.env[m[1]]) process.env[m[1]] = parseEnvValue(m[2]);
   }
 }
 
@@ -36,8 +53,8 @@ function scanDevApiIntegration() {
         server.middlewares.use('/api/scan', async (req, res, next) => {
           if (req.method !== 'POST') return next();
           try {
-            const apiKey = process.env.GEMINI_API_KEY;
-            if (!apiKey) {
+            const apiKeys = parseGeminiApiKeys(process.env.GEMINI_API_KEY, process.env.GEMINI_API_KEYS);
+            if (!apiKeys.length) {
               return sendJson(res, 500, { error: 'GEMINI_API_KEY is not configured in .env' });
             }
 
@@ -74,7 +91,7 @@ function scanDevApiIntegration() {
               : parseJsonScanBody(bodyBuffer.toString('utf8'));
 
             const items = await recognizeMenuWithGemini(input, {
-              apiKey,
+              apiKey: apiKeys,
               model: process.env.GEMINI_SCAN_MODEL,
             });
             return sendJson(res, 200, items);

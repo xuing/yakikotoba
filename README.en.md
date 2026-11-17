@@ -82,7 +82,7 @@ npm run dev            # Starts Astro dev server at http://localhost:4321/
 
 | Variable | Required | Default | Description |
 |---|---|---|---|
-| `GEMINI_API_KEY` | For `/scan/` & TTS | — | Google Gemini API key (not needed for browsing static atlas/dictionary pages) |
+| `GEMINI_API_KEY` | For `/scan/` & TTS | — | Google Gemini API key (supports a single key, a `["key1","key2"]` array, or comma-separated `key1,key2` keys with automatic rotation and `429` failover; not needed for static browsing) |
 | `GEMINI_SCAN_MODEL` | No | `gemini-3.8-flash` | Gemini multimodal model used by `/api/scan` |
 | `GEMINI_TTS_MODEL` | No | `gemini-3.8-flash-lite-tts` | Gemini TTS model used by `npm run tts` |
 | `GEMINI_TTS_VOICE` | No | `Kore` | Prebuilt voice name used by `npm run tts` |

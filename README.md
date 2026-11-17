@@ -82,7 +82,7 @@ npm run dev            # 启动本地开发服务器：http://localhost:4321/
 
 | 变量名 | 必填 | 默认值 | 说明 |
 |---|---|---|---|
-| `GEMINI_API_KEY` | 识别/TTS 必填 | — | Google Gemini API 密钥；仅静态浏览图鉴与词典可留空 |
+| `GEMINI_API_KEY` | 识别/TTS 必填 | — | Google Gemini API 密钥（支持单个密钥、`["key1","key2"]` 数组或 `key1,key2` 逗号分隔多密钥自动轮询与 `429` 故障转移）；仅静态浏览可留空 |
 | `GEMINI_SCAN_MODEL` | 否 | `gemini-3.8-flash` | `/api/scan` 使用的 Gemini 多模态视觉模型 |
 | `GEMINI_TTS_MODEL` | 否 | `gemini-3.8-flash-lite-tts` | `npm run tts` 使用的语音合成模型 |
 | `GEMINI_TTS_VOICE` | 否 | `Kore` | `npm run tts` 使用的预置语音音色 |

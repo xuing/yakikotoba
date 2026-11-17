@@ -3,12 +3,14 @@
 
 import {
   ScanRequestError,
+  parseGeminiApiKeys,
   parseScanRequest,
   recognizeMenuWithGemini,
 } from '../../src/lib/gemini-scan';
 
 export interface Env {
   GEMINI_API_KEY?: string;
+  GEMINI_API_KEYS?: string;
   GEMINI_SCAN_MODEL?: string;
 }
 
@@ -64,8 +66,8 @@ export async function onRequestPost(context: PagesContext): Promise<Response> {
     );
   }
 
-  const apiKey = env.GEMINI_API_KEY;
-  if (!apiKey) {
+  const apiKeys = parseGeminiApiKeys(env.GEMINI_API_KEY, env.GEMINI_API_KEYS);
+  if (!apiKeys.length) {
     return jsonResponse(500, {
       error: 'GEMINI_API_KEY is not configured in server environment.',
     });
@@ -74,7 +76,7 @@ export async function onRequestPost(context: PagesContext): Promise<Response> {
   try {
     const input = await parseScanRequest(request);
     const items = await recognizeMenuWithGemini(input, {
-      apiKey,
+      apiKey: apiKeys,
       model: env.GEMINI_SCAN_MODEL,
     });
     return jsonResponse(200, items);

@@ -82,7 +82,7 @@ npm run dev            # ローカル開発サーバー起動：http://localhost
 
 | 変数名 | 必須 | デフォルト値 | 説明 |
 |---|---|---|---|
-| `GEMINI_API_KEY` | スキャン／TTS 時必須 | — | Google Gemini API キー（図鑑・辞典の静的閲覧のみなら不要） |
+| `GEMINI_API_KEY` | スキャン／TTS 時必須 | — | Google Gemini API キー（単一キーのほか、`["key1","key2"]` 配列形式や `key1,key2` カンマ区切りでの複数キー自動ローテーション＆`429` フェイルオーバーに対応；静的閲覧のみなら不要） |
 | `GEMINI_SCAN_MODEL` | 任意 | `gemini-3.8-flash` | `/api/scan` で使用するマルチモーダル視覚モデル |
 | `GEMINI_TTS_MODEL` | 任意 | `gemini-3.8-flash-lite-tts` | `npm run tts` で使用する音声合成モデル |
 | `GEMINI_TTS_VOICE` | 任意 | `Kore` | `npm run tts` で使用する音声ボイス名 |
