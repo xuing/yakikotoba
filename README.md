@@ -2,12 +2,22 @@
 
 **中文** · [日本語](README.ja.md) · [English](README.en.md)
 
+[![Live Demo](https://img.shields.io/badge/Live_Demo-yakikotoba.pages.dev-b7462d?logo=cloudflarepages&logoColor=white)](https://yakikotoba.pages.dev/)
 [![CI](https://github.com/xuing/yakikotoba/actions/workflows/ci.yml/badge.svg)](https://github.com/xuing/yakikotoba/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Astro 7](https://img.shields.io/badge/Astro-7-BC52EE?logo=astro&logoColor=white)](https://astro.build)
 [![Node >=22](https://img.shields.io/badge/Node-%3E%3D22-339933?logo=node.js&logoColor=white)](package.json)
 
 **日本餐桌知识图鉴与 AI 菜单识别助手** —— 从烤肉、烧鸟到寿司与鱼，把日语菜单名、食材部位、店铺叫法、离线发音与背后的饮食故事连在一起。支持中 / 日界面切换与响应式移动端体验。
+
+## 在线预览（Live Demo）
+
+- **主站与图鉴**：https://yakikotoba.pages.dev/
+- **AI 拍照识菜单**：https://yakikotoba.pages.dev/scan/
+- **8 家连锁店菜单**：https://yakikotoba.pages.dev/menus/
+- **完整三语词典**：https://yakikotoba.pages.dev/menu/
+
+[![やきことば · Yaki Kotoba](docs/preview.webp)](https://yakikotoba.pages.dev/)
 
 ---
 
@@ -77,6 +87,7 @@ npm run dev            # 启动本地开发服务器：http://localhost:4321/
 | `npm run scan:data` | 从 `src/content/` 重新生成 `src/data/canonical-ids.json` |
 | `npm run tts` | 调用 Gemini TTS 与 `ffmpeg` 为缺失词条生成 MP3 并更新 `src/data/audio.json` |
 | `npm run sample:menus` | 重新生成 `public/sample-menus/` 下的 3 张内置示例菜单图片 |
+| `npm run deploy` | 构建站点并通过 Wrangler 部署到 Cloudflare Pages (`yakikotoba.pages.dev`) |
 
 ### 环境变量（`.env`）
 

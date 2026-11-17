@@ -68,3 +68,9 @@ html[lang="ja"] .i18n-zh{display:none!important}
   .mini-mock-row{padding:8px;gap:8px}
   .mini-mock-row strong{font-size:12px}
 }
+.github-link{display:inline-grid;place-items:center;width:32px;height:32px;border-radius:50%;border:1px solid var(--line-2);background:var(--surface);color:var(--ink-2);flex-shrink:0;transition:border-color .15s,color .15s}
+.github-link:hover{border-color:var(--accent);color:var(--accent)}
+.footer-links{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.footer-links a{display:inline-flex;align-items:center;gap:6px;transition:color .15s}
+.footer-links a:hover{color:var(--accent)}
+@media(max-width:650px){.header-actions{gap:10px}}

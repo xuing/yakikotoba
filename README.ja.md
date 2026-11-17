@@ -2,12 +2,22 @@
 
 [中文](README.md) · **日本語** · [English](README.en.md)
 
+[![Live Demo](https://img.shields.io/badge/Live_Demo-yakikotoba.pages.dev-b7462d?logo=cloudflarepages&logoColor=white)](https://yakikotoba.pages.dev/)
 [![CI](https://github.com/xuing/yakikotoba/actions/workflows/ci.yml/badge.svg)](https://github.com/xuing/yakikotoba/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Astro 7](https://img.shields.io/badge/Astro-7-BC52EE?logo=astro&logoColor=white)](https://astro.build)
 [![Node >=22](https://img.shields.io/badge/Node-%3E%3D22-339933?logo=node.js&logoColor=white)](package.json)
 
 **日本の食卓・部位図鑑 ＆ AIメニュー認識ガイド** —— 焼肉・焼き鳥・寿司のメニュー表記、部位の正体、お店ごとの呼び方、音声発音、食文化のストーリーをひとつにつなぐ Web ガイドです。中国語・日本語の UI 切り替えとレスポンシブデザインに対応しています。
+
+## ライブデモ（Live Demo）
+
+- **探索トップ・食材図鑑**：https://yakikotoba.pages.dev/
+- **AI メニュー認識**：https://yakikotoba.pages.dev/scan/
+- **チェーン店メニュー図鑑**：https://yakikotoba.pages.dev/menus/
+- **三言語メニュー辞典**：https://yakikotoba.pages.dev/menu/
+
+[![やきことば · Yaki Kotoba](docs/preview.webp)](https://yakikotoba.pages.dev/)
 
 ---
 
@@ -77,6 +87,7 @@ npm run dev            # ローカル開発サーバー起動：http://localhost
 | `npm run scan:data` | `src/content/` から `src/data/canonical-ids.json` を再生成 |
 | `npm run tts` | Gemini TTS と `ffmpeg` で未生成の日本語発音 MP3 を作成し `src/data/audio.json` を更新 |
 | `npm run sample:menus` | `public/sample-menus/` に内蔵サンプルメニュー画像 3 枚を生成 |
+| `npm run deploy` | サイトをビルドして Wrangler 経由で Cloudflare Pages（`yakikotoba.pages.dev`）へデプロイ |
 
 ### 環境変数（`.env`）
 

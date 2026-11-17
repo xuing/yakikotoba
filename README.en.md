@@ -2,12 +2,22 @@
 
 [中文](README.md) · [日本語](README.ja.md) · **English**
 
+[![Live Demo](https://img.shields.io/badge/Live_Demo-yakikotoba.pages.dev-b7462d?logo=cloudflarepages&logoColor=white)](https://yakikotoba.pages.dev/)
 [![CI](https://github.com/xuing/yakikotoba/actions/workflows/ci.yml/badge.svg)](https://github.com/xuing/yakikotoba/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Astro 7](https://img.shields.io/badge/Astro-7-BC52EE?logo=astro&logoColor=white)](https://astro.build)
 [![Node >=22](https://img.shields.io/badge/Node-%3E%3D22-339933?logo=node.js&logoColor=white)](package.json)
 
 **An interactive Japanese dining field guide and AI menu scanner** — connecting Japanese menu vocabulary across yakiniku, yakitori, and sushi with anatomical cuts, restaurant-chain aliases, pronunciation audio, and culinary history. Features bilingual Chinese/Japanese UI switching and a mobile-friendly responsive layout.
+
+## Live Demo
+
+- **Discovery Home & Field Guide**: https://yakikotoba.pages.dev/
+- **AI Menu Photo Scanner**: https://yakikotoba.pages.dev/scan/
+- **8 Chain Menu Guides**: https://yakikotoba.pages.dev/menus/
+- **Trilingual Menu Dictionary**: https://yakikotoba.pages.dev/menu/
+
+[![やきことば · Yaki Kotoba](docs/preview.webp)](https://yakikotoba.pages.dev/)
 
 ---
 
@@ -77,6 +87,7 @@ npm run dev            # Starts Astro dev server at http://localhost:4321/
 | `npm run scan:data` | Regenerate `src/data/canonical-ids.json` from `src/content/` |
 | `npm run tts` | Generate missing Japanese pronunciation MP3s via Gemini TTS + `ffmpeg` and update `src/data/audio.json` |
 | `npm run sample:menus` | Regenerate the 3 built-in sample menu JPEG images under `public/sample-menus/` |
+| `npm run deploy` | Build the site and deploy to Cloudflare Pages (`yakikotoba.pages.dev`) via Wrangler |
 
 ### Environment Variables (`.env`)
 

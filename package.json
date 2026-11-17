@@ -5,7 +5,7 @@
   "private": false,
   "description": "やきことば — 日本餐桌知识图鉴：烤肉、烧鸟、寿司与菜单日语",
   "license": "MIT",
-  "homepage": "https://github.com/xuing/yakikotoba#readme",
+  "homepage": "https://yakikotoba.pages.dev/",
   "repository": {
     "type": "git",
     "url": "https://github.com/xuing/yakikotoba.git"
@@ -33,6 +33,7 @@
     "scan:data": "node scripts/build-scan-data.mjs",
     "tts": "node scripts/tts.mjs",
     "sample:menus": "node scripts/generate-sample-menus.mjs",
+    "deploy": "astro build && wrangler pages deploy dist --project-name yakikotoba --branch main",
     "astro": "astro"
   },
   "dependencies": {

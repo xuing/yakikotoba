@@ -78,6 +78,9 @@ const { search } = await getGuide();
             <span class="lang-sep">·</span>
             <span class="lang-opt" data-opt="ja">日本語</span>
           </button>
+          <a class="github-link" href="https://github.com/xuing/yakikotoba" target="_blank" rel="noopener noreferrer" aria-label="GitHub 开源仓库 / GitHub リポジトリ" title="GitHub">
+            <Icon name="github" size={17} />
+          </a>
         </div>
       </div>
     </header>
@@ -90,10 +93,17 @@ const { search } = await getGuide();
         <small>ひとくちから、世界がひろがる。</small>
       </p>
       <div>
-        <a href="/menu/">
-          <span class="i18n-zh">完整菜单词典</span><span class="i18n-ja">メニュー辞典（日・中・英）</span>
-          <Icon name="diagonal" size={13} />
-        </a>
+        <div class="footer-links">
+          <a href="/menu/">
+            <span class="i18n-zh">完整菜单词典</span><span class="i18n-ja">メニュー辞典（日・中・英）</span>
+            <Icon name="diagonal" size={13} />
+          </a>
+          <a href="https://github.com/xuing/yakikotoba" target="_blank" rel="noopener noreferrer">
+            <Icon name="github" size={13} />
+            <span>GitHub</span>
+            <Icon name="diagonal" size={12} />
+          </a>
+        </div>
         <span>
           <span class="i18n-zh">食材知识附有出处 · 图片保留来源信息</span>
           <span class="i18n-ja">食材知識の出典明記 · 写真・ロゴは引用元を表記</span>

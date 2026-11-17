@@ -58,6 +58,9 @@ const COLS = [
         <a href="/scan/" class="dict-topbar-scan">
           <span><span lang="ja">AI メニュー認識</span><span lang="zh-Hans" class="zh"> · 拍照识菜单</span></span>
         </a>
+        <a href="https://github.com/xuing/yakikotoba" target="_blank" rel="noopener noreferrer">
+          <span>GitHub ↗</span>
+        </a>
       </div>
     </div>
   </nav>
@@ -233,7 +236,7 @@ const COLS = [
         <li>{s.url ? <a href={s.url} rel="noopener" target="_blank">{s.title}</a> : s.title}{s.license && <span class="faint"> · {s.license}</span>}<span class="faint num"> · {s.n}</span></li>
       ))}
     </ul>
-    <p class="faint small">発音：Gemini TTS</p>
+    <p class="faint small">発音：Gemini TTS · <a href="https://github.com/xuing/yakikotoba" rel="noopener noreferrer" target="_blank">GitHub (MIT) ↗</a></p>
   </footer>
 
   <dialog class="lb" aria-label="写真 · 照片 · Photo" tabindex="-1">
