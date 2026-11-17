@@ -1,0 +1,57 @@
+MIT License
+
+Copyright (c) 2026 xuing
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+---
+
+## Third-Party Content & Media Notice
+
+The MIT License above applies to the original source code, build/utility scripts,
+and original authored text in this repository. Third-party images, logos, and
+external media assets stored under `src/assets/media/` are **not** covered by
+the MIT License and remain subject to their respective licenses and copyright
+notices recorded in each directory's `meta.yaml`:
+
+1. **Ministry of Agriculture, Forestry and Fisheries of Japan (MAFF)**
+   - Cut diagrams and dish photographs from MAFF *aff* (「部位図鑑」 / 「お肉丸わかり図鑑」)
+     and *Uchi no Kyōdo Ryōri* (「うちの郷土料理」) are used with attribution under the
+     **Public Data License (PDL 1.0)** / **Government of Japan Standard Terms of Use (v2.0)**
+     (`公共データ利用規約（第1.0版）` / `政府標準利用規約（第2.0版）`).
+   - Note MAFF's caveat: certain materials on MAFF pages may involve third-party
+     rights (such as photographs provided by cooperating organizations or
+     individuals). Anyone reusing or redistributing those assets is responsible
+     for verifying source-page terms and complying with any applicable restrictions.
+
+2. **Wikimedia Commons Media**
+   - Photographs sourced from Wikimedia Commons are used under their respective
+     open licenses (`CC0 1.0`, `CC BY`, `CC BY-SA`, or `Public domain`), with the
+     exact file URL, author, and license recorded per file in
+     `src/assets/media/**/meta.yaml`.
+
+3. **Restaurant Chain Logos & Official Dish Photographs**
+   - Chain logos and official menu item photographs under
+     `src/assets/media/chains/<chain>/` belong to their respective owners and
+     trademark holders (including `焼肉きんぐ` / Monogatari Corporation, `牛角` /
+     REINS international inc., `叙々苑` / Jojoen Co., LTD, `鳥貴族` / Eternal
+     Hospitality Japan, `秋吉` / Akiyoshi Group, `スシロー` / Akindo Sushiro,
+     `くら寿司` / Kura Sushi, and `はま寿司` / Hamazushi).
+   - They are attributed with their official source URLs in `meta.yaml` strictly
+     for educational and menu-reference purposes.
